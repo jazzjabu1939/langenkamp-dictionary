@@ -1,0 +1,29 @@
+title: The Langenkamp Dictionary
+description: A working reference for the language of agentic AI. By Matthew D. Langenkamp / 雷邁德.
+author: Matthew D. Langenkamp / 雷邁德
+url: https://jazzjabu1939.github.io
+baseurl: /langenkamp-dictionary
+
+# Use a clean, readable theme well-suited for documentation
+theme: jekyll-theme-cayman
+
+# Show entries directory in navigation
+include:
+  - entries
+  - INDEX.md
+  - about-the-name.md
+
+# Markdown engine
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Friendly permalinks (without .html extension)
+permalink: pretty
+
+# Footer
+footer: |
+  <p>The Langenkamp Dictionary of Agentic AI Terminology.<br>
+  Maintained by Matthew D. Langenkamp / 雷邁德 — Isenberg School of Management, UMass Amherst.<br>
+  Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
