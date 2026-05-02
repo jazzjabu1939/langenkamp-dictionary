@@ -34,6 +34,8 @@ This dictionary is an attempt — three generations later — to do the same kin
 
 For readers who arrived here via Taylor Sheridan's *Landman*: the oilfield terminology that show flaunts comes from books like my grandfather's. The terminology of the next industrial wave — the one being argued about in business schools and boardrooms right now — is what this dictionary tries to pin down.
 
+For the longer family backstory, see [About the name](about-the-name.md).
+
 ---
 
 ## How to read this dictionary
