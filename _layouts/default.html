@@ -7,17 +7,123 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
+    <meta name="theme-color" content="#881c1c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
     <style>
-      /* Make the header nav buttons look like proper navigation, not afterthoughts */
+      /* === Langenkamp Dictionary palette ===
+         A restrained academic palette that echoes the school colours of the
+         maintainer's institution (maroon and a warm near-black on white)
+         without using any institutional logos or marks. */
+
+      :root {
+        --lk-maroon: #881c1c;       /* primary accent: header background, links, button bg */
+        --lk-maroon-dark: #5a1212;  /* darker maroon for hover states and gradient depth */
+        --lk-ink: #212721;          /* body text and dark headings */
+        --lk-paper: #ffffff;        /* page background */
+        --lk-rule:  #e6e1de;        /* dividers and borders */
+        --lk-muted: #6c6661;        /* footer credit text */
+      }
+
+      /* Override the Cayman teal header gradient with a maroon one */
+      .page-header {
+        background-color: var(--lk-maroon) !important;
+        background-image: linear-gradient(120deg, var(--lk-maroon-dark), var(--lk-maroon)) !important;
+      }
+
+      /* Body text on a clean white background */
+      body {
+        background-color: var(--lk-paper) !important;
+        color: var(--lk-ink) !important;
+      }
+      .main-content {
+        color: var(--lk-ink);
+      }
+
+      /* Headings in the warm near-black, with a maroon underline on H1 only */
+      .main-content h1 {
+        color: var(--lk-ink);
+        border-bottom: 3px solid var(--lk-maroon);
+        padding-bottom: 0.4rem;
+      }
+      .main-content h2, .main-content h3, .main-content h4 {
+        color: var(--lk-ink);
+      }
+
+      /* Inline links: maroon, never the default Cayman blue */
+      .main-content a, .footer-meta a {
+        color: var(--lk-maroon);
+      }
+      .main-content a:hover, .footer-meta a:hover {
+        color: var(--lk-maroon-dark);
+      }
+
+      /* Header nav buttons (top of every page) */
       .header-nav { margin-top: 1.5rem; }
-      .header-nav a.btn { margin: 0.25rem 0.5rem; }
-      .footer-meta { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eff0f1; font-size: 0.875rem; color: #6c7378; }
-      .footer-meta a { color: #1e6bb8; }
+      .header-nav a.btn {
+        margin: 0.25rem 0.5rem;
+        background-color: rgba(255, 255, 255, 0.18);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+      .header-nav a.btn:hover {
+        background-color: rgba(255, 255, 255, 0.30);
+        border-color: rgba(255, 255, 255, 0.85);
+      }
+
+      /* The 'return to dictionary' bar at the bottom of each page */
+      .return-bar a.btn {
+        background-color: var(--lk-maroon);
+        border-color: var(--lk-maroon);
+        color: #fff;
+        margin: 0.25rem 0.5rem;
+      }
+      .return-bar a.btn:hover {
+        background-color: var(--lk-maroon-dark);
+        border-color: var(--lk-maroon-dark);
+      }
+
+      /* Inline code and code blocks: subtle warm tint, not the default Cayman cool */
+      .main-content code {
+        background-color: #f5efea;
+        color: var(--lk-ink);
+      }
+      .main-content pre {
+        background-color: #f5efea;
+        color: var(--lk-ink);
+      }
+      .main-content pre code {
+        background-color: transparent;
+      }
+
+      /* Tables: maroon header row, clean white body */
+      .main-content table th {
+        background-color: var(--lk-maroon);
+        color: #fff;
+        border: 1px solid var(--lk-maroon-dark);
+      }
+      .main-content table td {
+        border: 1px solid var(--lk-rule);
+      }
+
+      /* Blockquotes: maroon left bar, warm body */
+      .main-content blockquote {
+        border-left: 4px solid var(--lk-maroon);
+        color: var(--lk-ink);
+      }
+
+      /* Footer credit block */
+      .footer-meta {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--lk-rule);
+        font-size: 0.875rem;
+        color: var(--lk-muted);
+      }
       .footer-meta .footer-row { margin-bottom: 0.5rem; }
+      .site-footer {
+        border-top: none !important;  /* let our footer-meta border do the work */
+      }
     </style>
   </head>
   <body>
