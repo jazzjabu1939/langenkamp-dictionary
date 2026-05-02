@@ -13,6 +13,9 @@ include:
   - INDEX.md
   - about-the-name.md
 
+# Google Analytics
+google_analytics: G-6VKTMBF9JM
+
 # Markdown engine
 markdown: kramdown
 kramdown:
