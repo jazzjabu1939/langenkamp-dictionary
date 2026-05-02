@@ -52,31 +52,8 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 
 ## Current entries
 
-- [Agent](entries/agent.md)
-- [Aunties](entries/aunties.md)
-- [Can't help you understand](entries/cant-help-you-understand.md)
-- [Closed source](entries/closed-source.md)
-- [Descartes was wrong](entries/descartes-was-wrong.md)
-- [Dusty Laptop](entries/dusty-laptop.md)
-- [Embedding](entries/embedding.md)
-- [English major](entries/english-major.md)
-- [Fine-tuning](entries/fine-tuning.md)
-- [Gateway](entries/gateway.md)
-- [Heartbeat](entries/heartbeat.md)
-- [The Lowbeer Question](entries/lowbeer-question.md)
-- [MCP (Model Context Protocol)](entries/mcp.md)
-- [Naming](entries/naming.md)
-- [Ollama](entries/ollama.md)
-- [Open source](entries/open-source.md)
-- [Parameters](entries/parameters.md)
-- [RAG (Retrieval-Augmented Generation)](entries/rag.md)
-- [SOUL.md (agent persona file)](entries/soul-md.md)
-- [Sub-agent](entries/sub-agent.md)
-- [Token angst](entries/token-angst.md)
-- [Token anxiety](entries/token-anxiety.md)
-- [Token burn](entries/token-burn.md)
-- [Tool](entries/tool.md)
-- [Vector database](entries/vector-database.md)
+- **[Alphabetical index](entries/)** — every entry, A to Z, with one-line descriptions.
+- **[Topic index](topics.md)** — same entries grouped by theme.
 
 ---
 
