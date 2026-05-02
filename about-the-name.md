@@ -4,7 +4,7 @@
 
 ---
 
-## Robert Darwin Langenkamp (b. ~1914)
+## Robert Darwin Langenkamp (b. 1914)
 
 My grandfather, Robert Darwin Langenkamp, was an Oklahoma oilman who spent his working life in and around the petroleum industry. In 1974, he wrote the first edition of the *Handbook of Oil Industry Terms & Phrases*, published by PennWell. New editions followed in 1977, 1981, 1984, and 1994. The book was a working reference — written for people who needed to *use* the language of the oilfield, not for marketing departments — and it became a small standard for several decades. PennWell continued issuing updated editions long after he stepped back from active writing.
 
@@ -26,7 +26,7 @@ He also writes, lectures, and consults on energy issues from Tulsa. His career t
 
 The *Voices of Oklahoma* oral-history project recorded an interview with him in 2020 (still available [online](https://voicesofoklahoma.com/interviews/langenkamp-dobie/)) — a primary source for anyone who wants the longer biography in his own words.
 
-## Why a dictionary, again, three generations later?
+## Why a dictionary, again, two generations later?
 
 I am the third Langenkamp in this line of work, in a different industry. I came up through international investment banking in Hong Kong, ran a security business in New Zealand, and have been teaching strategy and international management at the University of Massachusetts Amherst since 2022. My current research focus is the analysis of equipment auctions and, more recently, the operational practice of agentic AI in higher education.
 

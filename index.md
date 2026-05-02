@@ -35,7 +35,7 @@ If a term cannot be explained that way, the term is probably hiding something.
 
 The Langenkamp name has been attached to industry dictionaries before. **Robert Darwin Langenkamp** — my grandfather — wrote the first edition of *Handbook of Oil Industry Terms & Phrases* in 1974, with subsequent editions in 1977, 1981, 1984, and 1994 (PennWell). My father **Robert Dobie Langenkamp** co-authored the 6th edition. The handbook became, for several decades, a working reference on the language of the petroleum industry.
 
-This dictionary is an attempt — three generations later — to do the same kind of work for the language of *agentic AI*. Different industry, same impulse: the language matters, and someone with no commercial axe to grind should write it down clearly.
+This dictionary is an attempt — two generations later — to do the same kind of work for the language of *agentic AI*. Different industry, same impulse: the language matters, and someone with no commercial axe to grind should write it down clearly.
 
 For readers who arrived here via Taylor Sheridan's *Landman*: the oilfield terminology that show flaunts comes from books like my grandfather's. The terminology of the next industrial wave — the one being argued about in business schools and boardrooms right now — is what this dictionary tries to pin down.
 
