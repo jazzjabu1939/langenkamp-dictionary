@@ -5,7 +5,7 @@ title: Entries — Alphabetical
 
 # Entries (alphabetical)
 
-A complete list of dictionary entries. For a thematic view, see the [topic index](../topics.md). To return to the front page, see the [home page](../).
+A complete list of dictionary entries, begun May 2026 and growing. New terms are added as the field evolves and as faculty questions surface. For a thematic view, see the [topic index](../topics.md). To return to the front page, see the [home page](../).
 
 ---
 
