@@ -10,6 +10,7 @@ A complete list of dictionary entries. For a thematic view, see the [topic index
 ---
 
 - [**Can't help you understand**](cant-help-you-understand.md) — the practitioner's slogan for what AI assistants cannot, in principle, do for you. About the difference between artifacts and comprehension.
+- [**Closed source**](closed-source.md) — AI models delivered only through vendor-hosted APIs; the strategic counterpart to open source.
 - [**Descartes was wrong**](descartes-was-wrong.md) — a philosophical aside (deliberately provocative) about why the Cartesian picture of mind produces bad questions about AI agents, and what to use instead.
 - [**Embedding**](embedding.md) — meaning as a list of numbers; the foundation of semantic search and RAG.
 - [**English major**](english-major.md) — the kind of person who turns out to be surprisingly good at directing AI coding agents because the bottleneck has shifted from syntax to specification.
@@ -19,6 +20,8 @@ A complete list of dictionary entries. For a thematic view, see the [topic index
 - [**MCP (Model Context Protocol)**](mcp.md) — the open standard for connecting agents to tools and data sources.
 - [**Naming**](naming.md) — why the choice of names is structural, not cosmetic, in agentic-AI architecture.
 - [**Ollama**](ollama.md) — local LLM runtime for sovereignty and cost containment.
+- [**Open source**](open-source.md) — AI models whose trained weights are published publicly; one of the two large strategic camps in the model ecosystem.
+- [**Parameters**](parameters.md) — the fundamental unit of measurement for model size, with a useful warning about not confusing size with quality.
 - [**RAG (Retrieval-Augmented Generation)**](rag.md) — the dominant pattern for "AI that knows my stuff."
 - [**SOUL.md (agent persona file)**](soul-md.md) — the architectural pattern for giving an agent persistent character.
 - [**Sub-agent**](sub-agent.md) — delegated AI sessions for parallel or focused work.

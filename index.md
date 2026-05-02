@@ -53,6 +53,7 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 ## Current entries
 
 - [Can't help you understand](entries/cant-help-you-understand.md)
+- [Closed source](entries/closed-source.md)
 - [Descartes was wrong](entries/descartes-was-wrong.md)
 - [Embedding](entries/embedding.md)
 - [English major](entries/english-major.md)
@@ -62,6 +63,8 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 - [MCP (Model Context Protocol)](entries/mcp.md)
 - [Naming](entries/naming.md)
 - [Ollama](entries/ollama.md)
+- [Open source](entries/open-source.md)
+- [Parameters](entries/parameters.md)
 - [RAG (Retrieval-Augmented Generation)](entries/rag.md)
 - [SOUL.md (agent persona file)](entries/soul-md.md)
 - [Sub-agent](entries/sub-agent.md)

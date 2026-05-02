@@ -41,6 +41,14 @@ The shared protocols and runtimes that make agentic systems composable.
 - [MCP (Model Context Protocol)](entries/mcp.md) — the open standard for connecting agents to tools.
 - [Ollama](entries/ollama.md) — local LLM runtime for sovereignty and cost containment.
 
+## The model ecosystem
+
+How models are built, sized, distributed, and accessed — and the strategic camps the industry has organized itself into.
+
+- [Parameters](entries/parameters.md) — what the "26B" or "70B" in a model name actually means, and why it matters less than vendors imply.
+- [Open source](entries/open-source.md) — AI models whose weights are published publicly. The hedge against vendor lock-in.
+- [Closed source](entries/closed-source.md) — AI models delivered only through vendor-hosted APIs. Where the frontier currently lives.
+
 ## Operations & economics
 
 The ongoing reality of running an agent in production — the costs, the meters, and the feelings practitioners develop about them.
