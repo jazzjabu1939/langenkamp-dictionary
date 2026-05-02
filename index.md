@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # The Langenkamp Dictionary of Agentic AI Terminology
 
 *A working reference for the language of agentic AI — written from the position of someone running an agentic system every day, not from press releases or marketing copy.*
@@ -36,25 +41,36 @@ For readers who arrived here via Taylor Sheridan's *Landman*: the oilfield termi
 
 ---
 
-## How to read this dictionary
+## Browse the entries
 
-- **Browse alphabetically** in [`entries/`](entries/) — every term has its own file.
-- **Browse by topic** using the [topic index](topics.md).
-- **Search the repo** with GitHub's search box (top of any page).
-- **Cite** any entry by its file path — e.g. *Langenkamp, M. D. (2026). "What is RAG?" The Langenkamp Dictionary of Agentic AI Terminology. https://github.com/jazzjabu1939/langenkamp-dictionary/blob/main/entries/rag.md*
-- **Suggest changes** by opening an issue or pull request. Corrections, new entries, and friendly arguments are all welcome.
+- **[Alphabetical list](entries/)** — every term, in dictionary order.
+- **[Topic index](topics.md)** — same entries grouped by theme.
 
 ---
 
 ## Current entries
 
-See the [topic index](topics.md) for a thematic view, or the [`entries/`](entries/) folder for the full alphabetical list.
+- [Embedding](entries/embedding.md)
+- [Fine-tuning](entries/fine-tuning.md)
+- [Gateway](entries/gateway.md)
+- [Heartbeat](entries/heartbeat.md)
+- [MCP (Model Context Protocol)](entries/mcp.md)
+- [Naming](entries/naming.md)
+- [Ollama](entries/ollama.md)
+- [RAG (Retrieval-Augmented Generation)](entries/rag.md)
+- [SOUL.md (agent persona file)](entries/soul-md.md)
+- [Sub-agent](entries/sub-agent.md)
+- [Token angst](entries/token-angst.md)
+- [Token anxiety](entries/token-anxiety.md)
+- [Token burn](entries/token-burn.md)
+- [Tool](entries/tool.md)
+- [Vector database](entries/vector-database.md)
 
 ---
 
 ## How to contribute
 
-This is a living document. If you spot an error, want a term added, or disagree with an interpretation, open a GitHub issue or a pull request. The style guide is in [`CONTRIBUTING.md`](CONTRIBUTING.md). The intent is to keep entries short, honest, and grounded in real working systems — not promotional, not abstract, not breathless.
+If you spot an error, want a term added, or disagree with an interpretation, open a GitHub issue or a pull request. The style guide is in [`CONTRIBUTING.md`](CONTRIBUTING.md). The intent is to keep entries short, honest, and grounded in real working systems — not promotional, not abstract, not breathless.
 
 ---
 

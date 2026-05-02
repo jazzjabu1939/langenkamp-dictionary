@@ -5,7 +5,7 @@ title: Topic Index
 
 # Topic Index
 
-A thematic view of the dictionary. For the alphabetical list, see [`entries/`](entries/). To return to the front page, see the [home page](./).
+A thematic view of the dictionary. For the alphabetical list, see [`entries/`](entries/). To return to the front page, see [home](./).
 
 ---
 
@@ -43,9 +43,11 @@ The shared protocols and runtimes that make agentic systems composable.
 
 ## Operations & economics
 
-The ongoing reality of running an agent in production.
+The ongoing reality of running an agent in production — the costs, the meters, and the feelings practitioners develop about them.
 
-- [Token burn](entries/token-burn.md) — what it actually costs to run an agentic system, and how to manage it.
+- [Token burn](entries/token-burn.md) — the cost-rate concept. *What is it costing?*
+- [Token anxiety](entries/token-anxiety.md) — the capacity-bounded operational concept. *Will it fit?*
+- [Token angst](entries/token-angst.md) — the existential concept. *Was it worth it?*
 
 ---
 
