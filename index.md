@@ -52,14 +52,18 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 
 ## Current entries
 
+- [Agent](entries/agent.md)
+- [Aunties](entries/aunties.md)
 - [Can't help you understand](entries/cant-help-you-understand.md)
 - [Closed source](entries/closed-source.md)
 - [Descartes was wrong](entries/descartes-was-wrong.md)
+- [Dusty Laptop](entries/dusty-laptop.md)
 - [Embedding](entries/embedding.md)
 - [English major](entries/english-major.md)
 - [Fine-tuning](entries/fine-tuning.md)
 - [Gateway](entries/gateway.md)
 - [Heartbeat](entries/heartbeat.md)
+- [The Lowbeer Question](entries/lowbeer-question.md)
 - [MCP (Model Context Protocol)](entries/mcp.md)
 - [Naming](entries/naming.md)
 - [Ollama](entries/ollama.md)
