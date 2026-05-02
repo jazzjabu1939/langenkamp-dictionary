@@ -27,7 +27,7 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <div class="header-nav">
-        <a href="{{ '/' | relative_url }}" class="btn">Home</a>
+        <a href="{{ '/' | relative_url }}" class="btn">Return to Dictionary</a>
         <a href="{{ '/entries/' | relative_url }}" class="btn">All Entries (A–Z)</a>
         <a href="{{ '/topics/' | relative_url }}" class="btn">By Topic</a>
         <a href="{{ '/about-the-name/' | relative_url }}" class="btn">About the Name</a>
@@ -36,6 +36,11 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+
+      <div class="return-bar" style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eff0f1; text-align: center;">
+        <a href="{{ '/' | relative_url }}" class="btn">Return to Dictionary</a>
+        <a href="{{ '/entries/' | relative_url }}" class="btn">All Entries (A–Z)</a>
+      </div>
 
       <footer class="site-footer">
         <div class="footer-meta">
