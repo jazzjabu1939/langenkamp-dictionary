@@ -77,7 +77,7 @@ This collapsed weeks of bespoke engineering into a single afternoon. It is one o
 
 ## Why this matters in a teaching context
 
-For MBA students, embeddings are the technology that turned **unstructured text into a queryable asset.** Every email archive, every set of meeting notes, every PDF library, every Slack history, every customer-support transcript — all of it became analytically tractable in a way it had not been before.
+For BBA and MBA students, embeddings are the technology that turned **unstructured text into a queryable asset.** Every email archive, every set of meeting notes, every PDF library, every Slack history, every customer-support transcript — all of it became analytically tractable in a way it had not been before.
 
 The strategic implication: organizations that have been *accumulating* unstructured content for years now own a latent asset they can put to use cheaply. Organizations that have been losing or shredding their unstructured records are going to wish they had not.
 

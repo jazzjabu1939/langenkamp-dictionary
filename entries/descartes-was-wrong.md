@@ -40,7 +40,7 @@ The same reframing helps with the inverse question: *what does it cost me, ethic
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, *Descartes was wrong* opens onto two genuinely important conversations:
+For a BBA or MBA classroom, *Descartes was wrong* opens onto two genuinely important conversations:
 
 1. **The philosophy-of-mind conversation.** Most management students have never had it. They should — because their theories of leadership, of organizational behaviour, of consumer psychology, all rest on implicit assumptions about what minds are. Cleaning up those assumptions makes the downstream theory better.
 2. **The AI-strategy conversation.** Strategic decisions about deploying AI in an organization frequently get derailed by the wrong question: *will the AI really think?* That question presupposes a Cartesian picture of thinking. Replace it with *what outputs does this system produce, under what conditions, with what reliability, and what should we do about that?* and the strategy work becomes tractable.

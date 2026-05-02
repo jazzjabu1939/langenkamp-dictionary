@@ -61,7 +61,7 @@ The case for moving in that direction grows as the ecosystem matures: a service-
 
 MCP is an example of an old business-school idea showing up in a new domain: **a market that was crippled by N×M integration work has been reorganized by a public standard.** The same logic that gave us EDI in supply chain, FIX in trading, and HL7 in healthcare is now being applied to AI tooling.
 
-For MBA students, the analogies are direct:
+For BBA and MBA students, the analogies are direct:
 
 - USB-C in consumer electronics: one standard plug ended a generation of cable confusion.
 - ISO containers in shipping: a 40-foot box made global logistics tractable.

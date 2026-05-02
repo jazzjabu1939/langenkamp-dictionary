@@ -56,7 +56,7 @@ The vector database is one piece of an operational system that also requires doc
 
 ## Why this matters in a teaching context
 
-For MBA students, vector databases are interesting because they sit at the intersection of three trends:
+For BBA and MBA students, vector databases are interesting because they sit at the intersection of three trends:
 
 1. **The "AI-on-private-data" boom** — every organization wants to do this.
 2. **The data infrastructure renaissance** — Postgres, ClickHouse, DuckDB, Snowflake, etc. are getting AI-native features.

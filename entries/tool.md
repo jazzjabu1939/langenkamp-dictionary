@@ -86,7 +86,7 @@ A useful mental model: a tool is a verb, a skill is a recipe that uses verbs, an
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, the leap from "the model writes text" to "the model takes actions" is the conceptual cliff most faculty members and students stumble over. Tools are the bridge.
+For a BBA or MBA classroom, the leap from "the model writes text" to "the model takes actions" is the conceptual cliff most faculty members and students stumble over. Tools are the bridge.
 
 Useful framing for class discussion: an LLM without tools is like a brilliant consultant chained to a chair with their phone confiscated and the door locked — they can describe what should be done, but they cannot do it. Tools are the equivalent of giving the consultant access to the company's systems. **Whoever decides which tools to expose, and to whom, is making operational governance decisions.**
 

@@ -52,7 +52,7 @@ All three live on this MacBook's hard drive and can run without sending a single
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, the open-source AI conversation is genuinely strategic. Three angles worth surfacing:
+For a BBA or MBA classroom, the open-source AI conversation is genuinely strategic. Three angles worth surfacing:
 
 1. **Vendor independence.** An organization that builds critical workflows around a closed-source frontier model is at the mercy of price changes, terms-of-service updates, and API deprecations. Open weights are a hedge — you can always run the version you have, on hardware you control, indefinitely.
 

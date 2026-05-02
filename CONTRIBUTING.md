@@ -12,7 +12,7 @@ Every entry follows the same six-section structure:
 2. **Why it exists** — the problem it solves.
 3. **What it actually does — concretely** — the operational mechanics, with examples or diagrams when they help.
 4. **A working example** — drawn, where possible, from a real running system. If you cannot give a working example, ask whether the term is over-defined or under-defined.
-5. **Why this matters in a teaching context** — analogies, classroom discussion seeds, MBA-relevant framing.
+5. **Why this matters in a teaching context** — analogies, classroom discussion seeds, BBA- and MBA-relevant framing.
 6. **Trade-offs** — what it costs, what breaks, where to be careful.
 
 Entries also end with a short **Related entries** line so readers can traverse the dictionary easily.

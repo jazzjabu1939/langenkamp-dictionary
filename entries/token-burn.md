@@ -38,7 +38,7 @@ The model-tiering plan filed the same morning is, structurally, a token-burn-man
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, *token burn* is a useful entry point into a much older management concept dressed in fresh terminology: **the difference between the cost you intend to incur and the cost you are actually incurring.**
+For a BBA or MBA classroom, *token burn* is a useful entry point into a much older management concept dressed in fresh terminology: **the difference between the cost you intend to incur and the cost you are actually incurring.**
 
 Every accounting student learns about variance analysis. Every operations course covers process drift. Every strategy course mentions the McKinsey adage about budgets being descriptions of past intentions rather than future behaviour. Token burn is all of these rolled together in a domain where the gap between intention and behaviour is unusually fast — billable seconds rather than billable months.
 

@@ -33,7 +33,7 @@ The cure was not better materials. It was less reliance on materials. The studen
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, *can't help you understand* is a useful counter-narrative to the more aggressive vendor framings of agentic AI as a cognitive replacement. It is also a useful frame for the *honest student conversation* about how to use these tools well in a course.
+For a BBA or MBA classroom, *can't help you understand* is a useful counter-narrative to the more aggressive vendor framings of agentic AI as a cognitive replacement. It is also a useful frame for the *honest student conversation* about how to use these tools well in a course.
 
 A practical rule of thumb to teach students:
 

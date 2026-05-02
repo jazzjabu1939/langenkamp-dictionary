@@ -53,7 +53,7 @@ Notice that the smallest-parameter model — Gemma 4 26B — outruns all the lar
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, parameter count is a useful entry point into a deeper management lesson: **headline metrics are usually less informative than the supporting structure that produced them.**
+For a BBA or MBA classroom, parameter count is a useful entry point into a deeper management lesson: **headline metrics are usually less informative than the supporting structure that produced them.**
 
 The same pattern shows up in:
 

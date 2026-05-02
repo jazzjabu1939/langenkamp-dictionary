@@ -32,7 +32,7 @@ In 2025-2026, several large engineering organizations reported that their highes
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, the English-major phenomenon is one of the cleanest cases of a *value-chain disruption inverting the prior skills hierarchy* that students are likely to encounter in their careers. Yesterday's bottleneck (syntax) is automated. Yesterday's nice-to-have (clear writing) is the new bottleneck. The labor market is repricing accordingly.
+For a BBA or MBA classroom, the English-major phenomenon is one of the cleanest cases of a *value-chain disruption inverting the prior skills hierarchy* that students are likely to encounter in their careers. Yesterday's bottleneck (syntax) is automated. Yesterday's nice-to-have (clear writing) is the new bottleneck. The labor market is repricing accordingly.
 
 For the Isenberg context specifically: the management student who took the writing-intensive electives, who learned to write tight memos, and who can specify ambiguous business problems unambiguously is — in 2026 — better positioned for many AI-augmented roles than they would have realized two years ago. Worth saying out loud in advising conversations.
 

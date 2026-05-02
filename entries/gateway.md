@@ -90,7 +90,7 @@ The chatbot is a vending machine. The gateway is a household.
 
 When colleagues ask "how is your AI assistant different from ChatGPT?" — the answer largely lives at the gateway layer.
 
-ChatGPT is a vendor-hosted chatbot. A gateway-based agentic system is a *building*: a fixed address, a calendar, a set of staff (sub-agents), a set of tools (skills), and a set of doors (channels) that visitors can come through. Teaching this distinction clearly is one of the harder pedagogical jobs in an MBA-level AI course, because the language used in marketing materials collapses both into "AI assistant."
+ChatGPT is a vendor-hosted chatbot. A gateway-based agentic system is a *building*: a fixed address, a calendar, a set of staff (sub-agents), a set of tools (skills), and a set of doors (channels) that visitors can come through. Teaching this distinction clearly is one of the harder pedagogical jobs in a BBA- or MBA-level AI course, because the language used in marketing materials collapses both into "AI assistant."
 
 For an Isenberg classroom: a gateway is the part of an agentic system that makes "operations" possible at all. Without it, you have a parlor trick. With it, you have an institution.
 

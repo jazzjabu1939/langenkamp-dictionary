@@ -79,7 +79,7 @@ A scaled-up version of the same pattern would replace the markdown files with a 
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, RAG is the most consequential AI architectural pattern of 2024–2026 for one specific reason: **it lets organizations get useful AI value from their own private data without having to retrain the model.**
+For a BBA or MBA classroom, RAG is the most consequential AI architectural pattern of 2024–2026 for one specific reason: **it lets organizations get useful AI value from their own private data without having to retrain the model.**
 
 The economic and strategic implications:
 

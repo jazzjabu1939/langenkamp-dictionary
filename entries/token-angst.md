@@ -28,7 +28,7 @@ It is not the same as buyer's remorse, exactly, because the value was often real
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, token angst connects to a literature most management students have not yet seen but should: the *philosophy of technology* tradition (Heidegger, Borgmann, Carr, Turkle). The recurring claim in that literature is that every powerful tool reshapes its user — not just by extending capability, but by quietly reorganizing what the user thinks they are *for*. Tool use is never neutral.
+For a BBA or MBA classroom, token angst connects to a literature most management students have not yet seen but should: the *philosophy of technology* tradition (Heidegger, Borgmann, Carr, Turkle). The recurring claim in that literature is that every powerful tool reshapes its user — not just by extending capability, but by quietly reorganizing what the user thinks they are *for*. Tool use is never neutral.
 
 Useful framing for class discussion:
 

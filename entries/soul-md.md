@@ -74,7 +74,7 @@ This is one of the most consequential design patterns to emerge from the agent-f
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, the SOUL.md pattern is a clean example of an old organizational concept reappearing in a new technical form: **explicit codification of identity and values produces consistency that implicit, ad-hoc instruction cannot.**
+For a BBA or MBA classroom, the SOUL.md pattern is a clean example of an old organizational concept reappearing in a new technical form: **explicit codification of identity and values produces consistency that implicit, ad-hoc instruction cannot.**
 
 The same principle underlies:
 

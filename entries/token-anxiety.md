@@ -33,7 +33,7 @@ That feeling — capacity-bounded, time-pressured, recoverable but not without e
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, *token anxiety* is a useful entry point into the more general management concept of **capacity-constrained operations under time pressure**. The same emotional shape appears in:
+For a BBA or MBA classroom, *token anxiety* is a useful entry point into the more general management concept of **capacity-constrained operations under time pressure**. The same emotional shape appears in:
 
 - Manufacturing — running out of inventory mid-shift
 - Healthcare — running out of OR time mid-procedure

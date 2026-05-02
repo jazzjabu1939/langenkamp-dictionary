@@ -87,7 +87,7 @@ A sub-agent can *use tools internally*. So a parent might say "spawn a sub-agent
 
 The sub-agent pattern is how agentic systems scale beyond a single brain. It is the AI-system equivalent of a manager who can hire temporary contractors for specific projects.
 
-For an MBA classroom, a productive comparison is to organizational design:
+For a BBA or MBA classroom, a productive comparison is to organizational design:
 
 - **Sole proprietor** = a chatbot. One person, no help, every task in the same head.
 - **Founder with junior staff** = an agent with sub-agents. Delegation, focused effort, less context-thrash.

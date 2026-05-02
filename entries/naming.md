@@ -87,7 +87,7 @@ In an agentic system specifically, the temptation to insincere naming is high be
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, naming connects to several enduring management questions:
+For a BBA or MBA classroom, naming connects to several enduring management questions:
 
 - **Strategy** — branding decisions are *zhengming* decisions. The Wake Forest "Building AI Fluency" framing won the AACSB Global Impact Award in part because the noun-as-verb (*fluency*) pulls the work toward a specific shape. Naming a similar effort "AI Implementation Task Force" would describe the committee, not the work, and the resulting program would drift differently.
 - **Operations** — the hardest organizational change projects are often ones where the words have become uncoupled from the work. Renaming carefully ("we will not call this a transformation; we will call it the 2027 service redesign") is not a soft skill, it is a load-bearing operational move.

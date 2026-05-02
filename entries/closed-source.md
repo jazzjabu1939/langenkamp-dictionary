@@ -45,7 +45,7 @@ When Anthropic raises prices, deprecates a model, changes terms of service, or h
 
 ## Why this matters in a teaching context
 
-For an MBA classroom, the open-vs-closed AI conversation is a clean case of *commoditize-your-complement* strategy taught through current events.
+For a BBA or MBA classroom, the open-vs-closed AI conversation is a clean case of *commoditize-your-complement* strategy taught through current events.
 
 Worth working through with students:
 

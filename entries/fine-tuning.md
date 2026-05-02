@@ -54,7 +54,7 @@ The pre-conditions, though, are non-trivial: someone has to *curate* those 5,000
 
 ## Why this matters in a teaching context
 
-For MBA students, fine-tuning is interesting because of where the cost has moved over the past three years:
+For BBA and MBA students, fine-tuning is interesting because of where the cost has moved over the past three years:
 
 - 2022: fine-tuning a useful model required a team of researchers and serious infrastructure.
 - 2024: fine-tuning was straightforward for any competent developer with a credit card.
