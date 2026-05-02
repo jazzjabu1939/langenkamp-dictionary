@@ -5,11 +5,14 @@ title: Entries — Alphabetical
 
 # Entries (alphabetical)
 
-A complete list of dictionary entries. For a thematic view, see the [topic index](../INDEX.md). To return to the front page, see the [home page](../).
+A complete list of dictionary entries. For a thematic view, see the [topic index](../topics.md). To return to the front page, see the [home page](../).
 
 ---
 
+- [**Can't help you understand**](cant-help-you-understand.md) — the practitioner's slogan for what AI assistants cannot, in principle, do for you. About the difference between artifacts and comprehension.
+- [**Descartes was wrong**](descartes-was-wrong.md) — a philosophical aside (deliberately provocative) about why the Cartesian picture of mind produces bad questions about AI agents, and what to use instead.
 - [**Embedding**](embedding.md) — meaning as a list of numbers; the foundation of semantic search and RAG.
+- [**English major**](english-major.md) — the kind of person who turns out to be surprisingly good at directing AI coding agents because the bottleneck has shifted from syntax to specification.
 - [**Fine-tuning**](fine-tuning.md) — when to retrain a model on your own data, and when not to.
 - [**Gateway**](gateway.md) — the always-on coordinator process at the heart of an agentic system.
 - [**Heartbeat**](heartbeat.md) — periodic, automated nudges that make agents proactive rather than purely reactive.

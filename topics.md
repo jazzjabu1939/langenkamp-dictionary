@@ -49,6 +49,14 @@ The ongoing reality of running an agent in production — the costs, the meters,
 - [Token anxiety](entries/token-anxiety.md) — the capacity-bounded operational concept. *Will it fit?*
 - [Token angst](entries/token-angst.md) — the existential concept. *Was it worth it?*
 
+## Working with the agent (and not against your own brain)
+
+The practitioner's craft of using AI assistants without breaking your own learning, your own thinking, or your own labor-market position.
+
+- [English major](entries/english-major.md) — why the new bottleneck is specification, not syntax, and who that suddenly favors.
+- [Can't help you understand](entries/cant-help-you-understand.md) — the hard limit on what an AI can do for your comprehension.
+- [Descartes was wrong](entries/descartes-was-wrong.md) — a philosophical reframing of what is happening when an AI agent (or a human) thinks.
+
 ---
 
 ## Planned entries

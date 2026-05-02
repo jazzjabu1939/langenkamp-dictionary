@@ -52,7 +52,10 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 
 ## Current entries
 
+- [Can't help you understand](entries/cant-help-you-understand.md)
+- [Descartes was wrong](entries/descartes-was-wrong.md)
 - [Embedding](entries/embedding.md)
+- [English major](entries/english-major.md)
 - [Fine-tuning](entries/fine-tuning.md)
 - [Gateway](entries/gateway.md)
 - [Heartbeat](entries/heartbeat.md)

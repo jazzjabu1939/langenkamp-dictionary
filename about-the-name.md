@@ -48,4 +48,4 @@ The dictionary itself is restrained — no flourishes, no marketing prose, just 
 
 ---
 
-*Maintained by Matthew D. Langenkamp / 雷邁德. Dictionary entries: [`entries/`](entries/). Topic index: [`INDEX.md`](INDEX.md).*
+*Maintained by Matthew D. Langenkamp / 雷邁德. Dictionary entries: [`entries/`](entries/). Topic index: [`topics.md`](topics.md).*
