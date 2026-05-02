@@ -13,6 +13,7 @@ A thematic view of the dictionary. For the alphabetical list, see [`entries/`](e
 
 These are the load-bearing concepts. Most other terms reference one or more of these.
 
+- [Agent](entries/agent.md) — what an agent is, how it differs from a chatbot, and why Gibson's *Agency* reads like a design document.
 - [Embedding](entries/embedding.md) — meaning as a list of numbers.
 - [Tool](entries/tool.md) — the function call that lets an agent act in the world.
 - [Naming](entries/naming.md) — why the choice of names is structural, not cosmetic.
@@ -25,6 +26,8 @@ The architectural pieces of a running agent.
 - [Sub-agent](entries/sub-agent.md) — delegated AI sessions for parallel or focused work.
 - [Heartbeat](entries/heartbeat.md) — periodic, automated nudges that make agents proactive.
 - [SOUL.md](entries/soul-md.md) — the agent persona file as architectural pattern.
+- [Aunties](entries/aunties.md) — specialized single-verb oversight agents that prevent any one component from accumulating unchecked authority.
+- [The Lowbeer Question](entries/lowbeer-question.md) — who holds the authority to terminate, who executes it, and what happens when the principal is not available.
 
 ## Knowledge & retrieval
 
@@ -56,6 +59,7 @@ The ongoing reality of running an agent in production — the costs, the meters,
 - [Token burn](entries/token-burn.md) — the cost-rate concept. *What is it costing?*
 - [Token anxiety](entries/token-anxiety.md) — the capacity-bounded operational concept. *Will it fit?*
 - [Token angst](entries/token-angst.md) — the existential concept. *Was it worth it?*
+- [Dusty Laptop](entries/dusty-laptop.md) — the minimum-viable hardware entry point. The old machine in the closet that suddenly has a use.
 
 ## Working with the agent (and not against your own brain)
 

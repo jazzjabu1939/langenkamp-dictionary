@@ -4,15 +4,15 @@
 
 ---
 
-## Robert D. Langenkamp (1936–2023)
+## Robert Darwin Langenkamp (b. ~1914)
 
-My grandfather, Robert D. Langenkamp, was an Oklahoma oilman who spent his working life in and around the petroleum industry. In 1974, he wrote the first edition of the *Handbook of Oil Industry Terms & Phrases*, published by PennWell. New editions followed in 1977, 1981, 1984, and 1994. The book was a working reference — written for people who needed to *use* the language of the oilfield, not for marketing departments — and it became a small standard for several decades. PennWell continued issuing updated editions long after he stepped back from active writing.
+My grandfather, Robert Darwin Langenkamp, was an Oklahoma oilman who spent his working life in and around the petroleum industry. In 1974, he wrote the first edition of the *Handbook of Oil Industry Terms & Phrases*, published by PennWell. New editions followed in 1977, 1981, 1984, and 1994. The book was a working reference — written for people who needed to *use* the language of the oilfield, not for marketing departments — and it became a small standard for several decades. PennWell continued issuing updated editions long after he stepped back from active writing.
 
 What stuck with the family was less the commercial life of the book than the impulse behind it: that an industry's working terminology deserves to be written down clearly by someone who actually understands it, made affordable, and made available to the next generation of practitioners.
 
-## R. Dobie Langenkamp
+## Robert Dobie Langenkamp (1936–2023)
 
-My father, **R. Dobie Langenkamp**, picked up that work and carried it forward. He co-authored the **6th edition** of the *Handbook of Oil Industry Terms & Phrases* (PennWell), updating his father's foundation with terms and concepts that had entered the industry in the intervening decades.
+My father, **Robert Dobie Langenkamp**, picked up that work and carried it forward. He co-authored the **6th edition** of the *Handbook of Oil Industry Terms & Phrases* (PennWell), updating his father's foundation with terms and concepts that had entered the industry in the intervening decades.
 
 His own career sat at the intersection of oil-and-gas practice, law, and policy:
 

@@ -25,7 +25,7 @@ That always-on coordinator is the gateway. Everything else hangs off it.
 
 In an OpenClaw setup like this one, the gateway is a single Node.js process that:
 
-1. **Listens** on a local WebSocket port (here, `127.0.0.1:18789`).
+1. **Listens** on a local WebSocket port (here, `127.0.0.1:<port>` — the specific port is set in config).
 2. **Authenticates** every client connection (your laptop's CLI, the dashboard browser tab, your phone) using device tokens with scoped permissions.
 3. **Receives messages** routed in from messaging providers (Telegram, Signal, etc.) via plugin connectors.
 4. **Decides which model to call** based on the configuration (cloud frontier model, local Ollama model, etc.) — this is where model tiering happens.
@@ -35,27 +35,27 @@ In an OpenClaw setup like this one, the gateway is a single Node.js process that
 
 When the gateway is down, nothing works. When it is up, everything else is ephemeral and can come and go.
 
-## Working example from this machine (May 2, 2026)
+## Working example
 
-After the morning restart of the M5 MacBook:
+After starting the gateway on a typical Mac setup:
 
 ```
 $ openclaw gateway status
 Service: LaunchAgent (loaded)
-Runtime: running (pid 1022, state active)
+Runtime: running (pid <n>, state active)
 Capability: read-only
-Listening: 127.0.0.1:18789
+Listening: 127.0.0.1:<port>
 ```
 
-That single PID 1022 process is doing all of the following simultaneously:
+That single process is doing all of the following simultaneously:
 
-- Accepting Telegram messages routed to me from Matthew's phone
-- Holding the conversation history for *this very exchange*
-- Running 28 cron jobs (2 active, 26 disabled) waiting for their next fire times
-- Authenticating two paired client devices (the dashboard and the CLI)
-- Executing every shell command and file operation I run
-- Calling Anthropic's API for my main responses
-- Soon, calling Ollama at `localhost:11434` for cheaper local responses
+- Accepting messages from connected channels (Telegram, Signal, etc.)
+- Holding the conversation history for active sessions
+- Running scheduled cron jobs waiting for their next fire times
+- Authenticating paired client devices (dashboard, CLI, mobile)
+- Executing shell commands and file operations when tools are called
+- Calling cloud model APIs (Anthropic, OpenAI, etc.) for responses
+- Optionally calling a local Ollama instance at `localhost:11434` for cheaper local inference
 
 Kill that process and the system goes silent. Restart it and everything resumes.
 
