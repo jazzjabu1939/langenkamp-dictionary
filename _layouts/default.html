@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
 
 {% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#881c1c">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -24,6 +25,15 @@
         --lk-paper: #ffffff;        /* page background */
         --lk-rule:  #e6e1de;        /* dividers and borders */
         --lk-muted: #6c6661;        /* footer credit text */
+
+        /* Type stack:
+           - Headings + nav: Space Grotesk (geometric sans, quietly futuristic)
+           - Body long-form: Source Serif 4 (modern serif, easy on long reads)
+           - Code + accents: JetBrains Mono (the modern technical monospace)
+        */
+        --lk-font-heading: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        --lk-font-body:    'Source Serif 4', Georgia, 'Times New Roman', serif;
+        --lk-font-mono:    'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace;
       }
 
       /* Override the Cayman teal header gradient with a maroon one */
@@ -36,20 +46,40 @@
       body {
         background-color: var(--lk-paper) !important;
         color: var(--lk-ink) !important;
+        font-family: var(--lk-font-body);
       }
       .main-content {
         color: var(--lk-ink);
+        font-family: var(--lk-font-body);
+        font-size: 1.0625rem;
+        line-height: 1.65;
       }
 
-      /* Headings in the warm near-black, with a maroon underline on H1 only */
-      .main-content h1 {
+      /* Project name in the header gets the cyber-leaning Space Grotesk */
+      .project-name, .project-tagline {
+        font-family: var(--lk-font-heading);
+        letter-spacing: -0.01em;
+      }
+      .project-name {
+        font-weight: 600;
+      }
+      .project-tagline {
+        font-weight: 400;
+      }
+
+      /* Headings in Space Grotesk with the warm near-black, maroon underline on H1 */
+      .main-content h1, .main-content h2, .main-content h3, .main-content h4 {
+        font-family: var(--lk-font-heading);
         color: var(--lk-ink);
+        letter-spacing: -0.01em;
+      }
+      .main-content h1 {
+        font-weight: 600;
         border-bottom: 3px solid var(--lk-maroon);
         padding-bottom: 0.4rem;
       }
-      .main-content h2, .main-content h3, .main-content h4 {
-        color: var(--lk-ink);
-      }
+      .main-content h2 { font-weight: 600; }
+      .main-content h3 { font-weight: 500; }
 
       /* Inline links: maroon, never the default Cayman blue */
       .main-content a, .footer-meta a {
@@ -61,6 +91,14 @@
 
       /* Header nav buttons (top of every page) */
       .header-nav { margin-top: 1.5rem; }
+      .header-nav a.btn,
+      .return-bar a.btn {
+        font-family: var(--lk-font-mono);
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-transform: none;
+      }
       .header-nav a.btn {
         margin: 0.25rem 0.5rem;
         background-color: rgba(255, 255, 255, 0.18);
@@ -83,7 +121,11 @@
         border-color: var(--lk-maroon-dark);
       }
 
-      /* Inline code and code blocks: subtle warm tint, not the default Cayman cool */
+      /* Inline code and code blocks: JetBrains Mono on a warm cream tint */
+      .main-content code, .main-content pre, .main-content kbd, .main-content samp, .main-content tt {
+        font-family: var(--lk-font-mono);
+        font-size: 0.9em;
+      }
       .main-content code {
         background-color: #f5efea;
         color: var(--lk-ink);
@@ -91,16 +133,23 @@
       .main-content pre {
         background-color: #f5efea;
         color: var(--lk-ink);
+        line-height: 1.5;
       }
       .main-content pre code {
         background-color: transparent;
       }
 
-      /* Tables: maroon header row, clean white body */
+      /* Tables: maroon header row in Space Grotesk, body in body font */
+      .main-content table {
+        font-family: var(--lk-font-body);
+      }
       .main-content table th {
         background-color: var(--lk-maroon);
         color: #fff;
         border: 1px solid var(--lk-maroon-dark);
+        font-family: var(--lk-font-heading);
+        font-weight: 500;
+        letter-spacing: 0.01em;
       }
       .main-content table td {
         border: 1px solid var(--lk-rule);
@@ -117,6 +166,7 @@
         margin-top: 2rem;
         padding-top: 1rem;
         border-top: 1px solid var(--lk-rule);
+        font-family: var(--lk-font-heading);
         font-size: 0.875rem;
         color: var(--lk-muted);
       }
