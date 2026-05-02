@@ -19,6 +19,7 @@ A complete list of dictionary entries. For a thematic view, see the [topic index
 - [**RAG (Retrieval-Augmented Generation)**](rag.md) — the dominant pattern for "AI that knows my stuff."
 - [**SOUL.md (agent persona file)**](soul-md.md) — the architectural pattern for giving an agent persistent character.
 - [**Sub-agent**](sub-agent.md) — delegated AI sessions for parallel or focused work.
+- [**Token burn**](token-burn.md) — the rate at which an agent silently transmutes electricity and credit-card balance into JSON. With taxonomy and stages of grief.
 - [**Tool**](tool.md) — the function call that lets an agent act in the real world.
 - [**Vector database**](vector-database.md) — specialized storage and retrieval infrastructure for embeddings.
 

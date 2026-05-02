@@ -1,6 +1,11 @@
+---
+layout: default
+title: Topic Index
+---
+
 # Topic Index
 
-A thematic view of the dictionary. For the alphabetical list, see [`entries/`](entries/).
+A thematic view of the dictionary. For the alphabetical list, see [`entries/`](entries/). To return to the front page, see the [home page](./).
 
 ---
 
@@ -35,6 +40,12 @@ The shared protocols and runtimes that make agentic systems composable.
 
 - [MCP (Model Context Protocol)](entries/mcp.md) — the open standard for connecting agents to tools.
 - [Ollama](entries/ollama.md) — local LLM runtime for sovereignty and cost containment.
+
+## Operations & economics
+
+The ongoing reality of running an agent in production.
+
+- [Token burn](entries/token-burn.md) — what it actually costs to run an agentic system, and how to manage it.
 
 ---
 
