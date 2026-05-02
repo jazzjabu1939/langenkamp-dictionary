@@ -41,7 +41,7 @@ For readers who arrived here via Taylor Sheridan's *Landman*: the oilfield termi
 - **Browse alphabetically** in [`entries/`](entries/) — every term has its own file.
 - **Browse by topic** using the [topic index](INDEX.md).
 - **Search the repo** with GitHub's search box (top of any page).
-- **Cite** any entry by its file path — e.g. *Langenkamp, M. D. (2026). "What is RAG?" The Langenkamp Dictionary of Agentic AI Terminology. https://github.com/<USER>/langenkamp-dictionary/blob/main/entries/rag.md*
+- **Cite** any entry by its file path — e.g. *Langenkamp, M. D. (2026). "What is RAG?" The Langenkamp Dictionary of Agentic AI Terminology. https://github.com/jazzjabu1939/langenkamp-dictionary/blob/main/entries/rag.md*
 - **Suggest changes** by opening an issue or pull request. Corrections, new entries, and friendly arguments are all welcome.
 
 ---
@@ -66,4 +66,4 @@ If you find an error, please tell me. The whole point of putting this on GitHub 
 
 ---
 
-*Begun: May 2026. Maintained at: github.com/&lt;USER&gt;/langenkamp-dictionary.*
+*Begun: May 2026. Maintained at: github.com/jazzjabu1939/langenkamp-dictionary.*

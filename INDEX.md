@@ -53,7 +53,7 @@ The dictionary is a work in progress. Expected near-term additions:
 - *Approval gating* — how to require human consent for sensitive agent actions.
 - *Provenance* — knowing where an agent's output came from.
 
-If a term you wish were here is missing, [open an issue](https://github.com/&lt;USER&gt;/langenkamp-dictionary/issues) and the maintainer will add it.
+If a term you wish were here is missing, [open an issue](https://github.com/jazzjabu1939/langenkamp-dictionary/issues) and the maintainer will add it.
 
 ---
 
