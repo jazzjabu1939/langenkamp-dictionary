@@ -52,9 +52,13 @@ That observation — extracted from a sidewalk, by a novelist paying attention t
 
 But Gibson has said something more precise about the act of coining the word itself. *Cyberspace*, he has explained, was invented as an empty vessel — a word that *sounded like* the thing he was trying to name, before he knew what the thing was. He needed a container. He built one out of sound and feeling. And then reality, over the following decade, poured itself in.
 
-> *[Gibson on cyberspace as empty vessel — quote to be inserted from source]*
+In his short prose piece *Academy Leader* (1991), Gibson described the act in his own voice:
 
-This is naming as a generative act, not a descriptive one. The word did not describe an existing thing. It created the attractor around which an existing thing could organize. The internet did not make "cyberspace" accurate; "cyberspace" helped make the internet legible. An English major understood this before the engineers did, because the engineers were building the vessel and Gibson was already thinking about what it would hold.
+> *"Assembled word cyberspace from small and readily available components of language. Neologic spasm: the primal act of pop poetics. Preceded any concept whatever. Slick and hollow — awaiting received meaning."*
+>
+> *"All I did: folded words as taught. Now other words accrete in the interstices."*
+
+This is naming as a generative act, not a descriptive one. The word did not describe an existing thing — it *preceded any concept whatever*. It created the attractor around which an existing thing could organize, and meaning *accreted in the interstices* over the following decade. The internet did not make "cyberspace" accurate; "cyberspace" helped make the internet legible. An English major understood this before the engineers did, because the engineers were building the vessel and Gibson was already thinking about what it would hold.
 
 The underlying capacity is **imagination** — not in the casual sense of creativity or whimsy, but in the precise sense: the ability to hold something that does not yet exist with enough clarity to name it. STEM disciplines, at their best, train rigorous analysis of what *is*. Imagination works on what *isn't yet*. Gibson's method — observing the human signal in the technological noise and naming what he saw with sufficient precision — is imagination applied as a technical instrument. The name creates gravity. Reality organizes around it.
 
