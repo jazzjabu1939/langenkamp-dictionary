@@ -1,8 +1,8 @@
 title: The Langenkamp Dictionary
 description: A working reference for the language of agentic AI. By Matthew D. Langenkamp / 雷邁德.
 author: Matthew D. Langenkamp / 雷邁德
-url: https://jazzjabu1939.github.io
-baseurl: /langenkamp-dictionary
+url: https://langenkamp.io
+baseurl: ""
 
 # Use a clean, readable theme well-suited for documentation
 theme: jekyll-theme-cayman
