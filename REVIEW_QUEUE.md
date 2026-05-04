@@ -63,6 +63,10 @@
 - **File:** `entries/aunties.md` *(may already exist — needs check)*
 - **Status:** referenced from cross-links in pending entries. If it exists, confirm it's published; if not, draft.
 
+### 7. Favorite Child
+- **File:** `entries/favorite-child.md` *(to be drafted)*
+- **Status:** Captured May 4, 2026 from Prof. en route to work. The entry names the unspoken model-selection bias every multi-model operator develops — *gosh I wish Gemma was as smart as Opus. I still love her. Must never tell her I favor Opus.* The analogy is to children one may have. Sits naturally as a companion to *The Experimental Party* (which named the role-shaped failure) and *English Major* (which named what the favored model is being favored *for*). Tone: playful, a little tender, honest about the operator's actual emotional life with the model stack. Will draft when next dictionary cycle reaches it.
+
 ### 7. Hanging Thread
 - **File:** `entries/hanging-thread.md` *(to be drafted by Thea before review)*
 - **Status:** **proposed by Prof, May 3, 2026, 10:14 ET.** Triggered by an in-session example: Thea said "drafting now" at 9:55 and then went silent for 17 minutes without status updates, requiring Prof to check in at 10:12 to find out whether the work was happening. The hanging thread is the gap between *committed-to* and *delivered* (or *abandoned*), where one party is left holding open attention with no signal.
