@@ -10,7 +10,7 @@
 
 ## What it is not
 
-It is not the way a new faculty member looks physically after signing on to teach and then having to take FERPA online training for an hour. It is not the way a graduate student walks into a meeting with their dissertation chair. It is not what your shoulders do after grading 47 reflection papers in a row. It is not a posture in the *physical* sense at all. The word *posture* here is the security-engineering use — *threat posture*, *risk posture*, *defensive posture* — meaning the deliberate stance an institution takes toward a class of risk before any specific incident occurs.
+It is not the way a new faculty member looks physically after signing on to teach and then having to take FERPA online training for an hour. It is not what your shoulders do after grading 47 reflection papers in a row. It is not a posture in the *physical* sense at all. The word *posture* here is the security-engineering use — *threat posture*, *risk posture*, *defensive posture* — meaning the deliberate stance an institution takes toward a class of risk before any specific incident occurs.
 
 Educators new to AI sometimes hear "FERPA" and assume it means "be careful with grades." The actual law is bigger and quieter than that, and the AI era has made the quiet parts loud.
 
