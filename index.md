@@ -63,11 +63,19 @@ If you spot an error, want a term added, or disagree with an interpretation, ope
 
 ---
 
-## A note on epistemic humility
+## Editorial philosophy: fast-fail, fast-publish, inclusive
 
-This is not a peer-reviewed reference. It is a careful, opinionated working glossary written by a management-school lecturer who has spent the past year operating an agentic system in daily teaching and research life. Where claims are debatable, the entry says so. Where I have made judgement calls about the right way to frame something, I have tried to make those judgements visible rather than hiding them behind faux-neutral language.
+This dictionary follows three commitments that distinguish it from a peer-reviewed reference and that readers should know about up front.
 
-If you find an error, please tell me. The whole point of putting this on GitHub is that the next edition can be better than this one — same way the 1977 edition of the *Handbook of Oil Industry Terms & Phrases* was better than the 1974 first edition.
+**Fast-fail.** Entries go up before they are perfect. The author and the assistant prefer to publish a useful imperfect entry today and revise it next week, rather than hold a careful entry in a drafts folder for a month while the field moves on. The version on the site at any given moment is the *current best take*, not the final word. This is how working operators actually generate knowledge — by trying things, failing visibly, fixing things, and trying again. The Dictionary models that workflow rather than hiding it.
+
+**Fast-publish, fast-revise.** When an entry is wrong, it gets corrected. When a colleague pushes back with a better framing, the entry changes. When a term turns out to be load-bearing in ways the original author missed, the entry expands. Git history preserves what was said before; the live page reflects what the author currently believes. The idea is that *transparent revision is more useful to readers than the false confidence of a static reference.* Wikipedia operates on this principle at scale; this Dictionary operates on it at small scale.
+
+**Inclusive.** The Dictionary is not yet a community-edited project, but it aspires to become something like one over time. Faculty colleagues, students, working practitioners, and curious outsiders are all welcome to suggest entries, push back on existing ones, or contribute drafts. The current contribution path — GitHub issues and pull requests, plus direct email to the author — is documented in [`CONTRIBUTING.md`](CONTRIBUTING.md), and is open to anyone. *We are not Wikipedia. We could become something like Wikipedia, in time, if the community wants that.* For now, the ambition is honest knowledge-sharing on a fast loop, prioritizing usefulness and transparency over polish.
+
+If you find an error, please tell me. If you have a term you think should be entered, please tell me. If you disagree with a framing, please tell me. The whole point of putting this on GitHub — and inviting comment in the open — is that the next version can be better than this one. The 1977 edition of the Langenkamp *Handbook of Oil Industry Terms & Phrases* was better than the 1974 first edition. The 1981 edition was better than the 1977 edition. By 1994 it was a working reference for an entire industry. That iterative, public, community-shaped trajectory is the one this Dictionary aims for.
+
+*Priority order, said plainly: knowledge-sharing > perfection. Transparency > polish. Speed of revision > permanence of claim.*
 
 ---
 
