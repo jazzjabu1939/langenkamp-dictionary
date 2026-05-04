@@ -36,7 +36,7 @@ A FERPA Compliance Posture in an AI-assisted teaching workflow is built on three
 
 **Y — The Content Line.** *Cloud LLMs must not be used to read, transcribe, summarize, or evaluate student-authored content.* Papers, presentations, recordings, quiz responses, discussion posts, reflective writing, exam answers — none of these may be sent to an external API in their substantive form. *Substantive* is the operative word: a student's name appearing in a roster query is metadata; the same name attached to the contents of their reflection essay is an educational record.
 
-**Z — The Local Mandate.** *Where AI assistance is desired for student-authored content — transcription, parsing, summarization, draft commentary — local models on institution-controlled or instructor-controlled hardware are the legally clean path.* Local Whisper for audio, local PDF and document parsers, local large language models (Gemma, Llama, gpt-oss) running on Apple Silicon or comparable infrastructure. The student's work never leaves the instructor's machine. The vendor relationship problem disappears because there is no vendor.
+**Z — The Local Mandate.** *Where AI assistance is desired for student-authored content — transcription, parsing, summarization, draft commentary — local models on institution-controlled or instructor-controlled hardware are the legally clean path.* Local Whisper for audio, local PDF and document parsers, local large language models (Gemma, Llama, gpt-oss) running on Apple Silicon or comparable infrastructure. The student's work never leaves the instructor's machine. The vendor relationship problem disappears because there is no vendor. There is a quiet historical irony here: the same Apple Silicon machine that the [GenXClaw](genxclaw.md) operator built in his spare bedroom on temperamental grounds — sovereignty, distrust of cloud, the instinct that data on the disk should stay on the disk — turns out to be, with no advance planning, the architecture the law would have specified if asked. Temperament and regulation point to the same hardware, in the same room, running the same models.
 
 The Z commitment is what turned the M5 Max — a piece of hardware originally justified on cost and capability grounds — into *FERPA compliance infrastructure.* Without it, the answer to "can AI help me with this stack of student papers?" would simply be *no.* With it, the answer is *yes, locally, with no third party in the loop.*
 
@@ -72,6 +72,7 @@ Adopted at Isenberg School of Management, UMass Amherst, May 4, 2026, after **Je
 
 ## See also
 
+- [GenXClaw](genxclaw.md)
 - *(future)* The Cloud-Metadata vs. Local-Content distinction
 - *(future)* Data Processing Agreement (DPA)
 - *(future)* The Buckley Amendment (historical)

@@ -26,6 +26,8 @@ This feels good to Gen X in a way that is hard to overstate. It is the return of
 
 There is a second piece, less often named: agentic AI is, for many Gen Xers, the *first time computers have done what they always wanted computers to do.* The cohort includes a great many people who could never quite code — who took one CS class in college, bounced off it, and spent the next thirty years admiring from a distance the friends who could make machines obey them. Agentic AI collapses that gap. You describe what you want; the agent writes the code. The capabilities are, to this cohort, mind-blowing — not because they are new to technology, but because they have been waiting their entire adult lives for the machine to *finally* meet them halfway.
 
+There is a third piece, even less expected, that surfaced for the GenXClaw operator-in-chief in the spring of 2026. The same Apple Silicon machine assembled in the spare bedroom for *temperamental* reasons — sovereignty, distrust of cloud, the instinct that the data on the disk should stay on the disk — turned out to be, by complete accident, the *legally clean* architecture for an entirely different problem: federal student-privacy law. An Isenberg colleague raised FERPA concerns in a departmental AI meeting; the operator, who teaches at the same school, realized the next morning that the local-models-on-Apple-Silicon setup he had built for personal reasons was already the only architecture that could legally apply AI to student-authored work at all. The temperament had been right, in a way the temperament could not have known. (See: [FERPA Compliance Posture](ferpa-compliance-posture.md).)
+
 ## The diagnostic profile
 
 A GenXClaw operator can be identified by several converging signals.
@@ -94,6 +96,7 @@ That is not a flaw. That is a temperament. And in a period when frontier AI is c
 
 ## See also
 
+- [FERPA Compliance Posture](ferpa-compliance-posture.md)
 - [Token anxiety](token-anxiety.md)
 - [Token burn](token-burn.md)
 - [Space Cowboy](space-cowboy.md)
