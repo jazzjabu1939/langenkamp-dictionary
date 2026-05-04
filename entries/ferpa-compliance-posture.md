@@ -68,7 +68,7 @@ The FERPA argument does not. The FERPA argument is *legal*, *categorical*, and *
 
 ## Where the term came from
 
-Adopted at Isenberg School of Management, UMass Amherst, May 4, 2026, after **Jennifer Merton, JD** (Vice Chair, Management Department) raised FERPA concerns explicitly in a department AI meeting. The framing — *posture, not rule; legal, not frugal* — emerged in conversation between Prof. Langenkamp and Thea on the morning of May 4, 2026, while testing a newly-built `canvas-lms` skill that intentionally stays on the metadata side of the line.
+Adopted at Isenberg School of Management, UMass Amherst, May 4, 2026, after **Jennifer Merton, JD** (Acting Head, Management Department) raised FERPA concerns explicitly in a department AI meeting. The framing — *posture, not rule; legal, not frugal* — emerged in conversation between Prof. Langenkamp and Thea on the morning of May 4, 2026, while testing a newly-built `canvas-lms` skill that intentionally stays on the metadata side of the line.
 
 ## See also
 
