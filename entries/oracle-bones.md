@@ -14,7 +14,7 @@ Shang dynasty divination, c. 1600–1046 BCE. Ox scapulae and turtle plastrons w
 
 The keeping is the discipline. Anyone can predict. Few file the prediction with the date and the reasoning, and almost nobody returns to grade it.
 
-The Shang oracle bones survive 3,000 years later because the inscription itself was the practice. The Court of Sober Aunties — the small fictional advisory council we run inside our system to commission and grade predictions — borrows the name and the discipline directly.
+The Shang oracle bones survive 3,000 years later because the inscription itself was the practice. The Oracle Court — the small advisory council of five scholars we run inside our learning system to commission and grade predictions — borrows the name and the discipline directly. Its five characters each hold a single verb: **老司天** the Astronomer (*observe*), **占者** the Diviner (*read*), **史** the Scribe (*record*), **史官** the Historian (*remember*), and **滑稽** the Jester (*jest*). The Diviner writes the bone; the Jester argues the opposite before it is filed; the Historian scores it months later. The Scribe keeps the register.
 
 ## Why the practice exists
 
@@ -22,7 +22,7 @@ Three failures repeat across every prediction tradition without filed prediction
 
 1. **Hindsight rewrites memory.** Without a written record, the predictor remembers their accurate calls and forgets their wrong ones, drifting toward an unfounded confidence that erodes future calibration.
 2. **The framework cannot improve.** A framework that produces predictions but never grades them has no feedback loop. It will reproduce its own errors indefinitely.
-3. **Dark Black Swans hide.** Without a record, you cannot tell after the fact whether an event was a true black swan or a [Dark Black Swan](dark-black-swans.md) — the prediction was either filed or it wasn't.
+3. **Grey Swans hide.** Without a record, you cannot tell after the fact whether an event was a true black swan or a [Grey Swan](grey-swans.md) — the prediction was either filed or it wasn't.
 
 The Oracle Bone is the smallest unit of accountability that solves all three.
 
@@ -73,7 +73,7 @@ It also serves a deeper pedagogical purpose: **it teaches students that being wr
 ## See also
 
 - [Convergence (Cloud Theory)](convergence.md) — what the bones are reading
-- [Dark Black Swans](dark-black-swans.md) — what unfiled predictions hide
+- [Grey Swans](grey-swans.md) — what unfiled predictions hide
 - [Aunties](aunties.md) — the operational counterpart; bones are the epistemic counterpart
 - [Naming](naming.md) — why "oracle bone" rather than "prediction log"
 

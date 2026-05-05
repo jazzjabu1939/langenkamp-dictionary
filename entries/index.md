@@ -14,7 +14,7 @@ A complete list of dictionary entries, begun May 2026 and growing. New terms are
 - [**Can't help you understand**](cant-help-you-understand.md) — the practitioner's slogan for what AI assistants cannot, in principle, do for you. About the difference between artifacts and comprehension.
 - [**Closed source**](closed-source.md) — AI models delivered only through vendor-hosted APIs; the strategic counterpart to open source.
 - [**Convergence (Cloud Theory)**](convergence.md) — the recognition that institutional outcomes are produced by multiple independent vectors lighting up in the same window, not by single causes; the discipline that follows from taking that seriously. *(Stub.)*
-- [**Dark Black Swans**](dark-black-swans.md) — high-consequence "surprise" events that were actually predictable from convergence signals but filtered out by the single-arrow apparatus; the darkness is in the observer. *(Stub.)*
+- [**Grey Swans**](grey-swans.md) — high-consequence "surprise" events that were actually predictable from convergence signals but filtered out by the single-arrow apparatus; the darkness is in the observer. *(Stub.)*
 - [**Descartes was wrong**](descartes-was-wrong.md) — a philosophical aside (deliberately provocative) about why the Cartesian picture of mind produces bad questions about AI agents, and what to use instead.
 - [**Dusty Laptop**](dusty-laptop.md) — the minimum-viable hardware entry point into agentic AI. The old machine in the closet that suddenly has a use.
 - [**Embedding**](embedding.md) — meaning as a list of numbers; the foundation of semantic search and RAG.

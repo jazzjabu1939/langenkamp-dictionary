@@ -109,7 +109,7 @@ Cook's willingness to leave on time, with multi-vector self-awareness, is — in
 ## See also
 
 - [Sixfold Skyreading](sixfold-skyreading.md) — the disciplined corrective: re-point the analyst's gaze, on a known cadence, at six independent classes of signal
-- [Dark Black Swans](dark-black-swans.md) — the events the Single-Arrow Fallacy makes invisible until they arrive
+- [Grey Swans](grey-swans.md) — the events the Single-Arrow Fallacy makes invisible until they arrive
 - [Space Cowboy](space-cowboy.md) — the user class most often harmed by acting on single-arrow confidence
 - [Can't help you understand](cant-help-you-understand.md) — the limit case, when even multi-arrow analysis cannot recover the truth
 - [English Major](english-major.md) — the skill that makes multi-arrow specification *writable* in the first place

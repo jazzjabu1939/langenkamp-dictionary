@@ -71,7 +71,7 @@ Most students will never deploy enterprise AI. Most will never write a line of m
 
 - [Convergence (Cloud Theory)](convergence.md)
 - [Single-Arrow Fallacy](single-arrow-fallacy.md)
-- [Dark Black Swans](dark-black-swans.md)
+- [Grey Swans](grey-swans.md)
 - [Oracle Bones](oracle-bones.md)
 - [Can't help you understand](cant-help-you-understand.md)
 

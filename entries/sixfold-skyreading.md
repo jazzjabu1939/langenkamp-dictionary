@@ -83,7 +83,7 @@ The pairing with [Single-Arrow Fallacy](single-arrow-fallacy.md) is intentional:
 ## See also
 
 - [Single-Arrow Fallacy](single-arrow-fallacy.md) — the bias this entry counters
-- [Dark Black Swans](dark-black-swans.md) — what happens when skyreading is missed
+- [Grey Swans](grey-swans.md) — what happens when skyreading is missed
 - [Oracle Bones](oracle-bones.md) — the prediction-filing practice
 - [Aunties](aunties.md) — operational oversight; skyreading is the epistemic counterpart
 - [Space Cowboy](space-cowboy.md) — the user class who most needs this discipline
