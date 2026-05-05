@@ -1,0 +1,82 @@
+# Oracle Bones
+
+*Stub entry — May 3, 2026. To be developed.*
+
+---
+
+## In one sentence
+
+**An Oracle Bone is a dated, falsifiable, written-down prediction filed *before* the event resolves, scored *after* it does, and re-read months later — making prediction accountable in the only way it can be: across time.**
+
+## Where the name comes from
+
+Shang dynasty divination, c. 1600–1046 BCE. Ox scapulae and turtle plastrons were heated until they cracked; the cracks were read by diviners; the *question*, the diviner's *reading*, and often the *outcome* were inscribed on the bone — and **kept**.
+
+The keeping is the discipline. Anyone can predict. Few file the prediction with the date and the reasoning, and almost nobody returns to grade it.
+
+The Shang oracle bones survive 3,000 years later because the inscription itself was the practice. The Court of Sober Aunties — the small fictional advisory council we run inside our system to commission and grade predictions — borrows the name and the discipline directly.
+
+## Why the practice exists
+
+Three failures repeat across every prediction tradition without filed predictions:
+
+1. **Hindsight rewrites memory.** Without a written record, the predictor remembers their accurate calls and forgets their wrong ones, drifting toward an unfounded confidence that erodes future calibration.
+2. **The framework cannot improve.** A framework that produces predictions but never grades them has no feedback loop. It will reproduce its own errors indefinitely.
+3. **Dark Black Swans hide.** Without a record, you cannot tell after the fact whether an event was a true black swan or a [Dark Black Swan](dark-black-swans.md) — the prediction was either filed or it wasn't.
+
+The Oracle Bone is the smallest unit of accountability that solves all three.
+
+## What an Oracle Bone actually contains
+
+Each bone is a single markdown file in `learning-memos/oracle-bones/YYYY-MM-DD-<institution>-<short-name>.md`, with a fixed structure:
+
+1. **The institution.** What entity is the bone reading? (Apple, OpenAI, AACSB, your own household, etc.)
+2. **The window.** What date range is the prediction for? (Specific. *"Within 90 days"* is the minimum; an explicit deadline is better.)
+3. **The convergence reading.** Which of the [six vectors](convergence.md) are lit up, and on what evidence? Which are dark to us, and why?
+4. **The prediction.** A specific, falsifiable claim. *"Cook will announce a successor by July 1, 2026"* is a bone. *"Apple will face challenges this year"* is not.
+5. **The diviner.** Which member of the Court (or which agent) read the bone? Whose call is this?
+6. **The reasoning.** Two paragraphs. Enough to reconstruct the call later.
+7. **The scoring slot.** Empty until the window closes. Then filled in: *fulfilled / partially fulfilled / refuted / untestable*, with a brief note on what we got wrong about the reasoning, even when the prediction was right.
+
+The file is committed to the repo at the moment of filing. The git timestamp is the bone's authentication; it cannot be backdated without leaving traces.
+
+## A working example
+
+**As of May 3, 2026, no bones have been filed yet.** The first will be commissioned this week, almost certainly on a convergence-vulnerable institution that emerged from the May 3 Apple learning memo (candidates: Anthropic, John Deere, AACSB).
+
+The empty bones folder — `learning-memos/oracle-bones/` — is itself a kind of accountability. It documents the *gap* between writing the framework and using it.
+
+## The ritual
+
+Three timing layers, deliberately staggered:
+
+- **Filing:** opportunistic. When a convergence scan flags an institution, file a bone within a week.
+- **Mid-window check:** scheduled. At the halfway point of the prediction window, re-read the bone. *Don't update the prediction* — that violates the discipline. Only note new signals in a side file.
+- **Scoring:** scheduled. At the window close, write the scoring section. Honestly. Then write a one-paragraph *what the framework should learn from this* note.
+- **Annual reading:** May 3 each year. Re-read every bone scored in the prior twelve months. Look for patterns the individual scorings missed.
+
+The annual reading is where framework versioning happens. Convergence Detection v0.1 → v0.2 will be driven by what the first year's bones reveal, not by armchair revision.
+
+## Why it matters in a teaching context
+
+Strategy and forecasting classes routinely teach students to *make* predictions. Almost none teach them to *file and grade* predictions. The Oracle Bone practice — even in its lightest form, three predictions per semester filed in a shared notebook with a scoring meeting in finals week — closes the loop that the rest of the curriculum leaves open.
+
+It also serves a deeper pedagogical purpose: **it teaches students that being wrong, when filed honestly, is more valuable than being right by luck.** The student whose three predictions were all wrong but who learned why is the one developing a usable framework. The student whose three predictions were vaguely correct in a hand-wavy way has learned nothing.
+
+## Trade-offs and warnings
+
+- **Filed bones can hurt.** Reading your own confident wrong prediction six months later is unpleasant. That is the practice. If filing bones never costs anything, you are not filing real predictions.
+- **The temptation to soften.** When scoring, the temptation is to write *"partially fulfilled"* on every bone. Resist it. *Refuted* should be the most common verdict in the early going. The framework only improves if the failures are named honestly.
+- **Don't over-file.** Bones cost time. Three to six per quarter is sustainable; thirty is not. Quality over quantity. A bone that is too vague to score later is just bookkeeping.
+- **Provenance matters.** Each bone names its diviner. *"The Court said so"* is not provenance; *"the historian read this bone"* is. Even when the diviner is a fictional figure, attribution forces specificity.
+
+## See also
+
+- [Convergence (Cloud Theory)](convergence.md) — what the bones are reading
+- [Dark Black Swans](dark-black-swans.md) — what unfiled predictions hide
+- [Aunties](aunties.md) — the operational counterpart; bones are the epistemic counterpart
+- [Naming](naming.md) — why "oracle bone" rather than "prediction log"
+
+---
+
+*Status: stub, May 3, 2026. The first bones will be filed this week; this entry will be expanded with a real worked example once we have one.*
