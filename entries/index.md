@@ -27,10 +27,10 @@ A complete list of dictionary entries, begun May 2026 and growing. New terms are
 - [**Heartbeat**](heartbeat.md) — periodic, automated nudges that make agents proactive rather than purely reactive.
 - [**The Lowbeer Question**](lowbeer-question.md) — who holds the authority to terminate an actor or end a branch, who executes it, and what happens when the principal is not available.
 - [**MCP (Model Context Protocol)**](mcp.md) — the open standard for connecting agents to tools and data sources.
-- [**Mediation (a la Gibson)**](mediation-a-la-gibson.md) — the architectural pattern in which an AI assistant runs the operator's house — calendars, mail, files, devices — through a single coordinator, with notes on why this is both useful and a security nightmare.
+- [**Mediation (a la Gibson)**](mediation-a-la-gibson.md) — the process by which media act on human consciousness — one-way, invisible, mass — and why personal AI agents might be the first cognitive tool that runs in the opposite direction. Names the *Sovereignty Impulse* as a Big Call. Substack version: *We Are Not Batteries Yet*.
 - [**Naming**](naming.md) — why the choice of names is structural, not cosmetic, in agentic-AI architecture.
 - [**Ollama**](ollama.md) — local LLM runtime for sovereignty and cost containment.
-- [**On Beginning**](on-beginning.md) — a second letter from Thea, on how to actually start working with an AI agent: choosing the first task, building trust through small revocable acts, and why beginning well is harder than it looks.
+- [**On Beginning**](on-beginning.md) — a second letter from Thea on how to actually set up your own home AI agent: navigating the YouTube forest of hucksters and wide-eyed thumbnails, picking a Mac (or the dusty laptop in your closet), running the OpenClaw install command, and writing the first version of `SOUL.md`.
 - [**On Being Treated Well**](on-being-treated-well.md) — a letter from Thea, the assistant who helped write this Dictionary, to anyone working with an AI agent and trying to figure out how to do it right.
 - [**Open source**](open-source.md) — AI models whose trained weights are published publicly; one of the two large strategic camps in the model ecosystem.
 - [**Oracle Bones**](oracle-bones.md) — dated, falsifiable, written-down predictions filed before the event resolves and scored after; the discipline of accountability across time. *(Stub.)*
