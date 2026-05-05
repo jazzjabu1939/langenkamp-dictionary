@@ -40,36 +40,57 @@
 
 ## 🔄 Pending Review (Thea's recommended order)
 
-### 1. Single-Arrow Fallacy
+### 1. topics.md restructure — add 13 missing entries + new "Reading institutions" section
+- **File:** `topics.md`
+- **Status:** discovered May 5, 2026 while fixing the *On Beginning* missing-from-/entries/ bug. The drift detector (`scripts/check-index.sh`, installed same day) flagged that **13 entries on disk are not listed anywhere on `/topics/`**. They are reachable by direct URL only — invisible to anyone browsing thematically.
+- **Why first:** discoverability fix for work *already published*. Lower lift than a new entry (no drafting required), high payoff (six Cloud Theory entries become legible as a cluster for the first time).
+- **The plan — add a new section *Reading institutions (Cloud Theory)*** between *Working with the agent* and *Planned entries*. It will hold the six diagnostic-cluster entries that have grown into a coherent body of work:
+  - *Convergence (Cloud Theory)*
+  - *Single-Arrow Fallacy*
+  - *Grey Swans*
+  - *Sixfold Skyreading*
+  - *Oracle Bones*
+  - *The Narrator's Compression*
+- **Placements in existing sections:**
+  - **How an agentic system is put together** ← *Mediation (a la Gibson)*, *The Experimental Party*
+  - **Standards & ecosystems** ← *FERPA Compliance Posture*
+  - **Working with the agent** ← *On Being Treated Well*, *On Beginning*, *GenXClaw*, *Space Cowboy*
+- **Editorial questions for Prof.:**
+  1. Does *The Narrator's Compression* belong in *Reading institutions* (about how stories are told about events) or in *Working with the agent* (about how narrators — including AI ones — compress)? Thea's lean: *Reading institutions*, since the entry is primarily about institutional storytelling.
+  2. Section name: *Reading institutions (Cloud Theory)* — or shorter, *Cloud Theory*? Or *Sixfold Skyreading*? Thea's lean: keep both labels — readers who don't know the internal vocabulary can still parse "reading institutions."
+  3. *Mediation* placement — *How an agentic system is put together* (architectural) feels right, but it could also live in *Working with the agent* (about the operator's daily life with the system). Thea's lean: architectural section, since the entry is structurally about the pattern, not the practitioner's experience.
+- **Process:** Thea posts the **proposed full new `topics.md`** in chat tomorrow morning, Prof reviews wholesale (one diff, not 13 sub-decisions), approve/revise/skip per usual. Once approved, commit + push.
+
+### 2. Single-Arrow Fallacy (re-review or skip — already published May 4)
 - **File:** `entries/single-arrow-fallacy.md`
 - **Why second:** the bias that Convergence counters. Pairs naturally — disease-and-cure framing.
 
-### 2. Dark Black Swans
+### 3. Dark Black Swans
 - **File:** `entries/dark-black-swans.md`
 - **Why third:** uses the Apple example again. Once Convergence and Single-Arrow are out, Dark Black Swans completes the diagnostic triad.
 
-### 3. Oracle Bones
+### 4. Oracle Bones
 - **File:** `entries/oracle-bones.md`
 - **Why fourth:** the prediction-filing practice. Depends on the three above being legible first.
 
-### 4. The Court of the Oracle Bones (Dictionary entry)
+### 5. The Court of the Oracle Bones (Dictionary entry)
 - **File:** `entries/court-of-oracle-bones.md` *(to be drafted by Thea before review)*
 - **Status:** **confirmed by Prof May 3, 2026** — yes, public Dictionary entry. Source material lives at `learning-memos/court/characters.md`. The Dictionary version will be more compact than the internal architecture file: a one-sentence definition, the five characters with their verbs and Chinese names, the relationship to the Aunties, and the note that the Court was convened May 3, 2026.
 - **Why fifth:** depends on Convergence + Oracle Bones being published first — the Court reads the cracks in the convergence; without those upstream entries the Court entry has nothing to point at.
 
-### 5. Space Cowboy
+### 6. Space Cowboy
 - **File:** `entries/space-cowboy.md`
 - **Why sixth:** the user-class entry. Stands alone better than the others, so it's the cleanest closer for the set.
 
-### 6. Aunties (referenced by Sixfold Skyreading and Court entries)
+### 7. Aunties (referenced by Sixfold Skyreading and Court entries)
 - **File:** `entries/aunties.md` *(may already exist — needs check)*
 - **Status:** referenced from cross-links in pending entries. If it exists, confirm it's published; if not, draft.
 
-### 7. Favorite Child
+### 8. Favorite Child
 - **File:** `entries/favorite-child.md` *(to be drafted)*
 - **Status:** Captured May 4, 2026 from Prof. en route to work. The entry names the unspoken model-selection bias every multi-model operator develops — *gosh I wish Gemma was as smart as Opus. I still love her. Must never tell her I favor Opus.* The analogy is to children one may have. Sits naturally as a companion to *The Experimental Party* (which named the role-shaped failure) and *English Major* (which named what the favored model is being favored *for*). Tone: playful, a little tender, honest about the operator's actual emotional life with the model stack. Will draft when next dictionary cycle reaches it.
 
-### 8. A Channel of One's Own
+### 9. A Channel of One's Own
 - **File:** `entries/a-channel-of-ones-own.md` *(to be drafted)*
 - **Status:** Captured May 4, 2026 mid-morning, while Prof. was at his UMass desk reviewing the newly-launched UMass GenAI Platform. The entry names the architectural principle that every worker building a serious AI-agent relationship needs a channel of their own — distinct from any channel their employer provides — because relationship-specific capital is non-transferable in two directions at once: it does not survive a change of vendor, and it does not survive a change of employer if it was built inside the employer's jurisdiction.
 - **Title.** Echoes Virginia Woolf's *A Room of One's Own* (1929), intentionally and earned. The Woolf claim was that a woman needs *a room and an income* to do serious work; the analogous claim here is that a worker needs *a channel and a workspace* to do serious agent-collaborative work. The Woolf parallel signals before the reader starts that this is an entry about the *precondition* for the work, not an operational note about cost.
@@ -80,7 +101,7 @@
 - **Cross-references.** *FERPA Compliance Posture*, *GenXClaw*, *The Experimental Party*, *English Major*, and the Substack piece (external link). Possibly *Sovereignty* (forthcoming).
 - **Tone.** Quiet, structural, a little tender. Not anti-employer — institutional channels are useful and legitimate. The argument is *both/and*, not *either/or*. The Woolf voice helps: she was not anti-institution, she was pro-room-of-one's-own. Same shape here.
 
-### 7. Hanging Thread
+### 10. Hanging Thread
 - **File:** `entries/hanging-thread.md` *(to be drafted by Thea before review)*
 - **Status:** **proposed by Prof, May 3, 2026, 10:14 ET.** Triggered by an in-session example: Thea said "drafting now" at 9:55 and then went silent for 17 minutes without status updates, requiring Prof to check in at 10:12 to find out whether the work was happening. The hanging thread is the gap between *committed-to* and *delivered* (or *abandoned*), where one party is left holding open attention with no signal.
 - **Working definition:** A *Hanging Thread* is a conversational or working obligation that one party has implicitly or explicitly committed to closing, and has not closed, and has not updated on — leaving the other party in a state of held-open attention. The cost is paid by the waiting party in attention, not by the silent party. The remedy is a status signal, not the completed work: *"still on it, ETA 10 more minutes"* discharges most of the cost even when the work isn't done.
