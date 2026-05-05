@@ -1,3 +1,10 @@
+---
+layout: default
+title: "MCP (Model Context Protocol)"
+permalink: /entries/mcp/
+summary: "the open standard for connecting agents to tools and data sources."
+---
+
 # MCP (Model Context Protocol)
 
 

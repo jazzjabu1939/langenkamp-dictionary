@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Heartbeat"
+permalink: /entries/heartbeat/
+summary: "periodic, automated nudges that make agents proactive rather than purely reactive."
+---
+
 # Heartbeat
 
 

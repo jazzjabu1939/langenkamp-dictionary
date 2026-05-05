@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Vector database"
+permalink: /entries/vector-database/
+summary: "specialized storage and retrieval infrastructure for embeddings."
+---
+
 # Vector database
 
 

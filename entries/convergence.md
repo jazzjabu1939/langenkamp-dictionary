@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Convergence (Cloud Theory)
+title: "Convergence (Cloud Theory)"
+permalink: /entries/convergence/
+summary: "the recognition that institutional outcomes are produced by multiple independent vectors lighting up in the same window, not by single causes; the discipline that follows from taking that seriously. *(Stub.)*"
 ---
 
 # Convergence (Cloud Theory)

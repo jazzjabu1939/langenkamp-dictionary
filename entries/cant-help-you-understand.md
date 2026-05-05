@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Can't help you understand"
+permalink: /entries/cant-help-you-understand/
+summary: "the practitioner's slogan for what AI assistants cannot, in principle, do for you. About the difference between artifacts and comprehension."
+---
+
 # Can't help you understand
 
 *A working-practitioner principle, semi-humorous in delivery and entirely serious in substance, about the limits of what an AI assistant can do for its user's mind.*

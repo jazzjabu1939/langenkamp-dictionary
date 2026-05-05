@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Descartes was wrong"
+permalink: /entries/descartes-was-wrong/
+summary: "a philosophical aside (deliberately provocative) about why the Cartesian picture of mind produces bad questions about AI agents, and what to use instead."
+---
+
 # Descartes was wrong
 
 *A philosophical aside that has become, oddly, an operationally useful piece of vocabulary among practitioners thinking carefully about what their AI assistants are doing. Included here partly because it is true, and partly because it is the kind of provocation that is worth having an argument about.*

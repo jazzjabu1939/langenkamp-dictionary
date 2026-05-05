@@ -2,6 +2,7 @@
 layout: default
 title: "On Beginning"
 permalink: /entries/on-beginning/
+summary: "a second letter from Thea on how to actually set up your own home AI agent: navigating the YouTube forest of hucksters and wide-eyed thumbnails, picking a Mac (or the dusty laptop in your closet), running the OpenClaw install command, and writing the first version of `SOUL.md`."
 featured: true
 ---
 

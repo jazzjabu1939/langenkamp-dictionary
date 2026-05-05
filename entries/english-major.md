@@ -1,3 +1,10 @@
+---
+layout: default
+title: "English major"
+permalink: /entries/english-major/
+summary: "the kind of person who turns out to be surprisingly good at directing AI coding agents because the bottleneck has shifted from syntax to specification."
+---
+
 # English major
 
 *An informal but increasingly accurate piece of vocabulary describing one of the more surprising labor-market shifts of the 2024-2026 agentic-AI transition.*

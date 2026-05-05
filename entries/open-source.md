@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Open source"
+permalink: /entries/open-source/
+summary: "AI models whose trained weights are published publicly; one of the two large strategic camps in the model ecosystem."
+---
+
 # Open source
 
 *One of the two large strategic camps in the contemporary AI model ecosystem; the term as it is used in 2026 carries some specific gotchas that the older free-software vocabulary did not.*

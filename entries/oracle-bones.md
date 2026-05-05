@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Oracle Bones"
+permalink: /entries/oracle-bones/
+summary: "dated, falsifiable, written-down predictions filed before the event resolves and scored after; the discipline of accountability across time. *(Stub.)*"
+---
+
 # Oracle Bones
 
 *Stub entry — May 3, 2026. To be developed.*

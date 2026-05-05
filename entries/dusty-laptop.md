@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Dusty Laptop"
+permalink: /entries/dusty-laptop/
+summary: "the minimum-viable hardware entry point into agentic AI. The old machine in the closet that suddenly has a use."
+---
+
 # Dusty Laptop
 
 ---

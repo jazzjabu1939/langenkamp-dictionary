@@ -20,6 +20,16 @@ if [[ ! -f "$INDEX_FILE" ]]; then
   exit 2
 fi
 
+# If index.md uses Liquid templating to auto-generate the listing from
+# site.pages, drift is structurally impossible — every entry file is
+# read at build time. In that case, the hand-written check below does
+# not apply. Detect the template pattern and exit clean.
+if grep -q 'site.pages | where_exp' "$INDEX_FILE"; then
+  count=$(ls "$ENTRIES_DIR"/*.md | grep -v '/index.md$' | wc -l | tr -d ' ')
+  echo "✅ entries/index.md uses Liquid auto-generation ($count entries on disk; all included automatically)"
+  exit 0
+fi
+
 # Entries on disk: every *.md in entries/ except index.md itself
 disk_entries=$(ls "$ENTRIES_DIR"/*.md \
   | xargs -I{} basename {} .md \

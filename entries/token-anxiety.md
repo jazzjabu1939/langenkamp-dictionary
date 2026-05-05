@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Token anxiety"
+permalink: /entries/token-anxiety/
+summary: "the EV-range-anxiety analogue for language models. Forward-looking unease about whether a run will fit in budget."
+---
+
 # Token anxiety
 
 *An informal but increasingly common piece of vocabulary among agentic-AI operators, modeled directly on the electric-vehicle community's concept of range anxiety.*

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Sixfold Skyreading"
+permalink: /entries/sixfold-skyreading/
+summary: "a working framework for seeing institutional events coming, before the press tells you it was inevitable."
+---
+
 # Sixfold Skyreading
 
 *A working framework for seeing institutional events coming, before the press tells you it was inevitable.*

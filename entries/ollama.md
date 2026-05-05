@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Ollama"
+permalink: /entries/ollama/
+summary: "local LLM runtime for sovereignty and cost containment."
+---
+
 # Ollama
 
 

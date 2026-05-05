@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Agent"
+permalink: /entries/agent/
+summary: "what an agent is, how it differs from a chatbot, and why Gibson's *Agency* reads like a design document for 2026."
+---
+
 # Agent
 
 ---

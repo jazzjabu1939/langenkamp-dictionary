@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Token angst"
+permalink: /entries/token-angst/
+summary: "the existential, retrospective cousin of token anxiety. About whether the cumulative cost — in money and in cognitive outsourcing — was worth it."
+---
+
 # Token angst
 
 *A more reflective companion to* token anxiety, *naming a different and more existential feeling about the same underlying resource.*

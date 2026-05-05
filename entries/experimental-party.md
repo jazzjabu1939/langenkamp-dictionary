@@ -1,3 +1,10 @@
+---
+layout: default
+title: "The Experimental Party"
+permalink: /entries/experimental-party/
+summary: "a short cautionary tale about putting the wrong agent in the King Party Hat, with notes for hosts of future birthday parties."
+---
+
 # The Experimental Party
 
 *A short cautionary tale about putting the wrong agent in the King Party Hat, with notes for hosts of future birthday parties.*

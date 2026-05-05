@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Sub-agent"
+permalink: /entries/sub-agent/
+summary: "delegated AI sessions for parallel or focused work."
+---
+
 # Sub-agent
 
 

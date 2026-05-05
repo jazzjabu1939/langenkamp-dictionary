@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Space Cowboy"
+permalink: /entries/space-cowboy/
+summary: "the heavy individual explorer of AI tools, riding the frontier alone on personal high-stakes questions. *(Stub.)*"
+---
+
 # Space Cowboy
 
 *Stub entry — May 3, 2026. To be developed.*

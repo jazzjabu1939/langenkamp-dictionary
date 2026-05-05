@@ -1,3 +1,10 @@
+---
+layout: default
+title: "SOUL.md (agent persona file)"
+permalink: /entries/soul-md/
+summary: "the architectural pattern for giving an agent persistent character."
+---
+
 # SOUL.md (agent persona file)
 
 

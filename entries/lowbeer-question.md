@@ -1,3 +1,10 @@
+---
+layout: default
+title: "The Lowbeer Question"
+permalink: /entries/lowbeer-question/
+summary: "who holds the authority to terminate an actor or end a branch, who executes it, and what happens when the principal is not available."
+---
+
 # The Lowbeer Question
 
 *"Division of responsibilities is the safety property. Concentration is the failure mode."*

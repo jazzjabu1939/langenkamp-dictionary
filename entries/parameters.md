@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Parameters"
+permalink: /entries/parameters/
+summary: "the fundamental unit of measurement for model size, with a useful warning about not confusing size with quality."
+---
+
 # Parameters
 
 *The fundamental unit of measurement for the size — and, very approximately, the capability — of a modern AI model.*

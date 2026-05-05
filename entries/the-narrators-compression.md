@@ -1,3 +1,10 @@
+---
+layout: default
+title: "The Narrator's Compression"
+permalink: /entries/the-narrators-compression/
+summary: "a working hypothesis about how narrators (human and AI) collapse time, cause, and uncertainty into readable sequence, and what gets lost in the compression."
+---
+
 # The Narrator's Compression
 
 *A working hypothesis, not a settled claim — drafted in conversation between an operator and his AI assistant in the eighty-five minutes between morning office work and a 1:25 class. The Dictionary's editorial philosophy of fast-fail / fast-publish applies here especially. This entry is a sketch of an idea worth elaborating, not a finished argument.*

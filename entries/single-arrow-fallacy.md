@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Single-Arrow Fallacy"
+permalink: /entries/single-arrow-fallacy/
+summary: "the implicit belief that a major institutional outcome was produced by a single cause; the bias that *Convergence* exists to counter."
+---
+
 # Single-Arrow Fallacy
 
 *The bias the Dictionary's [Sixfold Skyreading](sixfold-skyreading.md) entry exists to counter — illustrated, here, with bows and arrows in Sherwood Forest.*

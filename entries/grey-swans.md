@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Grey Swans"
+permalink: /entries/grey-swans/
+summary: "high-consequence \"surprise\" events that were actually predictable from convergence signals but filtered out by the single-arrow apparatus; the darkness is in the observer. *(Stub.)*"
+---
+
 # Grey Swans
 
 *Stub entry — May 3, 2026. To be developed.*

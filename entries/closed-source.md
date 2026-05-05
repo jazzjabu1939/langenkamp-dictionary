@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Closed source"
+permalink: /entries/closed-source/
+summary: "AI models delivered only through vendor-hosted APIs; the strategic counterpart to open source."
+---
+
 # Closed source
 
 *The other large strategic camp in the contemporary AI model ecosystem.*

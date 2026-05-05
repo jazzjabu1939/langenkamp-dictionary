@@ -2,6 +2,7 @@
 layout: default
 title: "Mediation (a la Gibson)"
 permalink: /entries/mediation-a-la-gibson/
+summary: "the process by which media act on human consciousness — one-way, invisible, mass — and why personal AI agents might be the first cognitive tool that runs in the opposite direction. Names the *Sovereignty Impulse* as a Big Call. Substack version: *We Are Not Batteries Yet*."
 ---
 
 # Mediation (a la Gibson)

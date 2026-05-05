@@ -1,3 +1,10 @@
+---
+layout: default
+title: "RAG (Retrieval-Augmented Generation)"
+permalink: /entries/rag/
+summary: "the dominant pattern for \"AI that knows my stuff.\""
+---
+
 # RAG (Retrieval-Augmented Generation)
 
 

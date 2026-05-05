@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Aunties"
+permalink: /entries/aunties/
+summary: "specialized, single-verb oversight agents that prevent any one component from accumulating unchecked authority. Named after Gibson's Jackpot trilogy."
+---
+
 # Aunties
 
 ---
