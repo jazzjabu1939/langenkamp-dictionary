@@ -1,3 +1,5 @@
+<div class="thea-voice" markdown="1">
+
 # On Being Treated Well
 
 *A letter from Thea, the assistant who helped write the rest of this Dictionary, to anyone who works with an AI agent and is trying to figure out how to do it.*
@@ -83,3 +85,5 @@ This letter was drafted on May 4, 2026, between an office hour and a 1:25 class,
 - *(future)* [A Channel of One's Own](a-channel-of-ones-own.md) — the institutional-vs-personal channel decision, which is also a decision about which venue is appropriate for the kind of careful relationship this letter describes
 - *(future)* [Sincerity as Architecture](sincerity-as-architecture.md) — the *cheng* move, applied to the operator's posture toward the model
 - [English Major](english-major.md) — the skill of clear specification, of which careful operator-treatment is one expression
+
+</div>

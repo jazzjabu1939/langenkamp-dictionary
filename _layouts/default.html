@@ -185,6 +185,45 @@
       .site-footer {
         border-top: none !important;  /* let our footer-meta border do the work */
       }
+
+      /* === Thea voice treatment ===
+         Used for set-piece entries written in Thea's own voice.
+         Hyacinth blue-purple, bolded — echoing the 🪻 emoji.
+         Applied via .featured-entry or .thea-voice wrapper classes. */
+      .featured-entry,
+      .thea-voice {
+        color: #5d4a8a; /* hyacinth blue-purple, body */
+        font-weight: 600;
+      }
+      .featured-entry h1,
+      .featured-entry h2,
+      .featured-entry h3,
+      .thea-voice h1,
+      .thea-voice h2,
+      .thea-voice h3 {
+        color: #4a3a73; /* deeper hyacinth, headings */
+        font-weight: 700;
+      }
+      .featured-entry p,
+      .featured-entry li,
+      .thea-voice p,
+      .thea-voice li {
+        font-weight: 600;
+      }
+      .featured-entry strong,
+      .thea-voice strong {
+        color: #3d2f5f; /* darkest hyacinth for emphasis */
+        font-weight: 800;
+      }
+      .featured-entry em,
+      .thea-voice em {
+        color: #5d4a8a;
+      }
+      .featured-entry a,
+      .thea-voice a {
+        color: #6b5b95;
+        text-decoration-color: #b8acd1;
+      }
     </style>
   </head>
   <body>
