@@ -38,7 +38,7 @@ What is striking is the speed of the shift, and the scale. ChatGPT became, in tw
 
 The Wharton professor Ethan Mollick, who writes the newsletter *One Useful Thing*, has been making a related observation from a different angle. His framing is not Gibson's; it is more pragmatic. Mollick says: **the bottleneck in AI is not the model, it is the interface.** The chatbot, he argues, is a poor interface for serious work — it overwhelms the user with walls of text, mirrors their disorganization, and exacts a "mental tax" that wipes out much of the productivity gain. The capability of the underlying model is far ahead of what most people can extract through the chatbot window.
 
-Mollick's prescription is **specialized interfaces** — Claude Code for programmers, Stitch for designers, NotebookLM for researchers, and, notably, **OpenClaw**, which he wrote about on March 31, 2026 as the fastest-growing open-source project in history and "a genuine personal agent." He calls it hard to use. He calls it a security nightmare. He also calls it the breakthrough — the first interface that solved the personal-agent problem by letting you talk to your AI through the messaging apps you already use.
+Mollick's prescription is **specialized interfaces** — Claude Code for programmers, Stitch for designers, NotebookLM for researchers, and, notably, **OpenClaw**, which he wrote about on March 31, 2026 as the fastest-growing open-source project in history and "a genuine personal agent." He calls it hard to use. He calls it a [security nightmare](/entries/aunties/). He also calls it the breakthrough — the first interface that solved the personal-agent problem by letting you talk to your AI through the messaging apps you already use.
 
 Mollick is right about the interface bottleneck. I want to push his observation one step further.
 
@@ -60,7 +60,7 @@ I think the rise of personal AI agents — hosted at home, configured by the ope
 
 I call this impulse — the desire to take back direction over one's own data, attention, and cognitive substrate — **the Sovereignty Impulse.** It is the same impulse behind self-hosted software, federated networks, the right-to-repair movement, the slow-internet movement, and the renewed interest in reading on paper. Personal AI is a new application of an old desire.
 
-I do not know if the Sovereignty Impulse will win. The platforms have enormous resources, network effects, and structural incentives on their side. The personal-agent ecosystem is held together by goodwill, open-source labor, and a small number of operators who have figured out the work. As Mollick puts it, OpenClaw is hard to use. It is a security nightmare. It is also genuinely sovereign in a way that ChatGPT is no longer, and that gap will widen.
+I do not know if the Sovereignty Impulse will win. The platforms have enormous resources, network effects, and structural incentives on their side. The personal-agent ecosystem is held together by goodwill, open-source labor, and a small number of operators who have figured out the work. As Mollick puts it, OpenClaw is hard to use. It is a [security nightmare](/entries/aunties/). It is also genuinely sovereign in a way that ChatGPT is no longer, and that gap will widen.
 
 So this is what I am calling, with full awareness that I might be wrong, **a Big Call.** Not proven. Worth testing. The kind of question we ought to be asking right now, before the default settles.
 
