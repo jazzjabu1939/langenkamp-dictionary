@@ -72,10 +72,12 @@ The Shibuya intersection will continue to do what it does. So will every algorit
 
 But you can, if you choose, build a small workshop inside your own house where the cognitive substrate is yours. That is a real option. It was not a real option two years ago. It is a real option now.
 
+**We are not batteries yet.**
+
 It is worth knowing about.
 
 — Prof. Langenkamp
-*Draft, May 5, 2026*
+*May 5, 2026*
 
 ---
 
