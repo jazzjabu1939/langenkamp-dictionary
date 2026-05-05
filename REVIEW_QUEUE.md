@@ -40,10 +40,22 @@
 
 ## 🔄 Pending Review (Thea's recommended order)
 
-### 1. topics.md restructure — add 13 missing entries + new "Reading institutions" section
-- **File:** `topics.md`
-- **Status:** discovered May 5, 2026 while fixing the *On Beginning* missing-from-/entries/ bug. The drift detector (`scripts/check-index.sh`, installed same day) flagged that **13 entries on disk are not listed anywhere on `/topics/`**. They are reachable by direct URL only — invisible to anyone browsing thematically.
-- **Why first:** discoverability fix for work *already published*. Lower lift than a new entry (no drafting required), high payoff (six Cloud Theory entries become legible as a cluster for the first time).
+### 1. The catalog-drift fix (two parts — one structural, one editorial)
+
+**Why first:** Discovered May 5, 2026 while fixing the *On Beginning* missing-from-/entries/ bug. The pattern keeps recurring: new entries get published as files but forgotten in the catalog pages. This item solves it permanently.
+
+#### Part A — Structural fix for `entries/index.md` (already drafted, awaiting review)
+
+- **What's drafted on disk (uncommitted):** Every entry file now has `title:`, `permalink:`, and `summary:` in frontmatter. `entries/index.md` is now a six-line Liquid template that reads `site.pages` and generates the alphabetical list at build time.
+- **The result:** drift becomes structurally impossible. Add a new entry file with proper frontmatter, the index includes it automatically. No second commit. No checker needed for that page (the checker, `scripts/check-index.sh`, already detects this pattern and exits clean).
+- **Files changed:** all 38 entry files (frontmatter added) + `entries/index.md` (replaced with Liquid loop). 42 files in working tree.
+- **What Prof needs to review:** (1) the Liquid template itself — 6 lines of templating logic in `entries/index.md`; (2) a few sample entries to confirm the auto-generated `summary:` text reads cleanly (Thea wrote them by lifting the existing one-line descriptions from the old hand-maintained list).
+- **What to test before publishing:** local Jekyll build (`bundle exec jekyll serve`) and visual inspection of `/entries/` at `localhost:4000`. The page should look identical to today's site, just with the listing now generated.
+- **Risk:** low. If the template breaks, the page renders empty rather than wrong, and reverting is one commit.
+
+#### Part B — Editorial fix for `topics.md` (still to draft)
+
+- **The problem:** **13 entries on disk are not listed anywhere on `/topics/`**. They are reachable by direct URL only — invisible to anyone browsing thematically. The Liquid auto-gen approach does *not* solve this (topics is editorial, not alphabetical).
 - **The plan — add a new section *Reading institutions (Cloud Theory)*** between *Working with the agent* and *Planned entries*. It will hold the six diagnostic-cluster entries that have grown into a coherent body of work:
   - *Convergence (Cloud Theory)*
   - *Single-Arrow Fallacy*
@@ -59,6 +71,7 @@
   1. Does *The Narrator's Compression* belong in *Reading institutions* (about how stories are told about events) or in *Working with the agent* (about how narrators — including AI ones — compress)? Thea's lean: *Reading institutions*, since the entry is primarily about institutional storytelling.
   2. Section name: *Reading institutions (Cloud Theory)* — or shorter, *Cloud Theory*? Or *Sixfold Skyreading*? Thea's lean: keep both labels — readers who don't know the internal vocabulary can still parse "reading institutions."
   3. *Mediation* placement — *How an agentic system is put together* (architectural) feels right, but it could also live in *Working with the agent* (about the operator's daily life with the system). Thea's lean: architectural section, since the entry is structurally about the pattern, not the practitioner's experience.
+  4. Should `topics.md` *also* move to a Liquid auto-generation pattern, with each entry declaring its `topic:` in frontmatter? More work; eliminates this drift class permanently. Thea's lean: yes, but as a follow-up after Part B ships in its hand-edited form.
 - **Process:** Thea posts the **proposed full new `topics.md`** in chat tomorrow morning, Prof reviews wholesale (one diff, not 13 sub-decisions), approve/revise/skip per usual. Once approved, commit + push.
 
 ### 2. Single-Arrow Fallacy (re-review or skip — already published May 4)
