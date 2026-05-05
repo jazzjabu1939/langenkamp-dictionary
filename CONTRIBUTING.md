@@ -37,7 +37,11 @@ Entries also end with a short **Related entries** line so readers can traverse t
 1. Fork the repo.
 2. Create a new file in `entries/` with a slug-style filename (lowercase, hyphenated): `entries/your-term-here.md`.
 3. Use the structure above.
-4. Open a pull request.
+4. **Add the entry to `entries/index.md`** in alphabetical position, with a one-line description.
+5. (Optional but encouraged) Add it to the relevant section of `topics.md`.
+6. Open a pull request.
+
+A pre-commit hook (`scripts/check-index.sh`) blocks commits where `entries/index.md` is out of sync with the files in `entries/`. If you have not run it before, install it once with `bash scripts/install-hooks.sh`. The same check runs in CI on every push and pull request.
 
 For corrections to existing entries, open a pull request that explains the correction in the PR description. Small typo PRs are welcome and merged quickly.
 

@@ -1,0 +1,15 @@
+name: Check entries index
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify entries/index.md is in sync with entries/*.md
+        run: bash scripts/check-index.sh
