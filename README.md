@@ -69,3 +69,4 @@ If you find an error, please tell me. The whole point of putting this on GitHub 
 ---
 
 *Begun: May 2026. Maintained at: github.com/jazzjabu1939/langenkamp-dictionary.*
+
