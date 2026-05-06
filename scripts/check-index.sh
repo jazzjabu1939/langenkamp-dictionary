@@ -30,11 +30,21 @@ if grep -q 'site.pages | where_exp' "$INDEX_FILE"; then
   exit 0
 fi
 
-# Entries on disk: every *.md in entries/ except index.md itself
-disk_entries=$(ls "$ENTRIES_DIR"/*.md \
-  | xargs -I{} basename {} .md \
-  | grep -v '^index$' \
-  | sort)
+# Entries on disk: every *.md in entries/ except index.md itself,
+# AND skipping any entry with `published: false` in its frontmatter
+# (drafts in review are deliberately not in the public index yet).
+disk_entries=$(
+  for f in "$ENTRIES_DIR"/*.md; do
+    base=$(basename "$f" .md)
+    [[ "$base" == "index" ]] && continue
+    # Read the YAML frontmatter (between the first two '---' lines).
+    # If 'published: false' appears there, skip the entry.
+    if awk '/^---$/{c++; next} c==1{print} c==2{exit}' "$f" | grep -qE '^published:[[:space:]]*false'; then
+      continue
+    fi
+    echo "$base"
+  done | sort
+)
 
 # Entries listed in index.md: extract slugs from markdown links like (slug.md)
 indexed_entries=$(grep -oE '\(([a-z0-9-]+)\.md\)' "$INDEX_FILE" \

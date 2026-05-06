@@ -26,6 +26,7 @@ A complete list of dictionary entries, begun May 2026 and growing. New terms are
 - [**GenXClaw**](genxclaw.md) — a portmanteau of "Generation X" and "OpenClaw," naming both a configuration and a condition.
 - [**Grey Swans**](grey-swans.md) — high-consequence "surprise" events that were actually predictable from convergence signals but filtered out by the single-arrow apparatus; the darkness is in the observer. *(Stub.)*
 - [**Heartbeat**](heartbeat.md) — periodic, automated nudges that make agents proactive rather than purely reactive.
+- [**Inverted Funnel**](inverted-funnel.md) — the structural collapse of the seller-controlled marketing funnel when buyers' AI agents arrive at vendors with intent, comparison, and payment authority already formed; the end of the institutional arrangement that has organised digital commerce since roughly 2005.
 - [**The Lowbeer Question**](lowbeer-question.md) — who holds the authority to terminate an actor or end a branch, who executes it, and what happens when the principal is not available.
 - [**MCP (Model Context Protocol)**](mcp.md) — the open standard for connecting agents to tools and data sources.
 - [**Mediation (a la Gibson)**](mediation-a-la-gibson.md) — the process by which media act on human consciousness — one-way, invisible, mass — and why personal AI agents might be the first cognitive tool that runs in the opposite direction. Names the *Sovereignty Impulse* as a Big Call. Substack version: *We Are Not Batteries Yet*.
