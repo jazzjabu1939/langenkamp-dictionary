@@ -45,6 +45,7 @@ A complete list of dictionary entries, begun May 2026 and growing. New terms are
 - [**Space Cowboy**](space-cowboy.md) — the heavy individual explorer of AI tools, riding the frontier alone on personal high-stakes questions. *(Stub.)*
 - [**Sub-agent**](sub-agent.md) — delegated AI sessions for parallel or focused work.
 - [**The Narrator's Compression**](the-narrators-compression.md) — a working hypothesis about how narrators (human and AI) collapse time, cause, and uncertainty into readable sequence, and what gets lost in the compression.
+- [**Time for Tea with The Oracles**](time-for-tea-with-the-oracles.md) — the weekly Sunday ritual that gives the Oracle Court something to do; five voices, one bone, one Du Fu poem if anyone says no.
 - [**Token angst**](token-angst.md) — the existential, retrospective cousin of token anxiety. About whether the cumulative cost — in money and in cognitive outsourcing — was worth it.
 - [**Token anxiety**](token-anxiety.md) — the EV-range-anxiety analogue for language models. Forward-looking unease about whether a run will fit in budget.
 - [**Token burn**](token-burn.md) — the rate at which an agent silently transmutes electricity and credit-card balance into JSON. With taxonomy and stages of grief.
