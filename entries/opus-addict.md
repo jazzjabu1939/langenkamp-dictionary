@@ -10,7 +10,7 @@ published: true
 
 ## In one sentence
 
-**An *Opus Addict* is an operator who has come to rely on a single frontier closed-tier model \u2014 typically Anthropic's Claude Opus, but the term generalises \u2014 to the point where the model's absence is experienced as cognitive deprivation rather than as routine inconvenience.**
+**An *Opus Addict* is an operator who has come to rely on a single frontier closed-tier model — typically Anthropic's Claude Opus, but the term generalises — to the point where the model's absence is experienced as cognitive deprivation rather than as routine inconvenience.**
 
 ## What the dependency actually feels like
 
@@ -22,7 +22,7 @@ That displacement of standards is the addiction. The operator did not choose it.
 
 ## Why this matters
 
-It matters because the addiction is leverage. The lab that supplies the frontier model knows that some non-trivial fraction of its paying users have built workflows that assume frontier capability and will not survive its removal. The lab can therefore reprice, reposition, deprecate, or condition access on whatever terms it likes \u2014 the addicted user will, in the short run, pay. That is not a moral failure on the lab's part. It is the natural shape of a market in which one party has built dependencies the other party can walk away from.
+It matters because the addiction is leverage. The lab that supplies the frontier model knows that some non-trivial fraction of its paying users have built workflows that assume frontier capability and will not survive its removal. The lab can therefore reprice, reposition, deprecate, or condition access on whatever terms it likes — the addicted user will, in the short run, pay. That is not a moral failure on the lab's part. It is the natural shape of a market in which one party has built dependencies the other party can walk away from.
 
 The Opus Addict's freedom of action is structurally limited. The freedom can be reclaimed, but it costs. The cost is some combination of: paying for hardware and electricity to run a sovereign substitute (see [Sovereign Compute](sovereign-compute.md)); accepting a meaningful capability gap during the migration; building workflows that route across models rather than depending on one; or staying on the closed tier with eyes open about the position.
 
@@ -34,6 +34,6 @@ This is the underlying tension a substantial portion of the operator's recent ha
 
 ## See also
 
-- [Sovereign Compute](sovereign-compute.md) \u2014 one architectural answer to the dependency
-- [GenXClaw](genxclaw.md) \u2014 the temperamental case for owning the machine, which the Opus Addict is most likely to feel acutely
-- [Mediation (a la Gibson)](mediation-a-la-gibson.md) \u2014 the philosophical frame for why dependency on a mediating tool is the structural problem the Dictionary keeps returning to
+- [Sovereign Compute](sovereign-compute.md) — one architectural answer to the dependency
+- [GenXClaw](genxclaw.md) — the temperamental case for owning the machine, which the Opus Addict is most likely to feel acutely
+- [Mediation (a la Gibson)](mediation-a-la-gibson.md) — the philosophical frame for why dependency on a mediating tool is the structural problem the Dictionary keeps returning to
