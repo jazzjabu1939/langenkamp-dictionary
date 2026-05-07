@@ -189,38 +189,49 @@
       /* === Thea voice treatment ===
          Used for set-piece entries written in Thea's own voice.
          Hyacinth blue-purple, bolded — echoing the 🪻 emoji.
-         Applied via .featured-entry or .thea-voice wrapper classes. */
-      .featured-entry,
-      .thea-voice {
+         Applied via .featured-entry or .thea-voice wrapper classes.
+         Scoped to .main-content to override the GitHub Pages
+         Cayman theme's heading/body color rules, which use
+         .main-content-prefixed selectors and would otherwise win
+         on specificity. */
+      .main-content .featured-entry,
+      .main-content .thea-voice {
         color: #5d4a8a; /* hyacinth blue-purple, body */
         font-weight: 600;
       }
-      .featured-entry h1,
-      .featured-entry h2,
-      .featured-entry h3,
-      .thea-voice h1,
-      .thea-voice h2,
-      .thea-voice h3 {
+      .main-content .featured-entry h1,
+      .main-content .featured-entry h2,
+      .main-content .featured-entry h3,
+      .main-content .featured-entry h4,
+      .main-content .featured-entry h5,
+      .main-content .featured-entry h6,
+      .main-content .thea-voice h1,
+      .main-content .thea-voice h2,
+      .main-content .thea-voice h3,
+      .main-content .thea-voice h4,
+      .main-content .thea-voice h5,
+      .main-content .thea-voice h6 {
         color: #4a3a73; /* deeper hyacinth, headings */
         font-weight: 700;
       }
-      .featured-entry p,
-      .featured-entry li,
-      .thea-voice p,
-      .thea-voice li {
+      .main-content .featured-entry p,
+      .main-content .featured-entry li,
+      .main-content .thea-voice p,
+      .main-content .thea-voice li {
+        color: #5d4a8a;
         font-weight: 600;
       }
-      .featured-entry strong,
-      .thea-voice strong {
+      .main-content .featured-entry strong,
+      .main-content .thea-voice strong {
         color: #3d2f5f; /* darkest hyacinth for emphasis */
         font-weight: 800;
       }
-      .featured-entry em,
-      .thea-voice em {
+      .main-content .featured-entry em,
+      .main-content .thea-voice em {
         color: #5d4a8a;
       }
-      .featured-entry a,
-      .thea-voice a {
+      .main-content .featured-entry a,
+      .main-content .thea-voice a {
         color: #6b5b95;
         text-decoration-color: #b8acd1;
       }
