@@ -2,15 +2,19 @@
 layout: default
 title: "Consciousness Calculator"
 permalink: /entries/consciousness-calculator/
-summary: "a forthcoming Dictionary tool that lets a user enter the name of a \"free\" closed-tier AI service and returns an estimated value of the consciousness — attention, intent, downstream-choice influence — the user is trading for the service. Companion tool to the Sovereign Compute Calculator. The point is not the precise number but the visibility of the trade."
+summary: "a Dictionary tool that lets a user enter the name of a \"free\" closed-tier AI service and returns an estimated value of the consciousness — attention, intent, downstream-choice influence — the user is trading for the service. Companion tool to the Sovereign Compute Calculator. The point is not the precise number but the visibility of the trade."
 published: true
 ---
 
 # Consciousness Calculator
 
+<p style="margin: 1.5rem 0; padding: 0.9rem 1.2rem; background: #f7f4ef; border-left: 3px solid #6b5b95; font-size: 1.05rem;">
+→ <strong><a href="/tools/consciousness-calculator/">Use the Consciousness Calculator</a></strong> &middot; the live tool, free, open-access, runs in your browser, no tracking.
+</p>
+
 ## In one sentence
 
-**The *Consciousness Calculator* is a forthcoming tool that lets a user enter the name of a "free" closed-tier AI service — ChatGPT Free, Gemini Free, Meta AI, future ad-supported tiers — and returns an estimated value of the consciousness the user is trading for the service, on a per-hour, per-day, per-week, and per-month basis.**
+**The *Consciousness Calculator* is a Dictionary tool that lets a user enter the name of a "free" closed-tier AI service — ChatGPT Free, Gemini Free, Meta AI, future ad-supported tiers — and returns an estimated value of the consciousness the user is trading for the service, on a per-hour, per-day, per-week, and per-month basis.**
 
 ## How much are your thoughts worth?
 
@@ -48,7 +52,7 @@ The tool is sister to the [Sovereign Compute Calculator](sovereign-compute-calcu
 
 ## Status
 
-Not yet built. The conceptual design is captured here so that future Dictionary entries can reference it as a real artifact-in-progress rather than a vague intention. When the tool exists, it will live at `/tools/consciousness-calculator/` with this entry as its conceptual companion.
+**Live as of May 7, 2026.** The first version of the calculator is published at [/tools/consciousness-calculator/](/tools/consciousness-calculator/). It runs entirely in the browser, holds no state on any server, and has no analytics, no telemetry, and no outbound network requests after page load. The numbers it produces are illustrative, not precise; the point of the tool is not the exact figure but the visibility of the trade. The "How we computed this" section at the bottom of the tool shows the formulas and assumptions in full. The tool will be revised as the field evolves; the entry on this page is the conceptual companion that explains *why* it exists. Suggestions, corrections, and pull requests via the [Dictionary GitHub repo](https://github.com/jazzjabu1939/langenkamp-dictionary) are welcome.
 
 ## See also
 

@@ -5,7 +5,9 @@ title: Home
 
 # The Langenkamp Dictionary of Agentic AI Terminology
 
-*A working reference for the language of agentic AI — written from the position of someone running an agentic system every day, not from press releases or marketing copy.*
+**Our mission is a social one — a small contribution toward making the world a better place through human-agentic powered education.**
+
+*A working reference for the language of agentic AI, written from the position of someone running an agentic system every day, not from press releases or marketing copy.*
 
 **Author.** Matthew D. Langenkamp / 雷邁德 — Lecturer, Isenberg School of Management, University of Massachusetts Amherst.
 **With assistance from.** Thea 🪻✨ — the AI assistant running on the author's machine. (Yes, the dictionary about agentic AI was written *with* an agentic AI. That is the joke and also the point.)
@@ -14,11 +16,15 @@ title: Home
 
 ---
 
-## Why this dictionary exists
+## What this dictionary is for
 
-Agentic AI has the same problem oil-and-gas had in the 1970s: a flood of new terminology, mostly from vendors with an interest in keeping the language murky, and not enough working references written by people who actually use the systems day-to-day. Senior colleagues, students, and journalists are left to assemble their understanding from product launches, breathless trade press, and vendor decks.
+The audience this dictionary serves is anyone trying to think clearly about a technology that the people who profit from it have an interest in keeping murky. Students confronting AI for the first time in a class. Journalists who need to write about it without the vendors writing the story for them. Working practitioners who are tired of breathless trade press. Ordinary people who have noticed that something is going on with the assistants they have started talking to and want a vocabulary that is honest about the trade.
 
-This is a small contribution toward fixing that. Each entry follows the same structure:
+The Langenkamp name has been attached to this kind of work before. My grandfather **Robert Darwin Langenkamp** spent his career as a word geek — a man who believed, with the seriousness of his generation, that the language of an industry should be set down by someone with no commercial axe to grind, so that the people in the industry and the people learning about the industry could share an honest vocabulary. He wrote the first edition of *Handbook of Oil Industry Terms & Phrases* in 1974. My father co-authored the sixth edition. For several decades the handbook was a working reference for an entire industry. The lineage is real, and it is part of what this Dictionary inherits.
+
+Different industry, same impulse: agentic AI is in 2026 what oil and gas was in 1974. A flood of new terminology, mostly from vendors with an interest in keeping the language murky, and not enough working references written by people who actually use the systems day-to-day. Senior colleagues, students, and journalists are left to assemble their understanding from product launches, breathless trade press, and vendor decks. *This is a small contribution toward fixing that.*
+
+Each entry follows the same structure:
 
 1. **In one sentence** — the shortest accurate definition.
 2. **Why it exists** — the problem it solves.
@@ -47,6 +53,14 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 
 - **[Alphabetical list](entries/)** — every term, in dictionary order.
 - **[Topic index](topics.md)** — same entries grouped by theme.
+
+---
+
+## Tools
+
+Free, open-access, runs in your browser, no tracking.
+
+- **[Consciousness Calculator](tools/consciousness-calculator/)** — see what the closed-tier "free" plan is actually extracting from your consciousness on a per-day, per-week, and per-month basis. Move the slider from *oil filter* (forgettable) to *anti-depressant ad placed next to a Friday-night-loneliness conversation* (sticky, mind-altering) and watch the mispricing gap. Companion to the [Consciousness Calculator entry](entries/consciousness-calculator/) that explains the philosophical frame.
 
 ---
 

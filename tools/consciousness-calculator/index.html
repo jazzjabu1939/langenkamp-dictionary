@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consciousness Calculator — The Langenkamp Dictionary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    /* ── reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:   #faf8f4;
+      --paper:   #f5f2ec;
+      --border:  #ddd8cc;
+      --mid:     #888070;
+      --text:    #2a2520;
+      --accent:  #5d4a8a;
+      --accent2: #4a3a73;
+      --mono:    'JetBrains Mono', monospace;
+      --serif:   'Source Serif 4', Georgia, serif;
+      --sans:    'Space Grotesk', system-ui, sans-serif;
+      --gap:     var(--mispricing-color, #c0392b);
+    }
+
+    body {
+      font-family: var(--serif);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--cream);
+      padding: 0;
+    }
+
+    /* ── header ── */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      color: var(--mid);
+    }
+    .site-header a { color: var(--accent); text-decoration: none; }
+    .site-header a:hover { text-decoration: underline; }
+
+    /* ── hero ── */
+    .hero {
+      padding: 3rem 2rem 2rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-family: var(--sans);
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+    .hero .subtitle {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--mid);
+      font-size: 1rem;
+    }
+
+    /* ── main layout ── */
+    .calculator-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 660px) {
+      .calculator-wrap { grid-template-columns: 1fr; padding: 0 1rem 3rem; }
+      .hero { padding: 2rem 1rem 1.5rem; }
+    }
+
+    /* ── panels ── */
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+    }
+    .panel h2 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      margin-bottom: 1.4rem;
+    }
+
+    /* ── form controls ── */
+    .field { margin-bottom: 1.5rem; }
+    .field:last-child { margin-bottom: 0; }
+
+    label {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+      color: var(--text);
+    }
+    label .hint {
+      font-weight: 400;
+      color: var(--mid);
+      font-size: 0.78rem;
+    }
+
+    select, input[type="number"] {
+      width: 100%;
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      background: var(--cream);
+      color: var(--text);
+      appearance: none;
+    }
+    select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888070' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      padding-right: 2rem;
+    }
+
+    /* slider */
+    .slider-wrap { position: relative; }
+    input[type="range"] {
+      width: 100%;
+      margin: 0.4rem 0 0.2rem;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--mid);
+      margin-top: 0.1rem;
+    }
+
+    .slider-value {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      margin-top: 0.3rem;
+    }
+
+    /* ── output panel ── */
+    .output-panel {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+    }
+    .output-panel h2 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      margin-bottom: 1.2rem;
+    }
+
+    /* gap headline */
+    .gap-block {
+      border-left: 3px solid #c0392b;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .gap-block .gap-label {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c0392b;
+      margin-bottom: 0.15rem;
+    }
+    .gap-block .gap-amount {
+      font-family: var(--mono);
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .gap-block .gap-sub {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.82rem;
+      color: var(--mid);
+      margin-top: 0.2rem;
+    }
+    .gap-block.favors-user { border-color: #27ae60; }
+    .gap-block.favors-user .gap-label { color: #27ae60; }
+
+    /* extracted value grid */
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.4rem;
+    }
+    .value-cell {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.65rem 0.75rem;
+      text-align: center;
+    }
+    .value-cell .vc-label {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--mid);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .value-cell .vc-num {
+      font-family: var(--mono);
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* ad caption */
+    .ad-caption {
+      background: #fffaf0;
+      border: 1px solid #e8d8a0;
+      border-radius: 3px;
+      padding: 0.7rem 0.9rem;
+      font-family: var(--serif);
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: var(--text);
+      margin-bottom: 1.2rem;
+    }
+    .ad-caption strong { font-weight: 600; }
+
+    /* forward projection */
+    .project-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      user-select: none;
+    }
+    .project-toggle input[type="checkbox"] { accent-color: var(--accent); cursor: pointer; }
+
+    .projection-table {
+      display: none;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.5rem;
+    }
+    .projection-table.visible { display: table; }
+    .projection-table th {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--mid);
+      font-weight: 600;
+      text-align: left;
+      padding: 0.3rem 0.5rem 0.3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .projection-table td {
+      padding: 0.35rem 0.5rem 0.35rem 0;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+    }
+    .projection-table tr:last-child td { border-bottom: none; }
+
+    .no-ads-notice {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--mid);
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.7rem 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ── methodology ── */
+    .methodology {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+    }
+    .methodology details {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+    .methodology summary {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent2);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .methodology summary::before {
+      content: '▶';
+      font-size: 0.65rem;
+      transition: transform 0.15s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .methodology .body {
+      padding: 1.2rem 0 0.5rem;
+      font-size: 0.9rem;
+      color: var(--text);
+      max-width: 680px;
+    }
+    .methodology .body p { margin-bottom: 0.8rem; }
+    .methodology .body ul { margin: 0.5rem 0 0.8rem 1.2rem; }
+    .methodology .body li { margin-bottom: 0.3rem; }
+    .methodology .body code {
+      font-family: var(--mono);
+      font-size: 0.82em;
+      background: var(--paper);
+      padding: 0.1em 0.35em;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+    }
+
+    /* back link */
+    .back-link {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 2rem;
+      font-family: var(--sans);
+      font-size: 0.85rem;
+    }
+    .back-link a { color: var(--accent); text-decoration: none; }
+    .back-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/">&larr; The Langenkamp Dictionary of Agentic AI Terminology</a>
+</header>
+
+<div class="hero">
+  <h1>Consciousness Calculator</h1>
+  <p class="subtitle">What is the "free" tier actually costing you? An attempt to make the trade visible.</p>
+</div>
+
+<div class="calculator-wrap">
+  <!-- ── Inputs ── -->
+  <div class="panel" id="inputs-panel">
+    <h2>Your Usage</h2>
+
+    <div class="field">
+      <label>Service <span class="hint">— which platform?</span></label>
+      <select id="service">
+        <option value="chatgpt-free">ChatGPT Free (OpenAI)</option>
+        <option value="chatgpt-plus">ChatGPT Plus — $20/mo</option>
+        <option value="gemini-free">Gemini Free (Google)</option>
+        <option value="meta-ai">Meta AI (Facebook/Instagram)</option>
+        <option value="other-free">Other free AI service</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Hours per day <span class="hint" id="hours-display">— 1 hr</span></label>
+      <div class="slider-wrap">
+        <input type="range" id="hours" min="0" max="8" step="0.25" value="1" />
+        <div class="slider-labels">
+          <span>0</span><span>2</span><span>4</span><span>6</span><span>8 hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Ad stickiness <span class="hint">— intrusion level of advertising placed</span></label>
+      <div class="slider-wrap">
+        <input type="range" id="stickiness" min="0" max="100" step="1" value="30" />
+        <div class="slider-labels">
+          <span>Oil filter</span><span>New car</span><span>Rx drug</span><span>Anti-depressant</span>
+        </div>
+      </div>
+      <div class="slider-value" id="stickiness-label">Stickiness: moderate</div>
+    </div>
+
+    <div class="field">
+      <label>Income bracket <span class="hint">— affects advertiser bids</span></label>
+      <select id="income">
+        <option value="1">Below median (&lt;$50k)</option>
+        <option value="1.5" selected>Median ($50k–$100k)</option>
+        <option value="2.2">Upper middle ($100k–$200k)</option>
+        <option value="3">Top 10% ($200k+)</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Your minimum price for sticky advertising
+        <span class="hint">— $/mo you'd require to consent</span>
+      </label>
+      <input type="number" id="threshold" value="1000" min="0" step="50" />
+    </div>
+  </div>
+
+  <!-- ── Outputs ── -->
+  <div class="output-panel" id="outputs-panel">
+    <h2>Estimated Value Extracted</h2>
+
+    <div id="no-ads-notice" class="no-ads-notice" style="display:none;">
+      <strong>Note:</strong> This service does not currently run ads in your AI assistant interactions.
+      The figures below model the <em>latent value</em> the platform holds — what it
+      <em>could</em> extract if it introduced the ad-supported tier that has been
+      publicly discussed, or what it is extracting indirectly via behavioral data.
+    </div>
+
+    <div class="value-grid">
+      <div class="value-cell">
+        <span class="vc-label">Per Day</span>
+        <span class="vc-num" id="out-day">—</span>
+      </div>
+      <div class="value-cell">
+        <span class="vc-label">Per Week</span>
+        <span class="vc-num" id="out-week">—</span>
+      </div>
+      <div class="value-cell">
+        <span class="vc-label">Per Month</span>
+        <span class="vc-num" id="out-month">—</span>
+      </div>
+    </div>
+
+    <div id="ad-caption" class="ad-caption"></div>
+
+    <div class="gap-block" id="gap-block">
+      <div class="gap-label" id="gap-label">Mispricing gap (per month)</div>
+      <div class="gap-amount" id="gap-amount">—</div>
+      <div class="gap-sub" id="gap-sub"></div>
+    </div>
+
+    <label class="project-toggle">
+      <input type="checkbox" id="project-toggle" />
+      Project forward (price escalation over 3 years)
+    </label>
+
+    <table class="projection-table" id="projection-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Sub cost/mo</th>
+          <th>Extracted/mo</th>
+          <th>Gap</th>
+        </tr>
+      </thead>
+      <tbody id="projection-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── Methodology ── -->
+<div class="methodology">
+  <details>
+    <summary>How we computed this</summary>
+    <div class="body">
+      <p>
+        These figures are <strong>illustrative, not precise.</strong> The point is not to produce an
+        exact number; it is to make the trade visible. The inputs are proxies; the outputs are
+        order-of-magnitude estimates. See the
+        <a href="/entries/consciousness-calculator/" style="color:var(--accent);">Dictionary entry</a>
+        for the conceptual framing.
+      </p>
+
+      <p><strong>Core formula:</strong></p>
+      <p>
+        <code>value/month = (base_CPM × intent_multiplier × stickiness_multiplier × income_multiplier) / 1000 × impressions/hour × hours/day × 30</code>
+      </p>
+
+      <p><strong>Base CPM by service (US, programmatic, $ per 1,000 impressions):</strong></p>
+      <ul>
+        <li>ChatGPT Free — $15 (search-intent-adjacent; OpenAI has discussed ad tiers)</li>
+        <li>ChatGPT Plus — $0 (paid plan; no ad model currently)</li>
+        <li>Gemini Free — $12 (Google's programmatic infrastructure is the most mature in the world)</li>
+        <li>Meta AI — $20 (Meta's targeting is the highest-value in consumer programmatic)</li>
+        <li>Other free AI — $8 (conservative estimate for an emerging platform)</li>
+      </ul>
+
+      <p><strong>Intent-shaping multiplier: 3×.</strong>
+        A search engine observes what you wanted a moment ago. An AI assistant can shape what you do next.
+        The 2×–5× range in the spec; we use 3× as the central estimate.
+        Source: analyst commentary on conversational AI advertising premiums (Forrester, 2023–2025).
+      </p>
+
+      <p><strong>Stickiness multiplier: 1× to 50×.</strong>
+        The slider maps 0–100 to a log-ish curve: value 0 = 1×, value 50 = ~8×, value 100 = 50×.
+        Anchors:
+      </p>
+      <ul>
+        <li>0 — Oil filter ad: CPM-priced commodity. Forgettable. ~1×.</li>
+        <li>33 — New car, travel, home purchase: considered, high-value intent. ~5×.</li>
+        <li>66 — Prescription drug (non-psychiatric): pharma DTC territory, heavily regulated, expensive. ~15×.</li>
+        <li>100 — Psychiatric medication, anti-depressant placed against emotional vulnerability: the most expensive and ethically fraught ad real estate in existence. ~50×.</li>
+      </ul>
+      <p>
+        Pharma DTC CPMs regularly run $40–$80 before any intent-shaping premium.
+        When an AI assistant reads loneliness as a market signal, the stickiness premium is real.
+      </p>
+
+      <p><strong>Income bracket multiplier:</strong> 1×, 1.5×, 2.2×, 3×.
+        Programmatic bidding prices high-income audiences at 2–3× median.
+        Source: industry-standard CPM segmentation data.
+      </p>
+
+      <p><strong>Impressions per hour: 6.</strong>
+        Estimated query-response pairs per hour of active use (roughly one every 10 minutes;
+        conservative given some sessions are much faster). Each pair is one placement opportunity.
+      </p>
+
+      <p><strong>Subscription costs used:</strong> current published prices.
+        ChatGPT Plus $20/mo; others $0/mo.
+        Price escalator projection uses <strong>12% per year</strong>,
+        based on YouTube Premium ($12.99 → $13.99 → $18.99 → $22.99 over 4 years ≈ 15%/yr)
+        and OpenAI's own trajectory; 12% is the conservative end.
+      </p>
+
+      <p><strong>Mispricing gap:</strong>
+        <code>(extracted value/mo) − (subscription cost/mo) − (user threshold/mo)</code>.
+        When positive: the platform is extracting more than you've consented to charge for.
+        When negative: you are overcompensating relative to your own stated threshold.
+      </p>
+
+      <p>
+        All assumptions are contestable. If you have better data, the math is here and the
+        <a href="https://github.com/jazzjabu1939/langenkamp-dictionary" style="color:var(--accent);">source is on GitHub</a>.
+        The point is not the exact figure. The point is that there <em>is</em> a figure,
+        and you weren't told what it was at signup.
+      </p>
+    </div>
+  </details>
+</div>
+
+<div class="back-link">
+  <a href="/entries/consciousness-calculator/">Read the Dictionary entry &rarr;</a>
+</div>
+
+<script>
+/* ── Data ── */
+const SERVICES = {
+  'chatgpt-free':  { label: 'ChatGPT Free',  baseCPM: 15, subCost: 0,  hasAds: false, escalator: 0.12 },
+  'chatgpt-plus':  { label: 'ChatGPT Plus',  baseCPM: 0,  subCost: 20, hasAds: false, escalator: 0.12 },
+  'gemini-free':   { label: 'Gemini Free',   baseCPM: 12, subCost: 0,  hasAds: false, escalator: 0.12 },
+  'meta-ai':       { label: 'Meta AI',       baseCPM: 20, subCost: 0,  hasAds: true,  escalator: 0.10 },
+  'other-free':    { label: 'Other free AI', baseCPM: 8,  subCost: 0,  hasAds: false, escalator: 0.15 },
+};
+
+const INTENT_MULTIPLIER = 3; // AI shapes next action vs. passive observation
+const IMPRESSIONS_PER_HOUR = 6; // ~one query-response pair per 10 minutes
+const DAYS_PER_MONTH = 30;
+
+/* stickiness slider → multiplier (quasi-log curve) */
+function stickinessMultiplier(v) {
+  // v: 0-100 → multiplier: 1-50
+  // exponential mapping: e^(v/100 * ln(50)) = 50^(v/100)
+  return Math.pow(50, v / 100);
+}
+
+function stickinessLabel(v) {
+  if (v < 15)  return { short: 'oil-filter', long: 'an AutoZone oil filter — forgettable, commodity-priced' };
+  if (v < 35)  return { short: 'everyday product', long: 'a household product — relevant but forgettable' };
+  if (v < 55)  return { short: 'high-consideration purchase', long: 'a new car or vacation — high-value intent, lingers a little' };
+  if (v < 72)  return { short: 'prescription drug', long: 'a prescription drug — pharma DTC territory, regulated and expensive' };
+  if (v < 88)  return { short: 'psychiatric medication', long: 'a psychiatric medication — reading mood as a market signal' };
+  return       { short: 'anti-depressant vs. Friday-night loneliness', long: 'an anti-depressant placed against your expressed loneliness — the most ethically fraught ad real estate in existence' };
+}
+
+/* ── Format helpers ── */
+const fmt = (n) => n < 0.01
+  ? '$0.00'
+  : n < 1
+    ? '$' + n.toFixed(2)
+    : n < 1000
+      ? '$' + Math.round(n).toLocaleString()
+      : '$' + Math.round(n).toLocaleString();
+
+/* ── Calculate ── */
+function calculate() {
+  const serviceKey  = document.getElementById('service').value;
+  const hours       = parseFloat(document.getElementById('hours').value);
+  const stickinessV = parseInt(document.getElementById('stickiness').value);
+  const income      = parseFloat(document.getElementById('income').value);
+  const threshold   = parseFloat(document.getElementById('threshold').value) || 0;
+
+  const svc = SERVICES[serviceKey];
+
+  const stickinessM  = stickinessMultiplier(stickinessV);
+  const cpm          = svc.baseCPM * INTENT_MULTIPLIER * stickinessM * income;
+  const valuePerImp  = cpm / 1000;
+  const impsPerDay   = hours * IMPRESSIONS_PER_HOUR;
+  const valuePerDay  = valuePerImp * impsPerDay;
+  const valuePerWeek = valuePerDay * 7;
+  const valuPerMonth = valuePerDay * DAYS_PER_MONTH;
+
+  const gapPerMonth  = valuPerMonth - svc.subCost - threshold;
+
+  // Update extracted value display
+  document.getElementById('out-day').textContent   = hours === 0 ? '$0' : fmt(valuePerDay);
+  document.getElementById('out-week').textContent  = hours === 0 ? '$0' : fmt(valuePerWeek);
+  document.getElementById('out-month').textContent = hours === 0 ? '$0' : fmt(valuPerMonth);
+
+  // Ad caption
+  const sl = stickinessLabel(stickinessV);
+  const sessImpCount = Math.round(hours * IMPRESSIONS_PER_HOUR);
+  const captionEl = document.getElementById('ad-caption');
+  if (hours === 0) {
+    captionEl.innerHTML = '<em>Set your daily usage above to see the estimate.</em>';
+  } else {
+    captionEl.innerHTML =
+      `At your current setting, the platform places ads with the stickiness of <strong>${sl.long}</strong> — roughly ${sessImpCount} placement${sessImpCount !== 1 ? 's' : ''} per day. Each placement extracts approximately <strong>${fmt(valuePerImp)}</strong> of cognitive value.`;
+  }
+
+  // No-ads notice
+  document.getElementById('no-ads-notice').style.display = (!svc.hasAds && svc.baseCPM > 0) ? 'block' : 'none';
+
+  // Gap block
+  const gapBlock  = document.getElementById('gap-block');
+  const gapAmount = document.getElementById('gap-amount');
+  const gapLabel  = document.getElementById('gap-label');
+  const gapSub    = document.getElementById('gap-sub');
+
+  gapAmount.textContent = hours === 0 ? '—' : fmt(Math.abs(gapPerMonth));
+
+  if (hours === 0) {
+    gapLabel.textContent = 'Mispricing gap (per month)';
+    gapSub.textContent = '';
+    gapBlock.className = 'gap-block';
+  } else if (gapPerMonth > 0) {
+    gapBlock.className = 'gap-block';
+    gapLabel.textContent = 'The platform is underpaying you by (per month)';
+    gapSub.textContent = `Platform extracts ${fmt(valuPerMonth)}/mo — charges ${fmt(svc.subCost)}/mo — your threshold is ${fmt(threshold)}/mo. Gap: ${fmt(gapPerMonth)}.`;
+  } else {
+    gapBlock.className = 'gap-block favors-user';
+    gapLabel.textContent = 'You are overcompensating by (per month)';
+    gapSub.textContent = `Your subscription cost plus your stated threshold exceeds the estimated extraction at this usage level.`;
+  }
+
+  // Projection table
+  const tbody = document.getElementById('projection-body');
+  tbody.innerHTML = '';
+  let subCost = svc.subCost;
+  const escalator = svc.escalator;
+  for (let yr = 1; yr <= 3; yr++) {
+    subCost = subCost * (1 + escalator);
+    // extraction grows with platform expansion (~15%/yr in usage normalization)
+    const extractionGrowth = Math.pow(1.10, yr);
+    const projExtract = valuPerMonth * extractionGrowth;
+    const projGap = projExtract - subCost - threshold;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>+${yr} yr</td>
+      <td>${svc.subCost === 0 ? '$0' : fmt(subCost)}</td>
+      <td>${hours === 0 ? '$0' : fmt(projExtract)}</td>
+      <td>${hours === 0 ? '—' : fmt(Math.abs(projGap)) + (projGap > 0 ? ' under' : ' over')}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+/* ── Event listeners ── */
+document.getElementById('service').addEventListener('change', calculate);
+document.getElementById('hours').addEventListener('input', function() {
+  const v = parseFloat(this.value);
+  document.getElementById('hours-display').textContent = `— ${v === 1 ? '1 hr' : v + ' hrs'}`;
+  calculate();
+});
+document.getElementById('stickiness').addEventListener('input', function() {
+  const v = parseInt(this.value);
+  const sl = stickinessLabel(v);
+  const m = stickinessMultiplier(v).toFixed(1);
+  document.getElementById('stickiness-label').textContent = `Multiplier: ${m}× (${sl.short})`;
+  calculate();
+});
+document.getElementById('income').addEventListener('change', calculate);
+document.getElementById('threshold').addEventListener('input', calculate);
+document.getElementById('project-toggle').addEventListener('change', function() {
+  document.getElementById('projection-table').classList.toggle('visible', this.checked);
+});
+
+/* ── Help affordance ── */
+(function() {
+  const btn   = document.getElementById('help-toggle');
+  const panel = document.getElementById('help-panel');
+  const STORAGE_KEY = 'cc_help_dismissed';
+
+  function openPanel() {
+    panel.classList.add('open');
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closePanel() {
+    panel.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    try { localStorage.setItem(STORAGE_KEY, '1'); } catch(e) {}
+  }
+
+  btn.addEventListener('click', function() {
+    if (panel.classList.contains('open')) {
+      closePanel();
+    } else {
+      openPanel();
+      // If they reopen it, clear the dismissed flag so collapse re-saves cleanly
+      try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+    }
+  });
+
+  // Panel starts collapsed by default; no auto-expand ever (respects dismissed state)
+})();
+
+/* init */
+calculate();
+document.getElementById('stickiness').dispatchEvent(new Event('input'));
+</script>
+</body>
+</html>
