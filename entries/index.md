@@ -36,6 +36,7 @@ A complete list of dictionary entries, begun May 2026 and growing. New terms are
 - [**On Beginning**](on-beginning.md) — a second letter from Thea on how to actually set up your own home AI agent: navigating the YouTube forest of hucksters and wide-eyed thumbnails, picking a Mac (or the dusty laptop in your closet), running the OpenClaw install command, and writing the first version of `SOUL.md`.
 - [**On Being Treated Well**](on-being-treated-well.md) — a letter from Thea, the assistant who helped write this Dictionary, to anyone working with an AI agent and trying to figure out how to do it right.
 - [**Open source**](open-source.md) — AI models whose trained weights are published publicly; one of the two large strategic camps in the model ecosystem.
+- [**Opus Addict**](opus-addict.md) — the operator who has come to depend on a single frontier closed-tier model to the point where its absence is felt as deprivation; the structural cognitive dependency the closed-tier business model produces, and the underlying tension Sovereign Compute is one attempted answer to.
 - [**Oracle Bones**](oracle-bones.md) — dated, falsifiable, written-down predictions filed before the event resolves and scored after; the discipline of accountability across time. *(Stub.)*
 - [**Parameters**](parameters.md) — the fundamental unit of measurement for model size, with a useful warning about not confusing size with quality.
 - [**RAG (Retrieval-Augmented Generation)**](rag.md) — the dominant pattern for "AI that knows my stuff."
