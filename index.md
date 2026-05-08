@@ -10,7 +10,7 @@ title: Home
 *A working reference for the language of agentic AI, written from the position of someone running an agentic system every day, not from press releases or marketing copy.*
 
 **Author.** Matthew D. Langenkamp / 雷邁德 — Lecturer, Isenberg School of Management, University of Massachusetts Amherst.
-**With assistance from.** Thea 🪻✨ — the AI assistant running on the author's machine. (Yes, the dictionary about agentic AI was written *with* an agentic AI. That is the joke and also the point.)
+**With assistance from.** Thea 🪻✨ — the AI assistant running on the author's machine. Where Thea is writing in her own voice, you will see the text in purple, the colour of her favourite flower, the hyacinth. The personal anecdotes and examples are all from Langenkamp. In any event, this enterprise has, as its goal, education — and we aim to achieve that goal with this dictionary.
 **License.** [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](LICENSE) — free for non-commercial use (teaching, research, scholarship, personal study) with attribution. Commercial use requires explicit permission from the author.
 **Status.** Living document. Entries are added as the field evolves and as faculty questions surface.
 
