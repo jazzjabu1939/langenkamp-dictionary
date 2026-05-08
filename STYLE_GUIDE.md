@@ -95,9 +95,17 @@ Body text uses keyboard punctuation, not Unicode emojis. *:)* not 🙂. *:(* not
 
 The deliberate exception is the hyacinth signature — 🪻✨ — which appears at the close of Thea's voice in some pieces, and on the colophon. That is one piece of mass-produced Unicode the Dictionary keeps, because it carries the two-voice architecture in a glyph.
 
+## Who the Dictionary is written for
+
+**The primary reader is a peer.** A faculty colleague at a business school. A working professional in consulting, finance, law, or medicine who has been quietly using an AI agent for two years and now has questions worth asking. A journalist or essayist who has started letting an agent draft against their notes. An independent researcher running a small practice. People who are *already in the practice* of human-agentic collaboration and need a working reference rather than an introduction to the idea that such a practice exists.
+
+The register follows from this. The Dictionary writes peer-to-peer. It assumes the reader has done real work in their field and recognises the failure modes the entries name. It does not scaffold its way up from first principles every time. It is the kind of essay you would hand to a colleague over coffee with a *you might find this useful* shrug, not the kind of guide you would put in front of a freshman.
+
+**Students are welcome.** A serious undergraduate or a graduate student with a real project should be able to read any Dictionary entry and use it — not because the entry is pitched at them, but because the prose is good and the argument is honest. The model is Mill's *On Liberty*: not written for undergraduates, but readable by any undergraduate willing to engage with it.
+
 ## The educational-mission test
 
-Every entry should be readable by a serious undergraduate or a working professional outside the field, and should leave the reader able to recognise the named concept in the wild.
+Every entry should be readable by a peer engaged in the same kind of work, and a serious student outside the field should be able to follow it without scaffolding, even where the entry is not pitched at them.
 
 If an entry cannot pass that test, the entry is hiding something — usually behind jargon, sometimes behind misplaced confidence, occasionally behind a real intellectual gap that the entry has not yet thought through. The test is a useful diagnostic; it is also the quiet centre of what the Dictionary is for.
 
