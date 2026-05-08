@@ -13,6 +13,13 @@ include:
   - INDEX.md
   - about-the-name.md
 
+# Internal-only files: in the repo, but not built into the public site.
+exclude:
+  - STYLE_INTERNAL.md
+  - REVIEW_QUEUE.md
+  - TRIAGE_OPERATOR_TONE.md
+  - DRAFT_NOTES.md
+
 # Google Analytics
 google_analytics: G-6VKTMBF9JM
 
