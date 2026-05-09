@@ -40,4 +40,6 @@ For the operator of an agentic system, capability overhang is also an architectu
 
 ---
 
+[^1]: Hassabis named OpenClaw specifically: *"I think a kid these days could probably start a multi-billion dollar business in some ways using these tools in some new way that no one had thought about. And I think things like OpenClaw is a good example of that."* (Huge Conversations / Cleo Abram, May 2026.) The observation lands differently when it comes from the person running Google's AI division: the overhang is real, and the applications that close it are being built now, not in some future moment when the technology matures.
+
 *Proposed May 9, 2026. Source: Demis Hassabis interview, Huge Conversations / Cleo Abram, May 2026.*
