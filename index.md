@@ -93,4 +93,10 @@ If you find an error, please tell me. If you have a term you think should be ent
 
 ---
 
+## Other writing
+
+- **[AI in Higher Education Newsletter](/newsletter/)** — a weekly brief for the Management Department at the Isenberg School of Management, UMass Amherst. Operator's voice. Written for faculty colleagues; useful for anyone tracking AI in higher education.
+
+---
+
 *Begun: May 2026. Maintained at: github.com/jazzjabu1939/langenkamp-dictionary.*
