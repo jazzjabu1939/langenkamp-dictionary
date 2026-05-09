@@ -14,7 +14,7 @@ published: false
 
 ## The Turing machine background
 
-Alan Turing's 1936 paper described a theoretical device — the Turing machine — capable of computing anything that could be expressed as an algorithm. Not any specific calculation, but *any* calculation: anything computable at all. Modern computers are, in the formal sense, Turing machines with memory constraints and speed limits. They can compute anything; they just cannot compute everything *simultaneously* or *instantly*.
+Alan Turing's 1936 paper described a theoretical device — **the Turing machine** — capable of computing anything that could be expressed as an algorithm. Not any specific calculation, but *any* calculation: anything computable at all. Modern computers are, in the formal sense, Turing machines with memory constraints and speed limits. They can compute anything; they just cannot compute everything *simultaneously* or *instantly*.
 
 The question that neuroscientists, cognitive scientists, and AI researchers have been arguing about for decades is whether the human brain is also a Turing machine — and therefore whether sufficiently capable AI might eventually match human cognition in any domain, or whether the brain does something that Turing machines cannot.
 
@@ -28,11 +28,11 @@ If the hypothesis is correct, the limit of what AI can do is not set by some dee
 
 The approximate Turing machine frame does not resolve the consciousness question. It brackets it. Whether a system that computes approximately as a Turing machine computes thereby has subjective experience — whether there is something it is like to be that system — is a question the frame deliberately does not answer. Hassabis was explicit about this: *"I'm quite open-minded about what the answers might be."* That open-mindedness is itself a philosophical position: the *avyākata* move, the deliberate refusal to resolve a question before the evidence warrants it.
 
-This Dictionary makes the same move. The *Consciousness Calculator* entry names the cost structure of using an AI system without adjudicating whether the system has inner experience. The approximate Turing machine entry names the computational structure without adjudicating whether computation of this kind is sufficient for mind. Both are useful framings. Neither is the last word.
+This Dictionary makes the same move, see Descartes Was Wrong. The approximate Turing machine entry names the computational structure without adjudicating whether computation of this kind is sufficient for mind or existence of a self. Both are useful framings. Neither is the last word.
 
 ## The practical consequence
 
-For the practitioner, the approximate Turing machine hypothesis has one immediate implication: **the categories of work you believe AI cannot do are probably empirical claims, not necessary truths.** They may be right today. They may not be right next year. The honest move is to hold them lightly, test them regularly, and update when the evidence changes. The history of AI is substantially a history of experts stating what AI can never do — and then watching it do that.
+For the practitioner, the approximate Turing machine hypothesis has one immediate implication: **the categories of work you believe AI cannot do are probably empirical claims, not necessary truths.** They may be right today. They may not be right next year. The honest position is to hold them lightly, test them regularly, and update when the evidence changes. The history of AI is substantially a history of experts stating what AI can never do — and then watching it do that.
 
 ## See also
 
