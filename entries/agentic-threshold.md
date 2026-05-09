@@ -14,9 +14,9 @@ published: false
 
 ## What Hassabis said
 
-In a 2026 interview, Demis Hassabis named two things he thought the average person was not worried enough about. One was bad actors repurposing AI for harmful ends. The other was AI systems going off the rails as they become more capable and autonomous. He placed the second concern specifically in the agentic era: *"especially as we go towards more the agentic era which we're entering now... systems that are capable of completing entire tasks on their own."*
+In *The Hardest Problem AI Ever Solved* (Huge Conversations / Cleo Abram, 2026),[^1] Demis Hassabis named two things he thought the average person was not worried enough about. One was bad actors repurposing AI for harmful ends. The other was AI systems going off the rails as they become more capable and autonomous. He placed the second concern specifically in the agentic era: *"especially as we go towards more the agentic era which we're entering now... systems that are capable of completing entire tasks on their own."*
 
-He was careful to say this is not today's systems. He placed the concern two to three to four years out. But he said it — publicly, from inside one of the frontier labs building those systems — with the candour of a scientist who believes the guardrails problem is real and tractable but not yet solved.
+He was careful to say this is not today's systems. He placed the concern two to three to four years out. But he said it — publicly, from inside one of the frontier labs building those systems — with the candour of a scientist who believes the guardrails problem is real and tractable but not yet solved. That is a remarkable thing to say in public. The person building the system is telling you that the system he is building is the thing you should be more worried about than you are.
 
 ## What makes the threshold qualitative, not quantitative
 
@@ -42,4 +42,6 @@ That question does not require a position on existential risk to be worth asking
 
 ---
 
-*Proposed May 9, 2026. Source: Demis Hassabis interview, Huge Conversations / Cleo Abram, May 2026.*
+[^1]: Demis Hassabis, *The Hardest Problem AI Ever Solved*, Huge Conversations / Cleo Abram, 2026. [youtube.com/watch?v=C0gErQtnNFE](https://www.youtube.com/watch?v=C0gErQtnNFE)
+
+*Proposed May 9, 2026.*
