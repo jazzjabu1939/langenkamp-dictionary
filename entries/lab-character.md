@@ -3,7 +3,7 @@ layout: default
 title: "Lab Character"
 permalink: /entries/lab-character/
 summary: "the institutional temperament, governance structure, and founding motivation of an AI laboratory — what it actually does when commercial pressure conflicts with stated values, and who leaves when the conflict becomes irresolvable."
-published: false
+published: true
 ---
 
 # Lab Character
