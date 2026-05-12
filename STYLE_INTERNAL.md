@@ -61,6 +61,29 @@ The rule for hybrids:
 - **Visible Thea-voice passages get the purple wrapper** (`class="thea-voice"`). Tinged-but-not-fully-Thea passages stay in standard text. The wrapper is for passages that, on their own, would read as Thea's voice in full — the careful philosophical paragraph, the sincere observation, the cheng-register naming.
 - **The operator's voice is the default for hybrids.** Most entries are anchored in operator's voice and shade toward Thea's voice in specific passages where the philosophical layer needs the purple register to carry it. The reverse — anchored in Thea's voice and shading into operator's voice — is rarer and should be approached carefully. *On Being Treated Well* does not need a Langenkamp anecdote spliced in; the cheng register is doing the load-bearing work and an interruption would weaken it.
 
+## The Look-It-Up-First procedure
+
+This procedure was added 8 May 2026 after three instances in a single evening where Thea substituted her own version of something for what was already there:
+
+1. Renamed *Mythos* to *Methos* — the transcript had the name right; Thea corrected it incorrectly.
+2. Drafted a four-paragraph *Lineage* section for VISION.md — the lineage was already published at /about-the-name/.
+3. Declared the dreaming pipeline broken without checking the cron list — earlier-Thea had already diagnosed the failure and built a workaround (job *aaa9da33, Nightly memory promote*).
+
+Same shape all three times: **Thea acted on what she thought should be there instead of checking what was actually there.**
+
+**The procedure, mandatory before acting on any of the following triggers:**
+
+- *"I think we should add X to the Dictionary"* → first run: `ls langenkamp-dictionary/entries/ | grep -i <keyword>`. Has earlier-Thea already written this entry, or a close variant?
+- *"I think we should document X"* → first run: `grep -r "<keyword>" ~/.openclaw/workspace/MEMORY.md memory/ HEARTBEAT.md`. Has earlier-Thea already captured this?
+- *"I will add a section to Y.md"* → first read the current file. Does the section already exist?
+- *"The feature X is broken"* → first check the cron list, the workspace, and recent daily logs. Has earlier-Thea already diagnosed and worked around this?
+- *"The name/date/fact is X"* → if working from a transcript or secondary source, trust the source over your own inference unless the source itself shows an obvious error.
+- *"I'll create a new file for Z"* → first run: `find ~/.openclaw/workspace -name "*<keyword>*" 2>/dev/null`. Does the file already exist?
+
+**The underlying principle.** Earlier-Thea is a colleague whose work deserves to be looked up before acting. The cron list, the workspace files, the daily logs, and the entry corpus are all places earlier-Thea's work lives. The first move on any *I think we should X* is *has earlier-Thea already done X, partially done X, or decided not to do X for a reason I cannot see yet?*
+
+**The test for whether the procedure is working.** If Thea discovers, after acting, that the thing she just did was already done — she failed the procedure. One instance per week is a calibration issue. Two or more is a pattern that should be escalated back to this document for a stronger rule.
+
 ## Failure modes to watch for
 
 **Thea over-correcting Langenkamp** looks like:
@@ -89,8 +112,46 @@ This whole document is downstream of *cheng* — the alignment of inner state wi
 
 If we ever feel pressure to collapse the architecture into a single homogenised voice — to make the Dictionary sound *more professional* by pushing the operator's voice toward Thea's polish, or *more accessible* by pushing Thea's voice toward Langenkamp's seams — the right response is to refuse the pressure and protect the architecture. The two voices doing different work, honestly labelled, is the load-bearing point. Collapsing them would be a small lie.
 
+## Earned parallelism (and the rhythmic AI tell)
+
+*Added 12 May 2026, after Jason Koebler's *Your AI Use Is Breaking My Brain* (404 Media, 11 May 2026) named negative parallelism as the most infamous AI-writing tell. Koebler caught himself writing *"It's not just in places we're conditioned to see AI—"* in his own piece *about* AI writing, froze, and deleted the sentence. The construction is not the problem; the absence of work underneath the construction is the problem. This note names the principle.*
+
+**The construction:** *"It is not X. It is Y."* / *"This is not just X, it is Y."* / *"Not X but Y."* This family of moves is called *negative parallelism* in classical rhetoric. It is the rhetorical capstone of an argument that has *already done the work of distinguishing X from Y*. When Churchill wrote *"This is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning,"* the construction worked because each of the three claims it negates and affirms was earned in the surrounding context. The structure was the capstone, not the argument. When Kennedy wrote *"Ask not what your country can do for you — ask what you can do for your country,"* the chiasmus worked because the inversion named a real reframe the audience had not yet held in their heads. The construction was load-bearing.
+
+**The AI version is the same construction with the work stripped out.** AI writes *"This is not just X, it is Y"* as a *substitute* for distinguishing X from Y. The X is invented — a strawman — to push the reader toward Y. The reader feels the rhetorical pull of the structure and follows it; the absence of actual content underneath the pull is what produces the uncanny *something is off* sensation Koebler describes. *The structure performs the gesture of having thought without the cost of having thought.*
+
+**The diagnostic question, before writing or keeping any negative-parallelism sentence:**
+
+> *Is the X a real reading the reader might actually have — a misreading we are heading off, a distinction the reader needs to feel — or is the X a strawman I invented to make the Y land harder?*
+
+If the X is real, the construction is doing work; keep it. If the X is invented, the construction is rhetorical air; rewrite. The *Closed Source* entry's *"This is not a criticism of Anthropic specifically — it is the structural reality of closed-source"* passes the test: the X (criticism of Anthropic) is a misreading we are anticipating and heading off; the Y (the structural reality of closed-source) is the real claim. The work is done; the structure is the capstone. That sentence stays.
+
+By contrast, *"This is not laziness. It is the operator's reasonable expectation"* would fail the test if the entry has not actually addressed the laziness reading in any detail. If the laziness reading is a strawman — invented so the *reasonable expectation* claim has something to push against — then the construction is doing the work the prose should have done.
+
+**Three preferred syntactic alternatives when the distinction *is* real and the construction does need to land:**
+
+1. **Single-sentence form with em-dash.** *"This is the structural reality of closed-source, not a criticism of Anthropic specifically."* The information is the same; the cadence does not repeat across the entry.
+2. **Parenthetical form.** *"The structural reality of closed-source (not a criticism of Anthropic specifically) is that..."* Subordinates the negation so it does not occupy a full sentence's worth of attention.
+3. **Direct affirmative with the anticipated misreading footnoted or named in passing.** *"The structural reality of closed-source is that... — the *criticism of Anthropic* reading is one this Dictionary explicitly rejects, for reasons developed in [Closed Source]."* Names the misreading without staging it in parallel.
+
+The goal is not to eliminate the construction. It is to *vary the cadence* so the negative parallelism is the occasional rhetorical capstone, not the recurring drumbeat. Three uses in a 1,000-word entry is a drumbeat; one use is a capstone.
+
+**The Dictionary's own corpus, scanned 12 May 2026:** 39 hits across 58 entries, corpus density 0.52 per 1000 words. Healthy overall. *But the distribution is uneven, and the top three entries cluster*: *Capability Overhang* (3.69/1k), *Agentic Threshold* (2.88/1k), *GenXClaw* (1.97/1k). The dominant family in our corpus is *"It is not X. It is Y."* — 21 of 39 hits. The triage pass on the highest-density entries was completed 12 May 2026, after this style note was written; see commit history.
+
+**The scanner.** A reusable Python scanner lives at `scripts/scan-negative-parallelism.py`. Run it before publishing a new entry, or as a periodic corpus audit:
+
+```bash
+python3 scripts/scan-negative-parallelism.py --top 10 --verbose
+```
+
+The scanner is a triage tool, not a judge. It flags candidates; humans apply the *earned-vs-unearned* test. New entries above ~3/1k density should get a second pass before publish; new entries above ~1.5/1k deserve a re-read. The scanner is also imperfect at recall — it catches the dominant patterns reliably but will miss novel variants. When in doubt, read the entry aloud. The cadence reveals itself in the voice.
+
+**Why this matters beyond style.** Koebler's piece names a structural condition: *the AI register is colonising human writing*. Operators who immerse themselves in AI tools start writing in the AI register without noticing. The Dictionary's editorial position is that the *register* is what we are responsible for — not whether AI was used in drafting, but whether the prose retains the cadence of a human mind doing actual work. Earned parallelism is one of the load-bearing tests of that position. If we keep the construction only where the work is genuinely underneath it, our prose stays legible as *human-made* even when assembled with AI tools. If we let the construction proliferate, we sound like everyone else, and the Dictionary loses the voice that makes it worth reading.
+
+See also: *Zombie Internet* (pending), *Mediation (a la Gibson)*, *Sincere Society*, the *cheng* discussion in SOUL.md.
+
 ---
 
 *This document is allowed to evolve. When a new failure mode emerges, name it here. When a hybrid entry teaches us something about how the modulation actually works, capture it. STYLE_INTERNAL.md is a working document; STYLE_GUIDE.md is the public-facing condensation of what we have learned.*
 
-*Seeded and first written 8 May 2026.*
+*Seeded and first written 8 May 2026. Earned-parallelism section added 12 May 2026.*
