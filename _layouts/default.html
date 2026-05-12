@@ -235,6 +235,61 @@
         color: #6b5b95;
         text-decoration-color: #b8acd1;
       }
+
+      /* === Glossary entry treatment ===
+         Glossary entries are short reference-card stubs (100–250 words)
+         that define what a thing is and point at the dictionary entries
+         where it shows up. They render with a compact, distinct visual
+         shape so a reader can tell at a glance that this is a quick
+         reference, not a load-bearing essay. */
+      .main-content .glossary-entry {
+        position: relative;
+        padding-left: 1.25rem;
+        border-left: 4px solid #b8acd1;     /* soft hyacinth band */
+        background-color: #faf9fb;          /* near-white with a hint of lavender */
+        padding: 1rem 1.25rem 0.5rem 1.5rem;
+        border-radius: 0 4px 4px 0;
+        margin: 0 -0.5rem;
+      }
+      .main-content .glossary-entry h1 {
+        font-size: 1.6rem;
+        margin-top: 0;
+      }
+      .main-content .glossary-entry h2 {
+        font-size: 1.15rem;
+        color: var(--lk-ink);
+        font-weight: 600;
+      }
+      .main-content .glossary-entry p,
+      .main-content .glossary-entry li {
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+      .main-content .glossary-entry .glossary-badge {
+        display: inline-block;
+        font-family: var(--lk-font-mono);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #6b5b95;
+        background: #ece7f1;
+        padding: 0.2rem 0.6rem;
+        border-radius: 3px;
+        vertical-align: middle;
+        margin-left: 0.5rem;
+        position: relative;
+        top: -0.15rem;
+      }
+      .main-content .glossary-entry .glossary-summary {
+        font-style: italic;
+        color: var(--lk-muted);
+        font-size: 0.95rem;
+        margin-top: -0.5rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #eee5ee;
+        padding-bottom: 0.75rem;
+      }
     </style>
   </head>
   <body>
@@ -252,7 +307,19 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+      {% if page.kind == "glossary" %}
+      <div class="glossary-entry">
+        {% if page.title %}
+        <h1>{{ page.title }} <span class="glossary-badge">Glossary</span></h1>
+        {% endif %}
+        {% if page.summary %}
+        <div class="glossary-summary">{{ page.summary }}</div>
+        {% endif %}
+        {{ content }}
+      </div>
+      {% else %}
       {{ content }}
+      {% endif %}
 
       <div class="return-bar" style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eff0f1; text-align: center;">
         <a href="{{ '/' | relative_url }}" class="btn">Return to Dictionary</a>
