@@ -95,7 +95,11 @@ If you find an error, please tell me. If you have a term you think should be ent
 
 ## Other writing
 
-- **[AI in Higher Education Newsletter](/newsletter/)** — a weekly brief for the Management Department at the Isenberg School of Management, UMass Amherst. Operator's voice. Written for faculty colleagues; useful for anyone tracking AI in higher education.
+Essays, weekly briefs, and filed predictions that sit alongside the Dictionary.
+
+<div class="return-bar" style="margin: 1rem 0 0.5rem; text-align: left;">
+  <a href="/other-writing/" class="btn">Other Writing</a>
+</div>
 
 ---
 
