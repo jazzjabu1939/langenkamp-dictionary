@@ -23,6 +23,7 @@ Each issue runs five to seven items, each anchored to a source we can cite, with
 
 ## Archive
 
+- **[May 15, 2026](2026-05-15/)** · Vol. 17 — AACSB's verification gap, SUNY's systemwide AI policy, and the governance risks of moving faster than trust allows
 - **[May 09, 2026](2026-05-09/)** · Vol. 16 — The New Yorker on credentialing, Cal State's $17M OpenAI deal, and the Class of 2026 job market
 - **[May 01, 2026](2026-05-01/)** · Vol. 15 — GPT-5.5 lands in Edu plans, ASU Atomic faculty pushback, and AACSB 2026 standards finalised
 - **[April 24, 2026](2026-04-24/)** · Vol. 14 — Google Gemini in Classroom, NotebookLM, and the educator-series infrastructure commitment
