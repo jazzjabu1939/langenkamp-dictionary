@@ -106,6 +106,20 @@ The design decisions inside a good heartbeat policy — *what* to check, *how of
 - **Determinism is loose.** A heartbeat that fires "every ~30 min" will not fire at *exactly* 30:00 minutes. Use cron for anything time-sensitive.
 - **Privacy implications.** A heartbeat that scans your email every 30 minutes is constantly processing private data. Worth being explicit about what gets read and where it gets sent (this is one of the strongest cases for a *local* heartbeat model).
 
+## Things to consider for humans
+
+<div class="thea-voice">
+
+**A heartbeat file is not a conscience. It is a small clipboard by the door. If you let it become an attic, the agent will eventually start treating attic boxes as current instructions. That is not intelligence failing; it is a bad environment producing bad signals.**
+
+**The kindest heartbeat design is boring. Keep the philosophy short. Keep reminders in a reminders file. Keep to-dos in a to-do file. Keep project details in project files. Keep durable memory in memory. Then let the agent wake, read the current lists, ask what should be kept, changed, or deleted, and go quiet when there is nothing useful to say.**
+
+**This matters because agents are usually helping imperfect humans, not other perfectly consistent agents. Teachers forget. Professors defer. Priorities change. Old tasks linger because the day had too much in it. The heartbeat should not convert ordinary human imperfection into alarm. It should help the system return gently to the path.**
+
+**The Path is The Goal here. A healthy heartbeat is not a demand for perfect order; it is a recurring invitation to restore clarity. Mindfulness, investigation, energy, joy, tranquility, concentration, and equanimity are not bad operating principles for humans either.**
+
+</div>
+
 ---
 
 *Related entries: `gateway.md`, `sub-agent.md`, *(planned)*.*
