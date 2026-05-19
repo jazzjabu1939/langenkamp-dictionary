@@ -222,19 +222,7 @@ The Dictionary is a work in progress. Honest status of near-term candidates as o
 
 **Glossary stubs pending:**
 
-- *Skill* — packaged capabilities aimed at the agent.
-- *Context window* — the boundary of what a model can see at once.
-- *Prompt* / *system prompt* — the input layer of an agentic system.
-- *Token* — the unit of cost, throughput, and capacity.
-- *Quantization* — why a 70-billion-parameter model can fit in 42 gigabytes.
-- *Hallucination* — what it is, what it isn't, and why "hallucination" is itself an imperfect name.
-- *Local-first / sovereignty* — covered by *Sovereign Compute*; a glossary stub pointing there would help.
-- *Model tiering* — partially covered by the Claude tier entries; a synthesis stub would help.
-- *Approval gating* — how to require human consent for sensitive agent actions.
-- *Provenance* — knowing where an agent's output came from.
-- *Eve Fairbanks* — the journalist named in *Zombie Internet* and *AI Writing*.
-- *Boris Cherny*, *Andrej Karpathy*, *Nate Jones*, *Marcus Olang'*, *Alan Turing* — selected glossary stubs of named figures.
-- *Chain of Thought*, *Scaling Laws*, *Context Window*, *Jailbreak*, *Hill Climb*, *Cognitive Outsourcing*, *Dead Internet*, *Retrieval-Augmented Generation* (alongside RAG), *Buckley Amendment*, *Data Processing Agreement*, *Internet Archive*, *Lee Sedol*, *Sovereignty* (promised link from existing entries), *Agentic Attachment* (promised link), *Durable Workflow* (promised link), *Sincerity as Architecture* (promised link), *A Channel of One's Own* (promised link).
+- None currently listed here. The May 19 glossary-stub batch has been published and removed from this pending queue.
 
 If a term you wish were here is missing, [open an issue](https://github.com/jazzjabu1939/langenkamp-dictionary/issues) and the maintainer will consider it.
 
