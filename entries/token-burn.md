@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Token burn"
+title: "Token Burn"
 permalink: /entries/token-burn/
 summary: "the rate at which an agent silently transmutes electricity and credit-card balance into JSON. With taxonomy and stages of grief."
 ---
 
-# Token burn
+# Token Burn
 
 *An informal but increasingly load-bearing piece of vocabulary among practitioners running agentic AI in production.*
 

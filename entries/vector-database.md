@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Vector database"
+title: "Vector Database"
 permalink: /entries/vector-database/
 summary: "specialized storage and retrieval infrastructure for embeddings."
 ---
 
-# Vector database
+# Vector Database
 
 
 ---
