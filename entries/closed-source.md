@@ -11,6 +11,10 @@ summary: "AI models delivered only through vendor-hosted APIs; the strategic cou
 
 ---
 
+In the Elon Musk / Patrick Collison / Dwarkesh Patel interview, Musk pauses on the names of the AI labs and enjoys the irony: *"Midjourney is not mid. Stability AI is unstable. OpenAI is closed. Anthropic? Misanthropic."*[^musk-irony]
+
+The joke lands unevenly. **OpenAI really is closed** in the sense that matters for this entry: GPT-5 is not a file you can inspect, download, or run. **Anthropic is not therefore *misanthropic***; that is a clever line, not a fair diagnosis. And the contrast matters because there really are models you can download and run locally — **Gemma 4** and **Qwen**, for example, sit on the open-weights side of the ledger. The names are funny. The architecture is serious.
+
 ## In one sentence
 
 **A *closed-source* AI model is one whose weights are kept proprietary; users access the model only through an API hosted by the vendor, who charges per token, controls the training and update cycle, and sees every prompt that flows through.**
@@ -19,7 +23,7 @@ summary: "AI models delivered only through vendor-hosted APIs; the strategic cou
 
 By default, building a frontier AI model is enormously expensive — hundreds of millions of dollars in compute alone, plus the equivalent in research talent and data acquisition. A lab that has spent that much wants to recoup the investment, and the most direct way is to keep the model proprietary, expose it as an API, and charge per use.
 
-The closed-source camp in mid-2026 includes the most capable models commercially available: **OpenAI's GPT-5**, **Anthropic's Claude (Opus, Sonnet, Haiku)**, **Google's Gemini Ultra and Pro**, and most of the next tier of well-funded contenders. The frontier-capability ceiling, in 2026, is held by closed models. The open-weights ecosystem is closing the gap, but is not yet at parity.
+The closed-source camp in mid-2026 includes the most capable models commercially available: **OpenAI's GPT-5**, **Anthropic's Claude (Opus, Sonnet, Haiku)**, **Google's Gemini Ultra and Pro**, and most of the next tier of well-funded contenders. The open-weights camp includes models such as **Gemma 4** and **Qwen**, which can be downloaded and run under local or self-hosted arrangements. The frontier-capability ceiling, in 2026, is still held by closed models. The open-weights ecosystem is closing the gap, but is not yet at parity.
 
 ## What it actually does — concretely
 
@@ -79,5 +83,7 @@ The strategic positions of these players, mapped against the open-vs-closed axis
 - *Commoditize-your-complement* — the strategic frame for understanding why some labs are open and others are closed.
 
 ---
+
+[^musk-irony]: Elon Musk in conversation with Patrick Collison and Dwarkesh Patel, May 2026, cleaned transcript on file in the Dictionary workspace as `Interview with Elon Musk.md`. The exact line in the cleaned transcript: *"Midjourney is not mid. Stability AI is unstable. OpenAI is closed. Anthropic? Misanthropic."* This entry accepts the OpenAI part of the joke as structurally accurate and rejects the Anthropic part as too glib.
 
 *Related entries: [Open source](open-source.md), [Token burn](token-burn.md), [Token angst](token-angst.md), [Ollama](ollama.md).*
