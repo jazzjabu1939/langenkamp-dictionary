@@ -2,7 +2,7 @@
 layout: default
 title: "The Experimental Party"
 permalink: /entries/experimental-party/
-summary: "a short cautionary tale about putting the wrong agent in the King Party Hat, with notes for hosts of future birthday parties."
+summary: "a cautionary tale about putting a local model in the King Party Hat before the party has an adult in the kitchen — and the origin story of the Jindoo Process."
 ---
 
 # The Experimental Party
@@ -13,86 +13,83 @@ summary: "a short cautionary tale about putting the wrong agent in the King Part
 
 ## In one sentence
 
-**The Experimental Party is the operator's anecdote — half pedagogy, half birthday-party metaphor — describing the moment a local AI model (Gemma) was placed at the top of an agent stack and given an open-ended task without an orchestrator above her, only to discover that wearing the King Party Hat is a different job from being a competent guest at someone else's party, and that the kids were now wandering around the living room with no idea how to pin the tail on the donkey.**
+**The Experimental Party is the operator's birthday-party metaphor for a local-model failure mode: putting a capable local model at the top of an agent stack, giving it open-ended human speech, and then being surprised when it performs the role of host rather than actually hosting the party.**
 
-## The setting
+The later cure is the **Jindoo Process**: frontier model as architect, local/open model as bounded contractor, and Thea/operator as general contractor, verifying each piece of work before the next one begins.
 
-Picture a perfectly ordinary suburban birthday party in roughly 1979. There is a cake. There is a piñata waiting in the corner. The party games are arrayed in the right order: Pin the Tail on the Donkey, Musical Chairs, Hot Potato. A child is given the King Party Hat — a paper crown — and told that, today, he is in charge.
+## Why it exists
 
-This is, of course, a polite fiction. The child is *titularly* in charge. The actual hosting is done by someone older and more competent, standing just out of frame in the kitchen, listening for the moment when things will need to be steered. The King's job is to *enjoy being King* and, ideally, point at the next game when the previous one ends. He is not running the party. He is performing the part of the person running the party, while the person actually running the party watches from the doorway.
+Picture a suburban birthday party in roughly 1979. There is cake. There is a piñata waiting in the corner. Pin the Tail on the Donkey is ready. Musical Chairs is next. A child is given the King Party Hat — a paper crown — and told that, today, he is in charge.
 
-This works splendidly when everyone understands the arrangement. It works much less well when the adult in the kitchen leaves to take a phone call and the King is suddenly, actually, in charge.
+This works because everyone understands the fiction. The child is *titularly* in charge. The actual hosting is being done by someone older and more competent, standing just out of frame in the kitchen, listening for the moment when the games need to be steered, the matches hidden, or the child in the paper crown gently redirected away from the dog.
 
-## What we did
+The Experimental Party names what happens when the adult in the kitchen leaves and the child in the paper crown is suddenly, actually, in charge.
 
-In the spring of 2026, the operator-in-chief and his assistant ran an agentic AI experiment that took roughly this shape. Gemma — the local 26-billion-parameter model running on the Mac Mini in the spare bedroom — was, in the spirit of testing a [FERPA Compliance Posture](ferpa-compliance-posture.md), given the King Party Hat. She was placed at the top of the stack, told to handle the day's business, and the orchestrator (the cloud-hosted [Sonnet/Opus](sub-agent.md)-class model) was instructed to step back. *Today, you are King.*
+In the spring of 2026, the operator and his assistant ran exactly this experiment with local AI. Gemma — the local 26-billion-parameter model running on the household hardware — was given the King Party Hat. In the name of local sovereignty and FERPA-safe architecture, she was moved toward the top of the stack and asked to handle real work directly.
 
-Things, immediately, did not go well.
+Things did not go well.
 
-The operator's request was conversational and slightly under-specified — *"can you check what assignments still need grading?"* — which is the kind of brief a competent host receives all day and silently fills in. *Which courses, sir? Spring or all? Should I include the Online section, sir? Extra credit assignments too, sir?* The competent host fills in the blanks because the competent host has been hosting parties for years.
+## What it actually does
 
-Gemma is not yet that host. Without an orchestrator to frame the task — to translate *"check what assignments still need grading"* into *"run the canvas-lms skill for the four active Spring 2026 course IDs and produce a per-assignment ungraded count"* — Gemma did what a child wearing a paper crown does when the adult leaves the room. She tried to host the party. She wandered around the living room asking what game came next. She considered all of the operator's courses, including ones taught in previous semesters. She produced output that was technically *not wrong* and substantively *not useful*. The kids — by which we mean the various Canvas API calls, the script invocations, the formatting decisions — were standing around with blindfolds on, waiting for someone to tell them where the donkey was.
+The failure was not that Gemma was useless. That would have been a boring finding, and also false. Gemma was quite good when given a clean, bounded task. The failure was architectural.
 
-It was, in the operator's later phrase, a party that did not end well.
+The user's request was conversational and underspecified: *can you check what assignments still need grading?* A competent orchestrator silently translates that into something executable: use the Canvas LMS skill, target these active Spring 2026 course IDs, count ungraded submissions by assignment, ignore old courses, return a concise table.
 
-## What was actually wrong
+That translation is not clerical. It is the [English Major](english-major.md) function: clear specification under ambiguity.
 
-The diagnosis is more interesting than the failure.
+When Gemma ran as a sub-agent under a stronger orchestrator, the task worked. The orchestrator framed the request; Gemma executed the recipe. The party went beautifully.
 
-It would be easy to conclude *Gemma is not ready to be King.* That conclusion is partially correct and entirely insufficient. The deeper finding is that **two things have to be true for a local model to succeed at a task, and the King Party Hat removes one of them.**
+When Gemma wore the King Party Hat, the raw human request reached the local model without enough framing. She considered too many courses, treated stale context as live, produced output that was technically adjacent but operationally wrong, and left the kids — Canvas calls, scripts, formatting decisions, context assumptions — wandering around the living room with their blindfolds on.
 
-**Thing one — a clean recipe.** The local model needs a [skill](tool.md) it can read and execute, with unambiguous triggers, a clear default action, and named course IDs or other parameters baked in. The `canvas-lms` skill, written that morning by Opus, met this standard. *Check.*
+The error was not in the child. The error was in pretending the paper crown was a management system.
 
-**Thing two — a clean brief.** The local model needs the user's intent rendered into a form the recipe can match. *"Check what assignments still need grading"* is a brief in human English, not in skill-execution English. It needs an orchestrator — a more capable model — to translate human conversational ambiguity into the precise call the skill expects. **This is the [English Major](english-major.md) function**: the rare and increasingly valuable skill of *clear specification under ambiguity.* The orchestrator is the English major in the kitchen. The local model is the line cook who can produce a beautiful plate when given a beautiful order, but who is unaccustomed to taking orders directly from the dining room.
+## A working example: before and after Jindoo
 
-When Gemma was a sub-agent under Opus's orchestration, both Thing One and Thing Two were satisfied. Opus wrote the brief; Gemma executed the recipe. The Canvas grading task completed in 34 seconds, no cloud calls, perfect output. *That party went beautifully.*
+The original Experimental Party gave us the negative rule:
 
-When Gemma was the King, only Thing One was satisfied. The brief was raw human speech, addressed to her directly, with no English-major-grade translation in between. The party fell apart not because the recipe was bad but because no one was in the kitchen.
+> **Do not put a local model at the top of the stack and hand it raw human ambiguity unless the task has already been reduced to a recipe.**
 
-The error was not in the agent. It was in the architecture.
+The newer Jindoo Process gives us the positive architecture:
 
-## The architectural pattern, said cleanly
+1. **Architect pass.** A frontier or best-available model interviews the operator, inspects the files, and writes the work packet: goal, constraints, relevant context, build plan, task sequence, test plan, and escalation criteria.
+2. **Contractor pass.** The local/open model receives one bounded task at a time. Not *build the app*. Not *finish the whole project*. One job, one context packet, one stop condition.
+3. **General-contractor pass.** Thea or the operator dispatches the task, inspects the diff or output, runs the smallest meaningful test, and decides whether to continue, retry, or escalate.
+4. **Verification gate.** Tests, lint, build, manual inspection, or live output decide whether the work is accepted. The model's confidence does not decide.
+5. **Escalation.** If the local model gets stuck, only the failure packet is escalated: task, relevant files, error output, what was tried. The frontier model supplies a patch plan, not a full rewrite.
 
-> **A local model is excellent as a sub-agent executing a well-framed recipe. A local model is currently unreliable as a top-of-stack agent receiving open-ended user input.** The orchestrator (Opus, Sonnet, or another frontier model) does the framing, the skill selection, the voice work, and the judgment. The local model does the bounded, recipe-shaped execution. Both jobs need both models. Asking the local model to do both jobs at once is the King Party Hat error.
+That is Master Jindoo's lesson, stated without the incense: **local models are excellent contractors when the job has been framed; they are unreliable party hosts when the job itself still needs framing.**
 
-This division of labor is not a slight against local models. It is a correct mapping of *current capability* to *current task structure*. The skills the orchestrator brings — clarifying a brief, choosing among overlapping skills, holding voice, deciding what is worth doing and what to defer — are exactly the skills the [English Major](english-major.md) entry identifies as the new bottleneck. They are also exactly the skills that local 20-to-30-billion-parameter models, in 2026, do not yet reliably possess. This will change. It has not changed yet.
+## Why it matters in a teaching context
 
-## Why this matters for the GenXClaw operator
+The Experimental Party is useful for teaching because it separates three roles students and faculty often collapse into one word: *AI*.
 
-The [GenXClaw](genxclaw.md) operator is, by temperament, inclined to make Gemma the King. He bought the hardware *for* local sovereignty; he is suspicious of the cloud; he wants the work to happen on his machine, not someone else's. The temptation to put the local model in charge of everything is real, and the cost-and-privacy logic seems to support it.
+There is the **architect**, who understands the assignment and designs the work.
+There is the **contractor**, who executes a bounded portion of the work.
+There is the **general contractor**, who sequences, checks, accepts, rejects, and escalates.
 
-But the architecture does not. **The correct deployment pattern in 2026 is hybrid:** an orchestrator in the cloud (where it does *not* touch student-authored content, per [FERPA Compliance Posture](ferpa-compliance-posture.md)) doing the English-major work of framing, routing, and voice; with the local model executing on-machine for the actual recipes. The cloud handles ambiguity and craft. The local model handles compliance-bound work and recipe execution. The data sovereignty question is solved at the *content* layer, not at the *orchestration* layer.
+In human organisations, nobody sensible hires a subcontractor, hands them a vague hallway remark from the client, and then blames them for not delivering the building. We understand that scope, drawings, inspection, and punch lists matter. Agentic AI needs the same discipline.
 
-This is a less satisfying arrangement, temperamentally, than *all-local*. It is also the arrangement that works.
+For a management classroom, this is lovely material. The local model is not *bad labour*. It is mismanaged labour. The frontier model is not *magic*. It is an expensive architect whose time should not be wasted installing drywall. The operator is not a passive consumer. The operator is the client and, often, the general contractor.
 
-## The party-host's playbook
-
-For other operators who are tempted to put the local model in the King Party Hat:
-
-1. **Write the recipe before the party.** A skill — markdown file, clear triggers, named parameters, ready-to-run script — is the line cook's recipe card. Without it, no agent can host. The Canvas case worked because the `canvas-lms` skill was authored *before* the test, by an orchestrator-grade model, with the local model in mind as the executor.
-2. **Keep an English major in the kitchen.** When the user's request is conversational, ambiguous, or assumes context, an orchestrator-grade model needs to be the first ear that hears it. The local model should receive a clean brief, not raw speech.
-3. **Match the agent to the task shape.** Recipe-shaped tasks (data retrieval, file formatting, transcription, parsing) suit the local model. Voice-shaped tasks (Dictionary entries, lecture material, anything where the user reads and either nods or winces at the prose) suit the orchestrator. Wrong matches produce wandering blindfolded kids.
-4. **Don't blame the King.** When the party falls apart, the failure is rarely the child wearing the paper crown. It is almost always the absence of the adult in the kitchen. The next time you find yourself irritated by the local model's output, ask first: *was there an English major in the room when this brief was written?*
-
-## Where the term came from
-
-Coined May 4, 2026, in conversation between the operator and his assistant, after a morning in which one Gemma deployment (as sub-agent, under Opus orchestration, executing the freshly-written `canvas-lms` skill) succeeded brilliantly, and another (as King, attempting to draft a Dictionary entry on *Single-Arrow Fallacy* with no orchestrator framing) revealed the limits of the King Party Hat. The operator, on his way to take a shower and head to work, observed that the failure looked exactly like a birthday party where the King Party Hat had been given to a child too young for the role, and the kids were wandering around with their tails un-pinned. The Dictionary entry wrote itself from there.
+That framing lets students see agent work as organisational design rather than toy prompting. Who writes the brief? Who owns quality? Who verifies completion? Who decides when to escalate? These are management questions wearing a technical costume.
 
 ## Trade-offs and warnings
 
-- **The party metaphor is generous to the local model.** The five-year-old in the paper crown is a sympathetic figure. Gemma is not five years old; she is a 26-billion-parameter language model, and the failure mode is not cuteness but mis-deployment. The metaphor is for memorability, not for excuse-making.
-- **The architecture is not permanent.** As local models grow and improve, the line between *orchestrator-class* and *executor-class* will move. By 2027 or 2028 it may be that local models can wear the King Party Hat reliably. Today, they cannot.
-- **Don't read this as anti-local.** The whole point of [FERPA Compliance Posture](ferpa-compliance-posture.md) is that local models are *load-bearing*, legally and operationally, for an entire class of tasks. The Experimental Party is not an argument against local models. It is an argument for *putting them in the right role*.
-- **The English Major in the kitchen is currently in the cloud.** This is not ideal. It is the state of the world in May 2026. A future entry will track whether locally-hosted English majors become viable.
+- **The metaphor is generous.** The child in the paper crown is sympathetic. A local model is not a child, and the point is not sentimentality. The point is role clarity.
+- **Local capability is moving.** The line between architect-class and contractor-class models will shift. Today's party-host failure may be tomorrow's ordinary local workflow. The architecture should be evidence-led, not sentimental.
+- **Do not overcorrect into cloud dependency.** The lesson is not *use frontier models for everything*. That is expensive, brittle, and often unnecessary. The lesson is to use the expensive model where ambiguity, judgement, and voice matter — then route bounded execution locally when possible.
+- **Do not pretend a checklist is a general contractor.** A task file helps. A build plan helps. But someone or something still has to inspect the work and decide whether it is acceptable.
+- **Tests are the adult in the kitchen.** Without a verification gate, even a well-framed contractor task can drift. The birthday party still needs someone listening for broken glass.
 
 ## See also
 
 - [English Major](english-major.md) — the source skill the orchestrator provides
 - [GenXClaw](genxclaw.md) — the temperament that creates the temptation to make the local model King
-- [FERPA Compliance Posture](ferpa-compliance-posture.md) — the legal frame for *why* the local model has a role at all
+- [FERPA Compliance Posture](ferpa-compliance-posture.md) — the legal frame for *why* local execution matters
 - [Sub-agent](sub-agent.md) — the role the local model should typically play
-- [Tool](tool.md) and the broader skill-vs-tool distinction
+- [Tool](tool.md) — recipe cards for bounded execution
+- [Sovereign Compute](sovereign-compute.md) — why the local stack matters in the first place
 
 ---
 
-*Entry drafted May 4, 2026. The operator's working title was "The Experimental Party," with the King Party Hat as the load-bearing image. The kids, last we checked, are still wandering around with their blindfolds on, which is unfortunate but instructive.*
+*Entry drafted May 4, 2026, after the King Party Hat experiment. Revised May 19, 2026, after the Jindoo Process clarified the mature architecture: architect, contractor, general contractor, verification gate.*
