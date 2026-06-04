@@ -59,6 +59,7 @@ The pieces that make a running agent.
 - [The Experimental Party](entries/experimental-party.md) — the King Party Hat error: putting a local model atop the stack without orchestration.
 - [Incremental Construction](entries/incremental-construction.md) — the workflow for steering MoE routing through verified-layer-at-a-time building.
 - [Root Node Problems](entries/root-node-problems.md) — failures that propagate from the agent's coordinator layer.
+- [Stepping on the Same Rake](entries/stepping-on-the-same-rake.md) — repeated small local-agent failures as early warning signals that the workflow needs repair before larger autonomy is trusted.
 
 ## The AI labs
 
