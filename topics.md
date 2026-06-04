@@ -195,9 +195,9 @@ Patterns from broader business and strategy thinking that show up in the AI era.
 
 - [Commercial Legibility](entries/commercial-legibility.md) — MCP, A2A, and the affirmative case for protocols-of-agent-infrastructure.
 - [Inverted Funnel](entries/inverted-funnel.md) — the funnel-internalised-inside-the-agent argument.
-- [Mandy Step](entries/mandy-step.md) — the small human intervention that prevents an automated workflow from damaging trust.
+- [Mandi Step](entries/mandi-step.md) — the small human intervention that prevents an automated workflow from damaging trust.
 - [Human Judgment Layer](entries/human-judgment-layer.md) — the human tier that adds context, proportion, and relationship memory before automated action reaches the world.
-- [Mandy Loop](entries/mandy-loop.md) — the repair loop version of the Mandy Step: system signal → human recognition → relationship repair → system redesign.
+- [Mandi Loop](entries/mandi-loop.md) — the repair loop version of the Mandi Step: system signal → human recognition → relationship repair → system redesign.
 
 ---
 

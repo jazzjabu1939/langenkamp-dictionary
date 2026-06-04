@@ -13,11 +13,11 @@ The **human judgment layer** is the human tier in an automated or agentic proces
 
 It is not a nostalgic plea to keep humans doing clerical work that machines can do better. The opposite: reminders, routing, extraction, comparison, formatting, and repetitive checking are exactly the tasks machines should take over. The human judgment layer is what remains valuable after that transfer: noticing exceptions, interpreting relationships, repairing tone, escalating genuine risk, and deciding when a process should slow down.
 
-In *Step Into the Loop*, the human judgment layer appears as the **Mandy Step**: a person inside an accounts-receivable system recognizes that a formally correct warning is sending the wrong relationship signal and moves the matter back into a human channel. In the university syllabus-packet example, the same layer appears as Kristin remaining the trusted front door while agents do the formatting, checking, and boilerplate work behind her.
+In *Step Into the Loop*, the human judgment layer appears as the **Mandi Step**: a person inside an accounts-receivable system recognizes that a formally correct warning is sending the wrong relationship signal and moves the matter back into a human channel. In the university syllabus-packet example, the same layer appears as Kristin remaining the trusted front door while agents do the formatting, checking, and boilerplate work behind her.
 
 ## See also
 
-- *[Mandy Step](mandy-step.md)*
+- *[Mandi Step](mandi-step.md)*
 - *[Agent](agent.md)*
 - *[Sub-agent](sub-agent.md)*
 - *[The Lowbeer Question](lowbeer-question.md)*
