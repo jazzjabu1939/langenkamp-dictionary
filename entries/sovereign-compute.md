@@ -172,5 +172,6 @@ It is not yet the default. It will not be the default for most consumers. But fo
 - [Closed Source](closed-source.md) and [Open Source](open-source.md) — the model-licensing layer beneath the deployment-tier layer
 - [On Beginning](on-beginning.md) — practical entry point for a reader who decides Sovereign Compute is for them
 - [Dusty Laptop](dusty-laptop.md) — the minimum-viable hardware entry point into agentic AI; the old machine retrieved from the closet that becomes the always-on brain of a personal agent system, and the cheapest honest path into Sovereign Compute
+- [Trust Layer](trust-layer.md) — the governance, verification, observability, and human-judgment layer that turns controlled infrastructure into trusted delegated action
 - [Consciousness Calculator](consciousness-calculator.md) — forthcoming tool that estimates the value of the operator's attention, intent, and downstream-choice influence when traded for a "free" closed-tier service
 - [Sovereign Compute Calculator](sovereign-compute-calculator.md) — forthcoming companion tool that estimates an individual operator's personal breakeven against rented inference, given actual subscription costs, workload, hardware amortisation, and electricity rates

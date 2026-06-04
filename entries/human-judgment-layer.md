@@ -18,6 +18,7 @@ In *Step Into the Loop*, the human judgment layer appears as the **Mandi Step**:
 ## See also
 
 - *[Mandi Step](mandi-step.md)*
+- *[Trust Layer](trust-layer.md)*
 - *[Agent](agent.md)*
 - *[Sub-agent](sub-agent.md)*
 - *[The Lowbeer Question](lowbeer-question.md)*

@@ -21,6 +21,7 @@ Lacroix is also useful on agents. In the same interview, he argued that the bett
 
 - *[Mistral](mistral.md)*
 - *[Sovereign Compute](sovereign-compute.md)*
+- *[Trust Layer](trust-layer.md)*
 - *[Stepping on the Same Rake](stepping-on-the-same-rake.md)*
 - *[The Experimental Party](experimental-party.md)*
 

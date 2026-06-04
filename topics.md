@@ -57,6 +57,7 @@ The pieces that make a running agent.
 - [Aunties](entries/aunties.md) — specialised single-verb oversight agents that prevent unchecked authority.
 - [The Lowbeer Question](entries/lowbeer-question.md) — who holds the authority to terminate, who executes it.
 - [The Experimental Party](entries/experimental-party.md) — the King Party Hat error: putting a local model atop the stack without orchestration.
+- [Trust Layer](entries/trust-layer.md) — governance, verification, observability, and human judgment between raw AI capability and trusted delegated action.
 - [Incremental Construction](entries/incremental-construction.md) — the workflow for steering MoE routing through verified-layer-at-a-time building.
 - [Root Node Problems](entries/root-node-problems.md) — failures that propagate from the agent's coordinator layer.
 - [Stepping on the Same Rake](entries/stepping-on-the-same-rake.md) — repeated small local-agent failures as early warning signals that the workflow needs repair before larger autonomy is trusted.
@@ -200,6 +201,7 @@ Patterns from broader business and strategy thinking that show up in the AI era.
 - [Commercial Legibility](entries/commercial-legibility.md) — MCP, A2A, and the affirmative case for protocols-of-agent-infrastructure.
 - [Inverted Funnel](entries/inverted-funnel.md) — the funnel-internalised-inside-the-agent argument.
 - [Mandi Step](entries/mandi-step.md) — the small human intervention that prevents an automated workflow from damaging trust.
+- [Trust Layer](entries/trust-layer.md) — the institutional layer that keeps AI assistance from silently becoming unaccountable AI decision-making.
 - [Human Judgment Layer](entries/human-judgment-layer.md) — the human tier that adds context, proportion, and relationship memory before automated action reaches the world.
 - [Mandi Loop](entries/mandi-loop.md) — the repair loop version of the Mandi Step: system signal → human recognition → relationship repair → system redesign.
 
