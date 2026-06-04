@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Local preview helper. macOS still ships an old system Ruby at /usr/bin/ruby;
+# this repo's Jekyll toolchain expects the newer Homebrew Ruby.
+if [ -x /opt/homebrew/opt/ruby/bin/ruby ]; then
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+fi
+
+if ! command -v bundle >/dev/null 2>&1; then
+  echo "Bundler not found. Install Homebrew Ruby, then run: gem install bundler" >&2
+  exit 1
+fi
+
+if [ "$#" -eq 0 ]; then
+  set -- build
+fi
+
+exec bundle exec jekyll "$@"

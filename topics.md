@@ -108,6 +108,8 @@ The products built on top of the models.
 - [MCP (Model Context Protocol)](entries/mcp.md) — the open standard for connecting agents to tools.
 - [RAG (Retrieval-Augmented Generation)](entries/rag.md) — the dominant pattern for "AI that knows my stuff."
 - [Vector database](entries/vector-database.md) — the storage and retrieval infrastructure for embeddings.
+- [Jekyll](entries/jekyll.md) — the static-site generator that turns the Dictionary's Markdown files into langenkamp.io.
+- [JSON](entries/json.md) — the structured data format that APIs, tools, agents, and configuration files use to pass values around.
 
 ## The AI-detection economy
 
