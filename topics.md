@@ -71,6 +71,7 @@ The institutions producing the frontier models. The Dictionary's editorial posit
 - [Meta AI](entries/meta-ai.md) — Llama; the most-downloaded open-weights line.
 - [xAI](entries/xai.md) — Grok, Colossus training cluster.
 - [Mistral](entries/mistral.md) — leading European frontier-model lab.
+- [Timothée Lacroix](entries/timothee-lacroix.md) — Mistral co-founder/CTO; useful for the enterprise-sovereignty framing of control, deployment ownership, and workflow trust.
 - [DeepSeek](entries/deepseek.md) — Chinese open-weights lab.
 - [Nous Research](entries/nous-research.md) — decentralised collective; Hermes model family.
 - [Hugging Face](entries/hugging-face.md) — open-source model hub; the platform the open-weights ecosystem runs on.

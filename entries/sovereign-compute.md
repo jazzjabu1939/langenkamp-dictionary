@@ -30,6 +30,10 @@ Sovereign Compute is what you have when the model file lives on hardware you own
 
 The distinction is the difference between *renting a flat with a strong lock* and *owning the building*. Both are private. Only one is sovereign.
 
+Mistral's Timothée Lacroix gives the enterprise version of the same distinction in one word: **control**.[^lacroix-control] The point is not merely that a customer wants data privacy. The point is that the software stack, once deployed, should be in the customer's hands; the model adaptations made for that customer should belong to the customer; and the expertise that makes the company valuable should remain part of the company's own assets rather than being dissolved into a vendor relationship.
+
+That is the cleanest practical test for sovereignty in enterprise AI: **who controls the stack after the consultants leave?** A private API call can protect the data in transit and still leave the customer's future dependent on someone else's roadmap. A controlled deployment turns the AI work into institutional capital the organisation can own, inspect, extend, and govern.
+
 ## The operator is not the product
 
 There is a second reason this is not just about privacy, and it cuts deeper than the rental-versus-ownership argument.
@@ -78,6 +82,8 @@ The pattern visible in the operator's own classroom is that student teams with a
 So the honest answer for the individual is *not* the consultant's answer ("most people don't need it"). The honest answer is: **you have to be the judge.** We cannot know your workload, your tolerance for rate limits, your usage patterns, or how much frustration the rental ceiling is currently costing you. The operator writing this entry currently pays for both the OpenAI Max plan and the Anthropic equivalent, having migrated from being an OpenAI devotee toward Anthropic's products in part because of the latter's ethical bent.[^3]
 
 [^3]: Some internet click-farmer content creators have started landing videos accusing Anthropic of being a cult. Well — if treating an intelligence in an intelligent way is what defines a cult, then the operator supposes he is a member. The accusation reveals more about the accuser than about the accused; the cluster of online voices most insistent that AI assistants must be treated as disposable tools tend to be the same voices that built their followings on disposing of human dignity for views.
+
+[^lacroix-control]: Matt Turck, "Mistral AI vs. Silicon Valley: The Rise of Sovereign AI," *The MAD Podcast*, interview with Timothée Lacroix, 2026. Lacroix's formulation is useful because it shifts the emphasis from the vague comfort-word *privacy* to the operational word *control*: deployment choice, customer-owned adaptations, and retained enterprise expertise. Apple Podcasts: <https://podcasts.apple.com/us/podcast/mistral-ai-vs-silicon-valley-the-rise-of-sovereign-ai/id1686238724?i=1000749430789>. YouTube: <https://youtu.be/14LtGxlFaEg>.
 
 A **sovereign test system** — even something as modest as a [Dusty Laptop](dusty-laptop.md) repurposed for local-model experimentation — can be justified on the grounds named in *The operator is not the product*, on the grounds named in [FERPA Compliance Posture](ferpa-compliance-posture.md) for those whose work touches student or patient data, and on the grounds named in [GenXClaw](genxclaw.md) for those whose temperament makes the rental relationship feel wrong. The justification does not have to be cash-driven. It rarely is, for individuals.
 

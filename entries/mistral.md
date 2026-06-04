@@ -15,6 +15,7 @@ For this Dictionary, Mistral matters at the **open-weights tier** — *Mixtral 8
 
 ## See also
 
+- *[Timothée Lacroix](timothee-lacroix.md)*
 - *[Sovereign Compute](sovereign-compute.md)*
 - *[Mixture of Experts](mixture-of-experts.md)*
 - *[Hugging Face](hugging-face.md)* — also French; common Mistral distribution channel
