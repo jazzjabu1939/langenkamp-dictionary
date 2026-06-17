@@ -59,7 +59,7 @@ A student who uses AI to draft a market analysis should be able to say: *here is
 
 ## See also
 
-*AI Writing*, *Earned Parallelism*, *FERPA Compliance Posture*, *AI as Evidence of Learning*, *Institutional Lag*.
+*AI Writing*, *Earned Parallelism*, *FERPA Compliance Posture*, *AI Produced Artifact*, *Institutional Lag*.
 
 ## Source
 

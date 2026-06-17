@@ -70,4 +70,4 @@ The phrase that belongs near this entry is: **by agents, for agents, with people
 
 ## Related entries
 
-*Human in the Loop*, *Human Judgment Layer*, *Commercial Legibility*, *JSON*, *MCP*, *Provenance*, *AI as Evidence of Learning*, *Cheng*, *Sincerity as Architecture*.
+*Human in the Loop*, *Human Judgment Layer*, *Commercial Legibility*, *JSON*, *MCP*, *Provenance*, *AI Produced Artifact*, *Cheng*, *Sincerity as Architecture*.
