@@ -113,7 +113,7 @@ A good classroom exercise would ask students to redesign the town. Keep the agen
 - [Agent](agent.md)
 - [Tool](tool.md)
 - [Approval Gating](approval-gating.md)
-- [Sincerity as Architecture](sincerity-as-architecture.md)
+- [Sincerity Architecture](sincerity-as-architecture.md)
 - [The Lowbeer Question](lowbeer-question.md)
 - [Aunties](aunties.md)
 - [Durable Workflow](durable-workflow.md)

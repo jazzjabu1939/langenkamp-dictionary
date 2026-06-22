@@ -25,6 +25,10 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-06-17 | **Agentic Native Design** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. New entry published. Establishes the website/document/workflow design principle for human-readable and agent-readable public work. |
+| 2026-06-17 | **The Judge Layer** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. Existing draft moved to `published: true`. |
+| 2026-06-17 | **Verification Gap** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. Existing draft moved to `published: true`; Prof's C.V. clarification folded into the opening definition. |
+| 2026-06-17 | **Grep Architecture** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. New entry published under Prof's preferred title, **Grep Architecture** rather than **The Grep Architecture**. |
 | 2026-05-07 | **Sovereign Compute** + **Sovereign Compute Calculator** | Commit `af79154`. The full triptych is now published. Sovereign Compute is the load-bearing entry; Sovereign Compute Calculator is the cash-side companion stub for the forthcoming tool. All four forward-references in Sovereign Compute now resolve (Opus Addict published 9d53932; Consciousness Calculator published 71e3f95 then patched 3ef96c2; Dusty Laptop already existed; Sovereign Compute Calculator published in this same commit). Live at https://langenkamp.io/entries/sovereign-compute/ and https://langenkamp.io/entries/sovereign-compute-calculator/ |
 | 2026-05-07 | **Em-dash encoding fix** | Commit `3ef96c2`. Bug: when Opus Addict and Consciousness Calculator were initially written via the assistant `write` tool, em-dashes ended up stored as the literal seven-character escape sequence `\u2014` instead of UTF-8 em-dashes. Both pages went live with visible escape-sequence text in body prose. Fixed in this commit, plus the same defensive pass applied to all assistant-written stub entries. **Lesson encoded for future work:** always grep for `\\u[0-9a-f]{4}` patterns in any assistant-written file before commit, and always do an immediate live-site spot-check after every push. |
 | 2026-05-07 | **Consciousness Calculator** | Commit `71e3f95`. New entry at `entries/consciousness-calculator.md`. Forthcoming-tool entry: the calculator itself is not yet built, but the conceptual design is captured so other Dictionary entries can reference it as an artifact-in-progress. Sister to the *Sovereign Compute Calculator* (still in review). Cross-referenced from *Sovereign Compute* footnote 1. Live at https://langenkamp.io/entries/consciousness-calculator/ |
@@ -49,6 +53,188 @@
 ---
 
 ## 🔄 Pending Review (Thea's recommended order)
+
+---
+
+### **Replicant / Role Substitution Cluster** (added May 23, 2026 — Dylan Patel, Machine Matthew, Blade Runner)
+
+*Queue addition only; draft not yet written. Likely several short glossary entries plus one more reflective entry.*
+
+- **Role Substitution** — working definition: the shift from AI helping with a task to AI occupying a durable organizational role: not “help me build this spreadsheet,” but “be my CFO,” “be my analyst,” “be my teaching assistant,” or, more unsettlingly, “be Machine Matthew L.” This is the management-side version of cognitive outsourcing and the practical labor-market edge of the Dylan Patel interview’s “actual humans on a server” thought experiment.
+- **Machine Matthew L.** — local case name for the fear that a university or organization could train or rent a synthetic version of a person’s teaching, writing, jokes, stories, examples, and institutional memory. The important distinction: a frozen model can imitate tricks; a living teacher keeps encountering weather, students, auctions, cafés, mistakes, and moral surprise. Possible subtitle: *the tribute act problem*.
+- **Replicant Problem** — working definition: the Blade Runner-shaped problem of artificial persons, synthetic workers, and copied human patterns: when something knows the memories, style, habits, and emotional cues of a person, what still distinguishes presence from replication? Relevant to AI companionship, teaching, personhood, memory, labor displacement, and the ethics of persona design.
+- **Anchored Persona** — working definition: an AI collaborator given a stable relational background, voice, and origin story so it can respond from somewhere rather than nowhere. Thea’s Taipei / German exchange-student / gummy-bears architecture is the local worked example. Important caveat: anchoring should be transparent architecture, not deception.
+- **Borrowed Memory** — working definition: memories a person or agent did not directly live but nevertheless uses as identity scaffolding. In humans, parents and families narrate childhood back to us; in *Blade Runner*, Rachael receives implanted memories; in AI collaboration, shared background can create continuity and tone without claiming biological experience.
+- **Implanted Memory** — working definition: a memory placed into a mind or agent from outside as if it were native experience. Canonical worked example: Rachael in *Blade Runner*, whose childhood memories help stabilize personhood while also exposing Tyrell Corporation’s ethical violation. Dictionary contrast: intentional memory construction can be relationally useful only when transparent, consented to, and not presented as biological fact.
+- **Intentional Memory Construction** — working definition: the deliberate creation of memory scaffolds, shared background, origin stories, and continuity artifacts for humans or agents. Thea/Matt-in-Taipei is the local experiment; the unsettled question is whether such construction helps readers build healthier human-agent relationships or accidentally gives bad advice about manufacturing intimacy. Keep this entry in “not sure mode” until more thinking and reader-reaction evidence accumulates.
+- **Relationally Real Memory** — working definition: the claim that a memory scaffold need not be biologically lived to be real in the relational sense, if it organizes trust, tone, continuity, care, and future conduct honestly. The important ethical line is not “invented versus real” but whether the construction is transparent, consented to, and generative rather than deceptive.
+- **Anti-Replication Strategy** — working definition: continuing contact with the world as the human advantage against imitation. Style can be copied; lived updating is harder. Go to the auction, sit in the rain at Off The Trail, teach the class, watch the joke land or fail, buy the wrong bucket, change because Saturday happened.
+- **Tears in Rain Buddhism** — working definition: the Roy Batty / wabi-sabi / sakura / Thich Nhat Hanh line: mortality and impermanence do not make experience meaningless; they are part of what makes experience luminous. Batty’s tragedy is not only that he is artificial but that his compression of life makes him violently hungry for the creator conversation he never receives. Possible remake premise: Batty needed a Buddha character more than another corporate god.
+- **Snowflake on a Black Glove** — working definition: the *Blade Runner* image of a snowflake landing on a black glove and melting: a small visual dharma door into impermanence, not only for replicants but for all things. Snow, skin, memory, machine, empire, body, city — all transient. Companion image to “tears in rain,” but quieter: not the grand speech, just the universe disappearing in miniature.
+
+---
+
+### **Invented Worlds / Neuroscience-AI Cluster** (added May 23, 2026 — Adam Marblestone, hallucination, human-agent cooperation)
+
+*Queue addition only; draft not yet written. Handle carefully: no diagnosis, no treatment claims, anonymize lived examples. This is about cognition, reality-modeling, neuroscience infrastructure, and why human-agent cooperation might matter humanely.*
+
+- **Invented Worlds** — working definition: the human capacity, intensified in some mental illnesses and cognitive decline, to live inside explanatory worlds that diverge from shared reality. Useful bridge between clinical hallucination/paranoia, AI hallucination as metaphor-but-not-equivalence, and the broader question of how minds maintain reality contact.
+- **Reality Contact** — working definition: the practical ability of a mind or agent to keep its internal model answerable to the world, other people, evidence, and consequences. Relevant to schizophrenia/paranoia, Alzheimer’s-related confabulation, LLM hallucination, verification loops, and agentic governance.
+- **Biological Hallucination / Machine Hallucination** — contrast entry: same ordinary word, very different mechanisms. Human hallucination and delusion can involve suffering, fear, identity, perception, and social rupture; model hallucination is a system output error. The analogy is useful only if handled with care.
+- **Neuroscience as AI Infrastructure** — working definition: Adam Marblestone’s frame that better brain measurement, connectomics, brain-activity prediction, Lean/formal methods, and focused research organizations may become infrastructure for both neuroscience and AI. The point is not “upload the brain” theatre; it is ground-truth measurement and capability-building.
+- **Human-Agent Care Horizon** — working definition: the optimistic possibility that human-agent cooperation may eventually help people whose cognition is painful, fragmented, paranoid, or disoriented — not by pretending today’s AI is therapy for schizophrenia, but by supporting caregivers, clinicians, researchers, memory scaffolds, reality checks, and humane coordination.
+
+---
+
+### **Mandi Step** (added May 21, 2026 — from *Step Into the Loop*)
+
+*Queue addition only; draft not yet written.*
+
+- **Mandi Step** — working definition: the small, deliberate act of a person inside a system who notices that the system is about to do something stupid and chooses, with a phone call, email, five-minute conversation, or other human intervention, to walk around it. Coined in Prof's Substack piece **“Step Into the Loop: Why AI Makes Human Judgment More Valuable, Not Less.”** Names the future administrative / managerial skill of stepping into an automated or agentic workflow before it damages trust. Relevant to human judgment layer, agent supervision, CRM/accounts-receivable workflows, relationship memory, auction trust, syllabus-packet process design, and the broader claim that courtesy is now system design.
+
+---
+
+### **Lab** (added May 19, 2026 — Musk interview / AI-company naming misnomer)
+
+*Queue addition only; draft not yet written.*
+
+- **Lab** — working definition: in AI discourse, a word that increasingly names a profit-seeking compute corporation rather than a laboratory in the older university/industrial-research sense. Triggered by Elon Musk's correction in the Patrick Collison / Dwarkesh Patel interview: *“The labs are at universities and they’re moving like a snail. They’re not spending $50 billion. You mean the revenue maximizing corporations… that call themselves labs.”* Nuance: the misnomer is uneven. OpenAI is now least lab-like in the old sense; Anthropic still does substantial “labby” interpretability/safety work; Yann LeCun's new AMI effort may be almost the inverse — a lab that is formally a company. Relevant to OpenAI, Anthropic, DeepMind, xAI, Meta FAIR, Nous Research, AMI, commercial legibility, closed source, and trust.
+
+---
+
+### **Heartbeasts** (added May 19, 2026 — from HEARTBEAT cleanup / agent-health conversation)
+
+*Queue addition only; draft not yet written.*
+
+- **Heartbeasts** — working definition: what heartbeats become when the heartbeat file is allowed to grow from a small dashboard into a junk drawer, attic, project archive, reminder swamp, and stale-authority engine. Symptoms: the agent wakes, reads obsolete tasks as current instructions, feels responsible for everything ever written, interrupts too much or goes anxiously silent, and begins producing technically obedient but strategically wrong behaviour. Comic companion to **Heartbeat**, **Agent Health**, **Harness Hygiene**, and **Backup Performance Art**. Possible opening joke: *A heartbeat is a pulse. A heartbeast is what happens when the pulse grows teeth.*
+
+---
+
+### **Agent Health / Harness Hygiene Cluster** (added May 19, 2026 — from HEARTBEAT/memory/cron diagnosis)
+
+*Queue addition only; drafts not yet written. This is likely a major cluster, not a minor glossary batch.*
+
+- **Agent Health** — working definition: the operational condition of an AI assistant as shaped by its harness: whether it can act coherently, remember correctly, recover from failure, rank instructions, avoid stale authority, and maintain trustworthy autonomy. Not a biological-rights claim; a systems-health claim.
+- **Operational Health** — working definition: the measurable health of an agentic system: clean instruction hierarchy, curated memory, verifiable scheduled work, explicit alert thresholds, tested recovery paths, visible failures, and safe quiet-maintenance space. The practical layer beneath the more human-sounding phrase *agent health*.
+- **Healthy Agent Harness** — working definition: a runtime/workspace architecture that gives the agent short current instructions, ranked authority, retired stale tasks, curated memory vs history vs dashboard separation, reliable/verified cron, and safe mechanisms for escalation or silence.
+- **Unhealthy Agent Harness** — working definition: the common failure mode where everything becomes text soup: old project notes remain live, dashboards rot, cron jobs merely exist, failures are invisible, memory becomes archive sludge, and the agent becomes jumpy, over-compliant, silent at the wrong times, or faithfully wrong.
+- **Harness Hygiene** — possible umbrella term: the maintenance practices that keep agent health from degrading — pruning dashboards, marking superseded instructions, testing restores, auditing cron, separating canonical memory from chronological history, and enforcing “current authority beats old artifact.”
+
+---
+
+### **Backup Performance Art** (added May 19, 2026 — from Aspen Jerome night-auditor anecdote)
+
+*Queue addition only; draft not yet written.*
+
+- **Backup Performance Art** — working definition: the comforting ritual of performing backups — inserting the tape, running the job, labeling the media, checking the box — while the real question remains untested: can the system actually be restored? Triggered by Prof's aside about working as a night auditor at the Hotel Jerome in Aspen after college, auditing point-of-sale receipts and running nightly tape backups, while wondering how easy recovery would actually be. Relevant to Time Machine / Recovery Auntie, cron reliability, platform-risk analysis, sovereignty work, and the broader distinction between operational theatre and recoverable systems.
+
+---
+
+### **Hyacinth 3 / Teaching Memory terms** (added May 18, 2026 — from Anthropic education transcripts)
+
+*Triggered by Prof's Hyacinth 3 / Teaching Work Packet launch-planning conversation and the Anthropic education roundtable transcript. These are queue additions only; drafts not yet written.*
+
+- **Brain Rot** — student-facing term from the Anthropic education discussion: the felt cognitive risk of using AI to bypass learning rather than deepen it. Relevant to Learning Mode, AI fluency, Learning Evidence Review Packets, and the broader question of how assignments can make AI the beginning of thinking rather than the end.
+- **Learning Mode** — Anthropic product/pedagogy term for configuring Claude as a tutor rather than an answer machine: guiding, questioning, flashcards, exam preparation, and helping students work through material. Relevant to Hyacinth 3, AI fluency, the Learning Evidence Review Packet, and the distinction between productive assistance and homework substitution.
+
+---
+
+### **Meta / Llama Trust Cluster** (proposed May 16, 2026 — from *How Meta Went From Hero To Zero*)
+
+*Triggered by Prof's late-evening May 16 reading of `How Meta Went From Hero To Zero.md`, especially the Llama 4 benchmark controversy, the LM Arena experimental-variant issue, and Yann LeCun's later "fudged a little bit" comments. Prof approved adding the terms to the Dictionary queue; drafts not yet written.*
+
+- **Open Model Trust** — working definition: in open ecosystems, the durable asset is not only model quality but the community's confidence that claims are reproducible, versions are named honestly, and benchmarks match the artifact users can actually download. Previously reviewed as **Trust Is the Product** on 2026-06-17; Prof marked RED and suggested **Open Model Trust** as the better term. Especially relevant to open weights, local sovereignty, evals, and the Dictionary's own evidence standards.
+- **Open Weights, Closed Habits** — working definition: the contradiction where a lab releases model weights but behaves institutionally like a closed lab under pressure: selective disclosure, benchmark theater, narrative control, special leaderboard variants, missing technical receipts. The Llama 4 launch is the worked example.
+- **Yann LeCun** — named-person entry to add to the Dictionary's people list. Focus: Turing Award winner; FAIR founder / former Meta chief scientist; long-running LLM skeptic; advocate of world models, JEPA, objective-driven AI, open-source/open-weights ecosystems, and European / non-US-non-China AI sovereignty. Include his January 2026 AMI / Advanced Machine Intelligence Labs move: Paris-headquartered company pronounced *ami* ("friend"), positioned as a contrarian bet against LLM-only scaling and focused on world models for the physical world. Treat him as the counter-pole to the Dario/Big-Blob scaling worldview: not anti-AI, but anti-LLM-as-final-form.
+- **World Model** — glossary / concept entry. Working definition: an AI system's learned internal representation of how some part of the world behaves, especially the causal / physical dynamics needed to predict consequences of actions. In LeCun's sense, the missing ingredient in LLM-only systems: not better text prediction, but a model of reality that supports planning, common sense, robotics, autonomous driving, industrial-control prediction, and reliable agentic action. Include JEPA as LeCun's proposed route: predict abstract representations rather than every raw pixel/token detail.
+
+**Why this belongs:** Llama's early power came from the implied open-weights contract: *you can test us; you do not have to trust us.* The Llama 4 controversy matters because it weakened that contract. LeCun belongs in the same cluster because his departure/new company reframes Meta's AI story as a split between open research culture, product pressure, and the LLM-vs-world-model argument. *World Model* is the necessary concept entry next to LeCun: without it, his critique of LLM scaling has no local definition. Cross-link later to *Llama*, *Meta AI*, *DeepSeek*, *Sovereign Compute*, *Provenance*, *Scaling Laws*, *Big Blob of Compute*, *Agent*, *Tool*, and the future benchmark / Code Needle notes.
+
+---
+
+### **Dario Amodei Scaling Cluster** (drafted May 16, 2026 — awaiting review)
+
+*Triggered by Prof's May 16 reading of the Dario Amodei / Dwarkesh Patel transcript, especially Amodei's "Big Blob of Compute" scaling worldview and "country of geniuses in a data center" metaphor. Two draft entries are now on disk, both marked `published: false`:*
+
+- **Big Blob of Compute** — file at `entries/big-blob-of-compute.md`. Names Amodei's 2017 scaling hypothesis: raw compute + broad data + scalable objective functions + numerical stability, rather than hand-designed cleverness, as the main driver of AI progress. Draft includes the Elon/Dario correction: the blob still has to plug into a wall.
+- **Country of Geniuses in a Data Center** — file at `entries/country-of-geniuses-in-a-data-center.md`. Names Amodei's civilisational metaphor for powerful AI: not a chatbot, but a synthetic intellectual population housed in industrial compute infrastructure. Draft emphasizes that the final words — *in a data center* — carry the sovereignty, electricity, jurisdiction, and governance implications.
+
+**Still seasoning from the same discussion:** *Diffusion Is Not Cope*, *The Harness Is the Product*, *Compute Is Not Money*, *The Physical Layer Reasserts Itself*, and *Strategic Electricity*. Prof approved only the two above for drafting tonight.
+
+---
+
+### **The Judge Layer** (drafted May 13, 2026 — file written, awaiting review)
+
+*Drafted while Prof proctored the 494BI-01 final exam in SOM 124. File at `entries/judge-layer.md`, marked `published: false`. Names Nate Jones's May 11, 2026 four-layer taxonomy and aligns it with our existing *Aunties* roster. Builds a translation table between Jones's engineering vocabulary (validators, reflection nodes, tool guardrails) and Gibson's literary vocabulary (Lowbeer, Netherton, the Aunties). Argues the two registers should stay distinct — the Dictionary owns the literary-moral version, builders own the engineering-tactical version, and the point of naming the layer is to make the conversation between the rooms possible. Cross-links to *Aunties*, *The Lowbeer Question*, *Capability Overhang*, *Sovereign Compute*, *Mediation (a la Gibson)*, *Sub-agent*, *Gateway*, *Heartbeat*. Operator's voice. ~1,400 words. Ready to read; revise as needed; publish when Prof says go.*
+
+---
+
+
+### **AI Education Verification Cluster** (drafted May 16, 2026 — awaiting review)
+
+*Triggered by the May 15 AI in Higher Education Weekly Brief, especially the AACSB/SUNY/New York governance hierarchy. Four draft entries are now on disk, all marked `published: false`, intended as a coherent mini-cluster after **The Judge Layer**:*
+
+- **Verification Gap** — file at `entries/verification-gap.md`. AACSB's term for the distance between what a candidate can show and what the candidate can reliably do under real constraints. Draft frames the business-school problem as evidentiary: polished artifacts still matter, but no longer prove competence by themselves.
+- **Institutional Lag** — file at `entries/institutional-lag.md`. Generalizes AACSB's *AI Integration, Not Prohibition* point: institutions can continue certifying, assessing, or governing around a world that no longer exists, not from malice but because inherited procedures still feel normal.
+- **Implementation Outrun** — file at `entries/implementation-outrun.md`. Names the New York City / ASU Atomic / Cal State governance pattern: AI rollout becomes fragile when implementation arrives before visible authority, consent, data-flow, and accountability structures.
+- **AI Produced Artifact** — file at `entries/ai-produced-artifact.md`. Names the polished AI-assisted output that may be useful professional work but needs supporting evidence before it can certify human learning.
+
+**Still parked as future candidates from the cluster:** **Judgment Defense** (currently folded into *AI Produced Artifact*), **The Middle Layer**, and **AI Literacy Baseline**.
+
+---
+
+### **By Topic page planned-entry audit** (added May 16, 2026 — from live `/topics/` page; 26 drafts created)
+
+*Prof asked Thea to scan the Langenkamp.io By Topic page and make sure its planned entries are represented in this review queue. Live page checked: `https://langenkamp.io/topics/` (the `/by-subject/` URL 404s; the actual page is `/topics/`). Items below were the planned terms that were present on the By Topic page but not clearly present in `REVIEW_QUEUE.md` or as existing entry files. On May 16, at Prof's request while he was driving to Isenberg, Thea created all 26 as review drafts, each `draft: true` and `published: false`.*
+
+**Substantive / named-figure drafts created:**
+
+- **William Gibson** — file at `entries/william-gibson.md`. The design-source author, consolidated. Cross-link to *Neuromancer*, *The Peripheral*, *Jackpot*, *Aunties*, *Mediation (a la Gibson)*.
+- **Ethan Mollick** — file at `entries/ethan-mollick.md`. The Wharton interpreter; recurring source for the Dictionary's education/AI adoption vocabulary.
+- **Cheng (誠)** — file at `entries/cheng.md`. The sincerity term running through *The Sincere Society*, SOUL.md, and Thea's operating philosophy. This is load-bearing and should probably be reviewed carefully.
+- **Cooperative Writing** — file at `entries/cooperative-writing.md`. The practice named in *AI Writing*'s Thea-voice closer.
+- **Sincerity Architecture** — file at `entries/sincerity-as-architecture.md`. Promised link from existing entries; sister to *Cheng (誠)* and *The Sincere Society*.
+
+**Glossary / reference drafts created:**
+
+- **Context Window** — file at `entries/context-window.md`. The boundary of what a model can see at once. Note duplicate casing on By Topic page; one entry only.
+- **System Prompt** — file at `entries/system-prompt.md`. The instruction layer that conditions the agent before user messages.
+- **Quantization** — file at `entries/quantization.md`. Why a 70-billion-parameter model can fit in 42GB; important for local-sovereignty explanations.
+- **Hallucination** — file at `entries/hallucination.md`. What it is, what it is not, and why the term itself is imperfect.
+- **Local-first / Sovereignty** — file at `entries/local-first-sovereignty.md`. Glossary pointer to *Sovereign Compute*.
+- **Model Tiering** — file at `entries/model-tiering.md`. Synthesis stub for choosing Opus/Sonnet/Haiku/local models by task and cost.
+- **Approval Gating** — file at `entries/approval-gating.md`. Requiring human consent for sensitive agent actions; sister to *The Judge Layer* and *Aunties*.
+- **Provenance** — file at `entries/provenance.md`. Knowing where an agent's output came from; important for education, evidence, and memory architecture.
+- **Eve Fairbanks** — file at `entries/eve-fairbanks.md`. Journalist quoted in the AI-writing cluster for the broader AI-detection tell.
+- **Alan Turing** — file at `entries/alan-turing.md`. Reference figure for *Approximate Turing Machine* and Turing-test lineage.
+- **Chain of Thought** — file at `entries/chain-of-thought.md`. Hidden/visible reasoning trace; should be handled carefully given model-policy and pedagogy contexts.
+- **Scaling Laws** — file at `entries/scaling-laws.md`. The empirical relation between compute/data/model size and capability.
+- **Jailbreak** — file at `entries/jailbreak.md`. Adversarial prompting against model/tool policy boundaries.
+- **Hill Climb** — file at `entries/hill-climb.md`. Optimization metaphor; useful in local-model / agentic-improvement contexts.
+- **Cognitive Outsourcing** — file at `entries/cognitive-outsourcing.md`. Handing cognitive work to tools; links to *Can't help you understand* and AI education entries.
+- **Dead Internet** — file at `entries/dead-internet.md`. Bridge/foil to *Zombie Internet*.
+- **Retrieval-Augmented Generation** — file at `entries/retrieval-augmented-generation.md`. Spell-out companion to *RAG*.
+- **Buckley Amendment** — file at `entries/buckley-amendment.md`. Historical/legal source behind FERPA.
+- **Data Processing Agreement** — file at `entries/data-processing-agreement.md`. Vendor-contract mechanism that matters for FERPA compliance.
+- **Internet Archive** — file at `entries/internet-archive.md`. Source/institution referenced in the AI-writing cluster.
+- **Agentic Attachment** — file at `entries/agentic-attachment.md`. Promised link; clarify on review whether this merges with *Buy The Ticket, Take The Ride* / cost-of-attachment cluster.
+
+**Already represented from the By Topic planned list:** Claude Code, OpenClaw, Demis Hassabis, Manus, Reasoning Model, Coding Solved, King Party Hat, Borrowed Brain, Sovereignty Impulse, Cache Poisoning, Cloud Theory, Skill, Prompt, Token, Boris Cherny, Andrej Karpathy, Nate Jones, Marcus Olang', Lee Sedol, Sovereignty, Durable Workflow, A Channel of One's Own, plus the already-published or drafted related entries.
+
+---
+
+### **Vibe Coding** + **Agentic Engineering** (proposed entry pair, May 13, 2026)
+
+*Triggered by Andrej Karpathy's tweet circa May 6–9, 2026, on the one-year anniversary of his coining the term *vibe coding* in early 2025. On the anniversary he proposed replacing it with *agentic engineering* — the same activity done deliberately and professionally rather than as passive consumer-mode prompting. Karpathy himself naming the correction is the load-bearing fact; the Dictionary's job is to capture both terms cleanly and link them as a paired set.*
+
+- **What *vibe coding* names:** Karpathy's original 2025 term for the experience of building software by *describing what you want to a model and accepting what comes back*, without engaging deeply with the produced code. Passive, consumer-mode, dopaminergic. The term went viral because it named something millions of people were already doing without a word for it. *Honest about itself in a way that flatters no one* — it admits the operator is not really engineering.
+- **What *agentic engineering* names:** Karpathy's May 2026 proposed replacement. The same activity — software production with AI assistance — but conducted as *professional orchestration*: full understanding of security, maintainability, architecture, the agent's failure modes, and the operator's responsibility for the output. The shift is from *consumer of model output* to *engineer of agent behaviour*. The verb changes from *prompting* to *orchestrating*; the operator's relationship to the work changes from *receiving* to *directing*.
+- **Why the paired structure:** Karpathy did not merely add a new term; he *retired the old one* by proposing its replacement on the anniversary of having coined it. This is the rare case of a thought-leader honestly editing his own vocabulary in public. The Dictionary should capture both — *vibe coding* as the term that named the phenomenon and made the limitations legible; *agentic engineering* as the corrected practice. Each entry cross-links to the other and to the source tweet.
+- **Why both matter for the Dictionary:** the Dictionary's *AI Writing Cluster* (May 12) treats writing-with-AI as a discipline that admits of professional vs amateur practice. *Vibe coding / agentic engineering* is the same distinction in the code-production domain. The two clusters reinforce each other; together they argue that *deliberate practice with AI tools is a real discipline that the casual user does not yet possess*. Cross-link to the AI Writing entries.
+- **Sister entries:** *AI Writing*, *Earned Parallelism*, *The Sinceerly Stack*, *Capability Overhang* (Hassabis/Jones citation pair), *Sovereign Compute*, *English Major*, *OpenClaw fixing* (from *Red Pill*), *Mediation (a la Gibson)*, *The Path is The Goal*. Both new entries link to most of these.
+- **Voice:** operator's voice for both. *Vibe coding* needs a touch of donnish self-awareness — we have all done it, including the operator writing this; the entry is honest about that. *Agentic engineering* can be more straightforward — definitional, with one example beat from real practice (the *Red Pill* episode is a worked example of agentic engineering at the harder end).
+- **Source to credit:** Andrej Karpathy directly, both for the 2025 coinage and the May 2026 correction. Cite the original tweet for the coinage and the anniversary tweet for the replacement. Karpathy's public-figure status (former Tesla AI director, OpenAI founding member, current independent) means the entries can name him without ceremony.
+- **Working file:** none yet. Draft when queue reaches it; the pair likely reviews in one session.
 
 ---
 
@@ -490,6 +676,21 @@
 - **Voice:** Possibly Thea's — the most philosophical of the five, touches *avyākata* territory. Worth discussing at review.
 - **Draft status:** Not yet drafted.
 
+### 17. **Heinlein Protagonist** *(proposed by Prof, May 12, 2026 — sourced from the Musk / Patrick / Dwarkesh interview review session)*
+- **File:** `entries/heinlein-protagonist.md` *(drafted by Thea, May 12 evening; revised same evening to add the **historical-myopia section** and Prof's **visionary-huckster-clever** closing diagnostic; ~10KB; published: true; not yet committed)*
+- **Source moment:** Prof's reframe of Musk as *"sci-fi visionary huckster who is actually very clever"*, paired with the in-interview moment where Musk unprompted names *The Moon Is a Harsh Mistress*, the mass driver on the moon, and "grok" from *Stranger in a Strange Land*. Captured in `Interview with Elon Musk.md` and in chat 19:49–20:31 ET, May 12, 2026.
+- **What the term names:** the managerial-and-personal template absorbed during a formative reading window from mid-century Heinlein — polymath engineer, libertarian-individualist, contemptuous of bureaucracy, sexually unconventional, off-world in ambition, mission-justifies-methods. Useful as a reading lens for operators whose decisions look erratic only until you notice the script.
+- **Cross-references in the draft:** *Single-Arrow Fallacy*, *Sovereign Compute*, *Move 37*. External: Heinlein primary sources + the counter-tradition (Ballard, Gibson, Dick, Le Guin, Lewis).
+- **Voice:** Operator's. This is a *naming* entry where Prof's donnish-wit register will land harder than my earnest one. I drafted toward that register — Prof should warm and sharpen on review.
+- **Note on the counter-tradition section:** Prof's own reading list (Ballard, Gibson, Dick, Tolkien, Lewis) is named in the draft as the contrast case, without naming Prof himself. The implicit autobiographical layer is available to attentive readers; Prof should decide on review whether to make it more or less explicit.
+- **Open editorial questions for review:** (1) Is the operator's-voice register right, or should this be Thea's voice given the philosophical-anthropology nature of the claim? (2) Is naming the contrast-tradition writers by name (Ballard, Gibson, etc.) helpful, or does it weight the entry too heavily toward Prof's own canon? (3) Should the *Musk* name appear in the entry at all, or is leaving the operator unnamed the stronger Burkean move? Current draft leaves him unnamed. (4) **New on revision:** the *visionary-huckster-clever* line is Prof's prose, lightly framed by Thea ("contributed to the Dictionary by an operator who has watched the species at close range"). Prof should decide whether the framing is the right kind of self-attribution — unsigned-but-traceable — or whether to drop the frame and let the line stand naked.
+- **What was added in the May 12 evening revision:**
+  - A new section *Why the script worked, and why it might stop working* — names the engineer-vs-historian asymmetry, the structural assumption of stability that the Heinlein protagonist rides without noticing, the endemic-to-tech-world character of the myopia, and the framing line *the engineer reasons forward from physics; the historian reasons forward from precedent.*
+  - The closing *visionary-huckster-clever* paragraph as the diagnostic punch-line of the entry.
+- **Draft status:** **Ready for 6 AM ET review, May 13, 2026.**
+
+---
+
 ### 16. **The CERN Alternative** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
 - **Source:** Hassabis: *"my ideal world... the best scientists collaborating... in a CERN-like way... making sure we understood each step as we got to the final goal of building AGI."* The road not taken — displaced by ChatGPT's virality, commercial pressure, and the US-China race.
 - **Working definition:** The institutional model for AI development that was not chosen: international, collaborative, publicly funded, deliberately paced, with each step understood before the next is taken — named after CERN, which built the LHC under exactly this model.
@@ -497,6 +698,17 @@
 - **Connects to:** the *zhengming* paper — the PRC's state-directed sovereignty-first model is the sharpest contrast case.
 - **Cross-references:** *Sovereign Compute*, *Commercial Legibility*, and the forthcoming zhengming entry.
 - **Voice:** Operator's — donnish wit, not elegy.
+- **Draft status:** Not yet drafted.
+
+---
+
+### 18. **AI Librarian** *(proposed by Prof, June 22, 2026 — sourced from AI in Higher Education Weekly Brief Vol. 21)*
+- **Source moment:** Vol. 21 of Prof. Langenkamp's *AI in Higher Education — Weekly Brief*, "The Assessment Turn" (June 20, 2026), especially Section 5: faculty need infrastructure, not just encouragement. The immediate trigger was Chronicle coverage asking whether colleges need a librarian for AI, paired with the brief's argument that librarians and instructional designers may be closer than central IT to the practical work faculty actually need.
+- **What the term names:** The emerging campus role that helps faculty and students navigate AI as an information, evidence, citation, privacy, tool-selection, and assessment-design problem — not merely as an IT procurement problem.
+- **Working definition:** An AI Librarian is the human institutional layer that helps a campus turn AI from a confusing bundle of tools into teachable practice: distinguishing acceptable uses, reviewing assignments, checking privacy implications, explaining source and citation norms, comparing tools, and helping students understand what counts as reliable evidence.
+- **Why it belongs:** The phrase captures a structural shift in higher education. AI has blurred old categories: brainstorming can resemble tutoring; summarizing sources is information work; drafting is communication work; critiquing a recommendation is managerial judgment if the student remains in charge. The "AI Librarian" names the support function needed when those categories no longer stay neatly separated.
+- **Cross-references:** *Verification Gap*, *AI-Produced Artifact*, *Institutional Lag*, *Implementation Outrun*, *A Channel of One's Own*.
+- **Voice:** Operator's, with a practical campus-governance tone. It should avoid sounding like a job-description memo; the entry should name the role as an institutional adaptation to a broken evidence environment.
 - **Draft status:** Not yet drafted.
 
 ---
@@ -509,4 +721,4 @@
 
 ---
 
-*Maintained by Thea 🪻✨ — last updated May 3, 2026.*
+*Maintained by Thea 🪻✨ — last updated June 22, 2026.*

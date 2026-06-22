@@ -10,6 +10,8 @@ published: true
 
 The hardware-and-deployment counterpart to [Mediation (a la Gibson)](mediation-a-la-gibson.md). Where that entry argued that the personal AI agent is the first cognitive tool that runs in the *opposite* direction of mass mediation, this one names the substrate that makes the argument operational: AI running on infrastructure you control. The point of view is the operator's — the individual person at the keyboard — with the institutional cases (banks, hospitals, universities) brought in to illustrate why the same architectural answer holds at every scale.
 
+For the broader posture around this substrate, see *[Sovereign AI](sovereign-ai.md)*. For the local-first architecture now being named around this work, see *[The Buddha Stack](buddha-stack.md)* and *[Using the Empire’s Telescope](empires-telescope.md)*.
+
 ---
 
 ## In one sentence

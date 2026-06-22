@@ -3,7 +3,7 @@ layout: default
 title: "Sliding Window Attention"
 permalink: /entries/sliding-window-attention/
 summary: "an attention mechanism in which each token attends only to a recent window of prior tokens rather than the full context history — trading long-range recall for speed and efficiency, with the consequence that models using it excel at contained tasks but lose coherence on large, complex, multi-file contexts."
-published: false
+published: true
 ---
 
 # Sliding Window Attention

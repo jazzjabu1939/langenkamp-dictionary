@@ -15,6 +15,9 @@ For this Dictionary the most relevant recent event is the **xAI/Anthropic data c
 
 ## See also
 
+- *[Elon Musk](elon-musk.md)*
 - *[OpenAI](openai.md)* — the lab Musk co-founded and later departed from
 - *[Anthropic](anthropic.md)* — counterparty to the May 2026 compute deal
+- *[Orbital AI Data Center](orbital-ai-data-center.md)*
+- *[Hyperscaler](hyperscaler.md)*
 - *[Sovereign Compute](sovereign-compute.md)*

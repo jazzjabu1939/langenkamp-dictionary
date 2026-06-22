@@ -3,7 +3,7 @@ layout: default
 title: "Capability Overhang"
 permalink: /entries/capability-overhang/
 summary: "the growing gap between what frontier AI models can do and what practitioners have yet figured out to do with those capabilities — an accumulating backlog of unexplored application."
-published: false
+published: true
 ---
 
 # Capability Overhang
@@ -36,10 +36,12 @@ For the operator of an agentic system, capability overhang is also an architectu
 
 ## See also
 
-[Move 37](move-37.md) · [Root Node Problems](root-node-problems.md) · [Opus Addict](opus-addict.md) · [Durable Workflow](durable-workflow.md) · [On Beginning](on-beginning.md)
+[Move 37](move-37.md) · [Root Node Problems](root-node-problems.md) · [Opus Addict](opus-addict.md) · [Durable Workflow](durable-workflow.md) · [On Beginning](on-beginning.md) · [Implementation Layer War](implementation-layer-war.md)
 
 ---
 
 [^1]: Hassabis named OpenClaw specifically: *"I think a kid these days could probably start a multi-billion dollar business in some ways using these tools in some new way that no one had thought about. And I think things like OpenClaw is a good example of that."* (Huge Conversations / Cleo Abram, May 2026.) The observation lands differently when it comes from the person running Google's AI division: the overhang is real, and the applications that close it are being built now, not in some future moment when the technology matures.
 
-*Proposed May 9, 2026. Source: Demis Hassabis interview, Huge Conversations / Cleo Abram, May 2026.*
+[^2]: A second naming, from a different vantage point, in the same month. Nate Jones — writing for working builders rather than for a general audience — placed OpenClaw at the *runtime and orchestration* layer of the emerging agentic stack: *"runtime and orchestration in tools like OpenClaw, Gas Town, Gas City. Coordination and handoff in tools like Thrum, mailboxes, queues, work items, and beads. Judgment and control in validators, reflection nodes, tool guardrails, custom policy judges. Continuity and memory in systems like OpenBrain."* ("AI Agent Judge Layer: How to Control Agents in Production," Nate's Substack, May 11, 2026.) The point is not the flattery. It is that within ten days of each other, the CEO of Google DeepMind and a working practitioner writing for builders both named OpenClaw — Hassabis as a worked example of the overhang opportunity, Jones as the named runtime in a serious architecture discussion. Different audiences, different registers, same instrument. The overhang argument gains traction when the same tool keeps surfacing in serious discussions about where applied AI is going next.
+
+*Proposed May 9, 2026; expanded May 11, 2026 with the Nate Jones naming. Sources: Demis Hassabis interview, Huge Conversations / Cleo Abram, May 2026; Nate Jones, "AI Agent Judge Layer," Nate's Substack, May 11, 2026.*

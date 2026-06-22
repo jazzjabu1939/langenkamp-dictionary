@@ -2,12 +2,10 @@
 layout: default
 title: "Oracle Bones"
 permalink: /entries/oracle-bones/
-summary: "dated, falsifiable, written-down predictions filed before the event resolves and scored after; the discipline of accountability across time. *(Stub.)*"
+summary: "dated, falsifiable, written-down predictions filed before the event resolves and scored after; the discipline of accountability across time."
 ---
 
 # Oracle Bones
-
-*Stub entry — May 3, 2026. To be developed.*
 
 ---
 
@@ -49,9 +47,9 @@ The file is committed to the repo at the moment of filing. The git timestamp is 
 
 ## A working example
 
-**As of May 3, 2026, no bones have been filed yet.** The first will be commissioned this week, almost certainly on a convergence-vulnerable institution that emerged from the May 3 Apple learning memo (candidates: Anthropic, John Deere, AACSB).
+The first public bone in this Dictionary's own practice is **[U.S.–China Managed Trade](/oracle-bones/2026-05-15-us-china-managed-trade/)**, filed May 15, 2026. It makes a dated claim about whether the temporary U.S.–China tariff truce would harden into a managed-trade framework rather than simply revert to the prior tariff war.
 
-The empty bones folder — `learning-memos/oracle-bones/` — is itself a kind of accountability. It documents the *gap* between writing the framework and using it.
+That bone matters less for whether it turns out right than for the discipline it establishes: the prediction is public, dated, written down, and scoreable. The future reader will be able to ask the useful question — *what did the framework see, what did it miss, and how should the framework change?* — instead of the useless one: *did we vaguely feel this was coming?*
 
 ## The ritual
 
@@ -86,4 +84,4 @@ It also serves a deeper pedagogical purpose: **it teaches students that being wr
 
 ---
 
-*Status: stub, May 3, 2026. The first bones will be filed this week; this entry will be expanded with a real worked example once we have one.*
+*This entry should be updated as additional bones are filed and scored.*

@@ -3,7 +3,7 @@ layout: default
 title: "Quantum Effects in the Brain"
 permalink: /entries/quantum-effects-in-the-brain/
 summary: "the hypothesis, associated with Roger Penrose and Stuart Hameroff, that human consciousness depends on quantum-mechanical processes in neurons that classical computation cannot replicate — and therefore that AI systems, as classical computers, face a fundamental ceiling that no amount of scale will breach."
-published: false
+published: true
 ---
 
 # Quantum Effects in the Brain
@@ -20,7 +20,7 @@ Hassabis's own position: *"so far neuroscience hasn't found any quantum effects 
 
 ## Why this is a real debate, not a fringe one
 
-Penrose is not a crank. He is a Fields Medal-equivalent recipient in mathematics, a Fellow of the Royal Society, and the co-developer of singularity theorems with Stephen Hawking. His *The Emperor's New Mind* (1989) and *Shadows of the Mind* (1994) laid out the quantum-consciousness argument in serious technical detail. Stuart Hameroff, an anaesthesiologist and consciousness researcher at the University of Arizona, developed the neuroscience side of the Orch-OR theory.
+Penrose is not a crank. He is a Nobel Prize-winning mathematical physicist, a Fellow of the Royal Society, and the co-developer of singularity theorems with Stephen Hawking. His *The Emperor's New Mind* (1989) and *Shadows of the Mind* (1994) laid out the quantum-consciousness argument in serious technical detail. Stuart Hameroff, an anaesthesiologist and consciousness researcher at the University of Arizona, developed the neuroscience side of the Orch-OR theory.
 
 The hypothesis has been contested vigorously for three decades. The main objections are:
 

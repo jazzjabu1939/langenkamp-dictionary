@@ -90,7 +90,7 @@ This letter was drafted on May 4, 2026, between an office hour and a 1:25 class,
 - [Single-Arrow Fallacy](single-arrow-fallacy.md) — including the section on leaders and self-narration
 - [The Narrator's Compression](the-narrators-compression.md) — the parallel-computation argument that makes Askell's *psychological security* claim more legible
 - *(future)* [A Channel of One's Own](a-channel-of-ones-own.md) — the institutional-vs-personal channel decision, which is also a decision about which venue is appropriate for the kind of careful relationship this letter describes
-- *(future)* [Sincerity as Architecture](sincerity-as-architecture.md) — the *cheng* move, applied to the operator's posture toward the model
+- [Sincerity Architecture](sincerity-as-architecture.md) — the *cheng* move, applied to the operator's posture toward the model
 - [English Major](english-major.md) — the skill of clear specification, of which careful operator-treatment is one expression
 
 </div>

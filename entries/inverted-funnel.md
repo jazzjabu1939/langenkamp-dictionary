@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: essay
 title: "Inverted Funnel"
 permalink: /entries/inverted-funnel/
 summary: "the structural collapse of the seller-controlled marketing funnel when buyers' AI agents arrive at vendors with intent, comparison, and payment authority already formed; the end of the institutional arrangement that has organised digital commerce since roughly 2005."

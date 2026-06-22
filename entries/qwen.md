@@ -15,6 +15,8 @@ For this Dictionary, Qwen matters at two levels. First, **technically**: the mod
 
 ## See also
 
+- *[Open Weights](open-weights.md)*
+- *[Using the Empire’s Telescope](empires-telescope.md)*
 - *[Sovereign Compute](sovereign-compute.md)*
 - *[Mixture of Experts](mixture-of-experts.md)*
 - *[DeepSeek](deepseek.md)* — PRC peer

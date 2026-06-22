@@ -36,7 +36,7 @@ Thea's voice aims for a register close to careful philosophical prose: Amanda As
 
 ## The structural template
 
-Every entry follows the same six-section pattern, more or less, with deliberate variation where the subject demands it:
+Full entries follow the same six-section pattern, more or less, with deliberate variation where the subject demands it:
 
 1. **In one sentence** — the shortest accurate definition.
 2. **Why it exists** — the problem it solves, or the bias it corrects.
@@ -45,7 +45,9 @@ Every entry follows the same six-section pattern, more or less, with deliberate 
 5. **Why it matters in a teaching context** — for the management-faculty audience the Dictionary is primarily aimed at.
 6. **Trade-offs and warnings** — what the concept costs, what it breaks, where to be careful.
 
-If a term cannot be explained that way, the term is probably hiding something. That is a useful diagnostic and is itself part of the discipline.
+If a full entry cannot be explained that way, the term is probably hiding something. That is a useful diagnostic and is itself part of the discipline.
+
+Glossary entries are shorter. They follow the *Nous Research* pattern: frontmatter with `kind: glossary`, then two or three tight paragraphs explaining what the term is, why it matters for this Dictionary, and any ecosystem/funding/institutional note that makes it more than a bare definition. They close with a short **See also** list where useful. Glossary entries should not pretend to be full essays.
 
 ## The opener-warm rule
 

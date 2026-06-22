@@ -16,6 +16,12 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
     <span>Longer-form pieces and public essays.</span>
   </a>
 
+  <a class="writing-card" href="https://open.substack.com/pub/freedomtomato/p/using-the-empires-telescope?r=45wmm&utm_medium=ios">
+    <span class="writing-kicker">Essay · May 23, 2026</span>
+    <strong>Using the Empire’s Telescope</strong>
+    <span>Local AI sovereignty, frontier dependence, and the Buddha Stack.</span>
+  </a>
+
   <a class="writing-card" href="/newsletter/">
     <span class="writing-kicker">Weekly Brief</span>
     <strong>AI in Higher Education</strong>

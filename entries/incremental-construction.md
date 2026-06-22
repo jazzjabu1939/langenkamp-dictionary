@@ -3,7 +3,7 @@ layout: default
 title: "Incremental Construction"
 permalink: /entries/incremental-construction/
 summary: "the workflow technique of building complex AI-assisted output one verified layer at a time — committing each working checkpoint before asking for the next — so that the model always reasons against a correct context rather than a poisoned one."
-published: false
+published: true
 ---
 
 # Incremental Construction

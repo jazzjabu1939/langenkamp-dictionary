@@ -2,12 +2,10 @@
 layout: default
 title: "Space Cowboy"
 permalink: /entries/space-cowboy/
-summary: "the heavy individual explorer of AI tools, riding the frontier alone on personal high-stakes questions. *(Stub.)*"
+summary: "the heavy individual explorer of AI tools, riding the frontier alone on personal high-stakes questions."
 ---
 
 # Space Cowboy
-
-*Stub entry — May 3, 2026. To be developed.*
 
 ---
 
@@ -84,4 +82,4 @@ Most students will never deploy enterprise AI. Most will never write a line of m
 
 ---
 
-*Status: stub, May 3, 2026. To be expanded after the "Memo to Space Cowboy" essay is published — the essay will surface the working examples this entry will then cite.*
+*To be expanded further after the "Memo to Space Cowboy" essay is published; the essay will surface additional working examples this entry can then cite.*

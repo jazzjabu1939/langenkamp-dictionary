@@ -3,10 +3,18 @@ layout: entry
 title: "Earned Parallelism"
 permalink: /entries/earned-parallelism/
 date: 2026-05-12
-summary: "the diagnostic principle for one specific AI register tell — negative parallelism, the *\"It is not X. It is Y.\"* family of constructions. The principle: the structure is the rhetorical capstone of an argument that has already done the work of distinguishing X from Y; the AI version is the same construction with the work stripped out. The entry contains a Python scanner, reproduced verbatim, that the reader is invited to run on their own writing. Includes a self-audit of this Dictionary's own corpus."
+summary: "the diagnostic principle for one specific AI register tell — negative parallelism, the *\"It is not X. It is Y.\"* family of constructions. The principle: the structure is the rhetorical capstone of an argument that has already done the work of distinguishing X from Y; the AI version is the same construction with the work stripped out. Includes a linked scanner and a self-audit of this Dictionary's own corpus."
 draft: false
 published: true
 ---
+
+## In one sentence
+
+**Earned Parallelism is the editorial test for negative-parallelism sentences — the *"It is not X. It is Y."* family — where the X must be a real possible reading rather than a strawman invented to make the Y sound wiser.**
+
+You have probably noticed the cadence by now. It has the slightly priestly rhythm of contemporary AI prose: *this is not merely a tool; it is a transformation.* *This is not just automation; it is a new substrate.* *This is not a sentence; it is a small fog machine wearing a blazer.*
+
+The construction itself is innocent. English has been using it for centuries. The problem is the unearned version, where the sentence performs the gesture of thought without doing the work underneath it.
 
 ## A note on the seriousness of this entry
 
@@ -58,183 +66,31 @@ Vary the form. Let the cadence breathe.
 
 ## Now the joke gets earnest: the scanner
 
-The Dictionary has written a Python script that scans the entries and reports hits per 1000 words. The script is reproduced below in full. The point is partly the measurement and partly the *gesture of having measured.* Most editorial commentary on AI writing is hand-waving. This one has a Python file.
+The Dictionary has a small Python scanner that searches entries for negative-parallelism patterns and reports hits per thousand words. The point is partly the measurement and partly the editorial discipline of having measured. Most commentary on AI writing is hand-waving. This one has a file.
 
-The script is at `scripts/scan-negative-parallelism.py` in the [Dictionary's source repository](https://github.com/jazzjabu1939/langenkamp-dictionary). Run with `python3 scripts/scan-negative-parallelism.py --top 10 --verbose` for a full report.
+The scanner lives at `scripts/scan-negative-parallelism.py` in the [Dictionary's source repository](https://github.com/jazzjabu1939/langenkamp-dictionary). Run it with:
 
-```python
-#!/usr/bin/env python3
-"""
-scan-negative-parallelism.py
-
-Scans Langenkamp Dictionary entries for negative-parallelism constructions
-("not just X, Y"; "not X but Y"; "It is not X. It is Y." etc.) and reports
-per-entry counts and density (occurrences per 1000 words).
-
-The catalogue distinguishes between AI-shaped (rhetorically "free") uses and
-constructions that may be doing real work. Manual review is still required —
-the scanner is a triage tool, not a judge.
-"""
-
-from __future__ import annotations
-import argparse
-import re
-from pathlib import Path
-from collections import defaultdict
-
-ENTRIES_DIR = Path(__file__).resolve().parent.parent / "entries"
-
-PATTERNS = [
-    # "not just X, [it's/this is/Y]"
-    ("not_just_X_Y", re.compile(
-        r"\bnot just\s+[^.,;:!?\n]{2,80}[,\u2014\-]\s*"
-        r"(?:it[' ]?s|this is|but|they are|but rather|but instead|\u2014)\b",
-        re.IGNORECASE,
-    )),
-    # "not only X, [but/Y]"
-    ("not_only_X_Y", re.compile(
-        r"\bnot only\s+[^.,;:!?\n]{2,80}[,\u2014\-]\s*"
-        r"(?:but|it[' ]?s|this is|\u2014)\b",
-        re.IGNORECASE,
-    )),
-    # "not merely/simply X, [but/Y]"
-    ("not_merely_X_Y", re.compile(
-        r"\bnot (?:merely|simply)\s+[^.,;:!?\n]{2,80}[,\u2014\-]\s*"
-        r"(?:but|it[' ]?s|this is|\u2014)\b",
-        re.IGNORECASE,
-    )),
-    # ", not X but Y" or ", not X, Y" or ", not X — Y"
-    ("comma_not_X_Y", re.compile(
-        r",\s+not\s+[a-z][^.,;:!?\n]{2,60}\s+(?:but|\u2014|\-\-)\s+[a-z]",
-        re.IGNORECASE,
-    )),
-    # "It is not X. It is Y." / "It is not X — it is Y" / "This is not X. It is Y."
-    ("it_is_not_X_it_is_Y", re.compile(
-        r"\b(?:it is|it[' ]?s|this is|that is)\s+not\s+"
-        r"[^.;:\n\u2014]{3,80}[.;\u2014]\s+"
-        r"(?:it is|it[' ]?s|this is|that is)\s+[a-z]",
-        re.IGNORECASE,
-    )),
-    # "The X is not Y. It is Z." (parallel anaphora)
-    ("the_X_is_not_then_is", re.compile(
-        r"\bThe [a-z]+ is not\s+[^.;:\n]{3,60}\.\s+"
-        r"(?:It is|The [a-z]+ is)\b",
-    )),
-    # "not because X, but because Y"
-    ("not_because_X_because_Y", re.compile(
-        r"\bnot because\s+[^.,;:!?\n]{3,80},?\s*but because\b",
-        re.IGNORECASE,
-    )),
-]
-
-
-def count_words(text: str) -> int:
-    return len(re.findall(r"\b\w+\b", text))
-
-
-def scan_file(path: Path) -> dict:
-    text = path.read_text(encoding="utf-8")
-    # Strip front-matter and HTML comments to avoid false positives.
-    text_body = re.sub(r"^---\n.*?\n---\n", "", text, count=1, flags=re.DOTALL)
-    text_body = re.sub(r"<!--.*?-->", "", text_body, flags=re.DOTALL)
-
-    word_count = count_words(text_body)
-    counts = defaultdict(int)
-    examples = defaultdict(list)
-    total = 0
-
-    for label, regex in PATTERNS:
-        for m in regex.finditer(text_body):
-            counts[label] += 1
-            total += 1
-            start = m.start()
-            line_no = text_body.count("\n", 0, start) + 1
-            snippet = m.group(0).strip()
-            if len(snippet) > 140:
-                snippet = snippet[:137] + "..."
-            examples[label].append((line_no, snippet))
-
-    density = (total / word_count * 1000) if word_count else 0.0
-
-    return {
-        "path": path,
-        "words": word_count,
-        "total": total,
-        "counts": dict(counts),
-        "examples": dict(examples),
-        "density": density,
-    }
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--top", type=int, default=15)
-    parser.add_argument("--verbose", action="store_true")
-    parser.add_argument("--min-words", type=int, default=200)
-    args = parser.parse_args()
-
-    results = []
-    for path in sorted(ENTRIES_DIR.glob("*.md")):
-        if path.name == "index.md":
-            continue
-        r = scan_file(path)
-        if r["words"] < args.min_words:
-            continue
-        results.append(r)
-
-    grand_total = sum(r["total"] for r in results)
-    grand_words = sum(r["words"] for r in results)
-    grand_density = grand_total / grand_words * 1000 if grand_words else 0
-
-    print(f"=== Langenkamp Dictionary: Negative-Parallelism Scan ===")
-    print(f"Entries scanned: {len(results)} (min {args.min_words} words)")
-    print(f"Total words:     {grand_words:,}")
-    print(f"Total hits:      {grand_total}")
-    print(f"Corpus density:  {grand_density:.2f} per 1000 words")
+```bash
+python3 scripts/scan-negative-parallelism.py --top 10 --verbose
 ```
 
-(The full version, with the verbose reporting and per-family breakdown, is in the repo. The above is the core; the rest is presentation.)
+The scanner is deliberately modest. It is a triage tool, not a judge. It can find the pattern; it cannot tell whether the pattern is earned. That remains the writer's job.
 
 ## What the scanner found, May 12, 2026
 
-The Dictionary's own corpus was audited on May 12, 2026, with the AI Writing cluster (including this entry) included. The results, with appropriate gravity:
+The May 12 audit found **54 hits across 89,057 words**, or **0.61 hits per thousand words**. That is low. For comparison, the kind of AI-assisted LinkedIn or marketing prose that triggered this whole discussion often runs many times higher.
 
-| Measure | Value |
-|---|---|
-| Entries scanned | 64 (min 200 words) |
-| Total words | 89,057 |
-| Total hits | 54 |
-| **Corpus density** | **0.61 per 1000 words** |
+The distribution, however, was uneven. The highest-density entries were *Capability Overhang*, *Agentic Threshold*, *Earned Parallelism* itself, *GenXClaw*, and *Token Angst*. That list was useful because it turned a vague worry — *are we writing in the AI register?* — into an editorial triage queue.
 
-The corpus density of 0.61/1k is *low*. For comparison: a typical paragraph of AI-generated LinkedIn content or AI-assisted marketing copy runs 5–15 hits per 1000 words. The Dictionary is at roughly a tenth of that. The fingerprint is faint.
+The dominant construction family was *"It is not X. It is Y."* The next most common was *"not because X, but because Y."* Those two families accounted for most of the Dictionary's fingerprint.
 
-But the distribution is uneven, and the top of the density list is worth naming. As of May 12, 2026:
-
-| Entry | Density | Hits |
-|---|---|---|
-| *Capability Overhang* | 3.69/1k | 3 |
-| *Agentic Threshold* | 2.88/1k | 2 |
-| *Earned Parallelism* (this entry) | 2.52/1k | 7 |
-| *GenXClaw* | 1.97/1k | 5 |
-| *Token Angst* | 1.74/1k | 2 |
-
-The dominant construction family in our corpus is *"It is not X. It is Y."* — 29 of 54 hits, more than half the total. The next-most-common is *"not because X, but because Y"* at 10 hits. These two families together account for over 70% of the corpus fingerprint.
-
-The triage pass on the top of this list was completed in the same May 12 working session that produced this entry. Most occurrences passed the diagnostic test on review — the X was real, the work was done, the construction was a capstone. A small number were rewritten because the X was a strawman. The corpus density did not change much; the *cadence* did.
+The triage pass did not try to eliminate the construction. It asked the diagnostic question for each hit: **is the X real, or invented?** Most occurrences passed. A few did not, and were rewritten. The corpus density barely moved; the cadence improved.
 
 ## A confession, in the spirit of the entry
 
-The scanner has, of course, been run on this entry. The result: **7 hits at 2.52 per 1000 words.** This places the entry on diagnosing the construction *third on the density list of the entire Dictionary*, just below *Capability Overhang* (the entry the diagnostic standard was developed against) and well above the corpus average of 0.61. The entry on the symptom contains the symptom at near-peak density.
+The scanner has, of course, been run on this entry. It found **7 hits**, which puts the entry on diagnosing the symptom near the top of the symptom list. This is funny, but not embarrassing. Several hits are quotations or worked examples; the remaining ones are doing the work the entry says they must do.
 
-This is honest, not embarrassing, and the breakdown matters. Of the 7 hits:
-
-- **2 are inside block-quotes** — the Churchill *"This is not the end. It is not even the beginning of the end."* and parts of the Koebler/worked-example quotes. These are not the entry's writing; they are the entry's evidence.
-- **3 are inside the *Two worked examples from this Dictionary's own corpus* section** — the *Closed Source* sentence that passes the test and the *Capability Overhang* sentence that failed it, both quoted directly. These are exhibits, not the entry's own prose.
-- **2 are in the entry's own prose**, both performing earned work: one in the principle section naming the diagnostic question, one in the closing recommendations. Both have real X's, real Y's, and the surrounding work to ground them.
-
-The scanner is a regex-based pattern-matcher; it cannot distinguish a quoted exhibit from the entry's own sentences, nor an earned construction from a strawman one. *That is the point.* The scanner produces a triage signal. The human judgement makes the diagnosis. The entry has been triaged, the construction stays where it is doing work, and the reader is welcome to verify by reading the scanner's output for themselves.
-
-The entry has not been engineered to hit zero. *Earned Parallelism* is not the doctrine that the construction must be eliminated. It is the doctrine that the construction must be checked.
+That is the point. The doctrine is not zero parallelism. The doctrine is earned parallelism. The scanner produces a signal; judgement makes the diagnosis.
 
 ## Recommendations
 

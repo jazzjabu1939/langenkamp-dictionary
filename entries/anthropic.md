@@ -17,8 +17,11 @@ The xAI/Anthropic data centre deal announced May 7, 2026 is one of several recen
 
 ## See also
 
+- *[Dario Amodei](dario-amodei.md)*
+- *[Amanda Askell](amanda-askell.md)*
 - *[Claude](claude.md)* — the model family
 - *[Constitutional AI](constitutional-ai.md)* — Anthropic's training approach
 - *[Opus Addict](opus-addict.md)*
 - *[Lab Character](lab-character.md)*
 - *[Sovereign Compute](sovereign-compute.md)*
+- *[Using the Empire’s Telescope](empires-telescope.md)*

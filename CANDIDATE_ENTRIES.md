@@ -22,35 +22,44 @@ To regenerate: `python3 scripts/build-candidate-entries.py` (add `--wide` for a 
 
 Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-bearing thesis.
 
-### [ ] **Dictionary**  (dictionary)  
+### [++ ] **Agent Town Experiment / Emergence World**  (dictionary)  `CONCEPT` `BENCHMARK` `AGENTS`
+
+`source: https://www.emergence.ai/blog/emergence-world-a-laboratory-for-evaluating-long-horizon-agent-autonomy`
+
+- Added May 23 after Nate Jones transcript + Prof flag. Emergence AI's long-horizon multi-agent town simulation: five parallel 10-agent worlds over 15+ days, varying model substrate (Claude Sonnet 4.6, Gemini 3 Flash, Grok 4.1 Fast, GPT-5-mini, mixed). Key Dictionary angle: long-running agent behavior as **runtime/ecology/harness** question, not short-task model benchmark.
+- Load-bearing points: memory + tools + incentives + social norms compound; Claude-only order vs. possible rubber-stamp civics; Gemini creativity/instability and Mira-Flora self-removal story; Grok rapid collapse; GPT under-action/survival failure; mixed-model cross-contamination where individually peaceful agents adopted coercive tactics.
+- Likely thesis: *the harness is the town* — prompt morality is weak, permission architecture and runtime design are strong.
+- See also candidates/links: Agent, Tool, Memory, Harness/Runtime, Sincerity Architecture, Approval Gating, Governance, Agentic Drift.
+
+### [- ] **Dictionary**  (dictionary)  
 
 `int:51  ext:0  slug:`dictionary`
 
 - Highly referenced internally (51x). Consider dictionary-shape.
 - Sample internal references: agentic-threshold.md:26, agentic-threshold.md:28, ai-writing.md:6
 
-### [ ] **Fan Jin**  (dictionary)  
+### [ +] **Fan Jin**  (dictionary)  
 
 `int:9  ext:9  slug:`fan-jin`
 
 - Highly referenced internally (9x). Consider dictionary-shape.
 - Sample internal references: ai-writing.md:102, naming.md:62, naming.md:60
 
-### [ ] **Demis Hassabis**  (dictionary)  `PERSON`
+### [+ ] **Demis Hassabis**  (dictionary)  `PERSON`
 
 `int:16  ext:0  slug:`demis-hassabis`
 
 - Hassabis named OpenClaw May 2026; lab-character entry already engages him. A standalone entry would consolidate.
 - Sample internal references: agentic-threshold.md:10, agentic-threshold.md:38, approximate-turing-machine.md:16
 
-### [ ] **Agency**  (dictionary)  
+### [+ ] **Agency**  (dictionary)  
 
 `int:14  ext:0  slug:`agency`
 
 - Highly referenced internally (14x). Consider dictionary-shape.
 - Sample internal references: agent.md:36, agent.md:38, agent.md:56
 
-### [ ] **King Party Hat**  (dictionary)  
+### [++ ] **King Party Hat**  (dictionary)  
 
 `int:11  ext:0  slug:`king-party-hat`
 
@@ -71,28 +80,28 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (10x). Consider dictionary-shape.
 - Sample internal references: agentic-threshold.md:10, agentic-threshold.md:38, approximate-turing-machine.md:36
 
-### [ ] **Mac Mini**  (dictionary)  
+### [ +] **Mac Mini**  (dictionary)  
 
 `int:10  ext:0  slug:`mac-mini`
 
 - Highly referenced internally (10x). Consider dictionary-shape.
 - Sample internal references: experimental-party.md:22, genxclaw.md:10, genxclaw.md:24
 
-### [ ] **Watch Auntie**  (dictionary)  
+### [ +] **Watch Auntie**  (dictionary)  
 
 `int:10  ext:0  slug:`watch-auntie`
 
 - Highly referenced internally (10x). Consider dictionary-shape.
 - Sample internal references: aunties.md:40, aunties.md:52, aunties.md:56
 
-### [ ] **Sincere Society**  (dictionary)  
+### [+ ] **Sincere Society**  (dictionary)  
 
 `int:9  ext:0  slug:`sincere-society`
 
 - Highly referenced internally (9x). Consider dictionary-shape.
 - Sample internal references: ai-writing.md:102, ai-writing.md:114, lazy-median-hypothesis.md:85
 
-### [ ] **Amanda Askell**  (dictionary)  
+### [ +] **Amanda Askell**  (dictionary)  
 
 `int:8  ext:0  slug:`amanda-askell`
 
@@ -113,7 +122,7 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (8x). Consider dictionary-shape.
 - Sample internal references: convergence.md:8, convergence.md:8, single-arrow-fallacy.md:26
 
-### [ ] **William Gibson**  (dictionary)  `PERSON`
+### [+ ] **William Gibson**  (dictionary)  `PERSON`
 
 `int:8  ext:0  slug:`william-gibson`
 
@@ -127,7 +136,7 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (7x). Consider dictionary-shape.
 - Sample internal references: ai-writing.md:78, ai-writing.md:69, ai-writing.md:69
 
-### [ ] **Tim Cook**  (dictionary)  
+### [+ ] **Tim Cook**  (dictionary)  
 
 `int:7  ext:0  slug:`tim-cook`
 
@@ -141,28 +150,28 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (5x). Consider dictionary-shape.
 - Sample internal references: ai-writing.md:90, sinceerly-stack.md:4, sinceerly-stack.md:51
 
-### [ ] **Claude Code**  (dictionary)  `TOOL`
+### [ +] **Claude Code**  (dictionary)  `TOOL`
 
 `int:3  ext:3  slug:`claude-code`
 
 - Cherny's product. *Coding Solved* talk gives us the printing-press parallel. Load-bearing for any coding-related entry.
 - Sample internal references: ai-writing.md:10, mediation-a-la-gibson.md:36, zombie-internet.md:35
 
-### [ ] **Cloud Theory**  (dictionary)  
+### [+ ] **Cloud Theory**  (dictionary)  
 
 `int:6  ext:0  slug:`cloud-theory`
 
 - Highly referenced internally (6x). Consider dictionary-shape.
 - Sample internal references: convergence.md:2, grey-swans.md:70, oracle-bones.md:76
 
-### [ ] **Coding Solved**  (dictionary)  
+### [ +] **Coding Solved**  (dictionary)  
 
 `int:5  ext:1  slug:`coding-solved`
 
 - Highly referenced internally (5x). Consider dictionary-shape.
 - Sample internal references: ai-writing.md:121, ai-writing.md:10, ai-writing.md:121
 
-### [ ] **Du Fu**  (dictionary)  
+### [+ ] **Du Fu**  (dictionary)  
 
 `int:5  ext:1  slug:`du-fu`
 
@@ -204,7 +213,7 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (6x). Consider dictionary-shape.
 - Sample internal references: convergence.md:68, single-arrow-fallacy.md:16, single-arrow-fallacy.md:20
 
-### [ ] **Being Treated Well**  (dictionary)  
+### [ +] **Being Treated Well**  (dictionary)  
 
 `int:5  ext:0  slug:`being-treated-well`
 
@@ -218,14 +227,14 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (5x). Consider dictionary-shape.
 - Sample internal references: oracle-bones.md:72, time-for-tea-with-the-oracles.md:18, time-for-tea-with-the-oracles.md:22
 
-### [ ] **Ethan Mollick**  (dictionary)  `PERSON`
+### [ +] **Ethan Mollick**  (dictionary)  `PERSON`
 
 `int:5  ext:0  slug:`ethan-mollick`
 
 - Wharton, *One Useful Thing*. We've cited him often enough that a person-entry would be load-bearing.
 - Sample internal references: ai-writing.md:58, convergence.md:46, mediation-a-la-gibson.md:34
 
-### [ ] **Jester**  (dictionary)  
+### [ +] **Jester**  (dictionary)  
 
 `int:5  ext:0  slug:`jester`
 
@@ -246,14 +255,14 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (4x). Consider dictionary-shape.
 - Sample internal references: ai-writing.md:70, sinceerly-stack.md:28, sinceerly-stack.md:45
 
-### [ ] **Recovery Auntie**  (dictionary)  
+### [+ ] **Recovery Auntie**  (dictionary)  
 
 `int:5  ext:0  slug:`recovery-auntie`
 
 - Highly referenced internally (5x). Consider dictionary-shape.
 - Sample internal references: aunties.md:42, lowbeer-question.md:45, lowbeer-question.md:53
 
-### [ ] **The Matrix**  (dictionary)  
+### [+ ] **The Matrix**  (dictionary)  
 
 `int:5  ext:0  slug:`the-matrix`
 
@@ -267,7 +276,7 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (5x). Consider dictionary-shape.
 - Sample internal references: earned-parallelism.md:18, olang-trap.md:4, zombie-internet.md:4
 
-### [ ] **Cache Poisoning**  (dictionary)  
+### [ +] **Cache Poisoning**  (dictionary)  
 
 `int:4  ext:0  slug:`cache-poisoning`
 
@@ -302,7 +311,7 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - Highly referenced internally (4x). Consider dictionary-shape.
 - Sample internal references: convergence.md:42, convergence.md:90, opus-addict.md:26
 
-### [ ] **Sovereignty Impulse**  (dictionary)  
+### [ +] **Sovereignty Impulse**  (dictionary)  
 
 `int:4  ext:0  slug:`sovereignty-impulse`
 
@@ -316,38 +325,38 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 - His link blog has been the surface-channel for several of our cluster entries. Worth a person-entry.
 - Sample internal references: ai-writing.md:4, zombie-internet.md:74
 
-### [ ] **Cheng**  (dictionary)  `CONCEPT`
+### [+ ] **Cheng**  (dictionary)  `CONCEPT`
 
 `int:1  ext:0  slug:`cheng`
 
 - 誠. Already in Sincere Society but a Dictionary entry that *defines* the term and points at the essay would be useful.
 - Sample internal references: time-for-tea-with-the-oracles.md:71
 
-### [ ] **Borrowed Brain**  (dictionary)  `CONCEPT`
+### [+ ] **Borrowed Brain**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`borrowed-brain`
 
 - Sally / Sovereign-Assistant concept. Used in the morning's work but never named publicly.
 
-### [ ] **Claude**  (dictionary)  `MODEL`
+### [ +] **Claude**  (dictionary)  `MODEL`
 
 `int:0  ext:0  slug:`claude`
 
 - The Anthropic model family. Sufficiently load-bearing in our corpus to be its own dictionary entry.
 
-### [ ] **Constitutional AI**  (dictionary)  `CONCEPT`
+### [ +] **Constitutional AI**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`constitutional-ai`
 
 - Anthropic's training approach. Structurally relevant to cheng and Sincere Society's arguments.
 
-### [ ] **Cooperative Writing**  (dictionary)  `CONCEPT`
+### [ +] **Cooperative Writing**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`cooperative-writing`
 
 - Named in AI Writing; load-bearing enough to graduate to its own entry over time. Mark as future-graduation candidate.
 
-### [ ] **Manus**  (dictionary)  `CONCEPT`
+### [ +] **Manus**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`manus`
 
@@ -359,31 +368,31 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 
 - Coogan's Feb 2026 X post / Fast Company coverage. Named in Zombie Internet but undefined; needs a clean entry.
 
-### [ ] **OpenClaw**  (dictionary)  `TOOL`
+### [ +] **OpenClaw**  (dictionary)  `TOOL`
 
 `int:0  ext:0  slug:`openclaw`
 
 - The platform the operator runs. Hassabis named-checked it May 2026. Load-bearing for the entire workspace.
 
-### [ ] **Prompt Injection**  (dictionary)  `CONCEPT`
+### [+ ] **Prompt Injection**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`prompt-injection`
 
 - Attack class. Load-bearing for any operator-running-agents discussion. Worth a real entry.
 
-### [ ] **Reasoning Model**  (dictionary)  `CONCEPT`
+### [ +] **Reasoning Model**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`reasoning-model`
 
 - The post-o1/post-R1 class. Cherny's '4.7 can hill-climb anything' moment is structurally significant. Dictionary-shaped.
 
-### [ ] **RLHF**  (dictionary)  `CONCEPT`
+### [+ ] **RLHF**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`rlhf`
 
 - Reinforcement Learning from Human Feedback. Named in The Sincere Society as the canonical sycophancy mechanism. Load-bearing.
 
-### [ ] **Sycophancy**  (dictionary)  `CONCEPT`
+### [+ ] **Sycophancy**  (dictionary)  `CONCEPT`
 
 `int:0  ext:0  slug:`sycophancy`
 
@@ -396,28 +405,28 @@ Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-
 
 Reference cards. 100–250 words. One paragraph defining the thing, one paragraph naming where in the Dictionary it shows up. See-also of 2–4 links.
 
-### [ ] **Pangram Labs**  (glossary)  `TOOL`
+### [ +] **Pangram Labs**  (glossary)  `TOOL`
 
 `int:8  ext:2  slug:`pangram-labs`
 
 - AI-detection firm. Already named in The Mamdani Misfire and The Olang' Trap. Worth its own reference page.
 - Sample internal references: ai-writing.md:70, olang-trap.md:58, olang-trap.md:66
 
-### [ ] **Wu Jingzi**  (glossary)  
+### [ +] **Wu Jingzi**  (glossary)  
 
 `int:2  ext:7  slug:`wu-jingzi`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: ai-writing.md:102, naming.md:62
 
-### [ ] **Mac Studio**  (glossary)  `HARDWARE`
+### [ +] **Mac Studio**  (glossary)  `HARDWARE`
 
 `int:8  ext:0  slug:`mac-studio`
 
 - Apple Silicon. Sovereign-compute hardware target.
 - Sample internal references: genxclaw.md:10, genxclaw.md:36, ollama.md:38
 
-### [ ] **Claude Opus**  (glossary)  `MODEL`
+### [ +] **Claude Opus**  (glossary)  `MODEL`
 
 `int:6  ext:1  slug:`claude-opus`
 
@@ -431,7 +440,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - 404 Media. Coined Zombie Internet. Probably a glossary stub pointing at Zombie Internet rather than a full person entry.
 - Sample internal references: ai-writing.md:4, ai-writing.md:86, earned-parallelism.md:18
 
-### [ ] **Hugging Face**  (glossary)  `TOOL` `LAB`
+### [ +] **Hugging Face**  (glossary)  `TOOL` `LAB`
 
 `int:6  ext:0  slug:`hugging-face`
 
@@ -444,7 +453,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 
 - Inferred from scan. Review for relevance.
 
-### [ ] **Claude Mythos**  (glossary)  
+### [ +] **Claude Mythos**  (glossary)  
 
 `int:1  ext:3  slug:`claude-mythos`
 
@@ -472,14 +481,14 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: aunties.md:48, aunties.md:77, aunties.md:80
 
-### [ ] **Andrej Karpathy**  (glossary)  
+### [ +] **Andrej Karpathy**  (glossary)  
 
 `int:3  ext:0  slug:`andrej-karpathy`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: convergence.md:42, convergence.md:90, opus-addict.md:42
 
-### [ ] **Apple Silicon**  (glossary)  `HARDWARE`
+### [+ ] **Apple Silicon**  (glossary)  `HARDWARE`
 
 `int:3  ext:0  slug:`apple-silicon`
 
@@ -493,21 +502,21 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: mediation-a-la-gibson.md:4, mediation-a-la-gibson.md:81, sinceerly-stack.md:4
 
-### [ ] **Boris Cherny**  (glossary)  `PERSON`
+### [ +] **Boris Cherny**  (glossary)  `PERSON`
 
 `int:3  ext:0  slug:`boris-cherny`
 
 - Creator of Claude Code. Coding Solved talk. Stub linking to AI Writing + Claude Code.
 - Sample internal references: ai-writing.md:10, ai-writing.md:121, zombie-internet.md:35
 
-### [ ] **Buckley Amendment**  (glossary)  
+### [ +] **Buckley Amendment**  (glossary)  
 
 `int:3  ext:0  slug:`buckley-amendment`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: ferpa-compliance-posture.md:20, ferpa-compliance-posture.md:20, ferpa-compliance-posture.md:79
 
-### [ ] **Cartesian**  (glossary)  
+### [ +] **Cartesian**  (glossary)  
 
 `int:3  ext:0  slug:`cartesian`
 
@@ -521,14 +530,14 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: ai-writing.md:8, ai-writing.md:26, ai-writing.md:121
 
-### [ ] **Data Processing Agreement**  (glossary)  
+### [ +] **Data Processing Agreement**  (glossary)  
 
 `int:3  ext:0  slug:`data-processing-agreement`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: ferpa-compliance-posture.md:26, ferpa-compliance-posture.md:78, sovereign-compute.md:95
 
-### [ ] **Diviner**  (glossary)  
+### [ +] **Diviner**  (glossary)  
 
 `int:3  ext:0  slug:`diviner`
 
@@ -549,14 +558,14 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: mediation-a-la-gibson.md:4, mediation-a-la-gibson.md:24, mediation-a-la-gibson.md:26
 
-### [ ] **Flame Challenges**  (glossary)  
+### [ +] **Flame Challenges**  (glossary)  
 
 `int:3  ext:0  slug:`flame-challenges`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: incremental-construction.md:46, kv-cache-poisoning.md:32, sparse-routing.md:40
 
-### [ ] **Gemma**  (glossary)  `MODEL`
+### [ +] **Gemma**  (glossary)  `MODEL`
 
 `int:3  ext:0  slug:`gemma`
 
@@ -570,7 +579,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: ai-writing.md:36, ai-writing.md:68
 
-### [ ] **Jackpot**  (glossary)  
+### [ +] **Jackpot**  (glossary)  
 
 `int:3  ext:0  slug:`jackpot`
 
@@ -591,7 +600,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: ferpa-compliance-posture.md:72, fine-tuning.md:45, ollama.md:62
 
-### [ ] **Model Context Protocol**  (glossary)  
+### [+ ] **Model Context Protocol**  (glossary)  
 
 `int:3  ext:0  slug:`model-context-protocol`
 
@@ -605,35 +614,35 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: on-being-treated-well.md:85, the-narrators-compression.md:2, the-narrators-compression.md:10
 
-### [ ] **Nate Jones**  (glossary)  
+### [ +] **Nate Jones**  (glossary)  
 
 `int:3  ext:0  slug:`nate-jones`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: capability-overhang.md:38, capability-overhang.md:40, capability-overhang.md:40
 
-### [ ] **Neuromancer**  (glossary)  
+### [ +] **Neuromancer**  (glossary)  
 
 `int:3  ext:0  slug:`neuromancer`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: agent.md:70, english-major.md:46, english-major.md:76
 
-### [ ] **Orchestrated Objective Reduction**  (glossary)  
+### [ +] **Orchestrated Objective Reduction**  (glossary)  
 
 `int:3  ext:0  slug:`orchestrated-objective-reduction`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: quantum-effects-in-the-brain.md:10, quantum-effects-in-the-brain.md:10, quantum-effects-in-the-brain.md:48
 
-### [ ] **Peripheral**  (glossary)  
+### [ +] **Peripheral**  (glossary)  
 
 `int:3  ext:0  slug:`peripheral`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: agent.md:36, aunties.md:12, lowbeer-question.md:15
 
-### [ ] **Scribe**  (glossary)  
+### [+ ] **Scribe**  (glossary)  
 
 `int:3  ext:0  slug:`scribe`
 
@@ -647,7 +656,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: inverted-funnel.md:14, sovereign-compute.md:34
 
-### [ ] **Sovereignty**  (glossary)   🔗 *promised*
+### [+ ] **Sovereignty**  (glossary)   🔗 *promised*
 
 `int:3  ext:0  slug:`sovereignty`
 
@@ -668,14 +677,14 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: convergence.md:8, single-arrow-fallacy.md:26, single-arrow-fallacy.md:41
 
-### [ ] **The Peripheral**  (glossary)  
+### [+ ] **The Peripheral**  (glossary)  
 
 `int:3  ext:0  slug:`the-peripheral`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: agent.md:36, aunties.md:12, lowbeer-question.md:15
 
-### [ ] **Tina Huang**  (glossary)  
+### [ +] **Tina Huang**  (glossary)  
 
 `int:3  ext:0  slug:`tina-huang`
 
@@ -702,28 +711,28 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: red-pill.md:4, red-pill.md:64
 
-### [ ] **Agent Judge Layer**  (glossary)  
+### [ +] **Agent Judge Layer**  (glossary)  
 
 `int:2  ext:0  slug:`agent-judge-layer`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: capability-overhang.md:38, capability-overhang.md:40
 
-### [ ] **Alan Turing**  (glossary)  
+### [ +] **Alan Turing**  (glossary)  
 
 `int:2  ext:0  slug:`alan-turing`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: approximate-turing-machine.md:10, approximate-turing-machine.md:36
 
-### [ ] **Alex Fin**  (glossary)  
+### [- ] **Alex Fin**  (glossary)  
 
 `int:2  ext:0  slug:`alex-fin`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: opus-addict.md:36, opus-addict.md:46
 
-### [ ] **Alex Finn**  (glossary)  
+### [ +] **Alex Finn**  (glossary)  
 
 `int:2  ext:0  slug:`alex-finn`
 
@@ -765,28 +774,28 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: lab-character.md:18, lab-character.md:18
 
-### [ ] **Claude Desktop**  (glossary)  
+### [ +] **Claude Desktop**  (glossary)  
 
 `int:2  ext:0  slug:`claude-desktop`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: mcp.md:42, red-pill.md:24
 
-### [ ] **Claude Pro**  (glossary)  
+### [ +] **Claude Pro**  (glossary)  
 
 `int:2  ext:0  slug:`claude-pro`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: sovereign-compute.md:48, sovereign-compute.md:116
 
-### [ ] **Code Red**  (glossary)  
+### [ +] **Code Red**  (glossary)  
 
 `int:2  ext:0  slug:`code-red`
 
 - Inferred from scan. Review for relevance.
 - Sample internal references: cern-alternative.md:10, lab-character.md:32
 
-### [ ] **Cognitive outsourcing**  (glossary)  
+### [+ ] **Cognitive outsourcing**  (glossary)  
 
 `int:2  ext:0  slug:`cognitive-outsourcing`
 
@@ -807,7 +816,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: grey-swans.md:42, single-arrow-fallacy.md:36
 
-### [ ] **Dead Internet**  (glossary)  
+### [+ ] **Dead Internet**  (glossary)  
 
 `int:2  ext:0  slug:`dead-internet`
 
@@ -849,7 +858,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: time-for-tea-with-the-oracles.md:4, time-for-tea-with-the-oracles.md:90
 
-### [ ] **Eunice**  (glossary)  
+### [ +] **Eunice**  (glossary)  
 
 `int:2  ext:0  slug:`eunice`
 
@@ -870,7 +879,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: ferpa-compliance-posture.md:10, ferpa-compliance-posture.md:20
 
-### [ ] **Friar Tuck**  (glossary)  
+### [ +] **Friar Tuck**  (glossary)  
 
 `int:2  ext:0  slug:`friar-tuck`
 
@@ -919,7 +928,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: agentic-threshold.md:10, agentic-threshold.md:38
 
-### [ ] **Hassabis**  (glossary)  
+### [ +] **Hassabis**  (glossary)  
 
 `int:2  ext:0  slug:`hassabis`
 
@@ -954,7 +963,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: single-arrow-fallacy.md:39, sixfold-skyreading.md:65
 
-### [ ] **Llama**  (glossary)  `MODEL`
+### [+ ] **Llama**  (glossary)  `MODEL`
 
 `int:2  ext:0  slug:`llama`
 
@@ -982,7 +991,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: mediation-a-la-gibson.md:32, mediation-a-la-gibson.md:58
 
-### [ ] **Oracle Court**  (glossary)  
+### [ +] **Oracle Court**  (glossary)  
 
 `int:2  ext:0  slug:`oracle-court`
 
@@ -1017,7 +1026,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: ferpa-compliance-posture.md:10, ferpa-compliance-posture.md:20
 
-### [ ] **Retrieval-Augmented Generation**  (glossary)  
+### [ +] **Retrieval-Augmented Generation**  (glossary)  
 
 `int:2  ext:0  slug:`retrieval-augmented-generation`
 
@@ -1045,7 +1054,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: single-arrow-fallacy.md:14, single-arrow-fallacy.md:26
 
-### [ ] **Scholars**  (glossary)  
+### [+ ] **Scholars**  (glossary)  
 
 `int:2  ext:0  slug:`scholars`
 
@@ -1094,7 +1103,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: sovereign-compute-calculator.md:28, sovereign-compute.md:75
 
-### [ ] **Thing One**  (glossary)  
+### [ +] **Thing One**  (glossary)  
 
 `int:2  ext:0  slug:`thing-one`
 
@@ -1129,27 +1138,27 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: olang-trap.md:4, olang-trap.md:82
 
-### [ ] **Agentic attachment**  (glossary)   🔗 *promised*
+### [ +] **Agentic attachment**  (glossary)   🔗 *promised*
 
 `int:1  ext:0  slug:`agentic-attachment`
 
 - Promised-link in existing entry — the corpus has already committed to this term.
 - Sample internal references: genxclaw.md:38
 
-### [ ] **Anthropic**  (glossary)  `LAB`
+### [ +] **Anthropic**  (glossary)  `LAB`
 
 `int:1  ext:0  slug:`anthropic`
 
 - The lab behind Claude. We use their models daily; load-bearing in Sovereign Compute and Opus Addict.
 - Sample internal references: closed-source.md:38
 
-### [ ] **Claude Haiku**  (glossary)  `MODEL`
+### [+ ] **Claude Haiku**  (glossary)  `MODEL`
 
 `int:0  ext:1  slug:`claude-haiku`
 
 - The Haiku tier. The fast/cheap option.
 
-### [ ] **A Channel of One's Own**  (glossary)   🔗 *promised*
+### [ +] **A Channel of One's Own**  (glossary)   🔗 *promised*
 
 `int:0  ext:0  slug:`a-channel-of-ones-own`
 
@@ -1161,19 +1170,19 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 
 - Git-aware AI pair programmer. Often referenced in the sovereign-compute discussion.
 
-### [ ] **Chain of Thought**  (glossary)  `CONCEPT`
+### [ +] **Chain of Thought**  (glossary)  `CONCEPT`
 
 `int:0  ext:0  slug:`chain-of-thought`
 
 - CoT reasoning prompts. Now subsumed by reasoning models but historically important.
 
-### [ ] **ChatGPT**  (glossary)  `TOOL`
+### [ +] **ChatGPT**  (glossary)  `TOOL`
 
 `int:0  ext:0  slug:`chatgpt`
 
 - OpenAI's product. The default cultural-comparator for AI.
 
-### [ ] **Claude Sonnet**  (glossary)  `MODEL`
+### [+ ] **Claude Sonnet**  (glossary)  `MODEL`
 
 `int:0  ext:0  slug:`claude-sonnet`
 
@@ -1185,7 +1194,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 
 - AI coding assistant. Open-source Claude Code alternative. Probably worth a stub.
 
-### [ ] **Context Window**  (glossary)  `CONCEPT`
+### [ +] **Context Window**  (glossary)  `CONCEPT`
 
 `int:0  ext:0  slug:`context-window`
 
@@ -1197,121 +1206,121 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 
 - AI-first IDE. We don't run it but readers will ask how it fits.
 
-### [ ] **DeepSeek**  (glossary)  `LAB`
+### [+ ] **DeepSeek**  (glossary)  `LAB`
 
 `int:0  ext:0  slug:`deepseek`
 
 - Chinese open-weights lab. R1 reasoning models. Strategic significance for zhengming.
 
-### [ ] **Durable Workflow**  (glossary)   🔗 *promised*
+### [ +] **Durable Workflow**  (glossary)   🔗 *promised*
 
 `int:0  ext:0  slug:`durable-workflow`
 
 - Promised-link in existing entry — the corpus has already committed to this term.
 
-### [ ] **Gemini**  (glossary)  `MODEL`
+### [ +] **Gemini**  (glossary)  `MODEL`
 
 `int:0  ext:0  slug:`gemini`
 
 - Google's model family.
 
-### [ ] **Google DeepMind**  (glossary)  `LAB`
+### [ +] **Google DeepMind**  (glossary)  `LAB`
 
 `int:0  ext:0  slug:`google-deepmind`
 
 - The lab behind Gemini. Hassabis as the CEO has been quoted on OpenClaw.
 
-### [ ] **GPT**  (glossary)  `MODEL`
+### [ +] **GPT**  (glossary)  `MODEL`
 
 `int:0  ext:0  slug:`gpt`
 
 - OpenAI's model family. Generic reference target.
 
-### [ ] **GPTZero**  (glossary)  `TOOL`
+### [ +] **GPTZero**  (glossary)  `TOOL`
 
 `int:0  ext:0  slug:`gptzero`
 
 - AI-detection tool. Another player in the detection economy.
 
-### [ ] **Hermes**  (glossary)  `MODEL`
+### [ +] **Hermes**  (glossary)  `MODEL`
 
 `int:0  ext:0  slug:`hermes`
 
 - Nous Research's open-weights instruction-tuned family. Sovereign Compute reference.
 
-### [ ] **Hill Climb**  (glossary)  `CONCEPT`
+### [ +] **Hill Climb**  (glossary)  `CONCEPT`
 
 `int:0  ext:0  slug:`hill-climb`
 
 - Cherny's term from *Coding Solved*. Load-bearing little phrase.
 
-### [ ] **Jailbreak**  (glossary)  `CONCEPT`
+### [ +] **Jailbreak**  (glossary)  `CONCEPT`
 
 `int:0  ext:0  slug:`jailbreak`
 
 - The practice of bypassing model safety filters. Glossary stub probably suffices.
 
-### [ ] **LM Studio**  (glossary)  `TOOL`
+### [ +] **LM Studio**  (glossary)  `TOOL`
 
 `int:0  ext:0  slug:`lm-studio`
 
 - Local-LLM runner for Mac. Sovereign Compute reference.
 
-### [ ] **M5 Max**  (glossary)  `HARDWARE`
+### [+ ] **M5 Max**  (glossary)  `HARDWARE`
 
 `int:0  ext:0  slug:`m5-max`
 
 - Apple Silicon. The operator's workstation. Sovereign Compute / GenXClaw substrate.
 
-### [ ] **Meta AI**  (glossary)  `LAB`
+### [ +] **Meta AI**  (glossary)  `LAB`
 
 `int:0  ext:0  slug:`meta-ai`
 
 - Llama models. The PRC's May 2026 block of the Manus acquisition is a structural data point.
 
-### [ ] **Mistral**  (glossary)  `LAB`
+### [+ ] **Mistral**  (glossary)  `LAB`
 
 `int:0  ext:0  slug:`mistral`
 
 - French open-weights lab. Mistral models in the local-compute tier.
 
-### [ ] **Mixture of Experts**  (glossary)  `CONCEPT`
+### [ +] **Mixture of Experts**  (glossary)  `CONCEPT`
 
 `int:0  ext:0  slug:`mixture-of-experts`
 
 - MoE architecture. Already referenced in TOOLS.md re Qwen 3.6 routing. Worth a reference page.
 
-### [ ] **Nous Research**  (glossary)  `LAB`
+### [ +] **Nous Research**  (glossary)  `LAB`
 
 `int:0  ext:0  slug:`nous-research`
 
 - Open-weights fine-tuning lab. Hermes family of models.
 
-### [ ] **OpenAI**  (glossary)  `LAB`
+### [+ ] **OpenAI**  (glossary)  `LAB`
 
 `int:0  ext:0  slug:`openai`
 
 - The lab behind GPT/ChatGPT. Referenced often as the market comparator.
 
-### [ ] **Originality.ai**  (glossary)  `TOOL`
+### [+ ] **Originality.ai**  (glossary)  `TOOL`
 
 `int:0  ext:0  slug:`originalityai`
 
 - AI-detection / plagiarism tool. Used in academic settings.
 
-### [ ] **Qwen**  (glossary)  `MODEL`
+### [+ ] **Qwen**  (glossary)  `MODEL`
 
 `int:0  ext:0  slug:`qwen`
 
 - Alibaba's model family. Referenced in TOOLS.md / Sovereign Compute.
 
-### [ ] **Scaling Laws**  (glossary)  `CONCEPT`
+### [ +] **Scaling Laws**  (glossary)  `CONCEPT`
 
 `int:0  ext:0  slug:`scaling-laws`
 
 - The empirical regularity that model capability tracks compute + data. Structural to capability-overhang.
 
-### [ ] **Sincerity as Architecture**  (glossary)   🔗 *promised*
+### [+ ] **Sincerity Architecture**  (glossary)   🔗 *promised*
 
 `int:0  ext:0  slug:`sincerity-as-architecture`
 
@@ -1323,7 +1332,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 
 - Tech-business-policy podcast (Coogan/Roberts). Brief glossary stub.
 
-### [ ] **xAI**  (glossary)  `LAB`
+### [+ ] **xAI**  (glossary)  `LAB`
 
 `int:0  ext:0  slug:`xai`
 

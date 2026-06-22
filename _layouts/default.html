@@ -291,6 +291,42 @@
         padding-bottom: 0.75rem;
       }
 
+      /* Essay / position-entry cue.
+         These entries do more than define a term. They advance a claim,
+         name a pattern, or offer an interpretive framework. The cue is
+         deliberately lighter than the Glossary card: enough to orient a
+         search visitor without making the page feel over-designed. */
+      .main-content .entry-type-note {
+        font-family: var(--lk-font-heading);
+        font-size: 0.88rem;
+        color: var(--lk-muted);
+        background: #fffdfa;
+        border-left: 4px solid var(--lk-maroon);
+        padding: 0.6rem 0.85rem;
+        margin: 0 0 1.25rem 0;
+      }
+      .main-content .entry-type-badge,
+      .main-content .essay-badge,
+      .main-content .reference-badge {
+        display: inline-block;
+        font-family: var(--lk-font-mono);
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.14rem 0.45rem;
+        border-radius: 3px;
+        vertical-align: middle;
+      }
+      .main-content .essay-badge {
+        color: #7a251f;
+        background: #f5e8e3;
+      }
+      .main-content .reference-badge {
+        color: #6b5b95;
+        background: #ece7f1;
+      }
+
       /* Other Writing cards */
       .main-content .writing-grid {
         display: grid;
@@ -417,6 +453,7 @@
         <a href="{{ '/' | relative_url }}" class="btn">Return to Dictionary</a>
         <a href="{{ '/entries/' | relative_url }}" class="btn">All Entries (A–Z)</a>
         <a href="{{ '/topics/' | relative_url }}" class="btn">By Topic</a>
+        <a href="{{ '/using-in-a-course/' | relative_url }}" class="btn">For Students</a>
         <a href="{{ '/other-writing/' | relative_url }}" class="btn">Other Writing</a>
         <a href="{{ '/about-the-name/' | relative_url }}" class="btn">About the Name</a>
       </div>
@@ -433,6 +470,12 @@
         {% endif %}
         {{ content }}
       </div>
+      {% elsif page.kind == "essay" or page.layout == "entry" %}
+      <div class="entry-type-note"><span class="essay-badge">Essay</span> This entry carries an argument or interpretive position, not just a neutral definition.</div>
+      {{ content }}
+      {% elsif page.permalink contains "/entries/" and page.permalink != "/entries/" %}
+      <div class="entry-type-note"><span class="reference-badge">Reference</span> This entry is primarily explanatory reference: what the term means, why it exists, and how it is used.</div>
+      {{ content }}
       {% else %}
       {{ content }}
       {% endif %}
@@ -440,6 +483,7 @@
       <div class="return-bar" style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #eff0f1; text-align: center;">
         <a href="{{ '/' | relative_url }}" class="btn">Return to Dictionary</a>
         <a href="{{ '/entries/' | relative_url }}" class="btn">All Entries (A–Z)</a>
+        <a href="{{ '/using-in-a-course/' | relative_url }}" class="btn">For Students</a>
         <a href="{{ '/other-writing/' | relative_url }}" class="btn">Other Writing</a>
       </div>
 

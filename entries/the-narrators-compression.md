@@ -91,7 +91,7 @@ To be careful, several things this entry is *not* saying:
 - [English Major](english-major.md) — the skill of *clear specification under ambiguity*; the narrator's compression is what makes specification hard, because the specification is itself produced by a compressing system
 - [The Experimental Party](experimental-party.md) — the architectural lesson that hierarchy of agents matters; here applied to the architecture of the self
 - *(future)* [A Channel of One's Own](a-channel-of-ones-own.md) — relationship-specific capital and channel ownership; relevant because working with an AI agent over time changes the operator's model of their own narrator
-- *(future)* [Sincerity as Architecture](sincerity-as-architecture.md) — the *cheng* move applied to the self, not just to institutional reports
+- [Sincerity Architecture](sincerity-as-architecture.md) — the *cheng* move applied to the self, not just to institutional reports
 
 ## Where the term came from
 

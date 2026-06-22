@@ -35,6 +35,8 @@ Each entry follows the same structure:
 
 If a term cannot be explained that way, the term is probably hiding something.
 
+The entries now carry a small type cue. **Glossary** entries are compact reference definitions. **Reference** entries explain a term in the standard six-part form. **Essay** entries name a pattern, advance an argument, or make the Dictionary's interpretive position explicit. The distinction is there so a reader arriving from a search for a technical term knows whether they are reading a neutral reference card or walking into the Dictionary's worldview.
+
 ---
 
 ## A note on the name
@@ -53,6 +55,7 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 
 - **[Alphabetical list](entries/)** — every term, in dictionary order.
 - **[Topic index](topics.md)** — same entries grouped by theme.
+- **[Using this Dictionary in a course](using-in-a-course.md)** — a short orientation page for students.
 
 ---
 
@@ -68,6 +71,7 @@ Free, open-access, runs in your browser, no tracking.
 
 - **[Alphabetical index](entries/)** — every entry, A to Z, with one-line descriptions.
 - **[Topic index](topics.md)** — same entries grouped by theme.
+- **[For students](using-in-a-course.md)** — how to use the Dictionary in a course.
 
 ---
 

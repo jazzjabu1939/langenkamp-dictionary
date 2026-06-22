@@ -3,7 +3,7 @@ layout: default
 title: "Sparse Routing"
 permalink: /entries/sparse-routing/
 summary: "the mechanism in Mixture of Experts models by which a learned router activates only a small fraction of the model's total parameters for each token — trading consistency for speed, and creating the cold-start vulnerability that incremental construction is designed to address."
-published: false
+published: true
 ---
 
 # Sparse Routing
