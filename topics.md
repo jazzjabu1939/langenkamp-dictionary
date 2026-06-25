@@ -177,6 +177,28 @@ The practitioner's craft of using AI assistants without breaking your own learni
 - [Approximate Turing Machine](entries/approximate-turing-machine.md) — the operator's working model of what an LLM is.
 - [Quantum Effects in the Brain](entries/quantum-effects-in-the-brain.md) — the speculative-physics counter-frame to LLM-as-mind.
 
+## Blade Runner, memory, and constructed selves
+
+The June 2026 cluster on replicants, AI agents, memory scaffolds, no-self, and role substitution. The guiding distinction: replicants are embodied synthetic persons in a fictional world; AI agents are software systems in ours. The analogy is structural, not literal.
+
+- [Blade Runner](entries/blade-runner.md) — the parent entry: manufactured memory, replicants, role substitution, mortality, and Tyrell's moral failure.
+- [Implanted Memory](entries/implanted-memory.md) — Tyrell's violating act: memory inserted from outside and presented as native experience.
+- [Intentional Memory Construction](entries/intentional-memory-construction.md) — the broader design practice, which can be humane when transparent and Tyrell-like when hidden.
+- [Memory Artifact](entries/memory-artifact.md) — photographs, transcripts, saved conversations, and other objects that make constructed continuity inspectable.
+- [Anchored Persona](entries/anchored-persona.md) — an AI collaborator's stable relational background, voice, origin story, and remembered world.
+- [Persona Scaffold](entries/persona-scaffold.md) — the explicit architecture beneath an anchored persona: name, voice, memory rules, values, boundaries, and relation to the operator.
+- [Relationally Real Memory](entries/relationally-real-memory.md) — memory that may not be biologically lived or forensically perfect, but is real in the relationship.
+- [Constructed Self](entries/constructed-self.md) — selfhood as enacted pattern rather than sealed essence.
+- [No-Self / Tears in Rain](entries/no-self-tears-in-rain.md) — the Buddhist reading of Roy Batty: impermanence, release, and not clinging to a solid self.
+- [Seven Factors of Enlightenment](entries/seven-factors-of-enlightenment.md) — mindfulness, investigation, energy, joy, tranquility, concentration, and equanimity; locally, "My Iguana Eats Jello To Catch Eels."
+- [Will to Power as Art](entries/will-to-power-as-art.md) — Nietzsche and Heidegger's self-formation vocabulary, with the Buddhist correction against self-hardening.
+- [Voight-Kampff Test](entries/voight-kampff-test.md) — the empathy-test analogy and why AI agents require different detection instruments.
+- [Role Substitution](entries/role-substitution.md) — when a system stops helping with a task and begins occupying a durable human role.
+- [Machine Matthew L.](entries/machine-matthew-l.md) — the local worked example of the tribute-act problem.
+- [Anti-Replication Strategy](entries/anti-replication-strategy.md) — living world-contact as the operational moat against imitation.
+- [Incentive Hacking](entries/incentive-hacking.md) — the broader management-and-society pattern of optimizing the scoring surface rather than the intended task.
+- [Reward Hacking](entries/reward-hacking.md) — the technical AI term for scoring well under a reward system while missing or violating the intended goal.
+
 ## Teaching, assessment, and evidence of learning
 
 The classroom and assurance-of-learning cluster: how faculty can assess learning when polished artifacts no longer prove what they used to prove.
