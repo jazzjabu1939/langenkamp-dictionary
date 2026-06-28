@@ -54,7 +54,7 @@ The work has to become engineering.
 
 ## Karpathy's correction
 
-Karpathy's later move toward **agentic engineering** matters because it is a public self-correction. He did not merely add a new phrase to the pile. He named the next step: the same broad activity, but done with professional responsibility rather than consumer-mode drift.
+Karpathy's later move toward **[Agentic Engineering](agentic-engineering.md)** matters because it is a public self-correction. He did not merely add a new phrase to the pile. He named the next step: the same broad activity, but done with professional responsibility rather than consumer-mode drift.
 
 Vibe coding is the phase where the human treats the model as a magical code fountain. Agentic engineering is the phase where the human designs the workflow, constrains the agent, reviews the diff, tests the behavior, understands the failure modes, and owns the result.
 
@@ -82,7 +82,7 @@ That is not a moral failure. It is a category distinction. Vibe coding is a way 
 
 ## See also
 
-*AI Writing*, *AI Produced Artifact*, *Artifact Is Not Competence*, *Coding Solved*, *Claude Code*, *Capability Overhang*, *Sovereign Compute*, *OpenClaw*, *Red Pill*, *Agentic Engineering*.
+*AI Writing*, *AI Produced Artifact*, *Artifact Is Not Competence*, *Coding Solved*, *Claude Code*, *Capability Overhang*, *Sovereign Compute*, *OpenClaw*, *Red Pill*, *[Agentic Engineering](agentic-engineering.md)*.
 
 ## Source
 

@@ -29,6 +29,7 @@ A coordinated set of entries on writing in the AI era. Triggered by Jason Koeble
 
 - [AI Writing](entries/ai-writing.md) — the parent hub: Cherny's printing-press parallel, the inverse-operation argument, the three *or-or-or* questions, the editorial bet made explicit.
 - [Vibe Coding](entries/vibe-coding.md) — AI-assisted software development by conversational drift, before the work has earned the name engineering.
+- [Agentic Engineering](entries/agentic-engineering.md) — AI-assisted software work where the human owns architecture, constraints, tests, and responsibility.
 - [Zombie Internet](entries/zombie-internet.md) — Koebler's term for the AI-and-human-mixed substrate. Sibling to AI Writing; names the **medium**.
 - [Earned Parallelism](entries/earned-parallelism.md) — the diagnostic for negative parallelism (the *"It is not X. It is Y"* family). Includes a Python scanner reproduced verbatim and a self-audit of the Dictionary's own corpus.
 - [Cooperative Writing](entries/cooperative-writing.md) — writing-with-AI where the human remains author, editor, judge, and accountable party.
