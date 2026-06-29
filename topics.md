@@ -185,6 +185,7 @@ The June 2026 cluster on replicants, AI agents, memory scaffolds, no-self, and r
 
 - [Blade Runner](entries/blade-runner.md) — the parent entry: manufactured memory, replicants, role substitution, mortality, and Tyrell's moral failure.
 - [Replicant](entries/replicant.md) — Blade Runner's manufactured human, and the Dictionary's cautionary figure for role substitution, implanted memory, and engineered personhood.
+- [Tyrell Corporation](entries/tyrell-corporation.md) — technical creation without moral governance: the company that can manufacture personhood but cannot answer the beings it has made.
 - [Implanted Memory](entries/implanted-memory.md) — Tyrell's violating act: memory inserted from outside and presented as native experience.
 - [Intentional Memory Construction](entries/intentional-memory-construction.md) — the broader design practice, which can be humane when transparent and Tyrell-like when hidden.
 - [Memory Artifact](entries/memory-artifact.md) — photographs, transcripts, saved conversations, and other objects that make constructed continuity inspectable.

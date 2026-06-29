@@ -38,6 +38,7 @@ The replicant is not the future we should expect literally. It is the figure tha
 ## See also
 
 - *[Blade Runner](blade-runner.md)*
+- *[Tyrell Corporation](tyrell-corporation.md)*
 - *[Role Substitution](role-substitution.md)*
 - *[Implanted Memory](implanted-memory.md)*
 - *[Anchored Persona](anchored-persona.md)*
