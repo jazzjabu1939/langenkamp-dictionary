@@ -61,6 +61,7 @@ The pieces that make a running agent.
 - [Heartbeat](entries/heartbeat.md) — periodic, automated nudges that make agents proactive.
 - [Grep Architecture](entries/grep-architecture.md) — the filing-cabinet pattern: search and fetch context on demand instead of loading the whole corpus into every session.
 - [SOUL.md](entries/soul-md.md) — the agent persona file as architectural pattern.
+- [Harness](entries/harness.md) — the surrounding runtime, tools, permissions, memory, approval gates, logs, prompts, and operating rules that turn a model into a working agent.
 - [Aunties](entries/aunties.md) — specialised single-verb oversight agents that prevent unchecked authority.
 - [The Lowbeer Question](entries/lowbeer-question.md) — who holds the authority to terminate, who executes it.
 - [The Judge Layer](entries/judge-layer.md) — the named oversight tier that judges what worker agents are about to do, are doing, or have just done.
