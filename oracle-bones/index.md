@@ -31,6 +31,12 @@ The predictions come from an internal **Court of Oracles** we keep for this purp
 
 ## Filed bones
 
+- **[Bone #008 — Submarine Cable Resilience](2026-07-12-submarine-cable-resilience/)** · filed July 12, 2026 · judge by December 31, 2026
+- **[Bone #007 — Kenya Disaster-Risk Financing](2026-06-28-kenya-drf/)** · filed June 28, 2026 · judge by December 31, 2026
+- **[Bone #006 — Afghan Returns](2026-06-24-afghan-returns/)** · filed June 24, 2026 · judge by September 30, 2026
+- **[Bone #005 — Bundibugyo Ebola](2026-06-21-bundibugyo-ebola/)** · filed June 21, 2026 · judge by August 31, 2026
+- **[Bone #004 — Project Agora](2026-06-14-project-agora/)** · filed June 14, 2026 · judge by October 31, 2026
+- **[Bone #003 — AUKUS UUV Seabed Systems](2026-05-31-aukus-uuv-seabed/)** · filed May 31, 2026 · judge by November 30, 2026
 - **[Bone #002 — U.S.–China Managed Trade](2026-05-15-us-china-managed-trade/)** · filed May 15, 2026 · judge by July 31, 2026
 
 ---

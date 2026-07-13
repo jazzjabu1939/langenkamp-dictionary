@@ -31,9 +31,21 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
   <a class="writing-card oracle-card" href="/oracle-bones/">
     <span class="writing-kicker">Prediction Register</span>
     <strong>Oracle Bones</strong>
-    <span>Dated, falsifiable predictions filed before the event resolves and scored after.</span>
+    <span>Dated, falsifiable predictions filed before the event resolves and scored after. Archive current through July 12, 2026.</span>
   </a>
 </div>
+
+---
+
+## Current Oracle Bones
+
+- **[July 12, 2026](/oracle-bones/2026-07-12-submarine-cable-resilience/)** · Bone #008 — Submarine-cable resilience, repair governance, and the 2026 ITU/ICPC recommendations
+- **[June 28, 2026](/oracle-bones/2026-06-28-kenya-drf/)** · Bone #007 — Kenya disaster-risk financing and operational fiscal architecture
+- **[June 24, 2026](/oracle-bones/2026-06-24-afghan-returns/)** · Bone #006 — Afghan returns from Iran and Pakistan as forced-migration stress
+- **[June 21, 2026](/oracle-bones/2026-06-21-bundibugyo-ebola/)** · Bone #005 — Bundibugyo Ebola and public-health state capacity
+- **[June 14, 2026](/oracle-bones/2026-06-14-project-agora/)** · Bone #004 — Project Agora and tokenised wholesale settlement
+- **[May 31, 2026](/oracle-bones/2026-05-31-aukus-uuv-seabed/)** · Bone #003 — AUKUS UUV seabed systems and alliance implementation
+- **[Full Oracle Bones archive](/oracle-bones/)**
 
 ---
 
