@@ -13,7 +13,7 @@ This page collects course-facing materials that belong near the Dictionary but a
   <a class="writing-card" href="/case-studies/tru-by-hilton/">
     <span class="writing-kicker">Case Study</span>
     <strong>Tru by Hilton</strong>
-    <span>A strategy case on how Hilton uses Tru to reach younger and value-conscious travelers without weakening Hampton.</span>
+    <span>A strategy case on Hilton's hotel brand portfolio, Tru, Hampton, owner economics, and cannibalization risk.</span>
   </a>
 
   <a class="writing-card" href="/using-in-a-course/">
@@ -27,7 +27,7 @@ This page collects course-facing materials that belong near the Dictionary but a
 
 ## Case Studies
 
-- **[Tru by Hilton](/case-studies/tru-by-hilton/)** - Reinventing midscale lodging without undermining Hampton.
+- **[Tru by Hilton](/case-studies/tru-by-hilton/)** - A brand portfolio strategy case on Tru, Hampton, and midscale lodging.
 
 ---
 
