@@ -22,6 +22,7 @@ The irony, as of 2026, is that some of the most practically sovereignty-supporti
 - *[Open-Weights Inversion](open-weights-inversion.md)*
 - *[Qwen](qwen.md)*
 - *[DeepSeek](deepseek.md)*
+- *[Kimi K3](kimi-k3.md)*
 - *[Gemma](gemma.md)*
 - *[Llama](llama.md)*
 - *[Sovereign Compute](sovereign-compute.md)*

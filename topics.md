@@ -104,6 +104,7 @@ How models are built, sized, distributed, and used.
 - [Llama](entries/llama.md) — Meta's open-weights family.
 - [Gemma](entries/gemma.md) — Google's open-weights family.
 - [Qwen](entries/qwen.md) — Alibaba's open-weights family.
+- [Kimi K3](entries/kimi-k3.md) — Moonshot AI's 2.8T-parameter open-weight flagship and the July 2026 signal that Chinese open models are pressing into frontier-adjacent coding and agentic work.
 - [Hermes](entries/hermes.md) — Nous Research's fine-tuned family; the local-compute default.
 - [Parameters](entries/parameters.md) — what the "26B" or "70B" actually means.
 - [Open source](entries/open-source.md) — published-weights AI; the hedge against vendor lock-in.
