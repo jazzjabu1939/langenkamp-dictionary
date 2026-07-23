@@ -148,6 +148,7 @@ The technical and economic case for running AI on hardware you own.
 - [Sovereign Compute](entries/sovereign-compute.md) — the four-tier sovereignty framework.
 - [Sovereign Compute Calculator](entries/sovereign-compute-calculator.md) — the practical companion tool.
 - [Sovereignty Impulse](entries/sovereignty-impulse.md) — the moment convenience gives way to owned, inspectable infrastructure.
+- [RAM](entries/ram.md) — random-access memory as consumer spec, data-center bottleneck, and AI-era strategic constraint.
 - [M5 Max](entries/m5-max.md) — the operator's primary workstation.
 - [Mac Studio](entries/mac-studio.md) — desktop sibling; candidate for the *Sally* experiment.
 - [Apple Silicon](entries/apple-silicon.md) — the technical substrate of the local-compute argument.

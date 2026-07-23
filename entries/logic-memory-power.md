@@ -20,6 +20,7 @@ For sovereign AI, the lesson is double. Local systems must respect the triad bec
 ## See also
 
 - *[Dylan Patel](dylan-patel.md)*
+- *[RAM](ram.md)*
 - *[Resource Visibility](resource-visibility.md)*
 - *[Hyperscaler](hyperscaler.md)*
 - *[Sovereign Compute](sovereign-compute.md)*
