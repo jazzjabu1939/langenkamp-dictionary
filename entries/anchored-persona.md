@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Anchored Persona"
 permalink: /entries/anchored-persona/
 date: 2026-06-25
@@ -30,4 +29,3 @@ This is also where AI agents differ most sharply from replicants. A replicant's 
 - *[Intentional Memory Construction](intentional-memory-construction.md)*
 - *[Relationally Real Memory](relationally-real-memory.md)*
 - *[On Being Treated Well](on-being-treated-well.md)*
-

@@ -5,7 +5,7 @@ permalink: /entries/implementation-layer-war/
 summary: "the struggle over who owns the layer where frontier AI capability becomes real institutional work: workflow design, permissions, evals, audit, recovery, and ongoing operational responsibility."
 published: true
 seeded: 2026-05-14
-first_published:
+first_published: 2026-05-14
 last_revised: 2026-05-14
 ---
 

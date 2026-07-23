@@ -22,6 +22,126 @@ To regenerate: `python3 scripts/build-candidate-entries.py` (add `--wide` for a 
 
 Substantive essays. 1,500–3,000 words. Voice, footnotes, See-also block, load-bearing thesis.
 
+### Vocabulary cluster — Nate Jones / cheap intelligence / harness layer  (2026-07-01)
+
+Captured after Prof shared Nate Jones's GLM 5.2 video and asked for recent Substack research themes.
+
+- **Promoted to entries on 2026-07-01:** Task Distribution; Team Harness; Routing Logic; Golden Age for Builders; Tool Diet; Agent Ownership; Work Handoff / Open Engine.
+- **Supporting phrases to preserve inside those entries:** Data is Alpha; Rent-a-Brain; The Rented Company Brain; Raw IQ; Context Trapped; Last Mile; Cheap Intelligence; Claude Tag; Team-Level Harness; Work System; Tool Diet; Routing Logic.
+- **Editorial posture:** promote distinctive Langenkamp terms where possible. Use Nate's more generic terms like "last mile" and "cheap intelligence" as explanatory language unless they become recurring source terms. The essay-level opportunity is **Golden Age for Builders**: students and engineers are not being told to compete with raw model IQ, but to build the harnesses, routing, handoffs, verification loops, and ownership structures that make cheap intelligence useful.
+
+### Follow-on candidates from Nate's recent Substack run  (2026-07-01)
+
+These should not all become entries automatically. They are the next vocabulary layer around the seven promoted terms.
+
+### [++ ] **Agent Maintenance**  (dictionary)  `CONCEPT` `AI_GOVERNANCE`
+
+`source: Nate Jones, "Agent Maintenance: The AI Skill That Keeps Agents Useful", 2026-06-17`
+
+- Maintenance is the ongoing care of an agent once it has become part of real work. Nate's useful surfaces: job, diet, memory, tools, reach, proof, and value.
+- Likely thesis: *building the agent is the easy part; keeping the workbench healthy is the scarce skill.*
+- Pairs naturally with Tool Diet, Agent Ownership, Harness, Approval Gating, and Verification Gap.
+
+### [++ ] **Open Skills**  (dictionary)  `CONCEPT` `AI_WORK`
+
+`source: Nate Jones, "Your skills are leaving your hands. Don't let a rent-a-brain keep them.", 2026-06-19`
+
+- Open Skills names the portability problem one level above memory: the way a person or team works becomes prompts, `SKILL.md` files, runbooks, scripts, MCP configs, permissions, and workflows. If those live only inside one vendor tool, skill becomes rented back.
+- Likely thesis: *memory was the first ownership fight; portable procedure is the next.*
+- Strong connection to SOUL.md, Skill, OpenClaw, Team Harness, and Sovereign Compute.
+
+### [++ ] **Loop Manager / Loop of Loops**  (dictionary)  `CONCEPT` `AI_WORK`
+
+`source: Nate Jones, "The Five Questions That Turn a Messy Task Into an AI Loop", 2026-06-24`
+
+- Names recurring work between apps: remembering, checking, following up, noticing dependencies, and waking related work when one loop changes.
+- Likely thesis: *apps made work reachable but left the wiring in the human head; agents become useful when narrow loops can notice one another safely.*
+- Possible Dictionary angle: adjacent to Work Handoff / Open Engine, Heartbeat, TaskFlow, and durable workflow.
+
+### [ +] **Context Lock-In**  (dictionary)  `CONCEPT` `AI_STRATEGY`
+
+`source: Nate Jones, GLM-5.2 / Claude Tag context-lock-in cluster, 2026-06-28`
+
+- The strategic trap where a cheaper or better model exists, but the operating context, permissions, Slack history, documents, skills, and team habits live inside another provider's harness.
+- This may be a standalone entry or a section inside Team Harness. Distinct from ordinary vendor lock-in because the locked asset is working context, not just data export.
+
+### [ +] **Agent Owner's Card**  (glossary)  `CONCEPT` `AI_GOVERNANCE`
+
+`source: Nate Jones, "Every AI Agent Needs an Owner", 2026-06-21`
+
+- A short governance artifact naming what an agent does, who owns it, what it may touch, how outputs are reviewed, and when it should be changed, paused, or retired.
+- Likely best as a glossary entry unless it becomes a teaching template.
+
+### [++ ] **Task Distribution**  (dictionary)  `CONCEPT` `AI_WORK`
+
+`source: Nate Jones / GLM 5.2 video, 2026-07-01`
+
+- Added July 1 after Prof shared the GLM 5.2 podcast/video. The useful distinction is not "open model good, closed model bad," but whether the work is **center-of-distribution** or **edge-of-distribution**. Most AI model debates collapse task type into model quality; this phrase separates the work's shape from the model's brand.
+- Likely thesis: *model choice begins with the distribution of tasks, not the leaderboard.* Cheap/open models may dominate familiar, inspectable, repeated tasks; frontier models remain valuable where the work is novel, ambiguous, high-risk, or hard to check.
+- See also candidates/links: Harness, Open Model Trust, Sovereign Compute, Verification Gap, Implementation Layer War.
+
+### [++ ] **Team Harness**  (dictionary)  `CONCEPT` `AI_GOVERNANCE`
+
+`source: Nate Jones / GLM 5.2 video + recent Substack archive, 2026-06-17 to 2026-06-30`
+
+- Added July 1 after Prof shared the GLM 5.2 podcast/video and proposed "Team Harness" as the stronger Dictionary term. A team harness is the shared AI work layer embedded in Slack, Docs, code, tickets, memory, approvals, and recurring workflows. It is not just a model endpoint; it is the organizational surface through which people give AI context and receive work back.
+- Load-bearing point: the danger is precisely that the products are useful. Convenience makes the frontier provider's team harness sticky; open models may be cheaper, but they cannot replace the surrounding context, permissions, workflow, and habit without a serious last-mile build.
+- Warning phrase to preserve inside the entry: **the rented company brain** — the firm gradually gives a model provider enough context that it must rent its own operating memory back through that provider's product.
+- Memorable variant to preserve: **rent-a-brain** — shorter, more colloquial, good for a section heading about outsourcing skill, memory, and context to a vendor-owned harness.
+- Finance-flavored phrase to preserve: **data is alpha** — if proprietary context is the source of a firm's edge, then handing that context to an external team harness changes the strategic bargain even when the provider's privacy policy is good.
+- Recent Nate Substack cluster: context trapped in a vendor harness; Claude Tag / Slack as strategic context capture; agents nobody owns; work handoff between AIs; deleting tools from agents; rent-a-brain / skills leaving human hands.
+- See also candidates/links: Harness, OpenClaw, Commercial Legibility, Sovereign Compute, Open Model Trust.
+
+### [++ ] **Routing Logic**  (dictionary)  `CONCEPT` `AI_WORK`
+
+`source: Nate Jones / GLM 5.2 video + recent Substack archive, 2026-06 to 2026-07`
+
+- Added July 1 from Prof's term list after the Nate review. Routing logic is the managerial and technical layer that decides which work should go to which model, tool, agent, human, or harness. It matters more as raw intelligence gets cheaper and less scarce.
+- Likely thesis: *the advantage moves from having the smartest model to knowing where intelligence should be spent.* The hard part is classifying work by risk, novelty, inspectability, context requirements, cost, and ownership.
+- Pairs naturally with **Task Distribution**: task distribution describes the shape of the work; routing logic decides where that work should go.
+- See also candidates/links: Task Distribution, Harness, Team Harness, Sovereign Compute, Verification Gap.
+
+### [++ ] **Golden Age for Builders**  (dictionary)  `CONCEPT` `AI_WORK` `TEACHING`
+
+`source: Nate Jones / GLM 5.2 video + Prof framing, 2026-07-01`
+
+- Added July 1 after Prof flagged this as the optimistic student-facing essay angle. Nate's implied message to engineers is not "you are obsolete"; it is that model intelligence is getting cheaper, and therefore the valuable work moves to the last practical layer: building harnesses, routing logic, work handoffs, context ownership, tool diets, verification loops, and governance around agents.
+- Likely thesis: *when raw intelligence gets cheap, builders matter more, not less.* The opportunity is for students and engineers who can make AI useful inside real workflows, not merely prompt it in isolation.
+- Teaching angle: students threatened by AI should be pushed toward systems thinking, workflow design, verification, domain judgment, and ownership. The new employable skill is not only coding syntax; it is making cheap intelligence legible, governable, and productive.
+- See also candidates/links: Team Harness, Routing Logic, Tool Diet, Work Handoff / Open Engine, Verification Gap, Agent Ownership.
+
+### [++ ] **Tool Diet**  (dictionary)  `CONCEPT` `AI_GOVERNANCE`
+
+`source: Nate Jones / Vercel agent-tools discussion, June 2026`
+
+- Added July 1 from Prof's term list after the Nate review. Tool diet names the discipline of reducing an agent's available tools to the minimum useful set. More tools can increase ambiguity, unsafe action space, prompt load, and failure surface; fewer, better-scoped tools can make an agent more reliable.
+- Likely thesis: *capability is not the same as tool count.* A good harness does not expose every possible action; it curates the agent's diet.
+- See also candidates/links: Harness, Agent Health, Approval Gating, OpenClaw, Tool.
+
+### [ +] **Raw IQ**  (glossary)  `CONCEPT` `AI_MODELS`
+
+`source: Prof term list after Nate Jones review, 2026-07-01`
+
+- Short contrast term. Raw IQ is the underlying model's general problem-solving ability before the harness, context, tools, memory, routing, and ownership layer shape what it can actually accomplish.
+- Useful sentence: *Raw IQ is real, but it is not the work system.*
+- See also candidates/links: Harness, Routing Logic, Team Harness, Task Distribution.
+
+### [++ ] **Agent Ownership**  (dictionary)  `CONCEPT` `AI_GOVERNANCE`
+
+`source: Nate Jones, "Your team is running agents nobody owns", 2026-06-21`
+
+- Added July 1 from Nate's recent Substack archive. The clean governance principle: when an agent starts reading real files, drafting real messages, or changing shared state, it becomes work someone must own. Shared usefulness without named ownership produces stale instructions, dead review loops, and confident-looking drift.
+- Likely thesis: *an agent without an owner is not automation; it is unmanaged labor.* This pairs naturally with the Dictionary's existing harness and agent-health claims.
+- See also candidates/links: Harness, Agent Health, Approval Gating, OpenClaw, Verification Gap.
+
+### [++ ] **Work Handoff / Open Engine**  (dictionary)  `CONCEPT` `AI_WORK`
+
+`source: Nate Jones, "Grab the Open Engine guide", 2026-06-26`
+
+- Added July 1 from Nate's recent Substack archive. The recurring problem is not that one AI cannot produce a good answer; it is that the work dies when it has to move from one tool, model, person, or session to the next. Nate's "Open Engine" names a lightweight handoff layer: task record, sources, limits, receipts, next action, and enough state that another agent can resume without reading a giant chat.
+- Likely thesis: *the handoff is the work system.* This is adjacent to OpenClaw's memory/history/taskflow architecture and could become either a full entry or a strong section inside Team Harness.
+- See also candidates/links: Team Harness, Grep Architecture, Agentic Native Design, OpenClaw, Memory.
+
 ### [++ ] **Agent Town Experiment / Emergence World**  (dictionary)  `CONCEPT` `BENCHMARK` `AGENTS`
 
 `source: https://www.emergence.ai/blog/emergence-world-a-laboratory-for-evaluating-long-horizon-agent-autonomy`
@@ -684,7 +804,7 @@ Reference cards. 100–250 words. One paragraph defining the thing, one paragrap
 - Inferred from scan. Review for relevance.
 - Sample internal references: agent.md:36, aunties.md:12, lowbeer-question.md:15
 
-### [ +] **Tina Huang**  (glossary)  
+### [x] **Tina Huang**  (glossary)  
 
 `int:3  ext:0  slug:`tina-huang`
 

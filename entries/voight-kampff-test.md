@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Voight-Kampff Test"
 permalink: /entries/voight-kampff-test/
 date: 2026-06-25
@@ -27,4 +26,3 @@ The modern Voight-Kampff question is therefore not "is this secretly a replicant
 - *[AI Produced Artifact](ai-produced-artifact.md)*
 - *[Provenance](provenance.md)*
 - *[Sincerity Architecture](sincerity-as-architecture.md)*
-

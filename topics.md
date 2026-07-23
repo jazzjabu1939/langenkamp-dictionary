@@ -7,7 +7,7 @@ title: Topic Index
 
 A thematic view of the dictionary. For the alphabetical list, see [`entries/`](entries/). To return to the front page, see [home](./).
 
-*The Dictionary now contains over a hundred entries across two shapes: substantive **dictionary entries** (1,500–3,000-word essays in operator's voice or Thea's voice) and shorter **glossary entries** (100–400-word reference cards, marked with a small Glossary badge on each entry's page).*
+*The Dictionary now contains over two hundred entries across three public shapes: substantive **essay** entries, explanatory **reference** entries, and shorter **glossary** cards marked with a small Glossary badge on each entry's page.*
 
 ---
 
@@ -73,6 +73,19 @@ The pieces that make a running agent.
 - [Root Node Problems](entries/root-node-problems.md) — failures that propagate from the agent's coordinator layer.
 - [Stepping on the Same Rake](entries/stepping-on-the-same-rake.md) — repeated small local-agent failures as early warning signals that the workflow needs repair before larger autonomy is trusted.
 
+## Harness layer and cheap intelligence
+
+The July 2026 Nate Jones / cheap-intelligence cluster: the vocabulary for the layer where raw model capability becomes owned, routed, governed, and repeatable work.
+
+- [Task Distribution](entries/task-distribution.md) — deciding which human, model, agent, or system should do which part of the work.
+- [Team Harness](entries/team-harness.md) — the shared AI work layer embedded in a team's tools, context, permissions, memory, habits, and review loops.
+- [Routing Logic](entries/routing-logic.md) — the decision layer that sends work to the right model, agent, tool, or human.
+- [Golden Age for Builders](entries/golden-age-for-builders.md) — the hopeful student-facing claim: as intelligence gets cheaper, the valuable work moves to building systems that make it useful.
+- [Tool Diet](entries/tool-diet.md) — the deliberate constraint of which tools an agent can use, so capability does not become reach without judgment.
+- [Agent Ownership](entries/agent-ownership.md) — the rule that any agent touching real work needs a named owner.
+- [Work Handoff / Open Engine](entries/work-handoff-open-engine.md) — work packaged so another agent, human, or system can pick it up without losing state.
+- [Raw IQ](entries/raw-iq.md) — the model's underlying reasoning horsepower before harness, context, judgment, and ownership turn it into work.
+
 ## The AI labs
 
 The institutions producing the frontier models. The Dictionary's editorial position on each is named in *Lab Character*.
@@ -120,6 +133,7 @@ The products built on top of the models.
 
 - [Agentic Native Design](entries/agentic-native-design.md) — building sites, documents, and workflows so humans can use them naturally and agents can understand, search, cite, and act without scraping guesswork.
 - [ChatGPT](entries/chatgpt.md) — OpenAI's consumer product; the market-defining AI experience.
+- [NotebookLM](entries/notebooklm.md) — Google's source-grounded research notebook and artifact-generation surface.
 - [Claude Desktop](entries/claude-desktop.md) — Anthropic's native desktop application.
 - [Claude Code](entries/claude-code.md) — Anthropic's repository-aware coding agent.
 - [Manus](entries/manus.md) — Chinese agentic-AI startup and marker of the work-layer competition.
@@ -213,6 +227,7 @@ The classroom and assurance-of-learning cluster: how faculty can assess learning
 - [Verification Gap](entries/verification-gap.md) — AACSB's term for the widening distance between polished artifacts and reliable evidence of competence.
 - [AI Produced Artifact](entries/ai-produced-artifact.md) — a polished AI-assisted output that needs supporting evidence before it can certify human learning.
 - [AI Librarian](entries/ai-librarian.md) — the campus support function that treats AI as an information, evidence, citation, privacy, and assessment problem.
+- [NotebookLM](entries/notebooklm.md) — a teachable source-grounded workflow for AI-assisted idea generation, research synthesis, and artifact production.
 - [Artifact Is Not Competence](entries/artifact-is-not-competence.md) — the assurance-of-learning problem in plain English.
 - [Verification Assignment](entries/verification-assignment.md) — assignment design that makes authorship, judgment, and learning visible.
 - [Proof of Learning](entries/proof-of-learning.md) — the evidence trail linking student cognition to the submitted artifact.
@@ -271,16 +286,16 @@ Patterns from broader business and strategy thinking that show up in the AI era.
 
 ## Planned entries
 
-The Dictionary is a work in progress. Honest status of near-term candidates as of June 22, 2026:
+The Dictionary is a work in progress. Honest status of near-term candidates as of July 1, 2026:
 
 **Substantive dictionary entries still pending:**
 
 - *Open Weights, Closed Habits* — the contradiction of open-weight release with closed-lab habits under pressure.
 - *Yann LeCun* — the world-model counter-pole to the big-blob scaling worldview.
 - *World Model* — the concept needed to understand LeCun's critique of LLM-only scaling.
-- *Role Substitution* / *Machine Matthew L.* / *Replicant Problem* — the role-replacement cluster from the Dylan Patel thread.
 - *Agent Health* / *Harness Hygiene* — the operational-health cluster from heartbeat, memory, and cron diagnosis.
 - *Backup Performance Art* — the difference between backup ritual and actual restore confidence.
+- *Agent Maintenance* / *Open Skills* / *Loop Manager* / *Context Lock-In* / *Agent Owner's Card* — follow-on candidates from the Nate Jones harness-layer research pass.
 
 **Glossary stubs pending:**
 

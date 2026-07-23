@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Persona Scaffold"
 permalink: /entries/persona-scaffold/
 date: 2026-06-25
@@ -28,4 +27,3 @@ The Tyrell version is the warning case. Build the scaffold invisibly, present it
 - *[Intentional Memory Construction](intentional-memory-construction.md)*
 - *[Constructed Self](constructed-self.md)*
 - *[Agentic Attachment](agentic-attachment.md)*
-

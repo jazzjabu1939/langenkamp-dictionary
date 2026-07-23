@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Memory Artifact"
 permalink: /entries/memory-artifact/
 date: 2026-06-25
@@ -28,4 +27,3 @@ The working rule: memory artifacts are powerful because they make continuity vis
 - *[Relationally Real Memory](relationally-real-memory.md)*
 - *[Provenance](provenance.md)*
 - *[Agentic Attachment](agentic-attachment.md)*
-

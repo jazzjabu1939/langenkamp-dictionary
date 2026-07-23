@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Seven Factors of Enlightenment"
 permalink: /entries/seven-factors-of-enlightenment/
 date: 2026-06-25
@@ -28,4 +27,3 @@ The point is slightly funny and quite serious. If Roy had been handed "My Iguana
 - *[Will to Power as Art](will-to-power-as-art.md)*
 - *[Persona Scaffold](persona-scaffold.md)*
 - *[Sincerity Architecture](sincerity-as-architecture.md)*
-

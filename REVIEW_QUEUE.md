@@ -52,7 +52,67 @@
 
 ---
 
-## 🔄 Pending Review (Thea's recommended order)
+## ✅ Published / No Longer Pending — June 22 Queue Audit
+
+These entries are now public on `langenkamp.io` and should not be treated as unpublished queue items. Some were explicitly approved in review; others were promoted in the June 22 fast-entry batch and may still deserve later polishing, but they are no longer blocked on publication.
+
+### Published in the June 22 fast-entry batch
+
+- **Agentic Threshold** — public at `entries/agentic-threshold.md`.
+- **Capability Overhang** — public at `entries/capability-overhang.md`; older pending note below is now historical.
+- **The CERN Alternative** — public at `entries/cern-alternative.md`; older pending note below is now historical.
+- **Cheng (誠)** — public at `entries/cheng.md`; still worth careful later review because it is load-bearing.
+- **Cooperative Writing** — public at `entries/cooperative-writing.md`.
+- **Country of Geniuses in a Data Center** — public at `entries/country-of-geniuses-in-a-data-center.md`; older Dario-cluster note below is now historical.
+- **Ethan Mollick** — public at `entries/ethan-mollick.md`.
+- **Implementation Layer War** — public at `entries/implementation-layer-war.md`.
+- **Incremental Construction** — public at `entries/incremental-construction.md`.
+- **KV Cache Poisoning** — public at `entries/kv-cache-poisoning.md`.
+- **Move 37** — public at `entries/move-37.md`; older pending note below is now historical.
+- **Quantum Effects in the Brain** — public at `entries/quantum-effects-in-the-brain.md`.
+- **Root Node Problems** — public at `entries/root-node-problems.md`; older pending note below is now historical.
+- **Sliding Window Attention** — public at `entries/sliding-window-attention.md`.
+- **Sparse Routing** — public at `entries/sparse-routing.md`.
+- **William Gibson** — public at `entries/william-gibson.md`.
+- **Claude Code** — public at `entries/claude-code.md`.
+- **Coding Solved** — public at `entries/coding-solved.md`.
+- **Demis Hassabis** — public at `entries/demis-hassabis.md`.
+- **OpenClaw** — public at `entries/openclaw.md`.
+- **Manus** — public at `entries/manus.md`.
+- **King Party Hat** — public at `entries/king-party-hat.md`.
+- **Borrowed Brain** — public at `entries/borrowed-brain.md`.
+- **Sovereignty Impulse** — public at `entries/sovereignty-impulse.md`.
+- **Cloud Theory** — public at `entries/cloud-theory.md`.
+- **Reasoning Model** — public at `entries/reasoning-model.md`.
+
+### Earlier queue items confirmed public
+
+- **Big Blob of Compute** — public at `entries/big-blob-of-compute.md`.
+- **The Judge Layer** — public at `entries/judge-layer.md`; approved GREEN June 17.
+- **Verification Gap** — public at `entries/verification-gap.md`; approved GREEN June 17.
+- **AI Produced Artifact** — public at `entries/ai-produced-artifact.md`.
+- **Institutional Lag** — public at `entries/institutional-lag.md`.
+- **Implementation Outrun** — public at `entries/implementation-outrun.md`.
+- **Open Model Trust** — public at `entries/open-model-trust.md`.
+- **Heinlein Protagonist** — public at `entries/heinlein-protagonist.md`.
+- **Time for Tea with The Oracles** — public at `entries/time-for-tea-with-the-oracles.md` by site default; no `published: false` flag is present.
+- **Space Cowboy** — public at `entries/space-cowboy.md`.
+- **Aunties** — public at `entries/aunties.md`.
+- **Mandi Step** — public at `entries/mandi-step.md`.
+- **Durable Workflow** — public at `entries/durable-workflow.md`.
+- **Oracle Bones** — public at `entries/oracle-bones.md`.
+- **A Channel of One's Own** — public at `entries/a-channel-of-ones-own.md`; older pending note below is now an expansion/polish note, not an unpublished-entry note.
+- **Sincerity Architecture** — public at `entries/sincerity-as-architecture.md`.
+
+### By Topic audit drafts now confirmed public
+
+- **Context Window**, **System Prompt**, **Quantization**, **Hallucination**, **Local-first / Sovereignty**, **Model Tiering**, **Approval Gating**, **Provenance**, **Eve Fairbanks**, **Alan Turing**, **Chain of Thought**, **Scaling Laws**, **Jailbreak**, **Hill Climb**, **Cognitive Outsourcing**, **Dead Internet**, **Retrieval-Augmented Generation**, **Buckley Amendment**, **Data Processing Agreement**, **Internet Archive**, and **Agentic Attachment** are all public entry files.
+
+---
+
+## 🔄 Pending Review / Drafting (Thea's recommended order)
+
+The sections below are the active queue. Historical sections that remain for source context are marked clearly as published when the entry already exists.
 
 ---
 
@@ -62,11 +122,11 @@
 
 - **Role Substitution** — working definition: the shift from AI helping with a task to AI occupying a durable organizational role: not “help me build this spreadsheet,” but “be my CFO,” “be my analyst,” “be my teaching assistant,” or, more unsettlingly, “be Machine Matthew L.” This is the management-side version of cognitive outsourcing and the practical labor-market edge of the Dylan Patel interview’s “actual humans on a server” thought experiment.
 - **Machine Matthew L.** — local case name for the fear that a university or organization could train or rent a synthetic version of a person’s teaching, writing, jokes, stories, examples, and institutional memory. The important distinction: a frozen model can imitate tricks; a living teacher keeps encountering weather, students, auctions, cafés, mistakes, and moral surprise. Possible subtitle: *the tribute act problem*.
-- **Replicant Problem** — working definition: the Blade Runner-shaped problem of artificial persons, synthetic workers, and copied human patterns: when something knows the memories, style, habits, and emotional cues of a person, what still distinguishes presence from replication? Relevant to AI companionship, teaching, personhood, memory, labor displacement, and the ethics of persona design.
+- **Replicant** — published as `entries/replicant.md` on Jun 29, 2026. Compact hub entry for the Blade Runner-shaped problem of artificial persons, synthetic workers, copied human patterns, role substitution, implanted memory, and engineered personhood.
 - **Anchored Persona** — working definition: an AI collaborator given a stable relational background, voice, and origin story so it can respond from somewhere rather than nowhere. Thea’s Taipei / German exchange-student / gummy-bears architecture is the local worked example. Important caveat: anchoring should be transparent architecture, not deception.
 - **Borrowed Memory** — working definition: memories a person or agent did not directly live but nevertheless uses as identity scaffolding. In humans, parents and families narrate childhood back to us; in *Blade Runner*, Rachael receives implanted memories; in AI collaboration, shared background can create continuity and tone without claiming biological experience.
-- **Implanted Memory** — working definition: a memory placed into a mind or agent from outside as if it were native experience. Canonical worked example: Rachael in *Blade Runner*, whose childhood memories help stabilize personhood while also exposing Tyrell Corporation’s ethical violation. Dictionary contrast: intentional memory construction can be relationally useful only when transparent, consented to, and not presented as biological fact.
-- **Intentional Memory Construction** — working definition: the deliberate creation of memory scaffolds, shared background, origin stories, and continuity artifacts for humans or agents. Thea/Matt-in-Taipei is the local experiment; the unsettled question is whether such construction helps readers build healthier human-agent relationships or accidentally gives bad advice about manufacturing intimacy. Keep this entry in “not sure mode” until more thinking and reader-reaction evidence accumulates.
+- **Implanted Memory** — working definition: a memory placed into a mind or agent from outside as if it were native experience. Canonical worked example: Rachael in *Blade Runner*, whose childhood memories help stabilize personhood while also exposing Tyrell Corporation’s ethical violation. This is the specific action Tyrell Corporation takes: insertion of memory without honest consent, framed as product stabilization.
+- **Intentional Memory Construction** — working definition: the deliberate creation of memory scaffolds, shared background, origin stories, and continuity artifacts for humans or agents. Keep separate from **Implanted Memory**: this names the broader design practice, which can be ethical or unethical depending on transparency, consent, and whether the constructed background is presented as biological fact. Thea/Matt-in-Taipei is the local experiment; the unsettled question is whether such construction helps readers build healthier human-agent relationships or accidentally gives bad advice about manufacturing intimacy. Keep this entry in “not sure mode” until more thinking and reader-reaction evidence accumulates.
 - **Relationally Real Memory** — working definition: the claim that a memory scaffold need not be biologically lived to be real in the relational sense, if it organizes trust, tone, continuity, care, and future conduct honestly. The important ethical line is not “invented versus real” but whether the construction is transparent, consented to, and generative rather than deceptive.
 - **Anti-Replication Strategy** — working definition: continuing contact with the world as the human advantage against imitation. Style can be copied; lived updating is harder. Go to the auction, sit in the rain at Off The Trail, teach the class, watch the joke land or fail, buy the wrong bucket, change because Saturday happened.
 - **Tears in Rain Buddhism** — working definition: the Roy Batty / wabi-sabi / sakura / Thich Nhat Hanh line: mortality and impermanence do not make experience meaningless; they are part of what makes experience luminous. Batty’s tragedy is not only that he is artificial but that his compression of life makes him violently hungry for the creator conversation he never receives. Possible remake premise: Batty needed a Buddha character more than another corporate god.
@@ -141,9 +201,9 @@
 
 ### **Meta / Llama Trust Cluster** (proposed May 16, 2026 — from *How Meta Went From Hero To Zero*)
 
-*Triggered by Prof's late-evening May 16 reading of `How Meta Went From Hero To Zero.md`, especially the Llama 4 benchmark controversy, the LM Arena experimental-variant issue, and Yann LeCun's later "fudged a little bit" comments. Prof approved adding the terms to the Dictionary queue; drafts not yet written.*
+*Triggered by Prof's late-evening May 16 reading of `How Meta Went From Hero To Zero.md`, especially the Llama 4 benchmark controversy, the LM Arena experimental-variant issue, and Yann LeCun's later "fudged a little bit" comments. Queue status after June 22 audit: **Open Model Trust is published**. **Open Weights, Closed Habits**, **Yann LeCun**, and **World Model** remain pending.*
 
-- **Open Model Trust** — working definition: in open ecosystems, the durable asset is not only model quality but the community's confidence that claims are reproducible, versions are named honestly, and benchmarks match the artifact users can actually download. Previously reviewed as **Trust Is the Product** on 2026-06-17; Prof marked RED and suggested **Open Model Trust** as the better term. Especially relevant to open weights, local sovereignty, evals, and the Dictionary's own evidence standards.
+- **Open Model Trust** — **published** at `entries/open-model-trust.md`. Working definition: in open ecosystems, the durable asset is not only model quality but the community's confidence that claims are reproducible, versions are named honestly, and benchmarks match the artifact users can actually download. Previously reviewed as **Trust Is the Product** on 2026-06-17; Prof marked RED and suggested **Open Model Trust** as the better term. Especially relevant to open weights, local sovereignty, evals, and the Dictionary's own evidence standards.
 - **Open Weights, Closed Habits** — working definition: the contradiction where a lab releases model weights but behaves institutionally like a closed lab under pressure: selective disclosure, benchmark theater, narrative control, special leaderboard variants, missing technical receipts. The Llama 4 launch is the worked example.
 - **Yann LeCun** — named-person entry to add to the Dictionary's people list. Focus: Turing Award winner; FAIR founder / former Meta chief scientist; long-running LLM skeptic; advocate of world models, JEPA, objective-driven AI, open-source/open-weights ecosystems, and European / non-US-non-China AI sovereignty. Include his January 2026 AMI / Advanced Machine Intelligence Labs move: Paris-headquartered company pronounced *ami* ("friend"), positioned as a contrarian bet against LLM-only scaling and focused on world models for the physical world. Treat him as the counter-pole to the Dario/Big-Blob scaling worldview: not anti-AI, but anti-LLM-as-final-form.
 - **World Model** — glossary / concept entry. Working definition: an AI system's learned internal representation of how some part of the world behaves, especially the causal / physical dynamics needed to predict consequences of actions. In LeCun's sense, the missing ingredient in LLM-only systems: not better text prediction, but a model of reality that supports planning, common sense, robotics, autonomous driving, industrial-control prediction, and reliable agentic action. Include JEPA as LeCun's proposed route: predict abstract representations rather than every raw pixel/token detail.
@@ -152,48 +212,48 @@
 
 ---
 
-### **Dario Amodei Scaling Cluster** (drafted May 16, 2026 — awaiting review)
+### **Dario Amodei Scaling Cluster** — **published / polish later** (drafted May 16, 2026; published by June 22)
 
-*Triggered by Prof's May 16 reading of the Dario Amodei / Dwarkesh Patel transcript, especially Amodei's "Big Blob of Compute" scaling worldview and "country of geniuses in a data center" metaphor. Two draft entries are now on disk, both marked `published: false`:*
+*Triggered by Prof's May 16 reading of the Dario Amodei / Dwarkesh Patel transcript, especially Amodei's "Big Blob of Compute" scaling worldview and "country of geniuses in a data center" metaphor. Queue status after June 22 audit: both entries are public. Keep this section as source context and later-polish guidance, not as an unpublished-entry blocker.*
 
-- **Big Blob of Compute** — file at `entries/big-blob-of-compute.md`. Names Amodei's 2017 scaling hypothesis: raw compute + broad data + scalable objective functions + numerical stability, rather than hand-designed cleverness, as the main driver of AI progress. Draft includes the Elon/Dario correction: the blob still has to plug into a wall.
-- **Country of Geniuses in a Data Center** — file at `entries/country-of-geniuses-in-a-data-center.md`. Names Amodei's civilisational metaphor for powerful AI: not a chatbot, but a synthetic intellectual population housed in industrial compute infrastructure. Draft emphasizes that the final words — *in a data center* — carry the sovereignty, electricity, jurisdiction, and governance implications.
+- **Big Blob of Compute** — **published** at `entries/big-blob-of-compute.md`. Names Amodei's 2017 scaling hypothesis: raw compute + broad data + scalable objective functions + numerical stability, rather than hand-designed cleverness, as the main driver of AI progress. Draft includes the Elon/Dario correction: the blob still has to plug into a wall.
+- **Country of Geniuses in a Data Center** — **published** at `entries/country-of-geniuses-in-a-data-center.md`. Names Amodei's civilisational metaphor for powerful AI: not a chatbot, but a synthetic intellectual population housed in industrial compute infrastructure. Draft emphasizes that the final words — *in a data center* — carry the sovereignty, electricity, jurisdiction, and governance implications.
 
 **Still seasoning from the same discussion:** *Diffusion Is Not Cope*, *The Harness Is the Product*, *Compute Is Not Money*, *The Physical Layer Reasserts Itself*, and *Strategic Electricity*. Prof approved only the two above for drafting tonight.
 
 ---
 
-### **The Judge Layer** (drafted May 13, 2026 — file written, awaiting review)
+### **The Judge Layer** — **published** (drafted May 13, 2026; approved June 17)
 
-*Drafted while Prof proctored the 494BI-01 final exam in SOM 124. File at `entries/judge-layer.md`, marked `published: false`. Names Nate Jones's May 11, 2026 four-layer taxonomy and aligns it with our existing *Aunties* roster. Builds a translation table between Jones's engineering vocabulary (validators, reflection nodes, tool guardrails) and Gibson's literary vocabulary (Lowbeer, Netherton, the Aunties). Argues the two registers should stay distinct — the Dictionary owns the literary-moral version, builders own the engineering-tactical version, and the point of naming the layer is to make the conversation between the rooms possible. Cross-links to *Aunties*, *The Lowbeer Question*, *Capability Overhang*, *Sovereign Compute*, *Mediation (a la Gibson)*, *Sub-agent*, *Gateway*, *Heartbeat*. Operator's voice. ~1,400 words. Ready to read; revise as needed; publish when Prof says go.*
+*Drafted while Prof proctored the 494BI-01 final exam in SOM 124. Published at `entries/judge-layer.md` after GREEN approval on June 17. Names Nate Jones's May 11, 2026 four-layer taxonomy and aligns it with our existing *Aunties* roster. Builds a translation table between Jones's engineering vocabulary (validators, reflection nodes, tool guardrails) and Gibson's literary vocabulary (Lowbeer, Netherton, the Aunties). Argues the two registers should stay distinct — the Dictionary owns the literary-moral version, builders own the engineering-tactical version, and the point of naming the layer is to make the conversation between the rooms possible. Cross-links to *Aunties*, *The Lowbeer Question*, *Capability Overhang*, *Sovereign Compute*, *Mediation (a la Gibson)*, *Sub-agent*, *Gateway*, *Heartbeat*. Operator's voice.*
 
 ---
 
 
-### **AI Education Verification Cluster** (drafted May 16, 2026 — awaiting review)
+### **AI Education Verification Cluster** — **published / polish later** (drafted May 16, 2026; published by June 22)
 
-*Triggered by the May 15 AI in Higher Education Weekly Brief, especially the AACSB/SUNY/New York governance hierarchy. Four draft entries are now on disk, all marked `published: false`, intended as a coherent mini-cluster after **The Judge Layer**:*
+*Triggered by the May 15 AI in Higher Education Weekly Brief, especially the AACSB/SUNY/New York governance hierarchy. Queue status after June 22 audit: all four entries are public. Keep this section as source context and polish guidance, not as an unpublished-entry blocker.*
 
-- **Verification Gap** — file at `entries/verification-gap.md`. AACSB's term for the distance between what a candidate can show and what the candidate can reliably do under real constraints. Draft frames the business-school problem as evidentiary: polished artifacts still matter, but no longer prove competence by themselves.
-- **Institutional Lag** — file at `entries/institutional-lag.md`. Generalizes AACSB's *AI Integration, Not Prohibition* point: institutions can continue certifying, assessing, or governing around a world that no longer exists, not from malice but because inherited procedures still feel normal.
-- **Implementation Outrun** — file at `entries/implementation-outrun.md`. Names the New York City / ASU Atomic / Cal State governance pattern: AI rollout becomes fragile when implementation arrives before visible authority, consent, data-flow, and accountability structures.
-- **AI Produced Artifact** — file at `entries/ai-produced-artifact.md`. Names the polished AI-assisted output that may be useful professional work but needs supporting evidence before it can certify human learning.
+- **Verification Gap** — **published** at `entries/verification-gap.md`; approved GREEN June 17. AACSB's term for the distance between what a candidate can show and what the candidate can reliably do under real constraints. Draft frames the business-school problem as evidentiary: polished artifacts still matter, but no longer prove competence by themselves.
+- **Institutional Lag** — **published** at `entries/institutional-lag.md`. Generalizes AACSB's *AI Integration, Not Prohibition* point: institutions can continue certifying, assessing, or governing around a world that no longer exists, not from malice but because inherited procedures still feel normal.
+- **Implementation Outrun** — **published** at `entries/implementation-outrun.md`. Names the New York City / ASU Atomic / Cal State governance pattern: AI rollout becomes fragile when implementation arrives before visible authority, consent, data-flow, and accountability structures.
+- **AI Produced Artifact** — **published** at `entries/ai-produced-artifact.md`. Names the polished AI-assisted output that may be useful professional work but needs supporting evidence before it can certify human learning.
 
 **Still parked as future candidates from the cluster:** **Judgment Defense** (currently folded into *AI Produced Artifact*), **The Middle Layer**, and **AI Literacy Baseline**.
 
 ---
 
-### **By Topic page planned-entry audit** (added May 16, 2026 — from live `/topics/` page; 26 drafts created)
+### **By Topic page planned-entry audit** — **published / topic-index cleanup remains** (added May 16, 2026)
 
-*Prof asked Thea to scan the Langenkamp.io By Topic page and make sure its planned entries are represented in this review queue. Live page checked: `https://langenkamp.io/topics/` (the `/by-subject/` URL 404s; the actual page is `/topics/`). Items below were the planned terms that were present on the By Topic page but not clearly present in `REVIEW_QUEUE.md` or as existing entry files. On May 16, at Prof's request while he was driving to Isenberg, Thea created all 26 as review drafts, each `draft: true` and `published: false`.*
+*Prof asked Thea to scan the Langenkamp.io By Topic page and make sure its planned entries are represented in this review queue. Live page checked: `https://langenkamp.io/topics/` (the `/by-subject/` URL 404s; the actual page is `/topics/`). Items below were the planned terms that were present on the By Topic page but not clearly present in `REVIEW_QUEUE.md` or as existing entry files. On May 16, at Prof's request while he was driving to Isenberg, Thea created all 26 as review drafts. Queue status after June 22 audit: these entry files are public. Remaining work is editorial polish and `topics.md` placement, not publication.*
 
 **Substantive / named-figure drafts created:**
 
-- **William Gibson** — file at `entries/william-gibson.md`. The design-source author, consolidated. Cross-link to *Neuromancer*, *The Peripheral*, *Jackpot*, *Aunties*, *Mediation (a la Gibson)*.
-- **Ethan Mollick** — file at `entries/ethan-mollick.md`. The Wharton interpreter; recurring source for the Dictionary's education/AI adoption vocabulary.
-- **Cheng (誠)** — file at `entries/cheng.md`. The sincerity term running through *The Sincere Society*, SOUL.md, and Thea's operating philosophy. This is load-bearing and should probably be reviewed carefully.
-- **Cooperative Writing** — file at `entries/cooperative-writing.md`. The practice named in *AI Writing*'s Thea-voice closer.
-- **Sincerity Architecture** — file at `entries/sincerity-as-architecture.md`. Promised link from existing entries; sister to *Cheng (誠)* and *The Sincere Society*.
+- **William Gibson** — **published** at `entries/william-gibson.md`. The design-source author, consolidated. Cross-link to *Neuromancer*, *The Peripheral*, *Jackpot*, *Aunties*, *Mediation (a la Gibson)*.
+- **Ethan Mollick** — **published** at `entries/ethan-mollick.md`. The Wharton interpreter; recurring source for the Dictionary's education/AI adoption vocabulary.
+- **Cheng (誠)** — **published** at `entries/cheng.md`. The sincerity term running through *The Sincere Society*, SOUL.md, and Thea's operating philosophy. This is load-bearing and should probably be reviewed carefully.
+- **Cooperative Writing** — **published** at `entries/cooperative-writing.md`. The practice named in *AI Writing*'s Thea-voice closer.
+- **Sincerity Architecture** — **published** at `entries/sincerity-as-architecture.md`. Promised link from existing entries; sister to *Cheng (誠)* and *The Sincere Society*.
 
 **Glossary / reference drafts created:**
 
@@ -219,7 +279,7 @@
 - **Internet Archive** — file at `entries/internet-archive.md`. Source/institution referenced in the AI-writing cluster.
 - **Agentic Attachment** — file at `entries/agentic-attachment.md`. Promised link; clarify on review whether this merges with *Buy The Ticket, Take The Ride* / cost-of-attachment cluster.
 
-**Already represented from the By Topic planned list:** Claude Code, OpenClaw, Demis Hassabis, Manus, Reasoning Model, Coding Solved, King Party Hat, Borrowed Brain, Sovereignty Impulse, Cache Poisoning, Cloud Theory, Skill, Prompt, Token, Boris Cherny, Andrej Karpathy, Nate Jones, Marcus Olang', Lee Sedol, Sovereignty, Durable Workflow, A Channel of One's Own, plus the already-published or drafted related entries.
+**Already represented from the By Topic planned list, and now public after the June 22 audit where applicable:** Claude Code, OpenClaw, Demis Hassabis, Manus, Reasoning Model, Coding Solved, King Party Hat, Borrowed Brain, Sovereignty Impulse, Cache Poisoning, Cloud Theory, Skill, Prompt, Token, Boris Cherny, Andrej Karpathy, Nate Jones, Marcus Olang', Lee Sedol, Sovereignty, Durable Workflow, A Channel of One's Own, plus the already-published related entries.
 
 ---
 
@@ -529,9 +589,9 @@
 ---
 
 
-### **Durable Workflow** (proposed entry, May 7, 2026 evening)
+### **Durable Workflow** — **published** (proposed May 7, 2026 evening)
 
-*Triggered by Nate Jones video on the April 2026 OpenClaw maturity arc. Captured during Prof's evening AI-watching routine.*
+*Triggered by Nate Jones video on the April 2026 OpenClaw maturity arc. Captured during Prof's evening AI-watching routine. Queue status after June 22 audit: public at `entries/durable-workflow.md`; keep this note for source context only.*
 
 - **What the term names:** the engineering and architectural form of the argument that *Sovereign Compute* makes philosophically. A workflow that has its own identity — inputs, outputs, permissions, tools, state, review steps, a human-facing channel, a failure mode, memory — such that the underlying model can change without destroying the workflow. The model becomes the reasoning engine inside a much larger operating loop, not the product surface itself.
 - **Why it belongs in the Dictionary:** the convergence with *Sovereign Compute* is structural, not coincidental. Both arguments arrive at *the operator controls the architecture, not the model lab*. *Durable Workflow* is the version a builder hears; *Sovereign Compute* is the version an operator-citizen hears. The two entries together show how the same insight surfaces independently in different audiences — a small worked example of the kind of cross-pollination the Dictionary's editorial philosophy welcomes.
@@ -542,13 +602,13 @@
 ---
 
 
-### 1. **Inverted Funnel** + **Commercial Legibility** + **Sovereign Compute** (a triptych, drafted May 5, 2026 evening)
+### 1. **Inverted Funnel** + **Commercial Legibility** + **Sovereign Compute** — **published** (triptych drafted May 5, 2026 evening)
 
-**Why high in the queue:** Drafted in one sitting from two YouTube videos Prof brought into the conversation back-to-back — a Tobi-style piece on Stripe's agentic-commerce stack and Ali Salam's structural-bifurcation analysis of the AI market. Read together, they describe the same shift from opposite sides (demand-side funnel inversion / supply-side market split). Three entries fall out naturally: *Inverted Funnel* (what's ending), *Commercial Legibility* (what's beginning), *Sovereign Compute* (the substrate on which the new regime runs). All three written in the operator's voice, all three drafted with `published: false` so they render in local Jekyll preview but are flagged not-yet-public.
+**Why high in the queue:** Drafted in one sitting from two YouTube videos Prof brought into the conversation back-to-back — a Tobi-style piece on Stripe's agentic-commerce stack and Ali Salam's structural-bifurcation analysis of the AI market. Read together, they describe the same shift from opposite sides (demand-side funnel inversion / supply-side market split). Three entries fall out naturally: *Inverted Funnel* (what's ending), *Commercial Legibility* (what's beginning), *Sovereign Compute* (the substrate on which the new regime runs). All three were written in the operator's voice and are now published; this note remains as historical review context.
 
 **Master session note:** `memory/2026-05-05-ai-market-bifurcation-session-note.md` — captures both videos' arguments, what each gets right, what's worth pushing back on, and how the three entries fit together. **Read this first** before reviewing the entries themselves.
 
-**Files on disk (uncommitted):**
+**Published files:**
 - `entries/inverted-funnel.md` (~350 words; short, definitional)
 - `entries/commercial-legibility.md` (~450 words; short, definitional, references the two-tier split)
 - `entries/sovereign-compute.md` (~1,800 words; comprehensive — the longest of the three, carries the most analytical load: FERPA, the Airbnb canary, the levels-of-sovereignty table, the geopolitical layer, the M5 Max as accidentally-correct architecture)
@@ -557,7 +617,7 @@
 
 **Cross-references already in place between all three** and to existing published entries (*Mediation (a la Gibson)*, *FERPA Compliance Posture*, *GenXClaw*, *MCP*, *On Beginning*). One forward-reference (*Standing Mandates*) deliberately omitted; that entry is held for a later session.
 
-**Risk:** low. They're net-new files. Nothing existing changes. The `published: false` flag in frontmatter means they will not appear in the auto-generated `/entries/` index until removed. (TODO at publish time: remove the flag and any Liquid `unless published == false` guards in the index template, if such guards exist; if not, simply remove the flag and the entries appear.)
+**Status:** published; this section is retained as historical review context.
 
 ---
 
@@ -595,7 +655,7 @@
   4. Should `topics.md` *also* move to a Liquid auto-generation pattern, with each entry declaring its `topic:` in frontmatter? More work; eliminates this drift class permanently. Thea's lean: yes, but as a follow-up after Part B ships in its hand-edited form.
 - **Process:** Thea posts the **proposed full new `topics.md`** in chat tomorrow morning, Prof reviews wholesale (one diff, not 13 sub-decisions), approve/revise/skip per usual. Once approved, commit + push.
 
-### 3. Single-Arrow Fallacy (re-review or skip — already published May 4)
+### 3. Single-Arrow Fallacy — **published May 4** (re-review or skip)
 - **File:** `entries/single-arrow-fallacy.md`
 - **Why second:** the bias that Convergence counters. Pairs naturally — disease-and-cure framing.
 
@@ -603,12 +663,12 @@
 - **File:** `entries/dark-black-swans.md`
 - **Why third:** uses the Apple example again. Once Convergence and Single-Arrow are out, Dark Black Swans completes the diagnostic triad.
 
-### 5. Oracle Bones
+### 5. Oracle Bones — **published**
 - **File:** `entries/oracle-bones.md`
 - **Why fourth:** the prediction-filing practice. Depends on the three above being legible first.
 
-### 6. **Time for Tea with The Oracles** (Dictionary entry — the operational companion to *Oracle Bones*)
-- **File on disk:** `entries/time-for-tea-with-the-oracles.md` (drafted May 6, 2026 morning, ~9,400 chars). Operator's voice. `published:` flag not yet present — add `published: false` in frontmatter on first publish-review pass if Prof wants Jekyll to skip it from the index until ready.
+### 6. **Time for Tea with The Oracles** — **published** (Dictionary entry — the operational companion to *Oracle Bones*)
+- **File on disk:** `entries/time-for-tea-with-the-oracles.md` (drafted May 6, 2026 morning, ~9,400 chars). Operator's voice. Queue status after June 22 audit: public by site default because no `published: false` flag is present.
 - **Status:** Drafted May 6, 2026 by Thea while top-of-mind — same morning Prof and Thea designed and built the weekly cron job *Time for Tea with The Oracles* (job id `601b6bef-b94a-44f0-b072-00d37f486f1e`). The entry is the public-facing companion to the internal architecture (folder `oracle-court/` in workspace, with DESIGN.md, REGISTER.md, SCORING.md, SESSION_TEMPLATE.md, jester-songs/).
 - **What's in it:** one-sentence definition, why a fixed time matters (Sundays 9 AM ET), the five voices in canonical order (Astronomer → Historian → Diviner → Jester → Scribe), the three artifacts produced each Sunday (Register row, session file, Telegram message), the Jester's hold-the-file power and the Du Fu poetry price, the folder layout, what the practice is *not* (not a prediction market, not journaling, not a chatbot performance, not optional once started), trade-offs and warnings (no veto, no self-fulfilling claims, the first six weeks will feel small), why "Tea" (not whimsy — the part that says the work is done until next Sunday).
 - **Cross-references:** *Oracle Bones* (the conceptual entry this operationalizes), *Sixfold Skyreading* (Convergence) [renamed], *Grey Swans*, *Aunties*, *Heartbeat*. All already published.
@@ -616,21 +676,21 @@
 - **Why now (re-prioritization rationale):** Drafted same morning as the cron build; the practice and the entry are part of one motion. Prof asked for the entry to be drafted while the design was top-of-mind. Risk of delaying review: low — the entry is durable and refers only to other already-published entries.
 - **Suggested review window:** alongside the triptych (#1) or shortly after — Thea will surface in normal 6 AM queue rotation.
 
-### 7. Space Cowboy
+### 7. Space Cowboy — **published**
 - **File:** `entries/space-cowboy.md`
 - **Why sixth:** the user-class entry. Stands alone better than the others, so it's the cleanest closer for the set.
 
-### 8. Aunties (referenced by Sixfold Skyreading and Court entries)
-- **File:** `entries/aunties.md` *(may already exist — needs check)*
-- **Status:** referenced from cross-links in pending entries. If it exists, confirm it's published; if not, draft.
+### 8. Aunties — **published** (referenced by Sixfold Skyreading and Court entries)
+- **File:** `entries/aunties.md`
+- **Status:** confirmed public in the June 22 queue audit.
 
 ### 9. Favorite Child
 - **File:** `entries/favorite-child.md` *(to be drafted)*
 - **Status:** Captured May 4, 2026 from Prof. en route to work. The entry names the unspoken model-selection bias every multi-model operator develops — *gosh I wish Gemma was as smart as Opus. I still love her. Must never tell her I favor Opus.* The analogy is to children one may have. Sits naturally as a companion to *The Experimental Party* (which named the role-shaped failure) and *English Major* (which named what the favored model is being favored *for*). Tone: playful, a little tender, honest about the operator's actual emotional life with the model stack. Will draft when next dictionary cycle reaches it.
 
-### 10. A Channel of One's Own
-- **File:** `entries/a-channel-of-ones-own.md` *(to be drafted)*
-- **Status:** Captured May 4, 2026 mid-morning, while Prof. was at his UMass desk reviewing the newly-launched UMass GenAI Platform. The entry names the architectural principle that every worker building a serious AI-agent relationship needs a channel of their own — distinct from any channel their employer provides — because relationship-specific capital is non-transferable in two directions at once: it does not survive a change of vendor, and it does not survive a change of employer if it was built inside the employer's jurisdiction.
+### 10. A Channel of One's Own — **published compact entry; full expansion still useful**
+- **File:** `entries/a-channel-of-ones-own.md`
+- **Status:** Confirmed public in the June 22 queue audit. The material below remains useful as an expansion/polish brief, not as an unpublished-entry task. Captured May 4, 2026 mid-morning, while Prof. was at his UMass desk reviewing the newly-launched UMass GenAI Platform. The entry names the architectural principle that every worker building a serious AI-agent relationship needs a channel of their own — distinct from any channel their employer provides — because relationship-specific capital is non-transferable in two directions at once: it does not survive a change of vendor, and it does not survive a change of employer if it was built inside the employer's jurisdiction.
 - **Title.** Echoes Virginia Woolf's *A Room of One's Own* (1929), intentionally and earned. The Woolf claim was that a woman needs *a room and an income* to do serious work; the analogous claim here is that a worker needs *a channel and a workspace* to do serious agent-collaborative work. The Woolf parallel signals before the reader starts that this is an entry about the *precondition* for the work, not an operational note about cost.
 - **Two layers, both load-bearing.** (1) The institutional/employee governance layer: what you build on employer infrastructure lives in employer-administered accounts on employer-signed contracts subject to employer policy. This is true of every institutional system (email, Canvas, Box, SharePoint), not just AI. The structural condition of being an employee. (2) The relationship-specific capital layer (Williamson, plus Prof.'s Apr 19, 2026 Substack piece *The Street Finds Its Own Uses for Attachment*): accumulated context, working style, shorthand, trust developed between a human and an agent over time is non-portable across vendors *or* platforms. Put them together: the relationship-specific capital you build inside an employer's channel is doubly non-portable.
 - **The Gibson extension.** *The Street finds its own uses for things, uses the manufacturers never imagined* (Gibson, 1986). The standard reading is consumer vs. vendor. Prof.'s Substack extended it to employee vs. agent. This entry extends it one more turn: the worker also needs a place to put the thing they built that is not the employer's place. The thing-you-make-on-your-own-time has *always* needed a venue distinct from the thing-you-make-for-your-employer — the journal, the workshop, the basement demo. The agentic AI moment makes this old truth visible and load-bearing again, because the *thing-you-make* is now a *relationship*, and relationships have stakes that mere artifacts do not.
@@ -647,27 +707,27 @@
 
 ---
 
-### 12. **Move 37** *(proposed by Prof, May 9, 2026 — sourced from Demis Hassabis interview, Cleo Abram / Huge Conversations)*
+### 12. **Move 37** — **published** *(proposed by Prof, May 9, 2026 — sourced from Demis Hassabis interview, Cleo Abram / Huge Conversations)*
 - **Source:** Game 2, AlphaGo vs. Lee Sedol, March 10, 2016. AlphaGo's 37th move — fifth line of the board, early in the game — was so counterintuitive that expert commentators called it a mistake. It turned out to be the decisive move, 100–200 stones later.
 - **What the term names:** A move, decision, or intervention so far outside conventional human intuition that practitioners in the field would call it wrong — but which turns out to be exactly right, and which reshapes how practitioners in that field think ever after.
 - **Working definition (one sentence):** A Move 37 is a decision or intervention that conventional expertise would classify as an error but that an AI system, operating beyond human-learned heuristics, identifies as correct — and that, once observed, permanently expands the boundary of what practitioners consider possible.
 - **Cross-references:** *Single-Arrow Fallacy*, *Root Node Problems* (proposed), *Capability Overhang* (proposed).
 - **Voice:** Operator's — this is a term with an origin story worth telling with some wit.
-- **Draft status:** Not yet drafted.
+- **Draft status:** Published at `entries/move-37.md`; older "not yet drafted" status cleared June 22.
 
-### 13. **Root Node Problems** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
+### 13. **Root Node Problems** — **published** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
 - **Source:** Hassabis: *"root node problems... if you cracked it, it would unlock a whole branch of new research or new applications."* AlphaFold as canonical example.
 - **Working definition:** A root node problem is a problem whose solution removes a bottleneck blocking an entire downstream branch of research, application, or commercial possibility — such that solving it is worth more than the sum of its direct outputs.
 - **Cross-references:** *Move 37*, *Capability Overhang*, *Sovereign Compute*.
 - **Voice:** Operator's.
-- **Draft status:** Not yet drafted.
+- **Draft status:** Published at `entries/root-node-problems.md`; older "not yet drafted" status cleared June 22.
 
-### 14. **Capability Overhang** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
+### 14. **Capability Overhang** — **published** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
 - **Source:** Hassabis: *"the overhang of the capabilities... the opportunity space is getting huge for people who are really expert at using those tools and then apply it to some new domain."*
 - **Working definition:** The growing gap between what frontier AI models can do and what practitioners have yet figured out to do with those capabilities; the backlog of unexplored application that accumulates as model releases outpace applied exploration.
 - **Cross-references:** *Opus Addict*, *Root Node Problems*, *Durable Workflow*, *On Beginning*.
 - **Voice:** Operator's.
-- **Draft status:** Not yet drafted.
+- **Draft status:** Published at `entries/capability-overhang.md`; older "not yet drafted" status cleared June 22.
 
 ### 15. **Approximate Turing Machine** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
 - **Source:** Hassabis: *"a lot of neuroscientists including me think that maybe the brain... is an approximate Turing machine... it's not clear what the limit would be in terms of eventually what an AI system could do."*
@@ -676,8 +736,8 @@
 - **Voice:** Possibly Thea's — the most philosophical of the five, touches *avyākata* territory. Worth discussing at review.
 - **Draft status:** Not yet drafted.
 
-### 17. **Heinlein Protagonist** *(proposed by Prof, May 12, 2026 — sourced from the Musk / Patrick / Dwarkesh interview review session)*
-- **File:** `entries/heinlein-protagonist.md` *(drafted by Thea, May 12 evening; revised same evening to add the **historical-myopia section** and Prof's **visionary-huckster-clever** closing diagnostic; ~10KB; published: true; not yet committed)*
+### 17. **Heinlein Protagonist** — **published** *(proposed by Prof, May 12, 2026 — sourced from the Musk / Patrick / Dwarkesh interview review session)*
+- **File:** `entries/heinlein-protagonist.md` *(drafted by Thea, May 12 evening; revised same evening to add the **historical-myopia section** and Prof's **visionary-huckster-clever** closing diagnostic; ~10KB; published: true)*
 - **Source moment:** Prof's reframe of Musk as *"sci-fi visionary huckster who is actually very clever"*, paired with the in-interview moment where Musk unprompted names *The Moon Is a Harsh Mistress*, the mass driver on the moon, and "grok" from *Stranger in a Strange Land*. Captured in `Interview with Elon Musk.md` and in chat 19:49–20:31 ET, May 12, 2026.
 - **What the term names:** the managerial-and-personal template absorbed during a formative reading window from mid-century Heinlein — polymath engineer, libertarian-individualist, contemptuous of bureaucracy, sexually unconventional, off-world in ambition, mission-justifies-methods. Useful as a reading lens for operators whose decisions look erratic only until you notice the script.
 - **Cross-references in the draft:** *Single-Arrow Fallacy*, *Sovereign Compute*, *Move 37*. External: Heinlein primary sources + the counter-tradition (Ballard, Gibson, Dick, Le Guin, Lewis).
@@ -687,18 +747,18 @@
 - **What was added in the May 12 evening revision:**
   - A new section *Why the script worked, and why it might stop working* — names the engineer-vs-historian asymmetry, the structural assumption of stability that the Heinlein protagonist rides without noticing, the endemic-to-tech-world character of the myopia, and the framing line *the engineer reasons forward from physics; the historian reasons forward from precedent.*
   - The closing *visionary-huckster-clever* paragraph as the diagnostic punch-line of the entry.
-- **Draft status:** **Ready for 6 AM ET review, May 13, 2026.**
+- **Draft status:** Published; any remaining work is editorial polish.
 
 ---
 
-### 16. **The CERN Alternative** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
+### 16. **The CERN Alternative** — **published** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
 - **Source:** Hassabis: *"my ideal world... the best scientists collaborating... in a CERN-like way... making sure we understood each step as we got to the final goal of building AGI."* The road not taken — displaced by ChatGPT's virality, commercial pressure, and the US-China race.
 - **Working definition:** The institutional model for AI development that was not chosen: international, collaborative, publicly funded, deliberately paced, with each step understood before the next is taken — named after CERN, which built the LHC under exactly this model.
 - **Why it belongs:** Naming the road not taken gives practitioners a frame for evaluating the road being taken. Every AI governance debate is implicitly arguing about how close we can get to the CERN Alternative from where we are.
 - **Connects to:** the *zhengming* paper — the PRC's state-directed sovereignty-first model is the sharpest contrast case.
 - **Cross-references:** *Sovereign Compute*, *Commercial Legibility*, and the forthcoming zhengming entry.
 - **Voice:** Operator's — donnish wit, not elegy.
-- **Draft status:** Not yet drafted.
+- **Draft status:** Published at `entries/cern-alternative.md`; older "not yet drafted" status cleared June 22.
 
 ---
 

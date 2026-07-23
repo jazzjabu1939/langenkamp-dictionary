@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Replicant"
 permalink: /entries/replicant/
 date: 2026-06-29

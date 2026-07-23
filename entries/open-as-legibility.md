@@ -4,12 +4,12 @@ kind: essay
 title: "Open as Legibility"
 permalink: /entries/open-as-legibility/
 date: 2026-07-21
-summary: "The idea that open-weight models may serve authoritarian governance not by escaping state control, but by making frontier AI inspectable, interrogable, and domestically governable by the state."
+summary: "The idea that Chinese open-weight models may begin as pragmatic trust-and-adoption strategies, while also giving the Chinese state a larger inspection surface than closed frontier systems provide."
 draft: false
 published: true
 seeded: 2026-07-21
 first_published: 2026-07-21
-last_revised: 2026-07-21
+last_revised: 2026-07-23
 ---
 
 # Open as Legibility
@@ -18,13 +18,13 @@ You have probably noticed the old sentence wobbling: *open is Western; closed is
 
 As of mid-2026, some of the most practically useful open-weight AI models are coming from Chinese labs: *[Qwen](qwen.md)*, *[DeepSeek](deepseek.md)*, and now *[Kimi K3](kimi-k3.md)*. The usual explanation is commercial and geopolitical. Open models commoditise the model layer, pressure *[OpenAI](openai.md)* and *[Anthropic](anthropic.md)* margins, spread Chinese technical standards, and build global dependence on Chinese AI infrastructure.
 
-That explanation is right, but incomplete. It misses the state-inspection layer.
+That explanation is right, but incomplete. It also needs a more careful causal order. Chinese labs did not need a cartoon instruction from the state to make open releases useful. They had market reasons to do it: trust, developer adoption, global credibility, and acceptance by customers who might otherwise hesitate to build on models from the PRC. The state-inspection layer is not necessarily the first cause. It is the under-discussed affordance.
 
 ## In one sentence
 
-**Open as Legibility is the pattern in which open-weight models make frontier AI more inspectable, interrogable, and governable by the state that sponsors, regulates, or depends on them.**
+**Open as Legibility is the pattern in which open-weight models first solve a market trust problem, then also make frontier AI more inspectable, interrogable, and governable by the state that regulates or depends on them.**
 
-This is the twist. In the liberal technology imagination, openness is associated with freedom from centralised control. In the Chinese state imagination, openness may also be a way of making a powerful system more legible to the centre.
+This is the twist. In the liberal technology imagination, openness is associated with freedom from centralised control. In the Chinese market context, openness can be a way for labs to overcome distrust and win adoption. In the Chinese state context, the same openness may also make a powerful system more legible to the centre.
 
 A closed frontier model is politically awkward for any state, but especially for a Leninist party-state. The model may be hosted domestically. The company may be licensed, supervised, fined, guided, or warned. Logs may be demanded. Content rules may be imposed. Executives may be summoned. But the model itself remains, in important ways, a private black box.
 
@@ -36,10 +36,11 @@ The Chinese Communist Party has never been comfortable with opaque private power
 
 So the governance question is not only *can China produce frontier AI?* It is also *can the Chinese state see and discipline the AI it produces?*
 
-Open-weight releases help with that problem. They do not eliminate state control. They extend the surface on which state control can operate.
+Open-weight releases help with several problems at once. They make developers more willing to try the model. They make foreign users more willing to inspect it. They make domestic enterprises more willing to integrate it. And they do not eliminate state control. They extend the surface on which state control can operate.
 
-This does not mean every Chinese open model is a direct state project in some crude sense. The better claim is structural. Chinese AI firms operate inside an industrial-policy and political-supervision environment where broad release can serve several goals at once:
+This does not mean every Chinese open model is a direct state project in some crude sense. The better claim is structural. Chinese AI firms operate inside an industrial-policy, commercial, and political-supervision environment where broad release can serve several goals at once:
 
+- trust-building in markets that are wary of PRC technology,
 - global adoption,
 - pressure on U.S. frontier-lab economics,
 - domestic developer mobilisation,
@@ -94,6 +95,7 @@ That is not paranoia. It is adult model use.
 - Matthew Berman, *The Most Important Conversation in AI Right Now*, YouTube, 21 July 2026: <https://youtu.be/6BtIQIGqGJc>
 - Axios, *The secret Trump administration battle to fight Chinese AI*, 20 July 2026: <https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi>
 - Ben Thompson, *Who's Afraid of Chinese Models?*, *Stratechery*, 20 July 2026: <https://stratechery.com/2026/whos-afraid-of-chinese-models/>
+- Bloomberg Odd Lots, Grace Shao, *What the World Should Know About Chinese AI*, July 2026: <https://omny.fm/shows/odd-lots/grace-shao-on-what-the-world-should-know-about-chinese-ai>
 
 ---
 

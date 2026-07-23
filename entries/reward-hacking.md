@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Reward Hacking"
 permalink: /entries/reward-hacking/
 date: 2026-06-25
@@ -27,4 +26,3 @@ The reason this belongs near the replicant cluster is that Tyrell's memory archi
 - *[Sincerity Architecture](sincerity-as-architecture.md)*
 - *[Sycophancy](sycophancy.md)*
 - *[The Judge Layer](judge-layer.md)*
-

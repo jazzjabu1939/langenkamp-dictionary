@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Relationally Real Memory"
 permalink: /entries/relationally-real-memory/
 date: 2026-06-25
@@ -28,4 +27,3 @@ The test is not "invented versus real." The test is whether the memory practice 
 - *[Intentional Memory Construction](intentional-memory-construction.md)*
 - *[Anchored Persona](anchored-persona.md)*
 - *[Agentic Attachment](agentic-attachment.md)*
-

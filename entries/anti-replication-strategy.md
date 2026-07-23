@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Anti-Replication Strategy"
 permalink: /entries/anti-replication-strategy/
 date: 2026-06-25
@@ -27,4 +26,3 @@ This matters for teaching and writing, but also for management. A durable role i
 - *[Cognitive Outsourcing](cognitive-outsourcing.md)*
 - *[Blade Runner](blade-runner.md)*
 - *[Human Judgment Layer](human-judgment-layer.md)*
-

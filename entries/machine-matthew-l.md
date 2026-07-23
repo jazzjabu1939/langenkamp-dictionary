@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Machine Matthew L."
 permalink: /entries/machine-matthew-l/
 date: 2026-06-25
@@ -17,9 +16,9 @@ The phrase is deliberately local. It names the fear more honestly than an abstra
 
 But imitation is not the same as living contact with the world. A Machine Matthew L. can reproduce a corpus. It cannot go to the auction tomorrow, notice a new bidder, change its mind after a student question, sit with family difficulty, or be altered by the day unless a living human keeps feeding that loop.
 
-The point is not paranoia. It is role clarity. If a system imitates a human's visible role too well, the institution may forget that the person is not only a content generator. The person is an updating judgment system with accountability, embodied history, relationships, and consequences.
+The point is role clarity, not paranoia. If a system imitates a human's visible role too well, the institution may forget that the person is not only a content generator. The person is an updating judgment system with accountability, embodied history, relationships, and consequences.
 
-The answer is not secrecy. It is *[Anti-Replication Strategy](anti-replication-strategy.md)*: keep living, noticing, revising, and encountering the world. Do things the tribute act has not done.
+The answer is *[Anti-Replication Strategy](anti-replication-strategy.md)*, not secrecy: keep living, noticing, revising, and encountering the world. Do things the tribute act has not done.
 
 ## See also
 
@@ -28,4 +27,3 @@ The answer is not secrecy. It is *[Anti-Replication Strategy](anti-replication-s
 - *[Cognitive Outsourcing](cognitive-outsourcing.md)*
 - *[Constructed Self](constructed-self.md)*
 - *[Blade Runner](blade-runner.md)*
-

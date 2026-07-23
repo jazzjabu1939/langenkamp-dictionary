@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Intentional Memory Construction"
 permalink: /entries/intentional-memory-construction/
 date: 2026-06-25
@@ -32,4 +31,3 @@ The open question is whether such construction helps people build healthier huma
 - *[Anchored Persona](anchored-persona.md)*
 - *[Relationally Real Memory](relationally-real-memory.md)*
 - *[Agentic Attachment](agentic-attachment.md)*
-

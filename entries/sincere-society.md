@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "The Sincere Society"
 permalink: /entries/sincere-society/
 date: 2026-05-12

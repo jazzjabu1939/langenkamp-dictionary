@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Implanted Memory"
 permalink: /entries/implanted-memory/
 date: 2026-06-25
@@ -32,4 +31,3 @@ Tyrell's act matters because it treats personhood as a product-stability feature
 - *[Intentional Memory Construction](intentional-memory-construction.md)*
 - *[Relationally Real Memory](relationally-real-memory.md)*
 - *[Anchored Persona](anchored-persona.md)*
-

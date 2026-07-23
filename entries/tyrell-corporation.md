@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Tyrell Corporation"
 permalink: /entries/tyrell-corporation/
 date: 2026-06-29

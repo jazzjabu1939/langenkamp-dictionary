@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Responsible Implementation Layer"
 permalink: /entries/responsible-implementation-layer/
 date: 2026-06-26

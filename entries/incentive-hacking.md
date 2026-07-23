@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Incentive Hacking"
 permalink: /entries/incentive-hacking/
 date: 2026-06-25
@@ -28,4 +27,3 @@ The term **Incentive Hacking** is useful because it generalizes beyond RL jargon
 - *[Sincerity Architecture](sincerity-as-architecture.md)*
 - *[The Sinceerly Stack](sinceerly-stack.md)*
 - *[The Judge Layer](judge-layer.md)*
-

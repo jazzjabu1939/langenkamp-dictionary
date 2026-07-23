@@ -1,6 +1,5 @@
 ---
 layout: default
-kind: glossary
 title: "Role Substitution"
 permalink: /entries/role-substitution/
 date: 2026-06-25
@@ -28,4 +27,3 @@ The danger is not that AI systems will help too much. Help is welcome. The dange
 - *[Cognitive Outsourcing](cognitive-outsourcing.md)*
 - *[Human Judgment Layer](human-judgment-layer.md)*
 - *[Machine Matthew L.](machine-matthew-l.md)*
-
