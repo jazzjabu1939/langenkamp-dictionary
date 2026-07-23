@@ -327,6 +327,132 @@
         background: #ece7f1;
       }
 
+      /* Alphabetical entry browser */
+      .main-content .entry-finder {
+        margin: 1.5rem 0 1.25rem;
+        padding: 1rem;
+        border: 1px solid var(--lk-rule);
+        border-left: 4px solid var(--lk-maroon);
+        border-radius: 4px;
+        background: #fffdfa;
+      }
+      .main-content .entry-search-label {
+        display: block;
+        margin-bottom: 0.45rem;
+        font-family: var(--lk-font-heading);
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--lk-ink);
+      }
+      .main-content .entry-search-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.5rem;
+        align-items: center;
+      }
+      .main-content .entry-search {
+        width: 100%;
+        min-width: 0;
+        border: 1px solid #d6c8c0;
+        border-radius: 4px;
+        padding: 0.7rem 0.85rem;
+        font-family: var(--lk-font-heading);
+        font-size: 1rem;
+        color: var(--lk-ink);
+        background: #fff;
+      }
+      .main-content .entry-search:focus {
+        border-color: var(--lk-maroon);
+        box-shadow: 0 0 0 3px rgba(136, 28, 28, 0.13);
+        outline: none;
+      }
+      .main-content .entry-search-clear {
+        border: 1px solid var(--lk-maroon);
+        border-radius: 4px;
+        padding: 0.7rem 0.8rem;
+        font-family: var(--lk-font-mono);
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: #fff;
+        background: var(--lk-maroon);
+        cursor: pointer;
+      }
+      .main-content .entry-search-clear:hover {
+        background: var(--lk-maroon-dark);
+        border-color: var(--lk-maroon-dark);
+      }
+      .main-content .entry-search-status {
+        min-height: 1.2rem;
+        margin: 0.45rem 0 0;
+        font-family: var(--lk-font-heading);
+        font-size: 0.85rem;
+        color: var(--lk-muted);
+      }
+      .main-content .entry-letter-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+        gap: 0.55rem;
+        margin: 1.25rem 0 1.75rem;
+      }
+      .main-content .entry-letter-tile {
+        display: flex;
+        min-height: 3rem;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e0d0c6;
+        border-radius: 6px;
+        background: #f6e5d8;
+        color: var(--lk-ink);
+        font-family: var(--lk-font-heading);
+        font-size: 1.05rem;
+        font-weight: 700;
+        line-height: 1;
+        text-decoration: none;
+      }
+      .main-content .entry-letter-tile:hover {
+        border-color: var(--lk-maroon);
+        color: var(--lk-maroon-dark);
+        background: #f2d7c4;
+      }
+      .main-content .entry-letter-heading {
+        margin-top: 1.5rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid var(--lk-rule);
+        color: var(--lk-maroon-dark);
+      }
+      .main-content .entry-list {
+        padding-left: 1.15rem;
+      }
+      .main-content .entry-list-item {
+        margin: 0.45rem 0;
+      }
+      .main-content .entry-list-item[hidden],
+      .main-content .entry-letter-heading[hidden],
+      .main-content .entry-list[hidden] {
+        display: none;
+      }
+
+      @media screen and (max-width: 42em) {
+        .main-content .entry-finder {
+          margin-top: 1rem;
+          padding: 0.85rem;
+        }
+        .main-content .entry-search-row {
+          grid-template-columns: 1fr;
+        }
+        .main-content .entry-search-clear {
+          width: 100%;
+        }
+        .main-content .entry-letter-grid {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+          gap: 0.45rem;
+        }
+        .main-content .entry-letter-tile {
+          min-height: 2.75rem;
+          font-size: 1rem;
+        }
+      }
+
       /* Other Writing cards */
       .main-content .writing-grid {
         display: grid;
@@ -473,7 +599,7 @@
       {% elsif page.kind == "essay" or page.layout == "entry" %}
       <div class="entry-type-note"><span class="essay-badge">Essay</span> This entry carries an argument or interpretive position, not just a neutral definition.</div>
       {{ content }}
-      {% elsif page.permalink contains "/entries/" and page.permalink != "/entries/" %}
+      {% elsif page.url contains "/entries/" and page.url != "/entries/" %}
       <div class="entry-type-note"><span class="reference-badge">Reference</span> This entry is primarily explanatory reference: what the term means, why it exists, and how it is used.</div>
       {{ content }}
       {% else %}
