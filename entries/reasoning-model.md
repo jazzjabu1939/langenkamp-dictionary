@@ -19,4 +19,4 @@ For operators, the practical question is routing. Use reasoning models where the
 
 ## See also
 
-[Chain of Thought](chain-of-thought.md) · [Model Tiering](model-tiering.md) · [Hallucination](hallucination.md) · [GPT](gpt.md) · [DeepSeek](deepseek.md)
+[Chain of Thought](chain-of-thought.md) · [Watch AI Think Myth](watch-ai-think-myth.md) · [Training Compute Myth](training-compute-myth.md) · [Model Tiering](model-tiering.md) · [Hallucination](hallucination.md) · [GPT](gpt.md) · [DeepSeek](deepseek.md)

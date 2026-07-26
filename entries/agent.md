@@ -116,4 +116,4 @@ A useful classroom question: *if your organization is the branch, who is Lowbeer
 
 ---
 
-*Related entries: `aunties.md`, `lowbeer-question.md`, `branches.md` *(planned)*, `sub-agent.md`, `gateway.md`, `soul-md.md`, `english-major.md`.*
+*Related entries: [Fully Autonomous Agent Myth](fully-autonomous-agent-myth.md), `aunties.md`, `lowbeer-question.md`, `branches.md` *(planned)*, `sub-agent.md`, `gateway.md`, `soul-md.md`, `english-major.md`.*

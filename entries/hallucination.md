@@ -17,6 +17,7 @@ Not every wrong answer is a hallucination. Some are stale knowledge, ambiguous i
 
 ## See also
 
+- *[Hallucination Frequency Myth](hallucination-frequency-myth.md)*
 - *[RAG](rag.md)*
 - *[Provenance](provenance.md)*
 - *[Context Window](context-window.md)*

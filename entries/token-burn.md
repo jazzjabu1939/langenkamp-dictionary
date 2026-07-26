@@ -89,6 +89,6 @@ Most practitioners reach acceptance within one billing cycle. The truly fortunat
 
 ---
 
-*Related entries: [Heartbeat](heartbeat.md), [Sub-agent](sub-agent.md), [Ollama](ollama.md). For the architectural escape hatch, see the [model-tiering plan](../#) (forthcoming as `architecture/model-tiering.md`).*
+*Related entries: [Training Compute Myth](training-compute-myth.md), [Heartbeat](heartbeat.md), [Sub-agent](sub-agent.md), [Ollama](ollama.md). For the architectural escape hatch, see the [model-tiering plan](../#) (forthcoming as `architecture/model-tiering.md`).*
 
 *Filed in the spirit in which most working terminology is filed: from the position of someone who learned the term the expensive way.*

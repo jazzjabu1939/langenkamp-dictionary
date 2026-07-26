@@ -17,6 +17,7 @@ For operators, context-window management is a real craft. Summaries, retrieval s
 
 ## See also
 
+- *[Context Window Database Myth](context-window-database-myth.md)*
 - *[RAG](rag.md)*
 - *[Vector database](vector-database.md)*
 - *[Incremental Construction](incremental-construction.md)*

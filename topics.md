@@ -23,6 +23,16 @@ The load-bearing concepts. Most other terms reference one or more of these.
 - [Agentic Threshold](entries/agentic-threshold.md) — the moment a system stops being a chatbot and starts being an agent.
 - [OpenClaw](entries/openclaw.md) — the working runtime and operator workspace underneath much of the Dictionary's agentic-system vocabulary.
 
+## AI myths and practical corrections
+
+Student-facing corrections to common 2026 AI folk beliefs: what used to be true, what remains partly true, and what students should do operationally.
+
+- [Hallucination Frequency Myth](entries/hallucination-frequency-myth.md) — hallucinations are real, but frontier-model risk is now uneven and needs evidence-aware checking.
+- [Watch AI Think Myth](entries/watch-ai-think-myth.md) — visible reasoning traces are useful arguments, not transparent brain scans.
+- [Training Compute Myth](entries/training-compute-myth.md) — inference, not only training, is becoming the live AI compute cost centre.
+- [Context Window Database Myth](entries/context-window-database-myth.md) — long context is visibility, not a structured memory system.
+- [Fully Autonomous Agent Myth](entries/fully-autonomous-agent-myth.md) — agents can act in short bursts, but long workflows still need ownership, checkpoints, and verification.
+
 ## AI Writing — the May 2026 cluster
 
 A coordinated set of entries on writing in the AI era. Triggered by Jason Koebler's *Your AI Use Is Breaking My Brain* (404 Media, May 11, 2026) and the broader argument about register colonisation. The cluster sits at the centre of the Dictionary's voice argument.

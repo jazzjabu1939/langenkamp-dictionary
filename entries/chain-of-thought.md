@@ -17,6 +17,7 @@ For operators, the practical lesson is modest. Stepwise reasoning can improve wo
 
 ## See also
 
+- *[Watch AI Think Myth](watch-ai-think-myth.md)*
 - *[Reasoning Model](reasoning-model.md)*
 - *[Approximate Turing Machine](approximate-turing-machine.md)*
 - *[Hallucination](hallucination.md)*

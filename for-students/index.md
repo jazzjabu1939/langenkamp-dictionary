@@ -38,6 +38,11 @@ This page collects course-facing materials that belong near the Dictionary but a
 ## Student Entries
 
 - **[Epistemology, Ethics, and Hermeneutics](/entries/epistemology-ethics-and-hermeneutics/)** - Three old humanities words as practical AI-era judgment tools.
+- **[Hallucination Frequency Myth](/entries/hallucination-frequency-myth/)** - Why hallucination risk is real but no longer evenly distributed.
+- **[Watch AI Think Myth](/entries/watch-ai-think-myth/)** - Why visible reasoning traces are arguments to inspect, not transparent cognition.
+- **[Training Compute Myth](/entries/training-compute-myth/)** - Why inference is becoming the live operating cost of AI.
+- **[Context Window Database Myth](/entries/context-window-database-myth/)** - Why a large context window is not the same thing as structured memory.
+- **[Fully Autonomous Agent Myth](/entries/fully-autonomous-agent-myth/)** - Why useful agent autonomy still needs ownership, checkpoints, and verification.
 
 ---
 
