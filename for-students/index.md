@@ -21,6 +21,12 @@ This page collects course-facing materials that belong near the Dictionary but a
     <strong>Using This Dictionary in a Course</strong>
     <span>A short guide for reading Dictionary entries, distinguishing glossary/reference/essay pieces, and using AI responsibly in written work.</span>
   </a>
+
+  <a class="writing-card" href="/entries/epistemology-ethics-and-hermeneutics/">
+    <span class="writing-kicker">Student Entry</span>
+    <strong>Epistemology, Ethics, and Hermeneutics</strong>
+    <span>Three humanities disciplines students need more, not less, when AI can generate fluent answers.</span>
+  </a>
 </div>
 
 ---
@@ -28,6 +34,10 @@ This page collects course-facing materials that belong near the Dictionary but a
 ## Case Studies
 
 - **[Tru by Hilton](/case-studies/tru-by-hilton/)** - A brand portfolio strategy case on Tru, Hampton, and midscale lodging.
+
+## Student Entries
+
+- **[Epistemology, Ethics, and Hermeneutics](/entries/epistemology-ethics-and-hermeneutics/)** - Three old humanities words as practical AI-era judgment tools.
 
 ---
 

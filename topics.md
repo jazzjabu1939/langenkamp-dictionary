@@ -227,6 +227,7 @@ The classroom and assurance-of-learning cluster: how faculty can assess learning
 - [Verification Gap](entries/verification-gap.md) — AACSB's term for the widening distance between polished artifacts and reliable evidence of competence.
 - [AI Produced Artifact](entries/ai-produced-artifact.md) — a polished AI-assisted output that needs supporting evidence before it can certify human learning.
 - [AI Librarian](entries/ai-librarian.md) — the campus support function that treats AI as an information, evidence, citation, privacy, and assessment problem.
+- [Epistemology, Ethics, and Hermeneutics](entries/epistemology-ethics-and-hermeneutics.md) — three humanities disciplines students need more, not less, when AI makes answers abundant.
 - [NotebookLM](entries/notebooklm.md) — a teachable source-grounded workflow for AI-assisted idea generation, research synthesis, and artifact production.
 - [Artifact Is Not Competence](entries/artifact-is-not-competence.md) — the assurance-of-learning problem in plain English.
 - [Verification Assignment](entries/verification-assignment.md) — assignment design that makes authorship, judgment, and learning visible.
