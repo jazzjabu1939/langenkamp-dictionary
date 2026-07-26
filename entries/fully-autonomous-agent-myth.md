@@ -14,7 +14,7 @@ Agents are real. They can plan, call tools, observe results, update state, and c
 
 The failure mode is **compounding error**. If an agent is 95 percent reliable on one step, that sounds strong. But a twenty-step workflow made of 95-percent-reliable steps is far less reliable end to end. The agent may choose the wrong tool once, misread one result, overwrite one assumption, drift from the goal, or get stuck in a loop. Each small error becomes input to the next action.
 
-The current practical answer is not "no agents." It is **bounded autonomy**: short runs, clear scopes, logs, checkpoints, verifier models where useful, and humans in the loop before consequential action. The goal is to let agents do useful work without pretending that autonomy removes ownership.
+The current practical answer is not "no agents." It is **bounded autonomy**: short runs, clear scopes, logs, checkpoints, verifier models where useful, and [humans in the loop](human-in-the-loop.md) before consequential action. The goal is to let agents do useful work without pretending that autonomy removes ownership.
 
 For students, the lesson is managerial. The interesting question is not whether the agent can act. It is who owns the workflow, where the checkpoints sit, what evidence counts as success, and what authority the agent has before a human reviews the result.
 
