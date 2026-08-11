@@ -24,6 +24,7 @@ Each issue runs five to seven items, each anchored to a source we can cite, with
 ## Archive
 
 <!-- NEWSLETTER_ARCHIVE_START -->
+- **[August 11, 2026](2026-08-11/)** · Vol. 28 - This Week's Thesis: Adoption Is No Longer the Hard Part
 - **[August 3, 2026](2026-08-03/)** · Vol. 27 - AI Becomes Research Infrastructure
 - **[July 28, 2026](2026-07-28/)** · Vol. 26 - AI Readiness Becomes a Competitive Position
 - **[July 21, 2026](2026-07-21/)** · Vol. 25 - AI Moves Onto Campus
