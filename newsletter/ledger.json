@@ -1,0 +1,134 @@
+{
+  "series": "AI in Higher Education - Weekly Brief",
+  "numbering_rule": "The next volume is one greater than the highest published volume in this ledger. Drafts never advance the sequence.",
+  "issues": [
+    {
+      "volume": 12,
+      "date": "2026-04-10",
+      "status": "published",
+      "title": "Instructure's IgniteAI agent and the start of agentic LMS",
+      "source": "../dept-memos/2026-04-10-education-ai-brief.md",
+      "site_file": "newsletter/2026-04-10.md"
+    },
+    {
+      "volume": 13,
+      "date": "2026-04-17",
+      "status": "published",
+      "title": "Faculty governance, IgniteAI's pedagogical questions, AACSB and beyond",
+      "source": "../dept-memos/2026-04-17-education-ai-brief.md",
+      "site_file": "newsletter/2026-04-17.md"
+    },
+    {
+      "volume": 14,
+      "date": "2026-04-24",
+      "status": "published",
+      "title": "Google Gemini in Classroom, NotebookLM, and the educator-series infrastructure commitment",
+      "source": "../dept-memos/2026-04-24-education-ai-brief.md",
+      "site_file": "newsletter/2026-04-24.md"
+    },
+    {
+      "volume": 15,
+      "date": "2026-05-01",
+      "status": "published",
+      "title": "GPT-5.5 lands in Edu plans, ASU Atomic faculty pushback, and AACSB 2026 standards finalised",
+      "source": "../dept-memos/2026-05-01-education-ai-brief.md",
+      "site_file": "newsletter/2026-05-01.md"
+    },
+    {
+      "volume": 16,
+      "date": "2026-05-09",
+      "status": "published",
+      "title": "The New Yorker on credentialing, Cal State's $17M OpenAI deal, and the Class of 2026 job market",
+      "source": "../dept-memos/2026-05-09-education-ai-brief.md",
+      "site_file": "newsletter/2026-05-09.md"
+    },
+    {
+      "volume": 17,
+      "date": "2026-05-15",
+      "status": "published",
+      "title": "AACSB's verification gap, SUNY's systemwide AI policy, and the governance risks of moving faster than trust allows",
+      "source": "../dept-memos/2026-05-15-education-ai-brief.md",
+      "site_file": "newsletter/2026-05-15.md"
+    },
+    {
+      "volume": 18,
+      "date": "2026-05-22",
+      "status": "published",
+      "title": "The Cornell/Berkeley/Science study, college legitimacy, and AI as career preparation",
+      "source": "../dept-memos/2026-05-22-education-ai-brief.md",
+      "site_file": "newsletter/2026-05-22.md"
+    },
+    {
+      "volume": 19,
+      "date": "2026-05-29",
+      "status": "published",
+      "title": "CSU as a governance stress test, state policy pressure, and accountable AI practice",
+      "source": "../dept-memos/2026-05-29-education-ai-brief.md",
+      "site_file": "newsletter/2026-05-29.md"
+    },
+    {
+      "volume": 20,
+      "date": "2026-06-12",
+      "status": "published",
+      "title": "Student ambivalence, institutional promises, detector credibility, and supervised judgment",
+      "source": "../dept-memos/2026-06-12-education-ai-brief.md",
+      "site_file": "newsletter/2026-06-12.md"
+    },
+    {
+      "volume": 21,
+      "date": "2026-06-20",
+      "status": "published",
+      "title": "Assessment validity, AI detectors, Kelley's AI Playbook, and evidence of student learning",
+      "source": "../dept-memos/2026-06-20-education-ai-brief.md",
+      "site_file": "newsletter/2026-06-20.md"
+    },
+    {
+      "volume": 22,
+      "date": "2026-06-26",
+      "status": "published",
+      "title": "State guardrails, implementation capacity, and the responsible implementation layer",
+      "source": "../dept-memos/2026-06-26-education-ai-brief.md",
+      "site_file": "newsletter/2026-06-26.md"
+    },
+    {
+      "volume": 23,
+      "date": "2026-07-06",
+      "status": "published",
+      "title": "AI literacy, privacy, and ethical oversight moving from guidance toward mandate",
+      "source": "../dept-memos/2026-07-06-education-ai-brief.md",
+      "site_file": "newsletter/2026-07-06.md"
+    },
+    {
+      "volume": 24,
+      "date": "2026-07-13",
+      "status": "published",
+      "title": "Controlled learning conditions, conditional AI, and assignment-level AI zones",
+      "source": "../dept-memos/2026-07-13-education-ai-brief.md",
+      "site_file": "newsletter/2026-07-13.md"
+    },
+    {
+      "volume": 25,
+      "date": "2026-07-21",
+      "status": "published",
+      "title": "AI Moves Onto Campus",
+      "source": "dept-memos/2026-07-21-education-ai-brief.md",
+      "site_file": "newsletter/2026-07-21.md"
+    },
+    {
+      "volume": 26,
+      "date": "2026-07-28",
+      "status": "published",
+      "title": "AI Readiness Becomes a Competitive Position",
+      "source": "dept-memos/2026-07-28-education-ai-brief.md",
+      "site_file": "newsletter/2026-07-28.md"
+    },
+    {
+      "volume": 27,
+      "date": "2026-08-03",
+      "status": "published",
+      "title": "AI Becomes Research Infrastructure",
+      "source": "dept-memos/2026-08-03-education-ai-brief.md",
+      "site_file": "newsletter/2026-08-03.md"
+    }
+  ]
+}
