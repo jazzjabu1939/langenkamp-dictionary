@@ -17,6 +17,8 @@ The load-bearing concepts. Most other terms reference one or more of these.
 
 - [Agent](entries/agent.md) — what an agent is, how it differs from a chatbot, and why Gibson's *Agency* reads like a design document.
 - [Embedding](entries/embedding.md) — meaning as a list of numbers.
+- [Hill Climbing](entries/hill-climbing.md) — stepwise optimization by following a local signal of improvement.
+- [FLOP](entries/flop.md) — the basic operation-counting unit used in AI compute calculations.
 - [Tool](entries/tool.md) — the function call that lets an agent act in the world.
 - [Naming](entries/naming.md) — why the choice of names is structural, not cosmetic.
 - [Capability Overhang](entries/capability-overhang.md) — the gap between what AI systems can already do and what has been productised.
