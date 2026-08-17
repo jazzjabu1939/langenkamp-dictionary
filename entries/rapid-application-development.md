@@ -22,10 +22,10 @@ RAD's durable lesson is consequently less “build without programmers” than *
 
 ## See also
 
-- *[Martin Keen](martin-keen.md)*
-- *[Durable Workflow](durable-workflow.md)*
-- *[Human Judgment Layer](human-judgment-layer.md)*
-- *[Verification Gap](verification-gap.md)*
+- *[Martin Keen](/entries/martin-keen/)*
+- *[Durable Workflow](/entries/durable-workflow/)*
+- *[Human Judgment Layer](/entries/human-judgment-layer/)*
+- *[Verification Gap](/entries/verification-gap/)*
 
 ## Sources
 

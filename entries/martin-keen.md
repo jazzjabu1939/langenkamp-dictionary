@@ -20,9 +20,9 @@ For managers and teachers, that is the important translation. Keen is not primar
 
 ## See also
 
-- *[Rapid Application Development / RAD](rapid-application-development.md)*
-- *[Human Judgment Layer](human-judgment-layer.md)*
-- *[Verification Gap](verification-gap.md)*
+- *[Rapid Application Development / RAD](/entries/rapid-application-development/)*
+- *[Human Judgment Layer](/entries/human-judgment-layer/)*
+- *[Verification Gap](/entries/verification-gap/)*
 
 ## Source
 
