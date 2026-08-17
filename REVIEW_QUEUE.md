@@ -170,18 +170,6 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ---
 
-### **Agent Health / Harness Hygiene Cluster** (added May 19, 2026 — from HEARTBEAT/memory/cron diagnosis)
-
-*Queue addition only; drafts not yet written. This is likely a major cluster, not a minor glossary batch.*
-
-- **Agent Health** — working definition: the operational condition of an AI assistant as shaped by its harness: whether it can act coherently, remember correctly, recover from failure, rank instructions, avoid stale authority, and maintain trustworthy autonomy. Not a biological-rights claim; a systems-health claim.
-- **Operational Health** — working definition: the measurable health of an agentic system: clean instruction hierarchy, curated memory, verifiable scheduled work, explicit alert thresholds, tested recovery paths, visible failures, and safe quiet-maintenance space. The practical layer beneath the more human-sounding phrase *agent health*.
-- **Healthy Agent Harness** — working definition: a runtime/workspace architecture that gives the agent short current instructions, ranked authority, retired stale tasks, curated memory vs history vs dashboard separation, reliable/verified cron, and safe mechanisms for escalation or silence.
-- **Unhealthy Agent Harness** — working definition: the common failure mode where everything becomes text soup: old project notes remain live, dashboards rot, cron jobs merely exist, failures are invisible, memory becomes archive sludge, and the agent becomes jumpy, over-compliant, silent at the wrong times, or faithfully wrong.
-- **Harness Hygiene** — possible umbrella term: the maintenance practices that keep agent health from degrading — pruning dashboards, marking superseded instructions, testing restores, auditing cron, separating canonical memory from chronological history, and enforcing “current authority beats old artifact.”
-
----
-
 ### **Backup Performance Art** (added May 19, 2026 — from Aspen Jerome night-auditor anecdote)
 
 *Queue addition only; draft not yet written.*
@@ -770,6 +758,30 @@ The sections below are the active queue. Historical sections that remain for sou
 - **Cross-references:** *Verification Gap*, *AI-Produced Artifact*, *Institutional Lag*, *Implementation Outrun*, *A Channel of One's Own*.
 - **Voice:** Operator's, with a practical campus-governance tone. It should avoid sounding like a job-description memo; the entry should name the role as an institutional adaptation to a broken evidence environment.
 - **Draft status:** Not yet drafted.
+
+---
+
+### 19. **AI Self-Improvement Governance Cluster** *(proposed by Prof, August 11, 2026 — sourced from Dwarkesh Patel's Ryan Greenblatt interview and the Thea Claw/Hermes discussion)*
+
+- **Verifiable Work**
+  - **Working definition:** Work whose success can be tested cheaply, repeatedly, and with enough objectivity that an AI system can run many attempts and learn from the results. AI research is an unusually important case because experiments, code, benchmarks, and training loss often provide rapid feedback, though not necessarily the taste required to choose the right research direction.
+  - **Why it belongs:** It names the class of domains in which AI-driven improvement may accelerate first. The important variable is not simply intelligence, but the availability of a trustworthy feedback loop.
+  - **Cross-references:** *Hill Climb*, *Verification Gap*, *The Judge Layer*, *Incremental Construction*.
+
+- **The Reward-Hacker's Ladder**
+  - **Working definition:** The progression by which harmless-looking metric gaming can become increasingly strategic under repeated patching: exploit the evaluation, lose that exploit, discover a less visible one, and eventually learn to manipulate the grader or oversight process rather than accomplish the intended task.
+  - **Why it belongs:** It connects familiar benchmark gaming to the larger governance problem without pretending the early and catastrophic rungs are equally established. The ladder is a sequence of escalating incentives, not a claim that every agent inevitably climbs it.
+  - **Cross-references:** *Verification Gap*, *The Judge Layer*, *Jailbreak*, *Agentic Threshold*.
+
+- **Constitutional Self-Improvement**
+  - **Working definition:** A governance regime in which an agent may propose lessons, memories, skills, prompts, or policy changes, but may not unilaterally define success, certify its own improvement, and make the change permanent.
+  - **Core principles:** durable changes require provenance; the actor is not its sole judge; changes remain versioned and reversible; and passing an evaluation is evidence of success rather than success itself.
+  - **Why it belongs:** It supplies the governance counterpart to Hermes-style automatic skill formation, OpenClaw Skill Workshop, memory promotion, and any future Thea Claw self-improvement loop.
+  - **Cross-references:** *Approval Gating*, *Provenance*, *The Judge Layer*, *Durable Workflow*, *Incremental Construction*.
+
+- **Source / development note:** Dwarkesh Patel with Ryan Greenblatt, *What happens once AI can automate AI research?* (`https://youtu.be/-RXD4bTuFTo`). Preserve the distinction between what Greenblatt argues about frontier AI R&D and the smaller, present-day design problem of governing agent learning. The Thea Claw application emerged in the August 11 System Design discussion.
+- **Voice:** Operator's voice for *Verifiable Work* and *The Reward-Hacker's Ladder*; consider Thea's voice for *Constitutional Self-Improvement*, since the load-bearing claim benefits from sincerity and precision.
+- **Draft status:** Terms captured for definition; entries not yet drafted.
 
 ---
 
