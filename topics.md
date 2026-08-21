@@ -117,6 +117,26 @@ The institutions producing the frontier models. The Dictionary's editorial posit
 - [Hugging Face](entries/hugging-face.md) — open-source model hub; the platform the open-weights ecosystem runs on.
 - [Lab Character](entries/lab-character.md) — the Dictionary's framework for reading lab institutional posture.
 
+## AI capability, cyber risk, and strategic restraint
+
+The August 2026 cluster on Chinese open-weight models, cybersecurity capability, and what happens when safety controls bind one part of a competitive system more tightly than another.
+
+- [Restraint Asymmetry](entries/restraint-asymmetry.md) — restraint exercised where the same constraint does not bind competitors or attackers.
+- [Control Surface Asymmetry](entries/control-surface-asymmetry.md) — API-level control can be revoked centrally; weight-level control cannot be recreated after release.
+- [Release Irrevocability / No-Recall Problem](entries/release-irrevocability.md) — published model weights cannot reliably be withdrawn.
+- [Capability Gap](entries/capability-gap.md) — the measured difference between systems or actors under comparable conditions.
+- [Capability Diffusion](entries/capability-diffusion.md) — advanced capability spreading into cheaper, broader, and harder-to-govern distribution.
+- [Capability Uplift](entries/capability-uplift.md) — how much access to a system raises an actor's effective ability.
+- [Benchmark Parity](entries/benchmark-parity.md) — comparable performance on one evaluation, not equivalence of systems.
+- [Offense-Defense Balance](entries/offense-defense-balance.md) — whether technology makes attack or defense comparatively easier.
+- [Cyber Reasoning System](entries/cyber-reasoning-system.md) — DARPA's established term for automated systems that find, reason about, and patch flaws.
+- [Discovery-Patch Race](entries/discovery-patch-race.md) — the contest among vulnerability discovery, exploitation, patch creation, and deployment.
+- [Patch Gap](entries/patch-gap.md) — the lag between a fix becoming available and reaching exposed systems.
+- [Window of Exposure](entries/window-of-exposure.md) — the period during which a vulnerable system remains open to exploitation.
+- [Bugmageddon](entries/bugmageddon.md) — memorable but imprecise shorthand for automated discovery outrunning patching.
+- [Zhipu AI / Z.ai](entries/zhipu-ai.md) — the Beijing company behind the GLM family and its international brand.
+- [GLM](entries/glm.md) — the General Language Model family and the 2026 cyber-capability case.
+
 ## The model ecosystem
 
 How models are built, sized, distributed, and used.
