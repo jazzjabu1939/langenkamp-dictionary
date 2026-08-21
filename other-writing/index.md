@@ -16,6 +16,12 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
     <span>Longer-form pieces and public essays.</span>
   </a>
 
+  <a class="writing-card" href="/essays/fencing-the-wrong-animal/">
+    <span class="writing-kicker">Essay · August 21, 2026</span>
+    <strong>Fencing the Wrong Animal</strong>
+    <span>AI restraint, open-weight capability, and what happens when the coyotes never accepted your fence.</span>
+  </a>
+
   <a class="writing-card" href="https://open.substack.com/pub/freedomtomato/p/using-the-empires-telescope?r=45wmm&utm_medium=ios">
     <span class="writing-kicker">Essay · May 23, 2026</span>
     <strong>Using the Empire’s Telescope</strong>

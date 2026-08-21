@@ -119,7 +119,7 @@ The institutions producing the frontier models. The Dictionary's editorial posit
 
 ## AI capability, cyber risk, and strategic restraint
 
-The August 2026 cluster on Chinese open-weight models, cybersecurity capability, and what happens when safety controls bind one part of a competitive system more tightly than another.
+The August 2026 cluster on Chinese open-weight models, cybersecurity capability, and what happens when safety controls bind one part of a competitive system more tightly than another. The full argument appears in [Fencing the Wrong Animal](/essays/fencing-the-wrong-animal/).
 
 - [Restraint Asymmetry](entries/restraint-asymmetry.md) — restraint exercised where the same constraint does not bind competitors or attackers.
 - [Control Surface Asymmetry](entries/control-surface-asymmetry.md) — API-level control can be revoked centrally; weight-level control cannot be recreated after release.
