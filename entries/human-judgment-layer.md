@@ -23,3 +23,4 @@ In *Step Into the Loop*, the human judgment layer appears as the **Mandi Step**:
 - *[Sub-agent](sub-agent.md)*
 - *[The Lowbeer Question](lowbeer-question.md)*
 - *[Aunties](aunties.md)*
+- *[Human Reserved](human-reserved.md)*

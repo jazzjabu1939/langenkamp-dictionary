@@ -24,6 +24,8 @@ Each issue runs five to seven items, each anchored to a source we can cite, with
 ## Archive
 
 <!-- NEWSLETTER_ARCHIVE_START -->
+- **[August 26, 2026](2026-08-26/)** · Vol. 30 - What Should Remain Human?
+- **[August 18, 2026](2026-08-18/)** · Vol. 29 - What a Degree Certifies
 - **[August 11, 2026](2026-08-11/)** · Vol. 28 - This Week's Thesis: Adoption Is No Longer the Hard Part
 - **[August 3, 2026](2026-08-03/)** · Vol. 27 - AI Becomes Research Infrastructure
 - **[July 28, 2026](2026-07-28/)** · Vol. 26 - AI Readiness Becomes a Competitive Position

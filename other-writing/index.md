@@ -58,14 +58,14 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
 ## Current AI in Higher Education issues
 
 <!-- NEWSLETTER_CURRENT_START -->
+- **[August 26, 2026](/newsletter/2026-08-26/)** · Vol. 30 - What Should Remain Human?
+- **[August 18, 2026](/newsletter/2026-08-18/)** · Vol. 29 - What a Degree Certifies
 - **[August 11, 2026](/newsletter/2026-08-11/)** · Vol. 28 - This Week's Thesis: Adoption Is No Longer the Hard Part
 - **[August 3, 2026](/newsletter/2026-08-03/)** · Vol. 27 - AI Becomes Research Infrastructure
 - **[July 28, 2026](/newsletter/2026-07-28/)** · Vol. 26 - AI Readiness Becomes a Competitive Position
 - **[July 21, 2026](/newsletter/2026-07-21/)** · Vol. 25 - AI Moves Onto Campus
 - **[July 13, 2026](/newsletter/2026-07-13/)** · Vol. 24 - Controlled learning conditions, conditional AI, and assignment-level AI zones
 - **[July 6, 2026](/newsletter/2026-07-06/)** · Vol. 23 - AI literacy, privacy, and ethical oversight moving from guidance toward mandate
-- **[June 26, 2026](/newsletter/2026-06-26/)** · Vol. 22 - State guardrails, implementation capacity, and the responsible implementation layer
-- **[June 20, 2026](/newsletter/2026-06-20/)** · Vol. 21 - Assessment validity, AI detectors, Kelley's AI Playbook, and evidence of student learning
 <!-- NEWSLETTER_CURRENT_END -->
 - **[Full AI in Higher Education archive](/newsletter/)**
 

@@ -23,3 +23,4 @@ The phrase matters because it keeps the focus where it belongs. The goal is to k
 - *[Artifact Is Not Competence](artifact-is-not-competence.md)*
 - *[Provenance](provenance.md)*
 - *[AI Produced Artifact](ai-produced-artifact.md)*
+- *[Human Reserved](human-reserved.md)*
