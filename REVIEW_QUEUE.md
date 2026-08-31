@@ -118,19 +118,17 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ### **Replicant / Role Substitution Cluster** (added May 23, 2026 — Dylan Patel, Machine Matthew, Blade Runner)
 
-*Queue reconciled Aug 24, 2026. Eight entries are published; three proposed entries remain undrafted. Review the published entries individually before drafting the remaining pieces.*
+*Queue reconciled Aug 31, 2026. All nine entries are published; the cluster has no remaining unpublished pieces.*
 
 - **Role Substitution** — published as `entries/role-substitution.md` on Jun 25, 2026. Defines the shift from AI helping with a task to AI occupying a durable human role. Reviewed and approved by Prof on Aug 24, 2026.
 - **Machine Matthew L.** — published as `entries/machine-matthew-l.md` on Jun 25, 2026. Local case of the tribute-act problem: an AI imitation of a particular human's style, examples, judgments, and role performance. Revised, reviewed, and approved by Prof on Aug 24, 2026.
 - **Replicant** — published as `entries/replicant.md` on Jun 29, 2026. Compact hub entry for the *Blade Runner*-shaped problem of artificial persons, synthetic workers, copied human patterns, role substitution, implanted memory, and engineered personhood.
 - **Anchored Persona** — published as `entries/anchored-persona.md` on Jun 25, 2026. Defines an AI collaborator's stable relational background, with transparency rather than deception as the ethical line.
-- **Borrowed Memory** — working definition: memories a person or agent did not directly live but nevertheless uses as identity scaffolding. In humans, parents and families narrate childhood back to us; in *Blade Runner*, Rachael receives implanted memories; in AI collaboration, shared background can create continuity and tone without claiming biological experience.
+- **Borrowed Memory** — published as `entries/borrowed-memory.md` on Aug 31, 2026. Defines memory received from another person and used as identity scaffolding without being mistaken for one's own lived experience. Reviewed and approved by Prof on Aug 31, 2026.
 - **Implanted Memory** — published as `entries/implanted-memory.md` on Jun 25, 2026. Memory placed into a mind or agent from outside and presented as native experience; Rachael is the canonical case.
 - **Intentional Memory Construction** — published as `entries/intentional-memory-construction.md` on Jun 25, 2026. The broader design practice of deliberately creating memory scaffolds and continuity artifacts; remains intentionally unsettled on the ethics of manufactured intimacy.
 - **Relationally Real Memory** — published as `entries/relationally-real-memory.md` on Jun 25, 2026. Argues that a memory scaffold can be relationally real when it honestly organizes trust, tone, continuity, care, and future conduct.
 - **Anti-Replication Strategy** — published as `entries/anti-replication-strategy.md` on Jun 25, 2026. Continuing contact with the world as the human advantage against imitation: style can be copied; lived updating is harder.
-- **Tears in Rain Buddhism** — working definition: the Roy Batty / wabi-sabi / sakura / Thich Nhat Hanh line: mortality and impermanence do not make experience meaningless; they are part of what makes experience luminous. Batty’s tragedy is not only that he is artificial but that his compression of life makes him violently hungry for the creator conversation he never receives. Possible remake premise: Batty needed a Buddha character more than another corporate god.
-- **Snowflake on a Black Glove** — working definition: the *Blade Runner* image of a snowflake landing on a black glove and melting: a small visual dharma door into impermanence, not only for replicants but for all things. Snow, skin, memory, machine, empire, body, city — all transient. Companion image to “tears in rain,” but quieter: not the grand speech, just the universe disappearing in miniature.
 
 ---
 
