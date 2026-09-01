@@ -28,6 +28,12 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
     <span>Local AI sovereignty, frontier dependence, and the Buddha Stack.</span>
   </a>
 
+  <a class="writing-card" href="https://freedomtomato.substack.com/p/the-street-finds-its-own-uses-for">
+    <span class="writing-kicker">Essay · April 19, 2026</span>
+    <strong>The Street Finds Its Own Uses for Attachment</strong>
+    <span>Human-agent relationships, accumulated shared context, and the hidden switching costs of AI collaboration.</span>
+  </a>
+
   <a class="writing-card" href="/newsletter/">
     <span class="writing-kicker">Weekly Brief</span>
     <strong>AI in Higher Education</strong>

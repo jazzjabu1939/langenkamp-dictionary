@@ -48,6 +48,8 @@ The opposite of sovereignty is not always direct domination. More often it is **
 
 A model vendor decides which model remains available and at what price. A cloud platform makes its own services easy to adopt and competitors costly to leave for. A search, social, or AI interface decides which knowledge appears first. An advertising-funded assistant can decide which commercial recommendation enters a conversation that feels private and neutral. None of these requires an explicit command. Architecture sets the menu; pricing and defaults make some choices natural; mediation does the rest.
 
+Human-agent attachment makes the dependency deeper. As argued in *[The Street Finds Its Own Uses for Attachment](https://freedomtomato.substack.com/p/the-street-finds-its-own-uses-for)*, a long-running collaboration accumulates relationship-specific capital: memory, shorthand, working style, trust, and a shared past. If that capital is trapped inside one vendor's model or platform, switching is not merely a technical migration. It means leaving part of the relationship behind. The provider then holds not only the operator's files but part of the cost of departure.
+
 This is a soft form of coercion, but *soft* does not mean imaginary. A person who technically may choose any model, but whose memory, workflows, files, and habits are locked into one provider, does not possess the same practical freedom as a person who can switch. An institution whose entire knowledge layer is rented can be influenced through price, availability, policy, ranking, or recommendation without anyone issuing an order.
 
 Digital Sovereignty is therefore partly **freedom from infrastructural coercion**. It is the ability to refuse, exit, substitute, and continue. Those four verbs are better tests of control than the reassuring sentence *you remain in charge*.
@@ -66,4 +68,4 @@ Sovereignty is consequently a matter of degree and relationship. The serious que
 
 ## See also
 
-*[Sovereign AI](sovereign-ai.md)* · *[Sovereign Compute](sovereign-compute.md)* · *[Cognitive Sovereignty](cognitive-sovereignty.md)* · *[Mediation (a la Gibson)](mediation-a-la-gibson.md)* · *[Sovereignty Impulse](sovereignty-impulse.md)* · *[Frontier Dependence](frontier-dependence.md)*
+*[Sovereign AI](sovereign-ai.md)* · *[Sovereign Compute](sovereign-compute.md)* · *[Cognitive Sovereignty](cognitive-sovereignty.md)* · *[Mediation (a la Gibson)](mediation-a-la-gibson.md)* · *[The Street Finds Its Own Uses for Attachment](https://freedomtomato.substack.com/p/the-street-finds-its-own-uses-for)* · *[Sovereignty Impulse](sovereignty-impulse.md)* · *[Frontier Dependence](frontier-dependence.md)*
