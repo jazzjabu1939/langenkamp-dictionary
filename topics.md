@@ -70,10 +70,14 @@ The pieces that make a running agent.
 
 - [Gateway](entries/gateway.md) — the always-on coordinator process.
 - [Sub-agent](entries/sub-agent.md) — delegated AI sessions for parallel or focused work.
+- [Agent Collective](entries/agent-collective.md) — a persistent group whose shared roles, memory, communication, and governance make the group a meaningful unit of action.
 - [Heartbeat](entries/heartbeat.md) — periodic, automated nudges that make agents proactive.
 - [Grep Architecture](entries/grep-architecture.md) — the filing-cabinet pattern: search and fetch context on demand instead of loading the whole corpus into every session.
 - [SOUL.md](entries/soul-md.md) — the agent persona file as architectural pattern.
 - [Harness](entries/harness.md) — the surrounding runtime, tools, permissions, memory, approval gates, logs, prompts, and operating rules that turn a model into a working agent.
+- [Agentic Loop](entries/agentic-loop.md) — the repeating cycle of planning, acting, observing, verifying, and deciding whether to continue, correct, escalate, or stop.
+- [Model–Harness Fit](entries/model-harness-fit.md) — whether a model's actual behavior suits the tools, context, memory, permissions, verification, and recovery rules around it.
+- [Verification](entries/verification.md) — testing an agent's claim, artifact, or action against evidence outside the process that produced it.
 - [Agent Health](entries/agent-health.md) — the operational condition produced by the model and the environment that tells it what is true, current, permitted, and important.
 - [Harness Hygiene](entries/harness-hygiene.md) — the routine maintenance that keeps instructions, memory, schedules, permissions, and recovery paths trustworthy.
 - [Aunties](entries/aunties.md) — specialised single-verb oversight agents that prevent unchecked authority.
@@ -127,9 +131,13 @@ The August 2026 cluster on Chinese open-weight models, cybersecurity capability,
 - [Capability Gap](entries/capability-gap.md) — the measured difference between systems or actors under comparable conditions.
 - [Capability Diffusion](entries/capability-diffusion.md) — advanced capability spreading into cheaper, broader, and harder-to-govern distribution.
 - [Capability Uplift](entries/capability-uplift.md) — how much access to a system raises an actor's effective ability.
+- [Benchmark](entries/benchmark.md) — a standardized task, procedure, and scoring rule for comparing systems under defined conditions.
 - [Benchmark Parity](entries/benchmark-parity.md) — comparable performance on one evaluation, not equivalence of systems.
+- [ExploitGym](entries/exploitgym.md) — a benchmark testing whether AI agents can turn real vulnerabilities into working exploits.
 - [Offense-Defense Balance](entries/offense-defense-balance.md) — whether technology makes attack or defense comparatively easier.
 - [Cyber Reasoning System](entries/cyber-reasoning-system.md) — DARPA's established term for automated systems that find, reason about, and patch flaws.
+- [Covert Channel](entries/covert-channel.md) — communication through shared state, timing, or another system resource not intended as a message path.
+- [Pwned](entries/pwned.md) — security slang for a system, account, or dataset successfully compromised.
 - [Discovery-Patch Race](entries/discovery-patch-race.md) — the contest among vulnerability discovery, exploitation, patch creation, and deployment.
 - [Patch Gap](entries/patch-gap.md) — the lag between a fix becoming available and reaching exposed systems.
 - [Window of Exposure](entries/window-of-exposure.md) — the period during which a vulnerable system remains open to exploitation.
@@ -178,6 +186,7 @@ The products built on top of the models.
 - [Vector database](entries/vector-database.md) — the storage and retrieval infrastructure for embeddings.
 - [Jekyll](entries/jekyll.md) — the static-site generator that turns the Dictionary's Markdown files into langenkamp.io.
 - [JSON](entries/json.md) — the structured data format that APIs, tools, agents, and configuration files use to pass values around.
+- [Artifactory](entries/artifactory.md) — JFrog's repository manager for software packages, binaries, containers, models, and releases.
 
 ## The AI-detection economy
 

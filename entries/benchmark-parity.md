@@ -26,4 +26,4 @@ Benchmark Parity is therefore a skepticism term. It keeps a real result from bei
 
 ## See also
 
-*[Capability Gap](capability-gap.md)* · *[Harness](harness.md)* · *[GLM](glm.md)*
+*[Benchmark](benchmark.md)* · *[Capability Gap](capability-gap.md)* · *[Harness](harness.md)* · *[GLM](glm.md)*
