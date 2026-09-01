@@ -24,6 +24,7 @@ The load-bearing concepts. Most other terms reference one or more of these.
 - [Capability Overhang](entries/capability-overhang.md) — the gap between what AI systems can already do and what has been productised.
 - [Agentic Threshold](entries/agentic-threshold.md) — the moment a system stops being a chatbot and starts being an agent.
 - [OpenClaw](entries/openclaw.md) — the working runtime and operator workspace underneath much of the Dictionary's agentic-system vocabulary.
+- [Brining](entries/brining.md) — a whimsical OpenClaw progress label meaning that the agent is working, not a technical operation.
 - [Terminal](entries/terminal.md) — the text-based environment in which a person interacts with shells and command-line programs.
 - [Shell](entries/shell.md) — the command interpreter between a user or agent and the operating system.
 - [Bash](entries/bash.md) — a widely used Unix shell and the source of the familiar automation label “Bash failed.”

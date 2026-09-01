@@ -16,4 +16,4 @@ Its importance is architectural. OpenClaw makes the model a component inside a h
 
 ## See also
 
-[Harness](harness.md) · [Gateway](gateway.md) · [Heartbeat](heartbeat.md) · [Grep Architecture](grep-architecture.md) · [Sovereign Compute](sovereign-compute.md) · [Agentic Native Design](agentic-native-design.md)
+[Harness](harness.md) · [Gateway](gateway.md) · [Heartbeat](heartbeat.md) · [Brining](brining.md) · [Grep Architecture](grep-architecture.md) · [Sovereign Compute](sovereign-compute.md) · [Agentic Native Design](agentic-native-design.md)
