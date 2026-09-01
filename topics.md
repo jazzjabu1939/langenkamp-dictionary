@@ -194,6 +194,7 @@ The products built on top of the models.
 - [Vector database](entries/vector-database.md) — the storage and retrieval infrastructure for embeddings.
 - [Jekyll](entries/jekyll.md) — the static-site generator that turns the Dictionary's Markdown files into langenkamp.io.
 - [JSON](entries/json.md) — the structured data format that APIs, tools, agents, and configuration files use to pass values around.
+- [Apply Patch](entries/apply-patch.md) — a structured, reviewable way to change selected parts of a file without rewriting the whole thing.
 - [Artifactory](entries/artifactory.md) — JFrog's repository manager for software packages, binaries, containers, models, and releases.
 
 ## The AI-detection economy
