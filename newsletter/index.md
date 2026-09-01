@@ -24,6 +24,7 @@ Each issue runs five to seven items, each anchored to a source we can cite, with
 ## Archive
 
 <!-- NEWSLETTER_ARCHIVE_START -->
+- **[September 1, 2026](2026-09-01/)** · Vol. 31 - The First-Week AI Reset
 - **[August 26, 2026](2026-08-26/)** · Vol. 30 - What Should Remain Human?
 - **[August 18, 2026](2026-08-18/)** · Vol. 29 - What a Degree Certifies
 - **[August 11, 2026](2026-08-11/)** · Vol. 28 - This Week's Thesis: Adoption Is No Longer the Hard Part
