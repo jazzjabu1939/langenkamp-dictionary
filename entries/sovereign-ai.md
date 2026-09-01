@@ -15,10 +15,11 @@ It does not mean refusing frontier models. That would be purity pretending to be
 
 The short version: **use the frontier when frontier intelligence is actually needed; keep the workflow, memory, data, and ordinary work as close to home as possible.**
 
-For this Dictionary, Sovereign AI is the broader philosophical frame around *[Sovereign Compute](sovereign-compute.md)*. Sovereign Compute asks where the workload runs. Sovereign AI asks whether the operator remains awake, capable, and partially independent while using systems more powerful than anything the operator could build alone.
+For this Dictionary, Sovereign AI is the AI-specific operating posture within *[Digital Sovereignty](digital-sovereignty.md)* and the broader philosophical frame around *[Sovereign Compute](sovereign-compute.md)*. Digital Sovereignty asks who controls the whole digital system. Sovereign Compute asks where the workload runs. Sovereign AI asks whether the operator remains awake, capable, and partially independent while using systems more powerful than anything the operator could build alone.
 
 ## See also
 
+- *[Digital Sovereignty](digital-sovereignty.md)*
 - *[Sovereign Compute](sovereign-compute.md)*
 - *[Local-first / Sovereignty](local-first-sovereignty.md)*
 - *[Open Weights](open-weights.md)*

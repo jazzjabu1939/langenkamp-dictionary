@@ -8,7 +8,7 @@ published: true
 
 # Sovereign Compute
 
-The hardware-and-deployment counterpart to [Mediation (a la Gibson)](mediation-a-la-gibson.md). Where that entry argued that the personal AI agent is the first cognitive tool that runs in the *opposite* direction of mass mediation, this one names the substrate that makes the argument operational: AI running on infrastructure you control. The point of view is the operator's — the individual person at the keyboard — with the institutional cases (banks, hospitals, universities) brought in to illustrate why the same architectural answer holds at every scale.
+The hardware-and-deployment layer within *[Digital Sovereignty](digital-sovereignty.md)*, and the counterpart to [Mediation (a la Gibson)](mediation-a-la-gibson.md). Where that entry argued that the personal AI agent is the first cognitive tool that runs in the *opposite* direction of mass mediation, this one names the substrate that makes the argument operational: AI running on infrastructure you control. The point of view is the operator's — the individual person at the keyboard — with the institutional cases (banks, hospitals, universities) brought in to illustrate why the same architectural answer holds at every scale.
 
 For the broader posture around this substrate, see *[Sovereign AI](sovereign-ai.md)*. For the local-first architecture now being named around this work, see *[The Buddha Stack](buddha-stack.md)* and *[Using the Empire’s Telescope](empires-telescope.md)*.
 
@@ -166,6 +166,7 @@ It is not yet the default. It will not be the default for most consumers. But fo
 
 ## See also
 
+- [Digital Sovereignty](digital-sovereignty.md) — the parent framework across data, operations, technology, and AI
 - [Mediation (a la Gibson)](mediation-a-la-gibson.md) — the philosophical argument this entry operationalises
 - [GenXClaw](genxclaw.md) — the temperamental case for owning the machine; the home-sovereign-compute thread
 - [FERPA Compliance Posture](ferpa-compliance-posture.md) — the legal case in academic work

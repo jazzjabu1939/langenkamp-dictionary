@@ -202,7 +202,10 @@ The cluster of tools that classify text as AI-generated — and the Dictionary's
 
 The technical and economic case for running AI on hardware you own.
 
+- [Digital Sovereignty](entries/digital-sovereignty.md) — control over data, operations, technology, and AI, including the practical freedom to refuse, exit, substitute, and continue.
+- [Sovereign AI](entries/sovereign-ai.md) — the AI-specific operating posture within Digital Sovereignty.
 - [Sovereign Compute](entries/sovereign-compute.md) — the four-tier sovereignty framework.
+- [Cognitive Sovereignty](entries/cognitive-sovereignty.md) — agency over the systems that shape attention, knowledge, memory, and judgment.
 - [Sovereign Compute Calculator](entries/sovereign-compute-calculator.md) — the practical companion tool.
 - [Sovereignty Impulse](entries/sovereignty-impulse.md) — the moment convenience gives way to owned, inspectable infrastructure.
 - [RAM](entries/ram.md) — random-access memory as consumer spec, data-center bottleneck, and AI-era strategic constraint.
