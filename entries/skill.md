@@ -5,12 +5,16 @@ title: "Skill"
 permalink: /entries/skill/
 date: 2026-05-19
 last_revised: 2026-09-03
-summary: "A packaged capability aimed at the agent: instructions, triggers, tools, and local knowledge for doing a class of work reliably."
+summary: "An agent skill is a packaged capability: instructions, triggers, tools, and local knowledge for doing a class of work reliably."
 draft: false
 published: true
 ---
 
-A **skill** is a packaged capability written for an agent rather than for an ordinary software user. It usually contains triggers, operating instructions, tool conventions, safety notes, and local knowledge for a repeatable class of work: using Canvas, handling Apple Notes, managing GitHub issues, querying email, transcribing audio, or maintaining the Dictionary.
+An **agent skill** is a packaged capability written for an agent rather than for an ordinary software user. It usually contains triggers, operating instructions, tool conventions, safety notes, and local knowledge for a repeatable class of work: using Canvas, handling Apple Notes, managing GitHub issues, querying email, transcribing audio, or maintaining the Dictionary.
+
+**Agent Skills** is also the name of an [open format documented at agentskills.io](https://agentskills.io/home), described there as “a standardized way to give AI agents new capabilities and expertise.” Under its [specification](https://agentskills.io/specification), a skill is a directory containing a required `SKILL.md` file — YAML metadata followed by Markdown instructions — and may also contain executable `scripts/`, on-demand `references/`, templates or other `assets/`, and additional resources. Supporting agent products can discover the name and description first, then load the instructions and resources progressively as the task requires them.
+
+The general concept is older and broader than any one file format. The open format matters because it makes procedural knowledge more portable across compatible agent products. Compliance with the format, however, says nothing by itself about whether a particular skill is accurate, safe, or appropriate for the environment in which it will run.
 
 A tool is something the agent can call. A skill is the larger recipe that tells the agent *when* to call it, *how* to interpret the result, and *what local conventions matter*. This distinction is important because many agent failures are not tool failures. The tool works; the agent used it in the wrong situation or without the surrounding judgment.
 
