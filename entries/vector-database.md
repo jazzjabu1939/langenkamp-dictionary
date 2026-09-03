@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Vector Database"
 permalink: /entries/vector-database/
 summary: "specialized storage and retrieval infrastructure for embeddings."

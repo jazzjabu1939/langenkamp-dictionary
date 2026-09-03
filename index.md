@@ -22,7 +22,7 @@ The audience this dictionary serves is anyone trying to think clearly about a te
 
 Agentic AI in 2026 has the vocabulary problem oil and gas had in 1974: a flood of new terminology, much of it coined by vendors, and too few working references written by people who use the systems day to day. This Dictionary is a small contribution toward fixing that.
 
-Each entry follows the same structure:
+The Dictionary uses three editorial forms. A full **Reference** entry is tested against six questions, although its headings may vary when the subject calls for a more natural order:
 
 1. **In one sentence** — the shortest accurate definition.
 2. **Why it exists** — the problem it solves.
@@ -31,9 +31,9 @@ Each entry follows the same structure:
 5. **Why it matters in a teaching context** — for the management-faculty audience this is primarily aimed at.
 6. **Trade-offs** — what it costs, what it breaks, where to be careful.
 
-If a term cannot be explained that way, the term is probably hiding something.
+If a Reference term cannot answer those questions, the term is probably hiding something.
 
-The entries now carry a small type cue. **Glossary** entries are compact reference definitions. **Reference** entries explain a term in the standard six-part form. **Essay** entries name a pattern, advance an argument, or make the Dictionary's interpretive position explicit. The distinction is there so a reader arriving from a search for a technical term knows whether they are reading a neutral reference card or walking into the Dictionary's worldview.
+The other two forms have different jobs. **Glossary** entries are compact cards: definition first, then just enough context to make the term useful. **Essay** entries name a pattern, advance an argument, or make the Dictionary's interpretive position explicit. The type cue tells a reader arriving from a search whether they are opening a quick definition, a fuller working reference, or a walk into the Dictionary's worldview. The six questions remain an editorial discipline for Reference entries, not a compulsory costume for every page.
 
 ---
 

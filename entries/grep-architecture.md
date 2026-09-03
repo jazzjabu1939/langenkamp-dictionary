@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Grep Architecture"
 permalink: /entries/grep-architecture/
 summary: "The choice to give an assistant a filing cabinet it searches on demand rather than forcing it to carry the whole library in its head at every session start."

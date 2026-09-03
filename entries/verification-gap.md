@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Verification Gap"
 permalink: /entries/verification-gap/
 summary: "AACSB's term for the widening distance between polished student or candidate artifacts and reliable evidence of underlying competence in an AI-saturated environment."

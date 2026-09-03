@@ -1,4 +1,4 @@
-name: Check entries index
+name: Check Dictionary entries
 
 on:
   push:
@@ -7,9 +7,11 @@ on:
     branches: [main]
 
 jobs:
-  check-index:
+  check-entries:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verify entries/index.md is in sync with entries/*.md
+      - name: Verify every entry declares its form
+        run: bash scripts/check-entry-kinds.sh
+      - name: Verify entries/index.md is healthy
         run: bash scripts/check-index.sh

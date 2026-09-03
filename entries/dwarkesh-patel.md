@@ -1,6 +1,6 @@
 ---
 layout: default
-kind: reference
+kind: glossary
 title: "Dwarkesh Patel"
 permalink: /entries/dwarkesh-patel/
 date: 2026-09-01

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Gateway"
 permalink: /entries/gateway/
 summary: "the always-on coordinator process at the heart of an agentic system."

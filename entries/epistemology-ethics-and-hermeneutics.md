@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Epistemology, Ethics, and Hermeneutics"
 permalink: /entries/epistemology-ethics-and-hermeneutics/
 date: 2026-07-26

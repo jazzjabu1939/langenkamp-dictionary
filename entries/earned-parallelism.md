@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "Earned Parallelism"
 permalink: /entries/earned-parallelism/
 date: 2026-05-12

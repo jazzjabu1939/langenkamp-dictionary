@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Team Harness"
 permalink: /entries/team-harness/
 date: 2026-07-01

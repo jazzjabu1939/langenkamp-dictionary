@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "The Experimental Party"
 permalink: /entries/experimental-party/
 summary: "a cautionary tale about putting a local model in the King Party Hat before the party has an adult in the kitchen — and the origin story of the Jindoo Process."

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Open source"
 permalink: /entries/open-source/
 summary: "AI models whose trained weights are published publicly; one of the two large strategic camps in the model ecosystem."

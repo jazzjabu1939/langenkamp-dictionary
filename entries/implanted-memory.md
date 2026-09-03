@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Implanted Memory"
 permalink: /entries/implanted-memory/
 date: 2026-06-25

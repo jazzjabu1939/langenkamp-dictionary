@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "AI Librarian"
 permalink: /entries/ai-librarian/
 summary: "The emerging campus role that helps faculty and students treat AI as an information, evidence, citation, privacy, and assessment problem, not merely as software procurement."

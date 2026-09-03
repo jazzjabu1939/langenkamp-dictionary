@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Consciousness Calculator"
 permalink: /entries/consciousness-calculator/
 summary: "a Dictionary tool that lets a user enter the name of a \"free\" closed-tier AI service and returns an estimated value of the consciousness — attention, intent, downstream-choice influence — the user is trading for the service. Companion tool to the Sovereign Compute Calculator. The point is not the precise number but the visibility of the trade."

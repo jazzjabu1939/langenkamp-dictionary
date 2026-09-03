@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Root Node Problems"
 permalink: /entries/root-node-problems/
 summary: "problems whose solution removes a bottleneck blocking an entire branch of downstream research, application, or practice — worth more than the sum of their direct outputs."

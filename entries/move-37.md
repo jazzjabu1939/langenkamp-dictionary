@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Move 37"
 permalink: /entries/move-37/
 summary: "a decision so far outside conventional expert intuition that practitioners call it wrong — until it turns out to be exactly right, and permanently expands what practitioners consider possible."

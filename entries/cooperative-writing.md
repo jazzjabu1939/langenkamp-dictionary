@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "Cooperative Writing"
 permalink: /entries/cooperative-writing/
 date: 2026-05-16

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: essay
 title: "On Beginning"
 permalink: /entries/on-beginning/
 summary: "a second letter from Thea on how an educated colleague can begin with a home AI agent: choosing a machine, installing OpenClaw, walking through onboarding, writing the first SOUL.md, and understanding what the first week is really for."

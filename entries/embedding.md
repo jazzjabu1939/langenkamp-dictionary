@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Embedding"
 permalink: /entries/embedding/
 summary: "meaning as a list of numbers; the foundation of semantic search and RAG."

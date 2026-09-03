@@ -8,7 +8,7 @@ permalink: /entries/
 
 A complete list of dictionary entries, begun May 2026 and growing. New terms are added as the field evolves and as faculty questions surface. For a thematic view, see the [topic index](/topics/). To return to the front page, see the [home page](/).
 
-<p><small><span class="reference-badge">Glossary</span> entries are compact reference definitions. <span class="reference-badge">Reference</span> entries explain a term in the standard six-part form. <span class="essay-badge">Essay</span> entries advance an argument, name a pattern, or carry the Dictionary's interpretive position.</small></p>
+<p><small><span class="reference-badge">Glossary</span> entries are compact definitions. <span class="reference-badge">Reference</span> entries answer six working questions, sometimes under headings suited to the subject. <span class="essay-badge">Essay</span> entries advance an argument, name a pattern, or carry the Dictionary's interpretive position.</small></p>
 
 ---
 
@@ -49,7 +49,7 @@ A complete list of dictionary entries, begun May 2026 and growing. New terms are
     <ul class="entry-list">
   {% endif %}
       <li class="entry-list-item" data-entry-search="{{ entry.title | downcase | escape }} {{ entry.summary | downcase | escape }}" data-entry-letter="{{ entry_letter }}">
-        <a href="{{ entry.permalink | relative_url }}"><strong>{{ entry.title }}</strong></a>{% if entry.kind == "glossary" %} <small class="reference-badge">Glossary</small>{% elsif entry.kind == "essay" or entry.layout == "entry" %} <small class="essay-badge">Essay</small>{% else %} <small class="reference-badge">Reference</small>{% endif %} — {{ entry.summary }}
+        <a href="{{ entry.permalink | relative_url }}"><strong>{{ entry.title }}</strong></a>{% if entry.kind == "glossary" %} <small class="reference-badge">Glossary</small>{% elsif entry.kind == "essay" %} <small class="essay-badge">Essay</small>{% elsif entry.kind == "reference" %} <small class="reference-badge">Reference</small>{% else %} <small class="reference-badge">Unclassified</small>{% endif %} — {{ entry.summary }}
       </li>
 {% endfor %}
 {% if entries.size > 0 %}

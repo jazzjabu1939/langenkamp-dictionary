@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Opus Addict"
 permalink: /entries/opus-addict/
 summary: "the operator who has come to depend on a single frontier closed-tier model to the point where its absence is felt as deprivation rather than inconvenience. Named for Anthropic's Claude Opus line, but the condition is general: a real form of cognitive dependency on a tool that is not, and cannot be, owned. The tension Sovereign Compute is one attempted answer to."

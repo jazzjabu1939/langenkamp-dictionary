@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Memory Artifact"
 permalink: /entries/memory-artifact/
 date: 2026-06-25

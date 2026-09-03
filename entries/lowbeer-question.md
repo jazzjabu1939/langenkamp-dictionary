@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "The Lowbeer Question"
 permalink: /entries/lowbeer-question/
 summary: "who holds the authority to terminate an actor or end a branch, who executes it, and what happens when the principal is not available."

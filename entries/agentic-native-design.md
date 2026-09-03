@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Agentic Native Design"
 permalink: /entries/agentic-native-design/
 summary: "Designing a website, document, workflow, or institution so humans can use it naturally and AI agents can understand, search, cite, and act on it without scraping guesswork."

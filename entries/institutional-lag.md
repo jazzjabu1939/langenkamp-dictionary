@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Institutional Lag"
 permalink: /entries/institutional-lag/
 summary: "The gap between an institution's operating environment and the assessment, governance, or credentialing models it continues to use after the environment has changed."

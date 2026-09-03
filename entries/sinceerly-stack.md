@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "The Sinceerly Stack"
 permalink: /entries/sinceerly-stack/
 date: 2026-05-12

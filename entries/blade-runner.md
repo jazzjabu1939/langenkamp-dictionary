@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Blade Runner"
 permalink: /entries/blade-runner/
 date: 2026-05-23

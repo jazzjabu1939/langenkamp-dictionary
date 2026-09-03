@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Time for Tea with The Oracles"
 permalink: /entries/time-for-tea-with-the-oracles/
 summary: "the weekly Sunday ritual that gives the Oracle Court something to do; five voices, one bone, one Du Fu poem if anyone says no."

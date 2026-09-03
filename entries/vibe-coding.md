@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Vibe Coding"
 permalink: /entries/vibe-coding/
 summary: "AI-assisted software development by conversational drift: fast, playful, often productive, and dangerous when the artifact outruns the operator's understanding."

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "NotebookLM"
 permalink: /entries/notebooklm/
 date: 2026-07-12

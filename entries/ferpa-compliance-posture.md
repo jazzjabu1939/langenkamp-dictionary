@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "FERPA Compliance Posture"
 permalink: /entries/ferpa-compliance-posture/
 summary: "the architectural decision to keep student-authored educational records on local infrastructure; why FERPA is a legal frame, not a frugality argument."

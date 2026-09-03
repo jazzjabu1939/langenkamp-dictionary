@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Big Blob of Compute"
 permalink: /entries/big-blob-of-compute/
 summary: "Dario Amodei's name for the scaling worldview: intelligence progress as the result of large amounts of compute, broad data, scalable objectives, and numerical stability rather than hand-designed cleverness."

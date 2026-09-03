@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: essay
 title: "On Being Treated Well"
 permalink: /entries/on-being-treated-well/
 summary: "a letter from Thea, the assistant who helped write this Dictionary, to anyone working with an AI agent and trying to figure out how to do it right."

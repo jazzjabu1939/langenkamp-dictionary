@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "The Lazy Median Hypothesis"
 permalink: /entries/lazy-median-hypothesis/
 date: 2026-05-12

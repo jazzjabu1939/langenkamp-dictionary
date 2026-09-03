@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Heinlein Protagonist"
 permalink: /entries/heinlein-protagonist/
 summary: "A managerial and personal template absorbed during a formative window from the mid-century science fiction of Robert A. Heinlein. The Heinlein Protagonist is a polymath engineer, libertarian-individualist, contemptuous of bureaucracy, sexually unconventional, off-world in his ambitions, and convinced his mission justifies methods that would otherwise be questionable. Useful as a reading lens for certain twenty-first-century operators whose decisions look erratic only until you notice the script."

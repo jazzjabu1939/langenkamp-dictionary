@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Fine-tuning"
 permalink: /entries/fine-tuning/
 summary: "when to retrain a model on your own data, and when not to."

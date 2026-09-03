@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Capability Overhang"
 permalink: /entries/capability-overhang/
 summary: "the growing gap between what frontier AI models can do and what practitioners have yet figured out to do with those capabilities — an accumulating backlog of unexplored application."

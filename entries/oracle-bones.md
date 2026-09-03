@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Oracle Bones"
 permalink: /entries/oracle-bones/
 summary: "dated, falsifiable, written-down predictions filed before the event resolves and scored after; the discipline of accountability across time."

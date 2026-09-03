@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: essay
 title: "Machine Matthew L."
 permalink: /entries/machine-matthew-l/
 date: 2026-06-25

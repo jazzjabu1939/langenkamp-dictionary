@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Implementation Outrun"
 permalink: /entries/implementation-outrun/
 summary: "The governance failure mode in which an AI rollout may be technically defensible but loses trust because affected stakeholders cannot see the authority, consent, data flow, or accountability structure behind it."

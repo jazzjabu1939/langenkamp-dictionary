@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Agent Town Experiment"
 permalink: /entries/agent-town-experiment/
 date: 2026-05-23

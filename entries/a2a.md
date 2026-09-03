@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "A2A (Agent-to-Agent Protocol)"
 permalink: /entries/a2a/
 date: 2026-08-11

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Token Angst"
 permalink: /entries/token-angst/
 summary: "the existential, retrospective cousin of token anxiety. About whether the cumulative cost — in money and in cognitive outsourcing — was worth it."

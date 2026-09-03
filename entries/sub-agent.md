@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Sub-agent"
 permalink: /entries/sub-agent/
 summary: "delegated AI sessions for parallel or focused work."

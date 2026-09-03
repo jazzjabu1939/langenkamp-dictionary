@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Agent Ownership"
 permalink: /entries/agent-ownership/
 date: 2026-07-01

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Persona Scaffold"
 permalink: /entries/persona-scaffold/
 date: 2026-06-25

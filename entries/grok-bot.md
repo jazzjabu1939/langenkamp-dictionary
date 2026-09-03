@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Grok Bot"
 permalink: /entries/grok-bot/
 summary: "SpaceXAI's beta service for persistent agents that work across apps on a cloud computer; a useful case in event-driven agency, concentrated tool access, and approval as authority architecture."

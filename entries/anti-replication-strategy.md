@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Anti-Replication Strategy"
 permalink: /entries/anti-replication-strategy/
 date: 2026-06-25

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "The Judge Layer"
 permalink: /entries/judge-layer/
 summary: "Nate Jones's term for the production-architecture layer that constrains and judges what agents do. The Aunties are the literary version; this is the engineering version."

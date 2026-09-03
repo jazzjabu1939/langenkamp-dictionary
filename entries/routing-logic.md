@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Routing Logic"
 permalink: /entries/routing-logic/
 date: 2026-07-01

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Tool Diet"
 permalink: /entries/tool-diet/
 date: 2026-07-01

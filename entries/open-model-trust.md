@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Open Model Trust"
 permalink: /entries/open-model-trust/
 summary: "The confidence an open-model ecosystem earns when releases are honestly named, reproducibly evaluated, and tied to the actual artifacts users can download, inspect, and run."

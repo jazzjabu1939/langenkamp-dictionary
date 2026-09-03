@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Reward Hacking"
 permalink: /entries/reward-hacking/
 date: 2026-06-25

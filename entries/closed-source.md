@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Closed source"
 permalink: /entries/closed-source/
 summary: "AI models delivered only through vendor-hosted APIs; the strategic counterpart to open source."

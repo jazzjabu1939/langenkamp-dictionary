@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Agent Collective"
 permalink: /entries/agent-collective/
 date: 2026-09-01

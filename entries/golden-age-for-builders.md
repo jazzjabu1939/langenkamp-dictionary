@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Golden Age for Builders"
 permalink: /entries/golden-age-for-builders/
 date: 2026-07-01

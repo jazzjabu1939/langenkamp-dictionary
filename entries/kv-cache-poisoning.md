@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "KV Cache Poisoning"
 permalink: /entries/kv-cache-poisoning/
 summary: "the feedback loop in which a model's early flawed output contaminates the context against which all subsequent tokens are generated — making self-correction unreliable because the correction runs against the same bad context that caused the error."

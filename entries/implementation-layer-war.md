@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Implementation Layer War"
 permalink: /entries/implementation-layer-war/
 summary: "the struggle over who owns the layer where frontier AI capability becomes real institutional work: workflow design, permissions, evals, audit, recovery, and ongoing operational responsibility."

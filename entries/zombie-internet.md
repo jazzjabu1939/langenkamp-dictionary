@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "Zombie Internet"
 permalink: /entries/zombie-internet/
 date: 2026-05-12

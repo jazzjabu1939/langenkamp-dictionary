@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "William Gibson"
 permalink: /entries/william-gibson/
 date: 2026-05-16

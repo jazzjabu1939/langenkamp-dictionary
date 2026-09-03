@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "The Olang' Trap"
 permalink: /entries/olang-trap/
 date: 2026-05-12

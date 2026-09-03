@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Tool"
 permalink: /entries/tool/
 summary: "the function call that lets an agent act in the real world."

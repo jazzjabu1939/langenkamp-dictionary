@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Agentic Threshold"
 permalink: /entries/agentic-threshold/
 summary: "the point at which AI systems become capable enough of autonomous multi-step action that alignment and oversight become qualitatively harder problems — named not as a single moment but as a zone of transition that Demis Hassabis placed two to four years from 2026."

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "SOUL.md"
 permalink: /entries/soul-md/
 date: 2026-06-30

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Country of Geniuses in a Data Center"
 permalink: /entries/country-of-geniuses-in-a-data-center/
 summary: "Dario Amodei's civilisational metaphor for powerful AI: not a chatbot, but a synthetic population of expert-level intelligence housed inside industrial compute infrastructure."

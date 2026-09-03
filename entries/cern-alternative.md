@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "The CERN Alternative"
 permalink: /entries/cern-alternative/
 summary: "the institutional model for AI development that was not chosen: international, collaborative, publicly funded, deliberately paced, scientific — named after the organisation that built the Large Hadron Collider under exactly those conditions."

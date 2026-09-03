@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Naming"
 permalink: /entries/naming/
 summary: "why the choice of names is structural, not cosmetic, in agentic-AI architecture."

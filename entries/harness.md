@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Harness"
 permalink: /entries/harness/
 date: 2026-06-30

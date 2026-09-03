@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Digital Sovereignty"
 permalink: /entries/digital-sovereignty/
 date: 2026-09-01

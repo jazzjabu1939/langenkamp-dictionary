@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Red Pill"
 permalink: /entries/red-pill/
 summary: "the moment a platform's administrative UI refuses an action that the platform's documentation explicitly enables, at a validation layer the documentation does not mention. Named May 11, 2026, after a Google Analytics 4 dialog that would not accept a service-account email."

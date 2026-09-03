@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Sovereign Compute Calculator"
 permalink: /entries/sovereign-compute-calculator/
 summary: "a forthcoming Dictionary tool that estimates an individual operator's personal cash breakeven between rented closed-tier inference and home Sovereign Compute. Sister tool to the Consciousness Calculator. The point is to replace generic punditry about \"who needs a local model\" with a personal answer the user can actually act on."

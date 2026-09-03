@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "The Narrator's Compression"
 permalink: /entries/the-narrators-compression/
 summary: "a working hypothesis about how narrators (human and AI) collapse time, cause, and uncertainty into readable sequence, and what gets lost in the compression."

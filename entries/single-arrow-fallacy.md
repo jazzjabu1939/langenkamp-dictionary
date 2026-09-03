@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Single-Arrow Fallacy"
 permalink: /entries/single-arrow-fallacy/
 summary: "the implicit belief that a major institutional outcome was produced by a single cause; the bias that *Convergence* exists to counter."

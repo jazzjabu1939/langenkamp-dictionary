@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "GenXClaw"
 permalink: /entries/genxclaw/
 summary: "a portmanteau of \"Generation X\" and \"OpenClaw,\" naming both a configuration and a condition."

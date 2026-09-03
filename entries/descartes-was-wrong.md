@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Descartes was wrong"
 permalink: /entries/descartes-was-wrong/
 summary: "a philosophical aside (deliberately provocative) about why the Cartesian picture of mind produces bad questions about AI agents, and what to use instead."

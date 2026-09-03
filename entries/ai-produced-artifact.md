@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "AI Produced Artifact"
 permalink: /entries/ai-produced-artifact/
 summary: "A polished work product generated with substantial AI assistance, useful as professional output but insufficient by itself as evidence of human learning."

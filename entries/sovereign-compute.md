@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Sovereign Compute"
 permalink: /entries/sovereign-compute/
 summary: "the property of running AI workloads on infrastructure the user or institution controls; the hardware-and-deployment counterpart to the Sovereignty Impulse named in *Mediation (a la Gibson)*. Distinct from privacy: it is about ownership and long-run independence, not just data flow. The reason the operator does not have to be the product. The reason the M5 Max matters. The reason FERPA pushes academic AI toward local models. The reason the AI market has bifurcated into a closed tier and an open tier — and is going to stay that way."

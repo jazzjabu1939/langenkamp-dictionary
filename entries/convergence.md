@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Convergence (Cloud Theory)"
 permalink: /entries/convergence/
 summary: "the recognition that institutional outcomes are produced by multiple independent vectors lighting up in the same window, not by single causes; the discipline that follows from taking that seriously, including the corollary that when separate observers arrive at the same architectural conclusion from different staircases, the agreement is signal."

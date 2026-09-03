@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "RAG (Retrieval-Augmented Generation)"
 permalink: /entries/rag/
 summary: "the dominant pattern for \"AI that knows my stuff.\""

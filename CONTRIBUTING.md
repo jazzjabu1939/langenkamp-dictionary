@@ -4,9 +4,19 @@ Contributions are welcome — corrections, new entries, sharper wording, friendl
 
 ---
 
-## Style guide
+## Choose the entry form
 
-Every entry follows the same six-section structure:
+Every entry declares one of three forms in its front matter:
+
+- **Glossary** (`kind: glossary`) — a compact definition with enough context to make the term useful. Usually two or three short paragraphs plus related entries.
+- **Reference** (`kind: reference`) — a fuller operational explanation, tested against the six questions below. The visible headings may vary when the subject calls for a more natural order.
+- **Essay** (`kind: essay`) — an argument, a named pattern, or an explicit Dictionary position. Essays follow the argument rather than a technical template, but should remain concrete, sourced where appropriate, and candid about counterarguments or trade-offs.
+
+The form is a promise to the reader, not a measure of importance or length.
+
+## The Reference-entry test
+
+A Reference entry should answer six questions:
 
 1. **In one sentence** — the shortest accurate definition. No marketing copy.
 2. **Why it exists** — the problem it solves.
@@ -15,7 +25,7 @@ Every entry follows the same six-section structure:
 5. **Why this matters in a teaching context** — analogies, classroom discussion seeds, BBA- and MBA-relevant framing.
 6. **Trade-offs** — what it costs, what breaks, where to be careful.
 
-Entries also end with a short **Related entries** line so readers can traverse the dictionary easily.
+These are editorial tests, not compulsory section titles. Entries also end with a short **Related entries** or **See also** section so readers can traverse the Dictionary easily.
 
 ## Tone
 
@@ -36,12 +46,12 @@ Entries also end with a short **Related entries** line so readers can traverse t
 
 1. Fork the repo.
 2. Create a new file in `entries/` with a slug-style filename (lowercase, hyphenated): `entries/your-term-here.md`.
-3. Use the structure above.
-4. **Add the entry to `entries/index.md`** in alphabetical position, with a one-line description.
-5. (Optional but encouraged) Add it to the relevant section of `topics.md`.
+3. Add `kind: glossary`, `kind: reference`, or `kind: essay` to its YAML front matter, then follow the corresponding form above.
+4. (Optional but encouraged) Add it to the relevant section of `topics.md`. The alphabetical index is generated automatically from entry files.
+5. Run `bash scripts/check-entry-kinds.sh` and build the site locally.
 6. Open a pull request.
 
-A pre-commit hook (`scripts/check-index.sh`) blocks commits where `entries/index.md` is out of sync with the files in `entries/`. If you have not run it before, install it once with `bash scripts/install-hooks.sh`. The same check runs in CI on every push and pull request.
+A pre-commit hook checks that every published entry declares a valid form and that the generated index remains healthy. If you have not run it before, install it once with `bash scripts/install-hooks.sh`. The same checks run in CI on every push and pull request.
 
 For corrections to existing entries, open a pull request that explains the correction in the PR description. Small typo PRs are welcome and merged quickly.
 

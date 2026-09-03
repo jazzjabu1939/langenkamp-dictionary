@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Relationally Real Memory"
 permalink: /entries/relationally-real-memory/
 date: 2026-06-25

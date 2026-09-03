@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Task Distribution"
 permalink: /entries/task-distribution/
 date: 2026-07-01

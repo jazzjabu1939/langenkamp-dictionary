@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Token Burn"
 permalink: /entries/token-burn/
 summary: "the rate at which an agent silently transmutes electricity and credit-card balance into JSON. With taxonomy and stages of grief."

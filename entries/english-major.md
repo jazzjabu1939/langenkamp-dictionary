@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "English major"
 permalink: /entries/english-major/
 summary: "the kind of person who turns out to be surprisingly good at directing AI coding agents because the bottleneck has shifted from syntax to specification."

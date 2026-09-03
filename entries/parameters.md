@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Parameters"
 permalink: /entries/parameters/
 summary: "the fundamental unit of measurement for model size, with a useful warning about not confusing size with quality."

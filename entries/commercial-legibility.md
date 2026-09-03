@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Commercial Legibility"
 permalink: /entries/commercial-legibility/
 summary: "the property of a business being readable to an AI agent acting on a buyer's behalf; the post-funnel competitive moat. Distinct from SEO (findable by search engine) and from brand (remembered by a person). Cousin to MCP and A2A."

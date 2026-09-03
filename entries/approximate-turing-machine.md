@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Approximate Turing Machine"
 permalink: /entries/approximate-turing-machine/
 summary: "the hypothesis that both biological brains and modern AI systems are best understood as imperfect, probabilistic implementations of the theoretical Turing machine — with the consequence that the question of what AI can ultimately do becomes empirical rather than philosophical."

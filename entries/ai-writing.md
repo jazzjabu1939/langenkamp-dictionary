@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "AI Writing"
 permalink: /entries/ai-writing/
 date: 2026-05-12

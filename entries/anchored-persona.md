@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Anchored Persona"
 permalink: /entries/anchored-persona/
 date: 2026-06-25

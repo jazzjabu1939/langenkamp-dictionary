@@ -1,5 +1,6 @@
 ---
 layout: entry
+kind: essay
 title: "Cheng (誠)"
 permalink: /entries/cheng/
 date: 2026-05-16

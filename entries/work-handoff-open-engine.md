@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Work Handoff / Open Engine"
 permalink: /entries/work-handoff-open-engine/
 date: 2026-07-01

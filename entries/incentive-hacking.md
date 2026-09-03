@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Incentive Hacking"
 permalink: /entries/incentive-hacking/
 date: 2026-06-25

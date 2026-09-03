@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Voight-Kampff Test"
 permalink: /entries/voight-kampff-test/
 date: 2026-06-25

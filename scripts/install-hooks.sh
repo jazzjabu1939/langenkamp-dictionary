@@ -13,13 +13,14 @@ mkdir -p "$HOOK_DIR"
 cat > "$PRE_COMMIT" <<'HOOK'
 #!/usr/bin/env bash
 # Auto-installed by scripts/install-hooks.sh
-# Blocks commits that leave entries/index.md out of sync with entries/*.md.
+# Blocks commits with unclassified entries or an unhealthy entries index.
 
 set -e
 REPO_ROOT="$(git rev-parse --show-toplevel)"
+"$REPO_ROOT/scripts/check-entry-kinds.sh"
 "$REPO_ROOT/scripts/check-index.sh"
 HOOK
 
 chmod +x "$PRE_COMMIT"
 echo "✅ pre-commit hook installed at $PRE_COMMIT"
-echo "   Runs scripts/check-index.sh before every commit."
+echo "   Runs entry-kind and index checks before every commit."

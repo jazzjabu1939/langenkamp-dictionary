@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Intentional Memory Construction"
 permalink: /entries/intentional-memory-construction/
 date: 2026-06-25

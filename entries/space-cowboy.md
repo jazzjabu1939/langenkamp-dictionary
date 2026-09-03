@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Space Cowboy"
 permalink: /entries/space-cowboy/
 summary: "the heavy individual explorer of AI tools, riding the frontier alone on personal high-stakes questions."

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Can't help you understand"
 permalink: /entries/cant-help-you-understand/
 summary: "the practitioner's slogan for what AI assistants cannot, in principle, do for you. About the difference between artifacts and comprehension."

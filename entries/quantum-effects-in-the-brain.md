@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Quantum Effects in the Brain"
 permalink: /entries/quantum-effects-in-the-brain/
 summary: "the hypothesis, associated with Roger Penrose and Stuart Hameroff, that human consciousness depends on quantum-mechanical processes in neurons that classical computation cannot replicate — and therefore that AI systems, as classical computers, face a fundamental ceiling that no amount of scale will breach."

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Agentic Engineering"
 permalink: /entries/agentic-engineering/
 summary: "AI-assisted software work where the human owns the architecture, constraints, tests, security posture, maintainability, and final responsibility, even when agents write much of the code."

@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Borrowed Memory"
 permalink: /entries/borrowed-memory/
 date: 2026-08-31

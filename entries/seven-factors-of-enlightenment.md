@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: glossary
 title: "Seven Factors of Enlightenment"
 permalink: /entries/seven-factors-of-enlightenment/
 date: 2026-06-25

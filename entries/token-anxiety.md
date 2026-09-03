@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "Token anxiety"
 permalink: /entries/token-anxiety/
 summary: "the EV-range-anxiety analogue for language models. Forward-looking unease about whether a run will fit in budget."

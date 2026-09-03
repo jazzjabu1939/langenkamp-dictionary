@@ -1,5 +1,6 @@
 ---
 layout: default
+kind: reference
 title: "AGENTS.md"
 permalink: /entries/agents-md/
 date: 2026-08-11
