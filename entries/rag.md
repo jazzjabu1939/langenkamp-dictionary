@@ -74,6 +74,8 @@ The OpenClaw setup on this MacBook uses a *lightweight, file-based* form of RAG 
 
 This is RAG in miniature: a private corpus, semantic retrieval, and prompt-time augmentation. The corpus here is the user's own memory and notes, not a corporate document set, but the architecture is identical.
 
+This overlap is worth naming carefully. *[Agent Memory](/entries/agent-memory/)* describes information kept to give an agent continuity; RAG describes a retrieval pattern. A memory system can use RAG, and a RAG system can retrieve material that is not memory at all — a product manual, a case archive, or today's database records.
+
 A scaled-up version of the same pattern would replace the markdown files with a vector database holding thousands of documents and add a more sophisticated ranking layer.
 
 ## RAG variants worth knowing
@@ -118,4 +120,11 @@ In practice, most organizations should start with RAG. Fine-tuning is a later st
 
 ---
 
-*Related entries: `embedding.md`, `vector-database.md`, *(planned)*.*
+## See also
+
+- *[Retrieval-Augmented Generation](/entries/retrieval-augmented-generation/)*
+- *[Embedding](/entries/embedding/)*
+- *[Vector database](/entries/vector-database/)*
+- *[Skill](/entries/skill/)*
+- *[MCP (Model Context Protocol)](/entries/mcp/)*
+- *[Agent Memory](/entries/agent-memory/)*

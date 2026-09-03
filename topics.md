@@ -76,6 +76,10 @@ The structural argument running through *The Sincere Society* essay and the entr
 
 The pieces that make a running agent.
 
+- [Skill](entries/skill.md) — packaged procedure and judgment for a repeatable class of agent work.
+- [MCP (Model Context Protocol)](entries/mcp.md) — a standard way for agents to reach tools, data, and external services.
+- [RAG (Retrieval-Augmented Generation)](entries/rag.md) — retrieval of relevant outside material into the model's working context.
+- [Agent Memory](entries/agent-memory.md) — persistent facts, decisions, unfinished work, and lessons carried across sessions.
 - [Gateway](entries/gateway.md) — the always-on coordinator process.
 - [Sub-agent](entries/sub-agent.md) — delegated AI sessions for parallel or focused work.
 - [Agent Collective](entries/agent-collective.md) — a persistent group whose shared roles, memory, communication, and governance make the group a meaningful unit of action.

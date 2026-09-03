@@ -56,6 +56,8 @@ A **MCP server** advertises these capabilities. An **MCP client** (your agent) d
 
 Each service exposes its own MCP server. The agent connects to whichever ones it needs.
 
+MCP provides access, not operating judgment. It can let an agent read an error dashboard, but it does not tell the agent which dashboard to inspect first, what counts as abnormal, or when to stop and call a human. Those parts usually belong in a *[Skill](/entries/skill/)*, retrieved documentation, or *[Agent Memory](/entries/agent-memory/)*.
+
 ## Working example — what would MCP look like on this machine?
 
 The setup on this MacBook today does most of what MCP enables, but using **internal tools** rather than the external MCP standard. The agent can already read files, run shell commands, query Canvas, send emails, and so on — through OpenClaw's built-in tool system.
@@ -93,4 +95,10 @@ A management student learning to evaluate emerging-tech investments should be ab
 
 ---
 
-*Related entries: `tool.md`, `gateway.md`, and *(planned)*.*
+## See also
+
+- *[Skill](/entries/skill/)*
+- *[Tool](/entries/tool/)*
+- *[Gateway](/entries/gateway/)*
+- *[RAG (Retrieval-Augmented Generation)](/entries/rag/)*
+- *[Agent Memory](/entries/agent-memory/)*
