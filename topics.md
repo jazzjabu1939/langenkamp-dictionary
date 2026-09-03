@@ -185,6 +185,7 @@ How models are built, sized, distributed, and used.
 
 The products built on top of the models.
 
+- [Grok Bot](entries/grok-bot.md) — SpaceXAI's persistent cloud-computer agents and a case in event-driven work, concentrated tool access, and approval architecture.
 - [Agentic Native Design](entries/agentic-native-design.md) — building sites, documents, and workflows so humans can use them naturally and agents can understand, search, cite, and act without scraping guesswork.
 - [ChatGPT](entries/chatgpt.md) — OpenAI's consumer product; the market-defining AI experience.
 - [NotebookLM](entries/notebooklm.md) — Google's source-grounded research notebook and artifact-generation surface.

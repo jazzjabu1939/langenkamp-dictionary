@@ -21,3 +21,4 @@ Approval gating is not a sign that the agent is weak. It is a sign that the syst
 - *[Trust Layer](trust-layer.md)*
 - *[Aunties](aunties.md)*
 - *[The Lowbeer Question](lowbeer-question.md)*
+- *[Grok Bot](/entries/grok-bot/)*

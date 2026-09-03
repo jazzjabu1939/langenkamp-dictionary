@@ -48,6 +48,7 @@ The Inverted Funnel is real. The question of who captures the inverted territory
 - [Mediation (a la Gibson)](mediation-a-la-gibson.md) — the buyer-side argument
 - [Sovereign Compute](sovereign-compute.md) — why the agent's host matters
 - [On Beginning](on-beginning.md) — how to actually run your own agent
+- [Grok Bot](/entries/grok-bot/) — a working example of an agent arriving at a merchant with research and payment capability
 
 ---
 

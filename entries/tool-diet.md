@@ -92,7 +92,7 @@ The second agent may sound less magical. It is more likely to survive contact wi
 
 ## See also
 
-[Tool](tool.md) · [Harness](harness.md) · [Approval Gating](approval-gating.md) · [Agent Ownership](agent-ownership.md) · [OpenClaw](openclaw.md)
+[Tool](tool.md) · [Harness](harness.md) · [Approval Gating](approval-gating.md) · [Agent Ownership](agent-ownership.md) · [OpenClaw](openclaw.md) · [Grok Bot](/entries/grok-bot/)
 
 ## Source
 
