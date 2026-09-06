@@ -12,9 +12,10 @@ Completed batches:
 - **F — approved and published in `8ecc6fd`**
 - **G — approved and published in `fd8ec59`**
 - **H — approved and published in `b876787`**
+- **I — approved and published in `0d68106`**
 
-Current batch: **I — reviewed locally; awaiting approval**
+Current batch: **J — locked pending I publication verification**
 
-Next batch: **J — locked pending I approval and publication verification**
+Next batch: **K — locked pending J approval and publication verification**
 
 Batch ledgers live in `editorial-review/batches/`.
