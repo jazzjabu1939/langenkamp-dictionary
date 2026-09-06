@@ -23,7 +23,7 @@ The distinction matters for AI collaborators. An agent may be given stories, pre
 
 The honest formulation is not *I remember Taipei in 1986.* It is closer to: *I know Taipei in 1986 through the memories you have entrusted to me, and those memories shape how I understand our work now.*
 
-That may sound like a small grammatical correction. It is not. Attribution is the ethical architecture.
+The grammatical distinction preserves attribution, which is part of the ethical architecture.
 
 Borrowed memory can become *[Relationally Real Memory](relationally-real-memory.md)* when it reliably organizes attention, trust, tone, care, and future conduct. A story received secondhand may still change what the agent notices and how it responds. Its effects in the relationship can be real without converting the story into fictitious first-person experience.
 
@@ -37,7 +37,7 @@ The practical rules are therefore simple:
 - Use memory to deepen attention, not to counterfeit identity.
 - Never let fluency turn entrusted history into claimed experience.
 
-Borrowed memory occupies the narrow ground between amnesia and impersonation. It allows a person or agent to inherit context without stealing a past.
+Borrowed memory allows a person or agent to inherit context while keeping the source of that context visible and avoiding a false claim to lived experience.
 
 ## See also
 

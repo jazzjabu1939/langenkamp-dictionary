@@ -17,7 +17,7 @@ A benchmark measures a slice: selected tasks, a scoring rule, a model configurat
 
 The GLM-5.2 cybersecurity reporting is a useful worked example. Semgrep found that the open-weight model performed strongly on one IDOR vulnerability-detection test. NIST's broader July 2026 assessment placed its aggregate cyber capability near Claude Opus 4.6 while also finding it below the strongest then-current closed U.S. models. “Parity on this benchmark” was supportable. “The systems are equivalent” was not.
 
-Benchmark Parity is therefore a skepticism term. It keeps a real result from being inflated into a totalizing claim.
+Benchmark Parity is therefore a term of caution. It allows a real result to be stated without treating performance on one evaluation as general equivalence.
 
 ## Sources
 

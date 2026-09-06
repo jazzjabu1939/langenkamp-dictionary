@@ -10,9 +10,9 @@ published: true
 
 Borrowed Brain is a cognitive dependency on another intelligence, human or artificial. It can be useful, generous, and entirely rational. Apprentices borrow brains. Students borrow brains. Analysts borrow the brains of better analysts by reading them carefully.
 
-The AI-era problem is speed and opacity. A model can lend competence so quickly that the borrower stops noticing which judgments are theirs and which are imported. That is when borrowed intelligence becomes cognitive outsourcing in the bad sense: not assistance, but quiet displacement of judgment.
+The AI-era problem is speed and opacity. A model can lend competence so quickly that the borrower stops noticing which judgments are theirs and which are imported. Borrowed intelligence becomes harmful cognitive outsourcing when it quietly displaces judgment instead of supporting it.
 
-The phrase is not an argument against help. It is a reminder that the borrower remains accountable.
+The phrase allows for useful help while keeping the borrower accountable for the judgment that follows.
 
 ## See also
 

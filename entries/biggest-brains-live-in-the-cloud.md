@@ -9,13 +9,13 @@ draft: false
 published: true
 ---
 
-**The Biggest Brains Live in the Cloud** is the current frontier-dependence fact.
+**The Biggest Brains Live in the Cloud** names a current form of frontier dependence: the largest and most capable AI systems remain cloud-served because they require scale, batching, memory, routing, data-centre networking, and infrastructure that local systems do not yet match.
 
-It is not a slogan of surrender. It is a map note. The largest and most capable AI systems remain cloud-served because they require scale, batching, memory, routing, data-center networking, and infrastructure that local systems do not yet match. A local workstation can be sovereign and useful. It cannot, in 2026, simply become Anthropic’s best model or OpenAI’s best model by wanting to.
+A local workstation can be sovereign and useful, but in 2026 it cannot run the largest frontier models at their hosted capability.
 
 This is why *[Workflow-layer Sovereignty](workflow-layer-sovereignty.md)* matters. Local systems can own memory, tools, files, routine work, privacy-sensitive work, and much of the operator’s day-to-day process. But the hardest reasoning and synthesis may still require frontier providers.
 
-The goal is not to deny that the biggest brains live in the cloud. The goal is to call them only when their size is actually needed.
+The practical response is to use frontier systems when their additional capability is needed while keeping suitable memory, tools, files, routine work, and privacy-sensitive work under local control.
 
 ## See also
 

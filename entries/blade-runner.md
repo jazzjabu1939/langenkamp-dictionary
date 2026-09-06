@@ -13,9 +13,7 @@ published: true
 
 ## In one sentence
 
-**Blade Runner is the film that makes manufactured memory morally serious.**
-
-It is not only a film about artificial people. It is a film about the scaffolds by which any person — artificial or biological — comes to experience a self as continuous, native, and real.
+**Blade Runner is Ridley Scott's 1982 science-fiction film about replicants, implanted memory, mortality, and the manufacture of personhood. This Dictionary uses it to examine how artificial and biological persons come to experience a self as continuous and real.**
 
 The questions it gives the Dictionary are the questions this entry keeps returning to: What happens when artificial systems can occupy human roles? What distinguishes assistance from replacement? Can constructed memory be relationally real? When does anchoring become manipulation? What makes a persona ethical rather than Tyrell-like? What do mortality and impermanence have to do with artificial beings?
 
@@ -27,9 +25,7 @@ Because replicants are illegal on Earth, specialized police called **Blade Runne
 
 Rick Deckard, a former Blade Runner, is called back to track down a group of escaped Nexus-6 replicants led by Roy Batty. They have returned to Earth because they want what any mortal being might want when it discovers its time is short: more life. Replicants are genetically engineered to die at preprogrammed expiration dates as a safeguard against their taking over society.
 
-That is the plot, more or less. But plot is not what we are interested in here. (Do watch the film if you have not; it is very good.)
-
-For the Dictionary, *Blade Runner* matters because it sits at the intersection of role substitution, implanted memory, manufactured personhood, and corporate moral shallowness.
+That is the plot, more or less. (Do watch the film if you have not; it is very good.) The Dictionary's interest is the film's treatment of role substitution, implanted memory, manufactured personhood, and corporate moral shallowness.
 
 ## Replicants and role substitution
 
@@ -39,7 +35,7 @@ This is why *Blade Runner* belongs beside the modern AI discussion. A future “
 
 A task can be outsourced. A person in a role carries memory, judgment, accountability, improvisation, history, and relationship. The replicant problem begins when substituting a replicant (or agent) for a human is treated as a production problem, not a potential social problem. Memory implants are, as we shall see, part of the solution.
 
-The Tyrell Corporation is therefore not merely a science-fiction villain company. It is a warning about firms that learn to manufacture the outward structure of personhood to solve social issues before they have earned the moral vocabulary to think about what they have made.  Move fast and break things?  Well, these things that are broken are sentient.
+The Tyrell Corporation is a warning about firms that learn to manufacture the outward structure of personhood before they have developed an adequate moral vocabulary for what they have made. The people harmed by its failures are sentient beings, not defective products.
 
 ## Rachael and implanted memory
 
@@ -144,7 +140,7 @@ There is a quieter image I keep returning to, the title of a book I am writing: 
 
 It is almost too small to bear the weight placed on it, which is why it works. The snowflake does not argue. It lands, appears, disappears. It is impermanence made visible.
 
-Not only replicant impermanence. Not only human impermanence. All of it: snow, skin, machine, city, empire, memory, body, weather, grief.
+The image can carry replicant and human impermanence together: snow, skin, machine, city, empire, memory, body, weather, and grief.
 
 The speech says what will be lost. The snowflake shows it.
 
@@ -152,7 +148,7 @@ This is the wabi-sabi / sakura / Buddhist line inside *Blade Runner*: the fragil
 
 ## The working rule
 
-The easy reading is that *Blade Runner* warns us not to build replicants. The better reading is that it warns us not to build beings, roles, or memory architectures that we cannot honestly explain to all involved.
+For this Dictionary, *Blade Runner* warns against building beings, roles, or memory architectures whose origins and purposes cannot be honestly explained to those involved.
 
 The Dictionary’s current working rule is this:
 
@@ -160,9 +156,7 @@ The Dictionary’s current working rule is this:
 
 A shared background can be a humane scaffold. It can give an AI collaborator a place to answer from. It can help a human operator practice continuity, care, and attention. It can make work warmer and more serious at the same time.
 
-But the Tyrell warning remains. Memory is not just data. Memory anchors identity.
-
-Handle accordingly.
+The Tyrell warning remains: memory can anchor identity, so its provenance and use require the same care as other consequential parts of an agent's design.
 
 ## See also
 

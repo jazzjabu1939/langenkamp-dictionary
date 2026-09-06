@@ -17,7 +17,7 @@ The name stands for **Bourne Again Shell**, a successor to Stephen Bourne's earl
 
 When OpenClaw reports **“Bash failed,”** it usually means a command run through the shell returned a non-zero *[exit code](exit-code.md)*. It does not necessarily mean Bash itself broke. The shell may have worked perfectly while reporting that a file was missing, a search found no match, a program rejected an option, or permission was denied.
 
-That distinction mattered in the September 1, 2026 Dictionary work. A search included an `essays/` directory that did not exist. The search command reported failure; Bash faithfully passed that result upward; the article was then found elsewhere and published normally. **The messenger reported a failed command. The messenger was not the failure.**
+That distinction mattered in the September 1, 2026 Dictionary work. A search included an `essays/` directory that did not exist. The search command failed, Bash reported its non-zero exit code, and the article was later found elsewhere and published normally. Bash had accurately reported the command's result.
 
 Modern macOS uses *zsh* as its default interactive shell, while many automation systems still describe shell-command execution generically as “Bash.” In ordinary conversation, people often blur *Bash*, *shell*, and *terminal*. They are related but not identical.
 

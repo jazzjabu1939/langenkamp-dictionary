@@ -1,6 +1,6 @@
 # Batch A — Plain-Prose Review
 
-**State:** ready_for_professor
+**State:** published
 
 **Baseline:** `82b4ca3`
 
@@ -76,4 +76,4 @@
 
 ## Professor review gate
 
-Batch B must not begin until Professor Langenkamp has reviewed this ledger and the proposed A revisions.
+Professor Langenkamp approved the batch on 6 September 2026. It was published in commit `83634ce`.

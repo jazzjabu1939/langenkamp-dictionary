@@ -17,7 +17,7 @@ A benchmark is not merely a bag of questions. Its result depends on the model, p
 
 Benchmarks are useful because anecdotes do not compare cleanly. They are dangerous because a clean number invites a larger claim than the test supports. A coding score is not general intelligence. A vulnerability-discovery score is not autonomous exploitation. Parity on one evaluation is not equivalence of systems.
 
-The right question is not simply *Who won?* It is: *What exactly was measured, under which conditions, and how much of the real-world task does that measurement represent?*
+A benchmark result should therefore be read by asking: *What exactly was measured, under which conditions, and how much of the real-world task does that measurement represent?*
 
 ## See also
 

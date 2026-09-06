@@ -11,7 +11,7 @@ published: true
 
 **The Buddha Stack** is the Dictionary’s name for a calm, local-first AI architecture: powerful enough for ordinary work, private enough for intimate work, durable enough to survive vendor churn, and visible enough to discipline the person using it.
 
-It is not one model. Waiting for a single local “savior model” turns sovereignty into another dependency story. The Buddha Stack is a pattern of use:
+The Buddha Stack is a pattern of use rather than one model. Waiting for a single local “saviour model” would make sovereignty depend on another provider or release:
 
 - local or personally controlled compute;
 - open or locally runnable models good enough for routine work;
@@ -24,7 +24,7 @@ It is not one model. Waiting for a single local “savior model” turns soverei
 
 The short doctrine is: **frontier for discernment; local for durability; memory for continuity; human judgment for legitimacy.**
 
-The Buddha Stack is not an escape from nature, markets, or frontier dependence. It is practice: a way to remain technologically capable without becoming either a battery or a monk.
+The Buddha Stack does not eliminate markets, resource use, or frontier dependence. It is a practice for remaining technologically capable while controlling more of the workflow and using external systems deliberately.
 
 ## See also
 
