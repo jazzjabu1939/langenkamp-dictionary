@@ -9,9 +9,10 @@ Completed batches:
 - **C — approved and published in `6dbada8`**
 - **D — approved and published in `ff2494d`**
 - **E — approved and published in `9eb820d`**
+- **F — approved and published in `8ecc6fd`**
 
-Current batch: **F — reviewing on isolated branch `editorial/alphabetical-plain-prose-audit-f`**
+Current batch: **none**
 
-Next batch: **G — held pending F review and explicit approval**
+Next batch: **G — approved to begin after F publication verification**
 
 Batch ledgers live in `editorial-review/batches/`.

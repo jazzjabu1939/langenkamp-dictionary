@@ -1,6 +1,6 @@
 # Batch F — Plain-Prose Review
 
-**State:** ready for review; unpublished
+**State:** approved and published
 
 **Baseline:** `191eecb`
 
@@ -63,6 +63,6 @@ The unpublished local build contains all eight reviewed pages under `_site/entri
 
 All eight rendered pages were inspected for headings, literal `.md` URLs, and internal link targets. Every canonical entry target exists in the build.
 
-## Publication gate
+## Publication record
 
-Batch F remains local and unpublished pending Professor Langenkamp's approval. Batch G is held.
+Professor Langenkamp approved batch F on 6 September 2026. The reviewed content was integrated into `main` as `8ecc6fd`. Batch G was authorised to begin after publication verification.
