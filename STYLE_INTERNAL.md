@@ -150,8 +150,26 @@ The scanner is a triage tool, not a judge. It flags candidates; humans apply the
 
 See also: *Zombie Internet* (pending), *Mediation (a la Gibson)*, *Sincere Society*, the *cheng* discussion in SOUL.md.
 
+## Stock distinction transitions
+
+*Added 6 September 2026 after a corpus review found the exact sentence “That distinction matters” in ten entries.*
+
+“That distinction matters” is clear English. Repeated across entries, however, it becomes a drafting tic: a general transition placed where the prose should name the particular consequence of a difference.
+
+Do not solve the problem by cycling mechanically through “the distinction is important,” “the difference is significant,” and similar phrases. That creates a thesaurus rotation rather than better prose.
+
+Use this order:
+
+1. **Delete the transition** when the surrounding sentences already show the difference.
+2. **Name the consequence** when the reader needs help: the terms differ in scope; the evidence supports one claim but not another; the choice changes who is responsible; one method costs more; one interpretation creates a different risk.
+3. **Use a neutral transition** when a simple signpost is genuinely useful: “There is a difference between X and Y” or “The distinction is important because...” The reason should follow immediately.
+
+The question is not whether the distinction “matters” in the abstract. The sentence should tell the reader what changes because of it.
+
+This rule applies to generated and heavily edited prose. It does not require us to vary a phrase that came naturally from Langenkamp's own writing merely for stylistic variety. The leave-the-seams-visible rule still governs authentic operator prose.
+
 ---
 
 *This document is allowed to evolve. When a new failure mode emerges, name it here. When a hybrid entry teaches us something about how the modulation actually works, capture it. STYLE_INTERNAL.md is a working document; STYLE_GUIDE.md is the public-facing condensation of what we have learned.*
 
-*Seeded and first written 8 May 2026. Earned-parallelism section added 12 May 2026.*
+*Seeded and first written 8 May 2026. Earned-parallelism section added 12 May 2026. Stock-transition section added 6 September 2026.*
