@@ -3,7 +3,10 @@ layout: default
 kind: reference
 title: "Fine-tuning"
 permalink: /entries/fine-tuning/
-summary: "when to retrain a model on your own data, and when not to."
+date: 2026-05-02
+summary: "Continuing a pre-trained model's training on task-specific examples to alter its behaviour or performance."
+draft: false
+published: true
 ---
 
 # Fine-tuning
@@ -13,60 +16,53 @@ summary: "when to retrain a model on your own data, and when not to."
 
 ## In one sentence
 
-**Fine-tuning is the process of taking a pre-trained large language model and continuing its training on a smaller, specific dataset so the model permanently learns new behaviour, style, or domain knowledge that lives inside its own weights rather than being passed in at query time.**
+**Fine-tuning continues the training of a pre-trained model on task-specific examples, updating all or some of its parameters so that it performs a desired task or behaviour more reliably.**
 
 ## Why fine-tuning exists
 
-A pre-trained language model is a generalist. It has read a great deal but knows nothing about the specifics of your firm, your tone of voice, or the quirks of your domain. There are three ways to address that:
+A pre-trained language model is a generalist. It may not follow a firm's conventions, produce a required output reliably, or handle a specialised task well. Three common interventions are:
 
-1. **Prompt engineering** — write better instructions in the prompt. Fast, free, but limited.
-2. **RAG** — fetch relevant documents at query time and paste them into the prompt. Fast to set up, stays current, no model retraining required. (See `rag.md`.)
-3. **Fine-tuning** — actually retrain the model on your data so it learns the patterns directly. Slower, more expensive, but produces a model that *behaves* differently, not just one that *knows* differently.
+1. **Prompt engineering** — supply clearer instructions and examples at query time.
+2. **[RAG](/entries/rag/)** — retrieve relevant material at query time and place it in the model's context.
+3. **Fine-tuning** — train on examples so the model's parameters change.
 
 Fine-tuning is the heaviest of the three. Most projects should start with the lighter options and only reach for fine-tuning when those genuinely run out of road.
 
 ## What it actually does — concretely
 
-Pre-training a frontier model from scratch is a months-long, billion-token, millions-of-dollars effort. Fine-tuning is the much cheaper sibling: take an already-trained model and continue its training for a relatively small number of steps on a focused dataset.
+Pre-training a frontier model from scratch requires enormous datasets and compute. Fine-tuning is the cheaper sibling: take an already-trained model and continue training it for a smaller number of steps on a focused dataset.
 
 Three common varieties:
 
-- **Supervised fine-tuning (SFT)** — show the model thousands of input-output pairs ("here is a customer email; here is the ideal reply"). The model learns to produce outputs that look like the training answers.
-- **Reinforcement learning from human feedback (RLHF) / Direct Preference Optimization (DPO)** — show the model pairs of better and worse outputs and let it learn the preference. Used heavily by frontier labs to align their models.
-- **Parameter-efficient fine-tuning (PEFT) / LoRA** — instead of updating all model weights, train a small set of *adapter weights* that bolt onto the base model. Much cheaper, similar effect for most use cases. The dominant approach in practice.
+- **Supervised fine-tuning (SFT)** — train on example inputs paired with desired outputs.
+- **Preference-based post-training** — methods such as RLHF and Direct Preference Optimization use preference information to favour some responses over others, although they optimise that information differently.
+- **Parameter-efficient fine-tuning (PEFT)** — methods such as LoRA freeze the base weights and train comparatively small adapter matrices. This can sharply reduce the trainable parameter count and memory required, but it does not guarantee the same result as full fine-tuning on every task.
 
 ## Where fine-tuning genuinely beats RAG
 
 RAG is brilliant for "the model needs to know things from my corpus." Fine-tuning is the right move when one of these is true:
 
-- **You need a specific behaviour, not specific knowledge.** Speak in our company tone. Always answer in this format. Never use these forbidden phrases. Behaviour lives in weights, not in prompts.
-- **You have a domain language the base model handles poorly.** Niche legal terminology, medical shorthand, your company's internal acronyms. Fine-tuning can teach the model the language properly.
-- **You need consistent output schemas.** A fine-tuned model will reliably emit JSON in your exact shape; a prompted base model is more variable.
-- **Latency matters.** Fine-tuning lets you use a smaller model that has been specialized to your task, which is faster and cheaper to run than a big general model with a long RAG prompt.
-- **You have lots of data.** Tens of thousands of high-quality examples is when fine-tuning starts to outperform pure prompting.
+- **Repeated behaviour remains unreliable after good prompting and examples.** Tone, classification conventions, or a stable response format may improve with fine-tuning.
+- **A specialised task is poorly handled by the base model.** Fine-tuning can improve performance when the training examples genuinely represent the task.
+- **Latency or token cost matters.** A fine-tuned smaller model may replace a larger model or shorten a long prompt, but this is an empirical result to test rather than assume.
+- **You have representative data and a held-out evaluation.** Example count alone is not decisive; quality, coverage, and measurement matter more than a magic threshold.
 
-If none of these apply, RAG plus good prompting is almost always the right choice.
+If none of these apply, prompting, retrieval, application logic, or structured-output controls may solve the problem with less machinery.
 
 ## Working example — a hypothetical for an Isenberg context
 
-Imagine the Management Department wanted an AI tutor for case-method discussion that *talks like Isenberg faculty do* — same level of rigour, same vocabulary, same Socratic style. The pieces:
+Imagine a management department wanted an AI tutor for case-method discussion with a defined level of rigour and a consistent Socratic style. The pieces might be:
 
-- **Base model**: a capable open-weights model, e.g., Llama 3.3 70B or Qwen 2.5 72B.
-- **Training data**: ~5,000 well-curated case-discussion transcripts, with each turn labeled by role (instructor / student) and quality.
-- **Method**: LoRA fine-tuning on the instructor turns, optimizing for the rigour and style markers that distinguish good case discussion from generic chatter.
-- **Result**: a specialized model that does case-method tutoring noticeably better than the base model with a clever prompt.
+- **Base model:** a capable model whose licence and deployment fit the institution's constraints.
+- **Training data:** permissioned, carefully curated examples of strong instructor moves, separated from an evaluation set.
+- **Method:** supervised or parameter-efficient fine-tuning aimed at specified behaviours.
+- **Test:** compare the adapted model with the base model, good prompting, and retrieval on unseen discussions.
 
-The cost of doing this in 2026 is no longer prohibitive — a one-time LoRA fine-tune on a 70B model can be run for a few thousand dollars, and the resulting adapter weights are tiny (megabytes) and easy to share among colleagues.
-
-The pre-conditions, though, are non-trivial: someone has to *curate* those 5,000 transcripts, with quality labels, with permissions, with FERPA-clean handling. **The data work, again, is the hard part.**
+The pre-conditions are non-trivial: someone has to define good tutoring, curate examples, obtain the necessary permissions, protect student records, and design an evaluation capable of proving improvement. **The data and evaluation work, again, are the hard parts.**
 
 ## Why this matters in a teaching context
 
-For BBA and MBA students, fine-tuning is interesting because of where the cost has moved over the past three years:
-
-- 2022: fine-tuning a useful model required a team of researchers and serious infrastructure.
-- 2024: fine-tuning was straightforward for any competent developer with a credit card.
-- 2026: fine-tuning is increasingly a self-service product (OpenAI fine-tuning, Anthropic fine-tuning, AWS Bedrock fine-tuning, on-prem with LoRA). The skill is shifting from *how to fine-tune* to *whether you should and how to evaluate the result*.
+For BBA and MBA students, the strategic point is that model adaptation has become more accessible through vendor services and open-source tooling. The managerial difficulty has therefore moved towards deciding *whether* to fine-tune, securing suitable data, and evaluating the result. Product availability changes quickly; it should not be treated as part of the definition.
 
 The strategic point worth surfacing in class: **the bottleneck has moved from compute to data quality and evaluation.** Most organizations that fail at fine-tuning fail because they had garbage training data or no honest way to measure whether the fine-tuned model actually does better than the base model on real tasks. Both problems are organizational, not technical.
 
@@ -74,10 +70,9 @@ The strategic point worth surfacing in class: **the bottleneck has moved from co
 
 |  | Fine-tuning | RAG |
 |--|-------------|-----|
-| Speed to deploy | Days to weeks | Hours to days |
-| Cost per change | Expensive (re-train) | Cheap (re-index) |
-| Stays current | No (frozen at training time) | Yes (always reads latest corpus) |
-| Privacy | Documents permanently in weights | Documents leave at query time only |
+| Speed to change | Requires another training run | Update or re-index the corpus |
+| Current information | Limited to training and other model context | Can retrieve the current corpus |
+| Main data risk | Training examples may be memorised or exposed through the training pipeline | Retrieved material is exposed to every component serving the query |
 | Best for | Style, tone, domain language, output formats | Private knowledge bases, current data |
 | Model size impact | Can let you use a smaller, faster model | Generally needs a capable base model |
 
@@ -88,9 +83,15 @@ The two are not mutually exclusive. Many production systems use **both**: fine-t
 - **You may forget what you wanted to keep.** Fine-tuning can degrade general capabilities — a model fine-tuned to be very good at one task sometimes gets worse at unrelated tasks. Worth measuring before and after on a broad eval suite.
 - **Data quality dominates.** Bad training data produces a bad fine-tuned model, full stop. The temptation to fine-tune on whatever you have lying around is strong and usually wrong.
 - **Evaluation is the real bottleneck.** "Is the fine-tuned model actually better?" is harder to answer than it sounds. Without honest evaluation, you can spend a lot fine-tuning your way backward.
-- **Permanence cuts both ways.** Knowledge fine-tuned in is hard to update. If your training data contains a mistake or stale info, that mistake is now baked into the model.
-- **Privacy lives in the weights.** Once private data is fine-tuned in, it is in the weights. If those weights leak or are sold or are subpoenaed, the data is in there. RAG keeps the data outside the model.
+- **Updates require care.** Patterns learned through fine-tuning are not edited like rows in a database. Correcting stale or harmful behaviour may require new data and another training run.
+- **Training data can be memorised.** Fine-tuning does not turn documents into a searchable database, but models can reproduce training examples. Sensitive data therefore requires permission, minimisation, security controls, and leakage testing. RAG carries different risks because the retriever, index, prompt, logs, and model may all handle the retrieved text.
+
+## Sources
+
+- OpenAI, *Supervised fine-tuning*: <https://platform.openai.com/docs/guides/supervised-fine-tuning>
+- Edward J. Hu et al., *LoRA: Low-Rank Adaptation of Large Language Models*, 2021: <https://arxiv.org/abs/2106.09685>
+- Patrick Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*, 2020: <https://arxiv.org/abs/2005.11401>
 
 ---
 
-*Related entries: `rag.md`, `embedding.md`, *(planned)*.*
+*[RAG](/entries/rag/)* · *[Embedding](/entries/embedding/)*

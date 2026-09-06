@@ -19,7 +19,7 @@ The ogre is familiar because we have seen it before: search, social media, strea
 
 ## See also
 
-- *[The Good Intentions Problem](good-intentions-problem.md)*
-- *[Mediation (a la Gibson)](mediation-a-la-gibson.md)*
-- *[Sovereign AI](sovereign-ai.md)*
-- *[Hyperscaler](hyperscaler.md)*
+- *[The Good Intentions Problem](/entries/good-intentions-problem/)*
+- *[Mediation (a la Gibson)](/entries/mediation-a-la-gibson/)*
+- *[Sovereign AI](/entries/sovereign-ai/)*
+- *[Hyperscaler](/entries/hyperscaler/)*
