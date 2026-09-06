@@ -4,19 +4,25 @@ kind: glossary
 title: "GPT"
 permalink: /entries/gpt/
 date: 2026-05-12
-summary: "*Generative Pre-trained Transformer* — *OpenAI*'s family of large language models. The first scaled-transformer architecture to produce broadly useful general-purpose text generation."
+summary: "Generative Pre-trained Transformer: OpenAI's model family and the lineage behind ChatGPT."
 draft: false
 published: true
 ---
 
-GPT stands for *Generative Pre-trained Transformer* — *[OpenAI](openai.md)*'s family of large language models. The series began with the original GPT (June 2018, 117M parameters, a research artefact), proceeded through GPT-2 (February 2019, controversial open-release decisions), GPT-3 (June 2020, 175B parameters, the first model that meaningfully demonstrated few-shot learning), GPT-3.5 (the model underneath the original *[ChatGPT](chatgpt.md)*), GPT-4 (March 2023), GPT-4o and GPT-4-Turbo (2024), and GPT-5 (2025) with ongoing minor revisions.
+GPT stands for *Generative Pre-trained Transformer*, the name of *[OpenAI](/entries/openai/)*'s principal model lineage. The original 2018 research model showed that a transformer pretrained on a large text corpus could be adapted to many language tasks. GPT-2 extended the approach in 2019; GPT-3 demonstrated strong in-context and few-shot performance at much larger scale in 2020; GPT-3.5 powered the first public version of *[ChatGPT](/entries/chatgpt/)*; GPT-4 followed in 2023; and the GPT-5 series began in 2025. Individual product and API names change more quickly than the family definition.
 
-The *transformer* architecture GPT's name refers to was introduced in Vaswani et al.'s 2017 paper *Attention Is All You Need*, originating at Google. OpenAI's GPT line was the first sustained demonstration that the architecture, scaled aggressively with the right training data and compute, produced broadly useful general-purpose text generation. The success of GPT-3 in particular triggered the post-2020 LLM era and the competitive race that produced *[Claude](claude.md)*, *[Gemini](gemini.md)*, *[Llama](llama.md)*, and the rest.
+The *transformer* in the name refers to the architecture introduced by Vaswani and colleagues in the 2017 paper *Attention Is All You Need*. GPT did not invent the transformer. Its historical importance lies in making generative pretraining plus scale a durable research and product programme. That programme helped establish the modern large-language-model market in which *[Claude](/entries/claude/)*, *[Gemini](/entries/gemini/)*, *[Llama](/entries/llama/)*, and other families now compete.
 
-For this Dictionary, the GPT family matters primarily as **the market comparator** — the model series the rest of the industry's products are positioned against. The operator's daily working model is *[Claude](claude.md)* (specifically *[Opus](claude-opus.md)*), but GPT-class models are the structural reference that informs nearly every comparison readers will draw.
+For this Dictionary, GPT matters primarily as **the market comparator**: the model lineage against which many other products are positioned. It is also useful to distinguish *GPT*, a model family, from *ChatGPT*, a consumer and workplace product that can route among models and tools.
+
+## Sources
+
+- Radford et al., [“Improving Language Understanding by Generative Pre-Training”](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf), 2018.
+- Brown et al., [“Language Models are Few-Shot Learners”](https://arxiv.org/abs/2005.14165), 2020.
+- OpenAI, [“Introducing GPT-5”](https://openai.com/index/introducing-gpt-5/), August 2025.
 
 ## See also
 
-- *[OpenAI](openai.md)* — the producer
-- *[ChatGPT](chatgpt.md)* — the consumer product
-- *[Claude](claude.md)*, *[Gemini](gemini.md)*, *[Llama](llama.md)* — peer model families
+- *[OpenAI](/entries/openai/)* — the producer
+- *[ChatGPT](/entries/chatgpt/)* — the consumer product
+- *[Claude](/entries/claude/)*, *[Gemini](/entries/gemini/)*, *[Llama](/entries/llama/)* — peer model families

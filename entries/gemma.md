@@ -4,20 +4,25 @@ kind: glossary
 title: "Gemma"
 permalink: /entries/gemma/
 date: 2026-05-12
-summary: "Google DeepMind's open-weights model family, derived from the Gemini lineage. The operator runs Gemma 4 26B and 31B locally on Apple Silicon."
+summary: "Google DeepMind's family of open-weight models, designed for deployment and adaptation outside Google's hosted services."
 draft: false
 published: true
 ---
 
-Gemma is the open-weights model family released by *[Google DeepMind](google-deepmind.md)*, structured as a sibling to the proprietary *[Gemini](gemini.md)* line. The first Gemma generation was released in February 2024; subsequent generations (Gemma 2, Gemma 3, Gemma 4) have shipped at increasing scales and capabilities. As of May 2026, the operator of this Dictionary runs **Gemma 4 26B and Gemma 4 31B** locally on the M5 Max workstation as part of the practical *[Sovereign Compute](sovereign-compute.md)* setup — see TOOLS.md notes on hybrid dense+MoE architecture and sliding-window attention.
+Gemma is the open-weight model family released by *[Google DeepMind](/entries/google-deepmind/)* alongside the proprietary *[Gemini](/entries/gemini/)* line. The first Gemma models appeared in February 2024. Gemma 4, released in March 2026, included dense and mixture-of-experts variants, multimodal input, and context windows of up to 256,000 tokens.
 
-For this Dictionary, Gemma matters as **the open-weights family produced by an actor with frontier-lab resources and full-Gemini-team backing**. Where Mistral and Llama are produced by labs that have made the open-weights posture their primary strategic move, Gemma is produced by a lab with closed-weights frontier products that has chosen, deliberately, to release competitive open-weights alongside them. The behaviour is asymmetric to OpenAI (which has released essentially no open weights since GPT-2) and Anthropic (no open weights at all) and somewhat parallel to Meta's Llama posture.
+For this Dictionary, Gemma matters because a laboratory with a major closed-model business also releases weights that operators can run and adapt elsewhere. That makes the family useful for practical *[Sovereign Compute](/entries/sovereign-compute/)* experiments without pretending that “open weights” settles every question about training data, licensing, or reproducibility.
 
-Strengths of Gemma 4 relative to peer open-weights models (Hermes, Qwen) on local Apple Silicon: fast on contained tasks, punches above weight on moderate-context workloads. Weaknesses: the sliding-window attention pattern limits the model's behaviour on large-context multi-file tasks, where Qwen 3.6 currently outperforms.
+In the operator's May 2026 tests on Apple Silicon, Gemma 4 was fast on contained tasks, while *[Qwen](/entries/qwen/)* was more reliable on some large-context, multi-file work. That is a dated local observation, not a universal model ranking: quantisation, runtime, prompt construction, and hardware all affect the result.
+
+## Sources
+
+- Google, [Gemma releases](https://ai.google.dev/gemma/docs/releases).
+- Google, [Gemma 4 model overview](https://ai.google.dev/gemma/docs/core).
 
 ## See also
 
-- *[Google DeepMind](google-deepmind.md)*
-- *[Gemini](gemini.md)* — the proprietary sibling line
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Hermes](hermes.md)*, *[Qwen](qwen.md)*, *[Llama](llama.md)* — peers in the local-compute tier
+- *[Google DeepMind](/entries/google-deepmind/)*
+- *[Gemini](/entries/gemini/)* — the proprietary sibling line
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Hermes](/entries/hermes/)*, *[Qwen](/entries/qwen/)*, *[Llama](/entries/llama/)* — peers in the local-compute tier

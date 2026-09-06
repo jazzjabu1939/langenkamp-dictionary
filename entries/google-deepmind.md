@@ -9,14 +9,20 @@ draft: false
 published: true
 ---
 
-Google DeepMind is the AI research division of Alphabet Inc., formed in April 2023 by merging Google's internal Google Brain team with the UK-based DeepMind acquired in 2014. The combined organisation is led by **Demis Hassabis* *, a former chess prodigy, neuroscience PhD, and the co-founder of the original DeepMind. The lab is responsible for the *[Gemini](gemini.md)* model family (Google's frontier language-model line), the AlphaGo system that defeated Lee Sedol at Go in 2016 (see *[Move 37](move-37.md)*), the AlphaFold protein-structure prediction system that earned Hassabis a share of the 2024 Nobel Prize in Chemistry, and a substantial body of fundamental AI research that has shaped the field.
+Google DeepMind is Alphabet's principal AI research organisation, formed in April 2023 by combining Google Brain with DeepMind, the UK company Google acquired in 2014. It is led by *[Demis Hassabis](/entries/demis-hassabis/)*, a co-founder of the original DeepMind. Its work includes the *[Gemini](/entries/gemini/)* model family, AlphaGo, which defeated Lee Sedol in 2016 (see *[Move 37](/entries/move-37/)*), and AlphaFold. Hassabis and John Jumper shared half of the 2024 Nobel Prize in Chemistry for protein-structure prediction.
 
-For this Dictionary, Google DeepMind matters most through Hassabis personally — his May 2026 *Huge Conversations* interview with Cleo Abram, in which he named *OpenClaw* by name as an example of the *[Capability Overhang](capability-overhang.md)* opportunity space, is one of the structural moments of the Dictionary's 2026 corpus. The lab's institutional posture — described in the *[Lab Character](lab-character.md)* entry as a scientist-of-genuine-integrity running a commercial operation with vast resources and competitive pressure — is treated there as an unresolved tension rather than a crisis.
+For this Dictionary, Google DeepMind matters both as a scientific institution and as a commercial competitor. Hassabis's 2026 interview with Cleo Abram emphasised scientific discovery while acknowledging the competitive pressure created by the public chatbot race. The *[Lab Character](/entries/lab-character/)* entry treats that combination—scientific ambition, vast resources, and commercial pressure—as a tension to examine rather than a verdict on the people involved.
+
+## Sources
+
+- Google, [“Announcing Google DeepMind”](https://blog.google/technology/ai/april-ai-update/), April 2023.
+- Nobel Prize, [“The Nobel Prize in Chemistry 2024”](https://www.nobelprize.org/prizes/chemistry/2024/summary/).
+- Cleo Abram, [*HUGE Conversations with Demis Hassabis* transcript](https://singjupost.com/huge-conversations-w-google-deepmind-ceo-demis-hassabis-transcript/), 2026.
 
 ## See also
 
-- **Demis Hassabis* * — the CEO
-- *[Gemini](gemini.md)* — the model family
-- *[Capability Overhang](capability-overhang.md)*
-- *[Move 37](move-37.md)*
-- *[Lab Character](lab-character.md)*
+- *[Demis Hassabis](/entries/demis-hassabis/)* — the CEO
+- *[Gemini](/entries/gemini/)* — the model family
+- *[Capability Overhang](/entries/capability-overhang/)*
+- *[Move 37](/entries/move-37/)*
+- *[Lab Character](/entries/lab-character/)*

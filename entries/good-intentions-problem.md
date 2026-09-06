@@ -19,10 +19,10 @@ Judge not, lest ye be judged. But non-judgment is not naivete.
 
 ## See also
 
-- *[Pax](pax.md)*
-- *[Elon Musk](elon-musk.md)*
-- *[Dario Amodei](dario-amodei.md)*
-- *[The Familiar Ogre](familiar-ogre.md)*
-- *[Benevolence with Instruments](benevolence-with-instruments.md)*
-- *[Anthropic](anthropic.md)*
-- *[xAI](xai.md)*
+- *[Pax](/entries/pax/)*
+- *[Elon Musk](/entries/elon-musk/)*
+- *[Dario Amodei](/entries/dario-amodei/)*
+- *[The Familiar Ogre](/entries/familiar-ogre/)*
+- *[Benevolence with Instruments](/entries/benevolence-with-instruments/)*
+- *[Anthropic](/entries/anthropic/)*
+- *[xAI](/entries/xai/)*

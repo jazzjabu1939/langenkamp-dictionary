@@ -4,20 +4,25 @@ kind: glossary
 title: "GPTZero"
 permalink: /entries/gptzero/
 date: 2026-05-12
-summary: "AI-detection tool launched January 2023 by Princeton undergraduate Edward Tian. Among the first widely-used products to claim it could identify AI-generated text; widely deployed in academic-integrity contexts."
+summary: "An AI-text detector launched in January 2023 and widely used in education; its scores are signals, not proof of authorship."
 draft: false
 published: true
 ---
 
-GPTZero is an AI-detection tool launched in January 2023 by Edward Tian, then an undergraduate at Princeton. The product was developed in roughly a week during winter break and went viral immediately on launch, accumulating over a million users in its first month — a response that captured the panic many educators and editors were feeling about the implications of *[ChatGPT](chatgpt.md)*'s November 2022 release. GPTZero has since expanded into a full company with enterprise products for education (academic-integrity checks), publishing (editorial review), and HR (cover letter screening).
+GPTZero is an AI-text detector launched publicly in January 2023 by Edward Tian, then a Princeton undergraduate. The first version, built over the New Year holiday, drew tens of thousands of users within days. GPTZero later became a company serving education and other institutional markets.
 
-For this Dictionary, GPTZero is one of the named players in the **AI-detection economy** critiqued in *[The Olang' Trap](olang-trap.md)*. The Dictionary's editorial position on AI-detection tools, including GPTZero, is the position developed in that entry: the detection reflex carries systematic bias against the human writers whose register most closely matches the AI training corpus, and operators should not act on detection scores in isolation regardless of which vendor produced them.
+For this Dictionary, GPTZero is one of the named players in the **AI-detection economy** critiqued in *[The Olang' Trap](/entries/olang-trap/)*. A detector estimates whether text resembles patterns associated with model output; it does not observe who wrote the text. Its score should therefore prompt further inquiry, never serve as proof of misconduct.
 
-GPTZero specifically has historically used a *perplexity* and *burstiness* heuristic — measures of how predictable and how variable the text's word choices are — that interacts particularly badly with the formal-English register the *[Olang' Trap](olang-trap.md)* names. Academic-integrity false positives against international students and ESL learners are widely documented.
+Early descriptions of GPTZero emphasised *perplexity* and *burstiness*: measures of textual predictability and variation. Detector methods have since changed, and results depend on the detector, model, text length, genre, and editing. A 2023 study of seven detectors—including GPTZero—found that they frequently misclassified essays by non-native English writers. That is evidence about a detector class under tested conditions, not proof that every current product behaves identically. It is enough to rule out automated accusation.
+
+## Sources
+
+- South China Morning Post, [“Who is Edward Tian?”](https://www.scmp.com/business/article/3206581/who-edward-tian-he-wants-keep-his-gptzero-app-free-users-sniff-out-aigiarists), January 2023.
+- Weixin Liang et al., [“GPT detectors are biased against non-native English writers”](https://arxiv.org/abs/2304.02819), *Patterns*, 2023.
 
 ## See also
 
-- *[The Olang' Trap](olang-trap.md)* — the structural critique
-- *[Pangram Labs](pangram-labs.md)*, *[Originality.ai](originality-ai.md)* — competitors
-- *[The Sinceerly Stack](sinceerly-stack.md)*
-- *[AI Writing](ai-writing.md)*
+- *[The Olang' Trap](/entries/olang-trap/)* — the structural critique
+- *[Pangram Labs](/entries/pangram-labs/)*, *[Originality.ai](/entries/originality-ai/)* — competitors
+- *[The Sinceerly Stack](/entries/sinceerly-stack/)*
+- *[AI Writing](/entries/ai-writing/)*

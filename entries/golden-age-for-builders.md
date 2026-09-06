@@ -5,6 +5,7 @@ title: "Golden Age for Builders"
 permalink: /entries/golden-age-for-builders/
 date: 2026-07-01
 summary: "The optimistic interpretation of cheap AI intelligence: as models get cheaper, the valuable work moves to building the systems that make intelligence useful."
+draft: false
 published: true
 ---
 
@@ -18,15 +19,13 @@ published: true
 
 ## The better news
 
-The shallow threat story says: AI writes code, therefore coders vanish.
-
-The better story says: AI makes implementation more abundant, therefore the scarce work moves upward into systems, judgment, verification, routing, ownership, and design.
+One threat story says: AI writes code, therefore coders vanish. This entry proposes a narrower alternative: as implementation becomes more abundant, more value may move into systems, judgment, verification, routing, ownership, and design.
 
 This is harder than comfort talk. Students and engineers who only learn to produce syntax may be in trouble. But students and engineers who learn to make AI useful inside real work have a large opening in front of them.
 
 Nate Jones's GLM-5.2 argument points in this direction. If strong model intelligence is becoming cheap, the bottleneck shifts. The question is no longer only "Can the model do the task?" It is "Can we put that intelligence to work safely, repeatedly, cheaply, and with enough context?"
 
-That is builder work.
+This entry calls that builder work.
 
 ## What builders now build
 
@@ -49,7 +48,7 @@ In the AI context, that means building:
 
 The model may write much of the code. The builder decides what should exist, how it should fail, who is allowed to use it, what evidence counts as done, and how the next person or agent can pick up the work.
 
-That is not clerical. It is engineering, management, and design braided together.
+The result is engineering, management, and design braided together.
 
 ## The student version
 
@@ -59,13 +58,13 @@ The advice is neither "ignore AI" nor "compete with AI at typing speed." Nor is 
 
 A business student can learn to map task distribution, identify verification gaps, design an AI-assisted workflow, and explain where human judgment enters. A management student can learn agent ownership, governance, escalation, and incentives. A technical student can learn tools, permissions, tests, logs, retrieval, deployment, and rollback. A writing student can learn how to make prose, sources, and revision history legible to both humans and agents.
 
-These are the new work, not consolation prizes.
+These are forms of work worth teaching in their own right.
 
 The portable-skill version matters too. A student's value will increasingly include not only what they know, but whether their way of working can be made visible, inspectable, repeatable, and transferable across tools. Prompts are too small a unit for that. The stronger unit is a skill, runbook, workflow, or harness component that survives a model change.
 
 ## Why optimism is justified
 
-The reason for optimism is that cheap intelligence creates more unsolved integration problems, not fewer.
+The reason for qualified optimism is that cheap intelligence creates unsolved integration problems even as it compresses other work.
 
 Every organisation will ask versions of the same questions:
 
@@ -80,7 +79,7 @@ Every organisation will ask versions of the same questions:
 
 Those questions do not answer themselves. They create demand for people who can build, judge, govern, and teach.
 
-Jones calls this the last mile in AI. In plainer business-school language, it is the place where a cheap model becomes a functioning work system: context, routing, tools, memory, permissions, verification, ownership, and handoff. If intelligence is suddenly 98 percent cheaper but only useful after that last mile is built, then the last mile becomes the scarce asset.
+Jones calls this the last mile in AI. In plainer business-school language, it is the place where a cheap model becomes a functioning work system: context, routing, tools, memory, permissions, verification, ownership, and handoff. If model output becomes much cheaper but remains useful only after that last mile is built, the last mile becomes relatively scarcer.
 
 The optimistic claim is narrower than "AI protects every old job." It plainly does not. The real claim is that the world is about to need far more people who can translate cheap intelligence into reliable work.
 
@@ -102,7 +101,7 @@ That is a better ambition, not a retreat from one.
 
 ## See also
 
-[Agentic Engineering](agentic-engineering.md) · [Team Harness](team-harness.md) · [Routing Logic](routing-logic.md) · [Tool Diet](tool-diet.md) · [Work Handoff / Open Engine](work-handoff-open-engine.md) · [Verification Gap](verification-gap.md) · [Agent Ownership](agent-ownership.md)
+[Agentic Engineering](/entries/agentic-engineering/) · [Team Harness](/entries/team-harness/) · [Routing Logic](/entries/routing-logic/) · [Tool Diet](/entries/tool-diet/) · [Work Handoff / Open Engine](/entries/work-handoff-open-engine/) · [Verification Gap](/entries/verification-gap/) · [Agent Ownership](/entries/agent-ownership/)
 
 ## Source
 

@@ -4,6 +4,8 @@ kind: reference
 title: "Grep Architecture"
 permalink: /entries/grep-architecture/
 summary: "The choice to give an assistant a filing cabinet it searches on demand rather than forcing it to carry the whole library in its head at every session start."
+date: 2026-06-17
+draft: false
 published: true
 ---
 
@@ -21,7 +23,7 @@ A growing agentic system eventually faces a simple architectural question: shoul
 
 The first pattern is carrying-in-your-head. The harness loads large memory files, project notes, operating rules, style guides, calendars, history, context, and instructions into the model's prompt at session start. The assistant can refer to the material immediately, but every session pays the cost of carrying it, whether or not the task needs it.
 
-The second pattern is filing-cabinet. The assistant wakes with a smaller current index and uses ordinary tools — `rg`, `grep`, `find`, `sed`, `cat`, structured search, memory search — to fetch the relevant file when the task calls for it.
+The second pattern is filing-cabinet. The assistant wakes with a smaller current index and uses ordinary tools—`rg`, `grep`, `find`, `sed`, structured search, or memory search—to fetch the relevant file when the task calls for it.
 
 The second pattern is Grep Architecture.
 
@@ -35,11 +37,11 @@ The same thing is true for agents.
 
 ## Why it matters for cost
 
-Always-loading context produces linear cost growth. Every new memory file, project note, standing instruction, or long-term reference adds weight to every future session. The corpus becomes more valuable, but also more expensive to carry.
+Always-loading context makes the default prompt grow with the corpus. Every new memory file, project note, standing instruction, or long-term reference adds weight to future sessions unless a harness compacts, retrieves, or omits it. The corpus becomes more valuable, but also more expensive to carry.
 
 The filing-cabinet pattern changes the cost curve. The assistant pays for the small current map by default and pays for the deeper context only when the work actually requires it.
 
-This matters for API economics. Prompt caching helps only when the expensive write can be reused. If long stable context is repeatedly written into cache and not reused within the time window, the operator pays a cache-write tax without harvesting the read discount.
+This matters for API economics. Prompt caching can reduce repeated work, but only under the provider's reuse rules and cache lifetime. Retrieval avoids paying to present irrelevant material in the first place.
 
 It also matters for local models. On local hardware, the same problem appears as prefill latency: the model has to read the prompt before it can answer. A smaller default prompt means faster starts. On-demand search means the local machine spends time reading what matters, not rereading the attic.
 
@@ -61,4 +63,4 @@ An agent designed with Grep Architecture behaves more like that expert. She does
 
 ## Related entries
 
-*Cache-Write Tax*, *Prefill*, *Sovereign Compute*, *Model Tiering*, *Context Window*, *Provenance*, *Heartbeat*, *Agent Health*, *Harness Hygiene*, *Skill*.
+*Cache-Write Tax* (planned) · *Prefill* (planned) · *[Sovereign Compute](/entries/sovereign-compute/)* · *[Model Tiering](/entries/model-tiering/)* · *[Context Window](/entries/context-window/)* · *[Provenance](/entries/provenance/)* · *[Heartbeat](/entries/heartbeat/)* · *[Agent Health](/entries/agent-health/)* · *[Harness Hygiene](/entries/harness-hygiene/)* · *[Skill](/entries/skill/)*

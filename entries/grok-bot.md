@@ -6,7 +6,7 @@ permalink: /entries/grok-bot/
 summary: "SpaceXAI's beta service for persistent agents that work across apps on a cloud computer; a useful case in event-driven agency, concentrated tool access, and approval as authority architecture."
 seeded: 2026-09-03
 first_published: 2026-09-03
-last_revised: 2026-09-03
+last_revised: 2026-09-06
 draft: false
 published: true
 ---
@@ -67,7 +67,7 @@ Grok Bot packages several trends into one legible product: persistent agents, cl
 
 That is useful, but the colleague metaphor can conceal the architecture. A human colleague arrives with legal identity, organisational accountability, employment rules, social judgment, and consequences for misconduct. A Bot arrives with model behaviour, stored credentials, tool permissions, memory, and whatever controls its harness provides. Calling both “teammates” does not make those authority structures equivalent.
 
-For the Dictionary, Grok Bot is therefore less interesting as another branded assistant than as a test of whether consumer agent platforms can make delegated action **legible, bounded, and recoverable**. The glamorous part is the notebook arriving. The serious part is knowing why the Bot was allowed to order it.
+For the Dictionary, Grok Bot tests whether consumer agent platforms can make delegated action **legible, bounded, and recoverable**. The glamorous part is the notebook arriving. The serious part is knowing why the Bot was allowed to order it.
 
 ## Trade-offs and warnings
 
