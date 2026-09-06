@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-09-06 | **Yann LeCun** | Standalone named-person entry published at `entries/yann-lecun.md`. Covers his deep-learning legacy, FAIR, LLM critique, world-model/JEPA programme, AMI Labs, open-weights advocacy, and role as the counter-pole to the *Big Blob of Compute* worldview. |
 | 2026-06-17 | **Agentic Native Design** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. New entry published. Establishes the website/document/workflow design principle for human-readable and agent-readable public work. |
 | 2026-06-17 | **The Judge Layer** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. Existing draft moved to `published: true`. |
 | 2026-06-17 | **Verification Gap** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. Existing draft moved to `published: true`; Prof's C.V. clarification folded into the opening definition. |
@@ -185,13 +186,23 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ---
 
+### **Yann LeCun** — **published** (proposed May 16, 2026; published September 6, 2026)
+
+*Published at `entries/yann-lecun.md`. LeCun is too prominent, and his intellectual position too distinct, to remain merely a sub-item of the Meta/Llama cluster.*
+
+- **Focus:** Turing Award winner; FAIR founder and former Meta chief AI scientist; long-running critic of LLMs as the final form of AI; advocate of world models, JEPA, objective-driven AI, open-source/open-weights ecosystems, and European AI sovereignty.
+- **Current chapter:** Include his 2026 AMI / Advanced Machine Intelligence venture: a Paris-headquartered contrarian bet on world models and systems that understand the physical world rather than relying on language-model scaling alone.
+- **Dictionary role:** LeCun is the clearest counter-pole to the Dario Amodei / *Big Blob of Compute* worldview. His entry should explain the disagreement fairly: he is not anti-AI or anti-scale; he disputes that next-token prediction plus greater scale is the sufficient route to human-level machine intelligence.
+- **Required cross-links:** *World Model*, *JEPA*, *Open Weights*, *Open Model Trust*, *Scaling Laws*, *Big Blob of Compute*, *Meta AI*, *Llama*, and *Sovereign Compute*.
+
+---
+
 ### **Meta / Llama Trust Cluster** (proposed May 16, 2026 — from *How Meta Went From Hero To Zero*)
 
-*Triggered by Prof's late-evening May 16 reading of `How Meta Went From Hero To Zero.md`, especially the Llama 4 benchmark controversy, the LM Arena experimental-variant issue, and Yann LeCun's later "fudged a little bit" comments. Queue status after June 22 audit: **Open Model Trust is published**. **Open Weights, Closed Habits**, **Yann LeCun**, and **World Model** remain pending.*
+*Triggered by Prof's late-evening May 16 reading of `How Meta Went From Hero To Zero.md`, especially the Llama 4 benchmark controversy, the LM Arena experimental-variant issue, and Yann LeCun's later "fudged a little bit" comments. Queue status after the September 6 audit: **Open Model Trust is published**; **Yann LeCun** is now a standalone review unit; **Open Weights, Closed Habits** and **World Model** remain in this cluster.*
 
 - **Open Model Trust** — **published** at `entries/open-model-trust.md`. Working definition: in open ecosystems, the durable asset is not only model quality but the community's confidence that claims are reproducible, versions are named honestly, and benchmarks match the artifact users can actually download. Previously reviewed as **Trust Is the Product** on 2026-06-17; Prof marked RED and suggested **Open Model Trust** as the better term. Especially relevant to open weights, local sovereignty, evals, and the Dictionary's own evidence standards.
 - **Open Weights, Closed Habits** — working definition: the contradiction where a lab releases model weights but behaves institutionally like a closed lab under pressure: selective disclosure, benchmark theater, narrative control, special leaderboard variants, missing technical receipts. The Llama 4 launch is the worked example.
-- **Yann LeCun** — named-person entry to add to the Dictionary's people list. Focus: Turing Award winner; FAIR founder / former Meta chief scientist; long-running LLM skeptic; advocate of world models, JEPA, objective-driven AI, open-source/open-weights ecosystems, and European / non-US-non-China AI sovereignty. Include his January 2026 AMI / Advanced Machine Intelligence Labs move: Paris-headquartered company pronounced *ami* ("friend"), positioned as a contrarian bet against LLM-only scaling and focused on world models for the physical world. Treat him as the counter-pole to the Dario/Big-Blob scaling worldview: not anti-AI, but anti-LLM-as-final-form.
 - **World Model** — glossary / concept entry. Working definition: an AI system's learned internal representation of how some part of the world behaves, especially the causal / physical dynamics needed to predict consequences of actions. In LeCun's sense, the missing ingredient in LLM-only systems: not better text prediction, but a model of reality that supports planning, common sense, robotics, autonomous driving, industrial-control prediction, and reliable agentic action. Include JEPA as LeCun's proposed route: predict abstract representations rather than every raw pixel/token detail.
 
 **Why this belongs:** Llama's early power came from the implied open-weights contract: *you can test us; you do not have to trust us.* The Llama 4 controversy matters because it weakened that contract. LeCun belongs in the same cluster because his departure/new company reframes Meta's AI story as a split between open research culture, product pressure, and the LLM-vs-world-model argument. *World Model* is the necessary concept entry next to LeCun: without it, his critique of LLM scaling has no local definition. Cross-link later to *Llama*, *Meta AI*, *DeepSeek*, *Sovereign Compute*, *Provenance*, *Scaling Laws*, *Big Blob of Compute*, *Agent*, *Tool*, and the future benchmark / Code Needle notes.

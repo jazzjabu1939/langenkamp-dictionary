@@ -125,6 +125,7 @@ The institutions producing the frontier models. The Dictionary's editorial posit
 - [Google DeepMind](entries/google-deepmind.md) — Gemini, AlphaGo; led by Demis Hassabis.
 - [Demis Hassabis](entries/demis-hassabis.md) — DeepMind's central figure; source for several Dictionary terms from AlphaGo, AlphaFold, and agentic AI.
 - [Meta AI](entries/meta-ai.md) — Llama; the most-downloaded open-weights line.
+- [Yann LeCun](entries/yann-lecun.md) — FAIR founder and world-model advocate; the leading counter-pole to LLM-only scaling.
 - [xAI](entries/xai.md) — Grok, Colossus training cluster.
 - [Mistral](entries/mistral.md) — leading European frontier-model lab.
 - [Timothée Lacroix](entries/timothee-lacroix.md) — Mistral co-founder/CTO; useful for the enterprise-sovereignty framing of control, deployment ownership, and workflow trust.
@@ -352,7 +353,6 @@ The Dictionary is a work in progress. Honest status of near-term candidates as o
 **Substantive dictionary entries still pending:**
 
 - *Open Weights, Closed Habits* — the contradiction of open-weight release with closed-lab habits under pressure.
-- *Yann LeCun* — the world-model counter-pole to the big-blob scaling worldview.
 - *World Model* — the concept needed to understand LeCun's critique of LLM-only scaling.
 - *Agent Health* / *Harness Hygiene* — the operational-health cluster from heartbeat, memory, and cron diagnosis.
 - *Backup Performance Art* — the difference between backup ritual and actual restore confidence.
