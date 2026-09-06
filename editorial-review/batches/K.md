@@ -1,6 +1,6 @@
 # Batch K — Plain-Prose Review
 
-**State:** approved; publication verification pending
+**State:** approved and published
 
 **Baseline:** `820ab55`
 
@@ -56,4 +56,4 @@ All four pages were inspected for headings, literal `.md` URLs, distinctive revi
 
 ## Publication gate
 
-Professor Langenkamp approved Batch K on 6 September 2026. The exact approved tree must pass the repository checks, GitHub workflows, Pages deployment, and live-page verification before Batch L begins.
+Professor Langenkamp approved Batch K on 6 September 2026. The exact committed tree passed both GitHub workflows and live-page verification for all four entries. Batch L may now begin from the deployed K baseline.
