@@ -15,10 +15,10 @@ published: true
 
 Discovery is not the finish line. A defender must validate the flaw, design a patch, test it against breakage, distribute it, and persuade or compel operators to install it. An attacker needs only a workable path into enough unpatched systems.
 
-AI can accelerate both sides. A model that finds flaws at machine speed may shorten the time needed to detect and fix them. It may also enlarge the number of actors able to discover or exploit them. The result depends on the *[Offense-Defense Balance](offense-defense-balance.md)*, the size of the *[Patch Gap](patch-gap.md)*, and the remaining *[Window of Exposure](window-of-exposure.md)*.
+AI can accelerate both sides. A model that finds flaws at machine speed may shorten the time needed to detect and fix them. It may also enlarge the number of actors able to discover or exploit them. The result depends on the *[Offense-Defense Balance](/entries/offense-defense-balance/)*, the size of the *[Patch Gap](/entries/patch-gap/)*, and the remaining *[Window of Exposure](/entries/window-of-exposure/)*.
 
 “Who found the bug first?” is therefore the wrong stopping question. The operational question is whether defenders closed the exposure before attackers converted discovery into harm.
 
 ## See also
 
-*[Cyber Reasoning System](cyber-reasoning-system.md)* · *[Bugmageddon](bugmageddon.md)*
+*[Cyber Reasoning System](/entries/cyber-reasoning-system/)* · *[Bugmageddon](/entries/bugmageddon/)*

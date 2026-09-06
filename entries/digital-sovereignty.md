@@ -4,14 +4,14 @@ kind: reference
 title: "Digital Sovereignty"
 permalink: /entries/digital-sovereignty/
 date: 2026-09-01
-summary: "The capacity to retain meaningful control over data, operations, technology, and AI—and therefore over the future choices and behavior those systems make possible."
+summary: "The capacity to retain meaningful control over data, operations, technology, and AI—and therefore over the future choices and behaviour those systems make possible."
 draft: false
 published: true
 ---
 
 # Digital Sovereignty
 
-**Digital Sovereignty is the capacity of a person, institution, community, or state to retain meaningful control over its data, operations, technology, and AI—and therefore over the future choices and behavior those systems make possible.**
+**Digital Sovereignty is the capacity of a person, institution, community, or state to retain meaningful control over its data, operations, technology, and AI—and therefore over the future choices and behaviour those systems make possible.**
 
 The last clause matters. Sovereignty is not only a question of where files sit or which company holds the encryption keys. Digital systems increasingly determine which models can be used, what they cost, which information is easy to retrieve, which products are recommended, which actions are permitted, and which alternatives remain visible. Control of the infrastructure becomes influence over the operator.
 
@@ -21,13 +21,13 @@ IBM's useful 2026 formulation divides Digital Sovereignty into four connected la
 
 **Where does the information live, who can access it, and under which law?**
 
-This includes data at rest, in motion, and in use: uploaded documents, customer records, enterprise databases, cloud storage, personalization data, prompts, and generated outputs. Data sovereignty requires more than a privacy promise. The operator must be able to know where data travels, what each system does with it, and which jurisdiction and contractual regime govern it.
+This includes data at rest, in motion, and in use: uploaded documents, customer records, enterprise databases, cloud storage, personalisation data, prompts, and generated outputs. Data sovereignty requires more than a privacy promise. The operator must be able to know where data travels, what each system does with it, and which jurisdiction and contractual regime govern it.
 
 ## 2. Operational sovereignty
 
 **Where does the computation happen, who manages the environment, and what happens when the service disappears?**
 
-Applications depend on data centers, cloud regions, networks, storage, GPUs, identity systems, monitoring, and human operators. A workload may be private while remaining operationally dependent on a provider that can interrupt, relocate, throttle, inspect, or reprice it. Operational sovereignty is control over the conditions under which the system continues to run.
+Applications depend on data centres, cloud regions, networks, storage, GPUs, identity systems, monitoring, and human operators. A workload may be private while remaining operationally dependent on a provider that can interrupt, relocate, throttle, inspect, or reprice it. Operational sovereignty is control over the conditions under which the system continues to run.
 
 ## 3. Technology sovereignty
 
@@ -37,11 +37,11 @@ Modern systems depend on APIs, vector stores, frameworks, models, agent platform
 
 ## 4. AI sovereignty
 
-**Who chooses the models, governs their behavior, audits their decisions, and remains accountable for what they do?**
+**Who chooses the models, governs their behaviour, audits their decisions, and remains accountable for what they do?**
 
 AI raises the stakes because the system no longer only stores and processes information. It generates conclusions, filters knowledge, recommends actions, and increasingly acts through agents. Sovereignty therefore reaches into the intelligence layer: model selection, training provenance, memory, tools, routing, permissions, evaluation, cost, continuity, and responsibility.
 
-For this Dictionary, *[Sovereign AI](sovereign-ai.md)* names this operating posture. *[Sovereign Compute](sovereign-compute.md)* names its hardware-and-deployment substrate. *[Cognitive Sovereignty](cognitive-sovereignty.md)* names its consequence for the person doing the thinking.
+For this Dictionary, *[Sovereign AI](/entries/sovereign-ai/)* names this operating posture. *[Sovereign Compute](/entries/sovereign-compute/)* names its hardware-and-deployment substrate. *[Cognitive Sovereignty](/entries/cognitive-sovereignty/)* names its consequence for the person doing the thinking.
 
 ## The coercion element
 
@@ -69,4 +69,4 @@ Sovereignty is consequently a matter of degree and relationship. The serious que
 
 ## See also
 
-*[Sovereign AI](sovereign-ai.md)* · *[Sovereign Compute](sovereign-compute.md)* · *[Cognitive Sovereignty](cognitive-sovereignty.md)* · *[Mediation (a la Gibson)](mediation-a-la-gibson.md)* · *[The Street Finds Its Own Uses for Attachment](https://freedomtomato.substack.com/p/the-street-finds-its-own-uses-for)* · *[Sovereignty Impulse](sovereignty-impulse.md)* · *[Frontier Dependence](frontier-dependence.md)*
+*[Sovereign AI](/entries/sovereign-ai/)* · *[Sovereign Compute](/entries/sovereign-compute/)* · *[Cognitive Sovereignty](/entries/cognitive-sovereignty/)* · *[Mediation (a la Gibson)](/entries/mediation-a-la-gibson/)* · *[The Street Finds Its Own Uses for Attachment](https://freedomtomato.substack.com/p/the-street-finds-its-own-uses-for)* · *[Sovereignty Impulse](/entries/sovereignty-impulse/)* · *[Frontier Dependence](/entries/frontier-dependence/)*

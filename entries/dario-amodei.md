@@ -9,18 +9,18 @@ draft: false
 published: true
 ---
 
-Dario Amodei is the co-founder and CEO of *[Anthropic](anthropic.md)*. For this Dictionary, he matters as one of the most important living examples of the AI-safety-founder problem: what happens when a group of serious people leaves a faster-moving institution, builds a safety-oriented lab, and then must operate that lab inside the capital, compute, and competitive realities of frontier AI.
+Dario Amodei is the co-founder and CEO of *[Anthropic](/entries/anthropic/)*. For this Dictionary, he is a central example of the AI-safety-founder problem: what happens when researchers build a safety-oriented lab and then operate it inside the capital, compute, and competitive conditions of frontier AI.
 
-The interest is not gossip and not hero worship. It is structural. Anthropic’s founding story, Constitutional AI work, Claude model family, Amazon/Google financing, and expanding compute arrangements make Amodei a central figure in *[The Good Intentions Problem](good-intentions-problem.md)*. Good intentions matter. So do the instruments those intentions acquire.
+Anthropic’s founding story, Constitutional AI work, Claude model family, Amazon and Google financing, and expanding compute arrangements make Amodei a central figure in *[The Good Intentions Problem](/entries/good-intentions-problem/)*. The case connects a founder's stated safety commitments to the governance, incentives, and infrastructure of the institution he leads.
 
-The relevant question is not “is Dario good?” That is too small and too easy to answer badly from outside. The better question is: **can a safety-motivated frontier lab remain a positive moral force after it becomes a hyperscale commercial institution?** Maybe. We should hope so. But hope is not an architecture.
+The relevant question is whether a safety-motivated frontier lab can preserve those commitments after becoming a hyperscale commercial institution. Character judgments about an individual cannot answer it; the evidence lies in institutional design and conduct.
 
 Reference video: **“Building Anthropic | A conversation with our co-founders”** on YouTube: <https://youtu.be/om2lIWXLLN4?si=IIoZbUNBGRwWLdRr>.
 
 ## See also
 
-- *[Anthropic](anthropic.md)*
-- *[Constitutional AI](constitutional-ai.md)*
-- *[Claude](claude.md)*
-- *[The Good Intentions Problem](good-intentions-problem.md)*
-- *[Benevolence with Instruments](benevolence-with-instruments.md)*
+- *[Anthropic](/entries/anthropic/)*
+- *[Constitutional AI](/entries/constitutional-ai/)*
+- *[Claude](/entries/claude/)*
+- *[The Good Intentions Problem](/entries/good-intentions-problem/)*
+- *[Benevolence with Instruments](/entries/benevolence-with-instruments/)*

@@ -17,6 +17,6 @@ This is the workflow version of the Dictionary's broader sovereignty argument: i
 
 ## See also
 
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Approval Gating](approval-gating.md)*
-- *[Earned Parallelism](earned-parallelism.md)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Approval Gating](/entries/approval-gating/)*
+- *[Earned Parallelism](/entries/earned-parallelism/)*

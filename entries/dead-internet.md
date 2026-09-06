@@ -17,6 +17,6 @@ This entry exists mostly as a bridge. Readers who arrive through *Dead Internet*
 
 ## See also
 
-- *[Zombie Internet](zombie-internet.md)*
-- *[AI Writing](ai-writing.md)*
-- *[The Sinceerly Stack](sinceerly-stack.md)*
+- *[Zombie Internet](/entries/zombie-internet/)*
+- *[AI Writing](/entries/ai-writing/)*
+- *[The Sinceerly Stack](/entries/sinceerly-stack/)*

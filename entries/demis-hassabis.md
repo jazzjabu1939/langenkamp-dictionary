@@ -16,4 +16,4 @@ He is also useful because his career keeps the scientific and commercial registe
 
 ## See also
 
-[Google DeepMind](google-deepmind.md) · [Move 37](move-37.md) · [Root Node Problems](root-node-problems.md) · [Capability Overhang](capability-overhang.md) · [Agentic Threshold](agentic-threshold.md)
+[Google DeepMind](/entries/google-deepmind/) · [Move 37](/entries/move-37/) · [Root Node Problems](/entries/root-node-problems/) · [Capability Overhang](/entries/capability-overhang/) · [Agentic Threshold](/entries/agentic-threshold/)

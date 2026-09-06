@@ -8,7 +8,7 @@ Completed batches:
 - **B — approved and published in `32d3beb`**
 - **C — approved and published in `6dbada8`**
 
-Current batch: **D — reviewing in an isolated worktree**
+Current batch: **D — ready for Professor Langenkamp**
 
 Next batch: **E — held pending Professor Langenkamp's review of D**
 

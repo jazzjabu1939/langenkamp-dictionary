@@ -25,4 +25,4 @@ The useful caution is the same one that applies to any gifted interviewer: a lon
 
 ## See also
 
-*[Dylan Patel](dylan-patel.md)* · *[Big Blob of Compute](big-blob-of-compute.md)* · *[Country of Geniuses in a Data Center](country-of-geniuses-in-a-data-center.md)* · *[Lab Character](lab-character.md)*
+*[Dylan Patel](/entries/dylan-patel/)* · *[Big Blob of Compute](/entries/big-blob-of-compute/)* · *[Country of Geniuses in a Data Center](/entries/country-of-geniuses-in-a-data-center/)* · *[Lab Character](/entries/lab-character/)*
