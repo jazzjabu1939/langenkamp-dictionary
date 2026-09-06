@@ -7,6 +7,7 @@ date: 2026-05-23
 summary: "The Dictionary’s practice of naming the people, books, films, interviews, lectures, and essays that have influenced its thinking. Provenance, not name-dropping; education requires showing the sources of one’s attention."
 draft: false
 published: true
+last_revised: 2026-09-06
 ---
 
 **Influence Ledger** names the Dictionary’s practice of making its intellectual inputs visible.
@@ -21,9 +22,9 @@ That is a *cheng* move: show the sources of attention.
 
 ## See also
 
-- *[Cheng](cheng.md)*
-- *[AI Writing](ai-writing.md)*
-- *[Cooperative Writing](cooperative-writing.md)*
-- *[William Gibson](william-gibson.md)*
-- *[Ethan Mollick](ethan-mollick.md)*
-- *[Amanda Askell](amanda-askell.md)*
+- *[Cheng](/entries/cheng/)*
+- *[AI Writing](/entries/ai-writing/)*
+- *[Cooperative Writing](/entries/cooperative-writing/)*
+- *[William Gibson](/entries/william-gibson/)*
+- *[Ethan Mollick](/entries/ethan-mollick/)*
+- *[Amanda Askell](/entries/amanda-askell/)*

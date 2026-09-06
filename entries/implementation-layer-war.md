@@ -3,11 +3,11 @@ layout: default
 kind: reference
 title: "Implementation Layer War"
 permalink: /entries/implementation-layer-war/
-summary: "the struggle over who owns the layer where frontier AI capability becomes real institutional work: workflow design, permissions, evals, audit, recovery, and ongoing operational responsibility."
+summary: "The struggle over who owns the layer where frontier AI capability becomes real institutional work: workflow design, permissions, evaluation, audit, recovery, and ongoing operational responsibility."
 published: true
 seeded: 2026-05-14
 first_published: 2026-05-14
-last_revised: 2026-05-14
+last_revised: 2026-09-06
 ---
 
 # Implementation Layer War
@@ -22,11 +22,11 @@ last_revised: 2026-05-14
 
 For a while, the AI business looked as if it might be a model business. The frontier labs would build the intelligence, everyone else would rent it by the token, and the rest of the economy would politely arrange itself around the API invoice.
 
-This was always a little too tidy. Institutions do not buy intelligence in the abstract. They buy closed invoices, handled claims, cleaner procurement, faster diligence, safer code, fewer unread emails, and fewer meetings in which twelve people discuss whether the spreadsheet is up to date. The value appears only when the model is attached to a workflow that matters.
+That account was too tidy. Institutions do not buy intelligence in the abstract. They buy closed invoices, handled claims, cleaner procurement, faster diligence, safer code, fewer unread emails, and fewer meetings in which twelve people discuss whether the spreadsheet is up to date. The value appears only when the model is attached to a workflow that matters.
 
 That attachment layer is the implementation layer. It includes the unglamorous machinery that makes agents useful rather than merely impressive: access control, data plumbing, memory, prompts, tool permissions, approvals, evals, logging, rollback, audit, handoff, exception handling, and the human who owns the mess after launch.
 
-The war exists because this layer is now where the money is.
+The Dictionary calls this a war because the implementation layer carries revenue, operational control, institutional memory, and liability. Model providers, consultancies, systems-of-record vendors, investors, and specialist builders therefore have reasons to control it.
 
 ## The convergence Nate Jones names
 
@@ -44,7 +44,7 @@ One useful sub-concept here is **Business Object Proximity**.
 
 A business object is the noun the institution actually cares about: an invoice, a student submission, a purchase order, a support ticket, a sales opportunity, a claim, a trade, a contract, a bid, a patient record, a calendar event, a machine listing. A system has business object proximity when the agent is not merely chatting about the work but operating close to the object that defines the work.
 
-The distinction matters. A generic assistant that can discuss procurement is far from the business object. An agent that can inspect a purchase order, compare it to a vendor contract, check approval authority, draft the exception memo, route it to the right human, and log the decision is close to the business object. The second system is not necessarily more intelligent. It is more situated.
+A generic assistant that can discuss procurement is far from the business object. An agent that can inspect a purchase order, compare it to a vendor contract, check approval authority, draft the exception memo, route it to the right human, and log the decision is close to the business object. The second system is not necessarily more intelligent. It is more situated.
 
 This is why systems of record matter. Salesforce, Workday, SAP, ServiceNow, Canvas, Bloomberg, Epic, and the boring internal databases nobody wants to document are not just data stores. They are where the business objects live. To win the implementation layer, an agentic system has to live close enough to those objects to act without hallucinating its institutional context.
 
@@ -54,7 +54,7 @@ The prize in the Implementation Layer War is not a clever wrapper. It is an **as
 
 This is why simple model comparisons miss the point. A stronger model can improve the fabric, but it does not replace the fabric. The fabric is what remembers which tool may touch which file, which student data cannot leave the machine, which invoice needs Dan's approval, which workflow may spend money, which action requires a human, and which failure should wake the operator at 4 a.m.
 
-In the language of this Dictionary, the assembled workflow fabric is close to *[Nine Cauldrons, Six Dreams](nine-tripod-cauldrons.md)* in business clothes. The cauldrons are the durable artefacts: configuration, memory, policies, project files, permissions, source code, hardware, and institutional records. The dreams are the living processes: recurring checks, learning loops, exception handling, memory consolidation, review, and repair. Capability becomes durable only when both exist.
+In the language of this Dictionary, the assembled workflow fabric is *[The Nine Tripod Cauldrons / 九鼎](/entries/nine-tripod-cauldrons/)* in business clothes. The cauldrons are the durable artefacts: configuration, memory, policies, project files, permissions, source code, hardware, and institutional records. The dreams are the living processes: recurring checks, learning loops, exception handling, memory consolidation, review, and repair. Capability becomes durable only when both exist.
 
 ## Why this is not just consulting with better tools
 
@@ -86,12 +86,12 @@ The implementation layer is expensive because it is where all the non-demo reali
 
 But the opposite mistake is also possible. Institutions can over-govern the implementation layer until no agent can do anything useful. The point is not to freeze work in approval amber. The point is to build enough structure that delegation can safely increase.
 
-The war will not be won by whoever has the best model in isolation. It will be won by whoever can turn model capability into trusted, situated, recoverable work.
+The contest turns on who can turn model capability into trusted, situated, recoverable work.
 
 ## Related entries
 
-[Capability Overhang](capability-overhang.md) · [The Judge Layer](judge-layer.md) · [Aunties](aunties.md) · [Sovereign Compute](sovereign-compute.md) · [The Nine Tripod Cauldrons / 九鼎](nine-tripod-cauldrons.md) · [Gateway](gateway.md) · [Durable Workflow](durable-workflow.md)
+[Capability Overhang](/entries/capability-overhang/) · [The Judge Layer](/entries/judge-layer/) · [Aunties](/entries/aunties/) · [Sovereign Compute](/entries/sovereign-compute/) · [The Nine Tripod Cauldrons / 九鼎](/entries/nine-tripod-cauldrons/) · [Gateway](/entries/gateway/) · [Durable Workflow](/entries/durable-workflow/)
 
 ## Source
 
-Seeded from Professor Langenkamp and Thea's May 14, 2026 discussion of Nate Jones's video transcript, *Why finance, hyperscalers, and companies are converging*. Jones's useful framing was the convergence of finance, frontier labs, consultancies, and companies around agentic workflow deployment. The Dictionary's extension is to name the contested terrain as the Implementation Layer War and to connect it to Business Object Proximity, the assembled workflow fabric, the Judge Layer, Aunties, and Nine Cauldrons, Six Dreams.
+Seeded from Professor Langenkamp and Thea's May 14, 2026 discussion of Nate Jones's video transcript, *Why finance, hyperscalers, and companies are converging*. Jones's framing concerned the convergence of finance, frontier labs, consultancies, and companies around agentic workflow deployment. **Implementation Layer War**, **Business Object Proximity**, and **assembled workflow fabric** are the Dictionary's extensions.

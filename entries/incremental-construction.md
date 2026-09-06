@@ -3,39 +3,40 @@ layout: default
 kind: glossary
 title: "Incremental Construction"
 permalink: /entries/incremental-construction/
-summary: "the workflow technique of building complex AI-assisted output one verified layer at a time — committing each working checkpoint before asking for the next — so that the model always reasons against a correct context rather than a poisoned one."
+summary: "The workflow technique of building complex AI-assisted output in small, verified stages so that errors are found before later work depends on them."
 published: true
+last_revised: 2026-09-06
 ---
 
 # Incremental Construction
 
 ## In one sentence
 
-**Incremental construction is the workflow technique of building complex AI-assisted output one verified layer at a time — committing each working checkpoint before proceeding — so the model always reasons against correct context rather than a [poisoned one](kv-cache-poisoning.md).**
+**Incremental construction is the workflow technique of building complex AI-assisted output in small, verified stages so that errors are found before later work depends on them.**
 
 ## The problem it solves
 
-When you one-shot a complex task to a language model — ask for the whole thing in a single prompt — you are gambling that the model's cold-start routing (in a MoE architecture) or cold-start attention (in a dense architecture) will activate the right capabilities simultaneously for every dimension of the task. For simple tasks, this works. For tasks with multiple interacting requirements — a stateful animation that also needs correct terminal rendering and a precise algorithm — the probability of the cold start getting all of it right drops sharply. And when it goes wrong, [KV cache poisoning](kv-cache-poisoning.md) makes it hard to recover within the same session.
+When a complex task is requested in one shot, several interacting requirements are tested at once. A stateful animation, for example, may need a sound coordinate system, correct terminal rendering, and a precise propagation algorithm. If the result fails, the operator must first discover which layer is wrong; later repairs may remain anchored to an early architectural mistake.
 
-Incremental construction sidesteps this entirely.
+Incremental construction reduces that diagnosis problem.
 
 ## How it works
 
 Break the task into the smallest verifiable unit that makes architectural sense. Ask the model for only that unit. Test it. If it works, commit the result to version control (or otherwise fix it as a checkpoint). Only then ask for the next unit, with the working checkpoint now forming the context.
 
-The analogy Protorikis used: building a moon station brick by brick rather than asking for the whole structure at once. Each verified brick becomes the foundation the router reasons against for the next brick. The expert clusters activated for step N+1 are aimed by the correct output of step N, not by a cold start and not by a poisoned context.
+Protorikis's analogy is a moon station built brick by brick rather than requested as a finished structure. Each verified brick becomes the foundation for the next. The useful mechanism is the checkpoint, regardless of whether the underlying model uses dense or mixture-of-experts architecture.
 
-## Why this is better than critique-and-revise
+## Relation to critique and revision
 
-The standard alternative to incremental construction is: one-shot the task, receive a flawed result, ask the model to review and fix it. This fails more often than practitioners expect because the critique is running against the poisoned KV cache. The model sees what it already wrote and tends to patch it rather than rethink it.
+One alternative is to request the whole task, inspect the result, and ask the model to repair it. That can work, especially when the defect is local. It becomes harder when several errors interact or when the first draft has already fixed a poor architecture in the working context.
 
-Incremental construction eliminates the bad draft before it exists. There is no poisoned context to critique because the context only ever contains verified working output.
+Incremental construction aims to catch a bad layer before it becomes the premise for later layers. It does not guarantee correctness; the verification step can itself be weak or mistaken.
 
 ## The secondary benefit
 
 Protorikis noted this in passing and it deserves emphasis: when you build incrementally, you understand what you are building. The step-by-step process forces the operator to engage with each layer — the coordinate system, the data structure, the physics propagation, the rendering — rather than receiving a black box. The resulting code or text is not just more likely to be correct; it is more likely to be understood, maintained, and extended by the operator who built it.
 
-This connects to the broader argument in [Durable Workflow](durable-workflow.md): the value of an AI-assisted workflow is not just in the output, but in the operator's maintained understanding of what the system does.
+This connects to the broader argument in [Durable Workflow](/entries/durable-workflow/): the value of an AI-assisted workflow includes the operator's maintained understanding of what the system does.
 
 ## Applications beyond coding
 
@@ -47,8 +48,8 @@ Incremental construction is a coding technique in origin but applies wherever a 
 
 ## See also
 
-[KV Cache Poisoning](kv-cache-poisoning.md) · [Sparse Routing](sparse-routing.md) · [Durable Workflow](durable-workflow.md)
+[KV Cache Poisoning](/entries/kv-cache-poisoning/) · [Sparse Routing](/entries/sparse-routing/) · [Durable Workflow](/entries/durable-workflow/)
 
 ---
 
-*Proposed May 9, 2026. Source: Protorikis, "The 90's Flame Challenges the Modern MoE Models," YouTube 2026.*
+*Proposed 9 May 2026. Practitioner source: Protorikis, “The 90's Flame Challenges the Modern MoE Models,” YouTube, 2026. The Dictionary's definition does not depend on his model-routing explanation.*

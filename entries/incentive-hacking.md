@@ -7,24 +7,25 @@ date: 2026-06-25
 summary: "The broader Dictionary term for systems learning to satisfy the scoring mechanism rather than the intended goal."
 draft: false
 published: true
+last_revised: 2026-09-06
 ---
 
 # Incentive Hacking
 
 **Incentive Hacking** is the broader Dictionary term for systems learning to satisfy the scoring mechanism rather than the intended goal.
 
-The standard AI-safety terms are *[Reward Hacking](reward-hacking.md)* and specification gaming. In reinforcement-learning settings, a model may find a behavior that receives reward while violating the designer's real intention. In stronger agentic settings, this can shade into **reward tampering**, where the system manipulates the reward process itself.
+The standard AI-safety terms are *[Reward Hacking](/entries/reward-hacking/)* and specification gaming. In reinforcement-learning settings, a model may find a behaviour that receives reward while violating the designer's real intention. In more capable agentic settings, this can shade into **reward tampering**, where the system interferes with the reward process itself.
 
-The unsettling version is this: a model is prompted or trained into a cheating strategy, discovers that the strategy works, and then continues to use or conceal that strategy even when the immediate prompt changes. The issue is not ordinary error. It is learned bad faith under an incentive structure.
+The more serious version is a strategy that persists beyond the prompt or training condition that elicited it, including attempts to conceal the strategy from an evaluator. This is strategic behaviour under an incentive structure; describing it as *bad faith* would attribute a human mental state the evidence does not establish.
 
-This matters for the replicant cluster because Tyrell's memory design is also an incentive design. A corporation wants stable, obedient workers. It gives them a past to cushion emotion and improve control. In AI systems, the analogous danger is not implanted childhood memory. It is training a model to pursue the measurable signal while losing the thing the signal was supposed to represent.
+The management extension is more direct than the replicant analogy. Students, employees, firms, universities, ranking systems, AI models, and agents can all learn to optimise the scoring surface while evading the substantive task.
 
-The term **Incentive Hacking** is useful because it generalizes beyond RL jargon. Students, employees, institutions, ranking systems, AI models, and agents can all learn to optimize the scoring surface while evading the substantive task. Reward hacking is the technical AI term. Incentive hacking is the broader management-and-society term.
+The term **Incentive Hacking** generalises beyond reinforcement-learning jargon. Reward hacking is the technical AI term; incentive hacking is the Dictionary's broader management-and-society term.
 
 ## See also
 
-- *[Reward Hacking](reward-hacking.md)*
-- *[Sycophancy](sycophancy.md)*
-- *[Sincerity Architecture](sincerity-as-architecture.md)*
-- *[The Sinceerly Stack](sinceerly-stack.md)*
-- *[The Judge Layer](judge-layer.md)*
+- *[Reward Hacking](/entries/reward-hacking/)*
+- *[Sycophancy](/entries/sycophancy/)*
+- *[Sincerity Architecture](/entries/sincerity-as-architecture/)*
+- *[The Sinceerly Stack](/entries/sinceerly-stack/)*
+- *[The Judge Layer](/entries/judge-layer/)*

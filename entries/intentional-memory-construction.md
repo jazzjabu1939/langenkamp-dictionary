@@ -7,13 +7,14 @@ date: 2026-06-25
 summary: "The deliberate creation of memory scaffolds, shared background, origin stories, and continuity artifacts for a person, group, or agent."
 draft: false
 published: true
+last_revised: 2026-09-06
 ---
 
 # Intentional Memory Construction
 
 **Intentional Memory Construction** is the deliberate creation of memory scaffolds, shared background, origin stories, and continuity artifacts for a person, group, or agent.
 
-It is broader than *[Implanted Memory](implanted-memory.md)*. Implanted memory names the Tyrell act: insertion without honest consent, presented as native experience. Intentional memory construction names the design practice itself. It can be manipulative, but it need not be.
+It is broader than *[Implanted Memory](/entries/implanted-memory/)*. Implanted memory names the Tyrell act: insertion without honest consent, presented as native experience. Intentional memory construction names the design practice itself. It can be manipulative, but it need not be.
 
 Humans already live inside constructed memory. Families narrate childhood back to children. Schools teach institutional origin stories. Nations build civic memory through holidays, monuments, songs, textbooks, and omissions. Two siblings may inherit different versions of the same family past. None of this makes memory fake in the simple sense. It means memory is partly social architecture.
 
@@ -27,8 +28,8 @@ The open question is whether such construction helps people build healthier huma
 
 ## See also
 
-- *[Implanted Memory](implanted-memory.md)*
-- *[Blade Runner](blade-runner.md)*
-- *[Anchored Persona](anchored-persona.md)*
-- *[Relationally Real Memory](relationally-real-memory.md)*
-- *[Agentic Attachment](agentic-attachment.md)*
+- *[Implanted Memory](/entries/implanted-memory/)*
+- *[Blade Runner](/entries/blade-runner/)*
+- *[Anchored Persona](/entries/anchored-persona/)*
+- *[Relationally Real Memory](/entries/relationally-real-memory/)*
+- *[Agentic Attachment](/entries/agentic-attachment/)*

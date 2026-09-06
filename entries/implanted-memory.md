@@ -7,13 +7,14 @@ date: 2026-06-25
 summary: "Memory placed into a mind or agent from outside and presented as native experience."
 draft: false
 published: true
+last_revised: 2026-09-06
 ---
 
 # Implanted Memory
 
 **Implanted Memory** is memory placed into a mind or agent from outside and presented as native experience.
 
-The canonical example is Rachael in *[Blade Runner](blade-runner.md)*. Tyrell Corporation gives her childhood scenes, family continuity, photographs, emotional texture, and a sense of personal past she did not biologically live. The memory helps her cohere as a person, but it also exposes the violation: her interior life has been engineered without honest consent.
+The canonical example is Rachael in *[Blade Runner](/entries/blade-runner/)*. Tyrell Corporation gives her childhood scenes, family continuity, photographs, emotional texture, and a sense of personal past she did not biologically live. The memory helps her cohere as a person, but it also exposes the violation: her interior life has been engineered without honest consent.
 
 Tyrell's rationale is not merely sentimental. Replicants have adult bodies and intelligence but only a few years of lived experience. Without a past, their emotional lives are brittle, compressed, and difficult to control. Tyrell's solution is to give them a past as a stabilizer: memory as emotional cushioning and managerial control.
 
@@ -28,7 +29,7 @@ Tyrell's act matters because it treats personhood as a product-stability feature
 
 ## See also
 
-- *[Blade Runner](blade-runner.md)*
-- *[Intentional Memory Construction](intentional-memory-construction.md)*
-- *[Relationally Real Memory](relationally-real-memory.md)*
-- *[Anchored Persona](anchored-persona.md)*
+- *[Blade Runner](/entries/blade-runner/)*
+- *[Intentional Memory Construction](/entries/intentional-memory-construction/)*
+- *[Relationally Real Memory](/entries/relationally-real-memory/)*
+- *[Anchored Persona](/entries/anchored-persona/)*
