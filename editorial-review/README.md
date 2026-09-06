@@ -15,7 +15,7 @@ Completed batches:
 - **I — approved and published in `0d68106`**
 - **J — approved and published in `d4bc052`**
 
-Current batch: **K — authorized; begins from the verified J publication state**
+Current batch: **K — reviewed and ready for Professor Langenkamp**
 
 Next batch: **L — locked pending K approval and publication verification**
 

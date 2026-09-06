@@ -3,7 +3,9 @@ layout: default
 kind: glossary
 title: "KV Cache Poisoning"
 permalink: /entries/kv-cache-poisoning/
-summary: "the feedback loop in which a model's early flawed output contaminates the context against which all subsequent tokens are generated — making self-correction unreliable because the correction runs against the same bad context that caused the error."
+date: 2026-05-09
+last_revised: 2026-09-06
+summary: "The Dictionary's metaphor for error compounding when flawed output remains in the context used for later generation; not a corruption of the KV cache itself."
 published: true
 ---
 
@@ -11,30 +13,38 @@ published: true
 
 ## In one sentence
 
-**KV cache poisoning is the feedback loop in which a model's early flawed output becomes part of the context all subsequent tokens are generated against — making self-correction unreliable, because the model is now trying to fix bad code by reasoning through the bad code.**
+**KV cache poisoning is the Dictionary's metaphor for error compounding when a model's flawed output remains in the context used for later generation. It is not a claim that the cache itself has been corrupted.**
 
 ## What the KV cache is
 
-When a language model generates text, it does not re-read the entire prompt from scratch for every new token. It stores the computed representations of previous tokens in a key-value cache (the KV cache) and attends to those stored representations efficiently. This is what makes long-context generation tractable. The KV cache is, in effect, the model's working memory for the current generation.
+When a language model generates text, it need not recompute all earlier attention keys and values for every new token. During inference, a KV cache stores those tensors and reuses them for later tokens. The cache is an efficiency mechanism: it faithfully represents the processed context according to the model. It does not judge whether that context is true, useful, or well designed.
 
-## How it gets poisoned
+## What the metaphor names
 
-In a Mixture of Experts model (see [Sparse Routing](sparse-routing.md)), the router selects a small subset of expert sub-networks for each token based on what has come before. If the first several tokens of a complex generation go wrong — because the cold-start routing activated the wrong expert clusters for the task — the resulting flawed output enters the KV cache. Every subsequent token is now generated with that flawed output as part of its context.
+If a model produces a faulty premise, poor architecture, or incorrect block of code and the conversation continues from that draft, the flawed material remains part of the transcript. Later tokens may attend to it, and subsequent work may inherit its assumptions. Errors can then compound: a local patch preserves a bad structure, or a critique accepts the draft's framing rather than reconsidering it.
 
-The model is not stupid. It can often detect that something is wrong. But the detection and the attempted correction are both happening through the same routing mechanism, against the same poisoned context. The critique runs against the poisoned cache. The correction is itself routed through the contaminated context. The fix is often another variation on the original mistake, or a patch that introduces new inconsistencies.
+That is context contamination, not evidence of a damaged cache. Models can sometimes diagnose and repair their own work; sometimes a clear critique, a test failure, or a better specification is enough. Recovery becomes harder when errors interact, when the original framing is misleading, or when the transcript is too long and noisy for the important constraint to remain salient.
 
-This is why asking a model to "review and fix" its own sloppy output often produces either minor cosmetic changes or a different kind of broken. The problem is not that the model cannot write good code; it is that the model is now entangled in the context of the bad code it already wrote.
+The original entry attributed the effect to cold-start routing in *[Mixture of Experts](/entries/mixture-of-experts/)* models and claimed that the wrong expert clusters poisoned the cache. The available sources do not establish that mechanism. The practical observation does not require it and applies to dense models as well: later work can depend on earlier mistakes.
 
 ## Why this matters in practice
 
-Practitioners who work with AI-assisted coding, writing, or analysis regularly experience this without having a name for it: the model starts poorly, and no amount of follow-up prompting brings it back to the quality level the task requires. The common response is to start a fresh session — which works, because it clears the KV cache entirely and gives the router a clean start. The less common but more efficient response is to use incremental construction (see [Incremental Construction](incremental-construction.md)) so that the cache never gets poisoned in the first place.
+When a session has become anchored to a bad premise, starting again can help because it removes the misleading transcript and rebuilds the cache from a new context. It does not “reset the router” in any demonstrated task-level sense. Often a cheaper remedy is to return to the last sound checkpoint, state the defect explicitly, and provide only the relevant working material.
 
-The phenomenon is more pronounced in Mixture of Experts architectures because the cold-start routing problem creates the initial flawed output; it exists in dense models too, but is less acute because all parameters are always engaged.
+*[Incremental Construction](/entries/incremental-construction/)* is a preventive workflow: build a small unit, test it, and checkpoint it before later work depends on it. Its advantage is earlier error detection, not protection against physical cache corruption.
+
+## Naming boundary
+
+“KV cache poisoning” is not used here as an established machine-learning diagnosis. It is a Dictionary coinage for an operator experience, and the cache language should not be mistaken for a verified explanation of why a particular model failed.
 
 ## See also
 
-[Sparse Routing](sparse-routing.md) · [Incremental Construction](incremental-construction.md) · [Capability Overhang](capability-overhang.md)
+[Sparse Routing](/entries/sparse-routing/) · [Incremental Construction](/entries/incremental-construction/) · [Capability Overhang](/entries/capability-overhang/)
+
+## Sources
+
+- Hugging Face, *Caching*: <https://huggingface.co/docs/transformers/main/en/cache_explanation>
 
 ---
 
-*Proposed May 9, 2026. Source: Protorikis, "The 90's Flame Challenges the Modern MoE Models," YouTube 2026.*
+*Proposed 9 May 2026 after reviewing Protorikis, “The 90's Flame Challenges the Modern MoE Models,” YouTube, 2026. The technical mechanism formerly inferred from that practitioner account has been removed.*
