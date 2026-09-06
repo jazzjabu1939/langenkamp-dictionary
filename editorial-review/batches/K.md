@@ -1,6 +1,6 @@
 # Batch K — Plain-Prose Review
 
-**State:** ready for Professor Langenkamp
+**State:** approved; publication verification pending
 
 **Baseline:** `820ab55`
 
@@ -56,4 +56,4 @@ All four pages were inspected for headings, literal `.md` URLs, distinctive revi
 
 ## Publication gate
 
-Batch K is isolated and unpublished. Batch L remains locked until Professor Langenkamp approves K and the exact approved commit passes publication and live-page verification.
+Professor Langenkamp approved Batch K on 6 September 2026. The exact approved tree must pass the repository checks, GitHub workflows, Pages deployment, and live-page verification before Batch L begins.

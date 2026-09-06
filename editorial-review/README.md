@@ -14,9 +14,10 @@ Completed batches:
 - **H — approved and published in `b876787`**
 - **I — approved and published in `0d68106`**
 - **J — approved and published in `d4bc052`**
+- **K — approved; publication verification pending**
 
-Current batch: **K — reviewed and ready for Professor Langenkamp**
+Current batch: **K — publication verification pending**
 
-Next batch: **L — locked pending K approval and publication verification**
+Next batch: **L — locked pending K publication verification**
 
 Batch ledgers live in `editorial-review/batches/`.
