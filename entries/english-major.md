@@ -3,26 +3,29 @@ layout: default
 kind: reference
 title: "English major"
 permalink: /entries/english-major/
-summary: "the kind of person who turns out to be surprisingly good at directing AI coding agents because the bottleneck has shifted from syntax to specification."
+date: 2026-05-02
+summary: "The Dictionary's shorthand for a writerly strength in agentic work: turning ambiguous intentions into clear specifications and judging the resulting output."
+draft: false
+published: true
 ---
 
 # English major
 
-*An informal but increasingly accurate piece of vocabulary describing one of the more surprising labor-market shifts of the 2024-2026 agentic-AI transition.*
+*The Dictionary's informal name for a skill pattern emerging around agentic work: people trained to specify, interpret, and edit may be unexpectedly useful when software can generate code.*
 
 ---
 
 ## In one sentence
 
-**An "English major" — used in the agentic-AI context — is the kind of person who turns out to be surprisingly good at directing AI coding agents because the work has quietly become a writing-and-judgement job rather than a syntax-memorization one, and who is now interviewing for software roles at companies that, three years ago, would have screened them out at the resume stage.**
+**An "English major," in this Dictionary's agentic-AI usage, is a person whose training in language, interpretation, and revision becomes technically useful because directing an agent requires clear specifications and critical reading of its work.**
 
 ## Why this term exists
 
 For roughly forty years, the cultural assumption in the technology industry was that *coding* and *writing* were two different skills exercised by two different kinds of people. Software engineering was held to be a STEM discipline; clear writing was a separate, softer competency, often dismissed as nice-to-have.
 
-Then agentic coding tools arrived. The bottleneck shifted. The question stopped being *can you remember the syntax for a hash map in this language?* and became *can you specify what you want clearly enough that the model gets it right?* The first question is a memorization problem. The second is a writing problem. The second turns out to be much harder, much rarer, and much more valuable.
+Then agentic coding tools arrived and moved part of the work. For some tasks, the immediate question shifted from *can you remember the syntax for a hash map in this language?* to *can you specify what you want clearly enough, inspect what the model produced, and recognise where it is wrong?* The first question includes recall. The second combines writing, domain knowledge, interpretation, and verification.
 
-The English-major phenomenon is the labor-market reflection of that shift. Companies that started their agentic-AI rollouts in 2024 quickly noticed that the people getting the best results from the new tools were not always the same people who had been getting the best results from the old tools. A non-trivial number of those over-performers had liberal-arts degrees, journalism backgrounds, or law-school training — disciplines that train *clear specification under ambiguity* as the central skill.
+The English-major phenomenon is the Dictionary's hypothesis about that shift. The best agent operators need not be the people with the fastest unaided syntax recall; strong writers, product managers, lawyers, and technically curious humanities graduates may bring useful training in **clear specification under ambiguity**. This is a claim to test against hiring and performance evidence, not a settled labour-market statistic.
 
 ## What it actually looks like
 
@@ -36,21 +39,21 @@ The "English major" pattern in practice:
 
 ## Working example
 
-In 2025-2026, several large engineering organizations reported that their highest-leverage agentic-coding power users were often people who had originally been hired for technical-writing, product-management, or developer-relations roles. Not exclusively — strong coders who could also write remained extraordinary. But the *floor* of the new top performer pool included people the prior screening process would have rejected. By 2026, several public job listings explicitly stated *"Liberal-arts background welcome; ability to specify clearly is the core skill."* This was not a charitable inclusion. It was an observation about who was getting the work done.
+A manager asks an agent to "build a dashboard for sales." A weak brief leaves *sales*, *dashboard*, users, time periods, data sources, permissions, and acceptance tests undefined. A strong operator turns the request into a bounded specification, asks the missing questions, reads the implementation critically, and tests the result. Writing skill does real technical work here, but only when joined to enough system knowledge to notice omissions and enough discipline to verify the output.
 
 ## Why this matters in a teaching context
 
-For a BBA or MBA classroom, the English-major phenomenon is one of the cleanest cases of a *value-chain disruption inverting the prior skills hierarchy* that students are likely to encounter in their careers. Yesterday's bottleneck (syntax) is automated. Yesterday's nice-to-have (clear writing) is the new bottleneck. The labor market is repricing accordingly.
+For a BBA or MBA classroom, the English-major hypothesis is a useful case of automation changing which complementary skills become valuable. Some syntax production can be delegated. Clear writing, problem framing, and verification may therefore carry more weight than they did in the old workflow. Whether employers reprice those skills—and by how much—is an empirical question still being answered.
 
-For the Isenberg context specifically: the management student who took the writing-intensive electives, who learned to write tight memos, and who can specify ambiguous business problems unambiguously is — in 2026 — better positioned for many AI-augmented roles than they would have realized two years ago. Worth saying out loud in advising conversations.
+For the Isenberg context specifically, the management student who took writing-intensive electives, learned to write tight memos, and can turn ambiguous business problems into testable instructions has a useful part of the AI-augmented skill set. The degree alone supplies neither technical judgement nor verification habits; those have to be learned too.
 
-A second framing: the English-major shift is what *zhengming* (the rectification of names) looks like when an industry has been mis-naming its bottleneck for forty years. The bottleneck was never syntax. It was always specification. The hiring practices that mistook one for the other are now correcting themselves.
+A second framing: the English-major shift is what *zhengming* (the rectification of names) looks like when an industry discovers that it has been naming only one part of the job. Syntax mattered and still matters. Specification, interpretation, and verification were always present; agentic tools make them harder to ignore.
 
 ## The prophetic case: William Gibson
 
 The English-major phenomenon has a forty-year precedent that nobody in the technology industry adequately absorbed the first time.
 
-William Gibson studied English at the University of British Columbia. He was not a programmer. He had no technical background in computing. In 1984, he published *Neuromancer* — the novel that coined the word *cyberspace* and described, with unnerving precision, a networked information world that did not yet exist.
+William Gibson earned a BA in English at the University of British Columbia. He was not a programmer and has often described his early ignorance of computers as imaginatively useful. He coined *cyberspace* in the 1982 story "Burning Chrome" and popularised it in *Neuromancer* (1984), describing a networked information world before the public internet made such a world ordinary.
 
 His explanation for how he got there is worth reading slowly. He was not modeling technical systems. He was watching children at video arcades:
 
@@ -76,16 +79,16 @@ The same method runs through his essay **"Doing Television"** (published in *Tes
 
 *"The street finds its own uses for things."* That line, from the same period, became one of the defining observations of the digital age. An English major wrote it.
 
-Forty years later, in *Agency* (2020), Gibson described the architecture of agentic AI — agents with scoped powers, oversight structures, the authority to terminate, the Lowbeer Question — with enough precision that practitioners building real systems in 2026 have found it useful as a design document. Not because he predicted the technology. Because he specified the *human relationships* around it precisely enough that the map preceded the territory.
+Forty years later, *Agency* (2020) offered the Dictionary a useful fictional vocabulary for agentic AI—scoped powers, oversight, and the authority to terminate. Calling the novel a design document would be too literal. Its value is interpretive: Gibson specified the *human relationships* around imagined systems precisely enough to help us question real ones.
 
 This is the English-major method at its fullest extension: find the human signal in the technological noise, name it with enough precision that the name becomes load-bearing, and trust that the specification will outlast the specific tools it was written about.
 
-Gibson is the existence proof. The phenomenon that is now repricing liberal-arts graduates in engineering organizations is the same phenomenon that produced *Neuromancer* in 1984 and *Agency* in 2020. He was just doing it forty years early, without the agentic tools to assist him.
+Gibson is the existence proof for the narrow claim: literary attention can produce technical vocabulary that engineers later find indispensable. The broader claim—that agentic work will materially reprice liberal-arts graduates—remains a live hypothesis.
 
 ## Trade-offs
 
 - **Not every English major is suddenly a software engineer.** The pattern is real but easily overstated. The strong English major still needs a curiosity about systems, a willingness to read code carefully, and a tolerance for debugging — none of which are guaranteed by the degree.
-- **The window may not last forever.** As agentic coding tools mature, the writing skills become more democratized. The advantage held by clear-writers in 2026 may compress as more practitioners learn to specify well.
+- **The window may not last forever.** As agentic coding tools mature, specification skills may become more widely taught. Any early advantage held by clear writers may compress.
 - **Old-style engineering skills did not become useless.** They became *necessary but insufficient*. The strongest performers combine both.
 
 ## Related and adjacent terms
@@ -96,4 +99,13 @@ Gibson is the existence proof. The phenomenon that is now repricing liberal-arts
 
 ---
 
-*Related entries: [Naming](naming.md), [Tool](tool.md), [Agent](agent.md), [The Lowbeer Question](lowbeer-question.md), forthcoming Bathrobe coding.*
+## Sources
+
+- Athabasca University, [William Gibson](https://canadian-writers.athabascau.ca/english/writers/wgibson/wgibson.php) (biographical note, including his UBC English degree).
+- William Gibson, "Academy Leader," in Michael Benedikt, ed., *Cyberspace: First Steps* (MIT Press, 1991).
+- William Gibson, "Doing Television," in *Tesseracts 3* (1990); expanded as "Darwin" in *The Face* and *Spin* the same year.
+- William Gibson, *Burning Chrome* (1986), *Neuromancer* (1984), and *Agency* (2020).
+
+## See also
+
+*[Naming](/entries/naming/)* · *[Tool](/entries/tool/)* · *[Agent](/entries/agent/)* · *[The Lowbeer Question](/entries/lowbeer-question/)* · forthcoming *Bathrobe Coding*

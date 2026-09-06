@@ -19,7 +19,7 @@ The humane version uses embodiment as evidence, not as theatre. It asks: does th
 
 ## See also
 
-- *[Performance Artifact](performance-artifact.md)*
-- *[Broadcast Assignment](broadcast-assignment.md)*
-- *[Proof of Learning](proof-of-learning.md)*
-- *[Assessment Instrumentation](assessment-instrumentation.md)*
+- *[Performance Artifact](/entries/performance-artifact/)*
+- *[Broadcast Assignment](/entries/broadcast-assignment/)*
+- *[Proof of Learning](/entries/proof-of-learning/)*
+- *[Assessment Instrumentation](/entries/assessment-instrumentation/)*

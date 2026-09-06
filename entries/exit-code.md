@@ -21,4 +21,4 @@ This is why **“command failed” describes a machine-readable outcome, not nec
 
 ## See also
 
-*[Bash](bash.md)* · *[Shell](shell.md)* · *[Command-Line Interface](command-line-interface.md)* · *[Verification](verification.md)*
+*[Bash](/entries/bash/)* · *[Shell](/entries/shell/)* · *[Command-Line Interface](/entries/command-line-interface/)*

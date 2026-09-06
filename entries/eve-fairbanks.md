@@ -15,8 +15,12 @@ That distinction matters. The Dictionary's critique of the AI-detection economy 
 
 Fairbanks belongs in the Dictionary as a named reference point for this cultural problem: the collapse of easy surface-level distinction between human and synthetic prose.
 
+## Source
+
+- Eve Fairbanks, ["The Biggest Tell That Something Was Written by AI"](https://www.theatlantic.com/technology/2026/05/how-to-tell-ai-writing/687345/), *The Atlantic*, May 2026.
+
 ## See also
 
-- *[AI Writing](ai-writing.md)*
-- *[The Olang' Trap](olang-trap.md)*
-- *[Zombie Internet](zombie-internet.md)*
+- *[AI Writing](/entries/ai-writing/)*
+- *[The Olang' Trap](/entries/olang-trap/)*
+- *[Zombie Internet](/entries/zombie-internet/)*

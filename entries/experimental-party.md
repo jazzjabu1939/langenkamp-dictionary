@@ -3,7 +3,10 @@ layout: default
 kind: reference
 title: "The Experimental Party"
 permalink: /entries/experimental-party/
-summary: "a cautionary tale about putting a local model in the King Party Hat before the party has an adult in the kitchen — and the origin story of the Jindoo Process."
+date: 2026-05-04
+summary: "A cautionary tale about putting a local model in the King Party Hat before the party has an adult in the kitchen—and the origin story of the Jindoo Process."
+draft: false
+published: true
 ---
 
 # The Experimental Party
@@ -36,7 +39,7 @@ The failure was not that Gemma was useless. That would have been a boring findin
 
 The user's request was conversational and underspecified: *can you check what assignments still need grading?* A competent orchestrator silently translates that into something executable: use the Canvas LMS skill, target these active Spring 2026 course IDs, count ungraded submissions by assignment, ignore old courses, return a concise table.
 
-That translation is not clerical. It is the [English Major](english-major.md) function: clear specification under ambiguity.
+That translation is not clerical. It is the [English Major](/entries/english-major/) function: clear specification under ambiguity.
 
 When Gemma ran as a sub-agent under a stronger orchestrator, the task worked. The orchestrator framed the request; Gemma executed the recipe. The party went beautifully.
 
@@ -84,12 +87,12 @@ That framing lets students see agent work as organisational design rather than t
 
 ## See also
 
-- [English Major](english-major.md) — the source skill the orchestrator provides
-- [GenXClaw](genxclaw.md) — the temperament that creates the temptation to make the local model King
-- [FERPA Compliance Posture](ferpa-compliance-posture.md) — the legal frame for *why* local execution matters
-- [Sub-agent](sub-agent.md) — the role the local model should typically play
-- [Tool](tool.md) — recipe cards for bounded execution
-- [Sovereign Compute](sovereign-compute.md) — why the local stack matters in the first place
+- [English Major](/entries/english-major/) — the source skill the orchestrator provides
+- [GenXClaw](/entries/genxclaw/) — the temperament that creates the temptation to make the local model King
+- [FERPA Compliance Posture](/entries/ferpa-compliance-posture/) — the legal frame for *why* local execution matters
+- [Sub-agent](/entries/sub-agent/) — the role the local model should typically play
+- [Tool](/entries/tool/) — recipe cards for bounded execution
+- [Sovereign Compute](/entries/sovereign-compute/) — why the local stack matters in the first place
 
 ---
 

@@ -17,6 +17,6 @@ For business-school readers, Mollick is a bridge figure. He translates the techn
 
 ## See also
 
-- *[AI Writing](ai-writing.md)*
-- *[Capability Overhang](capability-overhang.md)*
-- *[English major](english-major.md)*
+- *[AI Writing](/entries/ai-writing/)*
+- *[Capability Overhang](/entries/capability-overhang/)*
+- *[English major](/entries/english-major/)*

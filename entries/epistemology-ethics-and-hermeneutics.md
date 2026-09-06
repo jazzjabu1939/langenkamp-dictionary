@@ -98,4 +98,4 @@ This entry was seeded on 26 July 2026 after Prof. Langenkamp shared IBM Technolo
 
 ## See also
 
-[Can't Help You Understand](cant-help-you-understand.md) · [Human Judgment Layer](human-judgment-layer.md) · [Verification Gap](verification-gap.md) · [AI Librarian](ai-librarian.md) · [English Major](english-major.md) · [Proof of Learning](proof-of-learning.md)
+[Can't Help You Understand](/entries/cant-help-you-understand/) · [Human Judgment Layer](/entries/human-judgment-layer/) · [Verification Gap](/entries/verification-gap/) · [AI Librarian](/entries/ai-librarian/) · [English Major](/entries/english-major/) · [Proof of Learning](/entries/proof-of-learning/)

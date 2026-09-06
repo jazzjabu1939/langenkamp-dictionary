@@ -4,7 +4,7 @@ kind: essay
 title: "Earned Parallelism"
 permalink: /entries/earned-parallelism/
 date: 2026-05-12
-summary: "the diagnostic principle for one specific AI register tell — negative parallelism, the *\"It is not X. It is Y.\"* family of constructions. The principle: the structure is the rhetorical capstone of an argument that has already done the work of distinguishing X from Y; the AI version is the same construction with the work stripped out. Includes a linked scanner and a self-audit of this Dictionary's own corpus."
+summary: "An editorial test for negative parallelism: the rejected reading must be plausible, and the distinction must do real work."
 draft: false
 published: true
 ---
@@ -89,7 +89,7 @@ The triage pass did not try to eliminate the construction. It asked the diagnost
 
 ## A confession, in the spirit of the entry
 
-The scanner has, of course, been run on this entry. It found **7 hits**, which puts the entry on diagnosing the symptom near the top of the symptom list. This is funny, but not embarrassing. Several hits are quotations or worked examples; the remaining ones are doing the work the entry says they must do.
+The scanner was, of course, run on this entry for the May 12 audit. It found **7 hits**, which put the entry on diagnosing the symptom near the top of the symptom list. This is funny, but not embarrassing. Several hits are quotations or worked examples; the remaining ones were doing the work the entry says they must do.
 
 That is the point. The doctrine is not zero parallelism. The doctrine is earned parallelism. The scanner produces a signal; judgement makes the diagnosis.
 
@@ -107,13 +107,13 @@ The goal is not to write like a human, in the abstract. It is to write like the 
 
 ## See also
 
-- *[AI Writing](ai-writing.md)* — the parent hub of this cluster
-- *[Zombie Internet](zombie-internet.md)* — the medium this Dictionary is writing through
-- *[The Olang' Trap](olang-trap.md)* — the structural counterpoint: which native human registers get falsely flagged as AI
-- *[The Lazy Median Hypothesis](lazy-median-hypothesis.md)*
-- *[The Sinceerly Stack](sinceerly-stack.md)*
-- *[Mediation (a la Gibson)](mediation-a-la-gibson.md)*
-- *[English Major](english-major.md)*
+- *[AI Writing](/entries/ai-writing/)* — the parent hub of this cluster
+- *[Zombie Internet](/entries/zombie-internet/)* — the medium this Dictionary is writing through
+- *[The Olang' Trap](/entries/olang-trap/)* — the structural counterpoint: which native human registers get falsely flagged as AI
+- *[The Lazy Median Hypothesis](/entries/lazy-median-hypothesis/)*
+- *[The Sinceerly Stack](/entries/sinceerly-stack/)*
+- *[Mediation (a la Gibson)](/entries/mediation-a-la-gibson/)*
+- *[English Major](/entries/english-major/)*
 - `STYLE_INTERNAL.md` in the [Dictionary's source repository](https://github.com/jazzjabu1939/langenkamp-dictionary) — the back-of-house editorial note where this principle was first written down
 
 ---
