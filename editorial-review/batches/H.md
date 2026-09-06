@@ -1,6 +1,6 @@
 # Batch H — Plain-Prose Review
 
-**State:** approved for publication
+**State:** approved and published
 
 **Baseline:** `e300d45`
 
@@ -79,4 +79,4 @@ All fourteen changed pages were inspected for headings, literal `.md` URLs, and 
 
 ## Publication gate
 
-Professor Langenkamp approved publication and completion of the held *Harness* expansion on 6 September 2026. Batch H remains isolated until its clean proposal is integrated, pushed, and verified live. Batch I remains locked.
+Professor Langenkamp approved publication and completion of the held *Harness* expansion on 6 September 2026. Publication is complete only after the exact committed tree passes GitHub Pages deployment and live-page verification. Batch I remains locked pending separate authorization.
