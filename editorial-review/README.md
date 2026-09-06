@@ -19,6 +19,6 @@ Completed batches:
 
 Current batch: **none**
 
-Next batch: **M — locked pending explicit authorization**
+Next batch: **M — unreviewed**
 
 Batch ledgers live in `editorial-review/batches/`.

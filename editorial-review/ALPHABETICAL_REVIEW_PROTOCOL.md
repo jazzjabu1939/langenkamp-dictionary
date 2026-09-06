@@ -41,11 +41,15 @@ No alphabetical batch is published automatically. Review completion and publicat
 
 ## Batch states
 
-- `inventory`
+- `unreviewed`
 - `reviewing`
-- `ready_for_professor`
-- `approved`
+- `reviewed_but_unpublished`
 - `published`
-- `held`
 
-Only one letter may be `reviewing` at a time. The following letter remains `held` until the current letter is approved or otherwise closed by Professor Langenkamp.
+Use these terms in ledgers and human-facing progress reports:
+
+- **Unreviewed:** the letter's entries have not yet been reviewed.
+- **Reviewed but unpublished:** the review is complete, whether awaiting approval or approved but not yet deployed.
+- **Published:** the approved batch is deployed and verified live.
+
+Only one letter may be `reviewing` at a time. Do not use **held** or **locked** as a review status; those words can imply that review is complete. Until its review begins, the next letter remains **unreviewed**.
