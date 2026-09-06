@@ -1,6 +1,6 @@
 # Batch D — Plain-Prose Review
 
-**State:** ready_for_professor
+**State:** published
 
 **Baseline:** `3fd5325`
 
