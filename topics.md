@@ -223,6 +223,7 @@ The technical and economic case for running AI on hardware you own.
 - [Cognitive Sovereignty](entries/cognitive-sovereignty.md) — agency over the systems that shape attention, knowledge, memory, and judgment.
 - [Sovereign Compute Calculator](entries/sovereign-compute-calculator.md) — the practical companion tool.
 - [Sovereignty Impulse](entries/sovereignty-impulse.md) — the moment convenience gives way to owned, inspectable infrastructure.
+- [The Nine Tripod Cauldrons / 九鼎](entries/nine-tripod-cauldrons.md) — durable artefacts that make sovereignty operational, paired with the warning that possession alone does not establish legitimate authority.
 - [RAM](entries/ram.md) — random-access memory as consumer spec, data-center bottleneck, and AI-era strategic constraint.
 - [M5 Max](entries/m5-max.md) — the operator's primary workstation.
 - [Mac Studio](entries/mac-studio.md) — desktop sibling; candidate for the *Sally* experiment.

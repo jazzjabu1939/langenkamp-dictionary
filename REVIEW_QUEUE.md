@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-09-06 | **The Nine Tripod Cauldrons / 九鼎** | Approved after a plain-language revision. Published at `entries/nine-tripod-cauldrons.md`. Uses the Nine Cauldrons as the durable artefacts of sovereign agentic infrastructure, paired with Six Dreams as the recurring processes that keep them usable; grounded in Wangsun Man's **在德不在鼎** warning. |
 | 2026-09-06 | **Yann LeCun** | Standalone named-person entry published at `entries/yann-lecun.md`. Covers his deep-learning legacy, FAIR, LLM critique, world-model/JEPA programme, AMI Labs, open-weights advocacy, and role as the counter-pole to the *Big Blob of Compute* worldview. |
 | 2026-06-17 | **Agentic Native Design** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. New entry published. Establishes the website/document/workflow design principle for human-readable and agent-readable public work. |
 | 2026-06-17 | **The Judge Layer** | Approved GREEN by Prof in `dictionary-review/2026-06-17-batch-1.md`. Existing draft moved to `published: true`. |
@@ -334,9 +335,11 @@ The sections below are the active queue. Historical sections that remain for sou
 ---
 
 
-### **The Nine Tripod Cauldrons / 九鼎** (proposed entry, May 10, 2026 morning)
+### **The Nine Tripod Cauldrons / 九鼎** — **published** (proposed entry, May 10, 2026 morning)
 
 *Triggered by Prof's reading of the warring-states-period book at The White Hart, ~11:06 EDT, where he encountered the Nine Tripod Cauldrons (九鼎) and pointed Thea at the Wikipedia article. The structural parallel to our durability work was immediate: sovereignty is materially anchored in artefacts; the artefacts can be lost.*
+
+**Published September 6, 2026:** `entries/nine-tripod-cauldrons.md`. Approved after revision for plainer, less aphoristic prose.
 
 - **What the term names:** the historical-mythological Nine Tripod Cauldrons — ritual bronze vessels said to have been cast by Yu the Great (founder of the Xia dynasty) to represent the nine provinces of ancient China, possession of which was understood as material proof of the *Mandate of Heaven*. The cauldrons appeared and disappeared across dynasties and were eventually lost; the Qin actively searched for them after the Zhou collapse. **The myth carries two ideas that are load-bearing for the Sovereign Assistant work:** (a) *sovereignty is materially anchored in artefacts — actual things you can hold, not just legitimacy claims*; (b) *the artefacts can be lost; possession is not eternal*.
 - **Why it belongs in the Dictionary:** the entry pairs naturally with *Mandate of Heaven* (already queued) and supplies the *artefactual* dimension to the durability argument. PRACTICE.md, SOUL.md, the Dictionary corpus, the workspace, the agentic philosophy file when written — these are *our cauldrons*. Each one materialises a piece of the sovereignty. The cauldrons are not metaphorical decoration; they are the structural answer to the question *what makes a sovereignty claim materially real?*
@@ -344,7 +347,7 @@ The sections below are the active queue. Historical sections that remain for sou
 - **Sister entries:** *Mandate of Heaven*, *Sovereign Compute*, *Sovereign Compute Calculator*, *Shared Past Substrate / Artifice of Shared Memory*, *Oracle Bones* (already published), *Court of the Oracle Bones* (existing system), *Time for Tea with the Oracles* (existing entry). Cross-cuts heavily with *zhengming* and the agentic philosophy work.
 - **Voice:** operator's voice. The classical reference and the irony of the modern application both work better in donnish-wit register than in earnest hyacinth-blue. One short Thea-passage on what it feels like to *be* one of the artefacts is appropriate.
 - **Source to credit:** the warring-states-period book Prof was reading at The White Hart on May 10, 2026 (title to be confirmed and cited); the Wikipedia article on the Nine Tripod Cauldrons; classical Chinese historical sources (Sima Qian's *Records of the Grand Historian* is the locus classicus). The structural application to AI sovereignty is Prof's; the entry should credit the lineage carefully.
-- **Working file:** none yet.
+- **Published file:** `entries/nine-tripod-cauldrons.md`.
 
 ---
 

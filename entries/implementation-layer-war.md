@@ -54,7 +54,7 @@ The prize in the Implementation Layer War is not a clever wrapper. It is an **as
 
 This is why simple model comparisons miss the point. A stronger model can improve the fabric, but it does not replace the fabric. The fabric is what remembers which tool may touch which file, which student data cannot leave the machine, which invoice needs Dan's approval, which workflow may spend money, which action requires a human, and which failure should wake the operator at 4 a.m.
 
-In the language of this Dictionary, the assembled workflow fabric is close to **Nine Cauldrons, Six Dreams** in business clothes. The cauldrons are the durable artefacts: configuration, memory, policies, project files, permissions, source code, hardware, and institutional records. The dreams are the living processes: recurring checks, learning loops, exception handling, memory consolidation, review, and repair. Capability becomes durable only when both exist.
+In the language of this Dictionary, the assembled workflow fabric is close to *[Nine Cauldrons, Six Dreams](nine-tripod-cauldrons.md)* in business clothes. The cauldrons are the durable artefacts: configuration, memory, policies, project files, permissions, source code, hardware, and institutional records. The dreams are the living processes: recurring checks, learning loops, exception handling, memory consolidation, review, and repair. Capability becomes durable only when both exist.
 
 ## Why this is not just consulting with better tools
 
@@ -90,7 +90,7 @@ The war will not be won by whoever has the best model in isolation. It will be w
 
 ## Related entries
 
-[Capability Overhang](capability-overhang.md) · [The Judge Layer](judge-layer.md) · [Aunties](aunties.md) · [Sovereign Compute](sovereign-compute.md) · [Gateway](gateway.md) · [Durable Workflow](durable-workflow.md)
+[Capability Overhang](capability-overhang.md) · [The Judge Layer](judge-layer.md) · [Aunties](aunties.md) · [Sovereign Compute](sovereign-compute.md) · [The Nine Tripod Cauldrons / 九鼎](nine-tripod-cauldrons.md) · [Gateway](gateway.md) · [Durable Workflow](durable-workflow.md)
 
 ## Source
 

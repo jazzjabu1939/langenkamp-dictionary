@@ -10,10 +10,10 @@ published: true
 
 OpenClaw is an agentic runtime and operator workspace: the system through which an assistant can use tools, remember context, run scheduled work, delegate tasks, interact with local files, and act as more than a chat window.
 
-In the Dictionary, OpenClaw is not merely a product name. It is the local worked example. Many entries were written from inside OpenClaw or because OpenClaw made a failure mode visible: *Heartbeat*, *Gateway*, *Aunties*, *Red Pill*, *Grep Architecture*, *Sovereign Compute*, and the broader Nine Cauldrons, Six Dreams operating model.
+In the Dictionary, OpenClaw is not merely a product name. It is the local worked example. Many entries were written from inside OpenClaw or because OpenClaw made a failure mode visible: *Heartbeat*, *Gateway*, *Aunties*, *Red Pill*, *Grep Architecture*, *Sovereign Compute*, and the broader *[Nine Cauldrons, Six Dreams](nine-tripod-cauldrons.md)* operating model.
 
 Its importance is architectural. OpenClaw makes the model a component inside a harness rather than the whole system. That distinction is one of the Dictionary's central claims.
 
 ## See also
 
-[Harness](harness.md) · [Gateway](gateway.md) · [Heartbeat](heartbeat.md) · [Brining](brining.md) · [Grep Architecture](grep-architecture.md) · [Sovereign Compute](sovereign-compute.md) · [Agentic Native Design](agentic-native-design.md)
+[Harness](harness.md) · [Gateway](gateway.md) · [Heartbeat](heartbeat.md) · [Brining](brining.md) · [Grep Architecture](grep-architecture.md) · [Sovereign Compute](sovereign-compute.md) · [The Nine Tripod Cauldrons / 九鼎](nine-tripod-cauldrons.md) · [Agentic Native Design](agentic-native-design.md)
