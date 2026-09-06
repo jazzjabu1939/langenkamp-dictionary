@@ -1,6 +1,6 @@
 # Batch L — Plain-Prose Review
 
-**State:** approved; publication verification pending
+**State:** approved and published
 
 **Baseline:** `ec37267`
 
@@ -64,4 +64,4 @@ All eight pages were inspected for headings, literal `.md` URLs, distinctive rev
 
 ## Publication gate
 
-Professor Langenkamp approved Batch L on 6 September 2026. Publication verification is pending. Batch M remains locked.
+Professor Langenkamp approved Batch L on 6 September 2026. The exact committed tree passed both GitHub workflows and live-page verification for all eight entries. Batch M remains locked.
