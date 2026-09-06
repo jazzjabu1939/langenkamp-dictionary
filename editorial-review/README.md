@@ -2,10 +2,13 @@
 
 The alphabetical plain-prose review is governed by [ALPHABETICAL_REVIEW_PROTOCOL.md](ALPHABETICAL_REVIEW_PROTOCOL.md).
 
-Completed batch: **A — approved and published in `83634ce`**
+Completed batches:
 
-Current batch: **B — ready for Professor Langenkamp**
+- **A — approved and published in `83634ce`**
+- **B — approved and published in `32d3beb`**
 
-Next batch: **C — held pending Professor Langenkamp's review of B**
+Current batch: **C — ready for Professor Langenkamp**
+
+Next batch: **D — held pending Professor Langenkamp's review of C**
 
 Batch ledgers live in `editorial-review/batches/`.

@@ -4,22 +4,22 @@ kind: glossary
 title: "Claude"
 permalink: /entries/claude/
 date: 2026-05-12
-summary: "*Anthropic*'s family of large language models. Named after Claude Shannon. Available in three tiers — *Opus*, *Sonnet*, *Haiku* — covering the capability-cost-latency frontier."
+summary: "Anthropic's family of large language models, commonly offered under the Opus, Sonnet, and Haiku tier names."
 draft: false
 published: true
 ---
 
-Claude is the family name for the large language models produced by *[Anthropic](anthropic.md)*. The name is a deliberate reference to Claude Shannon, the American mathematician and electrical engineer (1916–2001) whose 1948 paper *A Mathematical Theory of Communication* founded information theory. Anthropic's choice of the name signals an intellectual lineage running through the technical-research tradition of communication and signal processing, in contrast to the corporate or mythological naming choices of peer models.
+Claude is the family name for the large language models produced by *[Anthropic](anthropic.md)*. The name refers to Claude Shannon, the American mathematician and electrical engineer (1916–2001) whose 1948 paper *A Mathematical Theory of Communication* founded information theory.
 
-The Claude family ships in three tiers, each optimised for a different point on the capability/cost/latency curve:
+Anthropic commonly uses three tier names to describe different points on the capability, cost, and latency curve:
 
-- *[Claude Opus](claude-opus.md)* — the most-capable tier; best for hard reasoning, long-form careful writing, and complex agentic tasks.
-- *[Claude Sonnet](claude-sonnet.md)* — the practical workhorse; balanced capability and cost; the default for most production agentic workloads.
-- *[Claude Haiku](claude-haiku.md)* — the fast and cheap tier; high-volume routine work, interactive latency-sensitive tasks.
+- *[Claude Opus](claude-opus.md)* — the high-capability tier, positioned for difficult reasoning, writing, coding, and agentic tasks.
+- *[Claude Sonnet](claude-sonnet.md)* — the middle tier, positioned between capability, cost, and latency.
+- *[Claude Haiku](claude-haiku.md)* — the small, fast tier, positioned for lower-cost and latency-sensitive work.
 
-Major versions to date: Claude 1 (March 2023), Claude 2 (July 2023), Claude 3 (March 2024), Claude 3.5 (June 2024), Claude 4 (October 2025), Claude 4.5 (December 2025), Claude 4.6 (February 2026), Claude 4.7 (April 2026).
+The family began with Claude 1 in March 2023 and has since gone through several numbered generations. The precise model attached to each tier changes, so operators should treat *Opus*, *Sonnet*, and *Haiku* as product positions rather than fixed capability levels.
 
-For this Dictionary, Claude is the **daily working model family**. Most entries in this corpus have been drafted with Claude as the cooperative-writing collaborator, with the operator's voice and editorial judgement as the final layer. The dependency is structural; the trade-offs are named in *[Opus Addict](opus-addict.md)*.
+Claude was the principal cooperative-writing model for much of this Dictionary's early corpus. That history created the dependency described in *[Opus Addict](opus-addict.md)*, even as the operating stack later expanded to other model families.
 
 ## See also
 

@@ -13,7 +13,7 @@ published: true
 
 Outsourcing is not inherently bad. Civilisation is built on it. The danger is outsourcing the part of the task that was supposed to change the learner or decision-maker. A student who uses AI to test an argument may learn more. A student who uses AI to replace the struggle of forming the argument may learn less while submitting something more polished.
 
-The Dylan Patel / Dwarkesh Patel compute interview gives the infrastructure version of the same idea. They speculate about AI systems that are not merely chatbots but substitute or near-substitute knowledge workers: agents that can go off and do work asynchronously, and, in the stronger version, “actual humans on a server” producing something like six figures of annual value. The imagined virtual AI CFO belongs in this zone. It is cognitive outsourcing pushed from task assistance into role substitution: not “help me make this spreadsheet,” but “take over a durable managerial function.”
+In a Dylan Patel / Dwarkesh Patel interview, the speakers extend this idea from tasks to roles: asynchronous agents that perform sustained knowledge work, including the imagined example of a virtual AI CFO. At that point cognitive outsourcing becomes *[Role Substitution](role-substitution.md)*. The operator is no longer delegating one spreadsheet but a durable managerial function.
 
 The practical question is therefore: what cognitive work must remain inside the human for the activity to count as learning, judgment, authorship, or management?
 

@@ -15,7 +15,7 @@ It is broader than *[Sovereign Compute](sovereign-compute.md)* and the human-fac
 
 A person can have private chats and still lack Cognitive Sovereignty if the model, memory, interface, defaults, and commercial incentives are all controlled elsewhere. A person can also be only partially sovereign — which is the ordinary 2026 condition — using frontier systems when necessary while building local memory, tools, and workflows that reduce total dependence.
 
-The goal is not purity. The goal is agency: use powerful systems without letting them become the unexamined furniture of thought.
+Cognitive sovereignty does not require technical purity. It requires enough control and understanding to use powerful systems without allowing their defaults and incentives to govern thought unnoticed.
 
 ## See also
 

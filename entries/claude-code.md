@@ -10,9 +10,9 @@ published: true
 
 Claude Code is Anthropic's agentic coding tool: a command-line collaborator that can inspect a repository, propose changes, edit files, run tests, and use tool calls as part of a coding workflow.
 
-Its importance is not just that it writes code. Many tools write code. Claude Code matters because it treats the repository as the working object rather than the chat transcript. It sits near the implementation layer: files, diffs, tests, build logs, and the human operator's judgment.
+Claude Code treats the repository, rather than only the chat transcript, as the working object. It operates on files, diffs, tests, and build logs under the human operator's direction.
 
-In the Dictionary's vocabulary, Claude Code belongs beside *English major*, *Tool*, *Agent*, and *Implementation Layer War*. It is one of the visible places where language-model capability stops being a parlor trick and becomes delegated technical work.
+In the Dictionary's vocabulary, Claude Code belongs beside *English major*, *Tool*, *Agent*, and *Implementation Layer War*. It is a concrete example of model capability becoming delegated technical work through a tool-bearing harness.
 
 ## See also
 

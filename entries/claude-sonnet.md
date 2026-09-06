@@ -9,15 +9,15 @@ draft: false
 published: true
 ---
 
-Claude Sonnet is the middle tier of *[Anthropic](anthropic.md)*'s *[Claude](claude.md)* model family, sitting between the most-capable *[Opus](claude-opus.md)* and the fast-and-cheap *[Haiku](claude-haiku.md)*. Sonnet was first introduced with Claude 3 in March 2024, and Sonnet 3.5 (June 2024) became the breakout model that established the tier as the practical default for most production agentic workloads — including, notably, the **Claude Code* * product's underlying engine through much of 2024–2025. Current versions include Sonnet 4, 4.5, 4.6, and 4.7.
+Claude Sonnet is the middle tier of *[Anthropic](anthropic.md)*'s *[Claude](claude.md)* model family, between the high-capability *[Opus](claude-opus.md)* tier and the smaller *[Haiku](claude-haiku.md)* tier. Claude 3.5 Sonnet, released in June 2024, helped establish Sonnet as a practical model for coding and production tool use.
 
-For this Dictionary, Sonnet is the **practical workhorse**. Where *[Opus](claude-opus.md)* is reserved for tasks where the marginal capability gain materially matters (long-form careful writing, complex multi-step reasoning, the entries you are reading right now), Sonnet covers most everything else: tool use, sub-agent dispatch, routine drafting, summarisation, code edits at moderate complexity. The Dictionary's cost-of-operation argument in *[Opus Addict](opus-addict.md)* treats Sonnet as the *escape valve* — the tier most operators should default to and reserve Opus for the marginal hard cases.
+Sonnet is often used where an operator needs stronger performance than a small model provides but cannot justify the cost or latency of the highest tier. Tool use, routine drafting, summarisation, and moderate code changes are common examples. The appropriate choice still depends on the model generation and the cost of checking its work.
 
-Sonnet 3.5 is also the model on which **Claude Code* * reached its first signs of product-market fit per Boris Cherny's **Coding Solved* * talk, before the May 2025 Opus 4 release inflected the exponential-growth curve the product is currently on.
+According to Boris Cherny's *Coding Solved* talk, Sonnet 3.5 supported Claude Code during its early product development, before later Opus models changed the tool's capability profile.
 
 ## See also
 
 - *[Claude](claude.md)* — the model family
 - *[Claude Opus](claude-opus.md)*, *[Claude Haiku](claude-haiku.md)* — peer tiers
-- **Claude Code* *
+- *[Claude Code](claude-code.md)*
 - *[Opus Addict](opus-addict.md)*
