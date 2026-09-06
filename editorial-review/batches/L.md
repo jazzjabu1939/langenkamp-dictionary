@@ -1,6 +1,6 @@
 # Batch L — Plain-Prose Review
 
-**State:** ready for Professor Langenkamp's review
+**State:** approved; publication verification pending
 
 **Baseline:** `ec37267`
 
@@ -64,4 +64,4 @@ All eight pages were inspected for headings, literal `.md` URLs, distinctive rev
 
 ## Publication gate
 
-Batch L remains isolated and unpublished pending Professor Langenkamp's approval. Batch M remains locked.
+Professor Langenkamp approved Batch L on 6 September 2026. Publication verification is pending. Batch M remains locked.
