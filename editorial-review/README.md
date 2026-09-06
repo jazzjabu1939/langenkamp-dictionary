@@ -14,7 +14,7 @@ Completed batches:
 - **H — approved and published in `b876787`**
 - **I — approved and published in `0d68106`**
 
-Current batch: **J — locked pending I publication verification**
+Current batch: **J — authorized; begins from the verified I publication state**
 
 Next batch: **K — locked pending J approval and publication verification**
 

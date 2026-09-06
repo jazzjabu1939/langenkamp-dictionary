@@ -1,6 +1,6 @@
 # Batch I — Plain-Prose Review
 
-**State:** approved; publication verification pending
+**State:** approved and published
 
 **Baseline:** `4e5d2af`
 
@@ -70,4 +70,4 @@ All eleven pages were inspected for headings, literal `.md` URLs, distinctive re
 
 ## Publication gate
 
-Professor Langenkamp approved Batch I on 6 September 2026. Publication is complete only after the exact committed tree passes GitHub Pages deployment and live-page verification. Batch J remains locked until that verification succeeds.
+Professor Langenkamp approved Batch I on 6 September 2026. The exact committed tree passed both GitHub workflows and live-page verification for all eleven entries. Batch J may now begin from the deployed I baseline.
