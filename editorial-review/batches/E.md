@@ -1,6 +1,6 @@
 # Batch E — Plain-Prose Review
 
-**State:** ready_for_professor
+**State:** published
 
 **Baseline:** `5a93ed8`
 
@@ -66,6 +66,6 @@ The unpublished local build contains all eleven reviewed pages under `_site/entr
 
 All eleven rendered pages were inspected for headings and internal links. Every canonical entry target exists in the build.
 
-## Professor review gate
+## Publication record
 
-Batch E remains local and unpublished. Batch F must not begin until Professor Langenkamp has reviewed this ledger and approved, amended, or rejected the proposed E revisions.
+Professor Langenkamp approved batch E on 6 September 2026. The reviewed content was integrated into `main` as `9eb820d`. Batch F remains held until explicitly started.

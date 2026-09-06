@@ -8,9 +8,10 @@ Completed batches:
 - **B — approved and published in `32d3beb`**
 - **C — approved and published in `6dbada8`**
 - **D — approved and published in `ff2494d`**
+- **E — approved and published in `9eb820d`**
 
-Current batch: **E — ready for Professor Langenkamp's review in an isolated worktree**
+Current batch: **none**
 
-Next batch: **F — held pending Professor Langenkamp's review of E**
+Next batch: **F — held pending an explicit start instruction**
 
 Batch ledgers live in `editorial-review/batches/`.
