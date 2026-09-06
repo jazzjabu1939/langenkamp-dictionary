@@ -1,6 +1,6 @@
 # Batch J — Plain-Prose Review
 
-**State:** reviewed locally; awaiting approval
+**State:** approved; publication verification pending
 
 **Baseline:** `8a31e10`
 
@@ -57,4 +57,4 @@ All five pages were inspected for headings, literal `.md` URLs, distinctive revi
 
 ## Publication gate
 
-Batch J remains isolated and unpublished. Publishing it requires Professor Langenkamp's explicit approval. Batch K remains locked until J is published and verified live.
+Professor Langenkamp approved Batch J on 6 September 2026. Publication is complete only after the exact committed tree passes GitHub Pages deployment and live-page verification. Batch K remains locked until that verification succeeds.
