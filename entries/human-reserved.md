@@ -43,7 +43,7 @@ The evidence is not yet strong enough to say that AI use *causes* lower critical
 
 For education, the sequence may be more important than the mere presence of the tool. If AI enters before the student has formed a question, read the evidence, attempted an analysis, or taken a position, it can replace the work through which learning occurs. If it enters after an initial judgment, it can expose alternatives, reveal weaknesses, and improve revision.
 
-This gives Human Reserved a second educational meaning: some **moments of cognition** may need to remain the student's own. Not every assignment must be AI-free. But a credible course should preserve occasions when students must recall, interpret, decide, explain, or defend without quietly transferring the entire act to a machine. These occasions provide *[Proof of Learning](proof-of-learning.md)*: evidence that the polished artifact is connected to a capability the student actually possesses.
+This gives Human Reserved a second educational meaning: some **moments of cognition** may need to remain the student's own. Not every assignment must be AI-free. But a credible course should preserve occasions when students must recall, interpret, decide, explain, or defend without quietly transferring the entire act to a machine. These occasions provide *[Proof of Learning](/entries/proof-of-learning/)*: evidence that the polished artifact is connected to a capability the student actually possesses.
 
 ## A reserve is not a museum
 
@@ -65,11 +65,11 @@ That is the educational meaning of Human Reserved: not a fence around every clas
 
 ## See also
 
-- *[Human Judgment Layer](human-judgment-layer.md)*
-- *[Proof of Learning](proof-of-learning.md)*
-- *[Verification Assignment](verification-assignment.md)*
-- *[Trust Layer](trust-layer.md)*
-- *[Artifact Is Not Competence](artifact-is-not-competence.md)*
+- *[Human Judgment Layer](/entries/human-judgment-layer/)*
+- *[Proof of Learning](/entries/proof-of-learning/)*
+- *[Verification Assignment](/entries/verification-assignment/)*
+- *[Trust Layer](/entries/trust-layer/)*
+- *[Artifact Is Not Competence](/entries/artifact-is-not-competence/)*
 - *[What Should Remain Human? - AI in Higher Education, Vol. 30](/newsletter/2026-08-26/)*
 
 [^gates]: Bill Gates, *The turbulent AI era is here. The choices we make are critical*, Gates Notes, August 26, 2026. <https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make>

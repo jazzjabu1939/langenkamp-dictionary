@@ -70,10 +70,9 @@ That is why harness hygiene is more than technical tidiness. **It is the discipl
 
 ## See also
 
-- [Agent Health](agent-health.md)
-- [Harness](harness.md)
-- [Heartbeat](heartbeat.md)
-- [Trust Layer](trust-layer.md)
-- [Grep Architecture](grep-architecture.md)
-- [Approval Gating](approval-gating.md)
-
+- [Agent Health](/entries/agent-health/)
+- [Harness](/entries/harness/)
+- [Heartbeat](/entries/heartbeat/)
+- [Trust Layer](/entries/trust-layer/)
+- [Grep Architecture](/entries/grep-architecture/)
+- [Approval Gating](/entries/approval-gating/)

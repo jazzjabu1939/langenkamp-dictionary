@@ -22,8 +22,8 @@ Hill climbing also names a characteristic failure. A method that accepts the nex
 
 ## See also
 
-- [RLHF](rlhf.md)
-- [Reward Hacking](reward-hacking.md)
-- [Scaling Laws](scaling-laws.md)
-- [Big Blob of Compute](big-blob-of-compute.md)
-
+- [Hill Climb](/entries/hill-climb/) — the Dictionary's operator shorthand
+- [RLHF](/entries/rlhf/)
+- [Reward Hacking](/entries/reward-hacking/)
+- [Scaling Laws](/entries/scaling-laws/)
+- [Big Blob of Compute](/entries/big-blob-of-compute/)

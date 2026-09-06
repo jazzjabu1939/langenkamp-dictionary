@@ -19,7 +19,7 @@ For learning-focused work, human-in-the-loop design protects both the student an
 
 ## See also
 
-- *[Human Judgment Layer](human-judgment-layer.md)*
-- *[Approval Gating](approval-gating.md)*
-- *[Assessment Instrumentation](assessment-instrumentation.md)*
-- *[Verification Assignment](verification-assignment.md)*
+- *[Human Judgment Layer](/entries/human-judgment-layer/)*
+- *[Approval Gating](/entries/approval-gating/)*
+- *[Assessment Instrumentation](/entries/assessment-instrumentation/)*
+- *[Verification Assignment](/entries/verification-assignment/)*

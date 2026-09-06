@@ -3,7 +3,7 @@ layout: default
 kind: reference
 title: "Heinlein Protagonist"
 permalink: /entries/heinlein-protagonist/
-summary: "A managerial and personal template absorbed during a formative window from the mid-century science fiction of Robert A. Heinlein. The Heinlein Protagonist is a polymath engineer, libertarian-individualist, contemptuous of bureaucracy, sexually unconventional, off-world in his ambitions, and convinced his mission justifies methods that would otherwise be questionable. Useful as a reading lens for certain twenty-first-century operators whose decisions look erratic only until you notice the script."
+summary: "A Dictionary lens for reading certain twenty-first-century operators through the competent, anti-bureaucratic, off-world protagonists of Robert A. Heinlein."
 published: true
 ---
 
@@ -11,14 +11,14 @@ published: true
 
 ## In one sentence
 
-**A *Heinlein Protagonist* is an adult man whose template for what a serious adult man looks like was installed, during a formative reading window, by the mid-century science fiction of Robert A. Heinlein — and who, decades later, is playing out that script in real life with whatever capital and capability he has accumulated.**
+**A *Heinlein Protagonist* is the Dictionary's name for an adult man whose template for serious adulthood appears to have been shaped, during a formative reading window, by Robert A. Heinlein — and who later plays out that script with whatever capital and capability he has accumulated.**
 
 ## The template
 
 The Heinlein protagonist, drawn across roughly two decades of novels — *Starship Troopers* (1959), *Stranger in a Strange Land* (1961), *The Moon Is a Harsh Mistress* (1966), *Time Enough for Love* (1973), *The Number of the Beast* (1980) — has a remarkably consistent shape. He is:
 
 - A **polymath engineer** who knows orbital mechanics, metallurgy, ballistics, electronics, and farming, often in the same chapter, and who looks down on specialists.
-- A **libertarian-individualist** for whom the state is at best a nuisance and at worst the enemy. *TANSTAAFL* — *There Ain't No Such Thing As A Free Lunch* — is the load-bearing political-economic axiom, and Heinlein gave us the acronym.
+- A **libertarian-individualist** for whom the state is at best a nuisance and at worst the enemy. *TANSTAAFL* — *There Ain't No Such Thing As A Free Lunch* — is the load-bearing political-economic axiom, and *The Moon Is a Harsh Mistress* popularised the acronym.
 - **Contemptuous of bureaucracy, regulators, "Earthworms," and people who have never built anything.** Competence is the only legitimate authority.
 - **Sexually unconventional in a 1970s register.** Polyamorous arrangements, large unconventional families, "line marriages" (literally, in *Moon*), and a running editorial conviction that monogamy is a failure of imagination.
 - **Convinced that humanity's destiny is off-world.** Earth is a cradle, not a home. Staying on Earth is decadence; going to space is virtue. Mars and the Moon are not destinations but obligations.
@@ -47,11 +47,11 @@ The diagnostic question is therefore not *did you read science fiction?* but *wh
 
 There is a structural feature of the Heinlein Protagonist worth naming carefully, because it is the load-bearing assumption the whole template silently rests on. The engineer-inventor is *trained* to look forward from first principles — given these laws of physics, these materials, this much capital, what is buildable? — and the training works brilliantly when the operating envelope is stable. It produces the iPhone, the Falcon 9, the lithium-ion battery, AlphaFold. It fails catastrophically when the envelope itself moves, because nothing in the first-principles toolkit tells the engineer that the envelope can move. He has never been taught to ask the question. Famine, war, capital flight, regime change, supply-chain weaponisation, currency collapse, the end of a reserve currency's privilege, a generation that decides it does not want children — these are not parameters in the model. They are *the frame of the model*, and the model cannot see its own frame.
 
-The Heinlein Protagonist looks at the future without much reference to what has happened. That is what idealists and inventors do, and if they are lucky enough to live in a period of stability — no major war, no famine, no destruction of capital at civilisational scale — then the company and the vision may be achievable. The script worked, in other words, because the twentieth century's second half was a structurally unusual window of relative peace and uninterrupted compounding. The script works *less reliably* when the envelope is moving, and the envelope appears to be moving.
+The Heinlein Protagonist looks at the future without much reference to what has happened. That is what idealists and inventors do, and in a sufficiently stable operating environment the company and the vision may be achievable. One reason the script could work so well for American technology was the long postwar window in which capital, institutions, and supply chains often looked more durable than history says they are. The script works *less reliably* when the envelope is moving, and the envelope appears to be moving.
 
 This is not a unique pathology of any one operator. It is endemic to the tech world. The discipline that trains the engineer does not, as a rule, also train him in diplomatic history, in the rise and fall of dynasties, in the cycles of inflation and currency, in the politics of food, or in the lesson — obvious to anyone who has read a few centuries of any region's history — that the rules under which his plan is rational are not permanent rules. They are the rules of the present moment, and the present moment ends.
 
-The asymmetry is therefore this: **the engineer reasons forward from physics; the historian reasons forward from precedent.** Both are necessary. In a stable century either alone is sufficient. In an unstable one only the combination survives, and the combination is rare because the two trainings are temperamentally hostile to each other — engineers find historians fatalistic, historians find engineers naïve. A Heinlein Protagonist with a serious historical education would be a rarer and more dangerous figure than the standard model. We do not, at the moment, have many of those.
+The asymmetry is therefore this: **the engineer reasons forward from physics; the historian reasons forward from precedent.** Both are necessary. In a stable period either discipline can appear sufficient. In an unstable one the combination matters more, and the combination is rare because the two trainings are temperamentally hostile to each other — engineers find historians fatalistic, historians find engineers naïve. A Heinlein Protagonist with a serious historical education would be a rarer and more dangerous figure than the standard model. We do not, at the moment, have many of those.
 
 ## How the term is meant to be used
 
@@ -68,3 +68,7 @@ The shortest honest summary of the type, contributed to the Dictionary by an ope
 - *Move 37* — the AlphaGo move that, like the mass driver, looked wrong until it didn't.
 - The Heinlein primary sources, all still in print: *The Moon Is a Harsh Mistress* (1966), *Stranger in a Strange Land* (1961), *Starship Troopers* (1959).
 - The counter-tradition: Ballard, *Crash* (1973); Gibson, *Neuromancer* (1984); Dick, *Do Androids Dream of Electric Sheep?* (1968); Le Guin, *The Dispossessed* (1974); C. S. Lewis, *That Hideous Strength* (1945).
+
+## Source note
+
+The immediate prompt for this Dictionary lens was Elon Musk's discussion of Heinlein, the lunar mass driver, and *grok* in his 2026 [conversation with Dwarkesh Patel and John Collison](https://www.dwarkesh.com/p/elon-musk). The literary pattern described here is interpretation, not a biographical diagnosis.

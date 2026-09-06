@@ -4,18 +4,25 @@ kind: glossary
 title: "Hugging Face"
 permalink: /entries/hugging-face/
 date: 2026-05-12
-summary: "Open-source AI platform and model hub, founded 2016. The de facto distribution channel for open-weights language models and adjacent ML artifacts."
+summary: "An AI collaboration platform and hub for models, datasets, and applications; a central distribution layer for open-weight machine learning."
 draft: false
 published: true
 ---
 
-Hugging Face is a French-American AI company founded in 2016 by Clément Delangue, Julien Chaumond, and Thomas Wolf. The company operates the most-used open-source AI model hub on the internet: a platform where labs, independent researchers, and hobbyists upload pretrained model weights, datasets, training scripts, and demos under various licences. As of 2026, more than a million models and a comparable number of datasets are hosted on the platform.
+**Hugging Face** is an AI company and collaboration platform founded in 2016 by Clément Delangue, Julien Chaumond, and Thomas Wolf. Its Hub hosts versioned repositories for models, datasets, and applications called Spaces. Repositories may be public, private, open, gated, or distributed under licences that impose important limits; presence on the Hub does not by itself make an artefact open source.
 
-For this Dictionary, Hugging Face is the **infrastructure layer the open-weights ecosystem runs on**. When the Dictionary's *[Sovereign Compute](sovereign-compute.md)* calculator recommends downloading *[Llama](llama.md)*, *[Hermes](hermes.md)*, *[Mistral](mistral.md)*, *[Gemma](gemma.md)*, *[Qwen](qwen.md)*, or any other open-weights model for local inference, the actual download is in nearly every case from Hugging Face. The company's *transformers* and *datasets* Python libraries are the standard tooling for working with these models programmatically.
+For this Dictionary, Hugging Face is a central distribution layer for the open-weight ecosystem. Models from [Llama](/entries/llama/), [Hermes](/entries/hermes/), [Mistral](/entries/mistral/), [Gemma](/entries/gemma/), [Qwen](/entries/qwen/), and many other families are commonly downloaded from the Hub for local inference. The company's `transformers` and `datasets` libraries are also widely used to load and work with machine-learning artefacts programmatically.
 
-Hugging Face's strategic position is unusual: it competes with no major lab directly, charges only for hosted enterprise services and compute, and has consequently become the *neutral platform* that even commercial-rival labs (Anthropic, Meta, Google) use for some artefact distribution. Its sustained existence is a non-trivial precondition for the *[Sovereign Compute](sovereign-compute.md)* argument as currently formulated.
+The Hub's scale makes it infrastructure, though "neutral" would be too strong. Hugging Face sets platform rules, offers paid storage, compute, inference, and enterprise services, and must make moderation and access decisions. At the same time, competing labs, companies, researchers, and hobbyists can distribute artefacts through the same interface. That shared layer makes open-weight models easier to find, compare, version, and download.
+
+The [Sovereign Compute](/entries/sovereign-compute/) argument does not require one commercial hub to last forever. It does require weights and documentation to remain obtainable, licensable, verifiable, and runnable outside a single vendor's hosted product. Hugging Face currently makes that path much easier.
+
+## Sources
+
+- Hugging Face, [Hub documentation](https://huggingface.co/docs/hub/index), accessed 6 September 2026.
+- Hugging Face, [pricing](https://huggingface.co/pricing), accessed 6 September 2026.
 
 ## See also
 
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Llama](llama.md)*, *[Hermes](hermes.md)*, *[Mistral](mistral.md)*, *[Gemma](gemma.md)*, *[Qwen](qwen.md)* — models distributed via the platform
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Llama](/entries/llama/)*, *[Hermes](/entries/hermes/)*, *[Mistral](/entries/mistral/)*, *[Gemma](/entries/gemma/)*, *[Qwen](/entries/qwen/)* — model families distributed through the platform
