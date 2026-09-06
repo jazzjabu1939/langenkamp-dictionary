@@ -1,6 +1,6 @@
 # Batch G — Plain-Prose Review
 
-**State:** reviewed locally; awaiting approval
+**State:** approved and published
 
 **Baseline:** `0335273`
 
@@ -69,6 +69,6 @@ The unpublished local build contains all fourteen reviewed pages under `_site/en
 
 All fourteen rendered pages were inspected for headings, literal `.md` URLs, and internal link targets. Every canonical entry target exists in the build.
 
-## Publication gate
+## Publication record
 
-Batch G remains local and unpublished. Batch H is locked until Professor Langenkamp approves G and the approved commit is integrated, checked, deployed, and verified live.
+Professor Langenkamp approved batch G on 6 September 2026. The reviewed content was integrated into `main` as `fd8ec59`. Batch H was authorised to begin after publication verification.
