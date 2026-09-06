@@ -4,20 +4,30 @@ kind: glossary
 title: "Llama"
 permalink: /entries/llama/
 date: 2026-05-12
-summary: "*Meta AI*'s open-weights language model family, first released February 2023. The most-downloaded open-source LLM line and the foundation under most of the post-2023 open-weights ecosystem."
+last_revised: 2026-09-06
+summary: "Meta's family of downloadable model weights, beginning with LLaMA in 2023 and distributed under Meta's own community licences rather than a standard open-source licence."
 draft: false
 published: true
 ---
 
-Llama (originally styled LLaMA — *Large Language Model Meta AI*) is the open-weights large language model family released by *[Meta AI](meta-ai.md)*. The first generation (Llama 1) was released February 2023 under a research-only licence; Llama 2 (July 2023) shifted to a more permissive licence; Llama 3 (April 2024) and Llama 4 (April 2025) have continued the open-weights posture with progressively larger parameter scales and improved capabilities. As of 2026, Llama is the most-downloaded open-weights LLM family in the world by a wide margin and the practical foundation under most of the post-2023 open-weights ecosystem.
+Llama is Meta's family of downloadable AI model weights. The name began as LLaMA — *Large Language Model Meta AI* — with a research release in February 2023. Llama 2 expanded commercial access in July 2023, Llama 3 followed in 2024, and Llama 4 introduced natively multimodal mixture-of-experts models in April 2025.
 
-For this Dictionary, Llama matters at two levels. First, **technically**: Llama base models are the canonical foundation that other open-weights labs (most notably *[Nous Research](nous-research.md)* with *[Hermes](hermes.md)*) build fine-tuned variants on top of. Second, **strategically**: Meta's sustained open-weights posture is the single most important reason the *[Sovereign Compute](sovereign-compute.md)* argument is viable at all. Without Llama (or a credible replacement) the gap between frontier closed-weights models and the best open-weights options would be much wider than it currently is, and the Dictionary's *[Open-Weights Inversion](sovereign-compute.md)* thread would not have an empirical foundation.
+The family helped normalize a practical alternative to closed APIs: download weights, run them on infrastructure you control, fine-tune them, or build derivative models. Meta reported more than one billion cumulative Llama downloads by March 2025. That figure is a vendor count, not proof that Llama underlies most open-weight systems, as the former entry claimed; the ecosystem also includes major families such as *[Qwen](/entries/qwen/)*, *[DeepSeek](/entries/deepseek/)*, Gemma, and Mistral.
 
-The licensing remains *open-ish* rather than *fully open* — Meta restricts commercial use by very large companies (>700M MAUs) and requires a license-acceptance step — but for nearly all individual operators the Dictionary serves, the licence is functionally equivalent to fully open.
+Llama is **open-weight**, but its licence is not a standard open-source software licence. The Llama 4 Community License requires attribution and compliance with an acceptable-use policy, imposes naming conditions on some derivative models, and requires services above 700 million monthly active users to seek a separate licence. Those restrictions may not burden an individual local operator, but they still matter when describing what “open” means.
+
+For the Dictionary, Llama matters because it made capable local and self-hosted inference easier to obtain. It supports the practical case for *[Sovereign Compute](/entries/sovereign-compute/)* without settling the larger argument over whether access to weights is enough.
 
 ## See also
 
-- *[Meta AI](meta-ai.md)* — the producer
-- *[Hermes](hermes.md)* — the dominant Llama-derived fine-tune
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Hugging Face](hugging-face.md)* — distribution channel
+- *[Meta AI](/entries/meta-ai/)* — the producer
+- *[Hermes](/entries/hermes/)* — a Llama-derived fine-tune family
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Open Weights](/entries/open-weights/)*
+- *[Hugging Face](/entries/hugging-face/)* — a distribution channel
+
+## Sources
+
+- Meta AI, *The Llama 4 herd*, 5 April 2025: <https://ai.meta.com/blog/llama-4-multimodal-intelligence/>
+- Meta, *Celebrating 1 Billion Downloads of Llama*, 18 March 2025: <https://about.fb.com/news/2025/03/celebrating-1-billion-downloads-llama/>
+- Meta, *Llama 4 Community License Agreement*: <https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE>
