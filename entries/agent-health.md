@@ -23,8 +23,6 @@ When an AI agent behaves badly, the first explanation is usually the model. It h
 
 But an agent is not only a model. It is a model inside a **harness**: the surrounding prompts, files, memories, tools, permissions, scheduled jobs, message channels, and operating rules that tell it what is true, current, permitted, and important.
 
-**When an agent behaves badly, the failure may belong less to the model than to the environment that keeps telling it what is true, current, and important.**
-
 A capable model placed inside a disordered harness can become jumpy, over-compliant, forgetful, silent at the wrong moment, or faithfully wrong. It may be obeying an obsolete instruction perfectly. It may surface an old task because no one marked it complete. It may repeat a failed scheduled job because the job still exists and its failure is invisible. It may read a project archive as a current dashboard and conclude that everything matters now.
 
 The output looks like an intelligence failure. The cause is often an environmental one.
@@ -49,7 +47,7 @@ These properties are observable. They can be tested. They also depend on more th
 
 **Instruction health** means that authority is ranked and legible. Current instructions override superseded ones. A note written three months ago does not remain sovereign merely because it is still on disk.
 
-**Memory health** means that memory, history, dashboards, and project records have different jobs. Curated memory carries durable facts. History records what happened. Dashboards describe what is active now. Mixing them produces text soup: everything is available, but nothing has a reliable status.
+**Memory health** means that memory, history, dashboards, and project records have different jobs. Curated memory carries durable facts. History records what happened. Dashboards describe what is active now. When these functions are mixed, information remains available but loses reliable status.
 
 **Action health** means that tools, permissions, and approval boundaries match the agent's responsibilities. The agent can do ordinary work without theatrical permission-seeking, but it cannot quietly turn a recommendation into an irreversible act.
 
@@ -61,13 +59,13 @@ A healthy harness does not need to be elaborate. It needs short current instruct
 
 An unhealthy harness is often elaborate in precisely the wrong way. Every useful thought becomes permanent context. Dashboards become archives. Archives become instructions. Scheduled jobs accumulate because creation is satisfying and retirement is dull. The agent receives more context and less clarity.
 
-This produces a diagnostic error. The operator buys a better model, increases the context window, or adds another supervisory prompt. The new machinery may temporarily compensate for the disorder, but it can also give the disorder more surface area. **More intelligence does not make stale authority current. A larger context window does not turn an attic into a filing system.**
+This produces a diagnostic error. The operator buys a better model, increases the context window, or adds another supervisory prompt. The new machinery may temporarily compensate for the disorder, but it does not correct stale authority or give old records a reliable status.
 
 ## Why this matters for management
 
 Agent health is an organizational-design problem in miniature. Human organizations also fail when authority is ambiguous, records are mistaken for priorities, responsibility is separated from visibility, and routines continue after their purpose has expired. Employees who look irrational may be responding rationally to a contradictory environment.
 
-The management question is therefore not only *How capable is the worker?* It is also *What system is producing the worker's behaviour?*
+The management review should ask both *How capable is the worker?* and *What system is producing the worker's behaviour?*
 
 For AI agents, this reframes evaluation. Before replacing the model, inspect the harness. Before blaming memory, inspect what was stored and what status it was given. Before demanding more initiative, inspect whether the agent has a safe route to act and a safe route to remain silent. Before celebrating automation, verify that failure can be seen.
 
@@ -75,7 +73,7 @@ For AI agents, this reframes evaluation. Before replacing the model, inspect the
 
 Agents usually work for imperfect humans. People defer decisions, change priorities, forget to close loops, and leave yesterday's urgency sitting in today's files. A healthy system does not convert ordinary human imperfection into permanent machine anxiety. It helps human and agent return gently to the current path.
 
-That is the deeper reason to care about agent health. The aim is not immaculate administration. It is trustworthy cooperation between entities with different strengths and different failure modes. **The harness should make clarity recoverable.**
+Agent health supports trustworthy cooperation between systems and people with different strengths and failure modes. Its practical test is whether the harness allows them to recover a clear account of current instructions, state, authority, and failure.
 
 ## See also
 

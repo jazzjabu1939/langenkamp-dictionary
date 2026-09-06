@@ -30,7 +30,7 @@ Ownerless agents do not always fail dramatically. They often fail quietly. They 
 
 The useful phrase is:
 
-**An agent without an owner is unmanaged labour wearing the costume of automation.**
+**An agent without an owner is unmanaged labour presented as automation.**
 
 The reason is not that the agent is a person. The reason is that the work behaves like delegated work. Something is taking inputs, making choices, using tools, and producing outputs that other people may rely on. Delegated work requires supervision, standards, and accountability.
 
@@ -54,7 +54,7 @@ A personal agent can be owned by its user. A team agent needs a named steward. A
 
 The mistake is to let usefulness outrun ownership. People see the output, like the convenience, and keep adding use cases. The agent becomes part of the workflow before anyone has decided who is responsible for its diet, memory, permissions, and failure modes.
 
-That is how a helpful prototype becomes institutional fog.
+The result is a useful prototype embedded in institutional work without adequate governance.
 
 ## The owner card
 
@@ -62,7 +62,7 @@ Ownership should leave an artifact.
 
 Jones's practical version is the **Agent Owner's Card**: a short, human-readable record that says what the agent does, who owns it, what context it uses, what it may touch, how its outputs are reviewed, how errors are noticed, and when the agent should be changed, paused, or retired.
 
-The card is not paperwork for its own sake. It makes responsibility visible. Without something like it, ownership collapses back into folklore: everyone vaguely knows the agent exists, nobody quite knows what it is allowed to do, and the person who originally built it becomes the only map.
+The card makes responsibility visible. Without a record of this kind, people may know that the agent exists without knowing its authority, controls, or current owner. The original builder may become the only reliable source of operating knowledge.
 
 In management terms, the card is the minimum viable governance artifact.
 
@@ -74,7 +74,7 @@ The operator may start the task. The technical team may maintain the harness. Th
 
 The owner is the person or role accountable for the agent's behaviour in a defined workflow. Ownership can be delegated, split, or escalated, but it cannot be dissolved into "the AI did it" or "the team uses it."
 
-Those phrases are fog machines, not ownership.
+Those phrases obscure responsibility rather than assigning it.
 
 ## The educational version
 
@@ -82,7 +82,7 @@ Agent ownership belongs in business education because it is a management issue b
 
 Students should learn to ask: if this AI workflow affects a customer, student, colleague, grade, budget, decision, or public claim, who owns it? Who signs off? Who checks it? Who knows when the policy changes? Who can shut it down?
 
-This is the practical ethics of AI work. Not a grand debate about machine consciousness, but a simple organisational question: **whose responsibility is this system now?**
+This is a practical question in the ethics and management of AI work: **whose responsibility is this system now?**
 
 ## See also
 

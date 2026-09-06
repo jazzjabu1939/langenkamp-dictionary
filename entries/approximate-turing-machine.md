@@ -3,7 +3,7 @@ layout: default
 kind: glossary
 title: "Approximate Turing Machine"
 permalink: /entries/approximate-turing-machine/
-summary: "the hypothesis that both biological brains and modern AI systems are best understood as imperfect, probabilistic implementations of the theoretical Turing machine — with the consequence that the question of what AI can ultimately do becomes empirical rather than philosophical."
+summary: "A working hypothesis, associated here with Demis Hassabis, that the brain's information processing may be computational in the broad Turing sense, while leaving questions of feasibility and consciousness open."
 published: true
 ---
 
@@ -11,29 +11,29 @@ published: true
 
 ## In one sentence
 
-**The *approximate Turing machine* hypothesis holds that both biological brains and modern AI systems are best understood as imperfect, probabilistic implementations of the theoretical universal computer — with the consequence that what AI can ultimately do is an empirical question, not a philosophical one.**
+**The *approximate Turing machine* hypothesis holds that the brain's information processing may be computational in the broad Turing sense, even though brains are physical, noisy, resource-constrained systems rather than ideal mathematical machines.**
 
 ## The Turing machine background
 
-Alan Turing's 1936 paper described a theoretical device — **the Turing machine** — capable of computing anything that could be expressed as an algorithm. Not any specific calculation, but *any* calculation: anything computable at all. Modern computers are, in the formal sense, Turing machines with memory constraints and speed limits. They can compute anything; they just cannot compute everything *simultaneously* or *instantly*.
+Alan Turing's 1936 paper described an abstract device — **the Turing machine** — used to define what can be computed by an algorithm. A *universal* Turing machine can simulate any other Turing machine when given its description and input. Physical computers approximate this abstract model while remaining limited by memory, time, energy, and architecture.
 
-The question that neuroscientists, cognitive scientists, and AI researchers have been arguing about for decades is whether the human brain is also a Turing machine — and therefore whether sufficiently capable AI might eventually match human cognition in any domain, or whether the brain does something that Turing machines cannot.
+One long-running question in neuroscience, cognitive science, and philosophy of mind is whether the brain's relevant operations are computational, or whether an adequate account of cognition requires processes outside that description. Even if cognition is computable, it does not follow that a practical AI system can reproduce every human capacity: computability does not settle data, efficiency, embodiment, architecture, or consciousness.
 
 ## Hassabis's position
 
-Demis Hassabis stated it plainly: *"a lot of neuroscientists including me think that maybe the brain... is an approximate Turing machine."* The qualifier *approximate* does the load-bearing work. A perfect Turing machine is lossless. Brains are noisy, lossy, probabilistic, constrained by metabolism and wiring. Modern AI systems are also noisy, lossy, and probabilistic — they produce different outputs from identical inputs depending on temperature settings and random seeds. Both are approximations of the theoretical ideal. Both are, in this framing, running the same kind of computation.
+Demis Hassabis stated the position plainly: *"a lot of neuroscientists including me think that maybe the brain... is an approximate Turing machine."* The qualifier *approximate* matters because a Turing machine is a mathematical model, whereas a brain is a physical system constrained by metabolism, wiring, noise, and finite resources. The comparison proposes a computational description of cognition; it does not establish that brains and present AI systems use the same mechanisms.
 
-If the hypothesis is correct, the limit of what AI can do is not set by some deep qualitative difference between silicon and neurons. It is set by scale, training, and architectural ingenuity. Remove those constraints, and the question of what falls outside AI's reach becomes genuinely open — which is a stranger and more vertiginous position than either the AI-will-never-be-conscious camp or the AI-will-surpass-us camp usually occupies.
+If the hypothesis is correct, human cognition does not depend on a form of information processing that is uncomputable in principle. That still leaves substantial empirical questions about which architectures can reproduce particular capacities, at what cost, and with what limitations.
 
 ## What the hypothesis leaves open
 
 The approximate Turing machine frame does not resolve the consciousness question. It brackets it. Whether a system that computes approximately as a Turing machine computes thereby has subjective experience — whether there is something it is like to be that system — is a question the frame deliberately does not answer. Hassabis was explicit about this: *"I'm quite open-minded about what the answers might be."* That open-mindedness is itself a philosophical position: the *avyākata* move, the deliberate refusal to resolve a question before the evidence warrants it.
 
-This Dictionary makes the same move, see Descartes Was Wrong. The approximate Turing machine entry names the computational structure without adjudicating whether computation of this kind is sufficient for mind or existence of a self. Both are useful framings. Neither is the last word.
+This Dictionary uses the phrase to name the computational hypothesis without deciding whether computation is sufficient for subjective experience or a self. See *[Descartes Was Wrong](descartes-was-wrong.md)* for the related philosophical discussion.
 
 ## The practical consequence
 
-For the practitioner, the approximate Turing machine hypothesis has one immediate implication: **the categories of work you believe AI cannot do are probably empirical claims, not necessary truths.** They may be right today. They may not be right next year. The honest position is to hold them lightly, test them regularly, and update when the evidence changes. The history of AI is substantially a history of experts stating what AI can never do — and then watching it do that.
+For practitioners, the hypothesis suggests that claims about tasks AI can never perform should be stated as empirical claims with specified evidence and limits. A task may remain beyond current systems because of architecture, data, cost, reliability, or embodiment even if it is computable in principle. Those claims should be tested again as the systems change.
 
 ## See also
 

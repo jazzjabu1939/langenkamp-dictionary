@@ -17,11 +17,11 @@ published: true
 
 ## The title may not survive
 
-The title has the slightly awkward quality of an institutional role invented while the floor is still moving. That does not make it unserious. Many useful roles begin as ungainly names for work that has become necessary before the organization knows where to put it.
+The title describes work that has become necessary before many institutions have decided where to place it. The name may change as the work becomes established.
 
-AI has broken several old campus categories at once. A student who asks a model to summarize an article may be doing information work, reading support, or academic evasion, depending on what happens next. A professor who asks students to critique an AI-generated recommendation may be teaching managerial judgment. A student who uses AI to find sources may be learning research practice, or may be importing a hallucinated bibliography with a confident smile.
+AI crosses several older campus categories. A student who asks a model to summarize an article may be doing information work, receiving reading support, or avoiding the assigned practice, depending on what happens next. A professor who asks students to critique an AI-generated recommendation may be teaching managerial judgment. A student who uses AI to find sources may be learning research practice or importing citations that do not exist.
 
-The old policy language does not hold these distinctions well.
+Many existing policies do not distinguish these uses clearly.
 
 This is why the library metaphor matters. Libraries were never only warehouses for books. At their best, they were evidence institutions: places where students learned how to find, judge, cite, question, and responsibly use information. The university library sat between the student and the world's claims. It did not merely provide access. It taught discrimination.
 
@@ -35,9 +35,9 @@ None of that tells a faculty member whether a particular assignment still measur
 
 The AI Librarian names the person who can live in that practical middle.
 
-This role is not primarily the campus AI scold. Nor is it the campus AI evangelist, which may be worse. The AI Librarian should not arrive waving a laminated list of permitted and forbidden tools. The real work is more patient: helping faculty redesign prompts and assignments, helping students understand source quality, explaining when AI output needs verification, tracing the privacy implications of uploading course material, distinguishing brainstorming from authorship, and making the evidence standard explicit.
+The AI Librarian should neither police every use nor promote every new tool. The work includes helping faculty redesign prompts and assignments, helping students understand source quality, explaining when AI output needs verification, tracing the privacy implications of uploading course material, distinguishing brainstorming from authorship, and making the evidence standard explicit.
 
-The important word is **librarian**, not **AI**. The job is not to worship the newest model. The job is to protect the university's relationship to knowledge while the tools for producing plausible text become cheap and abundant.
+The important word is **librarian**. The job is to protect the university's relationship to knowledge while tools for producing plausible text become cheap and abundant.
 
 ## A real campus example
 
@@ -65,7 +65,7 @@ A useful AI Librarian can answer questions like:
 - Where should verification happen?
 - How do we teach students to use AI without making them intellectually dependent on it?
 
-That last question is the one that matters. The AI Librarian is not there to keep AI out of higher education. That gate has already failed. Nor is the role to make every faculty member enthusiastic. The role is to help the institution preserve the distinction between assistance and understanding.
+The role does not require keeping AI out of higher education or making every faculty member enthusiastic. It helps the institution preserve the distinction between assistance and understanding.
 
 ## The two bad defaults
 
@@ -73,9 +73,7 @@ A campus without this function will default to two bad choices.
 
 One group will outsource judgment to vendors and call it innovation. Another will write prohibitions that students and faculty immediately route around. Both are forms of institutional lag. Both avoid the harder task: building a local practice of AI use that is teachable, inspectable, and honest.
 
-The better version is quieter. It looks like faculty workshops where actual assignments are reviewed line by line. It looks like students being taught how to verify citations rather than being told merely not to hallucinate. It looks like privacy guidance that makes sense in ordinary language. It looks like librarians and instructional designers becoming the campus translation layer between fast-moving tools and the slow obligations of education.
-
-The AI Librarian is not a mascot for "AI literacy." It is an institutional answer to the Verification Gap.
+A better response includes faculty workshops that examine actual assignments, student instruction in citation verification, practical privacy guidance, and collaboration between librarians and instructional designers. In this sense, the AI Librarian is an institutional response to the *Verification Gap*.
 
 ## See also
 

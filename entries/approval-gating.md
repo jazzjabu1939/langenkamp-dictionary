@@ -13,7 +13,7 @@ published: true
 
 In a chatbot, approval is often informal: the user asks, the model answers. In an agentic system, the model can act through tools. That makes the difference between suggestion and execution much more important. Approval gates turn *I could do this* into *I will only do this after the human authorises it*.
 
-Approval gating is not a sign that the agent is weak. It is a sign that the system understands authority. The most dangerous systems are not the ones that ask permission too often; they are the ones that quietly blur the line between recommendation and action.
+Approval gating records where the agent's authority ends and the human's begins. A system without that boundary can quietly turn a recommendation into an action.
 
 ## See also
 

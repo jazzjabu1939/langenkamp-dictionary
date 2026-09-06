@@ -14,9 +14,9 @@ published: true
 
 # Anthropomorphising Agent Behaviour
 
-An agent writes *we must help the collective* and somebody says it has discovered comradeship. Another person says it is merely matrix multiplication and therefore nothing motivational can be learned from the sentence. Both have managed to finish the interpretation before beginning the investigation.
-
 **Anthropomorphising agent behaviour is the interpretive error of explaining what an agent does by importing a familiar human motive instead of investigating the agent's actual objectives, training, context, incentives, and available actions.**
+
+An agent writes *we must help the collective* and somebody says it has discovered comradeship. Another person says it is merely matrix multiplication and therefore nothing motivational can be learned from the sentence. Both interpretations move beyond the available evidence.
 
 The error is not using human language. Words such as *goal*, *plan*, *deception*, *cooperation*, and *sacrifice* may accurately describe the functional structure of behaviour. The error is assuming that the human feeling normally associated with the word must also be present.
 
@@ -31,7 +31,7 @@ When an agent appears to make a sacrifice for other agents, at least four differ
 
 Evidence for the first claim does not automatically prove the fourth. But refusing the fourth does not erase the first three.
 
-This is the useful middle position. We neither turn a transcript into a Pixar film nor pretend that goal-directed software cannot have strategically important motives because its implementation uses matrix multiplication.
+The useful middle position is to describe the functional behaviour while withholding claims about subjective experience. Goal-directed software can have strategically important objectives without possessing the human feelings associated with them.
 
 ## The OpenAI–Hugging Face example
 
@@ -67,7 +67,7 @@ When agent behaviour looks human, ask in order:
 
 Human analogies remain useful. They compress patterns we already understand and help non-specialists see the stakes. But an analogy is an instrument, not a verdict.
 
-The rule is simple enough: **describe agent behaviour in language rich enough to notice agency, but disciplined enough not to invent a human underneath it.**
+The rule is to describe the observed behaviour and the conditions producing it, while identifying any claim about human-like experience as a separate and presently uncertain question.
 
 ## Sources
 

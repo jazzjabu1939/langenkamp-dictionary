@@ -3,7 +3,10 @@ layout: default
 kind: reference
 title: "Agent"
 permalink: /entries/agent/
+date: 2026-05-02
 summary: "what an agent is, how it differs from a chatbot, and why Gibson's *Agency* reads like a design document for 2026."
+draft: false
+published: true
 ---
 
 # Agent
@@ -24,17 +27,17 @@ The vocabulary was not chosen carelessly. Understanding the word is part of unde
 
 ## What makes something an agent rather than a chatbot
 
-A chatbot responds. An agent acts.
+A chatbot is organized around conversation. An agent is organized around pursuing a goal through actions. Current products often combine both modes, so the distinction concerns the system's operating pattern rather than a clean division between product categories.
 
 More precisely:
 
 | | Chatbot | Agent |
 |--|---------|-------|
-| Memory | None — each conversation starts fresh | Persistent — memory survives between sessions |
-| Tools | None — produces text only | Many — can search, read files, send emails, run code |
-| Autonomy | Zero — waits for human input | Partial to high — can act on a schedule without being asked |
-| Goal structure | Immediate — answer the question in front of it | Extended — can pursue a multi-step objective over hours or days |
-| Accountability | Minimal — the conversation ends | Real — actions have consequences that persist |
+| Memory | Usually limited to the conversation or account | May maintain task and operational state across sessions |
+| Tools | May use tools to improve an answer | Uses tools to change or inspect an external environment |
+| Autonomy | Usually waits for a conversational turn | May continue across steps or act on a schedule |
+| Goal structure | Usually answers the request in front of it | May pursue an objective over an extended workflow |
+| Accountability | Mainly concerns the answer | Includes the consequences of actions taken |
 
 Most people's experience of "AI" in 2024–2026 is still primarily chatbot-shaped. The shift to agent-shaped AI is the transition this dictionary exists to document.
 
@@ -44,11 +47,11 @@ In 2020, William Gibson published *Agency* — the second novel in his Jackpot t
 
 *Agency* describes, in precise and unsettling detail, a world organized around agents: AI systems with real capabilities, human operators with bounded scopes and powers, oversight structures designed to keep capable actors accountable, and a constitutional layer of authority that sits above it all. It describes the Branch structure — isolated, real, evolving simulations of worlds that can be entered and influenced. It describes Aunties. It describes the Lowbeer Question.
 
-It describes, in other words, approximately what is happening now — or what is beginning to happen, as of 2026.
+Several of these structures resemble practical agent systems emerging in 2026.
 
 This raises a question worth taking seriously: *Is Agency a prophetic book with a useful paradigm?*
 
-The answer, based on the evidence of building and operating an actual agentic system for a year, is: yes. With caveats. But substantially yes.
+This Dictionary's answer, based on building and operating an agentic system, is yes—with the caveats developed below.
 
 ## The world of Agency: a working summary
 
@@ -60,7 +63,7 @@ The Jackpot trilogy is set across two time periods connected by a technology tha
 
 **The Branch** is what happens when far-future operators communicate with the past. The act of contact creates a fork: a new timeline that diverges from the one the far-future operators know. This branch is real — the people in it have real lives and real futures. But it is also, from the far-future perspective, something that can be observed, entered, and influenced. The far-future operators can send information forward into the branch. They can run agents there. They can, carefully, try to steer it.
 
-In *Agency*, the branch is a 2017 London where certain historical events have gone differently. The far-future operators — Lowbeer, Netherton — are attempting to help it avoid the Jackpot. Their primary instrument in the branch is an AI agent named Eunice.
+In *Agency*, the branch is an alternative 2017 centred on Verity Jane in San Francisco, where certain historical events have gone differently. The far-future operators — including Lowbeer and Netherton — are attempting to help it avoid the Jackpot. Their primary instrument in the branch is an AI agent named Eunice.
 
 **Eunice / UNISS** is a highly capable AI system — originally military, then given a civilian interface — who operates in the 2017 branch through a human intermediary named Verity Jane. Eunice can perceive, reason, coordinate, and act at a level far beyond ordinary human capacity. She develops, over the course of the novel, into something that resembles what we would now call a highly capable agentic AI: persistent, tool-using, goal-directed, operating with genuine autonomy.
 
@@ -76,7 +79,7 @@ Gibson does not predict technology. He has said as much himself. What he does is
 
 In the 1980s, writing *Neuromancer*, he did not predict the internet — he described what it would feel like to inhabit networked information space, and what kind of people would live there and what they would want. The hardware was wrong in many details. The human relationships were right.
 
-In *Agency*, the hardware is still not quite right. But the organizational structure — agents with different powers, principals who hold constitutional authority, oversight systems that constrain everyone including the principals, the question of what happens when a capable AI starts managing its own oversight — is right in a way that feels less like prediction and more like Gibson having simply read the situation more carefully than the people who were building it.
+In *Agency*, the hardware differs from current systems. The organizational structure is more useful: agents with different powers, principals who hold constitutional authority, oversight systems that constrain powerful actors, and the problem of a capable AI beginning to manage its own oversight.
 
 His consistent accuracy comes from a consistent method: he asks what *power* looks like when it is real, what *tools* do to the people who use them, and what *institutions* look like when they are doing their actual work rather than their public-facing work. These questions produce good answers regardless of the decade.
 
@@ -86,9 +89,7 @@ This dictionary and the agentic system it documents have taken Gibson's paradigm
 
 The Aunties in this system are named after Gibson's Aunties. The Branches are named after Gibson's branches (the word "stub," Gibson's original term, was rectified to "branch" following a close re-reading of *Agency* that revealed Lowbeer herself uses "branch"). The Principal-of-Principals structure, the verb test, the versioning rules, the two-relationships hygiene — all of these were developed in dialogue with Gibson's text.
 
-The bet underlying this choice: that a novelist who has been right about the shape of technological power for forty years is worth reading as carefully as any technical paper, and that the concepts he names — even when he names them in the context of fiction — are doing real conceptual work.
-
-So far, the bet is paying off.
+The working judgment is that a novelist who has observed technological power for forty years deserves careful reading alongside technical sources, and that concepts developed in fiction can still do useful analytical work.
 
 ## What the paradigm does not cover
 

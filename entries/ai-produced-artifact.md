@@ -29,7 +29,7 @@ The difference is large. The first question treats AI use as a contamination eve
 
 If AI use is hidden, it can only be policed. If AI use is made visible, it can be assessed.
 
-That is the inversion. A student who writes *"I used ChatGPT"* in a disclosure note has not yet shown learning. But a student who can show the prompt, explain why the first output was shallow, identify the hallucinated source, revise the market-sizing logic, reject the overconfident recommendation, and defend the final decision has shown something real. The AI trace becomes evidence of process, not evidence of guilt.
+A disclosure stating *"I used ChatGPT"* does not by itself show learning. A student who can show the prompt, explain why the first output was shallow, identify a hallucinated source, revise the market-sizing logic, reject an overconfident recommendation, and defend the final decision provides evidence of process and judgment.
 
 This is especially important because the polished final artifact has lost some evidentiary weight. A clean memo or slide deck no longer proves what it once proved. The learning evidence has to move into the workflow around the artifact.
 
@@ -46,13 +46,13 @@ Useful components:
 - **Reflection note.** What the student learned from comparing their own analysis with the model's output.
 - **Version trail.** Enough history to show movement from framing to final submission.
 
-The point is not surveillance. The point is assessment validity. If the course is supposed to teach business judgment under AI-embedded conditions, the student's supervision of AI is part of the work. The artifact may be submitted, but it cannot carry the whole evidentiary burden.
+The purpose is assessment validity. If the course is supposed to teach business judgment under AI-embedded conditions, the student's supervision of AI is part of the work. The artifact may be submitted, but it cannot carry the whole evidentiary burden.
 
 ## Judgment defense
 
 The most compact form is the judgment defense. Require the student to defend a consequential recommendation, tradeoff, or assumption under questioning.
 
-This is not an oral quiz bolted onto a written assignment. It is a different kind of evidence. The student has to show ownership of the recommendation. Why this market? Why this assumption? Why this source? Why trust the AI-generated comparison? What would change your mind? What risk did the model underweight? What did you reject?
+A judgment defence supplies evidence different from the written artifact. The student has to show ownership of the recommendation. Why this market? Why this assumption? Why this source? Why trust the AI-generated comparison? What would change your mind? What risk did the model underweight? What did you reject?
 
 A student who cannot answer these questions may still have produced a polished artifact. The artifact is not enough. A student who can answer them has demonstrated something closer to professional competence, even if the artifact was AI-assisted.
 
@@ -60,17 +60,15 @@ A student who cannot answer these questions may still have produced a polished a
 
 There will still be times when human-only output is the right instrument. In-class, no-computer, pen-and-paper work remains one of the cleanest ways to validate whether a student can reason, calculate, outline, compare, or explain without machine assistance. The trouble is that this instrument is expensive in faculty time, especially at a large public university. It cannot carry every week of a semester by itself.
 
-That is why the AI Produced Artifact has to be understood correctly. It is not worthless. It can be an excellent professional output and a good vehicle for learning. But it is not self-authenticating evidence. It needs supporting evidence: process notes, validation memos, judgment defense, and enough human-only checks to keep the credential honest.
+An AI Produced Artifact can be an excellent professional output and a good vehicle for learning, but it is not self-authenticating evidence. It needs supporting evidence such as process notes, validation memos, judgment defence, and enough human-only checks to support the credential.
 
 The better assessment system uses both instruments. Human-only work validates baseline capability. AI Produced Artifacts test whether the student can operate in the professional world they are actually entering. The educational mistake is to confuse one for the other.
 
-## Why this is not surrender
+## Responsibility remains human
 
-Some faculty will hear this framing as capitulation: *if AI use becomes assessable, haven't we given up on students learning to think?*
+Assessing AI use does not remove the requirement that students learn to think. It makes their supervision of the tool available for examination. Concealing AI assistance behind a polished artifact provides weak evidence; banning it from every serious task leaves professional supervision of AI outside the curriculum.
 
-No. The opposite, if done well. We give up on thinking when we let students submit AI-smoothed artifacts while pretending the artifacts are unaided. We also give up on thinking when we ban AI in every serious task and leave students to learn professional AI supervision privately, unevenly, and often badly.
-
-The AI Produced Artifact entry says: bring the tool into the light where judgment can be taught. The student remains responsible. The faculty member remains responsible for the design. The model becomes part of the evidence trail, not a substitute for learning.
+The student remains responsible for the submitted judgment, and the faculty member remains responsible for designing evidence that can support a claim of learning. The model becomes part of the evidence trail rather than a substitute for learning.
 
 ## The 494BI application
 

@@ -17,19 +17,9 @@ published: true
 
 ## The corrective term
 
-Vibe Coding is what happens when the model becomes a code fountain.
+Vibe coding and agentic engineering may use the same model and produce the same amount of generated code. They differ in the operator's responsibility for the result. Vibe coding accepts output mainly because it appears to work. Agentic engineering defines the architecture and constraints, examines the changes, tests the important behaviour, and remains accountable for deployment and maintenance.
 
-Agentic Engineering is what happens when the human takes responsibility for the fountain, the plumbing, the water pressure, the filtration system, and the people downstream.
-
-The distinction is not whether AI writes code. In both cases, AI may write a great deal of code. The distinction is whether the human operator is merely accepting plausible output or actively designing the conditions under which that output can be trusted.
-
-This is why Andrej Karpathy's move from "vibe coding" toward "agentic engineering" matters. It is not just a rebrand. It is a shift in the moral posture of the work.
-
-Vibe coding says: *look what I can make the model produce.*
-
-Agentic engineering says: *look what I can responsibly cause this system to do.*
-
-Those are different claims.
+Andrej Karpathy's move from *vibe coding* toward *agentic engineering* gives this difference a useful name. The term shifts attention from what the model can produce to the conditions under which other people can rely on the result.
 
 ## The engineer moves up a level
 
@@ -39,7 +29,7 @@ But the center of gravity is moving.
 
 The new craft increasingly centers on specifying intent, bounding behavior, reviewing generated diffs, designing tests, controlling permissions, watching failure modes, and deciding when the model has produced something usable versus merely convincing.
 
-This is why **Agentic Engineering** is a better term than "AI coding" or "prompting." Prompting is too small. Coding is too implementation-focused. Agentic engineering names the whole operating loop: task framing, tool access, context management, review, verification, deployment, rollback, and maintenance.
+**Agentic Engineering** is broader than "AI coding" or "prompting." It names the whole operating loop: task framing, tool access, context management, review, verification, deployment, rollback, and maintenance.
 
 The agent may write the patch. The engineer owns the system.
 
@@ -53,9 +43,9 @@ If generated code passes a weak test, the engineer owns the weakness of the test
 
 If a tool call deletes the wrong file, the engineer owns the permission design that allowed it.
 
-This is not unfair to the engineer. It is what engineering means. Delegation does not remove responsibility; it changes the form of supervision.
+Engineering responsibility includes delegated implementation. Delegation changes the form of supervision but does not remove it.
 
-The same principle applies outside professional software teams. A professor building a local grading helper, a researcher building a scraper, or an operator maintaining an OpenClaw workflow can practice agentic engineering. The question is not credential status. The question is whether the human remains accountable for the system's behavior.
+The same principle applies outside professional software teams. A professor building a local grading helper, a researcher building a scraper, or an operator maintaining an OpenClaw workflow can practise agentic engineering when the human remains accountable for the system's behaviour.
 
 That accountability is especially important because AI makes implementation abundant. What remains scarce is trustworthy implementation: code that does what it should, fails in known ways, exposes enough of its path to be reviewed, and can be maintained by someone who did not sit inside the original prompt session.
 
@@ -69,7 +59,7 @@ Constraints are explicit. The human tells the agent what files it may edit, what
 
 Diffs are small enough to review. A thousand-line patch may be impressive. It may also be camouflage. The engineer keeps the work inspectable.
 
-Tests are meaningful. They do not merely prove that the happy path still smiles. They check the behavior the change is supposed to guarantee and the failure modes that matter.
+Tests cover the behaviour the change is supposed to guarantee and the failure modes that matter.
 
 Permissions are controlled. The agent does not receive broad destructive power merely because it is convenient.
 
@@ -77,17 +67,13 @@ Rollback paths exist. The engineer knows how to return to a known-good state.
 
 The generated code can be explained. If the human cannot explain the architecture, the risks, and the tests, the work has not yet earned the name engineering.
 
-## Not anti-AI
+## Use of AI
 
-Agentic engineering is not a nostalgic defense of hand-coded purity. That would miss the point.
+Agentic engineering makes extensive use of AI. An agent can search a codebase, propose changes, write boilerplate, refactor, summarize errors, and test possible fixes while the human concentrates on intent and judgment.
 
-The agent is useful precisely because it can implement quickly, hold local context, search a codebase, propose changes, write boilerplate, refactor, summarize errors, and try fixes while the human stays at the level of intent and judgment.
+This division of labour asks the human to become a better specifier, reviewer, tester, architect, and judge. The model is a powerful but fallible implementation system. The human need not type every line, but must make the development and review process reliable enough for the intended use.
 
-The right objection to vibe coding is not that it uses AI. The right objection is that it asks too little of the human.
-
-Agentic engineering asks more. It asks the human to become a better specifier, reviewer, tester, architect, and judge. It treats the model as a powerful but unreliable implementation system. The human's job is not to type every line. The human's job is to make the whole loop worthy of trust.
-
-That is why this term belongs next to Vibe Coding. Vibe Coding names the intoxicating discovery. Agentic Engineering names the discipline that has to follow if other people are going to depend on the result.
+The term therefore belongs next to *Vibe Coding*. Vibe coding names rapid creation through prompting. Agentic engineering names the additional discipline required when other people will depend on the result.
 
 ## See also
 

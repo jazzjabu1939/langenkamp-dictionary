@@ -9,9 +9,9 @@ draft: false
 published: true
 ---
 
-An agent with no memory is not necessarily unintelligent. It is simply meeting you for the first time every time.
-
 **Agent memory** is persistent information that an agent system can retain and retrieve across sessions or tasks. It may include facts about the operator, earlier decisions, preferences, unfinished work, summaries of past interactions, and lessons extracted from previous successes or failures. Memory gives an agent continuity beyond the model's training data and the contents of its current context window.
+
+Without memory, an agent may still be capable, but each session begins without information from the last one.
 
 The useful distinction from *[RAG](/entries/rag/)* is one of role, not necessarily machinery. **Memory names the information kept for continuity; RAG names a way of retrieving outside information into the current prompt.** An agent may retrieve its memories using semantic search and therefore use RAG-like machinery. Memory may also be kept in plain files, a database, or structured records and fetched by exact lookup. Nor must every memory be autonomously learned: people may deliberately curate, correct, or construct it.
 

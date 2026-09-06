@@ -3,7 +3,10 @@ layout: default
 kind: reference
 title: "Aunties"
 permalink: /entries/aunties/
+date: 2026-05-02
 summary: "specialized, single-verb oversight agents that prevent any one component from accumulating unchecked authority. Named after Gibson's Jackpot trilogy."
+draft: false
+published: true
 ---
 
 # Aunties
@@ -68,7 +71,7 @@ The remaining Aunties (Gate, Tool, Memory, Approval, Provenance, Recovery) are d
 
 The Aunties pattern is, at bottom, an organizational design problem wearing technical clothes. The architectural question — *how do you prevent any single component from accumulating unchecked authority?* — is the same question that produced the separation of powers in constitutional government, the audit-and-compliance function in large corporations, and the checks-and-balances structure in family governance.
 
-For a BBA or MBA classroom, the productive framing is this: every organization eventually faces the question of what to do when a capable actor — a person, a team, a system — becomes powerful enough that it would be inconvenient to supervise. The temptation is to trust the capable actor. The Aunties pattern is the structural answer: decompose the oversight function, distribute it across multiple named entities with bounded scopes, and make each entity externally observable. Trust, but verify. Then verify that you're verifying.
+For a BBA or MBA classroom, the productive framing is this: every organization eventually faces the question of what to do when a capable actor — a person, a team, or a system — becomes inconvenient to supervise. The Aunties pattern answers by decomposing oversight, distributing it across named entities with bounded scopes, and making each entity externally observable.
 
 Useful classroom questions:
 - Which Auntie is missing in most organizations, and why?

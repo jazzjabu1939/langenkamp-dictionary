@@ -49,7 +49,7 @@ An Agent Card can describe:
 
 The card makes delegation possible before the agents have spoken. A client agent reads it, decides whether the remote agent is suitable, learns how to structure the request, and establishes the required security context.
 
-This is more consequential than the stationery metaphor suggests. The Agent Card is an early unit of **machine-readable professional identity**. It says: *this is who I am, this is what I can do, this is where I can be reached, and these are the conditions under which I will accept work.*
+The Agent Card is an early unit of **machine-readable professional identity**. It states the agent's identity, capabilities, endpoint, and conditions for accepting work.
 
 For the Dictionary, Agent Card belongs inside A2A rather than as a separate entry. It is the protocol's discovery and capability-declaration mechanism.
 
@@ -64,7 +64,7 @@ A2A defines several basic objects:
 
 The protocol supports immediate request-and-response work, polling for longer tasks, streamed progress, and push notifications for work that continues after the original connection has closed.
 
-In other words, A2A is not merely a chat format. It is a small operating language for commissioning and supervising work.
+A2A therefore provides more than a chat format. It supplies a small operating language for commissioning and supervising work.
 
 ## MCP and A2A are complementary
 
@@ -108,11 +108,11 @@ This is where an open technical standard becomes a market institution. HTTP made
 
 ## Why it belongs in the Dictionary
 
-A2A names the moment when agents stop being isolated products and begin becoming an economy.
+A2A supplies infrastructure through which isolated agentic products can begin exchanging work.
 
 The first wave of agentic AI concentrated on what one agent could do: reason, call tools, use memory, and complete a workflow. The next layer concerns specialization and exchange. One agent cannot carry every context, permission, jurisdiction, professional credential, and organizational relationship. It will need to find other agents, commission work, receive artifacts, and decide whether to trust the result.
 
-That is not only a technical architecture. It is an organizational one. A2A turns delegation, specialization, coordination, and transaction costs into protocol design.
+The architecture is organizational as well as technical. A2A turns delegation, specialization, coordination, and transaction costs into protocol design.
 
 Google originally developed A2A and later donated it to the Linux Foundation. The protocol is now maintained through a technical steering structure representing several large technology and enterprise-software companies. That governance move matters: a protocol intended to connect agents across organizational boundaries cannot remain credible if it is merely one vendor's private dialect.
 
