@@ -1,6 +1,6 @@
 # Batch C — Plain-Prose Review
 
-**State:** ready_for_professor
+**State:** published
 
 **Baseline:** `32d3beb`
 
