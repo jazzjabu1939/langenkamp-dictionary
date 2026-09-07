@@ -3,6 +3,8 @@ layout: default
 kind: glossary
 title: "Token"
 permalink: /entries/token/
+first_published: 2026-05-19
+last_revised: 2026-09-07
 date: 2026-05-19
 summary: "The unit of language-model text processing that becomes, in practice, a unit of cost, throughput, memory, and capacity."
 draft: false
@@ -17,6 +19,6 @@ For most users, the important lesson is simple: more context and more output are
 
 ## See also
 
-- *[Token Burn](token-burn.md)*
-- *[Token Angst](token-angst.md)*
-- *[Context Window](context-window.md)*
+- *[Token Burn](/entries/token-burn/)*
+- *[Token Angst](/entries/token-angst/)*
+- *[Context Window](/entries/context-window/)*

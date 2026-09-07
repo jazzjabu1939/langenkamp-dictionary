@@ -1,12 +1,15 @@
 ---
 layout: default
 kind: reference
-title: "Token anxiety"
+title: "Token Anxiety"
 permalink: /entries/token-anxiety/
-summary: "the EV-range-anxiety analogue for language models. Forward-looking unease about whether a run will fit in budget."
+first_published: 2026-05-02
+last_revised: 2026-09-07
+summary: "The EV-range-anxiety analogue for language models: forward-looking unease about whether a run will fit within its constraints."
+published: true
 ---
 
-# Token anxiety
+# Token Anxiety
 
 *An informal but increasingly common piece of vocabulary among agentic-AI operators, modeled directly on the electric-vehicle community's concept of range anxiety.*
 
@@ -14,13 +17,13 @@ summary: "the EV-range-anxiety analogue for language models. Forward-looking une
 
 ## In one sentence
 
-**Token anxiety is the forward-looking unease an operator feels when an in-progress agent run might exhaust its available token budget — context window, daily rate-limit cap, or per-session quota — before completing the task.**
+**Token anxiety is the forward-looking unease that a model call or agent run may exhaust a relevant token constraint — context capacity, output allowance, rate limit, or spending budget — before the work is complete.**
 
 ## Why this term exists
 
-Cloud-hosted frontier models do not deliver tokens unconditionally. Every model has a context window (the maximum input plus output it can handle in a single call), every API key has a rate limit (tokens per minute or tokens per day), and every user has an implicit budget (the number of tokens they are willing to spend before grimacing). When any of these limits is approached during a real working session, the operator notices — and the noticing has a particular emotional flavour. Range anxiety, applied to language models.
+Cloud-hosted models operate under several different constraints. A model has a context limit for a call; an account or service may impose rate or usage limits; a runtime may cap output; and the operator has a spending budget. These limits are not interchangeable, but approaching any one of them can produce the same emotional flavour: range anxiety applied to language models.
 
-The condition is not hypothetical. Practitioners running long context-heavy tasks — full codebase reviews, long document syntheses, multi-step research — routinely watch the context-window meter tick toward full and feel the same dread an EV driver feels when the battery icon goes red on a country road.
+Long code reviews, document syntheses, and research sessions make the constraint visible because they can accumulate large inputs, outputs, and tool results. Some runtimes compact or summarize old context; some reject an oversized call; some expose a meter and some do not. The operator therefore needs to know which limit the system is actually reporting.
 
 ## What it actually feels like
 
@@ -59,14 +62,14 @@ In rough order of effort:
 1. **Watch the meter.** Most agent platforms surface remaining context. Look at it.
 2. **Stream output.** A streaming response tells you whether the run is succeeding token-by-token, rather than letting you stare at a spinner for two minutes only to receive an error.
 3. **Chunk the input.** Long inputs go through summarize-then-process pipelines, not single shots.
-4. **Spawn sub-agents.** A focused sub-agent on a smaller scoped task does not inherit the parent's context bloat.
-5. **Tier the model.** A bigger context window on a more capable model costs more per token but eliminates a category of token-anxiety.
+4. **Use a bounded child task when the runtime supports it.** Give the child only the context it needs; inheritance behaviour varies by implementation.
+5. **Choose the model for the constraint.** A larger context window may help, but price, rate limits, output limits, and recall quality remain separate questions.
 6. **Cap and retry.** Build the agent so a token-exhaustion failure is a recoverable error, not a session-ending crash.
 
 ## Trade-offs
 
 - **Anxiety as feature, not bug.** A small amount of token anxiety produces better-architected systems. A large amount produces brittle, over-engineered ones. The right level is *some*, not *none*.
-- **The meter lies sometimes.** Reported context-window numbers are estimates; tokenizers vary; cache hits and misses change the math. Treat the meter as a guide, not a guarantee.
+- **Know what the meter measures.** A context estimate, an API usage counter, a billing dashboard, and a rate-limit gauge report different things. Tokenizers and runtime overhead can also make a pre-call estimate differ from provider accounting.
 - **The cure can become the disease.** Operators who chunk *everything* in fear of token exhaustion sometimes fragment tasks into so many small pieces that quality suffers. Chunking is a useful tool, not a universal answer.
 
 ## Related and adjacent terms
@@ -78,4 +81,4 @@ In rough order of effort:
 
 ---
 
-*Related entries: [Token burn](token-burn.md), [Token angst](token-angst.md), [Heartbeat](heartbeat.md), [Sub-agent](sub-agent.md).*
+*Related entries: [Token burn](/entries/token-burn/), [Token angst](/entries/token-angst/), [Heartbeat](/entries/heartbeat/), [Sub-agent](/entries/sub-agent/).*

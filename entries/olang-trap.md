@@ -8,7 +8,7 @@ summary: "Marcus Olang's name for the injury of having formal Kenyan English mis
 draft: false
 published: true
 first_published: 2026-05-12
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 ---
 
 # The Olang' Trap

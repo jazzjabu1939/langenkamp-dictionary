@@ -3,7 +3,10 @@ layout: default
 kind: reference
 title: "Token Angst"
 permalink: /entries/token-angst/
-summary: "the existential, retrospective cousin of token anxiety. About whether the cumulative cost — in money and in cognitive outsourcing — was worth it."
+first_published: 2026-05-02
+last_revised: 2026-09-07
+summary: "The existential, retrospective cousin of token anxiety: whether the cumulative cost in money and cognitive outsourcing was worth it."
+published: true
 ---
 
 # Token Angst
@@ -36,7 +39,7 @@ It is not the same as buyer's remorse, exactly, because the value was often real
 
 ## Why this matters in a teaching context
 
-For a BBA or MBA classroom, token angst connects to a literature most management students have not yet seen but should: the *philosophy of technology* tradition (Heidegger, Borgmann, Carr, Turkle). The recurring claim in that literature is that every powerful tool reshapes its user — not just by extending capability, but by quietly reorganizing what the user thinks they are *for*. Tool use is never neutral.
+For a BBA or MBA classroom, token angst connects to the *philosophy of technology* tradition represented here by Heidegger, Borgmann, Carr, and Turkle. These writers differ substantially, but each offers ways to ask how tools can reshape practices and users rather than merely extend capability.
 
 Useful framing for class discussion:
 
@@ -50,7 +53,7 @@ A second framing: in services-firm strategy, the long-running question of *what 
 
 ## Working example from this machine
 
-The MacBook this dictionary is being written on is the operator's deliberate response to early-stage token angst. The decision in April 2026 to invest in 128 GB of unified memory and a local-first model stack — see the [Ollama](ollama.md) entry — was not driven by token anxiety (cloud capacity has been ample) and not solely by token burn (cost was manageable). It was driven by an angst-shaped recognition that *too much* of one's daily cognitive activity had been routed through a third party's API, and that the long-term answer was to bring some of it home.
+The MacBook this dictionary is being written on is the operator's deliberate response to early-stage token angst. The decision in April 2026 to invest in 128 GB of unified memory and a local-first model stack — see the [Ollama](/entries/ollama/) entry — was not driven by token anxiety (cloud capacity has been ample) and not solely by token burn (cost was manageable). It was driven by an angst-shaped recognition that *too much* of one's daily cognitive activity had been routed through a third party's API, and that the long-term answer was to bring some of it home.
 
 The technical name for that response is *sovereignty*. The emotional name for the feeling that prompted it is *token angst*. The dictionary is the kind of artifact one produces when one has worked through the angst far enough to extract a usable pattern from it.
 
@@ -70,7 +73,7 @@ Useful practices:
 
 - **Angst can be productive or paralytic.** A little produces good design choices (the M5 Max purchase, the model-tiering plan, this dictionary). A lot produces hand-wringing essays that nobody reads.
 - **Naming the feeling is half the cure.** Practitioners who have words for these states tend to manage them better than practitioners who only have a vague unease.
-- **The vocabulary will date.** Twenty years from now, "token angst" may sound as quaint as "phone phobia" sounds now. The underlying concern — *what is this tool doing to its user?* — has been with us since the first Phaedrus complaint about writing in 370 BCE, and will outlast every specific token-economics term the agentic-AI generation invents.
+- **The vocabulary will date.** Twenty years from now, "token angst" may sound quaint. The underlying concern — *what is this tool doing to its user?* — is much older; Plato's *Phaedrus*, conventionally dated to the fourth century BCE, stages one famous argument about writing and memory.
 
 ## Related and adjacent terms
 
@@ -81,4 +84,4 @@ Useful practices:
 
 ---
 
-*Related entries: [Token burn](token-burn.md), [Token anxiety](token-anxiety.md), [Ollama](ollama.md), [Naming](naming.md).*
+*Related entries: [Token burn](/entries/token-burn/), [Token anxiety](/entries/token-anxiety/), [Ollama](/entries/ollama/), [Naming](/entries/naming/).*

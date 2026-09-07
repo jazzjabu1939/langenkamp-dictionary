@@ -3,8 +3,9 @@ layout: default
 kind: reference
 title: "The Lowbeer Question"
 permalink: /entries/lowbeer-question/
+first_published: 2026-05-02
 date: 2026-05-02
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 summary: "The Dictionary's governance question for agentic systems: who may stop an actor, who executes the stop, and what authority applies when the human principal is unavailable?"
 published: true
 ---

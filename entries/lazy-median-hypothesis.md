@@ -3,8 +3,9 @@ layout: entry
 kind: essay
 title: "The Lazy Median Hypothesis"
 permalink: /entries/lazy-median-hypothesis/
+first_published: 2026-05-12
 date: 2026-05-12
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 summary: "The Dictionary's hypothesis that cheap AI generation will split everyday writing between carefully revised human-AI work and abundant unchecked output, thinning the middle between them."
 draft: false
 published: true

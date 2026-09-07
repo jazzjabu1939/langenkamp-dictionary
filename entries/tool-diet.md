@@ -3,6 +3,8 @@ layout: default
 kind: reference
 title: "Tool Diet"
 permalink: /entries/tool-diet/
+first_published: 2026-07-01
+last_revised: 2026-09-07
 date: 2026-07-01
 summary: "The discipline of giving an AI agent the smallest useful set of tools rather than every capability the surrounding system can expose."
 published: true
@@ -93,7 +95,7 @@ The second agent may sound less magical. It is more likely to survive contact wi
 
 ## See also
 
-[Tool](tool.md) · [Harness](harness.md) · [Approval Gating](approval-gating.md) · [Agent Ownership](agent-ownership.md) · [OpenClaw](openclaw.md) · [Grok Bot](/entries/grok-bot/)
+[Tool](/entries/tool/) · [Harness](/entries/harness/) · [Approval Gating](/entries/approval-gating/) · [Agent Ownership](/entries/agent-ownership/) · [OpenClaw](/entries/openclaw/) · [Grok Bot](/entries/grok-bot/)
 
 ## Source
 

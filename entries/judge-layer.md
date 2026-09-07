@@ -5,7 +5,7 @@ title: "The Judge Layer"
 permalink: /entries/judge-layer/
 date: 2026-06-17
 first_published: 2026-06-17
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 summary: "The production-architecture layer that evaluates an agent's proposed actions and decides which may proceed, which need human approval, and which must stop."
 published: true
 ---

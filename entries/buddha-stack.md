@@ -3,6 +3,8 @@ layout: default
 kind: glossary
 title: "The Buddha Stack"
 permalink: /entries/buddha-stack/
+first_published: 2026-05-23
+last_revised: 2026-09-07
 date: 2026-05-23
 summary: "A calm, local-first AI architecture: enough intelligence, ownership, measurement, and restraint to use frontier systems without living entirely inside them."
 draft: false
@@ -28,11 +30,11 @@ The Buddha Stack does not eliminate markets, resource use, or frontier dependenc
 
 ## See also
 
-- *[Using the Empire’s Telescope](empires-telescope.md)*
-- *[Not Batteries, Not Monks](not-batteries-not-monks.md)*
-- *[Cognitive Sovereignty](cognitive-sovereignty.md)*
-- *[Workflow-layer Sovereignty](workflow-layer-sovereignty.md)*
-- *[Sovereign AI](sovereign-ai.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Resource Visibility](resource-visibility.md)*
-- *[Open Weights](open-weights.md)*
+- *[Using the Empire’s Telescope](/entries/empires-telescope/)*
+- *[Not Batteries, Not Monks](/entries/not-batteries-not-monks/)*
+- *[Cognitive Sovereignty](/entries/cognitive-sovereignty/)*
+- *[Workflow-layer Sovereignty](/entries/workflow-layer-sovereignty/)*
+- *[Sovereign AI](/entries/sovereign-ai/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Resource Visibility](/entries/resource-visibility/)*
+- *[Open Weights](/entries/open-weights/)*

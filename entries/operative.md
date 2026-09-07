@@ -8,7 +8,7 @@ summary: "The *Serenity* figure who knows he is a monster but serves a better wo
 draft: false
 published: true
 first_published: 2026-05-23
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 ---
 
 **The Operative** is the Alliance agent in *Serenity* who pursues Malcolm Reynolds and the crew after they discover the truth about Miranda.

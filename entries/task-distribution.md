@@ -3,6 +3,8 @@ layout: default
 kind: reference
 title: "Task Distribution"
 permalink: /entries/task-distribution/
+first_published: 2026-07-01
+last_revised: 2026-09-07
 date: 2026-07-01
 summary: "The shape of the work an AI system is being asked to do: familiar or novel, inspectable or opaque, routine or edge-case, cheap to verify or expensive to trust."
 published: true
@@ -62,7 +64,7 @@ Some AI outputs are easy to check. A cleaned CSV can be sampled. A revised parag
 
 Other outputs are hard to check. A legal conclusion, a security patch, a medical interpretation, a strategic forecast, or a subtle grading recommendation can look polished while hiding the important failure. In those cases, the model's answer is not the end of the work. It is the beginning of the verification problem.
 
-This is why task distribution belongs next to the Dictionary's [Verification Gap](verification-gap.md). Once polished artifacts become cheap, the responsible question shifts from "Does this look good?" to "What evidence would let us trust this?"
+This is why task distribution belongs next to the Dictionary's [Verification Gap](/entries/verification-gap/). Once polished artifacts become cheap, the responsible question shifts from "Does this look good?" to "What evidence would let us trust this?"
 
 ## The management implication
 
@@ -70,7 +72,7 @@ Task distribution turns model strategy into operations strategy.
 
 The leader's job is not to crown a universal winner. It is to classify work. Which tasks are cheap to verify? Which tasks create expensive errors? Which tasks require private context? Which tasks can be batched? Which tasks should go to a local model? Which tasks should go to a frontier model? Which tasks should stay with a human?
 
-This is where [Routing Logic](routing-logic.md) begins. Task distribution describes the shape of the work. Routing logic decides where that work should go.
+This is where [Routing Logic](/entries/routing-logic/) begins. Task distribution describes the shape of the work. Routing logic decides where that work should go.
 
 The firms that learn to measure their task distribution will buy and build AI more intelligently. The firms that do not will either overpay for routine work or under-protect fragile work. Both errors are expensive. One shows up in the budget. The other shows up in the incident review.
 
@@ -84,7 +86,7 @@ That exercise teaches the thing managers will actually need. It teaches students
 
 ## See also
 
-[Routing Logic](routing-logic.md) · [Team Harness](team-harness.md) · [Harness](harness.md) · [Verification Gap](verification-gap.md) · [Open Model Trust](open-model-trust.md) · [Sovereign Compute](sovereign-compute.md)
+[Routing Logic](/entries/routing-logic/) · [Team Harness](/entries/team-harness/) · [Harness](/entries/harness/) · [Verification Gap](/entries/verification-gap/) · [Open Model Trust](/entries/open-model-trust/) · [Sovereign Compute](/entries/sovereign-compute/)
 
 ## Source
 

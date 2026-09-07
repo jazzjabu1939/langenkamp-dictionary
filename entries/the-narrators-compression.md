@@ -7,7 +7,7 @@ date: 2026-05-04
 summary: "A working hypothesis about how biological and artificial narrators compress many inputs and uncertainties into one coherent account—and then mistake the account for the process."
 published: true
 first_published: 2026-05-04
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 ---
 
 # The Narrator's Compression

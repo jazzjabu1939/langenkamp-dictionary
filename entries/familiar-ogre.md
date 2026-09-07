@@ -3,6 +3,8 @@ layout: default
 kind: glossary
 title: "The Familiar Ogre"
 permalink: /entries/familiar-ogre/
+first_published: 2026-05-23
+last_revised: 2026-09-07
 date: 2026-05-23
 summary: "The recurring arrival of commercial interests — advertising, investor demands, revenue targets, market share, enterprise contracts — inside projects that began with higher stated purposes."
 draft: false

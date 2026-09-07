@@ -3,8 +3,9 @@ layout: default
 kind: glossary
 title: "The Peripheral"
 permalink: /entries/the-peripheral/
+first_published: 2026-05-12
 date: 2026-05-12
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 summary: "William Gibson's 2014 novel, first volume of the Jackpot sequence, connecting a rural American stub to post-Jackpot London through information links and telepresent bodies."
 draft: false
 published: true

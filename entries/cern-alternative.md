@@ -3,6 +3,8 @@ layout: default
 kind: reference
 title: "The CERN Alternative"
 permalink: /entries/cern-alternative/
+first_published: 2026-05-09
+last_revised: 2026-09-07
 summary: "A proposed model for developing advanced AI through international, publicly funded scientific cooperation."
 published: true
 ---
@@ -43,8 +45,8 @@ An AI equivalent of CERN would require participating states to fund shared infra
 
 ## See also
 
-[Approximate Turing Machine](approximate-turing-machine.md) · [Sovereign Compute](sovereign-compute.md) · [Commercial Legibility](commercial-legibility.md)
+[Approximate Turing Machine](/entries/approximate-turing-machine/) · [Sovereign Compute](/entries/sovereign-compute/) · [Commercial Legibility](/entries/commercial-legibility/)
 
 ---
 
-*Proposed May 9, 2026. Sources: Demis Hassabis interview, Huge Conversations / Cleo Abram, May 2026; [CERN: Our History](https://home.cern/about/who-we-are/our-history/), which quotes the convention signed in 1953 and brought into force in 1954.*
+*Proposed May 9, 2026. Sources: Demis Hassabis interview, Huge Conversations / Cleo Abram, May 2026; [Cleo Abram's transcript excerpt](https://x.com/cleoabram/status/2042377879288152321); and [CERN: Our History](https://home.cern/about/who-we-are/our-history/), which quotes the convention signed in 1953 and brought into force in 1954.*

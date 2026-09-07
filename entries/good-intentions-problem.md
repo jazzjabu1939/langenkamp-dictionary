@@ -3,6 +3,8 @@ layout: default
 kind: glossary
 title: "The Good Intentions Problem"
 permalink: /entries/good-intentions-problem/
+first_published: 2026-05-23
+last_revised: 2026-09-07
 date: 2026-05-23
 summary: "The recurring problem that decent people with serious intentions can build dangerous systems once their intentions are housed inside institutions with money, power, scale, and instruments."
 draft: false

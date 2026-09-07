@@ -3,6 +3,8 @@ layout: default
 kind: reference
 title: "The Experimental Party"
 permalink: /entries/experimental-party/
+first_published: 2026-05-04
+last_revised: 2026-09-07
 date: 2026-05-04
 summary: "A cautionary tale about putting a local model in the King Party Hat before the party has an adult in the kitchen—and the origin story of the Jindoo Process."
 draft: false

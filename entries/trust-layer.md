@@ -3,6 +3,8 @@ layout: default
 kind: glossary
 title: "Trust Layer"
 permalink: /entries/trust-layer/
+first_published: 2026-06-04
+last_revised: 2026-09-07
 date: 2026-06-04
 summary: "The governance, verification, observability, and human-judgment layer that sits between AI capability and trusted delegated action."
 draft: false
@@ -23,8 +25,8 @@ The term is intentionally broader than compliance. Compliance asks whether a rul
 
 ## See also
 
-- *[Timothée Lacroix](timothee-lacroix.md)*
-- *[Human Judgment Layer](human-judgment-layer.md)*
-- *[Approval Gating](approval-gating.md)*
-- *[Stepping on the Same Rake](stepping-on-the-same-rake.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
+- *[Timothée Lacroix](/entries/timothee-lacroix/)*
+- *[Human Judgment Layer](/entries/human-judgment-layer/)*
+- *[Approval Gating](/entries/approval-gating/)*
+- *[Stepping on the Same Rake](/entries/stepping-on-the-same-rake/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*

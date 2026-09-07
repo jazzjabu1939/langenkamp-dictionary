@@ -3,6 +3,8 @@ layout: default
 kind: reference
 title: "Team Harness"
 permalink: /entries/team-harness/
+first_published: 2026-07-01
+last_revised: 2026-09-07
 date: 2026-07-01
 summary: "The shared AI work layer embedded in a team's tools, context, permissions, memory, habits, and review loops."
 published: true
@@ -80,7 +82,7 @@ The model is the brain. The harness is where the team learns to work with the br
 
 ## See also
 
-[Harness](harness.md) · [Routing Logic](routing-logic.md) · [Work Handoff / Open Engine](work-handoff-open-engine.md) · [Agent Ownership](agent-ownership.md) · [Sovereign Compute](sovereign-compute.md) · [Commercial Legibility](commercial-legibility.md) · [OpenClaw](openclaw.md)
+[Harness](/entries/harness/) · [Routing Logic](/entries/routing-logic/) · [Work Handoff / Open Engine](/entries/work-handoff-open-engine/) · [Agent Ownership](/entries/agent-ownership/) · [Sovereign Compute](/entries/sovereign-compute/) · [Commercial Legibility](/entries/commercial-legibility/) · [OpenClaw](/entries/openclaw/)
 
 ## Source
 

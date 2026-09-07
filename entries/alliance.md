@@ -3,6 +3,8 @@ layout: default
 kind: glossary
 title: "The Alliance"
 permalink: /entries/alliance/
+first_published: 2026-05-23
+last_revised: 2026-09-07
 date: 2026-05-23
 summary: "The central governing order in *Firefly* / *Serenity*; for the Dictionary, a metaphor for competent, benevolent, managerial power that becomes dangerous when it treats human friction as a defect."
 draft: false
@@ -19,8 +21,8 @@ The warning is not “all governance is tyranny.” The warning is narrower and 
 
 ## See also
 
-- *[Firefly / Serenity](firefly.md)*
-- *[Pax](pax.md)*
-- *[The Operative](operative.md)*
-- *[Benevolence with Instruments](benevolence-with-instruments.md)*
-- *[Maps Are Not Weather](maps-are-not-weather.md)*
+- *[Firefly / Serenity](/entries/firefly/)*
+- *[Pax](/entries/pax/)*
+- *[The Operative](/entries/operative/)*
+- *[Benevolence with Instruments](/entries/benevolence-with-instruments/)*
+- *[Maps Are Not Weather](/entries/maps-are-not-weather/)*

@@ -7,7 +7,7 @@ date: 2026-09-06
 summary: "The durable artefacts that make sovereignty operational—and the old Chinese warning that possessing the artefacts is not the same as sustaining the authority they represent."
 published: true
 first_published: 2026-09-06
-last_revised: 2026-09-06
+last_revised: 2026-09-07
 ---
 
 # The Nine Tripod Cauldrons / 九鼎
