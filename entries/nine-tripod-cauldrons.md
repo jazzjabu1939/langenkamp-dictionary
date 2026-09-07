@@ -48,7 +48,7 @@ These are its cauldrons. They turn a claim—*this is our system*—into an oper
 
 The cauldrons need not number nine. Nine represented the completeness of the ancient realm, not a software checklist supplied by Yu the Great. Forcing the Court of the Oracle Bones to acquire four unnecessary officials, or inventing exactly nine directories because the metaphor demands it, would be cargo-cult classicism. The test is not numerical elegance. The test is whether the important parts of the system remain under the operator's custody and can survive the loss of an outside provider.
 
-This makes the Nine Cauldrons the artefactual companion to [Sovereign Compute](sovereign-compute.md). Sovereign Compute asks who controls the machine, the models and the deployment. The cauldrons widen the inventory. A machine without recoverable memory is not a sovereign assistant; it is an expensive amnesiac. A folder of memory without permissions, provenance or working tools is not an assistant; it is an archive waiting for an archaeologist.
+This makes the Nine Cauldrons the artefactual companion to [Sovereign Compute](/entries/sovereign-compute/). Sovereign Compute asks who controls the machine, the models and the deployment. The cauldrons widen the inventory. A machine without recoverable memory is not a sovereign assistant; it is an expensive amnesiac. A folder of memory without permissions, provenance or working tools is not an assistant; it is an archive waiting for an archaeologist.
 
 ## Six Dreams
 
@@ -56,7 +56,7 @@ This makes the Nine Cauldrons the artefactual companion to [Sovereign Compute](s
 
 The phrase is not a classical Chinese formula; it is used here in an architectural sense. Artefacts kept without working processes become ceremonial. A backup that has never been restored is not known to be a usable backup. Processes run without durable artefacts leave nothing behind: a nightly scan that writes to no persistent location cannot be consulted the following day.
 
-Together, the two make up the assembled workflow fabric defined in [Implementation Layer War](implementation-layer-war.md): the material and procedural layer through which model capability becomes repeatable institutional work.
+Together, the two make up the assembled workflow fabric defined in [Implementation Layer War](/entries/implementation-layer-war/): the material and procedural layer through which model capability becomes repeatable institutional work.
 
 ## Loss
 
@@ -74,7 +74,7 @@ The modern application began in a May 2026 conversation at the White Hart, when 
 
 ## See also
 
-[Sovereign Compute](sovereign-compute.md) · [Digital Sovereignty](digital-sovereignty.md) · [Implementation Layer War](implementation-layer-war.md) · [Durable Workflow](durable-workflow.md) · [Oracle Bones](oracle-bones.md) · [OpenClaw](openclaw.md)
+[Sovereign Compute](/entries/sovereign-compute/) · [Digital Sovereignty](/entries/digital-sovereignty/) · [Implementation Layer War](/entries/implementation-layer-war/) · [Durable Workflow](/entries/durable-workflow/) · [Oracle Bones](/entries/oracle-bones/) · [OpenClaw](/entries/openclaw/)
 
 ## References
 
