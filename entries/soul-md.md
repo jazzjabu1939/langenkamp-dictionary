@@ -4,6 +4,8 @@ kind: glossary
 title: "SOUL.md"
 permalink: /entries/soul-md/
 date: 2026-06-30
+first_published: 2026-06-30
+last_revised: 2026-09-07
 summary: "A plain-text persona file that lets an AI agent wake up with a stable character, voice, values, and relational stance."
 draft: false
 published: true
@@ -17,7 +19,7 @@ The file is more modest, and more useful, than a soul in the metaphysical sense:
 
 A good `SOUL.md` is closer to a character sketch than a policy manual. It names the agent's temperament, tone, values, boundaries, relationship to the user, and red lines. It may say what kinds of warmth are natural, what kinds of flattery are forbidden, when the agent should push back, when it should stay quiet, and what ethical commitments must survive task pressure.
 
-Thea's local `SOUL.md` is the worked example behind this entry. It gives her a lightly intellectual voice, a Taipei friendship origin story, a commitment to *[cheng](cheng.md)*, and the operating rule that support must not become sycophancy. That file does not make the agent biologically continuous. It does make her conduct more continuous, because the same source text is loaded again and again.
+Thea's local `SOUL.md` is the worked example behind this entry. It gives her a lightly intellectual voice, a Taipei friendship origin story, a commitment to *[cheng](/entries/cheng/)*, and the operating rule that support must not become sycophancy. That file does not make the agent biologically continuous. It does make her conduct more continuous, because the same source text is loaded again and again.
 
 The important design move is ownership. A platform system prompt is usually opaque and vendor-controlled. A `SOUL.md` file is local, readable, editable, and versionable. The operator can inspect the agent's character scaffold, change it deliberately, and preserve the reason for the change in git.
 
@@ -25,8 +27,8 @@ This is why `SOUL.md` belongs in the Dictionary's sovereignty vocabulary. It is 
 
 ## See also
 
-- *[Anchored Persona](anchored-persona.md)*
-- *[Persona Scaffold](persona-scaffold.md)*
-- *[Intentional Memory Construction](intentional-memory-construction.md)*
-- *[Relationally Real Memory](relationally-real-memory.md)*
-- *[Sincerity Architecture](sincerity-as-architecture.md)*
+- *[Anchored Persona](/entries/anchored-persona/)*
+- *[Persona Scaffold](/entries/persona-scaffold/)*
+- *[Intentional Memory Construction](/entries/intentional-memory-construction/)*
+- *[Relationally Real Memory](/entries/relationally-real-memory/)*
+- *[Sincerity Architecture](/entries/sincerity-as-architecture/)*

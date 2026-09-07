@@ -4,6 +4,8 @@ kind: essay
 title: "Sincerity Architecture"
 permalink: /entries/sincerity-as-architecture/
 date: 2026-05-19
+first_published: 2026-05-19
+last_revised: 2026-09-07
 summary: "The design principle that systems should make truthful alignment easier and sycophantic performance harder."
 draft: false
 published: true
@@ -19,7 +21,7 @@ In classrooms, the same principle appears when assessment design rewards process
 
 ## See also
 
-- *[The Sincere Society](sincere-society.md)*
+- *[The Sincere Society](/entries/sincere-society/)*
 - *[The Sincere Society on Substack](https://freedomtomato.substack.com/p/the-sincere-society)*
-- *[Provenance](provenance.md)*
-- *[Approval Gating](approval-gating.md)*
+- *[Provenance](/entries/provenance/)*
+- *[Approval Gating](/entries/approval-gating/)*

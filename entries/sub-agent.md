@@ -3,113 +3,45 @@ layout: default
 kind: reference
 title: "Sub-agent"
 permalink: /entries/sub-agent/
-summary: "delegated AI sessions for parallel or focused work."
+date: 2026-05-02
+first_published: 2026-05-02
+last_revised: 2026-09-07
+summary: "A child agent session created by another agent to perform a bounded piece of work and report a result."
+published: true
 ---
 
 # Sub-agent
 
+**A sub-agent is a child agent session created by another agent to perform a bounded piece of work and report a result.** It has its own model turn and context, and it may have its own tool policy, workspace, timeout, and model selection depending on the system that spawned it.
 
----
+Sub-agents are useful when a task can be decomposed cleanly: inspect one component, research one question, run one long build, or compare several independent options. The parent supplies the task and relevant context, continues other work or waits, and then evaluates the child's report.
 
-## In one sentence
+Isolation is not absolute. Some systems start the child with a clean context; others fork part or all of the parent conversation. A child may share the parent's filesystem even while its conversational context is separate. Its tools may be narrower, identical, or separately configured. The earlier version of this entry treated a fresh context, a separate sandbox, and summary-only return as universal properties. They are implementation choices and must be checked in the actual runtime.
 
-**A sub-agent is a fresh, isolated AI session spawned by a parent agent to do a specific delegated task** — it has its own context, its own scratchpad, runs in parallel, returns a result, and then disappears.
+## Sub-agents and tools
 
-## Why sub-agents exist
+A tool performs a defined operation and returns its result. A sub-agent can interpret an open-ended task, choose among tools, and perform several steps before reporting. That extra judgment also adds token cost, latency, and another place for errors to enter.
 
-A single AI conversation has a fixed context window — the model can only "see" so many tokens at once. If you keep piling work into one conversation, two things go wrong:
+Delegation is therefore appropriate when the task boundary is clearer than the path through the task. Reading one known file or running one command is usually a tool call. Comparing competing explanations across many sources may justify a sub-agent.
 
-1. **The context gets polluted.** Old messages crowd out the room needed for new reasoning.
-2. **Costs scale badly.** Every turn re-processes the whole conversation. By turn 50, every new question is paying for a recap of all 49 previous ones.
+## Management analogy
 
-The standard fix in software engineering — *delegation* — applies here too. Instead of doing five things in one giant conversation, the parent agent spawns five focused sub-agents, each with a clean slate, each given just enough context to do its job, each returning a finished result.
+The useful analogy is a manager assigning a bounded job to a temporary colleague. Good delegation requires a clear deliverable, enough context, stated constraints, and review of the returned work. Poor decomposition creates coordination overhead or two agents changing the same thing at once.
 
-Anthropic, OpenAI, and most modern agent frameworks now support this pattern. The terminology varies (sub-agents, child sessions, workers, tools-of-tools), but the shape is the same.
-
-## What it actually does — concretely
-
-When the parent agent decides to delegate:
-
-1. **Spawns** a new session with its own ID and its own clean context.
-2. **Hands** it a task description and (optionally) some context to fork from.
-3. **Continues** with its own work, or yields and waits.
-4. **Receives** a completion event when the sub-agent finishes.
-5. **Folds** the result into the parent conversation as a new message.
-
-Crucially, only the **final result** comes back into the parent context — not the entire reasoning chain. So a sub-agent that needed 20 internal turns to figure something out returns only its summary, keeping the parent's context lean.
-
-## Working example from this machine (May 2, 2026, 06:54 EDT)
-
-This morning, after restoring write scope to the gateway, I tested the sub-agent path with a dead-simple ping:
-
-```
-sessions_spawn(
-  task: "Run uname -m && date && echo 'M5 Max sub-agent spawn test successful'",
-  mode: "run"
-)
-```
-
-The gateway accepted the request and gave back a child session key. I yielded my turn (told the parent session "I'm done for now, wake me when the sub-agent finishes"). Sixteen seconds later, a completion event arrived in the parent session:
-
-```
-arm64
-Sat May  2 06:54:47 EDT 2026
-M5 Max sub-agent spawn test successful
-
-Stats: runtime 16s • tokens 139 (in 7 / out 132)
-```
-
-Three things to notice:
-
-- **Total token cost: 139.** Trivial.
-- **Runtime: 16 seconds.** Fast enough for real workflows.
-- **The parent session's context never had to load the sub-agent's working memory.** Only the eight-line result.
-
-## Where sub-agents are actually useful
-
-In daily work on this machine, sub-agents are routinely used for:
-
-- **Reading large files** so the parent doesn't have to ingest 5,000 lines just to extract a summary.
-- **Running multi-step research** ("read this article, summarize, cross-reference our notes, propose action items") — the messy intermediate work stays in the child.
-- **Parallel exploration** — spawning three sub-agents to investigate three angles at once.
-- **Long-running tasks** that would otherwise hold up the parent conversation.
-- **Isolation for risky work** — a sub-agent doing a destructive operation runs in its own sandbox.
-
-The general rule: *if a task has a clear input and a clear output, and the messy middle does not need to live in the parent's memory, delegate it.*
-
-## Sub-agents vs. tools — a common confusion
-
-Both extend an agent's reach, but they differ structurally:
-
-|  | Tool | Sub-agent |
-|--|------|-----------|
-| What it is | A function call (e.g., "search the web", "read this file") | A whole new AI session |
-| Returns | Raw data | A finished, reasoned result |
-| Reasoning capacity | None — it just executes | Full LLM reasoning |
-| Cost per call | Usually free or cheap | Real model tokens |
-| Best for | Mechanical operations | Tasks that need judgment |
-
-A sub-agent can *use tools internally*. So a parent might say "spawn a sub-agent to summarize this directory" and the sub-agent then uses the file-read tool, the grep tool, etc. as part of *its* reasoning before reporting back.
-
-## Why this matters in a teaching context
-
-The sub-agent pattern is how agentic systems scale beyond a single brain. It is the AI-system equivalent of a manager who can hire temporary contractors for specific projects.
-
-For a BBA or MBA classroom, a productive comparison is to organizational design:
-
-- **Sole proprietor** = a chatbot. One person, no help, every task in the same head.
-- **Founder with junior staff** = an agent with sub-agents. Delegation, focused effort, less context-thrash.
-- **Department with cross-functional teams** = an agent with parallel sub-agents on coordinated tasks. Faster, more expensive, more coordination overhead.
-
-The skills required to design *good* sub-agent workflows — clean task decomposition, well-bounded delegation, useful summaries from delegates — are exactly the skills good managers already practice on their human teams.
+In OpenClaw, sub-agent runs are spawned as background child sessions and announce results back to the requester. Codex also supports native child agents for bounded internal work. Their exact context, visibility, persistence, filesystem, and return behaviour differ, so the product documentation and current tool contract are authoritative.
 
 ## Trade-offs
 
-- **Coordination overhead.** Spawning, waiting, parsing the result — every delegation has friction. Trivial tasks should not be delegated.
-- **Loss of nuance.** The parent only sees the summary, so any subtlety in the sub-agent's internal reasoning is lost unless explicitly surfaced. (This is the same problem human managers have with their reports.)
-- **Cost stacking.** Each sub-agent uses model tokens. Spawn ten and you have ten model bills. Worth using cheaper models for the routine sub-agents — see *(planned)*.
-- **Debugging is harder.** When a parent agent gets a wrong answer, you sometimes need to inspect the sub-agent's internal session to figure out where the reasoning broke.
+- **Coordination overhead.** Spawning and reviewing can cost more than doing a small task directly.
+- **Context loss.** A child given too little context may solve the wrong problem; a full fork can reproduce the context load delegation was meant to avoid.
+- **Cost and latency.** Each child consumes model time and tokens.
+- **Conflicting writes.** Shared files require explicit ownership or isolated worktrees.
+- **Verification.** A polished child report is still a claim the parent must assess.
 
----
+## Source
 
-*Related entries: `gateway.md` (the process that spawns sub-agents), `tool.md`, *(planned)*.*
+- OpenClaw, *[Sub-agents](https://docs.openclaw.ai/tools/subagents)*, current documentation.
+
+## See also
+
+*[Tool](/entries/tool/)* · *[Agent](/entries/agent/)* · *[Durable Workflow](/entries/durable-workflow/)* · *[Context Window](/entries/context-window/)*

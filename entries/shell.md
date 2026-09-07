@@ -4,6 +4,8 @@ kind: glossary
 title: "Shell"
 permalink: /entries/shell/
 date: 2026-09-01
+first_published: 2026-09-01
+last_revised: 2026-09-07
 summary: "A command interpreter that sits between a user or agent and the operating system."
 draft: false
 published: true
@@ -17,8 +19,8 @@ You give the shell a command; it parses the instruction, finds the requested pro
 
 The name comes from the idea that the shell surrounds the operating-system kernel. It is an interface to the system, not the system itself.
 
-A shell can be used interactively through a *[terminal](terminal.md)* or non-interactively by an application, automation job, or AI agent. This is why an agent can “run a shell command” without a terminal window appearing on the screen.
+A shell can be used interactively through a *[terminal](/entries/terminal/)* or non-interactively by an application, automation job, or AI agent. This is why an agent can “run a shell command” without a terminal window appearing on the screen.
 
 ## See also
 
-*[Bash](bash.md)* · *[Terminal](terminal.md)* · *[Command-Line Interface](command-line-interface.md)* · *[Exit Code](exit-code.md)*
+*[Bash](/entries/bash/)* · *[Terminal](/entries/terminal/)* · *[Command-Line Interface](/entries/command-line-interface/)* · *[Exit Code](/entries/exit-code/)*

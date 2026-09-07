@@ -4,6 +4,8 @@ kind: glossary
 title: "Scaling Laws"
 permalink: /entries/scaling-laws/
 date: 2026-05-16
+first_published: 2026-05-16
+last_revised: 2026-09-07
 summary: "The empirical regularities connecting model capability to increases in compute, data, and parameter count."
 draft: false
 published: true
@@ -15,8 +17,13 @@ The laws are not magic and not destiny. Data quality, architecture, post-trainin
 
 For the Dictionary, scaling laws sit behind the capability-overhang argument. If capability arrives before institutions, products, and users know what to do with it, the bottleneck shifts from invention to implementation.
 
+## Sources
+
+- Jared Kaplan et al., *[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)*, 2020.
+- Jordan Hoffmann et al., *[Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)*, 2022.
+
 ## See also
 
-- *[Capability Overhang](capability-overhang.md)*
-- *[Parameters](parameters.md)*
-- *[Reasoning Model](reasoning-model.md)*
+- *[Capability Overhang](/entries/capability-overhang/)*
+- *[Parameters](/entries/parameters/)*
+- *[Reasoning Model](/entries/reasoning-model/)*

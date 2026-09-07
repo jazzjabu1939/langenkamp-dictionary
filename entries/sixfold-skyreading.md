@@ -3,49 +3,55 @@ layout: default
 kind: reference
 title: "Sixfold Skyreading"
 permalink: /entries/sixfold-skyreading/
-summary: "a working framework for seeing institutional events coming, before the press tells you it was inevitable."
+date: 2026-05-03
+first_published: 2026-05-03
+last_revised: 2026-09-07
+summary: "A Dictionary framework for reviewing six classes of signal before making an institutional prediction."
+published: true
 ---
 
 # Sixfold Skyreading
 
-*A working framework for seeing institutional events coming, before the press tells you it was inevitable.*
+*A repeatable six-part scan for students and analysts who want to test an institutional prediction before the outcome makes it look obvious.*
 
 ---
 
 ## In one sentence
 
-**Sixfold Skyreading is a deliberate counter-bias — a process for re-pointing the analyst's gaze, on a known cadence, at six independent classes of signal that institutions emit before something surprising happens — designed against both the *single-arrow* prior that committing to a question prevents seeing, and the *information-overload* failure where the signal is present but the analyst is too snowed-in to see it.**
+**Sixfold Skyreading is a repeatable method for reviewing six kinds of evidence about an institution, looking for several signals to converge within the same period, and filing a dated prediction before the outcome.** The six kinds of evidence cover the people leading the institution, internal pressure, possible successors, strategic disagreement, external shocks, and unexpected changes in demand.
 
-The working metaphor is **Converging Clouds**, with two bears underneath it.
+The method sits inside a sequence of related Dictionary terms. *[Single-Arrow Fallacy](/entries/single-arrow-fallacy/)* names the error of explaining a complex event through one cause. *[Convergence](/entries/convergence/)* names the alternative pattern: several partly independent conditions becoming important at the same time. Sixfold Skyreading supplies the checklist for looking. *[Oracle Bones](/entries/oracle-bones/)* supplies the discipline of recording and later grading the prediction. *[Grey Swans](/entries/grey-swans/)* are consequential events that looked surprising but may have been visible in advance through such signals.
+
+The name uses weather as its working image. Looking at one cloud tells you little about the coming storm; **skyreading** means scanning the wider pattern. **Sixfold** means that the scan uses the same six categories each time rather than whichever evidence happens to be loudest that week.
 
 ## Two bears, one discipline
 
-Consider two distinct ways of failing to see what's in front of you.
+The framework addresses two different ways of missing what is in front of you.
 
-**The first bear** is upstream of the question. The analyst, the journalist, the AI user has a prior — a thing they cannot stop thinking about — and that prior shapes the question they ask. The question shapes the answer they receive. They never see anything that wasn't already in the question. *Single-arrow priors driving single-arrow questions.*
+**The first bear is question fixation.** An analyst, journalist, student, or AI user begins with one favoured explanation. That explanation shapes the question, and the narrow question screens out evidence pointing elsewhere. This is the practical problem described under *Single-Arrow Fallacy*.
 
-**The second bear** is downstream, out in the world. The signals exist. The data is being collected. There is a polar bear standing fifty meters away, in plain sight. But the analyst is in a blizzard — snowflakes falling so heavily that every snowflake demands the same attention as every other, and the bear, despite being large and present and visible-in-principle, becomes functionally invisible. *Inattentional blindness, scaled to civilization.*
+**The second bear is attention overload.** The relevant signal exists, but it sits inside more information than the analyst can process. Imagine a polar bear fifty metres away in a blizzard: the animal is large and present, yet the snow makes it functionally invisible. The problem is no longer the question being too narrow. It is the evidence being too abundant.
 
-The empirical anchor for the second bear is Christopher Chabris and Daniel Simons' *Gorillas in Our Midst* (1999). Subjects are told to count basketball passes between players in white shirts. A person in a gorilla suit walks onto the court, beats their chest, and walks off — for nine seconds. About half of viewers, focused on the counting task, do not see the gorilla at all. Awareness, it turns out, is not a passive thing that registers what is in front of you. It is a *budget.* (In a 2013 follow-up, even radiologists searching chest scans for lung nodules failed to see a gorilla photoshopped into the image 83% of the time.)
+The empirical anchor for the second bear is Christopher Chabris and Daniel Simons' *[Gorillas in Our Midst](https://doi.org/10.1068/p281059)* (1999). Subjects were told to count basketball passes between players in white shirts. A person in a gorilla suit walked onto the court, beat their chest, and walked off. About half of the observers in the relevant condition did not report the gorilla. Awareness, it turns out, is not a passive register of everything in front of us. It is selective. In a [2013 study](https://doi.org/10.1177/0956797613479386), 20 of 24 radiologists searching lung CT scans for nodules did not report a gorilla inserted into the images.
 
-This second failure is not because the data is missing. The data is *abundant*. Carnivore — the FBI's email-surveillance program of the late 1990s and early 2000s — was reading internet traffic at the backbone. Its successors collect more, faster, with better fusion. Customs filings, eBay markups, secondary-market price moves, social media heat, satellite imagery, leaked Slack channels, podcast tone shifts, hobbyist forums — the snowstorm of available signal in 2026 is so heavy that an attentive observer can drown in it. The bear is fifty meters away. We just cannot see it.
+This second failure is not always caused by missing data. Public records, customs filings, secondary-market price moves, social media, satellite imagery, interviews, and specialist forums can create more signal than an analyst can examine responsibly. The snowstorm of available evidence is heavy enough for an attentive observer to lose the larger pattern.
 
-Sixfold Skyreading is the counter-bias against both bears, simultaneously. A *fixed* list prevents the first bear: you cannot ask a single-arrow question because the framework requires six readings. A *scheduled, repeating* practice prevents the second bear: you re-look at the same six places on a known cadence, regardless of what is loud that week.
+Sixfold Skyreading responds to both failures. The fixed list forces the analyst to examine evidence outside the favoured explanation. The repeating schedule brings attention back to the same six categories even when the news cycle is noisy.
 
 The point is not the cleverness of the analyst. The point is the *discipline of the cadence.*
 
 ## Why the framework exists
 
-Every dominant prediction technology we have is structurally optimized for one cause per story:
+Several common prediction formats reward one cause per story:
 
 - The newspaper article (one headline, one villain, one arrow).
 - The sell-side analyst note (one revised price target, one driver).
 - The AI chatbot (one fluent paragraph, one confident probability).
 - The classroom case study (one teachable lesson, one named decision).
 
-Reality is not arranged this way. Real institutional events almost always emerge from **the simultaneous lighting-up of three to six independent vectors** that *converge* in a narrow window and produce a surface event the press then narrates with a single arrow.
+Institutions are not reliably arranged this way. Important events can emerge from **several conditions appearing in the same window** and produce a surface event that is later narrated through one dominant cause.
 
-The convergence is *systematically hidden*, not accidentally hidden. Companies suppress it because it implies internal disagreement. Journalists compress it because deadlines demand a single arrow. AI assistants reproduce the compression because they were trained on the suppressed-and-compressed corpus. The discipline of *seeing* convergence is therefore a deliberate counter-bias, not a natural human capacity.
+The convergence can be systematically obscured rather than merely overlooked. Companies may suppress evidence of internal disagreement. Deadlines and headlines reward compression. AI assistants can reproduce the causal shapes common in their training material. The discipline of checking for convergence is therefore a deliberate counter-bias.
 
 ## The six vectors (v0.1)
 
@@ -62,16 +68,16 @@ A skyreading walks this fixed list before issuing any prediction about an instit
 
 **The detection rule (v0.1, will be calibrated against filed predictions over time):**
 
-- **Three or more vectors lit up** in a rolling 60-day window → treat the institution as *convergence-vulnerable.* Begin filing dated, falsifiable predictions ([Oracle Bones](oracle-bones.md)).
+- **Three or more vectors lit up** in a rolling 60-day window → treat the institution as *convergence-vulnerable.* Begin filing dated, falsifiable predictions ([Oracle Bones](/entries/oracle-bones/)).
 - **Four or more lit up** → expect a surprise event within 90 days.
 
 A skyreading is run on a fixed cadence (weekly for the watchlist, monthly for the broader sky). The cadence is the discipline. The cadence is what defeats the bear in the blizzard.
 
 ## A working example
 
-**Apple, April 11–30, 2026.** All six vectors lit up in three weeks: Mac Mini and Mac Studio supply collapsed (vector 5 + vector 6); Tim Cook announced his retirement effective September 1, with John Ternus (SVP Hardware Engineering) as successor (vectors 1, 2, 3); Apple's AI position remained visibly behind, prompting strategic-disagreement signals from inside the company (vector 4); an Iran strike layered geopolitical pressure onto the supply chain (vector 5).
+**Apple, April 11–30, 2026.** In retrospect, the Dictionary places six public signals in the same three-week window: supply constraints for high-memory Mac Mini and Mac Studio configurations (vectors 5 and 6); Tim Cook's announced retirement and John Ternus's succession (vectors 1 and 3, with possible implications for vector 2); criticism of Apple's AI position (vector 4); and geopolitical pressure on the technology supply chain (vector 5).
 
-The financial press told this as four separate stories with four single arrows. A skyreading on Apple — even one performed by a careful outsider with no privileged access — would have flagged convergence-vulnerability by mid-April and a likely surface event by the end of the month. The signals were public. The framework to read them across silos was not.
+This is an illustration, not a scored forecast. The framework was applied after the succession announcement, and the announcement itself supplies several listed signals. It therefore cannot be counted as evidence that Sixfold Skyreading predicted the transition. A valid test must be filed before the outcome and graded later through *[Oracle Bones](/entries/oracle-bones/)*.
 
 (Worked out in detail in an internal learning memo, May 3, 2026.)
 
@@ -79,7 +85,7 @@ The financial press told this as four separate stories with four single arrows. 
 
 Strategy students are taught case studies in single-arrow form. They graduate believing real institutions move that way. They do not. The 494BI capstone, in particular, is the right venue to teach skyreading — not as an academic theory, but as the *discipline of refusing the single-arrow narrative when it is offered*, regardless of whether the source is the *Wall Street Journal*, a McKinsey deck, or an AI chatbot.
 
-The pairing with [Single-Arrow Fallacy](single-arrow-fallacy.md) is intentional: the disease and the cure each get a name, so the diagnosis can travel.
+The pairing with [Single-Arrow Fallacy](/entries/single-arrow-fallacy/) is intentional: the disease and the cure each get a name, so the diagnosis can travel.
 
 ## Trade-offs and warnings
 
@@ -88,10 +94,15 @@ The pairing with [Single-Arrow Fallacy](single-arrow-fallacy.md) is intentional:
 - **False positives matter.** What is the base rate of three-vector convergences that *do not* produce a surprise event? Without that, the framework will over-predict. The Oracle Bones discipline (write down, date, grade) is the only honest way to find out.
 - **The framework is v0.1.** Treat the rules as scaffolding, not law. The vectors and the thresholds will be revised as the bones get scored. The "Sixfold" in the name commits us to the current vector count; if a future version lands on five or seven, we rename. (We have already accepted, elsewhere in the system, that *zhengming* — the rectification of names — happens when the architecture moves under us.)
 
+## Sources
+
+- Daniel J. Simons and Christopher F. Chabris, *[Gorillas in Our Midst: Sustained Inattentional Blindness for Dynamic Events](https://doi.org/10.1068/p281059)*, 1999.
+- Trafton Drew, Melissa L.-H. Võ, and Jeremy M. Wolfe, *[The Invisible Gorilla Strikes Again](https://doi.org/10.1177/0956797613479386)*, 2013.
+
 ## See also
 
-- [Single-Arrow Fallacy](single-arrow-fallacy.md) — the bias this entry counters
-- [Grey Swans](grey-swans.md) — what happens when skyreading is missed
-- [Oracle Bones](oracle-bones.md) — the prediction-filing practice
-- [Aunties](aunties.md) — operational oversight; skyreading is the epistemic counterpart
-- [Space Cowboy](space-cowboy.md) — the user class who most needs this discipline
+- [Single-Arrow Fallacy](/entries/single-arrow-fallacy/) — the bias this entry counters
+- [Grey Swans](/entries/grey-swans/) — what happens when skyreading is missed
+- [Oracle Bones](/entries/oracle-bones/) — the prediction-filing practice
+- [Aunties](/entries/aunties/) — operational oversight; skyreading is the epistemic counterpart
+- [Space Cowboy](/entries/space-cowboy/) — the user class who most needs this discipline

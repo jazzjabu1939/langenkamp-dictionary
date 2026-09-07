@@ -4,6 +4,7 @@ kind: glossary
 title: "Skill"
 permalink: /entries/skill/
 date: 2026-05-19
+first_published: 2026-05-19
 last_revised: 2026-09-03
 summary: "An agent skill is a packaged capability: instructions, triggers, tools, and local knowledge for doing a class of work reliably."
 draft: false

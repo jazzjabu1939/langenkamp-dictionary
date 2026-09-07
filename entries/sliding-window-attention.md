@@ -3,56 +3,32 @@ layout: default
 kind: reference
 title: "Sliding Window Attention"
 permalink: /entries/sliding-window-attention/
-summary: "an attention mechanism in which each token attends only to a recent window of prior tokens rather than the full context history — trading long-range recall for speed and efficiency, with the consequence that models using it excel at contained tasks but lose coherence on large, complex, multi-file contexts."
+date: 2026-05-09
+first_published: 2026-05-09
+last_revised: 2026-09-07
+summary: "An attention pattern in which a token attends directly to a limited neighbourhood rather than every token in the context."
 published: true
 ---
 
 # Sliding Window Attention
 
-## In one sentence
+**Sliding window attention is an attention pattern in which each token attends directly to a limited neighbourhood of tokens rather than to the entire sequence.** In a causal language model, that usually means a fixed number of preceding tokens.
 
-**Sliding window attention is an attention mechanism in which each token attends only to a fixed recent window of prior tokens rather than the full context history — making the model faster and more memory-efficient, but causing it to lose coherence on tasks that require holding a large, complex context together simultaneously.**
+Full self-attention allows every token to attend to every earlier token, but its attention computation and memory grow rapidly with sequence length. A local window limits that work. This can make long sequences cheaper to process, at the cost of removing a direct attention path between tokens that are far apart.
 
-## How standard attention works
+That cost is not the same as saying that a model simply forgets everything outside the window. Modern systems often combine local and global layers, recurrence, retrieval, summaries, or other mechanisms that carry information across longer distances. The effective context of a complete model therefore cannot be inferred from the local-window size alone.
 
-In a standard transformer, every token attends to every previous token. This full attention is powerful — the model can, in principle, draw on any part of the context when generating each new token. But it is expensive: the compute cost grows quadratically with context length. A prompt of 128,000 tokens requires vastly more compute per token than a prompt of 1,000 tokens.
+Google's Gemma 4 illustrates the distinction. Its technical report describes a hybrid schedule that interleaves local sliding-window attention with global self-attention. The earlier version of this entry treated Gemma 4 as if every layer used only a recent window and then attributed two benchmark outcomes to that single feature. The architecture does not support that explanation, and two anecdotal tasks cannot isolate an architectural cause.
 
-## What sliding window attention does differently
+## Practical operator rule
 
-Sliding window attention restricts each token's attention to a recent window — say, the last 4,096 tokens — rather than the full history. Tokens outside the window are not attended to directly. This makes inference significantly faster and reduces memory requirements, because the attention matrix never grows beyond the window size regardless of total context length.
+Sliding-window attention is one factor in model selection, not a task router by itself. For work that depends on distant parts of a large context, test the actual model on representative files and measure retrieval or recall at the relevant depth. A published context-window number tells you how much input the system accepts; it does not guarantee equal use of every part of that input.
 
-The trade-off is long-range recall. Information from early in a long context may fall outside the window by the time it is needed. The model cannot directly attend to it.
+## Sources
 
-## Gemma 4's architecture and its consequences
-
-Gemma 4 uses sliding window attention as part of its hybrid architecture (combined with a dense feed-forward network running in parallel, which is why it outperforms pure MoE models on cold-start tasks — see [Sparse Routing](sparse-routing.md)). This hybrid design explains two seemingly contradictory observations that Protorikis documented across three benchmark videos:
-
-- **Gemma 4 26B outperformed a trillion-parameter MoE model on a cold one-shot flame animation challenge.** The task was contained: simulation logic, terminal rendering, colour algorithms — all visible within the window simultaneously. Gemma 4's dense parallel path gave it consistent access to everything it needed.
-
-- **Gemma 4 26B failed a modem crawler challenge that Qwen 3.6 35B A3B completed.** The task required reverse-engineering login flows from thousands of lines of minified JavaScript across nineteen files. The full logic could not fit inside Gemma 4's attention window simultaneously. Critical connections between early files and later code fell outside the window before the model needed them. Coherence collapsed.
-
-Qwen 3.6, by contrast, uses full MoE attention with gated delta mechanisms that maintain stronger long-range recall. Slower on prefill at large context, but able to hold the full picture together across hours of incremental work.
-
-## The practical operator rule
-
-This architectural difference produces a clear task-routing heuristic for operators running local models:
-
-| Task type | Architecture fit |
-|-----------|-----------------|
-| Moderate context, contained, fast | Sliding window models (Gemma 4) |
-| Large context, complex, multi-file | Full-attention MoE (Qwen 3.6) |
-| Multi-dimensional cold-start | Either, with [incremental construction](incremental-construction.md) |
-
-Knowing the architecture means knowing the failure mode before the task starts — and routing accordingly rather than discovering it after an hour of generation.
-
-## The broader point
-
-Sliding window attention is one instance of a general principle in local model design: every architectural decision that makes a model faster or more efficient creates a corresponding capability blind spot. The blind spot is not a bug; it is the designed trade-off. The operator who understands the trade-off routes tasks to the right model. The operator who treats all local models as interchangeable discovers the blind spot empirically, usually at an inconvenient moment.
+- Iz Beltagy, Matthew E. Peters, and Arman Cohan, *[Longformer: The Long-Document Transformer](https://arxiv.org/abs/2004.05150)*, 2020.
+- Google DeepMind, *[Gemma 4 Technical Report](https://arxiv.org/abs/2607.02770)*, 2026.
 
 ## See also
 
-[Sparse Routing](sparse-routing.md) · [KV Cache Poisoning](kv-cache-poisoning.md) · [Incremental Construction](incremental-construction.md) · [Capability Overhang](capability-overhang.md)
-
----
-
-*Proposed May 9, 2026. Source: Protorikis, three-video local LLM benchmark series, YouTube 2026.*
+*[Sparse Routing](/entries/sparse-routing/)* · *[Context Window](/entries/context-window/)* · *[KV Cache Explosion](/entries/kv-cache-explosion/)* · *[Incremental Construction](/entries/incremental-construction/)*

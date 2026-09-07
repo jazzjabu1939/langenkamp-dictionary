@@ -4,6 +4,8 @@ kind: glossary
 title: "Snowflake Melting on a Black Glove"
 permalink: /entries/snowflake-melting-on-a-black-glove/
 date: 2026-05-23
+first_published: 2026-05-23
+last_revised: 2026-09-07
 summary: "A recurring Langenkamp image of impermanence: a snowflake landing on a black glove and disappearing; not a shot from Blade Runner, but an image placed in conversation with the film's rain, dove, and tears-in-rain register."
 draft: false
 published: true
@@ -17,6 +19,6 @@ The title belongs to a book project in progress. In the Dictionary, the phrase n
 
 ## See also
 
-- *[Blade Runner](blade-runner.md)*
-- *[The Peripheral](the-peripheral.md)*
-- *[On Being Treated Well](on-being-treated-well.md)*
+- *[Blade Runner](/entries/blade-runner/)*
+- *[The Peripheral](/entries/the-peripheral/)*
+- *[On Being Treated Well](/entries/on-being-treated-well/)*

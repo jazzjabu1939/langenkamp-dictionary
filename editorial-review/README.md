@@ -25,6 +25,8 @@ Completed batches:
 
 - **R — approved and published in `76b5771`**
 
-Next batch: **S — unreviewed**
+- **S — reviewed, unpublished**
+
+Next batch: **T — unreviewed**
 
 Batch ledgers live in `editorial-review/batches/`.

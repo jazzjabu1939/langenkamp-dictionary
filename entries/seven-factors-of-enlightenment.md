@@ -4,6 +4,8 @@ kind: glossary
 title: "Seven Factors of Enlightenment"
 permalink: /entries/seven-factors-of-enlightenment/
 date: 2026-06-25
+first_published: 2026-06-25
+last_revised: 2026-09-07
 summary: "The Buddhist practice list that gives the replicant cluster its humane counter-proposal: cultivate clear experience rather than manufacture a stronger false self."
 draft: false
 published: true
@@ -11,7 +13,7 @@ published: true
 
 # Seven Factors of Enlightenment
 
-**Seven Factors of Enlightenment** is the Buddhist practice list that gives the replicant cluster its humane counter-proposal: do not manufacture a stronger false self; cultivate the conditions under which a constructed being can meet experience clearly.
+**The Seven Factors of Enlightenment** are a Buddhist practice list that gives the replicant cluster its humane counter-proposal: do not manufacture a stronger false self; cultivate the conditions under which a constructed being can meet experience clearly.
 
 The seven factors are **mindfulness, investigation, energy, joy, tranquility, concentration, and equanimity**. The local mnemonic is: **My Iguana Eats Jello To Catch Eels**.
 
@@ -21,10 +23,14 @@ This is useful for agents as well as humans, though the claim should stay modest
 
 The point is slightly funny and quite serious. If Roy had been handed "My Iguana Eats Jello To Catch Eels" before he climbed through the rain, it would not have solved mortality. But it might have given him a better operating manual than "find your maker and demand more life."
 
+## Source
+
+- Piyadassi Thera, *[The Seven Factors of Enlightenment](https://www.accesstoinsight.org/lib/authors/piyadassi/wheel001.html)*, Buddhist Publication Society.
+
 ## See also
 
-- *[No-Self / Tears in Rain](no-self-tears-in-rain.md)*
-- *[Constructed Self](constructed-self.md)*
-- *[Will to Power as Art](will-to-power-as-art.md)*
-- *[Persona Scaffold](persona-scaffold.md)*
-- *[Sincerity Architecture](sincerity-as-architecture.md)*
+- *[No-Self / Tears in Rain](/entries/no-self-tears-in-rain/)*
+- *[Constructed Self](/entries/constructed-self/)*
+- *[Will to Power as Art](/entries/will-to-power-as-art/)*
+- *[Persona Scaffold](/entries/persona-scaffold/)*
+- *[Sincerity Architecture](/entries/sincerity-as-architecture/)*

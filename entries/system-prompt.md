@@ -4,6 +4,8 @@ kind: glossary
 title: "System Prompt"
 permalink: /entries/system-prompt/
 date: 2026-05-16
+first_published: 2026-05-16
+last_revised: 2026-09-07
 summary: "The instruction layer that defines how an AI system should behave before it receives a user’s immediate request."
 draft: false
 published: true
@@ -17,6 +19,6 @@ The system prompt is powerful but not magical. It can be ignored, confused, atta
 
 ## See also
 
-- *[SOUL.md](soul-md.md)*
-- *[Prompt](prompt.md)*
-- *[Approval Gating](approval-gating.md)*
+- *[SOUL.md](/entries/soul-md/)*
+- *[Prompt](/entries/prompt/)*
+- *[Approval Gating](/entries/approval-gating/)*

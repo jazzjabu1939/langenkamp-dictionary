@@ -4,6 +4,8 @@ kind: glossary
 title: "Sovereignty"
 permalink: /entries/sovereignty/
 date: 2026-05-19
+first_published: 2026-05-19
+last_revised: 2026-09-07
 summary: "The ability of an operator, institution, or community to keep meaningful control over its tools, data, memory, and continuity."
 draft: false
 published: true
@@ -17,6 +19,6 @@ The fuller treatment lives in *Sovereign Compute*. This stub exists because many
 
 ## See also
 
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Local-first / Sovereignty](local-first-sovereignty.md)*
-- *[Ollama](ollama.md)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Local-first / Sovereignty](/entries/local-first-sovereignty/)*
+- *[Ollama](/entries/ollama/)*

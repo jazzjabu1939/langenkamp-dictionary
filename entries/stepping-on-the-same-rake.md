@@ -4,6 +4,8 @@ kind: essay
 title: "Stepping on the Same Rake"
 permalink: /entries/stepping-on-the-same-rake/
 date: 2026-06-04
+first_published: 2026-06-04
+last_revised: 2026-09-07
 summary: "The local-agent failure pattern in which the system keeps hitting the same small environmental fault, proving that the workflow needs repair before larger autonomy is trusted."
 draft: false
 published: true
@@ -103,8 +105,8 @@ That is why Same Rake failures are valuable. They are small rehearsals for syste
 
 ## See also
 
-- *[The Experimental Party](experimental-party.md)*
-- *[Jekyll](jekyll.md)*
-- *[Durable Workflow](durable-workflow.md)*
-- *[Root Node Problems](root-node-problems.md)*
-- *[Sub-agent](sub-agent.md)*
+- *[The Experimental Party](/entries/experimental-party/)*
+- *[Jekyll](/entries/jekyll/)*
+- *[Durable Workflow](/entries/durable-workflow/)*
+- *[Root Node Problems](/entries/root-node-problems/)*
+- *[Sub-agent](/entries/sub-agent/)*

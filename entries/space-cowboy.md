@@ -3,7 +3,11 @@ layout: default
 kind: reference
 title: "Space Cowboy"
 permalink: /entries/space-cowboy/
-summary: "the heavy individual explorer of AI tools, riding the frontier alone on personal high-stakes questions."
+date: 2026-05-04
+first_published: 2026-05-04
+last_revised: 2026-09-07
+summary: "The Dictionary's affectionate name for an individual using AI alone on consequential personal questions without a settled method."
+published: true
 ---
 
 # Space Cowboy
@@ -12,7 +16,7 @@ summary: "the heavy individual explorer of AI tools, riding the frontier alone o
 
 ## In one sentence
 
-**A Space Cowboy is the heavy individual explorer of AI tools — riding the frontier alone, on personal high-stakes questions, with no institutional methodology beyond curiosity and grit.**
+**A Space Cowboy is the Dictionary's affectionate name for an individual using AI alone on consequential personal questions without a settled method beyond curiosity and judgment.**
 
 ## Where the name comes from
 
@@ -32,9 +36,9 @@ Current AI guidance — corporate enablement decks, prompt-engineering courses, 
 2. **The prompt-engineering hobbyist** — playing with Midjourney and ChatGPT for fun.
 3. **The developer** — building applications on top of model APIs.
 
-There is a fourth class, larger than any of the above, that the trade press and the academic literature both ignore: **the individual making real decisions for himself or his family, using AI as a thinking partner, with no methodology beyond his own judgment.** Job changes, college admissions, medical second opinions, real-estate decisions, retirement planning, immigration questions.
+The Dictionary adds a fourth class that these categories often miss: **the individual making real decisions for himself or his family, using AI as a thinking partner, with no methodology beyond his own judgment.** Job changes, college admissions, medical second opinions, real-estate decisions, retirement planning, immigration questions.
 
-This person needs different tools, different framings, and different warnings than the other three classes. Almost no one is writing for them.
+This person needs different tools, framings, and warnings from the other three classes. Much mainstream guidance is not written for them.
 
 The Space Cowboy entry exists to give that class a name, so we can write for it.
 
@@ -48,16 +52,16 @@ The Space Cowboy entry exists to give that class a name, so we can write for it.
 
 ## The characteristic vulnerability
 
-The Space Cowboy receives **single-arrow predictions on multi-vector questions, in confident prose, and believes the confidence interval.**
+The characteristic risk is receiving **single-arrow predictions on multi-vector questions in confident prose and mistaking the prose for a measured confidence interval.**
 
-See: [Single-Arrow Fallacy](single-arrow-fallacy.md) and [Convergence (Cloud Theory)](convergence.md).
+See: [Single-Arrow Fallacy](/entries/single-arrow-fallacy/) and [Convergence (Cloud Theory)](/entries/convergence/).
 
-The vulnerability is not stupidity — it is the result of using a tool that hides its own limits in the *style* of its responses. A weather forecast that said *"definitely rain on Saturday"* with no probability would be obviously wrong-shaped. An AI assistant that says *"the probability is around 70%"* in a paragraph of polished reasoning *passes* as well-shaped. The shape is the deception.
+The vulnerability is not stupidity. A weather forecast that said *"definitely rain on Saturday"* with no probability would be obviously wrong-shaped. An AI assistant that says *"the probability is around 70%"* in a paragraph of polished reasoning can look well-shaped even when the number is not calibrated. The prose can conceal how little evidence supports the estimate.
 
 ## What the Space Cowboy needs
 
 - Prompts that force the model to enumerate vectors and admit which are dark.
-- A practice of writing predictions down with dates ([Oracle Bones](oracle-bones.md)) and grading them later.
+- A practice of writing predictions down with dates ([Oracle Bones](/entries/oracle-bones/)) and grading them later.
 - An explicit framework for distinguishing convergence-vulnerable institutions from stable ones.
 - Vocabulary for the difference between *true* black swans and *dark* black swans (events that were predictable from convergence signals but filtered out).
 
@@ -65,7 +69,7 @@ This dictionary, the Aunties architecture, and the convergence framework are all
 
 ## Why it matters in a teaching context
 
-Most students will never deploy enterprise AI. Most will never write a line of model-calling code. **All of them will become Space Cowboys** — using AI to think through personal high-stakes questions for the rest of their lives. A management curriculum that teaches them only the enterprise deployment frame is failing them on the question they will actually face.
+Most students will never deploy enterprise AI or write model-calling code. **Many will nevertheless become Space Cowboys** — using AI to think through personal high-stakes questions. A management curriculum that teaches only the enterprise deployment frame misses a form of use they are likely to encounter.
 
 ## Trade-offs and warnings
 
@@ -75,11 +79,11 @@ Most students will never deploy enterprise AI. Most will never write a line of m
 
 ## See also
 
-- [Convergence (Cloud Theory)](convergence.md)
-- [Single-Arrow Fallacy](single-arrow-fallacy.md)
-- [Grey Swans](grey-swans.md)
-- [Oracle Bones](oracle-bones.md)
-- [Can't help you understand](cant-help-you-understand.md)
+- [Convergence (Cloud Theory)](/entries/convergence/)
+- [Single-Arrow Fallacy](/entries/single-arrow-fallacy/)
+- [Grey Swans](/entries/grey-swans/)
+- [Oracle Bones](/entries/oracle-bones/)
+- [Can't help you understand](/entries/cant-help-you-understand/)
 
 ---
 
