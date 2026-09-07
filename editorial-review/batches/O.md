@@ -1,6 +1,6 @@
 # Batch O — Plain-Prose Review
 
-**State:** reviewed but unpublished
+**State:** approved and published
 
 **Baseline:** `9a1d2e9`
 
@@ -59,4 +59,4 @@ The rendered pages under `_site/entries/` were inspected for all 18 slugs, inclu
 
 ## Publication gate
 
-Batch O is reviewed but unpublished. Publication requires Professor Langenkamp's approval. Batch P remains unreviewed.
+Professor Langenkamp approved Batch O on 6 September 2026. The reviewed content was published in `98fa456`; both exact-SHA GitHub workflows succeeded, and all 18 live pages returned HTTP 200 with the revised text. Batch P remains unreviewed.
