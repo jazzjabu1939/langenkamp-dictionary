@@ -1,10 +1,12 @@
 # Batch S — Plain-Prose Review
 
-**State:** reviewed, unpublished
+**State:** approved and published
 
 **Baseline:** `d207a8e`
 
 **Branch:** `editorial/alphabetical-plain-prose-audit-s`
+
+**Publication commit:** `bb337bf`
 
 **Published corpus:** 22 entries
 
@@ -80,6 +82,8 @@ Primary or first-party sources were added for scaling laws, sliding-window atten
 
 All 22 rendered pages under `_site/entries/` were inspected mechanically for existence, accidental `.md` links, and canonical internal targets. The substantive pages were also read in rendered-source form after revision.
 
-## Publication gate
+## Publication
 
-Batch S is reviewed but unpublished. It requires Professor Langenkamp's approval before integration. Batch T remains unreviewed.
+Professor Langenkamp approved Batch S on September 7, 2026. The reviewed content was published in `bb337bf`; the exact-SHA Dictionary check and GitHub Pages deployment completed successfully. All 22 live entry URLs returned HTTP 200 with the expected titles, and the revised student-facing definition and canonical *Single-Arrow Fallacy* link were verified on the live *Sixfold Skyreading* page.
+
+Batch T remains unreviewed.
