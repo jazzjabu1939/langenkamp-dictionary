@@ -4,20 +4,31 @@ kind: glossary
 title: "Quantization"
 permalink: /entries/quantization/
 date: 2026-05-16
-summary: "The compression technique that stores model weights with fewer bits, making large open-weights models practical on consumer hardware."
+summary: "Representing model weights or activations at lower numerical precision to reduce storage, memory use, and sometimes inference cost."
 draft: false
 published: true
+first_published: 2026-05-16
+last_revised: 2026-09-06
 ---
 
-**Quantization** is the process of representing a model's weights with fewer bits than were used during training or full-precision inference. Instead of storing each weight as a large floating-point number, a quantized model stores an approximation. The result is smaller memory use and often faster local inference, at some cost to precision.
+**Quantization** represents model weights, activations, or both with lower-precision numbers. In local language-model use, the word usually refers to storing trained weights with fewer bits than the original floating-point representation. This reduces the model file and its weight-memory requirement; speed may also improve when the hardware and runtime have efficient kernels for the chosen format.
 
-This is why a model with tens of billions of parameters can run on a high-end consumer machine. A 70-billion-parameter model at full precision is too large for ordinary local hardware; a 4-bit or 5-bit quantized version may fit into unified memory and become usable. The tradeoff is not binary. Some quantizations are excellent for everyday use; others degrade reasoning, coding, or long-context recall noticeably.
+A 70-billion-parameter model stored at four bits per parameter has a theoretical weight payload of about 35 GB. The running system needs more: quantization scales and metadata, activations, runtime buffers, and a key-value cache whose size grows with context and workload. A nominally 35 GB model therefore does not fit safely in 35 GB of available memory. Even so, quantization can turn a model that would require roughly 140 GB for 16-bit weights into one that fits on a high-memory consumer machine.
+
+The quality trade-off is not one fixed percentage. It depends on the model, quantization method, bit width, calibration, runtime, and task. Four-bit and five-bit versions can be useful for everyday inference, but lower precision can also damage particular capabilities. The deployed model should be tested on the work that matters rather than judged from its filename alone.
 
 For the Dictionary's sovereignty argument, quantization is one of the enabling technologies. It turns open-weights models from museum objects into working tools. Without it, local-first AI would remain mostly a datacenter story.
 
+## Sources
+
+- Hugging Face, *[Quantization](https://huggingface.co/docs/transformers/en/main_classes/quantization)*.
+- Apple, *[Accelerate machine learning with Metal](https://developer.apple.com/videos/play/wwdc2024/10218/)*.
+- NVIDIA, *[Model Quantization: Concepts, Methods, and Why It Matters](https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/)*.
+
 ## See also
 
-- *[Open source](open-source.md)*
-- *[Ollama](ollama.md)*
-- *[LM Studio](lm-studio.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
+- *[Parameters](/entries/parameters/)*
+- *[Open source](/entries/open-source/)*
+- *[Ollama](/entries/ollama/)*
+- *[LM Studio](/entries/lm-studio/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
