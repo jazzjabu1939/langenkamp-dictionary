@@ -57,6 +57,14 @@ The correction did not come from choosing which AI sounded more authoritative. I
 
 This is a small example, which is why it is useful. Reality contact usually looks less like revelation than like someone checking the number before the attractive paragraph hardens around it.
 
+## The education-shaped video
+
+In September 2026, the YouTube documentary channel Fern published [“The Death of Educational Content on YouTube”](https://www.youtube.com/watch?v=-Gnrp_caPvo), an investigation of channels that use generative AI to produce faceless historical and explanatory videos at scale. Fern's fact-checkers documented errors in videos presented as educational material, including inaccurate details in a Ku Klux Klan story, misleading claims about what the outside world knew of Auschwitz, and anachronistic objects in a video about Pompeii.
+
+Fern is an interested party: the investigation began because other channels appeared to be copying its thumbnails, visual style, and sometimes whole treatments. Its examples do not establish how common inaccurate AI-generated videos are across YouTube. They demonstrate a narrower problem. The surface signs of education—documentary narration, cinematic animation, confident dates, maps, and archival-looking scenes—can now be produced separately from the research practices that once made those signs costly.
+
+**Education-shaped content** is a useful phrase for this failure. It looks like a lesson but may have no reliable route from claim to source, from error to correction, or from audience challenge to revision. The proper student response is healthy scepticism, not automatic disbelief. Pause on the consequential claim. Look for the named source. Open it. Check whether an independent source agrees. Ask whether the creator corrects errors publicly. Production value is evidence of production value; it is not evidence that the history, science, or business claim is true.
+
 ## Why it matters in teaching and management
 
 AI makes coherent first drafts cheap. It does not make the world more obliged to resemble them.
@@ -99,5 +107,6 @@ Reality contact does not promise perfect access to the world. It asks for someth
 - Patrick Lewis et al., [“Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks”](https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html), *NeurIPS* (2020).
 - Shunyu Yao et al., [“ReAct: Synergizing Reasoning and Acting in Language Models”](https://arxiv.org/abs/2210.03629), ICLR (2023).
 - Moonshot AI, [Kimi K3 model card](https://huggingface.co/moonshotai/Kimi-K3) (2026).
+- Fern, [“The Death of Educational Content on YouTube”](https://www.youtube.com/watch?v=-Gnrp_caPvo), YouTube, 2 September 2026.
 
 </div>
