@@ -4,18 +4,26 @@ kind: glossary
 title: "Mistral"
 permalink: /entries/mistral/
 date: 2026-05-12
-summary: "French AI lab, founded 2023 by former Meta and Google DeepMind researchers. The leading European frontier-model lab, producing both open-weights and proprietary models."
+last_revised: 2026-09-06
+summary: "A Paris-based AI company that develops both downloadable open-weight models and hosted commercial systems."
 draft: false
 published: true
 ---
 
-Mistral AI is a Paris-based AI lab founded in April 2023 by Arthur Mensch (formerly Google DeepMind), Guillaume Lample, and Timothée Lacroix (both formerly Meta AI). The company is the leading European frontier-model lab and has positioned itself, with French and broader EU government backing, as the alternative to US-dominated AI infrastructure. Mistral has released a mix of open-weights models (*Mistral 7B*, *Mixtral 8x7B*, *Mistral Small/Medium/Large*) and proprietary commercial offerings (Le Chat, Mistral Large).
+**Mistral AI** is a Paris-based AI company founded in 2023 by Arthur Mensch, Guillaume Lample, and Timothée Lacroix, all previously researchers at Google DeepMind or Meta. It develops a mixture of downloadable open-weight models, hosted commercial models, and products such as Le Chat.
 
-For this Dictionary, Mistral matters at the **open-weights tier** — *Mixtral 8x7B* was, at release, one of the first credible *[Mixture of Experts](mixture-of-experts.md)* open-weights models, and Mistral's broader contribution to the open-source ecosystem makes it a regular candidate in the *[Sovereign Compute](sovereign-compute.md)* calculator. Strategically, the lab is the most visible counter to the *US labs are the only frontier* narrative; the European-sovereignty argument the company makes has clear structural parallels to the Dictionary's own *[Sovereignty Impulse](sovereign-compute.md)* thread.
+The distinction among those offerings matters. Mistral has released important models under permissive licences, including Mistral 7B, Mixtral 8x7B, and the Mistral 3 family. Other systems and services have been distributed under different or commercial terms. “Mistral is open source” is therefore too broad; licences must be checked model by model.
+
+For this Dictionary, Mistral matters for two reasons. Technically, Mixtral helped make sparse *[Mixture of Experts](/entries/mixture-of-experts/)* models accessible to local operators. Strategically, the company gives the European sovereignty debate a concrete institution: a European lab offering models that can, in some cases, be downloaded and deployed without routing every request through a US-hosted API. That is an option, not complete sovereignty; hardware, training data, cloud infrastructure, licences, and support still have their own dependencies.
+
+## Sources
+
+- Mistral AI, *[La Plateforme](https://mistral.ai/products/la-plateforme)*.
+- Mistral AI, *[Introducing Mistral 3](https://mistral.ai/news/mistral-3/)*, December 2025.
 
 ## See also
 
-- *[Timothée Lacroix](timothee-lacroix.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Mixture of Experts](mixture-of-experts.md)*
-- *[Hugging Face](hugging-face.md)* — also French; common Mistral distribution channel
+- *[Timothée Lacroix](/entries/timothee-lacroix/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Mixture of Experts](/entries/mixture-of-experts/)*
+- *[Hugging Face](/entries/hugging-face/)*

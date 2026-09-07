@@ -4,6 +4,7 @@ kind: glossary
 title: "Mandi Step"
 permalink: /entries/mandi-step/
 date: 2026-05-21
+last_revised: 2026-09-06
 summary: "The small human intervention inside a system that prevents an automated workflow from damaging trust. Named from the auction-yard story in Step Into the Loop."
 draft: false
 published: true
@@ -17,8 +18,8 @@ The Mandi Step names the future of much administrative and managerial work in ag
 
 ## See also
 
-- *[Human Judgment Layer](human-judgment-layer.md)*
-- *[Agent](agent.md)*
-- *[Heartbeat](heartbeat.md)*
-- *[Aunties](aunties.md)*
-- *[Mediation (a la Gibson)](mediation-a-la-gibson.md)*
+- *[Human Judgment Layer](/entries/human-judgment-layer/)*
+- *[Agent](/entries/agent/)*
+- *[Heartbeat](/entries/heartbeat/)*
+- *[Aunties](/entries/aunties/)*
+- *[Mediation (a la Gibson)](/entries/mediation-a-la-gibson/)*

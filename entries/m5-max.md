@@ -4,21 +4,26 @@ kind: glossary
 title: "M5 Max"
 permalink: /entries/m5-max/
 date: 2026-05-12
-summary: "Apple Silicon system-on-chip, M5 generation, Max-tier configuration. The operator's primary workstation; the substrate for local model inference and the *Sovereign Compute* setup."
+last_revised: 2026-09-06
+summary: "Apple's high-end M5 system-on-chip for portable workstations, combining CPU, GPU, and unified memory in one package."
 draft: false
 published: true
 ---
 
-The M5 Max is the highest-tier laptop-class system-on-chip in Apple's M5 generation, released in 2025–2026. The operator of this Dictionary purchased a MacBook Pro 16" M5 Max configuration in April 2026: 18-core CPU, 40-core GPU, 16-core Neural Engine, 128 GB unified memory, 4 TB SSD. The order was placed April 18, 2026 (order W1429262259) for $5,890.73 plus AppleCare One, with delivery in early May 2026. See the *[Sovereign Compute](sovereign-compute.md)* entry and `hardware/purchases/2026-04-18_macbook_pro_m5_max.md` in the workspace for the full purchase rationale.
+The **M5 Max** is Apple's high-end M5 system-on-chip for portable professional computers. Apple announced it in March 2026 with configurations up to an 18-core CPU, 40-core GPU, 128 GB of unified memory, and 614 GB/s of memory bandwidth.
 
-For this Dictionary, the M5 Max is the **substrate of the local-compute argument**. The 128 GB of unified memory and the 40-core GPU are sufficient to run open-weights models in the 30B-active-parameter range (Qwen 3.6 30B A3B, Gemma 4 31B, Hermes derivatives in the 70B range with quantisation) at usable speeds for sustained operator work. The architecture is documented in TOOLS.md: hybrid dense+MoE routing, model-to-task pairing, and the incremental-construction workflow for complex local tasks.
+For this Dictionary, the important feature is unified memory. The CPU and GPU draw from the same pool, so a sufficiently quantised open-weight model can use far more memory than a conventional laptop GPU provides. The operator's 16-inch MacBook Pro has an M5 Max, 128 GB of unified memory, and a 4 TB SSD. That makes substantial local inference practical, although model speed and fit still depend on quantisation, context length, architecture, and software support. A model's total parameter count is not its active parameter count, and neither number alone predicts performance.
 
-The structural significance is named in *[GenXClaw](genxclaw.md)* and *[FERPA Compliance Posture](ferpa-compliance-posture.md)*: the M5 Max is, accidentally, the architecture FERPA law would have specified if FERPA had been written with student-AI workflows in mind. The hardware purchase predates the FERPA argument; the convergence is real.
+This hardware supports the Dictionary's *[Sovereign Compute](/entries/sovereign-compute/)* argument: some sensitive work can remain on equipment the operator controls. It does not by itself establish privacy or legal compliance. Data can still leave the machine through cloud models, synchronisation, telemetry, or poorly configured tools. The compliance question belongs to the complete workflow, not the chip.
+
+## Sources
+
+- Apple, *[Apple debuts M5 Pro and M5 Max](https://www.apple.com/newsroom/2026/03/apple-debuts-m5-pro-and-m5-max-to-supercharge-the-most-demanding-pro-workflows/)*, March 2026.
+- Apple Support, *[MacBook Pro (16-inch, M5 Max, 2026) — Technical Specifications](https://support.apple.com/en-us/126319)*.
 
 ## See also
 
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Mac Studio](mac-studio.md)* — the desktop sibling, candidate for the *Sally* experiment
-- *[Apple Silicon](apple-silicon.md)*
-- *[FERPA Compliance Posture](ferpa-compliance-posture.md)*
-- *[GenXClaw](genxclaw.md)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Mac Studio](/entries/mac-studio/)*
+- *[Apple Silicon](/entries/apple-silicon/)*
+- *[FERPA Compliance Posture](/entries/ferpa-compliance-posture/)*

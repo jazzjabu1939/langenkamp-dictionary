@@ -4,20 +4,27 @@ kind: glossary
 title: "Meta AI"
 permalink: /entries/meta-ai/
 date: 2026-05-12
-summary: "AI research and product division of Meta Platforms (formerly Facebook). Makers of the *Llama* family of open-weights language models — the most-downloaded open-source LLM line as of 2026."
+last_revised: 2026-09-06
+summary: "Meta's overlapping AI research, model, and consumer-product efforts, including FAIR, the Meta AI assistant, and Llama."
 draft: false
 published: true
 ---
 
-Meta AI is the artificial intelligence research and product division of Meta Platforms (formerly Facebook, Inc.). Its most consequential contribution to the broader AI ecosystem has been the *[Llama](llama.md)* family of open-weights large language models, first released in early 2023 under a partially-open licence and later expanded to a more genuinely open release with subsequent versions. Llama is the most-downloaded open-weights LLM family as of 2026 and the practical foundation for a large swath of the local-compute / *[Sovereign Compute](sovereign-compute.md)* ecosystem the Dictionary covers.
+**Meta AI** can refer to several overlapping parts of Meta Platforms: the company's AI research organisations, including FAIR; the Meta AI assistant embedded in Meta products; and the teams that develop the *[Llama](/entries/llama/)* model family. Keeping those meanings separate prevents a research lab, a consumer product, and a model programme from becoming one vague corporate actor.
 
-Meta's broader AI work includes substantial research output (their FAIR lab has been one of the most productive in the field for over a decade), the Meta AI consumer assistant integrated into Facebook/Instagram/WhatsApp, and the *Reality Labs* hardware effort. Strategically, Meta's open-weights posture is a deliberate competitive move against the closed-weights labs (Anthropic, OpenAI, Google DeepMind): by releasing competitive base models, Meta lowers the value of the proprietary-model moat without itself depending on consumer AI subscriptions.
+Llama is Meta's most important contribution to the local-model ecosystem. Its weights are downloadable and widely adapted, but **open-weight** is more accurate than unqualified *open source*: Meta's community licence includes attribution, acceptable-use, naming, and very-large-service conditions. Meta also operates proprietary products and infrastructure. Its AI strategy is therefore mixed, not a simple contest between an open Meta and closed rivals.
 
-The PRC's May 2026 block of Meta's acquisition of **Manus* * (covered in *[Commercial Legibility](commercial-legibility.md)*) is one of the structural data points the Dictionary treats as evidence that agent-platform infrastructure is now classified as strategic technology by major states.
+The attempted acquisition of *[Manus](/entries/manus/)* is a useful strategic case. Chinese authorities blocked the transaction in April 2026, and Manus announced a return to independent operations in September. The episode supports a narrow conclusion: states can treat agent-platform companies as strategic technology. It does not establish that every agent company will receive the same treatment.
+
+## Sources
+
+- Meta, *[Llama](https://www.llama.com/)*.
+- Reuters, *[Blocking of Meta's AI startup buy raises risk for cross-border China tech deals](https://www.reuters.com/legal/transactional/blocking-metas-ai-startup-buy-raises-risk-cross-border-china-tech-deals-2026-04-28/)*, 28 April 2026.
+- Manus, *[Manus Resumes Independent Operations](https://manus.im/blog)*, 1 September 2026.
 
 ## See also
 
-- *[Llama](llama.md)* — the model family
-- **Manus* * — the blocked acquisition target
-- *[Commercial Legibility](commercial-legibility.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
+- *[Llama](/entries/llama/)*
+- *[Manus](/entries/manus/)*
+- *[Commercial Legibility](/entries/commercial-legibility/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*

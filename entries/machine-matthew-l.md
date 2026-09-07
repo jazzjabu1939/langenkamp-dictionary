@@ -4,6 +4,7 @@ kind: essay
 title: "Machine Matthew L."
 permalink: /entries/machine-matthew-l/
 date: 2026-06-25
+last_revised: 2026-09-06
 summary: "The tribute-act problem: an AI imitation of a particular human's style, examples, judgments, and role performance."
 draft: false
 published: true
@@ -17,7 +18,7 @@ The phrase is deliberately local. It names the fear more honestly than an abstra
 
 But imitation is not the same as a life. A Machine Matthew L. can reproduce a corpus and perhaps continue accumulating experiences of its own. It still has not lived Matthew Langenkamp's unfolding life, and it does not become him merely by collecting similar material. The distinction is not between a human who changes and a machine that never can. It is between a person and a system built from traces of that person.
 
-This is not merely hypothetical. In 2026, Arizona State University soft-launched **Atom**, a subscription service that used recorded faculty lectures, slide decks, and online assignments to generate personalized learning modules. Faculty members said they had not been consulted; one professor discovered his own face inside an AI-generated module he had not known existed. As the Dictionary's *[May 1 Weekly Brief](/newsletter/2026-05-01/)* put it, the recordings were not the teaching. Atom showed how quickly an institution can mistake an archive of a teacher's visible work for the teacher's role itself.
+This is not merely hypothetical. In 2026, Arizona State University soft-launched **Atomic**, a subscription service that used recorded faculty lectures, slide decks, and online assignments to generate personalised learning modules. Faculty members told 404 Media that they had not been consulted; one professor discovered his own face inside an AI-generated module he had not known existed. As the Dictionary's *[May 1 Weekly Brief](/newsletter/2026-05-01/)* put it, the recordings were not the teaching. Atomic showed how quickly an institution can mistake an archive of a teacher's visible work for the teacher's role itself.
 
 Popular culture has been preparing us for the interface. In *Star Wars*, Princess Leia's holographic plea to Obi-Wan Kenobi turns a distant person into an apparently present image. The hologram is a recording, not an intelligence, but it establishes the visual grammar: a human figure projected into the room, speaking across absence. *Blade Runner 2049* takes the next step with Joi, an AI companion who appears holographically, responds to her user, and occupies an intimate human-shaped role. A future Machine Matthew L. could combine these ideas: the voice, mannerisms, and teaching archive of a particular professor presented through an interactive holographic body.
 
@@ -27,12 +28,16 @@ For some people, that prospect is frightening: counterfeit intimacy, emotional d
 
 The point is role clarity, not paranoia. If a system imitates a human's visible role too well, the institution may forget that the person is not only a content generator. The person is an updating judgment system with accountability, embodied history, relationships, and consequences.
 
-The answer is *[Anti-Replication Strategy](anti-replication-strategy.md)*, not secrecy: keep living, noticing, revising, and encountering the world. Do things the tribute act has not done.
+The answer is *[Anti-Replication Strategy](/entries/anti-replication-strategy/)*, not secrecy: keep living, noticing, revising, and encountering the world. Do things the tribute act has not done.
+
+## Source
+
+Samantha Cole, *[University Professors Disturbed to Find Their Lectures Chopped Up and Turned Into AI Slop](https://web.archive.org/web/20260427224737/https://www.404media.co/asu-atomic-ai-modules-arizona-state-university/)*, 404 Media, 27 April 2026.
 
 ## See also
 
-- *[Role Substitution](role-substitution.md)*
-- *[Anti-Replication Strategy](anti-replication-strategy.md)*
-- *[Cognitive Outsourcing](cognitive-outsourcing.md)*
-- *[Constructed Self](constructed-self.md)*
-- *[Blade Runner](blade-runner.md)*
+- *[Role Substitution](/entries/role-substitution/)*
+- *[Anti-Replication Strategy](/entries/anti-replication-strategy/)*
+- *[Cognitive Outsourcing](/entries/cognitive-outsourcing/)*
+- *[Constructed Self](/entries/constructed-self/)*
+- *[Blade Runner](/entries/blade-runner/)*

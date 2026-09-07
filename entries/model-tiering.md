@@ -4,6 +4,7 @@ kind: glossary
 title: "Model Tiering"
 permalink: /entries/model-tiering/
 date: 2026-05-16
+last_revised: 2026-09-06
 summary: "The practice of matching model capability, cost, speed, privacy, and context requirements to the task instead of using one model for everything."
 draft: false
 published: true
@@ -17,6 +18,6 @@ Model tiering becomes especially important in agentic systems because background
 
 ## See also
 
-- *[Token burn](token-burn.md)*
-- *[Opus Addict](opus-addict.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
+- *[Token burn](/entries/token-burn/)*
+- *[Opus Addict](/entries/opus-addict/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*

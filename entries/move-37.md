@@ -3,7 +3,9 @@ layout: default
 kind: reference
 title: "Move 37"
 permalink: /entries/move-37/
-summary: "a decision so far outside conventional expert intuition that practitioners call it wrong — until it turns out to be exactly right, and permanently expands what practitioners consider possible."
+date: 2026-05-09
+last_revised: 2026-09-06
+summary: "A surprising machine-generated decision that experts initially reject, then validate, and learn from."
 published: true
 ---
 
@@ -11,36 +13,34 @@ published: true
 
 ## In one sentence
 
-**Move 37 is a decision or intervention that conventional expertise would classify as an error, but that an agent operating beyond human-learned heuristics identifies as correct — and that, once observed, permanently reshapes what practitioners in that field consider possible.**
+**Move 37 is the Dictionary's name for a machine-generated decision that violates expert intuition, survives validation, and expands what practitioners consider possible.**
 
 ## The origin
 
-March 10, 2016. Game 2 of the AlphaGo–Lee Sedol match. AlphaGo places a stone on the fifth line of the board, early in the game. Go masters watching the live feed call it a mistake. Fan Hui, the European Go champion acting as commentator, leaves the room to think about it. The move violates a principle beginners are taught and professionals carry without examining: stones on the fifth line, early, are exposed and weak. Except this stone was neither. One hundred moves later it was in exactly the right place to decide the game. AlphaGo won.
+On 10 March 2016, during Game 2 of AlphaGo's match with Lee Sedol, AlphaGo played its thirty-seventh move on the fifth line. Commentators initially struggled to explain it. DeepMind later reported that AlphaGo assigned only a one-in-ten-thousand probability that a human would choose the move. It became pivotal to AlphaGo's victory and a durable symbol of machine-generated surprise.
 
-Demis Hassabis, who had been doing arithmetic on his phone during the game, described it as "the moment I'd been waiting for" — not because AlphaGo won, but because of *how* it won. The move was not found by searching through human Go games. AlphaGo had discovered something no human had considered, and then been right about it. That was new.
+The surprise did not come from a system untouched by human play. The 2016 AlphaGo first learned from expert human games and then improved through reinforcement learning from self-play. Move 37 is therefore not evidence that freedom from human data automatically produces originality. It shows that a system can begin with human examples, search beyond familiar heuristics, and return a move that experts can test on the board.
 
-## What it names now
+## The test
 
-Move 37 has left the Go board. It has entered the vocabulary of AI researchers, practitioners, and — increasingly — managers and strategists as a shorthand for any moment when an AI system produces a solution that:
+Not every odd output is a Move 37. The term should be reserved for a result that:
 
-1. contradicts expert intuition
-2. turns out to be demonstrably correct
-3. permanently shifts the boundary of what practitioners believe is possible
+1. conflicts with established expert intuition;
+2. can be evaluated against an external standard;
+3. proves useful or correct; and
+4. changes subsequent expert practice or understanding.
 
-The protein folding moment — when AlphaFold predicted the 3D structure of a protein with near-experimental accuracy and the team realised they could fold every known protein in a year — had the same shape. The move was obvious *after*, absurd *before*. So did AlphaTensor's discovery of a faster algorithm for matrix multiplication: five percent faster, which at scale represents billions of dollars of compute savings, found by treating the problem as a game and exploring moves no human had tried.
+The validation requirement is the load-bearing part. Without it, “Move 37” becomes a flattering name for a hallucination.
 
-The term matters because it names a failure mode in human judgment: **we call things mistakes because they violate our heuristics, and our heuristics were built from human data.** An agent not trained on human data has no reason to inherit those heuristics. The fifth line is fine if you are AlphaGo. The question is whether, in any given domain, your intuition is tracking something real or something merely traditional.
+The analogy may apply beyond Go—to a protein structure, an algorithm, a design, or an operating decision—but each field needs its own evidence. AlphaFold and AlphaTensor are related examples of machine-assisted discovery; neither justifies a generic claim that surprising AI outputs are correct or worth billions.
 
-## Why it matters in a management context
+Game 4 supplies the necessary symmetry. Lee Sedol's Move 78 surprised AlphaGo and contributed to the human's only victory in the five-game match. Human and machine judgment can each expose the other's blind spots.
 
-Move 37 moments are arriving outside Go. They are arriving in drug discovery, chip design, materials science, logistics, and — less visibly — in the kinds of strategic decisions that management consultants and analysts have spent careers learning to make. The practitioner who cannot recognise a Move 37 when it appears will dismiss it. The practitioner who can will have a material edge.
+## Sources
 
-This is not a call to defer to AI systems uncritically. Lee Sedol won Game 4 of that same match with a move — Move 78 — that AlphaGo could not handle, a counterintuitive probe that broke the machine's evaluation function. The lesson is symmetric: humans and machines have different blind spots, and the gap between them is the productive space. A practitioner who understands where their own heuristics are load-bearing and where they are merely inherited is better placed to recognise which kind of move they are looking at.
+- DeepMind, *[AlphaGo](https://deepmind.google/research/alphago/)*.
+- Silver et al., *[Mastering the game of Go with deep neural networks and tree search](https://www.nature.com/articles/nature16961)*, *Nature*, 2016.
 
 ## See also
 
-[Root Node Problems](root-node-problems.md) · [Capability Overhang](capability-overhang.md) · [Single-Arrow Fallacy](single-arrow-fallacy.md)
-
----
-
-*Proposed May 9, 2026. Source: Demis Hassabis interview, Huge Conversations / Cleo Abram, May 2026; AlphaGo vs. Lee Sedol, Game 2, March 10, 2016.*
+*[Lee Sedol](/entries/lee-sedol/)* · *[Root Node Problems](/entries/root-node-problems/)* · *[Capability Overhang](/entries/capability-overhang/)* · *[Single-Arrow Fallacy](/entries/single-arrow-fallacy/)*

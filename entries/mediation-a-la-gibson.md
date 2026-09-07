@@ -3,12 +3,15 @@ layout: default
 kind: essay
 title: "Mediation (a la Gibson)"
 permalink: /entries/mediation-a-la-gibson/
+date: 2026-05-05
+last_revised: 2026-09-06
 summary: "the process by which media act on human consciousness — one-way, invisible, mass — and why personal AI agents might be the first cognitive tool that runs in the opposite direction. Names the *Sovereignty Impulse* as a Big Call. Substack version: *We Are Not Batteries Yet*."
+published: true
 ---
 
 # Mediation (a la Gibson)
 
-On February 9, 2026, OpenAI began injecting sponsored placements into ChatGPT. On April 22, they turned on cost-per-click advertising. As of last week — May 3, 2026 — ChatGPT tracks free-tier users by default for ad targeting. OpenAI's stated 2026 advertising revenue target is $2.5 billion, climbing toward $100 billion by 2030. This is not rumor or projection; it is in the trade press, in the investor briefings, and in the product itself if you log in and look. **The most-used AI assistant on Earth is now, structurally, an advertising surface.** With ChatGPT going this well-trodden route, that familiar ogre of commerce shows up again.[^1] Or in the words of Queen — another one bites the dust. God bless you, Wikipedia, for holding out so long.
+On February 9, 2026, OpenAI began testing advertisements for logged-in adults on the US Free and Go tiers of ChatGPT. The company says the advertisements are labelled, appear below answers, and do not influence the answers themselves; paid Plus, Pro, Business, Enterprise, and Education plans remain ad-free. Those limits matter. So does the structural change: **one version of a widely used AI assistant is now an advertising surface.** With ChatGPT going down this well-trodden route, that familiar ogre of commerce shows up again.[^1] Or in the words of Queen—another one bites the dust. God bless you, Wikipedia, for holding out so long.
 
 I want to take that fact seriously, because I think it tells us where things are heading, potentially for some systems, and I think there is an alternative path that is easier to reach than most people realize.
 
@@ -28,9 +31,9 @@ This is the mode of being that the dominant platforms of the last twenty years �
 
 ## What just happened in February
 
-The introduction of advertising into ChatGPT is not a small product change. It is a **category change.** Before February, ChatGPT was, in its own clumsy way, on the same side of the table as the user — answering questions, drafting documents, helping with whatever. There were privacy concerns, intellectual-property concerns, accuracy concerns; those were already real. But the *commercial structure* of the product was a paid subscription on one side and a free tier on the other, and the free tier was a loss leader for the subscription. The user was the customer, in a sense.
+The introduction of advertising into part of ChatGPT is not a small product change. It is a **category change.** Before February, ChatGPT's visible commercial structure was subscriptions and a free tier. There were already privacy, intellectual-property, and accuracy concerns, but the interface was not also selling attention to advertisers.
 
-After February, the free tier became something else. The free tier is now a **mediating surface** in Gibson's sense — a layer of screens whose job is to act on the user's consciousness on behalf of an advertiser. The 800 million people who use ChatGPT for free each week are no longer the customer. They are the audience. The customer is the advertiser, and the assistant is now structurally aligned with the advertiser's purposes for as long as the conversation lasts.
+For users in the advertising test, the free tier became something else as well: a **mediating surface** in Gibson's sense, carrying paid messages into a conversation. OpenAI's separation rules may protect the generated answer from advertiser influence. They do not eliminate the platform's new incentive to monetise attention around that answer. The user can be both a beneficiary of the service and an audience sold to advertisers.
 
 I do not say this with any particular anger. It is the standard arc of large consumer platforms and a part of the hyper-capitalist system that has brought the innovation (well, partly) — Google, Meta, every consumer search and social product of the last twenty years has walked this same path, for the same revenue reasons, and in approximately the same sequence. OpenAI is doing what its business model has been telling it to do since the IPO conversation began. None of this is a moral failing. The question for business students is: **is it a structural inevitability?** Thich Nhat Hanh's voice echoes in my head — *there is no joy without suffering.* :) And hey, we are not batteries yet, providing energy to the system like in the Matrix. Right?
 
@@ -40,7 +43,7 @@ What is striking is the speed of the shift, and the scale. ChatGPT became, in tw
 
 The Wharton professor Ethan Mollick, who writes the newsletter *One Useful Thing*, has been making a related observation from a different angle. His framing is not Gibson's; it is more pragmatic. Mollick says: **the bottleneck in AI is not the model, it is the interface.** The chatbot, he argues, is a poor interface for serious work — it overwhelms the user with walls of text, mirrors their disorganization, and exacts a "mental tax" that wipes out much of the productivity gain. The capability of the underlying model is far ahead of what most people can extract through the chatbot window.
 
-Mollick's prescription is **specialized interfaces** — Claude Code for programmers, Stitch for designers, NotebookLM for researchers, and, notably, **OpenClaw**, which he wrote about on March 31, 2026 as the fastest-growing open-source project in history and "a genuine personal agent." He calls it hard to use. He calls it a [security nightmare](/entries/aunties/).[^3] He also calls it the breakthrough — the first interface that solved the personal-agent problem by letting you talk to your AI through the messaging apps you already use.
+Mollick's prescription is **specialised interfaces**—tools shaped around the work rather than one universal chat window. In later writing he included **OpenClaw**, an open-source agent that runs on the user's computer, connects to different models, and can be reached through ordinary messaging applications. He also warned that most people should not use it because broad access to files, commands, email, and the web creates serious security risks.[^3]
 
 Mollick is right about the interface bottleneck. I want to push his observation one step further.
 
@@ -50,9 +53,11 @@ If the dominant interface to AI is becoming a mediating surface, then the *kind 
 
 But there is a second path, and it is easier to reach than most people realize.
 
-A **personal AI agent**, hosted on a machine you own, configured to your purposes, attentive to your specific work, runs in a different direction. It is not mediating you toward an advertiser; there is no advertiser. It is paying attention *to you* — your projects, your context, your voice. The relationship is bidirectional (you shape it as much as it shapes you), particular (it is yours, not a population's), aware (both parties know it is happening), and voluntary (you can step out at any moment by closing the laptop).
+A **personal AI agent**, hosted on a machine you own and configured to your purposes, can run in a different direction. It can pay attention to *your* projects and context without selling the surrounding interface to an advertiser. The relationship can be bidirectional, particular, visible, and easier to leave.
 
-This is, in Gibson's terms, **what mediation isn't.** And it is achievable today. The tooling — OpenClaw, Claude Cowork, the local-model ecosystem — has matured to the point that anyone with a laptop and a free Saturday can stand up a working personal agent. The companion piece [*On Beginning*](/entries/on-beginning/) walks through how. I have several students in my undergraduate strategy classes doing exactly this right now.
+The word *can* matters. A locally hosted agent may still call a cloud model, synchronise data, depend on third-party services, or inherit the incentives of its software suppliers. Ownership of the computer improves control; it does not by itself produce privacy, independence, or alignment.
+
+This is, in Gibson's terms, an attempt to push back against one-way mediation. It is achievable today, although hardly effortless or risk-free. The tooling—OpenClaw and the local-model ecosystem—allows a technically willing operator to assemble a working personal agent. The companion piece [*On Beginning*](/entries/on-beginning/) walks through how.
 
 ## A claim, marked as a claim
 
@@ -62,7 +67,7 @@ I think the rise of personal AI agents — hosted at home, configured by the ope
 
 I call this impulse — the desire to take back direction over one's own data, attention, and cognitive substrate — **the Sovereignty Impulse.** It is the same impulse behind self-hosted software, federated networks, the right-to-repair movement, the slow-internet movement, and the renewed interest in reading on paper. Personal AI is a new application of an old desire.
 
-I do not know if the Sovereignty Impulse will win. The platforms have enormous resources, network effects, and structural incentives on their side. The personal-agent ecosystem is held together by goodwill, open-source labor, and a small number of operators who have figured out the work. As Mollick puts it, OpenClaw is hard to use. It is a [security nightmare](/entries/aunties/). It is also genuinely sovereign in a way that ChatGPT is no longer, and that gap will widen.
+I do not know if the Sovereignty Impulse will win. The platforms have enormous resources, network effects, and structural incentives on their side. The personal-agent ecosystem is held together by goodwill, open-source labour, and a small number of operators who have figured out the work. As Mollick warns, OpenClaw is hard to use and risky when granted broad permissions. It can also give an operator more control than a centrally hosted advertising-supported interface. How much more depends on the model, network, permissions, and operating discipline.
 
 So this is what I am calling, with full awareness that I might be wrong, **a Big Call.** Not proven. Worth testing. The kind of question we ought to be asking right now, before the default settles.
 
@@ -83,10 +88,10 @@ It is worth knowing about.
 
 ---
 
-[^1]: This may or may not be a Tennessee Williams quote — or was it Eugene O'Neill? I recall it from an interview in which he was describing his life and commercialism. Help needed from [English Majors](/entries/english-major/).
-[^2]: See *No Maps For These Territories* (2000), the documentary in which Gibson, riding through North America in the back of a car, articulates the concept at length.
-[^3]: Mollick's "security nightmare" line is real and deserves to be named, not glossed. The honest version is broader still: **no AI-era system is fully secure right now, and several recent developments make this clearer than ever.** In April 2026, Anthropic announced Project Glasswing — using Claude Mythos Preview, they identified thousands of previously unknown zero-day vulnerabilities, including a 27-year-old bug in OpenBSD, across every major operating system and web browser. Meanwhile IBM, Google, and a clutch of academic groups have moved their quantum-computing roadmaps forward; recent theoretical work suggests the resources needed to break today's cryptography may be smaller than previously estimated. So the honest question, asked directly: *Ethan, do you really think your system is secure?* I think the honest answer, for any of us, is no — not in the way we used to mean *secure*. Our posture has to be: it is not secure, live with that. ARPAnet was not secure either, and we built the modern world on top of it anyway. This is a new world and we need to be brave. The [Aunties](/entries/aunties/) entry describes our architectural response: decompose oversight into small, named, single-verb agents so that no single component accumulates unchecked authority. It is not a guarantee. Nothing is, anymore. It is an architecture for living with the truth.
+[^1]: OpenAI, *[Testing ads in ChatGPT](https://openai.com/index/testing-ads-in-chatgpt/)*, 16 January 2026, and ChatGPT release notes, 9 February 2026. The “familiar ogre of commerce” may or may not be Tennessee Williams—or was it Eugene O'Neill? Help needed from [English Majors](/entries/english-major/).
+[^2]: See *No Maps for These Territories* (2000), the documentary in which Gibson discusses the idea while travelling through North America.
+[^3]: Ethan Mollick, *[A Guide to Which AI to Use in the Agentic Era](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the)*. Anthropic's April 2026 [Project Glasswing](https://www.anthropic.com/glasswing) announcement supplies a broader warning: increasingly capable models can find and exploit serious software vulnerabilities. That evidence supports careful permissions, isolation, monitoring, and recovery. It does not establish that security is impossible. The [Aunties](/entries/aunties/) entry describes one proposed oversight architecture; it is a defence in depth, not a guarantee.
 
 ---
 
-*See also: [On Being Treated Well](/entries/on-being-treated-well/) · [On Beginning](/entries/on-beginning/) · [The Sovereignty Impulse](/entries/sovereignty-impulse/) (forthcoming)*
+*See also: [On Being Treated Well](/entries/on-being-treated-well/) · [On Beginning](/entries/on-beginning/) · [The Sovereignty Impulse](/entries/sovereignty-impulse/)*

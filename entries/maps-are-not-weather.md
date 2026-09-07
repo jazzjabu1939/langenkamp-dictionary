@@ -4,6 +4,7 @@ kind: glossary
 title: "Maps Are Not Weather"
 permalink: /entries/maps-are-not-weather/
 date: 2026-05-23
+last_revised: 2026-09-06
 summary: "The humility principle for models: maps help us see patterns, but they do not abolish physics, contingency, complexity, or the purple-black sky."
 draft: false
 published: true
@@ -19,7 +20,7 @@ The tornado does not care about the dashboard. The sky can still turn purple-bla
 
 ## See also
 
-- *[Resource Visibility](resource-visibility.md)*
-- *[Pax](pax.md)*
-- *[The Buddha Stack](buddha-stack.md)*
-- *[Sovereign AI](sovereign-ai.md)*
+- *[Resource Visibility](/entries/resource-visibility/)*
+- *[Pax](/entries/pax/)*
+- *[The Buddha Stack](/entries/buddha-stack/)*
+- *[Sovereign AI](/entries/sovereign-ai/)*
