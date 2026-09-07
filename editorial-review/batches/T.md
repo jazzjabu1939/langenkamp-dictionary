@@ -1,10 +1,12 @@
 # Batch T — Plain-Prose Review
 
-**State:** reviewed, unpublished
+**State:** approved and published
 
 **Baseline:** `e388687`
 
 **Branch:** `editorial/alphabetical-plain-prose-audit-t`
+
+**Publication commit:** `e755cbf`
 
 **Published corpus:** 33 entries
 
@@ -88,6 +90,8 @@ The existing primary and first-party sources for the technical, literary, and hi
 
 All 33 changed entry pages passed the local rendered-page gate for existence, accidental `.md` links, and canonical internal targets.
 
-## Publication gate
+## Publication
 
-Batch T is reviewed but unpublished. It requires Professor Langenkamp's approval before integration. Batch U remains unreviewed.
+Professor Langenkamp approved Batch T on September 7, 2026. The reviewed content was published in `e755cbf`; the exact-SHA Dictionary check and GitHub Pages deployment completed successfully. All 33 live entry URLs returned HTTP 200 with the expected titles, and distinctive revised passages on *Tool* and *Time for Tea with The Oracles* were verified live.
+
+Batch U remains unreviewed.

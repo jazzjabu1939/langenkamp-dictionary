@@ -27,7 +27,7 @@ Completed batches:
 
 - **S — approved and published in `bb337bf`**
 
-- **T — reviewed, unpublished**
+- **T — approved and published in `e755cbf`**
 
 Next batch: **U — unreviewed**
 
