@@ -18,7 +18,7 @@ Completed batches:
 - **L — approved and published in `ae223bd`**
 - **M — approved and published in `c3a2ff0`**
 
-Current batch: **N — reviewed but unpublished**
+Current batch: **N — approved; publication verification pending**
 
 Next batch: **O — unreviewed**
 
