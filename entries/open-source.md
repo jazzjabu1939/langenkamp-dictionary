@@ -27,7 +27,9 @@ Traditional open-source software distributes source code: the preferred form in 
 
 Many releases called “open source” publish the weights but not the full training data or reproducible training recipe. Their licences may also restrict certain users or uses. Those releases can still be valuable: operators can run them locally, fine-tune them where permitted, inspect their behavior, and keep a usable version even if a hosted service changes. The accurate category is usually **open weights**.
 
-The Open Source Initiative's Open Source AI Definition sets a broader standard. It requires the freedoms to use, study, modify, and share the system, together with sufficient information and components to exercise those freedoms. The debate is not semantic housekeeping. It determines what an operator can actually reproduce, audit, change, and redistribute.
+The Open Source Initiative published version 1.0 of its Open Source AI Definition on 28 October 2024. The definition requires the freedoms to use, study, modify, and share the system, together with sufficient information and components to exercise those freedoms. For training data, it requires detailed information about provenance, scope, acquisition, selection, labelling, and processing; it does not require release of the complete dataset. The debate is not semantic housekeeping. It determines what an operator can actually reproduce, audit, change, and redistribute.
+
+Genuinely open-source AI systems do exist. OSI's validation exercise identified EleutherAI's **Pythia** and AI2's **OLMo**, among others, as systems that met the definition. These examples matter because they show that *open source* is a practicable category, not merely a standard used to disqualify open-weight releases.
 
 ## What an open-weight release usually includes
 
@@ -62,4 +64,6 @@ None of these benefits requires pretending that every open-weight release is ope
 ## Sources
 
 - Open Source Initiative, *The Open Source AI Definition*: <https://opensource.org/ai/open-source-ai-definition>
+- Open Source Initiative, *The Open Source Initiative Announces the Release of the Industry's First Open Source AI Definition* (28 October 2024): <https://opensource.org/blog/the-open-source-initiative-announces-the-release-of-the-industrys-first-open-source-ai-definition>
+- Open Source Initiative, *OSAID FAQs* (validation examples): <https://opensource.org/ai/faq>
 - Open Source Initiative, *Open Weights*: <https://opensource.org/ai/open-weights>
