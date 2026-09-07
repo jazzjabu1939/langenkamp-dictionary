@@ -90,6 +90,7 @@ The pieces that make a running agent.
 - [Agentic Loop](entries/agentic-loop.md) — the repeating cycle of planning, acting, observing, verifying, and deciding whether to continue, correct, escalate, or stop.
 - [Model–Harness Fit](entries/model-harness-fit.md) — whether a model's actual behavior suits the tools, context, memory, permissions, verification, and recovery rules around it.
 - [Verification](entries/verification.md) — testing an agent's claim, artifact, or action against evidence outside the process that produced it.
+- [Reality Contact](entries/reality-contact.md) — keeping claims corrigible by external evidence, other observers, and consequences.
 - [Agent Health](entries/agent-health.md) — the operational condition produced by the model and the environment that tells it what is true, current, permitted, and important.
 - [Harness Hygiene](entries/harness-hygiene.md) — the routine maintenance that keeps instructions, memory, schedules, permissions, and recovery paths trustworthy.
 - [Aunties](entries/aunties.md) — specialised single-verb oversight agents that prevent unchecked authority.
