@@ -1,10 +1,12 @@
 # Batch U — Plain-Prose Review
 
-**State:** reviewed, unpublished
+**State:** approved and published
 
 **Baseline:** `6c2eabd`
 
 **Branch:** `editorial/alphabetical-plain-prose-audit-u`
+
+**Publication commit:** `2ca780f`
 
 **Published corpus:** 1 entry
 
@@ -37,6 +39,8 @@ This is the Dictionary's own metaphor and operating principle, so it does not re
 
 The changed page passed the local rendered-page gate for existence, accidental `.md` links, and canonical internal targets.
 
-## Publication gate
+## Publication
 
-Batch U is reviewed but unpublished. It requires Professor Langenkamp's approval before integration. Batch V remains unreviewed.
+Professor Langenkamp approved Batch U on September 7, 2026. The reviewed content was published in `2ca780f`; the exact-SHA Dictionary check and GitHub Pages deployment completed successfully. The live entry returned HTTP 200 with its expected title and the new *Star Wars*-flavoured origin scene.
+
+By later instruction, V through Z will be reviewed together as one final batch. They remain unreviewed.
