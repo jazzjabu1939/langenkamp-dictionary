@@ -4,23 +4,31 @@ kind: glossary
 title: "Pre-buying the Physical Future"
 permalink: /entries/pre-buying-the-physical-future/
 date: 2026-05-23
-summary: "The AI-infrastructure pattern in which hyperscalers and frontier labs reserve tomorrow’s turbines, grid capacity, fabs, data centers, and supply-chain output years before the compute arrives."
+last_revised: 2026-09-06
+summary: "The AI-infrastructure pattern in which buyers reserve future power, equipment, land, and supply-chain capacity before the computing systems that will use them are operating."
 draft: false
 published: true
 ---
 
-**Pre-buying the Physical Future** names the AI-infrastructure pattern in which hyperscalers and frontier labs reserve tomorrow’s physical capacity years before the compute actually arrives.
+**Pre-buying the Physical Future** is the Dictionary's name for an AI-infrastructure pattern: buyers reserve future power, equipment, land, and supply-chain capacity before the computing systems that will use them are operating.
 
-Dylan Patel’s SemiAnalysis framing makes this visible. AI CapEx is not only chips arriving this quarter. It is turbine deposits for 2028 and 2029, data-center construction for future years, power-purchase agreements, supply-chain reservations, packaging capacity, memory commitments, and all the other down payments required to scale faster than ordinary infrastructure timetables would allow.
+AI capital expenditure is therefore not only chips arriving this quarter. It includes data-centre construction, power-purchase agreements, grid equipment, turbine-slot reservations, advanced packaging, memory, cooling, and long-lead procurement. The exact mix varies by buyer, and a reservation is not the same as a completed asset or guaranteed demand.
 
-This matters because it turns “AI demand” into a claim on the physical future: electricity, land, cooling, gas turbines, grid upgrades, fabs, and capital budgets. The chatbot window looks weightless. The buildout is not.
+The scale is visible in suppliers' own records. In April 2026, GE Vernova said its gas-power equipment backlog and slot-reservation agreements had reached 100 gigawatts, while first-quarter orders for electrification equipment supporting data centres exceeded all such orders in 2025. That does not make every reservation an AI project. It does show customers committing capital to scarce infrastructure years before delivery.
 
-For the Dictionary, the phrase is part of *[Resource Visibility](resource-visibility.md)*. If frontier AI is pre-buying the future, the operator should at least notice what future is being bought.
+This matters because apparently weightless software becomes a present claim on future electricity, land, cooling, turbines, grid upgrades, fabrication capacity, and capital budgets. The chatbot window looks weightless. The buildout is not.
+
+For the Dictionary, the phrase is part of *[Resource Visibility](/entries/resource-visibility/)*. If frontier AI is pre-buying the future, the operator should notice what is being reserved, who carries the construction risk, and what else that capacity might have served.
+
+## Sources
+
+- GE Vernova, *[First-quarter 2026 financial results](https://www.gevernova.com/news/press-releases/ge-vernova-reports-first-quarter-2026-financial)*.
+- Dylan Patel, *[The trillion-dollar race for artificial intelligence](https://www.dwarkesh.com/p/dylan-patel-3)*, interview with Dwarkesh Patel (2025).
 
 ## See also
 
-- *[Dylan Patel](dylan-patel.md)*
-- *[SemiAnalysis](semianalysis.md)*
-- *[Resource Visibility](resource-visibility.md)*
-- *[Hyperscaler](hyperscaler.md)*
-- *[Maps Are Not Weather](maps-are-not-weather.md)*
+- *[Dylan Patel](/entries/dylan-patel/)*
+- *[SemiAnalysis](/entries/semianalysis/)*
+- *[Resource Visibility](/entries/resource-visibility/)*
+- *[Hyperscaler](/entries/hyperscaler/)*
+- *[Maps Are Not Weather](/entries/maps-are-not-weather/)*

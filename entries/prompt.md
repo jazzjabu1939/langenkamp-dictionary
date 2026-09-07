@@ -4,19 +4,24 @@ kind: glossary
 title: "Prompt"
 permalink: /entries/prompt/
 date: 2026-05-19
-summary: "The input layer of an AI system: the words, files, examples, constraints, and context that shape what the model produces."
+last_revised: 2026-09-06
+summary: "Instructions or context supplied to a model at inference time; in ordinary use, especially the request a user types into a chatbot."
 draft: false
 published: true
 ---
 
-A **prompt** is the input given to a model or agent: the user's request, the surrounding instructions, examples, files, retrieved context, tool results, and constraints that shape the answer. In casual use, *prompt* often means the sentence typed into a chatbot. In agentic systems, it is the whole input layer.
+A **prompt** is an instruction or piece of context supplied to a model at inference time. In ordinary use, it means the request a person types into a chatbot. In technical and agentic systems, people also speak of system prompts, developer prompts, retrieved context, examples, files, and tool results. Those inputs may all shape the model's response, but the user's prompt is not the whole context.
 
-Prompting matters because models are highly context-sensitive. The same model can behave very differently when the task is framed as a question, a role, a workflow, a checklist, a set of examples, or a tool invocation. Good prompting is therefore less like magic words and more like good specification: making the task, audience, constraints, and success condition visible.
+Prompting matters because model behaviour is context-sensitive. The same request can produce different results when the task, audience, examples, constraints, available tools, and success condition change. Good prompting is therefore less like discovering magic words and more like writing a usable specification.
 
-The system prompt is the higher-priority version of this layer. Ordinary prompts ask for work. System prompts define the operating frame in which the work is done.
+A *[System Prompt](/entries/system-prompt/)* is one higher-authority source of instructions, but message roles and precedence are properties of a particular product or API. OpenAI's public Model Spec, for example, describes a chain of command among higher-level platform instructions, developer instructions, and user requests. Other systems may organise the hierarchy differently. A prompt cannot safely override instructions above it merely by declaring itself more important.
+
+## Source
+
+- OpenAI, *[Model Spec: Chain of command](https://model-spec.openai.com/2026-08-18.html#chain_of_command)*.
 
 ## See also
 
-- *[System Prompt](system-prompt.md)*
-- *[Context Window](context-window.md)*
-- *[English Major](english-major.md)*
+- *[System Prompt](/entries/system-prompt/)*
+- *[Context Window](/entries/context-window/)*
+- *[English Major](/entries/english-major/)*

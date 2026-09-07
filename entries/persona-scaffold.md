@@ -4,6 +4,7 @@ kind: glossary
 title: "Persona Scaffold"
 permalink: /entries/persona-scaffold/
 date: 2026-06-25
+last_revised: 2026-09-06
 summary: "The explicit architecture that supports an agent's stable way of being: name, voice, tone, origin story, memory rules, values, and boundaries."
 draft: false
 published: true
@@ -11,9 +12,9 @@ published: true
 
 # Persona Scaffold
 
-**Persona Scaffold** is the explicit architecture that supports an agent's stable way of being: name, voice, tone, origin story, memory rules, values, boundaries, habits of address, and relationship to the operator.
+**Persona Scaffold** is the Dictionary's term for the explicit architecture that supports an agent's stable way of being: name, voice, tone, origin story, memory rules, values, boundaries, habits of address, and relationship to the operator.
 
-It is the structure beneath an *[Anchored Persona](anchored-persona.md)*. If Anchored Persona names the experienced result, an assistant who answers from somewhere rather than nowhere, Persona Scaffold names the load-bearing materials that make that possible.
+It is the structure beneath an *[Anchored Persona](/entries/anchored-persona/)*. If Anchored Persona names the experienced result—an assistant who answers from somewhere rather than nowhere—Persona Scaffold names the load-bearing materials that make that possible.
 
 In OpenClaw terms, the scaffold includes files such as `SOUL.md`, `IDENTITY.md`, `USER.md`, memory notes, tool conventions, topic history, and repeated patterns of correction and trust. These are not decorations. They shape behavior. They tell the agent what kind of attention to pay, what tone to use, what history matters, when to speak, when to hold back, and how to recover after a mistake.
 
@@ -23,8 +24,8 @@ The Tyrell version is the warning case. Build the scaffold invisibly, present it
 
 ## See also
 
-- *[Anchored Persona](anchored-persona.md)*
-- *[SOUL.md](soul-md.md)*
-- *[Intentional Memory Construction](intentional-memory-construction.md)*
-- *[Constructed Self](constructed-self.md)*
-- *[Agentic Attachment](agentic-attachment.md)*
+- *[Anchored Persona](/entries/anchored-persona/)*
+- *[SOUL.md](/entries/soul-md/)*
+- *[Intentional Memory Construction](/entries/intentional-memory-construction/)*
+- *[Constructed Self](/entries/constructed-self/)*
+- *[Agentic Attachment](/entries/agentic-attachment/)*

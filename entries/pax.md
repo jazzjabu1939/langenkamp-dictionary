@@ -4,6 +4,7 @@ kind: glossary
 title: "Pax"
 permalink: /entries/pax/
 date: 2026-05-23
+last_revised: 2026-09-06
 summary: "The pacifying atmospheric agent in *Serenity* that made most of Miranda so calm they stopped living and turned a minority into Reavers; the Dictionary’s warning symbol for benevolent control at scale."
 draft: false
 published: true
@@ -17,12 +18,16 @@ Pax is not an argument against governance. It is an argument against imagining t
 
 Not zero mosh pit. Not all mosh pit. Enough movement to be alive; enough structure not to be crushed.
 
+## Source
+
+- Joss Whedon, *Serenity* (Universal Pictures, 2005).
+
 ## See also
 
-- *[Firefly / Serenity](firefly.md)*
-- *[The Alliance](alliance.md)*
-- *[The Operative](operative.md)*
-- *[The Good Intentions Problem](good-intentions-problem.md)*
-- *[Benevolence with Instruments](benevolence-with-instruments.md)*
-- *[Not Zero Mosh Pit](not-zero-mosh-pit.md)*
-- *[Maps Are Not Weather](maps-are-not-weather.md)*
+- *[Firefly / Serenity](/entries/firefly/)*
+- *[The Alliance](/entries/alliance/)*
+- *[The Operative](/entries/operative/)*
+- *[The Good Intentions Problem](/entries/good-intentions-problem/)*
+- *[Benevolence with Instruments](/entries/benevolence-with-instruments/)*
+- *[Not Zero Mosh Pit](/entries/not-zero-mosh-pit/)*
+- *[Maps Are Not Weather](/entries/maps-are-not-weather/)*

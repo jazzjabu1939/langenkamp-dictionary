@@ -4,12 +4,13 @@ kind: glossary
 title: "Proof of Learning"
 permalink: /entries/proof-of-learning/
 date: 2026-06-03
+last_revised: 2026-09-06
 summary: "The evidence trail linking a student's cognition, judgment, and effort to the submitted artifact."
 draft: false
 published: true
 ---
 
-**Proof of learning** is the evidence trail that links a student's cognition, judgment, and effort to the submitted artifact. It answers the question: what makes us confident that learning happened here?
+**Proof of learning** is the Dictionary's term for the evidence trail that links a student's cognition, judgment, and effort to the submitted artifact. It answers the question: what makes us confident that learning happened here?
 
 Proof of learning is different from proof of innocence. The point is not to build a courtroom around every assignment; it is to make the learning claim observable enough that the instructor, student, program, and accreditor are not relying only on surface polish.
 
@@ -19,8 +20,8 @@ The phrase matters because it keeps the focus where it belongs. The goal is to k
 
 ## See also
 
-- *[Verification Assignment](verification-assignment.md)*
-- *[Artifact Is Not Competence](artifact-is-not-competence.md)*
-- *[Provenance](provenance.md)*
-- *[AI Produced Artifact](ai-produced-artifact.md)*
-- *[Human Reserved](human-reserved.md)*
+- *[Verification Assignment](/entries/verification-assignment/)*
+- *[Artifact Is Not Competence](/entries/artifact-is-not-competence/)*
+- *[Provenance](/entries/provenance/)*
+- *[AI Produced Artifact](/entries/ai-produced-artifact/)*
+- *[Human Reserved](/entries/human-reserved/)*

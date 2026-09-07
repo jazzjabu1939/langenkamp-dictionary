@@ -4,20 +4,29 @@ kind: glossary
 title: "Pangram Labs"
 permalink: /entries/pangram-labs/
 date: 2026-05-12
-summary: "AI-detection firm. Used in academic and journalistic contexts. The canonical example of the detection-economy critique developed in *The Olang' Trap* and *The Sinceerly Stack*."
+last_revised: 2026-09-06
+summary: "An AI-text-detection company whose products and public controversies illustrate both the demand for detection and the danger of treating a probabilistic score as a verdict."
 draft: false
 published: true
 ---
 
-Pangram Labs is an AI-detection company that sells classification services to identify AI-generated text. The firm's CEO Max Spero is a recurring named figure in the Dictionary's *[AI Writing](ai-writing.md)* cluster: he is the source of the *[Mamdani Misfire](ai-writing.md)* — the May 2026 incident in which Spero publicly flagged a tweet from NYC Mayor Zohran Mamdani as likely AI-generated, an accusation that accumulated over four million views on a passage that was almost certainly human-written. He is also the source, in the Koebler piece, of the *"it's kind of looking grim for the future of the internet"* line quoted in *[The Sinceerly Stack](sinceerly-stack.md)*.
+**Pangram Labs** is an AI-detection company that sells classifiers intended to distinguish human, AI-assisted, and AI-generated text. Pangram publishes its own benchmark results and false-positive estimates. Those are vendor evaluations, not independent guarantees for every genre, language, model, or future version of the product.
 
-For this Dictionary, Pangram is named not as a uniquely bad actor in the AI-detection space, but as **the canonical example** of the structural critique developed in *[The Olang' Trap](olang-trap.md)*: that the AI-detection reflex carries systematic bias against the human writers whose native English register most closely matches the AI training corpus, and that the detection economy is a vector for harm whose costs are not paid by the firms selling the service. The Dictionary's editorial position is that operators should not act on Pangram or competitor scores in isolation — see *[The Olang' Trap](olang-trap.md)* for the full argument.
+The company belongs in this Dictionary because it makes the detector's governance problem concrete. In May 2026, co-founder and CEO Max Spero publicly highlighted a sentence from New York City mayor Zohran Mamdani with the implication that it sounded AI-generated. The post drew more than four million views. The episode did not establish who drafted the sentence. It did show how quickly a stylistic suspicion can become a public accusation without provenance evidence.
 
-Pangram has, per Spero's own statements quoted in the Koebler piece, also begun work on detecting *humaniser* tools that try to remove AI signatures — confirming the recursive shape of *[The Sinceerly Stack](sinceerly-stack.md)*.
+That is the narrower connection to *[The Olang' Trap](/entries/olang-trap/)*. Research has found bias and reliability problems in AI-text detection as a class, especially across language backgrounds and under paraphrasing. It does not follow that every result from every Pangram version is biased or wrong. The operational rule is simpler: **a detector score is a lead for further inquiry, not proof of authorship or misconduct.** A consequential decision should add process evidence, source history, conversation with the writer, and an appeal path.
+
+Pangram also works on identifying text altered by *humaniser* tools, which places it inside the recursive contest described by *[The Sinceerly Stack](/entries/sinceerly-stack/)*: generators produce a detectable style, humanisers try to remove it, and detectors train on the attempted removal.
+
+## Sources
+
+- Pangram, *[Introducing Pangram 4](https://www.pangram.com/blog/introducing-pangram-4)* — the company's own description and benchmark claims.
+- Jason Koebler, *[Your AI Use Is Breaking My Brain](https://www.404media.co/your-ai-use-is-breaking-my-brain/)* — reporting on the Mamdani episode and detector-humaniser contest.
+- Jason Koebler, *[Substackers Say New AI Detection Tool Is a “Witch Hunt”](https://www.404media.co/substackers-say-new-ai-detection-tool-is-a-witch-hunt/)* — reporting on Pangram's Substack integration and acknowledged error risk.
 
 ## See also
 
-- *[The Olang' Trap](olang-trap.md)* — the structural-bias argument
-- *[The Sinceerly Stack](sinceerly-stack.md)* — the recursive cat-and-mouse
-- *[AI Writing](ai-writing.md)*
-- *[GPTZero](gptzero.md)*, *[Originality.ai](originality-ai.md)* — competitors
+- *[The Olang' Trap](/entries/olang-trap/)* — the detector-governance argument
+- *[The Sinceerly Stack](/entries/sinceerly-stack/)* — the recursive cat-and-mouse
+- *[AI Writing](/entries/ai-writing/)*
+- *[GPTZero](/entries/gptzero/)*, *[Originality.ai](/entries/originality-ai/)* — competitors

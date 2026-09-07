@@ -20,6 +20,8 @@ Completed batches:
 - **N — approved and published in `88899cb`**
 - **O — approved and published in `98fa456`**
 
-Next batch: **P — unreviewed**
+Current batch: **P — reviewed but unpublished**
+
+Next batch: **Q — unreviewed**
 
 Batch ledgers live in `editorial-review/batches/`.
