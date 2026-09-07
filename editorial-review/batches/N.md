@@ -15,20 +15,21 @@
 | Entry | Review status | Change class | Notes |
 |---|---|---|---|
 | The Nine Tripod Cauldrons / 九鼎 | reviewed | light revision | Preserved the newly published historical essay and its Dictionary extension; verified the *Zuo Zhuan*, National Museum of China, and Columbia sources; converted internal references to canonical URLs. |
-| The Narrator's Compression | reviewed | substantive revision | Recast the term as a limited, falsifiable Dictionary hypothesis; removed the claim that an assistant's “70/30” language reports its probability mass; separated next-token probability from factual confidence; presented global-workspace, predictive-processing, drift-diffusion, and Libet work as distinct and contested evidence rather than a convergent proof of consciousness; added explicit metadata, current sources, and canonical links. |
+| The Narrator's Compression | reviewed | substantive revision | Incorporated the operator's revised draft, which keeps the original mistake inside the argument; replaced the “70/30” probability-readout claim with a distinction between generated self-report and measured internal state; added Lindsey's causal concept-injection evidence and Anthropic's limited planning examples; separated multiple drafts, the interpreter, confabulation, predictive processing, global workspace, evidence accumulation, and the contested Libet interpretation; added explicit metadata, current sources, objections, and canonical links. |
 
 ## Batch findings
 
 - **2 entries reviewed:** 1 received a light revision and 1 received a substantive revision.
 - *The Nine Tripod Cauldrons* already distinguished transmitted political memory from surviving archaeology. Its primary-source quotation and institutional interpretation remain sound.
-- *The Narrator's Compression* contained the batch's central defect: it treated an AI assistant's conversational percentage as privileged introspection and made several different cognitive-science frameworks appear to establish one settled account. The revision preserves the useful question—how coherent reports omit alternatives—while narrowing the comparison between human and artificial systems to a functional analogy.
+- *The Narrator's Compression* contained the batch's central defect: it treated an AI assistant's conversational percentage as privileged introspection and made several different cognitive-science frameworks appear to establish one settled account. The operator's revised draft turns that mistake into an example of the term itself and makes the analogy testable rather than merely flattering.
+- Lindsey's 2025 concept-injection experiments supply the strongest new evidence: some models sometimes report manipulated internal states accurately, but the ability is unreliable and ordinary conversation cannot distinguish introspection from confabulation. Anthropic's circuit-tracing work provides limited examples of plan-level representation without establishing a general system of competing trajectories.
 - The revision also corrects the Libet inference. Readiness-potential timing remains contested, and accumulator accounts show that the averaged signal need not mark a completed unconscious decision.
 - All cited URLs resolved during the review. Every internal link in the two rendered pages points to a built canonical target, and neither rendered N page contains a literal `.md` URL.
 - The negative-parallelism scanner reports 86 hits across 155,808 words (0.55 per thousand), down from 87 at the M baseline. Neither N entry appears among the corpus's flagged high-density files.
 
 ## Entry recommended for approval reading
 
-**The Narrator's Compression** deserves the operator's attention before publication. The revision keeps the conversational origin and practical calibration test, but withdraws two claims that should not remain in the Dictionary: that a chat model's first-person percentage directly reports its internal probability distribution, and that neuroscience has established the narrator as an after-the-fact reporter of a completed decision.
+**The Narrator's Compression** received a second substantive pass from the operator. The reconciled version preserves his stronger definition, the asymmetry section, objections, examples, and self-referential sycophancy note. Three technical boundaries remain explicit: generation proceeds token by token rather than through one forward pass for the whole message; a next-token distribution is not the model's whole internal state; and the cited human theories remain relevant but competing frameworks.
 
 ## Material before/after excerpts
 
@@ -36,11 +37,11 @@
 
 **Before:** “When the assistant said *‘70% knew, 30% drafting an apology,’* she was not being metaphorical. She was approximately reporting the shape of her own probability mass.”
 
-**After:** “A chat model can produce language such as ‘70/30,’ but that sentence is not ordinarily a direct inspection of its own token probabilities, hidden activations or competing internal processes. It is another generated output.”
+**After:** “An ordinary chat reply gives a language model no privileged readout of its own sampling distribution. The sentence ‘70% knew, 30% was drafting an apology’ was produced by the same token-generating process that produced the rest of the message. It is generated text about an internal state, not a measurement of one.”
 
 **Before:** “If these frameworks are roughly correct—and they are the dominant frameworks in computational and cognitive neuroscience—then the human first-person narrative is itself a compression.”
 
-**After:** “Human cognition also combines many signals before producing a report or action. Several research traditions are relevant, but none by itself proves the Dictionary's hypothesis.”
+**After:** “Taken together, these traditions support a modest claim: human reports can omit, simplify or reconstruct parts of the process that produced them. They do not prove that every first-person narrative is a final draft of parallel computation. That stronger claim remains the Dictionary's hypothesis.”
 
 ## Rendered previews
 
