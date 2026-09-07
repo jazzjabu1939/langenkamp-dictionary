@@ -1,6 +1,6 @@
 # Batch M — Plain-Prose Review
 
-**State:** reviewed but unpublished
+**State:** approved; publication verification pending
 
 **Baseline:** `da7c5c7`
 
@@ -84,4 +84,4 @@ All eighteen pages were inspected for headings, literal `.md` URLs, distinctive 
 
 ## Publication gate
 
-Batch M is reviewed but unpublished. Publication requires Professor Langenkamp's approval. Batch N remains unreviewed.
+Professor Langenkamp approved Batch M on 6 September 2026. Publication verification is pending. Batch N remains unreviewed.
