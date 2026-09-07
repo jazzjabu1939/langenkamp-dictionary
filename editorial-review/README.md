@@ -23,7 +23,7 @@ Completed batches:
 - **P — approved and published in `ff29ddf`**
 - **Q — approved and published in `b9815f6`**
 
-- **R — reviewed, unpublished**
+- **R — approved and published in `76b5771`**
 
 Next batch: **S — unreviewed**
 

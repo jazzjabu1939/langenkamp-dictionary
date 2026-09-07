@@ -1,6 +1,6 @@
 # Batch R — Plain-Prose Review
 
-**State:** reviewed, unpublished
+**State:** published
 
 **Baseline:** `a6cf0d5`
 
@@ -9,6 +9,8 @@
 **Published corpus:** 18 entries
 
 **Excluded current drafts:** none
+
+**Publication commit:** `76b5771`
 
 ## Ledger
 
@@ -59,4 +61,4 @@ All 18 rendered pages under `_site/entries/` were inspected. The gate checked pa
 
 ## Publication gate
 
-Batch R is reviewed but unpublished. It requires Professor Langenkamp's approval before integration. Batch S remains unreviewed.
+Professor Langenkamp approved Batch R on 7 September 2026. The approved proposal was integrated as `76b5771`; the concurrent *Covert Channel* cross-link in *Reward Hacking* survived in canonical form. Both exact-SHA GitHub workflows succeeded, all published R-title pages returned HTTP 200 with their expected titles, and the revised *Reward Hacking* passage and cross-link were confirmed live. *Reality Contact*, published separately after this batch's baseline, had already passed its own editorial and publication gates. Batch S remains unreviewed.
