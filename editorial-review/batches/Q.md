@@ -1,6 +1,6 @@
 # Batch Q — Plain-Prose Review
 
-**State:** reviewed but unpublished
+**State:** published
 
 **Baseline:** `de2d4bf`
 
@@ -52,4 +52,4 @@ The rendered pages under `_site/entries/` were inspected for all three slugs, in
 
 ## Publication gate
 
-Batch Q remains reviewed but unpublished pending Professor Langenkamp's approval. Batch R remains unreviewed.
+Professor Langenkamp approved Batch Q on September 6, 2026. Content commit `b9815f6` passed both GitHub workflows and all three live HTTPS checks. Batch R remains unreviewed.

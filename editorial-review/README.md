@@ -21,8 +21,7 @@ Completed batches:
 - **O — approved and published in `98fa456`**
 
 - **P — approved and published in `ff29ddf`**
-
-Current batch: **Q — reviewed but unpublished**
+- **Q — approved and published in `b9815f6`**
 
 Next batch: **R — unreviewed**
 
