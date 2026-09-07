@@ -1,6 +1,6 @@
 # Batch N — Plain-Prose Review
 
-**State:** approved; publication verification pending
+**State:** approved and published
 
 **Baseline:** `4e9bfe8`
 
@@ -52,4 +52,4 @@ Both pages were inspected for headings, literal `.md` URLs, distinctive revised 
 
 ## Publication gate
 
-Professor Langenkamp approved Batch N on 6 September 2026. Publication verification is pending. Batch O remains unreviewed.
+Professor Langenkamp approved Batch N on 6 September 2026. The reviewed content was published in `88899cb`, both GitHub workflows succeeded for exact deployment commit `902e476`, and both live pages returned HTTP 200 with the revised text. Batch O remains unreviewed.
