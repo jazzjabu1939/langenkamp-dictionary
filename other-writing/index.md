@@ -37,7 +37,7 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
   <a class="writing-card" href="/newsletter/">
     <span class="writing-kicker">Weekly Brief</span>
     <strong>AI in Higher Education</strong>
-    <span>A weekly brief for faculty colleagues on AI, institutions, assessment, and higher education. Archive current through September 1, 2026.</span>
+    <span>A weekly brief for faculty colleagues on AI, institutions, assessment, and higher education. Archive current through September 7, 2026.</span>
   </a>
 
   <a class="writing-card oracle-card" href="/oracle-bones/">
@@ -64,6 +64,7 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
 ## Current AI in Higher Education issues
 
 <!-- NEWSLETTER_CURRENT_START -->
+- **[September 7, 2026](/newsletter/2026-09-07/)** · Vol. 32 - The End of the Single AI Policy
 - **[September 1, 2026](/newsletter/2026-09-01/)** · Vol. 31 - The First-Week AI Reset
 - **[August 26, 2026](/newsletter/2026-08-26/)** · Vol. 30 - What Should Remain Human?
 - **[August 18, 2026](/newsletter/2026-08-18/)** · Vol. 29 - What a Degree Certifies
@@ -71,7 +72,6 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
 - **[August 3, 2026](/newsletter/2026-08-03/)** · Vol. 27 - AI Becomes Research Infrastructure
 - **[July 28, 2026](/newsletter/2026-07-28/)** · Vol. 26 - AI Readiness Becomes a Competitive Position
 - **[July 21, 2026](/newsletter/2026-07-21/)** · Vol. 25 - AI Moves Onto Campus
-- **[July 13, 2026](/newsletter/2026-07-13/)** · Vol. 24 - Controlled learning conditions, conditional AI, and assignment-level AI zones
 <!-- NEWSLETTER_CURRENT_END -->
 - **[Full AI in Higher Education archive](/newsletter/)**
 

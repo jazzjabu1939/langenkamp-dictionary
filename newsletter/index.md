@@ -24,6 +24,7 @@ Each issue runs five to seven items, each anchored to a source we can cite, with
 ## Archive
 
 <!-- NEWSLETTER_ARCHIVE_START -->
+- **[September 7, 2026](2026-09-07/)** · Vol. 32 - The End of the Single AI Policy
 - **[September 1, 2026](2026-09-01/)** · Vol. 31 - The First-Week AI Reset
 - **[August 26, 2026](2026-08-26/)** · Vol. 30 - What Should Remain Human?
 - **[August 18, 2026](2026-08-18/)** · Vol. 29 - What a Degree Certifies
