@@ -20,7 +20,7 @@ Completed batches:
 - **N — approved and published in `88899cb`**
 - **O — approved and published in `98fa456`**
 
-Current batch: **P — reviewed but unpublished**
+- **P — approved and published in `ff29ddf`**
 
 Next batch: **Q — unreviewed**
 
