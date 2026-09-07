@@ -4,6 +4,8 @@ kind: glossary
 title: "Responsible Implementation Layer"
 permalink: /entries/responsible-implementation-layer/
 date: 2026-06-26
+first_published: 2026-06-26
+last_revised: 2026-09-06
 summary: "The practical layer of training, guidance, guardrails, assessment design, privacy rules, and human oversight that turns AI adoption from scattered experimentation into trustworthy institutional use."
 draft: false
 published: true
@@ -13,7 +15,7 @@ published: true
 
 It is not the model, the chatbot, or the procurement announcement. It is the layer of training, practical guidance, assessment design, data rules, permissions, privacy review, transparency, human oversight, and support that lets teachers, students, staff, and administrators use AI without pretending the tool governs itself.
 
-Microsoft's June 2026 AI in Education report is a useful example of the term in the wild. The headline numbers are not only adoption numbers: 92% of students and education leaders and 88% of educators report having used AI for school-related purposes. The more important institutional signal is the support gap. Many students and educators have not received formal training, while large shares say they want regular AI training and clearer guidance on responsible use. The implementation problem is no longer *whether AI is present*. It is whether institutions can build the surrounding layer that makes the presence educationally useful, accountable, and fair.
+Microsoft's June 2026 AI in Education report is a useful example of the term in the wild. In its survey of 3,345 respondents across six countries, 92% of students and education leaders and 88% of educators reported having used AI for school-related purposes. The more important institutional signal is the support gap: 77% of students and 53% of educators said they had received no formal AI training, while many wanted their institutions to provide it regularly. The implementation problem is no longer *whether AI is present*. It is whether institutions can build the surrounding layer that makes the presence educationally useful, accountable, and fair.
 
 In higher education, the responsible implementation layer includes at least six things:
 
@@ -32,8 +34,12 @@ The responsible implementation layer is the middle discipline: enough structure 
 
 ## See also
 
-- *[Implementation Outrun](implementation-outrun.md)*
-- *[Trust Layer](trust-layer.md)*
-- *[Verification Gap](verification-gap.md)*
-- *[Human Judgment Layer](human-judgment-layer.md)*
-- *[AI Produced Artifact](ai-produced-artifact.md)*
+- *[Implementation Outrun](/entries/implementation-outrun/)*
+- *[Trust Layer](/entries/trust-layer/)*
+- *[Verification Gap](/entries/verification-gap/)*
+- *[Human Judgment Layer](/entries/human-judgment-layer/)*
+- *[AI Produced Artifact](/entries/ai-produced-artifact/)*
+
+## Source
+
+- Microsoft, *[AI in Education Report highlights widespread adoption and increasing demand for support](https://news.microsoft.com/source/2026/06/24/microsofts-new-ai-in-education-report-highlights-widespread-adoption-and-increasing-demand-for-support/)*, 24 June 2026.

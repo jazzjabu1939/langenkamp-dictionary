@@ -4,6 +4,8 @@ kind: glossary
 title: "RAM"
 permalink: /entries/ram/
 date: 2026-07-23
+first_published: 2026-07-23
+last_revised: 2026-09-06
 summary: "Random-access memory: the fast working memory that lets computers, GPUs, phones, and AI data centers keep active work close to the processor. In the AI era, RAM is no longer a dull spec line. It is a strategic bottleneck."
 draft: false
 published: true
@@ -51,7 +53,7 @@ The phrase *memory wall* used to describe a performance problem: processors coul
 
 ## Why it matters here
 
-For this Dictionary, RAM belongs near *[Logic, Memory, Power](logic-memory-power.md)* because it names the middle term in physical AI scaling. It belongs near *[Sovereign Compute](sovereign-compute.md)* because local AI depends on how much working memory the operator owns. It belongs near *[KV Cache Explosion](kv-cache-explosion.md)* because long-context systems convert "more memory" from a metaphor into an invoice.
+For this Dictionary, RAM belongs near *[Logic, Memory, Power](/entries/logic-memory-power/)* because it names the middle term in physical AI scaling. It belongs near *[Sovereign Compute](/entries/sovereign-compute/)* because local AI depends on how much working memory the operator owns. It belongs near *[KV Cache Explosion](/entries/kv-cache-explosion/)* because long-context systems convert "more memory" from a metaphor into an invoice.
 
 The M5 Max purchase was not just a faster-laptop purchase. It was a RAM purchase. The 128 GB of unified memory is what lets a home operator load serious open-weight models, run them locally, keep student or personal material off vendor systems, and experiment with the open tier without asking a hyperscaler for permission. The CPU and GPU matter. The RAM is what makes the sovereignty claim operational.
 
@@ -59,20 +61,20 @@ RAM is therefore one of the places where the cloud stops being a cloud. It becom
 
 ## See also
 
-- *[Logic, Memory, Power](logic-memory-power.md)*
-- *[KV Cache Explosion](kv-cache-explosion.md)*
-- *[Apple Silicon](apple-silicon.md)*
-- *[M5 Max](m5-max.md)*
-- *[Ollama](ollama.md)*
-- *[Quantization](quantization.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Dusty Laptop](dusty-laptop.md)*
+- *[Logic, Memory, Power](/entries/logic-memory-power/)*
+- *[KV Cache Explosion](/entries/kv-cache-explosion/)*
+- *[Apple Silicon](/entries/apple-silicon/)*
+- *[M5 Max](/entries/m5-max/)*
+- *[Ollama](/entries/ollama/)*
+- *[Quantization](/entries/quantization/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Dusty Laptop](/entries/dusty-laptop/)*
 
 [^ddr5]: JEDEC, *JESD79-5B - DDR5 SDRAM*, publication date 1 September 2022. GlobalSpec's standards listing summarizes the scope as defining DDR5 SDRAM features, functionality, electrical characteristics, packages, and signal assignments: <https://standards.globalspec.com/std/14562454/jesd79-5b>.
 
 [^lpddr]: JEDEC, *JESD209-5C - Low Power Double Data Rate (LPDDR) 5/5X*, publication date 1 June 2023. GlobalSpec's standards listing summarizes the LPDDR5/LPDDR5X scope: <https://standards.globalspec.com/std/14618092/jesd209-5c>.
 
-[^hbm3]: JEDEC announced publication of JESD238 HBM3 on 27 January 2022, describing it as the High Bandwidth Memory DRAM standard for higher-bandwidth, lower-power, high-capacity-per-area applications including graphics processing, high-performance computing, and servers: <https://www.businesswire.com/news/home/20220127005320/en/JEDEC-Publishes-HBM3-Update-to-High-Bandwidth-Memory-HBM-Standard>.
+[^hbm3]: JEDEC announced publication of JESD238 HBM3 on 27 January 2022, describing it as the High Bandwidth Memory DRAM standard for higher-bandwidth, lower-power, high-capacity-per-area applications including graphics processing, high-performance computing, and servers: <https://www.jedec.org/news/pressreleases/jedec-publishes-hbm3-update-high-bandwidth-memory-hbm-standard>.
 
 [^trendforce-q3]: TrendForce, "AI Server Demand Continues to Support Memory Prices in 3Q26, but Gains Moderate as Consumer Demand Weakens and High Base Effects Take Hold," 3 July 2026: <https://www.trendforce.com/presscenter/news/20260703-13134.html>.
 

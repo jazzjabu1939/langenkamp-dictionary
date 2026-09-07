@@ -4,6 +4,8 @@ kind: glossary
 title: "Replicant"
 permalink: /entries/replicant/
 date: 2026-06-29
+first_published: 2026-06-29
+last_revised: 2026-09-06
 summary: "Blade Runner's manufactured human: an embodied synthetic person built to occupy human roles, and the Dictionary's cautionary figure for role substitution, implanted memory, and engineered personhood."
 draft: false
 published: true
@@ -13,7 +15,7 @@ published: true
 
 **A Replicant is Blade Runner's manufactured human: an embodied synthetic person built to occupy human roles, and the Dictionary's cautionary figure for role substitution, implanted memory, and engineered personhood.**
 
-The term comes from Ridley Scott's *[Blade Runner](blade-runner.md)*, where the Tyrell Corporation manufactures genetically engineered beings for off-world labor, military work, sexual service, and other roles society wants performed without granting the performers ordinary social standing. Replicants are not robots in the clanking-metal sense. They are engineered biological beings: grown or manufactured to look, move, bleed, desire, fear, and suffer almost exactly as humans do.
+The term comes from Ridley Scott's *[Blade Runner](/entries/blade-runner/)*, where the Tyrell Corporation manufactures genetically engineered beings for off-world labour, military work, sexual service, and other roles society wants performed without granting the performers ordinary social standing. Replicants are not robots in the clanking-metal sense. They are engineered biological beings: grown or manufactured to look, move, bleed, desire, fear, and suffer almost exactly as humans do.
 
 That is why the word matters for AI. A modern AI agent is not a replicant. It has no body, mortality, breath, hunger, panic, weather, touch, childhood, or cellular life. Treating software agents as literal replicants would be bad philosophy and worse engineering.
 
@@ -37,11 +39,11 @@ The replicant is not the future we should expect literally. It is the figure tha
 
 ## See also
 
-- *[Blade Runner](blade-runner.md)*
-- *[Tyrell Corporation](tyrell-corporation.md)*
-- *[Role Substitution](role-substitution.md)*
-- *[Implanted Memory](implanted-memory.md)*
-- *[Anchored Persona](anchored-persona.md)*
-- *[Machine Matthew L.](machine-matthew-l.md)*
-- *[Anti-Replication Strategy](anti-replication-strategy.md)*
-- *[Voight-Kampff Test](voight-kampff-test.md)*
+- *[Blade Runner](/entries/blade-runner/)*
+- *[Tyrell Corporation](/entries/tyrell-corporation/)*
+- *[Role Substitution](/entries/role-substitution/)*
+- *[Implanted Memory](/entries/implanted-memory/)*
+- *[Anchored Persona](/entries/anchored-persona/)*
+- *[Machine Matthew L.](/entries/machine-matthew-l/)*
+- *[Anti-Replication Strategy](/entries/anti-replication-strategy/)*
+- *[Voight-Kampff Test](/entries/voight-kampff-test/)*

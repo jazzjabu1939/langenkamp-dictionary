@@ -4,6 +4,8 @@ kind: glossary
 title: "Restraint Asymmetry"
 permalink: /entries/restraint-asymmetry/
 date: 2026-08-21
+first_published: 2026-08-21
+last_revised: 2026-09-06
 summary: "The strategic condition in which one actor accepts a constraint that does not bind competitors, attackers, or systems outside the same control regime."
 draft: false
 published: true
@@ -21,4 +23,4 @@ Restraint asymmetry does not prove that restraint is foolish. It identifies a st
 
 ## See also
 
-*[Control Surface Asymmetry](control-surface-asymmetry.md)* · *[Capability Diffusion](capability-diffusion.md)* · *[Release Irrevocability / No-Recall Problem](release-irrevocability.md)* · *[Offense-Defense Balance](offense-defense-balance.md)*
+*[Control Surface Asymmetry](/entries/control-surface-asymmetry/)* · *[Capability Diffusion](/entries/capability-diffusion/)* · *[Release Irrevocability / No-Recall Problem](/entries/release-irrevocability/)* · *[Offense-Defense Balance](/entries/offense-defense-balance/)*

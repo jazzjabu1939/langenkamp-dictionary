@@ -4,6 +4,8 @@ kind: reference
 title: "Routing Logic"
 permalink: /entries/routing-logic/
 date: 2026-07-01
+first_published: 2026-07-01
+last_revised: 2026-09-06
 summary: "The managerial and technical layer that decides which work should go to which model, agent, tool, human, or harness."
 published: true
 ---
@@ -47,7 +49,7 @@ Those questions are not merely engineering details. They are the new operations 
 
 ## Task distribution first
 
-Routing logic depends on [Task Distribution](task-distribution.md). If the organisation cannot describe the shape of its work, routing becomes vibes with invoices attached.
+Routing logic depends on [Task Distribution](/entries/task-distribution/). If the organisation cannot describe the shape of its work, routing becomes vibes with invoices attached.
 
 A sensible routing decision might say:
 
@@ -73,7 +75,7 @@ This does not make model quality irrelevant. Better models expand the frontier o
 
 Companies are tempted to treat routing logic as a cost-control mechanism. That is part of it, but not enough. Routing exists to preserve quality, ownership, trust, privacy, speed, and cost in the same system.
 
-If routing is only about cost, the firm will send fragile work to cheap systems and discover the error later. If routing is only about quality, the firm will overpay for routine work and learn nothing about its own task distribution. If routing is only about privacy, the firm may build a local system that no one can use. If routing is only about convenience, the firm will drift into [Team Harness](team-harness.md) lock-in without noticing.
+If routing is only about cost, the firm will send fragile work to cheap systems and discover the error later. If routing is only about quality, the firm will overpay for routine work and learn nothing about its own task distribution. If routing is only about privacy, the firm may build a local system that no one can use. If routing is only about convenience, the firm will drift into [Team Harness](/entries/team-harness/) lock-in without noticing.
 
 Routing logic is the balancing discipline.
 
@@ -89,11 +91,11 @@ That is more useful than memorising model rankings, which age about as well as y
 
 ## See also
 
-[Task Distribution](task-distribution.md) · [Team Harness](team-harness.md) · [Tool Diet](tool-diet.md) · [Agent Ownership](agent-ownership.md) · [Verification Gap](verification-gap.md) · [Sovereign Compute](sovereign-compute.md)
+[Task Distribution](/entries/task-distribution/) · [Team Harness](/entries/team-harness/) · [Tool Diet](/entries/tool-diet/) · [Agent Ownership](/entries/agent-ownership/) · [Verification Gap](/entries/verification-gap/) · [Sovereign Compute](/entries/sovereign-compute/)
 
 ## Source
 
-Nate Jones, GLM-5.2 and recent Substack work on cheap intelligence, context lock-in, and model routing, June 2026; Prof. Langenkamp vocabulary review, July 1, 2026.
+The entry extends an operator's vocabulary assembled from model-routing practice and Nate Jones's June 2026 discussion of GLM-5.2, context lock-in, and cheap intelligence. The managerial framework is the Dictionary's synthesis, not Jones's taxonomy.
 
 - YouTube, "I tried GLM 5.2 and it blew my mind": <https://youtu.be/Zp8lr6IzUnQ>
 - <https://natesnewsletter.substack.com/p/glm-5-2-context-lock-in>

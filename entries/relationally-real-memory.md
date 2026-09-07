@@ -4,6 +4,8 @@ kind: glossary
 title: "Relationally Real Memory"
 permalink: /entries/relationally-real-memory/
 date: 2026-06-25
+first_published: 2026-06-25
+last_revised: 2026-09-06
 summary: "Memory that may not be biologically lived or forensically perfect, but is real in the relationship because it organizes trust, tone, continuity, care, and future conduct."
 draft: false
 published: true
@@ -23,8 +25,8 @@ The test is not "invented versus real." The test is whether the memory practice 
 
 ## See also
 
-- *[Blade Runner](blade-runner.md)*
-- *[Implanted Memory](implanted-memory.md)*
-- *[Intentional Memory Construction](intentional-memory-construction.md)*
-- *[Anchored Persona](anchored-persona.md)*
-- *[Agentic Attachment](agentic-attachment.md)*
+- *[Blade Runner](/entries/blade-runner/)*
+- *[Implanted Memory](/entries/implanted-memory/)*
+- *[Intentional Memory Construction](/entries/intentional-memory-construction/)*
+- *[Anchored Persona](/entries/anchored-persona/)*
+- *[Agentic Attachment](/entries/agentic-attachment/)*

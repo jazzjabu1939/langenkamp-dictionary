@@ -4,6 +4,8 @@ kind: glossary
 title: "Resource Visibility"
 permalink: /entries/resource-visibility/
 date: 2026-05-23
+first_published: 2026-05-23
+last_revised: 2026-09-06
 summary: "The sovereignty value of making AI’s physical costs visible to the operator: electricity, heat, hardware, water, bills, and the discipline that follows from seeing them."
 draft: false
 published: true
@@ -21,10 +23,10 @@ Freedom without measurement becomes fantasy. Measurement without freedom becomes
 
 ## See also
 
-- *[The Buddha Stack](buddha-stack.md)*
-- *[Maps Are Not Weather](maps-are-not-weather.md)*
-- *[Logic, Memory, Power](logic-memory-power.md)*
-- *[Grid-share Shock](grid-share-shock.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Hyperscaler](hyperscaler.md)*
-- *[Token Burn](token-burn.md)*
+- *[The Buddha Stack](/entries/buddha-stack/)*
+- *[Maps Are Not Weather](/entries/maps-are-not-weather/)*
+- *[Logic, Memory, Power](/entries/logic-memory-power/)*
+- *[Grid-share Shock](/entries/grid-share-shock/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Hyperscaler](/entries/hyperscaler/)*
+- *[Token Burn](/entries/token-burn/)*

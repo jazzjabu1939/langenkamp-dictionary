@@ -3,6 +3,9 @@ layout: default
 kind: reference
 title: "Red Pill"
 permalink: /entries/red-pill/
+date: 2026-05-11
+first_published: 2026-05-11
+last_revised: 2026-09-06
 summary: "the moment a platform's administrative UI refuses an action that the platform's documentation explicitly enables, at a validation layer the documentation does not mention. Named May 11, 2026, after a Google Analytics 4 dialog that would not accept a service-account email."
 published: true
 ---
@@ -69,7 +72,7 @@ The Red Pill is one of the most under-named operational hazards in sovereignty w
 
 Stop pasting the same input into the same form. Look for the API alternative. Look for an Admin Console path the user UI does not expose. Look for the *programmatic* equivalent of the action. The administrative UI is *one path of many*; the documentation often names the others if you read it with a different question in mind — not *how do I do this?* but *what other surface lets me do this?*
 
-For the May 11 example: the supported workaround is to add the service account via the GA Admin API endpoint `https://analyticsadmin.googleapis.com/v1beta/properties/{id}/accessBindings`. The Admin API does not run the Google-account-existence check that the *Add user* dialog runs. The platform supports the capability; only the administrative surface refused it.  Well, at least this is our current theory.
+For the May 11 example, Google documents a programmatic route through the GA Admin API's `v1alpha/properties/{property}/accessBindings` resource. That proves an alternative administrative surface exists. It does not prove, by itself, that the API bypasses the identity validation encountered in the user interface. That remained the operator's working theory, not a documented property of the endpoint.
 
 ---
 
@@ -80,8 +83,12 @@ For the May 11 example: the supported workaround is to add the service account v
 
 ---
 
-[^red-pill-batteries]: Two corrections from the operator, in fairness to the film. **First**, the woman in the red dress is not Neo's vision in his pod — it is **Cypher's** training simulation that Neo walks through with Mouse, the young crewman who programmed her. Cypher (played by Joe Pantoliano) is the Judas figure of *The Matrix*: the crew member who betrays Morpheus to Agent Smith in exchange for being reinserted into the simulation as someone rich and important. His most famous line is delivered over a steak the audience knows is not real — *"Ignorance is bliss."* It is Cypher, not Neo, who dreams of women in red dresses; the whole point of his character is that he prefers the lie. **Second**, the humans-in-pods-as-batteries plot is famously not what the Wachowskis originally wrote. The original screenplay had humans as distributed *processing capacity* — the machines were borrowing human brains as RAM, not as energy cells. The studio thought the audience would not follow it and asked for the energy-cell version instead. I think the original is the better metaphor for the moment we are now living through, and I worked through why in [*We Are Not Batteries Yet*](https://freedomtomato.substack.com/p/we-are-not-batteries-yet) on Substack, May 5, 2026. Short version: we are not yet anyone's batteries, but we are increasingly being asked to lend out our processing capacity in ways the architects of those systems would prefer we not notice. The Cypher question — *would you take the deal?* — is the operative one. The Dictionary's answer is that you should at least know you are being offered it.
+[^red-pill-batteries]: One correction from the operator, in fairness to the film. The woman in the red dress is not Neo's vision in his pod; she appears in the training simulation that Neo walks through with Morpheus, programmed by Mouse. Cypher (played by Joe Pantoliano) is the Judas figure of *The Matrix*: the crew member who betrays Morpheus to Agent Smith in exchange for being reinserted into the simulation as someone rich and important. His most famous line is delivered over a steak the audience knows is not real: *"Ignorance is bliss."* The separate internet story that the Wachowskis' original screenplay used human brains as computer processors rather than batteries is not supported by the accessible 1997 screenplay, which already contains the battery explanation. The processing-capacity metaphor remains interesting; its supposed screenplay provenance does not.
 
 ---
 
 *See also: [Mediation (a la Gibson)](/entries/mediation-a-la-gibson/) · [Capability Overhang](/entries/capability-overhang/) · [Commercial Legibility](/entries/commercial-legibility/) · [FERPA Compliance Posture](/entries/ferpa-compliance-posture/)*
+
+## Source
+
+- Google Analytics Admin API, *[Method: properties.accessBindings.create](https://developers.google.com/analytics/devguides/config/admin/v1/rest/v1alpha/properties.accessBindings/create)*.

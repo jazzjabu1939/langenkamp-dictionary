@@ -4,6 +4,8 @@ kind: glossary
 title: "Retrieval-Augmented Generation"
 permalink: /entries/retrieval-augmented-generation/
 date: 2026-05-16
+first_published: 2026-05-16
+last_revised: 2026-09-06
 summary: "The spelled-out form of RAG: generating answers with help from retrieved external documents or records."
 draft: false
 published: true
@@ -17,6 +19,6 @@ This page is a spell-out companion to the shorter *RAG* entry.
 
 ## See also
 
-- *[RAG](rag.md)*
-- *[Vector database](vector-database.md)*
-- *[Provenance](provenance.md)*
+- *[RAG](/entries/rag/)*
+- *[Vector Database](/entries/vector-database/)*
+- *[Provenance](/entries/provenance/)*

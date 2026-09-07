@@ -4,6 +4,8 @@ kind: glossary
 title: "Release Irrevocability / No-Recall Problem"
 permalink: /entries/release-irrevocability/
 date: 2026-08-21
+first_published: 2026-08-21
+last_revised: 2026-09-06
 summary: "The rule that downloadable model weights, once published and copied, cannot reliably be withdrawn or made safe by a later decision from the original lab."
 draft: false
 published: true
@@ -17,8 +19,8 @@ A defective physical product can sometimes be recalled. A hosted model can be pa
 
 Nor does a safety layer necessarily travel intact with the weights. Refusal behaviour may be altered through fine-tuning, model editing, or a different system harness. The publisher may announce a new policy, but the earlier artifact remains in circulation.
 
-This does not make open weights inherently irresponsible. Local operation supports privacy, research, competition, resilience, and *[Sovereign Compute](sovereign-compute.md)*. It does make the release decision unusually permanent. The safety question must therefore be asked before publication, because after publication the lab can issue guidance and better versions, but it cannot retrieve every working copy.
+This does not make open weights inherently irresponsible. Local operation supports privacy, research, competition, resilience, and *[Sovereign Compute](/entries/sovereign-compute/)*. It does make the release decision unusually permanent. The safety question must therefore be asked before publication, because after publication the lab can issue guidance and better versions, but it cannot retrieve every working copy.
 
 ## See also
 
-*[Control Surface Asymmetry](control-surface-asymmetry.md)* · *[Open Weights](open-weights.md)* · *[Capability Diffusion](capability-diffusion.md)*
+*[Control Surface Asymmetry](/entries/control-surface-asymmetry/)* · *[Open Weights](/entries/open-weights/)* · *[Capability Diffusion](/entries/capability-diffusion/)*
