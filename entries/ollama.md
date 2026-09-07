@@ -3,89 +3,70 @@ layout: default
 kind: reference
 title: "Ollama"
 permalink: /entries/ollama/
-summary: "local LLM runtime for sovereignty and cost containment."
+date: 2026-05-02
+summary: "a runtime for downloading, serving, and running language models locally, with optional cloud features and a deliberately simple API."
+published: true
+first_published: 2026-05-02
+last_revised: 2026-09-06
 ---
 
 # Ollama
 
-
----
-
 ## In one sentence
 
-**Ollama is a local LLM runtime** — software that lets you download large language models (Llama, Gemma, Qwen, etc.) and run them on your own machine, without sending anything to a cloud API.
+**Ollama is a model runtime and manager that makes it comparatively simple to download and run language models on a local machine, then expose them to other software through a local API.**
 
 ## What it actually does
 
-Three jobs:
+Three jobs matter most:
 
-1. **Model manager.** Downloads quantized model weights (compressed versions that fit in RAM) and stores them on disk. Like a package manager for AI models.
-2. **Inference server.** Runs a local web server on `http://localhost:11434` that speaks an OpenAI-compatible API. Apps that "talk to OpenAI" can be pointed at Ollama instead and they don't know the difference.
-3. **GPU/CPU optimizer.** Handles the math efficiently on whatever hardware you have. On Apple Silicon it uses the unified memory and the M-series GPU automatically.
+1. **Model manager.** It downloads model artifacts, often quantized to reduce their memory requirements, and stores them locally.
+2. **Inference server.** It serves its own API on `localhost:11434` and implements parts of the OpenAI API. Many applications can therefore switch between a cloud model and Ollama with a small configuration change, although compatibility is not complete.
+3. **Hardware integration.** It manages inference across supported CPUs and GPUs. On Apple silicon, it can use unified memory and the integrated GPU without requiring the operator to assemble the lower-level stack.
+
+Ollama also offers cloud-connected features. “Ollama” therefore does not automatically mean that every request stays on the machine. Locality depends on the model selected, the client configuration, and any surrounding tools.
 
 ## Why it matters in an agentic system
 
-- **Sovereignty.** When you ask a local Gemma model a question, no data leaves the MacBook. Anthropic, Google, OpenAI never see it. For student grades, research drafts, sensitive documents — that is the whole point of running a local model.
-- **Cost.** Once a model is downloaded, every token is essentially free (you pay electricity, not API fees). The 29 tokens-per-second I measured on Gemma 3 27B equates to roughly $0.00 per query, indefinitely.
-- **No rate limits.** Anthropic's API can throttle you. Ollama can't — it is just your hardware.
-- **Offline-capable.** Plane, hotel WiFi, internet outage — local models keep working.
+- **Sovereignty.** A locally served model can process material without sending prompts to a model provider. That is useful for sensitive drafts and documents, provided the surrounding application does not transmit them elsewhere.
+- **Cost control.** Local inference substitutes hardware, electricity, and operator time for a per-token API charge.
+- **Capacity under your control.** A local deployment has no vendor quota, but it still has limits imposed by memory, thermals, concurrency, and the machine's speed.
+- **Offline operation.** Once the required software and weights are present, local inference can continue without an internet connection.
 
 ## The trade-off
 
-Local models are smaller and less capable than frontier cloud models. Gemma 4 26B is roughly equivalent to GPT-3.5-class reasoning, not GPT-5-class. So the strategy is not "replace the cloud" — it is **route the easy stuff locally, save the cloud spend for tasks that genuinely need frontier capability**.
+Local and cloud systems have different strengths. Model size is not a reliable proxy for a named commercial generation, and a benchmark score does not settle whether a model is good for a particular workflow. The durable strategy is **routing**: measure candidate models on the work you actually do, keep private or routine tasks local where that is adequate, and use a hosted frontier model when its capability justifies the dependency.
 
-This is the basis of *model tiering*, where heartbeats and routine sub-agent work go local (free, private), while complex reasoning still goes to a cloud frontier model. See *(planned)* for that pattern.
-
-## How to use it (basic commands)
+## Basic commands
 
 ```bash
-ollama pull gemma4:26b      # download the model (one-time, ~17 GB)
-ollama list                 # see what is installed
-ollama run gemma4:26b       # interactive chat at the terminal
-curl http://localhost:11434/api/generate ...   # programmatic access
+ollama pull <model>
+ollama list
+ollama run <model>
+curl http://localhost:11434/api/generate ...
 ```
 
-## Working example from this machine (May 2, 2026)
+Model names and sizes change quickly, so the current Ollama library is a better source than a frozen list in this entry.
 
-After migrating from a Mac Studio M1 Max (32 GB) to a MacBook Pro M5 Max (128 GB), I pulled three local models and benchmarked them on a fixed prompt:
+## Working example from this machine
 
-| Model | Size on disk | Tokens per second |
-|-------|-------------:|------------------:|
-| Gemma 3 27B | 17 GB | 29.0 |
-| Qwen 2.5 32B | 19 GB | 25.7 |
-| Gemma 4 26B | 17 GB | *pending — pulling now* |
-
-For reference, ~29 tokens per second is faster than human reading speed. That means a 26B-parameter model is genuinely usable for real-time conversation **on a laptop, with no internet required**, costing nothing per query.
-
-The 128 GB unified memory is what makes this possible. The previous 32 GB machine could not hold a model larger than about 20 GB without swapping. The 128 GB machine can hold a 70 GB model comfortably and still leave room for the OS, apps, and browser tabs.
-
-## Where Ollama fits in the broader stack
-
-```
-┌────────────────────────────────────────────────────────┐
-│ Telegram / Signal / browser / IDE                      │  (interfaces)
-├────────────────────────────────────────────────────────┤
-│ OpenClaw gateway  ←  decides which model to call       │  (the agentic layer)
-├──────────────────────┬─────────────────────────────────┤
-│ Anthropic / OpenAI   │  Ollama (localhost:11434)       │  (model providers)
-│ (cloud, per-token $) │  (local, free per-token)        │
-├──────────────────────┴─────────────────────────────────┤
-│ Apple M5 Max, 128 GB unified memory                    │  (hardware)
-└────────────────────────────────────────────────────────┘
-```
+On 2 May 2026, the operator measured 29.0 generated tokens per second for Gemma 3 27B and 25.7 for Qwen 2.5 32B on a MacBook Pro with an M5 Max and 128 GB of unified memory. Those are observations from one machine, prompt, model build, and software version. They show that large local models can be usable in an interactive workflow; they are not general performance rankings.
 
 ## Closely related tools
 
-- **LM Studio** — a graphical front end. Easier to browse and test models. Same role as Ollama, friendlier UI, less scriptable.
-- **MLX / mlx-lm** — Apple's native framework for running models on Apple Silicon. Faster than Ollama in some cases, but lower-level. Aimed at developers, not casual use.
-- **llama.cpp** — the underlying C++ inference engine that Ollama itself wraps. The grandfather of local-LLM tooling.
+- **LM Studio** provides a graphical model browser and local server.
+- **MLX / mlx-lm** is Apple's lower-level framework for running models on Apple silicon.
+- **llama.cpp** is a widely used local-inference engine and file-format ecosystem.
 
-## What this enables in a teaching context
+## Teaching context
 
-If a Management Department wants to teach about generative AI without sending student work to a third-party provider, a single Mac Studio or MacBook Pro running Ollama can serve a small classroom. The model never leaves the building. FERPA and student-privacy concerns shrink considerably.
+A locally deployed model can reduce the amount of student work sent to third-party model providers. It does not, by itself, establish FERPA compliance: the institution must still consider the client application, logs, access control, retention, backups, and the model's licence. The useful feature is architectural choice, not automatic compliance.
 
-For larger deployments (a full course, a research center), the same software runs on a Linux server with the same API surface. The skill of working with Ollama scales from the teacher's laptop to the institution's data centre with no rewrite.
+## See also
 
----
+*[LM Studio](/entries/lm-studio/)* · *[Open Weights](/entries/open-weights/)* · *[Sovereign Compute](/entries/sovereign-compute/)* · *[Gateway](/entries/gateway/)*
 
-*Next entries to write in this glossary: What is a gateway? What is a sub-agent? What is RAG? What is MCP? What is a heartbeat?*
+## Sources
+
+- Ollama, *OpenAI compatibility*: <https://docs.ollama.com/openai>
+- Ollama, *Models*: <https://ollama.com/search>

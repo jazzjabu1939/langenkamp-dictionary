@@ -7,6 +7,8 @@ date: 2026-05-23
 summary: "The *Serenity* figure who knows he is a monster but serves a better world anyway; the Dictionary’s emblem for morally serious institutional violence."
 draft: false
 published: true
+first_published: 2026-05-23
+last_revised: 2026-09-06
 ---
 
 **The Operative** is the Alliance agent in *Serenity* who pursues Malcolm Reynolds and the crew after they discover the truth about Miranda.
@@ -19,8 +21,8 @@ This is why he belongs near AI governance. The risk is not only cartoon villainy
 
 ## See also
 
-- *[Firefly / Serenity](firefly.md)*
-- *[Pax](pax.md)*
-- *[The Alliance](alliance.md)*
-- *[Benevolence with Instruments](benevolence-with-instruments.md)*
-- *[The Good Intentions Problem](good-intentions-problem.md)*
+- [Firefly / Serenity](/entries/firefly/)
+- [Pax](/entries/pax/)
+- [The Alliance](/entries/alliance/)
+- [Benevolence with Instruments](/entries/benevolence-with-instruments/)
+- [The Good Intentions Problem](/entries/good-intentions-problem/)

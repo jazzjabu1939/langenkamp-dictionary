@@ -7,6 +7,8 @@ date: 2026-08-21
 summary: "The strategic relationship between how easy or costly it is to attack and how easy or costly it is to defend."
 draft: false
 published: true
+first_published: 2026-08-21
+last_revised: 2026-09-06
 ---
 
 # Offense-Defense Balance
@@ -21,8 +23,8 @@ AI does not automatically tilt the balance toward offense. Automated analysis ca
 
 ## Sources
 
-- Robert Jervis, “Cooperation Under the Security Dilemma,” *World Politics* 30, no. 2 (1978).
+- Robert Jervis, [“Cooperation Under the Security Dilemma”](https://www.jstor.org/stable/2009958), *World Politics* 30, no. 2 (1978).
 
 ## See also
 
-*[Capability Uplift](capability-uplift.md)* · *[Discovery-Patch Race](discovery-patch-race.md)* · *[Cyber Reasoning System](cyber-reasoning-system.md)*
+[Capability Uplift](/entries/capability-uplift/) · [Discovery-Patch Race](/entries/discovery-patch-race/) · [Cyber Reasoning System](/entries/cyber-reasoning-system/)

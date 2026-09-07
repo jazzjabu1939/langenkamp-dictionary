@@ -4,18 +4,26 @@ kind: glossary
 title: "OpenAI"
 permalink: /entries/openai/
 date: 2026-05-12
-summary: "AI lab founded 2015 as a nonprofit, restructured as a capped-profit company in 2019; makers of ChatGPT and the GPT model family. The market-defining player in consumer-facing AI as of 2026."
+summary: "AI lab founded in 2015 as a nonprofit; its nonprofit foundation now controls a public-benefit corporation that develops ChatGPT, GPT models, image systems, and Codex."
 draft: false
 published: true
+first_published: 2026-05-12
+last_revised: 2026-09-06
 ---
 
-OpenAI was founded in 2015 by a group including Sam Altman, Elon Musk, Greg Brockman, Ilya Sutskever, and several others, initially as a non-profit research lab with a stated mission to ensure that artificial general intelligence benefits all of humanity. The structure was reorganised in 2019 into a capped-profit company under the original non-profit's governance. The lab developed the GPT series of language models (*[GPT-3](gpt.md)*, GPT-3.5, GPT-4, GPT-5), the *[ChatGPT](chatgpt.md)* consumer product launched November 2022, the DALL-E image generators, and the Codex / Copilot coding tools (the latter via partnership with Microsoft and GitHub).
+OpenAI was founded in 2015 as a nonprofit research organisation with a mission to ensure that artificial general intelligence benefits all of humanity. It created a capped-profit subsidiary in 2019. In October 2025 it completed another recapitalisation: the nonprofit became the **OpenAI Foundation**, and the operating company became **OpenAI Group PBC**, a public-benefit corporation controlled by the Foundation through special governance rights.
 
-For this Dictionary, OpenAI is the **market comparator** — the lab that defined what an AI product was for the general public, and the one most frequently named as the alternative when readers reach for *the AI experience they already know*. The Dictionary's editorial position is broadly neutral on OpenAI as a vendor; the *[Lab Character](lab-character.md)* entry treats the lab as a worked example of an organisation whose founding mission and current commercial posture are in unresolved tension. The November 2023 governance crisis (Altman's brief firing and reinstatement) and subsequent departures of the original safety leadership are the canonical inflection points.
+The organisation develops the [GPT](/entries/gpt/) model family, [ChatGPT](/entries/chatgpt/), image and video systems, and Codex coding products. GitHub Copilot is a separate GitHub product that has used OpenAI models; it should not be described as an OpenAI product.
+
+For this Dictionary, OpenAI is the **market comparator**: ChatGPT helped define the consumer-facing AI product after its November 2022 launch. The [Lab Character](/entries/lab-character/) entry treats OpenAI as a dated case study in the tension between a founding mission, governance arrangements, and commercial scale. The November 2023 board crisis and the October 2025 recapitalisation are important inflection points, but neither supplies a complete moral verdict on the institution.
 
 ## See also
 
-- *[GPT](gpt.md)* — the model family
-- *[ChatGPT](chatgpt.md)* — the consumer product
-- *[Lab Character](lab-character.md)*
-- *[Anthropic](anthropic.md)* — the lab founded by ex-OpenAI staff
+- [GPT](/entries/gpt/) — the model family
+- [ChatGPT](/entries/chatgpt/) — the consumer product
+- [Lab Character](/entries/lab-character/)
+- [Anthropic](/entries/anthropic/) — the lab founded by former OpenAI staff
+
+## Source
+
+- OpenAI, [“Our structure”](https://openai.com/our-structure/), accessed 6 September 2026.

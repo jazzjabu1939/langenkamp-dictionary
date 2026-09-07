@@ -4,25 +4,25 @@ kind: essay
 title: "Open as Legibility"
 permalink: /entries/open-as-legibility/
 date: 2026-07-21
-summary: "The idea that Chinese open-weight models may begin as pragmatic trust-and-adoption strategies, while also giving the Chinese state a larger inspection surface than closed frontier systems provide."
+summary: "A working hypothesis that Chinese open-weight releases can serve trust and adoption while also enlarging the inspection surface available to state institutions."
 draft: false
 published: true
 seeded: 2026-07-21
 first_published: 2026-07-21
-last_revised: 2026-07-23
+last_revised: 2026-09-06
 ---
 
 # Open as Legibility
 
 You have probably noticed the old sentence wobbling: *open is Western; closed is Chinese*. It still sounds plausible if one is thinking about newspapers, courts, or elections. It is much less plausible if one is thinking about model weights.
 
-As of mid-2026, some of the most practically useful open-weight AI models are coming from Chinese labs: *[Qwen](qwen.md)*, *[DeepSeek](deepseek.md)*, and now *[Kimi K3](kimi-k3.md)*. The usual explanation is commercial and geopolitical. Open models commoditise the model layer, pressure *[OpenAI](openai.md)* and *[Anthropic](anthropic.md)* margins, spread Chinese technical standards, and build global dependence on Chinese AI infrastructure.
+As of September 2026, some practically useful open-weight AI models come from Chinese labs: *[Qwen](/entries/qwen/)*, *[DeepSeek](/entries/deepseek/)*, and *[Kimi K3](/entries/kimi-k3/)*. A common explanation is commercial and geopolitical: open releases can commoditise the model layer, pressure *[OpenAI](/entries/openai/)* and *[Anthropic](/entries/anthropic/)* margins, spread technical standards, and build adoption.
 
 That explanation is right, but incomplete. It also needs a more careful causal order. Chinese labs did not need a cartoon instruction from the state to make open releases useful. They had market reasons to do it: trust, developer adoption, global credibility, and acceptance by customers who might otherwise hesitate to build on models from the PRC. The state-inspection layer is not necessarily the first cause. It is the under-discussed affordance.
 
 ## In one sentence
 
-**Open as Legibility is the pattern in which open-weight models first solve a market trust problem, then also make frontier AI more inspectable, interrogable, and governable by the state that regulates or depends on them.**
+**Open as Legibility is the Dictionary's hypothesis that open-weight models can solve a market trust problem while also making frontier AI more inspectable, interrogable, and governable by the state institutions that regulate or use them.**
 
 This is the twist. In the liberal technology imagination, openness is associated with freedom from centralised control. In the Chinese market context, openness can be a way for labs to overcome distrust and win adoption. In the Chinese state context, the same openness may also make a powerful system more legible to the centre.
 
@@ -36,7 +36,7 @@ The Chinese Communist Party has never been comfortable with opaque private power
 
 So the governance question is not only *can China produce frontier AI?* It is also *can the Chinese state see and discipline the AI it produces?*
 
-Open-weight releases help with several problems at once. They make developers more willing to try the model. They make foreign users more willing to inspect it. They make domestic enterprises more willing to integrate it. And they do not eliminate state control. They extend the surface on which state control can operate.
+Open-weight releases can help with several problems at once. They may make developers more willing to try the model, foreign users more able to inspect it, and domestic enterprises more willing to integrate it. They do not eliminate state control, and they can extend the surface on which state institutions operate. Whether Chinese authorities actually use that surface in the manner proposed here is an empirical question; released weights create an affordance, not proof of a policy.
 
 This does not mean every Chinese open model is a direct state project in some crude sense. The better claim is structural. Chinese AI firms operate inside an industrial-policy, commercial, and political-supervision environment where broad release can serve several goals at once:
 
@@ -64,7 +64,7 @@ Both things can be true at once. That is what makes the category worth naming.
 
 ## Why it matters for operators
 
-For a U.S. or European operator, Chinese open-weight models create a genuine sovereignty option. A model downloaded to a local machine can run without sending every prompt to a U.S. cloud provider. It can protect sensitive documents, reduce token rental, and keep ordinary work close to home. That is the force of *[Sovereign Compute](sovereign-compute.md)* and the *[Open-Weights Inversion](open-weights-inversion.md)*.
+For a U.S. or European operator, Chinese open-weight models create a genuine sovereignty option. A model downloaded to a local machine can run without sending every prompt to a U.S. cloud provider. It can protect sensitive documents, reduce token rental, and keep ordinary work close to home. That is the force of *[Sovereign Compute](/entries/sovereign-compute/)* and the *[Open-Weights Inversion](/entries/open-weights-inversion/)*.
 
 But the model file still has a national-origin tag. Its licence, training history, evaluation culture, censorship traces, benchmark incentives, and political context travel with it. The point is not to refuse the model. The point is to stop pretending that "open" answers all governance questions.
 
@@ -81,13 +81,13 @@ That is not paranoia. It is adult model use.
 
 ## See also
 
-- *[Open Weights](open-weights.md)*
-- *[Open-Weights Inversion](open-weights-inversion.md)*
-- *[Kimi K3](kimi-k3.md)*
-- *[Qwen](qwen.md)*
-- *[DeepSeek](deepseek.md)*
-- *[Sovereign Compute](sovereign-compute.md)*
-- *[Commercial Legibility](commercial-legibility.md)*
+- *[Open Weights](/entries/open-weights/)*
+- *[Open-Weights Inversion](/entries/open-weights-inversion/)*
+- *[Kimi K3](/entries/kimi-k3/)*
+- *[Qwen](/entries/qwen/)*
+- *[DeepSeek](/entries/deepseek/)*
+- *[Sovereign Compute](/entries/sovereign-compute/)*
+- *[Commercial Legibility](/entries/commercial-legibility/)*
 
 ## Sources
 

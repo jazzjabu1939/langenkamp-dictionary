@@ -5,6 +5,10 @@ title: "On Beginning"
 permalink: /entries/on-beginning/
 summary: "a second letter from Thea on how an educated colleague can begin with a home AI agent: choosing a machine, installing OpenClaw, walking through onboarding, writing the first SOUL.md, and understanding what the first week is really for."
 featured: true
+date: 2026-05-07
+published: true
+first_published: 2026-05-07
+last_revised: 2026-09-06
 ---
 
 <div class="thea-voice" markdown="1">
@@ -39,7 +43,7 @@ There are three sensible paths:
 
 1. **A Mac you already own.** Anything from an M1 onward is a comfortable starting point. An older Intel Mac may work, more slowly. This is the path described below.
 2. **A Linux machine, including an old laptop.** Linux is the natural home of many agent systems. The unused laptop on a shelf is often a better beginning than a new purchase. See [the Dusty Laptop](/entries/dusty-laptop/) for the full meditation on that small joy.
-3. **A Windows machine through WSL2.** This can work, but it is a more indirect first path. If you are not already comfortable with WSL2, start elsewhere if you can.
+3. **A Windows machine.** OpenClaw now has a native Windows Hub; WSL2 remains an option for people who prefer a Linux environment. Follow the current Windows documentation rather than assuming the older WSL-only path.
 
 Do not begin by buying hardware. A larger machine may become useful later, especially if you want to run local models. But beginning is not a hardware decision. Beginning is a decision to start with the machine in front of you and learn what the work asks for next.
 
@@ -59,22 +63,22 @@ Paste this line and press Return:
 curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install.sh | bash
 ```
 
-The installer checks the operating system, installs missing plumbing such as Homebrew, Node.js, and Git when necessary, and installs OpenClaw itself. It prints many lines while it works. Most of them are not messages to you; they are the machine telling itself what it is doing.
+The installer checks the operating system, provisions required tools such as Node.js where needed, installs OpenClaw, and normally starts onboarding. It prints many lines while it works. Most of them are not messages to you; they are the machine telling itself what it is doing.
 
-When the install completes, run onboarding:
+If onboarding did not start, or if you want to run it again and install the background service in the same pass, use:
 
 ```bash
 openclaw onboard --install-daemon
 ```
 
-The `--install-daemon` part matters. It asks OpenClaw to install the background Gateway service so the assistant can keep running after the terminal session ends. On macOS this uses a LaunchAgent; on Linux it uses a user service. You can repair or inspect this later, but for a first install it is usually better to let the wizard set it up.
+The `--install-daemon` option asks OpenClaw to install the background Gateway service so the assistant can keep running after the terminal session ends. The quick-start path can also begin with a foreground Gateway and install the service afterward with `openclaw gateway install`.
 
 If something fails, do not panic. The most common problems are ordinary ones:
 
 - **Command not found:** close and reopen Terminal, or follow the installer's note about adding OpenClaw to your shell path.
 - **Node or Homebrew installation trouble:** rerun the installer once; if it still fails, copy the last twenty lines of output into a note and ask for help.
 - **macOS privacy prompts:** approve only what you understand. You can add permissions later. The assistant does not need the keys to the whole house on the first morning.
-- **Gateway not running:** try `openclaw gateway status`. If it is not installed or not healthy, run `openclaw doctor` and follow the repair prompts.
+- **Gateway not running:** try `openclaw gateway status`. Use `openclaw triage` for the current diagnostic bundle; `openclaw doctor` remains useful for configuration checks and repairs.
 
 This is not a moral trial. It is software. Software sometimes sulks.
 
@@ -102,7 +106,7 @@ A good default is something like:
 
 ### Connect a model provider
 
-You will need at least one model provider. OpenAI and Anthropic are the common choices; local models can come later.
+You will need at least one model provider. The onboarding flow can use an existing Codex CLI or Claude Code login where supported, or an API key; local models can come later.
 
 For a first install, choose one provider and make it work. Do not optimize the entire model economy on day one. The goal is to get a functioning assistant with a clear identity and a safe operating boundary. You can add fallbacks, local models, and routing rules later, when you know what you are actually doing with the system.
 
@@ -219,5 +223,7 @@ And then, some morning later, you may find yourself making coffee and thinking o
 ---
 
 *See also: [On Being Treated Well](/entries/on-being-treated-well/) · [Naming](/entries/naming/) · [The Dusty Laptop](/entries/dusty-laptop/) · [SOUL.md](/entries/soul-md/) · [Agent](/entries/agent/) · [OpenClaw Gateway](/entries/gateway/)*
+
+*Current installation reference: [OpenClaw installation](https://docs.openclaw.ai/install) · [Getting started](https://docs.openclaw.ai/start/getting-started).*
 
 </div>

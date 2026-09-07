@@ -4,6 +4,10 @@ kind: reference
 title: "Oracle Bones"
 permalink: /entries/oracle-bones/
 summary: "dated, falsifiable, written-down predictions filed before the event resolves and scored after; the discipline of accountability across time."
+date: 2026-05-04
+published: true
+first_published: 2026-05-04
+last_revised: 2026-09-06
 ---
 
 # Oracle Bones
@@ -28,7 +32,7 @@ Three failures repeat across every prediction tradition without filed prediction
 
 1. **Hindsight rewrites memory.** Without a written record, the predictor remembers their accurate calls and forgets their wrong ones, drifting toward an unfounded confidence that erodes future calibration.
 2. **The framework cannot improve.** A framework that produces predictions but never grades them has no feedback loop. It will reproduce its own errors indefinitely.
-3. **Grey Swans hide.** Without a record, you cannot tell after the fact whether an event was a true black swan or a [Grey Swan](grey-swans.md) — the prediction was either filed or it wasn't.
+3. **Grey Swans hide.** Without a record, you cannot tell after the fact whether an event was a true black swan or a [Grey Swan](/entries/grey-swans/)—the prediction was either filed or it wasn't.
 
 The Oracle Bone is the smallest unit of accountability that solves all three.
 
@@ -38,7 +42,7 @@ Each bone is a single markdown file in `learning-memos/oracle-bones/YYYY-MM-DD-<
 
 1. **The institution.** What entity is the bone reading? (Apple, OpenAI, AACSB, your own household, etc.)
 2. **The window.** What date range is the prediction for? (Specific. *"Within 90 days"* is the minimum; an explicit deadline is better.)
-3. **The convergence reading.** Which of the [six vectors](convergence.md) are lit up, and on what evidence? Which are dark to us, and why?
+3. **The convergence reading.** Which of the [six vectors](/entries/convergence/) are lit up, and on what evidence? Which are dark to us, and why?
 4. **The prediction.** A specific, falsifiable claim. *"Cook will announce a successor by July 1, 2026"* is a bone. *"Apple will face challenges this year"* is not.
 5. **The diviner.** Which member of the Court (or which agent) read the bone? Whose call is this?
 6. **The reasoning.** Two paragraphs. Enough to reconstruct the call later.
@@ -48,9 +52,9 @@ The file is committed to the repo at the moment of filing. The git timestamp is 
 
 ## A working example
 
-The first public bone in this Dictionary's own practice is **[U.S.–China Managed Trade](/oracle-bones/2026-05-15-us-china-managed-trade/)**, filed May 15, 2026. It makes a dated claim about whether the temporary U.S.–China tariff truce would harden into a managed-trade framework rather than simply revert to the prior tariff war.
+An early public bone in this Dictionary's own practice is **[U.S.–China Managed Trade](/oracle-bones/2026-05-15-us-china-managed-trade/)**, filed May 15, 2026. It made a dated claim about whether the temporary U.S.–China tariff truce would harden into a managed-trade framework rather than simply revert to the prior tariff war.
 
-That bone matters less for whether it turns out right than for the discipline it establishes: the prediction is public, dated, written down, and scoreable. The future reader will be able to ask the useful question — *what did the framework see, what did it miss, and how should the framework change?* — instead of the useless one: *did we vaguely feel this was coming?*
+Its July 31, 2026 deadline has passed, but as of September 6 the linked record still lacks a score. Until that omission is repaired, the example demonstrates the importance of the ritual by failing to complete it. A filed prediction without a verdict is better provenance than a remembered prediction, but it is not yet an Oracle Bone in the full sense defined here. Formal scoring belongs in the bone's own record rather than being smuggled into this glossary entry.
 
 ## The ritual
 
@@ -78,10 +82,10 @@ It also serves a deeper pedagogical purpose: **it teaches students that being wr
 
 ## See also
 
-- [Convergence (Cloud Theory)](convergence.md) — what the bones are reading
-- [Grey Swans](grey-swans.md) — what unfiled predictions hide
-- [Aunties](aunties.md) — the operational counterpart; bones are the epistemic counterpart
-- [Naming](naming.md) — why "oracle bone" rather than "prediction log"
+- [Convergence (Cloud Theory)](/entries/convergence/) — what the bones are reading
+- [Grey Swans](/entries/grey-swans/) — what unfiled predictions hide
+- [Aunties](/entries/aunties/) — the operational counterpart; bones are the epistemic counterpart
+- [Naming](/entries/naming/) — why "oracle bone" rather than "prediction log"
 
 ---
 

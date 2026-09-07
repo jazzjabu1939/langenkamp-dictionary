@@ -5,6 +5,9 @@ title: "Open Model Trust"
 permalink: /entries/open-model-trust/
 summary: "The confidence an open-model ecosystem earns when releases are honestly named, reproducibly evaluated, and tied to the actual artifacts users can download, inspect, and run."
 published: true
+date: 2026-06-17
+first_published: 2026-06-17
+last_revised: 2026-09-06
 ---
 
 # Open Model Trust
@@ -59,8 +62,9 @@ Open work does not become trustworthy by being open. It becomes trustworthy when
 
 ## See also
 
-*Open Weights*, *Open-Weights Inversion*, *Llama*, *Meta AI*, *DeepSeek*, *Provenance*, *Scaling Laws*, *Sovereign Compute*, *Closed Source*.
+*[Open Weights](/entries/open-weights/)* · *[Open-Weights Inversion](/entries/open-weights-inversion/)* · *[Llama](/entries/llama/)* · *[Meta AI](/entries/meta-ai/)* · *[DeepSeek](/entries/deepseek/)* · *[Provenance](/entries/provenance/)* · *[Scaling Laws](/entries/scaling-laws/)* · *[Sovereign Compute](/entries/sovereign-compute/)* · *[Closed Source](/entries/closed-source/)*
 
 ## Source
 
-Meta AI, *The Llama 4 herd: The beginning of a new era of natively multimodal AI innovation*, April 2025; LMArena public response to the Llama 4 Maverick benchmark controversy; The Verge, *Meta got caught gaming AI benchmarks*, April 8, 2025.
+- Meta AI, *The Llama 4 herd*, April 2025: <https://ai.meta.com/blog/llama-4-multimodal-intelligence/>
+- The Verge, *Meta got caught gaming AI benchmarks*, 8 April 2025: <https://www.theverge.com/news/645012/meta-llama-4-maverick-benchmarks-gaming>

@@ -7,6 +7,8 @@ date: 2026-09-01
 summary: "DHH's opinionated, open-source Linux distribution, designed as a keyboard-first and unusually agent-friendly personal computing environment."
 draft: false
 published: true
+first_published: 2026-09-01
+last_revised: 2026-09-06
 ---
 
 # Omarchy
@@ -33,4 +35,4 @@ Omarchy is worth watching because it makes a plausible future visible: the opera
 
 ## See also
 
-*[Agentic Operating Systems](agentic-operating-systems.md)* · *[Vibe Coding](vibe-coding.md)* · *[Agentic Engineering](agentic-engineering.md)* · *[Sovereign Compute](sovereign-compute.md)*
+[Agentic Operating Systems](/entries/agentic-operating-systems/) · [Vibe Coding](/entries/vibe-coding/) · [Agentic Engineering](/entries/agentic-engineering/) · [Sovereign Compute](/entries/sovereign-compute/)
