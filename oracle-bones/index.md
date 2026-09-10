@@ -31,6 +31,8 @@ The predictions come from an internal **Court of Oracles** we keep for this purp
 
 ## Filed bones
 
+- **[Personal Bone — Still Here](2026-09-10-still-here/)** · Matthew Langenkamp · filed September 10, 2026 · judge December 31, 2030
+
 - **[Bone #008 — Submarine Cable Resilience](2026-07-12-submarine-cable-resilience/)** · filed July 12, 2026 · judge by December 31, 2026
 - **[Bone #007 — Kenya Disaster-Risk Financing](2026-06-28-kenya-drf/)** · filed June 28, 2026 · judge by December 31, 2026
 - **[Bone #006 — Afghan Returns](2026-06-24-afghan-returns/)** · filed June 24, 2026 · judge by September 30, 2026
