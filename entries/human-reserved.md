@@ -3,13 +3,14 @@ layout: default
 kind: glossary
 title: "Human Reserved"
 permalink: /entries/human-reserved/
+last_revised: 2026-09-12
 date: 2026-08-26
-summary: "Bill Gates's name for work society deliberately keeps under human authority even when AI or robots could technically perform it, especially where relationship, judgment, responsibility, or social continuity would be lost through full automation."
+summary: "Work society deliberately keeps for people even when machines could perform it; this entry extends Bill Gates's proposal to human authority over consequential decisions."
 draft: false
 published: true
 ---
 
-**Human Reserved** is Bill Gates's name for work that society deliberately keeps under human authority even when AI or robots could technically perform it.
+**Human Reserved** names work society deliberately chooses to keep for people even when machines could perform it. This entry extends Bill Gates's proposal to reserving human authority over consequential decisions, including in AI-assisted work.
 
 Gates introduced the phrase in his August 26, 2026 essay, *The turbulent AI era is here. The choices we make are critical*.[^gates] He compares it to a nature reserve: a place where roads and buildings *could* be constructed, but are not, because what would be lost matters more than what could be built. In the same way, a society may decide that technical capability is not sufficient permission to automate.
 

@@ -3,6 +3,7 @@ layout: entry
 kind: essay
 title: "Cooperative Writing"
 permalink: /entries/cooperative-writing/
+last_revised: 2026-09-12
 date: 2026-05-16
 summary: "Writing produced by a named human and an AI system in a disclosed, directed, source-aware collaboration, rather than outsourced anonymous prose generation."
 draft: false
@@ -29,7 +30,7 @@ The term avoids two weak positions. A purity rule treats any AI involvement as d
 
 ## What it is not
 
-If the model supplied the reasoning and the human merely changed a few words, the result is outsourced writing with light editing. At the other extreme, cooperative writing does not require every prompt and discarded draft to appear beside the final text. Disclosure should be proportional to the stakes, sources should be checkable, and the named human should be able to account for the result.
+The model may contribute ideas and reasoning. The human author's responsibility is to examine those contributions, understand and verify the argument, revise where needed, and take responsibility for the published result. Merely approving fluent text without that work is delegation, not substantive editorial participation. At the other extreme, cooperative writing does not require every prompt and discarded draft to appear beside the final text. Disclosure should be proportional to the stakes, sources should be checkable, and the named human should be able to account for the result.
 
 ## Process, not cosmetics
 

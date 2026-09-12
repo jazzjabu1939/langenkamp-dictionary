@@ -4,16 +4,16 @@ kind: glossary
 title: "Tyrell Corporation"
 permalink: /entries/tyrell-corporation/
 first_published: 2026-06-29
-last_revised: 2026-09-07
+last_revised: 2026-09-12
 date: 2026-06-29
-summary: "The Blade Runner figure for technical creation without moral governance: the company that can manufacture personhood but cannot answer the beings it has made."
+summary: "The fictional biotechnology company that creates replicants in Blade Runner; here, a figure for technical creation without adequate moral governance."
 draft: false
 published: true
 ---
 
 # Tyrell Corporation
 
-**Tyrell Corporation is the Blade Runner figure for technical creation without moral governance: the company that can manufacture personhood but cannot answer the beings it has made.**
+**Tyrell Corporation is the fictional biotechnology company that creates replicants in Blade Runner. In this Dictionary, it also serves as a figure for technical creation without adequate moral governance.**
 
 In *[Blade Runner](/entries/blade-runner/)*, the Tyrell Corporation manufactures [replicants](/entries/replicant/): engineered biological beings designed for off-world labor, military service, sexual use, and other human-shaped roles. Its founder, Dr. Eldon Tyrell, occupies the creator position inside this world. He does not merely own a company. He has arranged a system in which corporate power, biological engineering, labor discipline, and godlike self-conception converge in one building.
 

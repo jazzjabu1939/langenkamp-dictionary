@@ -4,7 +4,7 @@ kind: glossary
 title: "KV Cache Poisoning"
 permalink: /entries/kv-cache-poisoning/
 date: 2026-05-09
-last_revised: 2026-09-06
+last_revised: 2026-09-12
 summary: "The Dictionary's metaphor for error compounding when flawed output remains in the context used for later generation; not a corruption of the KV cache itself."
 published: true
 ---
@@ -14,6 +14,8 @@ published: true
 ## In one sentence
 
 **KV cache poisoning is the Dictionary's metaphor for error compounding when a model's flawed output remains in the context used for later generation. It is not a claim that the cache itself has been corrupted.**
+
+This error propagation can occur even with KV caching disabled: the problem is misleading context, not the caching mechanism.
 
 ## What the KV cache is
 

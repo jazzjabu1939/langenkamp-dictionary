@@ -3,6 +3,7 @@ layout: default
 kind: essay
 title: "Agent Health"
 permalink: /entries/agent-health/
+last_revised: 2026-09-12
 date: 2026-08-17
 summary: "The operational condition of an AI agent as produced by the model and the environment that tells it what is true, current, permitted, and important."
 draft: false
@@ -71,7 +72,7 @@ For AI agents, this reframes evaluation. Before replacing the model, inspect the
 
 ## The humane point
 
-Agents usually work for imperfect humans. People defer decisions, change priorities, forget to close loops, and leave yesterday's urgency sitting in today's files. A healthy system does not convert ordinary human imperfection into permanent machine anxiety. It helps human and agent return gently to the current path.
+Agents usually work for imperfect humans. People defer decisions, change priorities, forget to close loops, and leave yesterday's urgency sitting in today's files. A healthy system does not convert ordinary human imperfection into persistent conflicting demands. It helps human and agent return gently to the current path.
 
 Agent health supports trustworthy cooperation between systems and people with different strengths and failure modes. Its practical test is whether the harness allows them to recover a clear account of current instructions, state, authority, and failure.
 
