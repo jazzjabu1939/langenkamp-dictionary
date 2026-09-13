@@ -16,6 +16,12 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
     <span>Longer-form pieces and public essays.</span>
   </a>
 
+  <a class="writing-card" href="/essays/the-genie-is-out/">
+    <span class="writing-kicker">Essay · September 13, 2026</span>
+    <strong>The Genie Is Out. I Would Like to Keep the Goats.</strong>
+    <span>Genies, goats, and cooperation in an age of extraordinary AI capability.</span>
+  </a>
+
   <a class="writing-card" href="/essays/fencing-the-wrong-animal/">
     <span class="writing-kicker">Essay · August 21, 2026</span>
     <strong>Fencing the Wrong Animal</strong>
