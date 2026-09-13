@@ -135,7 +135,7 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ---
 
-### **Invented Worlds / Neuroscience-AI Cluster** (added May 23, 2026 — Adam Marblestone, hallucination, human-agent cooperation)
+### **Neuroscience-AI Cluster** — **published September 13, 2026** (added May 23, 2026 — Adam Marblestone, hallucination, human-agent cooperation)
 
 *Queue addition only; draft not yet written. Handle carefully: no diagnosis, no treatment claims, anonymize lived examples. This is about cognition, reality-modeling, neuroscience infrastructure, and why human-agent cooperation might matter humanely.*
 
@@ -144,6 +144,9 @@ The sections below are the active queue. Historical sections that remain for sou
 - **Biological Hallucination / Machine Hallucination** — contrast entry: same ordinary word, very different mechanisms. Human hallucination and delusion can involve suffering, fear, identity, perception, and social rupture; model hallucination is a system output error. The analogy is useful only if handled with care.
 - **Neuroscience as AI Infrastructure** — working definition: Adam Marblestone’s frame that better brain measurement, connectomics, brain-activity prediction, Lean/formal methods, and focused research organizations may become infrastructure for both neuroscience and AI. The point is not “upload the brain” theatre; it is ground-truth measurement and capability-building.
 - **Human-Agent Care Horizon** — working definition: the optimistic possibility that human-agent cooperation may eventually help people whose cognition is painful, fragmented, paranoid, or disoriented — not by pretending today’s AI is therapy for schizophrenia, but by supporting caregivers, clinicians, researchers, memory scaffolds, reality checks, and humane coordination.
+
+
+**Publication update:** Biological Hallucination / Machine Hallucination, Neuroscience as AI Infrastructure, and Human-Agent Care Horizon are now published as standalone entries. Reality Contact was published September 7; Invented Worlds was merged, not retained as a standalone term.
 
 ---
 
