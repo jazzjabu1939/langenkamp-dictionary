@@ -10,6 +10,12 @@ permalink: /for-students/
 This page collects course-facing materials that belong near the Dictionary but are written for classroom use: case studies, discussion prompts, and practical guides for working with AI, strategy, judgment, and evidence.
 
 <div class="writing-grid">
+  <a class="writing-card" href="https://international-life-preview.pages.dev/">
+    <span class="writing-kicker">Exploration Game</span>
+    <strong>The International Life</strong>
+    <span>Explore unfamiliar places through observation and discovery. Notice details, question your first impressions, and distinguish what you see from what you infer. The game introduces overseas-study syllabi and study pathways, helping you connect curiosity about a place with what you might learn there.</span>
+  </a>
+
   <a class="writing-card" href="/capstone/">
     <span class="writing-kicker">Teaching Guide</span>
     <strong>Capstone 2.0 Glossary &amp; Guidance</strong>
