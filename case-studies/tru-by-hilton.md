@@ -11,7 +11,7 @@ permalink: /case-studies/tru-by-hilton/
 
 Professor Matthew Langenkamp  
 University of Massachusetts Amherst  
-July 15, 2026 draft
+July 15, 2026 draft · Field exercise revised September 16, 2026
 
 ## Opening
 
@@ -103,23 +103,62 @@ The case therefore turns on a segmentation question:
 
 **Is Tru serving a different customer occasion, or is it simply a less expensive Hampton with brighter colors?**
 
-## Field Observation: Hagerstown
+## Field Observation: Chicopee, Massachusetts
 
-The Hagerstown stay can serve as a small field test. A single property visit cannot prove the strategy, but it can make the abstract choices visible.
+The opening account concerns Hagerstown. For this class exercise, use **Tru by Hilton Chicopee Springfield, 440 Memorial Drive, Chicopee, MA 01020** ([hotel website](https://www.hilton.com/en/hotels/bdlruru-tru-chicopee-springfield/); **413-331-5155**). This is a practical local option for Amherst students. Allow roughly 30–40 minutes by car from Amherst, depending on the starting point and traffic; check directions before leaving. The property's [UMass Amherst visitor listing](https://campustravel.com/university/university-of-massachusetts-amherst/tru-by-hilton-chicopee-springfield/) describes Amherst as about 30 minutes away.
 
-Students should observe the property as evidence, not as proof:
+For comparison, **Hampton Inn Chicopee/Springfield, 600 Memorial Drive, Chicopee, MA 01020**, is on the same road ([hotel website](https://www.hilton.com/en/hotels/ccpmahx-hampton-chicopee-springfield/); **413-593-1500**). Compare its marketing materials with Tru's. A second property visit is optional and requires separate permission.
 
-- Room size and storage: Does the room feel efficient or cramped?
-- Workability: Is the room usable for laptop work, or does the lobby carry that job?
-- Lobby behavior: Are guests actually using the lobby to work, eat, play, or linger?
-- Breakfast: Does it feel equal to Hampton, different from Hampton, or cheaper than Hampton?
-- Staffing: Does the service model seem leaner than Hampton?
-- Guest mix: Who appears to be staying there: families, older travelers, younger couples, workers, road-trippers, sports teams?
-- Brand feel: Does the property feel modern, playful, practical, cheap, or merely decorated?
-- Value judgment: If Hampton and Tru were the same price, which would the traveler choose?
-- Loyalty effect: Did Hilton Honors make the choice safer?
+**This exercise is a visit, not an overnight stay. No room booking or meal purchase is required.** Arrange a suitable time and permission with the hotel before visiting; a class visit has not been arranged. Explain that you are studying hotel positioning and would like to observe the lobby and other areas staff approve. Do not enter guest corridors or use guest-only amenities without permission. A room tour is optional, not a requirement. Avoid photographing identifiable guests or interrupting staff at busy times. If travel or access is not possible, ask the instructor about using the official galleries and materials instead, clearly labelled as a desk-based observation.
 
-A frequent traveler can often distinguish genuine convenience from brand theater quickly: whether the lighting works, whether the bathroom is practical, whether breakfast saves time, whether the room layout helps or irritates, and whether the lobby is truly useful or just styled for photographs.
+### Part A. Before the visit: compare the marketing
+
+Use the official [Tru brand website](https://www.hilton.com/en/brands/tru-by-hilton/) and [Hampton brand website](https://www.hilton.com/en/brands/hampton-by-hilton/), followed by the two Chicopee property pages linked above. Compare brand pages with brand pages, and property pages with property pages. Record the page title, URL and date viewed. Separate current materials from the historical launch claims in this case.
+
+Select **two images and two short phrases from each brand**. Save screenshots for class discussion or describe the images precisely. Do not start by assuming that Tru is younger, cheaper or more playful; use the material to support or challenge those impressions.
+
+1. **Imagery.** What appears first: rooms, beds, breakfast, people, workspaces or social spaces? Compare color, lighting, composition and the prominence of private versus shared space. What travel occasion does each image suggest?
+2. **Language.** Quote your selected phrases. Compare the tone and promises: practical information, reassurance, informality, humor, energy, comfort or value. Which specific words create your impression?
+3. **Intended guest.** Who does each brand appear to address, and what need does it promise to meet? Cite an image and a phrase. Distinguish the intended audience from the people actually staying at a property.
+4. **Your perception.** Give three adjectives for each brand and explain the evidence behind them. Which would you initially choose for a one-night road trip? Would your choice change for a work trip?
+5. **Price and loyalty.** Does either brand promise a lower price, or merely suggest value? How prominently does each use Hilton Honors? If comparing rates, use the same dates, occupancy, room type where comparable, cancellation terms, fees and membership conditions. Do not assume Tru is always cheaper.
+6. **Prediction.** Write two things you expect to find at Tru because of its marketing. State what observation would support or contradict each prediction.
+
+### Part B. During the visit: test the promises
+
+Record the date, time, length of visit and areas you were permitted to see. For each topic, distinguish **direct observation**, **a staff statement**, **a marketing claim** and **your interpretation**. A brief visit to one property does not establish how either brand performs across its system.
+
+- **Lobby layout and workability.** Identify seating, tables, outlets and areas for work, eating or games. What practical uses does the layout support? Assess room workspaces only from an offered tour or labelled official photographs.
+- **Use of shared space.** What activities occur during your visit? Record what people are doing without identifying them. An empty lobby at one moment does not prove that it is generally unused.
+- **Design and brand feel.** Which visible details support or contradict your pre-visit adjectives? Explain what makes a feature useful, decorative or both.
+- **Breakfast and market.** Observe the layout or posted information if accessible. Compare the advertised offer with Hampton's materials. Do not evaluate food quality without tasting it or assume that breakfast is available to non-guests.
+- **Service model.** What can you see about check-in, self-service and staff responsibilities? Separate those observations from assumptions about staffing levels, wages or labor costs.
+- **Guest needs.** Which needs could the facilities meet—for example, laptop work, a quick departure or time with companions? Do not infer a guest's occupation, income or reason for travel from appearance.
+- **Rooms and storage.** If a room tour is offered, describe the layout and storage. Otherwise, use official photographs and mark these as marketing evidence. A photograph does not establish actual dimensions, comfort or sleep quality.
+- **Value and loyalty.** If the two hotels cost the same for your chosen trip, which would you prefer, and why? Is that judgment based on direct evidence, marketing or prior experience? Does Hilton Honors affect your own willingness to try an unfamiliar brand?
+
+If staff have time, ask one or two brief questions: “What uses was this lobby designed to support?” or “Which features do guests most often ask about?” Record these as staff accounts, not independently verified facts. No interview is required.
+
+### Part C. After the visit: explain the strategic choices
+
+Complete a comparison using at least four pieces of evidence, including marketing from both brands and observations from Tru. Do not fill gaps with guesses.
+
+| Topic | Tru evidence and source | Hampton evidence and source | Your interpretation or remaining question |
+|---|---|---|---|
+| Images and design | | | |
+| Language and guest promise | | | |
+| Room versus shared-space emphasis | | | |
+| Value, price and Hilton Honors | | | |
+
+Then answer each question separately:
+
+1. How did your perception of Tru change after the visit? Discuss one confirmed prediction and one surprise or unresolved question.
+2. What differences in imagery and language distinguish Tru from Hampton? Support your answer with the images and phrases you selected. If the messages overlap, explain that too.
+3. Identify one design or service choice that could lower operating costs and one that could create differentiated value. Explain the mechanism; a short visit does not reveal actual cost savings or profitability.
+4. What trade-off might a guest accept at Tru? Which traveler or trip might favor Hampton instead? Explain without treating age as a substitute for customer needs.
+5. Does your evidence suggest that Tru serves a distinct occasion, competes directly with Hampton, or does both? What booking, rate or customer data would you need to assess cannibalization?
+
+The instructor will specify the visit arrangements, submission format and deadline. The purpose is to compare a brand's promises with observable choices, while stating what the evidence cannot establish.
 
 ## Exhibits
 
@@ -153,6 +192,8 @@ A frequent traveler can often distinguish genuine convenience from brand theater
 
 ### Exhibit 4: Positioning Comparison
 
+These are the case’s working interpretations, not findings from the Chicopee properties. Test them against current marketing and your observations; note differences rather than forcing the evidence to fit.
+
 | Dimension | Hampton | Tru |
 |---|---|---|
 | Core promise | Reliable, friendly, no-surprises stay | Fun, efficient, value-grounded stay |
@@ -172,7 +213,7 @@ A frequent traveler can often distinguish genuine convenience from brand theater
 6. Where should Hilton draw the boundary between Hampton and Tru in price, amenities, room design, public space, and guest promise?
 7. If you were a Hampton franchisee, what information would you want before deciding whether to welcome or oppose a nearby Tru?
 8. What should Hilton measure over time to know whether Tru strengthens or weakens the portfolio?
-9. After the Hagerstown field observation, what evidence would make you more confident, less confident, or still uncertain about Tru's strategic role?
+9. After the Chicopee visit and marketing comparison, what evidence would make you more confident, less confident, or still uncertain about Tru's strategic role?
 
 ## Sources
 
