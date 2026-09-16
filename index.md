@@ -87,6 +87,7 @@ Essays, weekly briefs, and filed predictions that sit alongside the Dictionary.
 
 <div class="return-bar" style="margin: 1rem 0 0.5rem; text-align: left;">
   <a href="/other-writing/" class="btn">Other Writing</a>
+  <a href="/capstone/" class="btn">Capstone 2.0</a>
 </div>
 
 ---

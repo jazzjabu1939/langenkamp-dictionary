@@ -10,6 +10,13 @@ permalink: /for-students/
 This page collects course-facing materials that belong near the Dictionary but are written for classroom use: case studies, discussion prompts, and practical guides for working with AI, strategy, judgment, and evidence.
 
 <div class="writing-grid">
+  <a class="writing-card" href="/capstone/">
+    <span class="writing-kicker">Teaching Guide</span>
+    <strong>Capstone 2.0 Glossary &amp; Guidance</strong>
+    <span>Understand the Courier: financial terms, worked examples and an individual financial-foundations exercise.</span>
+  </a>
+
+
   <a class="writing-card" href="/case-studies/tru-by-hilton/">
     <span class="writing-kicker">Case Study</span>
     <strong>Tru by Hilton</strong>

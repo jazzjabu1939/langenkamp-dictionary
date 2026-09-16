@@ -10,6 +10,13 @@ permalink: /other-writing/
 The Dictionary is the main room. This is the side table: essays, weekly briefs, and filed predictions that belong near the Dictionary but are not themselves dictionary entries.
 
 <div class="writing-grid">
+  <a class="writing-card" href="/capstone/">
+    <span class="writing-kicker">Teaching Guide</span>
+    <strong>Capstone 2.0 Glossary &amp; Guidance</strong>
+    <span>Understand the Courier: financial terms, worked examples and an individual financial-foundations exercise.</span>
+  </a>
+
+
   <a class="writing-card" href="https://freedomtomato.substack.com/">
     <span class="writing-kicker">Essays</span>
     <strong>Freedom Tomato / Substack</strong>
