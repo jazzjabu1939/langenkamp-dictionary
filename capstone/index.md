@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Capstone 2.0 Glossary & Guidance"
-description: "A student guide to the Courier, financial calculations and simulation decisions."
+description: "A student guide to strategy, the Courier, financial calculations and simulation decisions."
 permalink: /capstone/
 ---
 
@@ -25,7 +25,7 @@ permalink: /capstone/
 *Prepared in collaboration with Thea · Updated September 15, 2026*
 
 <div class="cap-intro" markdown="1">
-This guide defines the financial and operating terms used in Capstone 2.0. It includes formulas, examples and instructions for reading the Courier.
+This guide defines strategy, financial and operating terms used in MANAGMNT 494BI and Capstone 2.0. It includes formulas, examples and instructions for reading the Courier. Strategy sections cover the Week 1 and Week 2 presentations; terms will be added as the course progresses.
 
 This is an independent teaching guide. For simulation rules and industry-specific figures, consult Capsim’s guides, your Industry Conditions Report and the current Courier.
 </div>
@@ -66,7 +66,7 @@ Contribution margin is **44.67%** of sales. After the remaining expenses, net pr
 
 <div class="cap-search">
 <label for="cap-search"><strong>Search terms and explanations</strong></label>
-<input id="cap-search" type="search" placeholder="Try contribution, depreciation, cash or automation" aria-describedby="cap-count">
+<input id="cap-search" type="search" placeholder="Try Porter, competitive advantage, contribution or cash" aria-describedby="cap-count">
 <p id="cap-count" role="status" aria-live="polite"></p>
 </div>
 
@@ -670,6 +670,398 @@ TQM investments can reduce material, labor and administrative costs, shorten R&D
 </section>
 
 
+<section class="cap-group" markdown="1">
+
+## Strategy foundations — Weeks 1–2
+
+<article class="cap-term" id="strategy-strategy" markdown="1">
+
+### Strategy
+
+A coordinated set of choices and actions for achieving an objective and competing successfully. Business strategy specifies whom a firm serves, what value it offers and which activities support its advantage.
+
+</article>
+
+<article class="cap-term" id="strategy-strategic-management" markdown="1">
+
+### Strategic management
+
+The analysis, formulation and implementation of strategy across an organization. It brings together decisions about customers, products, operations, people and finance.
+
+</article>
+
+<article class="cap-term" id="strategy-goal-objective" markdown="1">
+
+### Goal / objective
+
+A result an organization seeks to achieve. A goal states the desired outcome; a strategy explains the approach. A target market share alone is not a strategy.
+
+</article>
+
+<article class="cap-term" id="strategy-tactics" markdown="1">
+
+### Tactics
+
+Specific actions used to carry out a strategy or respond to circumstances. Strategy and tactics differ in scope and purpose, not simply in duration. A price cut is a tactic; whether it helps depends on the strategy and its costs.
+
+</article>
+
+<article class="cap-term" id="strategy-michael-e-porter" markdown="1">
+
+### Michael E. Porter
+
+A Harvard Business School scholar whose work examines industry competition and competitive advantage. His books include *Competitive Strategy* (1980) and *Competitive Advantage* (1985). His frameworks include the Five Forces, generic competitive strategies and the value chain.
+
+</article>
+
+<article class="cap-term" id="strategy-competitive-advantage" markdown="1">
+
+### Competitive advantage
+
+Performance above that of relevant competitors or the industry average, measured on a stated basis over a stated period. A profit rate or market share needs a comparison before it can establish an advantage.
+
+</article>
+
+<article class="cap-term" id="strategy-sustained-competitive-advantage" markdown="1">
+
+### Sustained competitive advantage
+
+Competitive advantage maintained over an extended period. Also called sustainable competitive advantage. Here, sustainable refers to the persistence of the advantage, not its environmental impact; it does not mean permanent.
+
+</article>
+
+<article class="cap-term" id="strategy-competitive-disadvantage" markdown="1">
+
+### Competitive disadvantage
+
+Performance below that of relevant competitors or the industry average on the measure being compared.
+
+</article>
+
+<article class="cap-term" id="strategy-competitive-parity" markdown="1">
+
+### Competitive parity
+
+Performance comparable to that of relevant competitors on a stated measure. Parity in profitability does not require identical products or strategies.
+
+</article>
+
+<article class="cap-term" id="strategy-benchmarking" markdown="1">
+
+### Benchmarking
+
+Comparing performance or practices with competitors, an industry average or another relevant standard. Comparisons help identify gaps but do not by themselves determine a strategy. Capstone’s optional TQM initiative named Benchmarking is a specific simulation investment.
+
+</article>
+
+<article class="cap-term" id="strategy-return-on-invested-capital-roic" markdown="1">
+
+### Return on invested capital (ROIC)
+
+Operating profit after tax relative to the capital invested in operations. **ROIC = net operating profit after tax ÷ invested capital × 100**. State whether invested capital uses opening, closing or average balances and how it is defined. ROIC differs from the Courier’s ROA and ROE; a 15% return needs an appropriate comparison.
+
+</article>
+
+</section>
+
+<section class="cap-group" markdown="1">
+
+## Competitive positions and industry structure — Weeks 1–2
+
+<article class="cap-term" id="strategy-value-creation" markdown="1">
+
+### Value creation
+
+Producing benefits customers value at a cost below their willingness to pay. In a simplified economic model, **value created per unit = willingness to pay − cost**. Price divides this value between customer benefit and the firm’s margin.
+
+</article>
+
+<article class="cap-term" id="strategy-willingness-to-pay" markdown="1">
+
+### Willingness to pay
+
+The maximum amount a customer would pay for a product or service. It depends on the benefits the customer expects and available alternatives. It is not necessarily the price charged.
+
+</article>
+
+<article class="cap-term" id="strategy-strategic-positioning" markdown="1">
+
+### Strategic positioning
+
+Choosing the customers to serve, the value to offer and the activities needed to deliver it. In Capstone, strategic positioning includes choices about segments, prices and costs; product positioning on the perceptual map is only one part.
+
+</article>
+
+<article class="cap-term" id="strategy-cost-leadership" markdown="1">
+
+### Cost leadership
+
+Competing through a lower cost structure than relevant rivals while meeting customers’ requirements. Low costs can support lower prices or higher margins. In Capstone, automation, material choices and production planning affect costs; a low selling price alone does not establish cost leadership.
+
+</article>
+
+<article class="cap-term" id="strategy-differentiation" markdown="1">
+
+### Differentiation
+
+Competing by offering distinct benefits that customers value enough to support a price premium. In Capstone, positioning, age, reliability and customer access can support differentiation. The premium must cover the added costs; extra features customers do not value are not an advantage.
+
+</article>
+
+<article class="cap-term" id="strategy-focus-niche-strategy" markdown="1">
+
+### Focus / niche strategy
+
+Serving a narrow customer group or market rather than a broad one. A focused firm can compete through lower costs or differentiation. In Capstone, concentrating on selected segments is a focus decision; it does not by itself determine how to compete within them.
+
+</article>
+
+<article class="cap-term" id="strategy-strategic-trade-off" markdown="1">
+
+### Strategic trade-off
+
+A choice that accepts less of one benefit to obtain another, or rules out activities inconsistent with a position. In Capstone, greater automation lowers labor requirements but can lengthen product-repositioning projects.
+
+</article>
+
+<article class="cap-term" id="strategy-strategic-fit" markdown="1">
+
+### Strategic fit
+
+Consistency among a firm’s activities so that they support one another and its chosen position. A Capstone strategy needs compatible R&D, marketing, production and financing decisions.
+
+</article>
+
+<article class="cap-term" id="strategy-operational-effectiveness" markdown="1">
+
+### Operational effectiveness
+
+Performing activities more efficiently or reliably. It can improve performance, but rivals may copy the improvement. Strategy also concerns which activities to perform and how they combine.
+
+</article>
+
+<article class="cap-term" id="strategy-economies-of-scale" markdown="1">
+
+### Economies of scale
+
+Reductions in average cost as the scale of operations increases. Fixed-cost spreading and purchasing efficiencies can contribute. More capacity does not guarantee lower unit costs if the capacity is underused.
+
+</article>
+
+<article class="cap-term" id="strategy-barriers-to-entry" markdown="1">
+
+### Barriers to entry
+
+Conditions that make entry difficult or costly for potential competitors. Examples include scale advantages, large capital requirements, customer switching costs and regulatory restrictions. Capstone’s assigned-company structure does not reproduce every real-world entry barrier.
+
+</article>
+
+<article class="cap-term" id="strategy-industry-effects" markdown="1">
+
+### Industry effects
+
+The influence of an industry’s structure and conditions on firm performance. The strength of rivalry and the bargaining power of buyers or suppliers can affect the profits available to firms in that industry.
+
+</article>
+
+<article class="cap-term" id="strategy-firm-effects" markdown="1">
+
+### Firm effects
+
+Differences in performance attributable to a firm’s resources, capabilities and choices rather than to shared industry conditions. Capstone teams face a common starting environment but make different product, operating and financial decisions.
+
+</article>
+
+<article class="cap-term" id="strategy-porter-s-five-forces" markdown="1">
+
+### Porter’s Five Forces
+
+A framework for examining industry competition and profit potential: rivalry among existing competitors, threat of new entrants, threat of substitutes, bargaining power of buyers and bargaining power of suppliers. Substitutes meet a similar need in a different way; they are not simply another brand of the same product.
+
+</article>
+
+</section>
+
+<section class="cap-group" markdown="1">
+
+## The strategy process — Week 2
+
+<article class="cap-term" id="strategy-afi-framework" markdown="1">
+
+### AFI framework
+
+Analysis, Formulation and Implementation: three connected parts of strategic management. Analysis examines the situation; formulation selects an approach; implementation puts it into practice. Results can require changes to any of the three.
+
+</article>
+
+<article class="cap-term" id="strategy-analysis" markdown="1">
+
+### Analysis
+
+Examining an organization’s internal resources and external environment to identify the challenge it must address. In Capstone, this includes customer criteria, rival products, production costs and financial constraints.
+
+</article>
+
+<article class="cap-term" id="strategy-competitive-challenge" markdown="1">
+
+### Competitive challenge
+
+The central problem or opportunity a strategy must address. A useful diagnosis identifies its causes. “Profits are low” describes a result; excess costs, weak customer appeal or idle capacity may explain it.
+
+</article>
+
+<article class="cap-term" id="strategy-formulation" markdown="1">
+
+### Formulation
+
+Choosing a strategy in response to the analysis. It includes decisions about where to compete, how to create value and how to allocate resources.
+
+</article>
+
+<article class="cap-term" id="strategy-guiding-policy" markdown="1">
+
+### Guiding policy
+
+An overall approach for addressing a diagnosed challenge. It directs choices without prescribing every action. Focusing on reliable, low-cost products for price-sensitive customers is a guiding policy; a sales target is not.
+
+</article>
+
+<article class="cap-term" id="strategy-implementation-coherent-actions" markdown="1">
+
+### Implementation / coherent actions
+
+Putting strategy into effect through mutually supporting actions, budgets, responsibilities and controls. A Capstone sales forecast, production schedule and financing plan must agree about the resources required.
+
+</article>
+
+<article class="cap-term" id="strategy-corporate-strategy" markdown="1">
+
+### Corporate strategy
+
+Decisions about the businesses or industries in which an organization participates and how it allocates resources among them. It concerns the scope of the organization.
+
+</article>
+
+<article class="cap-term" id="strategy-business-strategy" markdown="1">
+
+### Business strategy
+
+The approach a firm or business unit uses to compete in a particular market. Cost leadership and differentiation are business-level choices.
+
+</article>
+
+<article class="cap-term" id="strategy-functional-strategy" markdown="1">
+
+### Functional strategy
+
+The approach a department or function uses to support the business strategy. R&D, marketing, production and finance each make functional choices; no department’s plan alone constitutes the whole firm’s strategy.
+
+</article>
+
+<article class="cap-term" id="strategy-execution-risk" markdown="1">
+
+### Execution risk
+
+The possibility that a chosen strategy will not be carried out as intended. Delays, inadequate funding and conflicting departmental decisions can prevent an otherwise sound plan from succeeding.
+
+</article>
+
+</section>
+
+<section class="cap-group" markdown="1">
+
+## Stakeholders and responsibility — Week 2
+
+<article class="cap-term" id="strategy-stakeholder" markdown="1">
+
+### Stakeholder
+
+A person, group or organization that can affect or be affected by a firm’s actions. Stakeholders include employees, owners, customers, suppliers, creditors and communities.
+
+</article>
+
+<article class="cap-term" id="strategy-internal-and-external-stakeholders" markdown="1">
+
+### Internal and external stakeholders
+
+Internal stakeholders participate in ownership, governance or operations, such as shareholders, directors, managers and employees. External stakeholders include customers, suppliers, creditors, communities and government. These categories describe relationships; they do not rank whose interests matter.
+
+</article>
+
+<article class="cap-term" id="strategy-shareholder-stockholder" markdown="1">
+
+### Shareholder / stockholder
+
+An owner of shares in a company. Shareholders are one group of stakeholders. Employees, customers and creditors can have interests in the company without owning shares.
+
+</article>
+
+<article class="cap-term" id="strategy-stakeholder-strategy" markdown="1">
+
+### Stakeholder strategy
+
+An approach to managing relationships with stakeholders in support of the firm’s long-term performance. It considers their contributions, claims and potential conflicts rather than treating shareholder returns as the only relevant interest.
+
+</article>
+
+<article class="cap-term" id="strategy-stakeholder-impact-analysis" markdown="1">
+
+### Stakeholder impact analysis
+
+A process for identifying stakeholders, their interests and claims, the opportunities and threats they present, the firm’s responsibilities toward them, and appropriate responses. Power, legitimacy and urgency help assess which claims require attention.
+
+</article>
+
+<article class="cap-term" id="strategy-stakeholder-power" markdown="1">
+
+### Stakeholder power
+
+A stakeholder’s ability to influence a firm’s decisions or actions. Control of funding, essential supplies or regulatory approval can confer power.
+
+</article>
+
+<article class="cap-term" id="strategy-stakeholder-legitimacy" markdown="1">
+
+### Stakeholder legitimacy
+
+The perceived validity or appropriateness of a stakeholder’s claim under laws, norms or accepted expectations. A legitimate claim need not come from a powerful stakeholder.
+
+</article>
+
+<article class="cap-term" id="strategy-stakeholder-urgency" markdown="1">
+
+### Stakeholder urgency
+
+The degree to which a stakeholder’s claim requires prompt attention because it is time-sensitive and important. Urgency can change as circumstances change.
+
+</article>
+
+<article class="cap-term" id="strategy-transaction-costs" markdown="1">
+
+### Transaction costs
+
+The costs of arranging, monitoring and enforcing exchanges, beyond the price of the goods or services exchanged. Search, negotiation and contract enforcement are examples. Trust can reduce some of these costs.
+
+</article>
+
+<article class="cap-term" id="strategy-corporate-social-responsibility-csr" markdown="1">
+
+### Corporate social responsibility (CSR)
+
+A firm’s responsibilities for its conduct and effects on society. The framework shown in class distinguishes economic, legal, ethical and philanthropic responsibilities.
+
+</article>
+
+<article class="cap-term" id="strategy-pyramid-of-corporate-social-responsibility" markdown="1">
+
+### Pyramid of corporate social responsibility
+
+A framework associated with Archie B. Carroll that groups responsibilities into four categories: economic (operate a viable business), legal (obey the law), ethical (act fairly and avoid harm), and philanthropic (make voluntary contributions to society). The categories are concurrent responsibilities, not permission to postpone legal or ethical duties until profits improve.
+
+</article>
+
+</section>
+
 ## Before submitting decisions
 
 - Check the units and round on the report.
@@ -692,6 +1084,11 @@ The report labels growth rates as **beginning rates** and instructs students to 
 Changes remain in your rough draft until you save them to the team decision file. Assign responsibility for each department and save **by department** to avoid overwriting a teammate’s work. Use **Load Last Decision File** to load saved team decisions. Check the **Decision Summary** to confirm who saved each department and when.
 
 ## Sources and scope
+
+- MANAGMNT 494BI, Week 1, *What Is Strategy?* (5 slides), and Week 2, *Chapter 1: What Is Strategy?* (22 slides), Fall 2026. Strategy definitions are teaching summaries, not quotations. Historical company examples in the slides are not treated as current performance claims.
+- [Harvard Business School, Institute for Strategy and Competitiveness: The Five Forces](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-five-forces.aspx).
+- Michael E. Porter, *Competitive Strategy* (1980), *Competitive Advantage* (1985), and “What Is Strategy?” (1996).
+- Archie B. Carroll, “The Pyramid of Corporate Social Responsibility: Toward the Moral Management of Organizational Stakeholders” (1991).
 
 - [Capsim, Capstone 2.0 Team Member Guide](https://ww3.capsim.com/modules/GIA/files/1_0/0/CapsimPlatform/EN/PDF/Capstone_User_Guide_v4.pdf): Industry Conditions Report; R&D; Marketing; Production; Finance; and financial statements. Consult especially the guide’s numbered pages 2, 7–12 and 28–29. Accessed September 15, 2026.
 - Archived class Courier Excel export: financial statement labels and ratio conventions cross-checked for this guide.
