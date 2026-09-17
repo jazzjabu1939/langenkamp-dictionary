@@ -22,13 +22,23 @@ permalink: /capstone/
 # Capstone 2.0 Glossary & Guidance
 
 *Matthew D. Langenkamp · Isenberg School of Management, UMass Amherst*  
-*Prepared in collaboration with Thea · Updated September 15, 2026*
+*Prepared in collaboration with Thea · Updated September 17, 2026*
 
 <div class="cap-intro" markdown="1">
 This guide defines strategy, financial and operating terms used in MANAGMNT 494BI and Capstone 2.0. It includes formulas, examples and instructions for reading the Courier. Strategy sections cover the Week 1 and Week 2 presentations; terms will be added as the course progresses.
 
 This is an independent teaching guide. For simulation rules and industry-specific figures, consult Capsim’s guides, your Industry Conditions Report and the current Courier.
 </div>
+
+## Financial Foundations Workbook
+
+**[Download the Financial Foundations Workbook (PDF, 32 pages)](/assets/capstone/Capstone-Financial-Foundations-Workbook.pdf)**
+
+A classroom workbook to help you prepare for the Capstone 2.0 simulation, the in-class financial foundations exercise, and the final exam. It explains how the income statement, balance sheet, and cash flow statement connect, then follows Andrews’ actual decisions and results through capacity purchases and sales, automation, profit, and cash.
+
+Print it and bring a pencil: the exercises include space for calculations and written answers. You can also read the PDF on screen. Topics include the matching principle, depreciation, EBIT and EBITDA, shareholders’ equity, and step-by-step borrowing and investment examples.
+
+*Classroom draft · September 17, 2026. Use the glossary below alongside the workbook. The original financial foundations exercise remains available separately below.*
 
 ## Basic calculations
 

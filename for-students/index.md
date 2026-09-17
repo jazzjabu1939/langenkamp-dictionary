@@ -10,6 +10,12 @@ permalink: /for-students/
 This page collects course-facing materials that belong near the Dictionary but are written for classroom use: case studies, discussion prompts, and practical guides for working with AI, strategy, judgment, and evidence.
 
 <div class="writing-grid">
+  <a class="writing-card" href="/capstone/#financial-foundations-workbook">
+    <span class="writing-kicker">Classroom Workbook · PDF</span>
+    <strong>Capstone Financial Foundations</strong>
+    <span>A 32-page printable workbook connecting the three financial statements to borrowing, capacity, automation, and Andrews’ actual results. Includes pencil-and-paper exercises for class and exam preparation.</span>
+  </a>
+
   <a class="writing-card" href="https://international-life-preview.pages.dev/">
     <span class="writing-kicker">Exploration Game</span>
     <strong>The International Life</strong>
