@@ -30,6 +30,14 @@ This guide defines strategy, financial and operating terms used in MANAGMNT 494B
 This is an independent teaching guide. For simulation rules and industry-specific figures, consult Capsim’s guides, your Industry Conditions Report and the current Courier.
 </div>
 
+## Two Ways to Compete
+
+**[Download Two Ways to Compete (PDF)](/assets/capstone/Capstone-Two-Ways-to-Compete.pdf)**
+
+A MANAGMNT 494BI case and individual exercise contrasting Low End cost leadership with High End differentiation. Includes the Low End ideal-age graphic, forecasting guidance, contribution-margin calculations, and coordinated R&D, marketing, and production decisions.
+
+*Revised September 18, 2026. Case figures are hypothetical; use your live Industry Conditions Report and Courier for actual simulation decisions.*
+
 ## Financial Foundations Workbook
 
 **[Download the Financial Foundations Workbook (PDF, 32 pages)](/assets/capstone/Capstone-Financial-Foundations-Workbook.pdf)**

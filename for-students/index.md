@@ -10,6 +10,12 @@ permalink: /for-students/
 This page collects course-facing materials that belong near the Dictionary but are written for classroom use: case studies, discussion prompts, and practical guides for working with AI, strategy, judgment, and evidence.
 
 <div class="writing-grid">
+  <a class="writing-card" href="/capstone/#two-ways-to-compete">
+    <span class="writing-kicker">Strategy Case · PDF</span>
+    <strong>Capstone: Two Ways to Compete</strong>
+    <span>Low End cost leadership versus High End differentiation: ideal age, forecasting, contribution margins, and coordinated decisions. MANAGMNT 494BI.</span>
+  </a>
+
   <a class="writing-card" href="/capstone/#financial-foundations-workbook">
     <span class="writing-kicker">Classroom Workbook · PDF</span>
     <strong>Capstone Financial Foundations</strong>
@@ -51,6 +57,8 @@ This page collects course-facing materials that belong near the Dictionary but a
 ---
 
 ## Case Studies
+
+- **[Capstone: Two Ways to Compete](/capstone/#two-ways-to-compete)** - A printable strategy case contrasting Low End and High End competition.
 
 - **[Tru by Hilton](/case-studies/tru-by-hilton/)** - A brand portfolio strategy case on Tru, Hampton, and midscale lodging.
 
