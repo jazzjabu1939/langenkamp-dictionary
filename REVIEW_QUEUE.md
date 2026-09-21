@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-09-21 | **Lab** | Approved by Matthew; definition and 13 international lab profiles published at `entries/lab.md`. |
 | 2026-09-07 | **Reality Contact** | Approved and published at `entries/reality-contact.md`. Defines the practical capacity of a person or AI system to keep internal claims corrigible by external evidence, other observers, and consequences, while distinguishing clinical reality monitoring from AI grounding. |
 | 2026-09-06 | **The Nine Tripod Cauldrons / 九鼎** | Approved after a plain-language revision. Published at `entries/nine-tripod-cauldrons.md`. Uses the Nine Cauldrons as the durable artefacts of sovereign agentic infrastructure, paired with Six Dreams as the recurring processes that keep them usable; grounded in Wangsun Man's **在德不在鼎** warning. |
 | 2026-09-06 | **Yann LeCun** | Standalone named-person entry published at `entries/yann-lecun.md`. Covers his deep-learning legacy, FAIR, LLM critique, world-model/JEPA programme, AMI Labs, open-weights advocacy, and role as the counter-pole to the *Big Blob of Compute* worldview. |
@@ -158,9 +159,9 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ---
 
-### **Lab** (added May 19, 2026 — Musk interview / AI-company naming misnomer)
+### **Lab** — **published** (added May 19, 2026 — Musk interview / AI-company naming misnomer)
 
-*Queue addition only; draft not yet written.*
+*Approved September 21, 2026; published at `entries/lab.md`.*
 
 - **Lab** — working definition: in AI discourse, a word that increasingly names a profit-seeking compute corporation rather than a laboratory in the older university/industrial-research sense. Triggered by Elon Musk's correction in the Patrick Collison / Dwarkesh Patel interview: *“The labs are at universities and they’re moving like a snail. They’re not spending $50 billion. You mean the revenue maximizing corporations… that call themselves labs.”* Nuance: the misnomer is uneven. OpenAI is now least lab-like in the old sense; Anthropic still does substantial “labby” interpretability/safety work; Yann LeCun's new AMI effort may be almost the inverse — a lab that is formally a company. Relevant to OpenAI, Anthropic, DeepMind, xAI, Meta FAIR, Nous Research, AMI, commercial legibility, closed source, and trust.
 
