@@ -54,7 +54,7 @@ These are not all proof of harness failure. They are reasons to inspect the harn
 
 ## Heartbeasts and other household fauna
 
-A heartbeat is meant to be a small periodic prompt that lets an agent notice whether anything needs attention. Left unattended, its checklist can become a project archive, reminder swamp, philosophy notebook, and stale-authority engine. At that point the heartbeat has grown teeth. It has become a **heartbeast**.
+A heartbeat is meant to be a small periodic prompt that lets an agent notice whether anything needs attention. Left unattended, its checklist can become a project archive, reminder swamp, philosophy notebook, and stale-authority engine. At that point the heartbeat has grown teeth. It has become a **[heartbeast](/entries/heartbeasts/)**.
 
 The joke identifies a serious pattern: operational files acquire status simply by surviving. The agent wakes, reads the surviving text faithfully, and treats yesterday's abandoned concern as today's mandate. Humans then call the agent confused.
 

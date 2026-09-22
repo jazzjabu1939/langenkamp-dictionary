@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-09-22 | **Heartbeasts** | Standalone entry approved and published at `entries/heartbeasts.md`; Dictionary coinage, cross-linked from Harness Hygiene. |
 | 2026-09-21 | **Lab** | Approved by Matthew; definition and 13 international lab profiles published at `entries/lab.md`. |
 | 2026-09-07 | **Reality Contact** | Approved and published at `entries/reality-contact.md`. Defines the practical capacity of a person or AI system to keep internal claims corrigible by external evidence, other observers, and consequences, while distinguishing clinical reality monitoring from AI grounding. |
 | 2026-09-06 | **The Nine Tripod Cauldrons / 九鼎** | Approved after a plain-language revision. Published at `entries/nine-tripod-cauldrons.md`. Uses the Nine Cauldrons as the durable artefacts of sovereign agentic infrastructure, paired with Six Dreams as the recurring processes that keep them usable; grounded in Wangsun Man's **在德不在鼎** warning. |
@@ -168,6 +169,8 @@ The sections below are the active queue. Historical sections that remain for sou
 ---
 
 ### **Heartbeasts** (added May 19, 2026 — from HEARTBEAT cleanup / agent-health conversation)
+
+**Published September 22, 2026:** standalone entry at `entries/heartbeasts.md`. Historical proposal retained below; no longer pending.
 
 *Queue addition only; draft not yet written.*
 
