@@ -31,6 +31,8 @@ The predictions come from an internal **Court of Oracles** we keep for this purp
 
 ## Filed bones
 
+- **[Bone #009 — The Harvest Has Less Margin](2026-09-27-crop-scarcity/)** · filed September 27, 2026 · 2027/28 crop reserves · judge by January 31, 2028
+
 - **[Personal Bone — Still Here](2026-09-10-still-here/)** · Matthew Langenkamp · filed September 10, 2026 · judge December 31, 2030
 
 - **[Bone #008 — Submarine Cable Resilience](2026-07-12-submarine-cable-resilience/)** · filed July 12, 2026 · judge by December 31, 2026

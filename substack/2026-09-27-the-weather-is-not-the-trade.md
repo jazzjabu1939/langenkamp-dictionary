@@ -245,4 +245,6 @@ Written with assistance from Thea, my AI assistant. Information as of September 
 
 ---
 
+**A testable follow-up:** [Oracle Bone #009 — The Harvest Has Less Margin](/oracle-bones/2026-09-27-crop-scarcity/) records our prediction about 2027/28 crop reserves and the rule for judging it.
+
 [Read and discuss on Substack](https://freedomtomato.substack.com/p/the-weather-is-not-the-trade) · [← Other Writing](/other-writing/)
