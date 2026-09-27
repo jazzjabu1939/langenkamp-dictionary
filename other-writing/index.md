@@ -29,6 +29,12 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
     <span>Genies, goats, and cooperation in an age of extraordinary AI capability.</span>
   </a>
 
+  <a class="writing-card" href="/essays/the-weather-is-not-the-trade/">
+    <span class="writing-kicker">Essay · September 27, 2026</span>
+    <strong>The Weather Is Not the Trade</strong>
+    <span>Family memories, strained farms, Brazil’s agricultural expansion, and the commodity investment question for 2027.</span>
+  </a>
+
   <a class="writing-card" href="/essays/fencing-the-wrong-animal/">
     <span class="writing-kicker">Essay · August 21, 2026</span>
     <strong>Fencing the Wrong Animal</strong>
