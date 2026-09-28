@@ -67,6 +67,18 @@ Financial distress can eventually reduce production: farmers may cut fertilizer 
 
 The distress among farmers deserves attention in its own right. For example, a [2023 study of male farmers in participating US states](https://pmc.ncbi.nlm.nih.gov/articles/PMC10336572/) found an estimated 2.4 percent annual increase in suicide rates over 2003–2017. The study does not establish whether that trend has continued.
 
+Bankruptcy filings provide a separate measure of financial distress. The National Agricultural Law Center’s DEBT project records the following agricultural Chapter 11 and Chapter 12 cases in the first half of each year, using the same dataset throughout.[^farm-bankruptcies]
+
+| Period | Bankruptcy cases | Change from the preceding first half |
+|:--|--:|--:|
+| January–June 2024 | 121 | — |
+| January–June 2025 | 196 | +62.0% |
+| January–June 2026 | 208 | +6.1% |
+
+First-half filings in 2026 were 71.9 percent above those in 2024, although the rate of increase slowed sharply in the latest year. Doubling the 2026 first-half count gives **416 cases**, compared with **340 recorded in all of 2025**—an increase of 22.4 percent. That is a straight-line annualized estimate, not a forecast adjusted for seasonality. The comparison also reflects the lower count in the second half of 2025: 144 cases, against 196 in the first half.
+
+These are bankruptcy cases, not a count of individual farms closing or equipment being liquidated. Related businesses within one agricultural operation can file separate cases, and bankruptcy can allow an operation to reorganize and continue farming. These figures do not establish a connection between bankruptcy filings and the suicide trend described above.
+
 The [USDA's September farm-income forecast](https://www.ers.usda.gov/topics/farm-economy/farm-sector-income-finances/farm-sector-income-forecast) projects US crop receipts rising 6.1 percent in 2026 while total farm production expenses rise 4.5 percent. Overall net farm income is forecast to fall 2.6 percent in nominal terms, with considerable differences among agricultural sectors.
 
 Higher receipts do not ensure higher profits. If costs leave farmers unable to finance planting and harvesting, production may fall.
@@ -233,3 +245,5 @@ If I could ask him about today’s prices, I would. He would probably tell me no
 
 
 [Read and discuss on Substack](https://freedomtomato.substack.com/p/the-weather-is-not-the-trade) · [← Other Writing](/other-writing/)
+
+[^farm-bankruptcies]: National Agricultural Law Center, in partnership with the National Association of State Departments of Agriculture, [Data on Economic and Bankruptcy Trends (DEBT)](https://nationalaglawcenter.org/debtproject/), June 2026 PACER docket snapshot; accessed September 28, 2026. Counts combine agricultural Chapter 11 and Chapter 12 cases; percentage changes and the annualized estimate are our calculations. The project counts distinct court-and-case-number combinations, not unique farms. Chapter 11 coverage is limited to debtors matched by name and address to historical Farm Service Agency payment records; Chapter 12 includes all identified cases. Chapters reflect their status at the June 2026 data pull, which can differ from the chapter at filing. This series should not be mixed with Chapter 12-only statistics.
