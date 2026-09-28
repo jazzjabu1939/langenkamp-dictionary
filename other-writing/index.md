@@ -30,9 +30,9 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
   </a>
 
   <a class="writing-card" href="/essays/the-weather-is-not-the-trade/">
-    <span class="writing-kicker">Essay · September 27, 2026</span>
-    <strong>The Weather Is Not the Trade</strong>
-    <span>Family memories, strained farms, Brazil’s agricultural expansion, and the commodity investment question for 2027.</span>
+    <span class="writing-kicker">Essay · September 27, 2026 · Revised September 28</span>
+    <strong>What Happens In The Pacific Does Not Stay In The Pacific</strong>
+    <span>Family memories, the Pacific heat outlook, crop risks in Brazil, Mexico, and North Africa, and food prices in 2027.</span>
   </a>
 
   <a class="writing-card" href="/essays/fencing-the-wrong-animal/">
