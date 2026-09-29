@@ -123,6 +123,18 @@ Higher livestock prices also raise costs for buyers. A breeder selling calves, a
 
 We need to establish which producers have money to invest and what they are buying.
 
+## Why ranchers may not expand
+
+High cattle prices can make expansion worth considering, but drought may make it impractical. A ranch needs enough grass and water to support more animals. Buying feed can keep cattle alive through a dry period, but it raises costs and leaves the owner exposed if the drought continues. [USDA’s account of the cattle cycle](https://www.ers.usda.gov/topics/animal-products/cattle-beef/sector-at-a-glance) describes how poor pasture and forage conditions can force herd reductions and delay rebuilding. Keeping a young female for breeding also means giving up a sale today and paying to raise her before her first calf can be sold. That commitment takes years to produce a return.
+
+Some ranchers do not want to take on more risk. In [Morning Brew’s September 24 report on the beef industry](https://www.youtube.com/watch?v=JVH3ilCzDis), the rancher and banker interviewed describe older owners for whom high cattle prices offer an opportunity to retire. After years of difficult returns, selling may be more attractive than borrowing to expand, particularly if no one in the family wants to take over. Those interviews do not tell us how many ranchers will leave, but they describe a decision I recognize from Dad’s experience. The ability and willingness to keep doing the work matter as much as the selling price.
+
+The industry into which ranchers sell has also changed. A [2024 USDA review of meatpacking](https://www.ers.usda.gov/amber-waves/2024/january/concentration-in-u-s-meatpacking-industry-and-how-it-affects-competition-and-cattle-prices) reports that the four largest beef packers account for 85 percent of steer and heifer purchases, compared with 36 percent in 1980. Concentration at the processing stage affects the choices available to cattle feeders and, through them, the market for ranchers’ calves. Where competing plants are few, a closure can leave sellers with fewer buyers and longer journeys to market.
+
+Larger plants have lowered processing costs, and concentration alone does not establish that buyers are suppressing cattle prices. USDA’s review nevertheless finds that high concentration combined with limited processing capacity can weaken competition. A rancher considering expansion must weigh access to buyers as well as future demand for beef.
+
+Higher prices therefore need not bring a quick increase in production. Drought can limit the herd a ranch can support; an owner may prefer retirement to another financial commitment; and fewer competing processors can make market access less attractive. Further heat and drought could compound those constraints even while cattle prices remain high.
+
 ## Heat, drought, and the soil
 
 Dad valued land because it could support animals and produce food. Keeping it productive requires care of the soil and water supply.
