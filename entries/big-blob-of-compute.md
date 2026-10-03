@@ -4,7 +4,7 @@ kind: reference
 title: "Big Blob of Compute"
 permalink: /entries/big-blob-of-compute/
 date: 2026-06-17
-summary: "Dario Amodei's name for the scaling worldview: intelligence progress as the result of large amounts of compute, broad data, scalable objectives, and numerical stability rather than hand-designed cleverness."
+summary: "Dario Amodei's hypothesis that general-purpose learning systems improve chiefly through more computation, sufficient high-quality data, and training methods that remain effective at larger scales."
 published: true
 ---
 
@@ -12,47 +12,45 @@ published: true
 
 ## In one sentence
 
-**The Big Blob of Compute is Dario Amodei's name for a scaling hypothesis: AI capability advances when large amounts of compute can be applied effectively to broad data, scalable objectives, and numerically stable training.**
+**Big Blob of Compute is Dario Amodei's term for the hypothesis that general-purpose learning systems improve chiefly by using more computation, sufficient high-quality data, and training methods that remain effective at larger scales, rather than by adding a separate hand-designed solution for every task.**
 
 ## What the phrase names
 
-In his May 2026 conversation with Dwarkesh Patel, Amodei described a document he wrote in 2017 called *The Big Blob of Compute Hypothesis*. The point was not originally about language models alone. GPT-1 had only just appeared. The AI world still had separate tribes for robotics, reinforcement learning, game-playing systems, reasoning systems, and language models.
+Amodei traces the hypothesis to an internal document he wrote in 2017. He discussed it publicly with Dwarkesh Patel in 2023 and returned to it in their February 2026 conversation.[1][2] It was not limited to language models. It concerned learning systems across fields such as robotics, game-playing, and language.
 
-The hypothesis applied across these domains. Amodei expected systems able to absorb larger useful amounts of compute without becoming unstable to outperform more bespoke methods that did not scale as well.
+The central comparison is between methods that can make productive use of increasing computation and specialized methods that do not scale as well. It is not a claim that buying more processors, by itself, produces intelligence.
 
-Amodei lists the ingredients roughly as:
+In the later interview, Amodei identifies several ingredients:
 
-1. raw compute;
-2. quantity of data;
-3. quality and breadth of data distribution;
-4. training duration;
-5. an objective function that can scale very far;
-6. numerical conditioning;
-7. numerical stability.
+- **Computation:** the processing resources available for training.
+- **Data:** enough examples, of sufficient quality and breadth, for the system to learn beyond a narrow task.
+- **Training time:** how long the learning process runs.
+- **A scalable objective:** a training goal that remains useful as training expands, such as predicting text or learning to accomplish tasks from rewards.
+- **Numerical conditioning and stability:** keeping the calculations well-behaved enough for learning to continue reliably.
 
-The last two conditions determine whether a large training run remains usable. Computation must pass through the system without exploding, collapsing, or drifting into uselessness. Amodei describes the desired flow as *laminar*.
+These ingredients work together. More computation may accomplish little if the data are poor, the training goal is unsuitable, or the calculations become unstable.
 
 ## Why it matters
 
-The hypothesis resembles Richard Sutton's *Bitter Lesson*, which argues that general methods able to use increasing computation tend to outperform methods built mainly from human domain knowledge. The Big Blob formulation adds the engineering conditions needed to apply computation at scale.
+The hypothesis resembles Richard Sutton's *The Bitter Lesson*: general methods that exploit increasing computation have repeatedly overtaken approaches built around human knowledge of a particular problem.[3] Amodei's account emphasizes the data and engineering conditions that make such scaling possible.
 
-Compute by itself is insufficient. The hypothesis also requires data, objectives, architecture, training procedure, numerical stability, and the engineering discipline to keep a run operating. Its stronger claim is that capability will continue to emerge from scale before theory fully explains it.
+In the 2026 interview, he presents both pre-training and reinforcement learning as examples. Pre-training learns patterns from data; reinforcement learning uses rewards to improve performance on tasks. He reports gains from longer reinforcement-learning training and expects broader task coverage to improve generalization. That expectation is part of his argument, not an established guarantee for every task.
 
-This is why Amodei treats both pre-training and reinforcement learning as instances of the same phenomenon. Pre-training was the first public curve. RL is now, in his telling, showing similar log-linear returns on verifiable tasks such as math and code, then expanding outward into broader task distributions.
+The hypothesis helps explain why frontier laboratories invest heavily in chips, data centres, and training runs. They expect additional resources, applied through effective learning methods, to produce capabilities that would be difficult to engineer separately.
 
-## The useful warning
+## What it does not establish
 
-The phrase emphasizes the material and industrial character of this account of intelligence. Progress depends on physical infrastructure and repeatable training processes as well as research insight.
+Measured scaling relationships and predictions about future intelligence are different claims. In his 2023 interview, Amodei distinguishes the relatively predictable improvement of aggregate training measures from the harder problem of predicting when a particular ability will appear.[1]
 
-If the hypothesis is right, frontier capability can continue advancing through more compute, better data, scalable objectives, and sufficient engineering stability. If returns flatten, laboratories may commit very large resources to an approach with declining gains.
+Better training performance does not by itself establish dependable behavior, alignment with human intentions, or commercial profitability. Nor does the hypothesis make architecture and algorithmic research irrelevant: a better method can change how effectively computation is used.
 
-The hypothesis is not proven in its strongest form. It is nevertheless an important operating belief among frontier laboratories and helps explain large investments in chips, data centres, power, and training runs. Its economic effects are therefore observable even while its technical limits remain uncertain.
+The unresolved question is how far these gains will continue, on which tasks, and at what cost.
 
-## The missing wall socket
+## The physical requirements
 
-The blob sounds abstract but requires chips, memory, packaging, data centres, cooling, transformers, substations, permits, capital, and electricity. Cloud computation depends on physical facilities and power contracts.
+The computation requires chips, memory, data centres, cooling, grid connections, and electricity. Expanding it also requires capital, equipment, permits, and construction time.
 
-This is where Amodei's compute framing meets arguments about power and data-centre supply. The possible gains from more compute depend on whether powered infrastructure can be financed, permitted, built, and operated.
+A laboratory may expect useful gains from a larger training run yet be unable to secure the powered infrastructure or financing to carry it out. Technical potential and economic feasibility are separate questions.
 
 ## See also
 
@@ -62,6 +60,14 @@ This is where Amodei's compute framing meets arguments about power and data-cent
 - [The CERN Alternative](cern-alternative.md)
 - [Country of Geniuses in a Data Center](country-of-geniuses-in-a-data-center.md)
 
+## Sources
+
+[1] Dwarkesh Patel, [conversation with Dario Amodei (2023)](https://www.dwarkesh.com/p/dario-amodei), especially the opening discussion of scaling, predictability, and its limits.
+
+[2] Dwarkesh Patel, [conversation with Dario Amodei (February 2026)](https://www.dwarkesh.com/p/dario-amodei-2), opening section, “What exactly are we scaling?” Amodei's recollection combines a 2017 document date with a reference to GPT-1 having appeared; this entry retains his date for the document without reproducing that inconsistent chronology.
+
+[3] Richard Sutton, [*The Bitter Lesson*](http://www.incompleteideas.net/IncIdeas/BitterLesson.html), March 13, 2019.
+
 ---
 
-*Drafted May 16, 2026, from Dario Amodei's May 2026 conversation with Dwarkesh Patel, especially the section in which Amodei describes his 2017 document, "The Big Blob of Compute Hypothesis."*
+*Originally drafted May 16, 2026. Revised October 3, 2026, to clarify the definition, correct the interview attribution, and distinguish observed scaling from predictions.*
