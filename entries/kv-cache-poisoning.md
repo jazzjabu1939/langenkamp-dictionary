@@ -4,8 +4,8 @@ kind: glossary
 title: "KV Cache Poisoning"
 permalink: /entries/kv-cache-poisoning/
 date: 2026-05-09
-last_revised: 2026-09-12
-summary: "The Dictionary's metaphor for error compounding when flawed output remains in the context used for later generation; not a corruption of the KV cache itself."
+last_revised: 2026-10-03
+summary: "Context contamination, formerly described here as KV cache poisoning; distinguished from actual attacks on KV cache reuse."
 published: true
 ---
 
@@ -13,40 +13,43 @@ published: true
 
 ## In one sentence
 
-**KV cache poisoning is the Dictionary's metaphor for error compounding when a model's flawed output remains in the context used for later generation. It is not a claim that the cache itself has been corrupted.**
+**This Dictionary originally used “KV cache poisoning” as a metaphor for context contamination: earlier errors remain in a model's working context and influence later answers. Context contamination is the more accurate name for that phenomenon.**
 
-This error propagation can occur even with KV caching disabled: the problem is misleading context, not the caching mechanism.
+The existing title and address are retained so earlier references remain usable. The metaphor must be distinguished from security attacks that actually exploit cached model state.
 
-## What the KV cache is
+## Context contamination
 
-When a language model generates text, it need not recompute all earlier attention keys and values for every new token. During inference, a KV cache stores those tensors and reuses them for later tokens. The cache is an efficiency mechanism: it faithfully represents the processed context according to the model. It does not judge whether that context is true, useful, or well designed.
+If a conversation contains a faulty premise, incorrect code, or a misleading plan, later responses may inherit it. The model may patch details while preserving the original mistake. This can happen even when KV caching is disabled: the problem is the material being used as context, not the cache mechanism.
 
-## What the metaphor names
+Models can also correct earlier work. A clear statement of the defect, a failing test, or a return to a verified checkpoint may be enough. Starting a new session can help when the transcript is dominated by misleading material, but it does not guarantee a better answer.
 
-If a model produces a faulty premise, poor architecture, or incorrect block of code and the conversation continues from that draft, the flawed material remains part of the transcript. Later tokens may attend to it, and subsequent work may inherit its assumptions. Errors can then compound: a local patch preserves a bad structure, or a critique accepts the draft's framing rather than reconsidering it.
+## What a KV cache does
 
-That is context contamination, not evidence of a damaged cache. Models can sometimes diagnose and repair their own work; sometimes a clear critique, a test failure, or a better specification is enough. Recovery becomes harder when errors interact, when the original framing is misleading, or when the transcript is too long and noisy for the important constraint to remain salient.
+During generation, a language model can store attention keys and values computed for earlier tokens and reuse them rather than recomputing them for each new token. This KV cache makes inference more efficient. It is not a truth check, and it is not the same thing as a saved conversation or long-term memory.[1]
 
-The original entry attributed the effect to cold-start routing in *[Mixture of Experts](/entries/mixture-of-experts/)* models and claimed that the wrong expert clusters poisoned the cache. The available sources do not establish that mechanism. The practical observation does not require it and applies to dense models as well: later work can depend on earlier mistakes.
+## Actual cache-security attacks
 
-## Why this matters in practice
+Security researchers also study attacks on KV reuse. In *HijackKV*, researchers describe how certain position-independent cache-reuse designs can reuse state that encodes an attacker-controlled prefix. A later request can then be influenced even though the attacker's text is absent from that request.[2]
 
-When a session has become anchored to a bad premise, starting again can help because it removes the misleading transcript and rebuilds the cache from a new context. It does not “reset the router” in any demonstrated task-level sense. Often a cheaper remedy is to return to the last sound checkpoint, state the defect explicitly, and provide only the relevant working material.
+That is an attack on a particular cache-reuse design, not simply a model continuing from its own incorrect answer. It does not establish that every KV cache is vulnerable.
 
-*[Incremental Construction](/entries/incremental-construction/)* is a preventive workflow: build a small unit, test it, and checkpoint it before later work depends on it. Its advantage is earlier error detection, not protection against physical cache corruption.
+## Practical response to contaminated context
 
-## Naming boundary
+- Identify the faulty premise rather than repeatedly patching its consequences.
+- Return to the last verified version where possible.
+- Supply the relevant evidence, constraints, and test results.
+- Start again with a smaller, corrected context if the existing conversation remains misleading.
 
-“KV cache poisoning” is not used here as an established machine-learning diagnosis. It is a Dictionary coinage for an operator experience, and the cache language should not be mistaken for a verified explanation of why a particular model failed.
+*[Incremental Construction](/entries/incremental-construction/)* helps by detecting mistakes before later work depends on them. Its benefit does not require a theory about corrupted caches or misrouted experts.
+
+An earlier version attributed the effect to cold-start routing in mixture-of-experts models. The cited practitioner account did not establish that mechanism; that explanation has been withdrawn.
+
+## Sources
+
+[1] Hugging Face, [Caching](https://huggingface.co/docs/transformers/main/en/cache_explanation).
+
+[2] Yichi Zhang et al., [*HijackKV: New Threat in Position-Independent KV Cache Reuse*](https://arxiv.org/abs/2607.19957), 2026.
 
 ## See also
 
 [Sparse Routing](/entries/sparse-routing/) · [Incremental Construction](/entries/incremental-construction/) · [Capability Overhang](/entries/capability-overhang/)
-
-## Sources
-
-- Hugging Face, *Caching*: <https://huggingface.co/docs/transformers/main/en/cache_explanation>
-
----
-
-*Proposed 9 May 2026 after reviewing Protorikis, “The 90's Flame Challenges the Modern MoE Models,” YouTube, 2026. The technical mechanism formerly inferred from that practitioner account has been removed.*

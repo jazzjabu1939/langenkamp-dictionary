@@ -6,13 +6,13 @@ permalink: /entries/flop/
 date: 2026-08-14
 seeded: 2026-08-14
 first_published: 2026-08-14
-last_revised: 2026-09-06
+last_revised: 2026-10-03
 summary: "One floating-point arithmetic operation; the basic counting unit used to estimate an AI workload's numerical computation."
 draft: false
 published: true
 ---
 
-A **FLOP** is a **floating-point operation**: one arithmetic operation — such as an addition or multiplication — performed on numbers represented in floating-point format. In AI, FLOPs are used to estimate how much numerical work is required to train or run a model. Counting conventions must be stated: a fused multiply-add, for example, is often counted as two operations even when hardware executes it as one instruction.
+A **FLOP** is a **floating-point operation**: one arithmetic operation — such as an addition or multiplication — performed on numbers represented in floating-point format. Floating-point formats represent numbers using a significand and an exponent, roughly like scientific notation, with limited precision. In AI, FLOPs are used to estimate how much numerical work is required to train or run a model. Counting conventions must be stated: a fused multiply-add, for example, is often counted as two operations even when hardware executes it as one instruction.
 
 The capitalisation hides an important distinction. **FLOP** is one operation; **FLOPs** is a count of operations; **FLOP/s** (often written **FLOPS**) is operations per second, a measure of computing speed. A training run might require `10^25` FLOPs. A processor might be advertised as capable of `10^15` FLOP/s, or one petaflop. One measures the size of the job; the other measures the machine's theoretical rate of doing it.
 

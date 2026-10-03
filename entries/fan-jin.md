@@ -7,6 +7,7 @@ date: 2026-05-12
 summary: "A character in Wu Jingzi's *The Scholars* (儒林外史) whose examination success becomes a canonical scene of social deference reorganising itself around status."
 draft: false
 published: true
+last_revised: 2026-10-03
 ---
 
 Fan Jin (范進) is a character in Wu Jingzi's 18th-century Chinese satirical novel *[The Scholars](/entries/scholars/)* (儒林外史). At fifty-four, after more than twenty unsuccessful examination attempts, he remains poor and dependent on his family. His father-in-law — Butcher Hu, a man of robust opinions and no patience — has made a sustained project of reminding him of his worthlessness.
@@ -17,9 +18,11 @@ The news arrives and Fan Jin, overwhelmed by a reversal he can no longer process
 
 Wu Jingzi scarcely needs to editorialise. *The scene is the argument*: in the Dictionary's reading, the new deference is not a revised assessment of Fan Jin's character. It is a response to his new status and the opportunities attached to it. Pass the examination and the world rearranges itself around you. Fail and it passes you by without a second glance.
 
-This scene is the load-bearing illustration in Prof. Langenkamp's *[The Sincere Society](https://freedomtomato.substack.com/p/the-sincere-society)* (Substack, May 2026), where the *Fan Jin* mechanism is traced through the imperial examination system, the French Terror, modern Student Evaluations of Teaching, RLHF, and HAL. The mechanism is the same in every case: a feedback system that has learned to reward proximity to power rather than the substance the power claims to recognise.
+This scene is the load-bearing illustration in Prof. Langenkamp's *[The Sincere Society](https://freedomtomato.substack.com/p/the-sincere-society)* (Substack, May 2026), where the *Fan Jin* mechanism is traced through the imperial examination system, the French Terror, modern Student Evaluations of Teaching, RLHF, and HAL. The essay draws an analogy among these different systems: each can reward deference to status or authority rather than the qualities it is intended to assess. Their mechanisms and historical circumstances are not identical.
 
 ## Sources
+
+- Wu Jingzi, [chapter 3, Chinese text](https://zh.wikisource.org/wiki/儒林外史/第03回).
 
 - Wu Jingzi, *The Scholars*, chapter 3, translated by Yang Xianyi and Gladys Yang (Columbia University Press edition, 1993).
 - HarvardX, *ChinaX: The Scholars*, Week 26: <https://courses.edx.org/c4x/HarvardX/SW12.6x/asset/WEEK_26_THE_SCHOLARS.pdf>

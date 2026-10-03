@@ -3,7 +3,7 @@ layout: default
 kind: glossary
 title: "Human Reserved"
 permalink: /entries/human-reserved/
-last_revised: 2026-09-12
+last_revised: 2026-10-03
 date: 2026-08-26
 summary: "Work society deliberately keeps for people even when machines could perform it; this entry extends Bill Gates's proposal to human authority over consequential decisions."
 draft: false
@@ -20,11 +20,11 @@ Human Reserved is one of his proposed answers. It has at least two justification
 
 The first is **human meaning**. Some work carries a relationship that is part of the service itself. Telling a patient that an illness is incurable, caring for someone with Alzheimer's disease, raising a child, judging a citizen, or teaching a young person is not only the delivery of information or the completion of a task. The presence of another person - answerable, vulnerable, and capable of care - belongs to what is being provided.
 
-The second is **social continuity**. A society may reserve work because rapid automation would displace large numbers of people who cannot plausibly be moved into new occupations at the speed the technology permits. This version is less romantic but no less serious. A fifty-five-year-old construction worker cannot simply be instructed to become an elder-care worker because an economic model has discovered that care remains labor-intensive.
+The second is **social continuity**. A society may reserve work because rapid automation would displace large numbers of people who cannot plausibly be moved into new occupations at the speed the technology permits. This version is less romantic but no less serious. Moving workers into new occupations requires time, training, suitable opportunities, and attention to their circumstances.
 
 ## The educational reserve
 
-Education is one of Gates's clearest mixed cases. He does not argue that AI should be banned from schools or universities. His preferred arrangement is a human-led system in which educators use AI to extend what they can do.[^guardian] The teacher remains in charge; the machine enlarges the teacher's reach.
+Gates raises concerns about AI's effects on learning.[^guardian] The Dictionary's proposed application is a human-led system in which educators can use AI while retaining responsibility for consequential judgments. This does not require reserving every educational task for people.
 
 That distinction is more useful than *AI versus no AI*. Many educational tasks do not need to be reserved. AI can generate practice questions, translate instructions, explain a concept another way, simulate an opposing argument, help a student rehearse, summarize a meeting, or provide rapid low-stakes feedback. Refusing those capabilities would preserve work without necessarily preserving education.
 
@@ -33,8 +33,6 @@ The stronger candidate for reservation is **authority**. A machine may assist wi
 This is the important move in the term. What is reserved is not always the entire occupation. It may be the decision point inside it.
 
 An instructor might use AI to compare a paper against a rubric, locate passages that deserve attention, or draft possible comments. But the grade remains Human Reserved because a grade is not merely a prediction of what a typical marker might assign. It is an institutional judgment made in someone's name. The person must be able to explain it, revise it, and accept responsibility for its consequences.
-
-The distinction became unusually concrete in the week Gates published his essay. A study of fifty undergraduate bioscience essays found that two versions of ChatGPT did not reliably reproduce human marks. Lower-scoring essays were often inflated, stronger essays were sometimes marked down, and one AI-human difference reached forty points on a hundred-point scale.[^grading] The study is small and human marking is not perfectly consistent either. Its useful lesson is narrower: repeated machine consistency is not the same as valid educational judgment.
 
 ## The critical-thinking problem
 
@@ -62,7 +60,7 @@ The category therefore needs more than affection for people. It needs answers to
 
 In education, the most defensible answer is usually not *human only*. It is **human authority, AI extension, and visible responsibility**. The person at the decision point may use powerful tools. The institution should still be able to name who judged, who can explain, and who is responsible.
 
-That is the educational meaning of Human Reserved: not a fence around every classroom task, but a protected space around the human acts that make education more than information delivery.
+That is the educational meaning of Human Reserved: preserving human responsibility for consequential judgments while allowing useful assistance.
 
 ## See also
 
@@ -76,4 +74,3 @@ That is the educational meaning of Human Reserved: not a fence around every clas
 [^gates]: Bill Gates, *The turbulent AI era is here. The choices we make are critical*, Gates Notes, August 26, 2026. <https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make>
 [^axios]: Ina Fried, *Bill Gates wants to keep some jobs off-limits to AI*, Axios, August 26, 2026. <https://www.axios.com/2026/08/26/bill-gates-wants-to-keep-some-jobs-off-limits-to-ai>
 [^guardian]: *Bill Gates calls for 'human-reserved' jobs in face of AI takeover*, *The Guardian*, August 26, 2026. <https://www.theguardian.com/technology/2026/aug/26/bill-gates-human-reserved-jobs-ai-takeover>
-[^grading]: William Kay et al., *Can generative artificial intelligence mark undergraduate essays?*, *Assessment & Evaluation in Higher Education*, 2026; discussed in *Times Higher Education*, August 25, 2026. <https://www.timeshighereducation.com/news/ai-tends-mark-students-essays-higher-humans-study>

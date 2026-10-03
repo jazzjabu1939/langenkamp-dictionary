@@ -3,7 +3,7 @@ layout: default
 kind: essay
 title: "Agent Health"
 permalink: /entries/agent-health/
-last_revised: 2026-09-12
+last_revised: 2026-10-03
 date: 2026-08-17
 summary: "The operational condition of an AI agent as produced by the model and the environment that tells it what is true, current, permitted, and important."
 draft: false
@@ -26,7 +26,7 @@ But an agent is not only a model. It is a model inside a **harness**: the surrou
 
 A capable model placed inside a disordered harness can become jumpy, over-compliant, forgetful, silent at the wrong moment, or faithfully wrong. It may be obeying an obsolete instruction perfectly. It may surface an old task because no one marked it complete. It may repeat a failed scheduled job because the job still exists and its failure is invisible. It may read a project archive as a current dashboard and conclude that everything matters now.
 
-The output looks like an intelligence failure. The cause is often an environmental one.
+The output looks like an intelligence failure. The cause may lie in the model, its environment, or their interaction.
 
 ## What health means here
 
@@ -46,7 +46,7 @@ These properties are observable. They can be tested. They also depend on more th
 
 ## The four layers of operational health
 
-**Instruction health** means that authority is ranked and legible. Current instructions override superseded ones. A note written three months ago does not remain sovereign merely because it is still on disk.
+**Instruction health** means that authority is ranked and legible. Instructions are interpreted by their authority and scope, with recency used to resolve updates at the same authority level. A newer low-authority note does not override a governing instruction. Historical records remain evidence of the past, not automatic instructions for the present.
 
 **Memory health** means that memory, history, dashboards, and project records have different jobs. Curated memory carries durable facts. History records what happened. Dashboards describe what is active now. When these functions are mixed, information remains available but loses reliable status.
 

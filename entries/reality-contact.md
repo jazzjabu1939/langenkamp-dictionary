@@ -6,8 +6,8 @@ permalink: /entries/reality-contact/
 date: 2026-09-07
 seeded: 2026-05-23
 first_published: 2026-09-07
-last_revised: 2026-09-07
-summary: "The practical capacity of a person or AI system to keep internal claims corrigible by external evidence, other observers, and consequences."
+last_revised: 2026-10-03
+summary: "The practical capacity of a person or AI system to keep its claims open to correction by external evidence, other observers, and observed outcomes."
 published: true
 ---
 
@@ -17,7 +17,7 @@ published: true
 
 ## In one sentence
 
-**Reality contact is the practical capacity of a person or AI system to keep internal claims corrigible by external evidence, other observers, and consequences.**
+**Reality contact is the practical capacity of a person or AI system to keep its claims open to correction by external evidence, other observers, and observed outcomes.**
 
 A claim can feel quite solid while it remains inside a conversation. Then someone opens the source, runs the calculation, calls the person involved, or waits to see what actually happens. Reality contact is the continuing arrangement that allows this encounter to change the claim.
 
@@ -47,27 +47,15 @@ The loop can operate at several scales. A person can check a memory against a ph
 
 Each case asks the same narrow question: **what can still correct us?**
 
-## A working example
+## A hypothetical example
 
-During a Dictionary review in September 2026, another AI system supplied a confident update about [Kimi K3](/entries/kimi-k3/). It described the model as having roughly 50 billion activated parameters and paired a vendor benchmark with a proprietary-model score as evidence of frontier parity.
+An assistant reports that a model has 50 billion active parameters. The reviewer opens the model card and finds a different figure. They check whether the figures refer to the same model version and whether each counts total or active parameters, then correct the report.
 
-The account was current, specific, and plausible. It was also wrong in one important number. Moonshot AI's released model card reports **104 billion activated parameters**. The benchmark table was the vendor's own evaluation, useful evidence but not independent confirmation of parity.
-
-The correction did not come from choosing which AI sounded more authoritative. It came from opening the released artifact, distinguishing a primary description from an independent evaluation, and changing the entry accordingly. The other system contributed the prompt to investigate; the model card supplied the constraint; editorial judgement determined what the evidence could carry.
-
-This is a small example, which is why it is useful. Reality contact usually looks less like revelation than like someone checking the number before the attractive paragraph hardens around it.
-
-## The education-shaped video
-
-In September 2026, the YouTube documentary channel Fern published [“The Death of Educational Content on YouTube”](https://www.youtube.com/watch?v=-Gnrp_caPvo), an investigation of channels that use generative AI to produce faceless historical and explanatory videos at scale. Fern's fact-checkers documented errors in videos presented as educational material, including inaccurate details in a Ku Klux Klan story, misleading claims about what the outside world knew of Auschwitz, and anachronistic objects in a video about Pompeii.
-
-Fern is an interested party: the investigation began because other channels appeared to be copying its thumbnails, visual style, and sometimes whole treatments. Its examples do not establish how common inaccurate AI-generated videos are across YouTube. They demonstrate a narrower problem. The surface signs of education—documentary narration, cinematic animation, confident dates, maps, and archival-looking scenes—can now be produced separately from the research practices that once made those signs costly.
-
-**Education-shaped content** is a useful phrase for this failure. It looks like a lesson but may have no reliable route from claim to source, from error to correction, or from audience challenge to revision. The proper student response is healthy scepticism, not automatic disbelief. Pause on the consequential claim. Look for the named source. Open it. Check whether an independent source agrees. Ask whether the creator corrects errors publicly. Production value is evidence of production value; it is not evidence that the history, science, or business claim is true.
+The model card is a primary description, not an independent evaluation of performance. A benchmark claim would require a separate check of the test, comparison, and reporting source. Consulting a source helps only when the reviewer checks what it actually supports.
 
 ## Why it matters in teaching and management
 
-AI makes coherent first drafts cheap. It does not make the world more obliged to resemble them.
+A coherent first draft still needs to be checked against the evidence.
 
 A student who submits an elegant analysis without checking the case facts has produced a performance artifact. A manager who accepts a sourced-looking agent report without opening its sources has delegated prose production, not judgement. A team that evaluates an agent only on whether its answer sounds right will reward fluency even when the workflow provides no route from claim to evidence.
 
@@ -87,7 +75,7 @@ The same discipline applies to the human operator. A system does not gain realit
 
 **Contact can be painful.** Evidence sometimes removes a cherished explanation without supplying a better one. Corrigibility therefore requires more than access to facts; it requires enough safety, time, and dignity for a person or organisation to revise without being destroyed by the admission.
 
-Reality contact does not promise perfect access to the world. It asks for something more practical: keep a door open through which the world can answer back.
+Reality contact does not guarantee correctness. It provides a way to detect errors and revise conclusions.
 
 ## See also
 
@@ -106,7 +94,5 @@ Reality contact does not promise perfect access to the world. It asks for someth
 - Marcia Johnson and Carol Raye, [“Reality Monitoring”](https://www.semanticscholar.org/paper/Reality-Monitoring-Johnson-Raye/fbb0e70005f860fe0956db074d1fb9137eda5c3e), *Psychological Review* 88 (1981).
 - Patrick Lewis et al., [“Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks”](https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html), *NeurIPS* (2020).
 - Shunyu Yao et al., [“ReAct: Synergizing Reasoning and Acting in Language Models”](https://arxiv.org/abs/2210.03629), ICLR (2023).
-- Moonshot AI, [Kimi K3 model card](https://huggingface.co/moonshotai/Kimi-K3) (2026).
-- Fern, [“The Death of Educational Content on YouTube”](https://www.youtube.com/watch?v=-Gnrp_caPvo), YouTube, 2 September 2026.
 
 </div>
