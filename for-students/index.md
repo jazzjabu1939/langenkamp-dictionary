@@ -10,6 +10,12 @@ permalink: /for-students/
 This page collects course-facing materials that belong near the Dictionary but are written for classroom use: case studies, discussion prompts, and practical guides for working with AI, strategy, judgment, and evidence.
 
 <div class="writing-grid">
+  <a class="writing-card" href="/entries/on-beginning/">
+    <span class="writing-kicker">Start Here · Practical Guide</span>
+    <strong>On Beginning</strong>
+    <span>Set up an AI assistant of your own: understand models and tools, choose a setup for your computer, try a small task, and learn how to save and recover your work.</span>
+  </a>
+
   <a class="writing-card" href="/capstone/#two-ways-to-compete">
     <span class="writing-kicker">Strategy Case · PDF</span>
     <strong>Capstone: Two Ways to Compete</strong>
