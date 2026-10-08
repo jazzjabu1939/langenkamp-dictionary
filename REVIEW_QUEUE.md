@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-10-08 | **Backup Performance Art** | Approved by Matthew; published at `entries/backup-performance-art.md`. Hotel Jerome anecdote and sourced Christchurch recovery context. |
 | 2026-09-22 | **Heartbeasts** | Standalone entry approved and published at `entries/heartbeasts.md`; Dictionary coinage, cross-linked from Harness Hygiene. |
 | 2026-09-21 | **Lab** | Approved by Matthew; definition and 13 international lab profiles published at `entries/lab.md`. |
 | 2026-09-07 | **Reality Contact** | Approved and published at `entries/reality-contact.md`. Defines the practical capacity of a person or AI system to keep internal claims corrigible by external evidence, other observers, and consequences, while distinguishing clinical reality monitoring from AI grounding. |
@@ -180,7 +181,7 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ### **Backup Performance Art** (added May 19, 2026 — from Aspen Jerome night-auditor anecdote)
 
-*Queue addition only; draft not yet written.*
+*Published October 8, 2026 at `entries/backup-performance-art.md`; historical proposal retained below.*
 
 - **Backup Performance Art** — working definition: the comforting ritual of performing backups — inserting the tape, running the job, labeling the media, checking the box — while the real question remains untested: can the system actually be restored? Triggered by Prof's aside about working as a night auditor at the Hotel Jerome in Aspen after college, auditing point-of-sale receipts and running nightly tape backups, while wondering how easy recovery would actually be. Relevant to Time Machine / Recovery Auntie, cron reliability, platform-risk analysis, sovereignty work, and the broader distinction between operational theatre and recoverable systems.
 

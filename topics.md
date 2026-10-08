@@ -237,6 +237,8 @@ The technical and economic case for running AI on hardware you own.
 
 ## Operations & economics
 
+- [Backup Performance Art](/entries/backup-performance-art/) — making backups without testing whether they can restore what we need.
+
 The ongoing reality of running an agent in production — the costs, the meters, and the feelings practitioners develop about them.
 
 - [Token burn](entries/token-burn.md) — the cost-rate concept. *What is it costing?*
