@@ -7,7 +7,7 @@ permalink: /newsletter/
 
 # AI in Higher Education Newsletter
 
-*A weekly brief for the Management Department at the Isenberg School of Management, University of Massachusetts Amherst. Written by Matthew D. Langenkamp / 雷邁德, with research assistance from Thea 🪻✨. Issued most Fridays, occasionally Saturdays.*
+*A weekly brief for the Management Department at the Isenberg School of Management, University of Massachusetts Amherst. Written by Matthew D. Langenkamp / 雷邁德, with research assistance from Thea 🪻✨. Published weekly, with occasional changes to the schedule.*
 
 [← Back to the Dictionary](/)
 
@@ -17,13 +17,16 @@ permalink: /newsletter/
 
 A short weekly memo covering AI developments that matter for management education — institutional governance, assessment design, accreditation, the labour market for our graduates, and the technologies our students are using. The audience is faculty colleagues. The voice is operator's: peer-to-peer, lightly ironic, generous with uncertainty, written from inside the work rather than at a distance from it.
 
-Each issue runs five to seven items, each anchored to a source we can cite, with a short note on why it matters specifically for an Isenberg or AACSB-accredited business-school audience. The aim is to be useful, not exhaustive.
+The current format opens with a short executive summary and a linked Reading List, followed by fuller coverage of selected articles, one closing paragraph on implications for Isenberg, and numbered sources. Assignment design and university policy are recurring interests. Earlier issues retain their original format.
 
 ---
 
 ## Archive
 
 <!-- NEWSLETTER_ARCHIVE_START -->
+- **[October 7, 2026](2026-10-07/)** · Vol. 35 - Assignments, AI Use, and University Policy
+- **[September 25, 2026](2026-09-25/)** · Vol. 34 - Judgment in the AI University
+- **[September 18, 2026](2026-09-18/)** · Vol. 33 - AI Permission and Evidence of Learning
 - **[September 7, 2026](2026-09-07/)** · Vol. 32 - The End of the Single AI Policy
 - **[September 1, 2026](2026-09-01/)** · Vol. 31 - The First-Week AI Reset
 - **[August 26, 2026](2026-08-26/)** · Vol. 30 - What Should Remain Human?

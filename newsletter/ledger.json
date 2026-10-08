@@ -153,6 +153,46 @@
       "title": "What Should Remain Human?",
       "source": "dept-memos/2026-08-26-education-ai-brief.md",
       "site_file": "newsletter/2026-08-26.md"
+    },
+    {
+      "volume": 31,
+      "date": "2026-09-01",
+      "status": "published",
+      "title": "The First-Week AI Reset",
+      "source": "dept-memos/2026-09-01-education-ai-brief.md",
+      "site_file": "newsletter/2026-09-01.md"
+    },
+    {
+      "volume": 32,
+      "date": "2026-09-07",
+      "status": "published",
+      "title": "The End of the Single AI Policy",
+      "source": "dept-memos/2026-09-07-education-ai-brief.md",
+      "site_file": "newsletter/2026-09-07.md"
+    },
+    {
+      "volume": 33,
+      "date": "2026-09-18",
+      "status": "published",
+      "title": "AI Permission and Evidence of Learning",
+      "source": "dept-memos/2026-09-18-education-ai-brief.md",
+      "site_file": "newsletter/2026-09-18.md"
+    },
+    {
+      "volume": 34,
+      "date": "2026-09-25",
+      "status": "published",
+      "title": "Judgment in the AI University",
+      "source": "dept-memos/2026-09-25-education-ai-brief.md",
+      "site_file": "newsletter/2026-09-25.md"
+    },
+    {
+      "volume": 35,
+      "date": "2026-10-07",
+      "status": "published",
+      "title": "Assignments, AI Use, and University Policy",
+      "source": "dept-memos/2026-10-07-education-ai-brief.md",
+      "site_file": "newsletter/2026-10-07.md"
     }
   ]
 }
