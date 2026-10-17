@@ -125,3 +125,8 @@ When naming an agent component, file, tool, sub-agent, or skill:
 ---
 
 *Related entries: `soul-md.md` (the persona file as a *cheng* artifact), `tool.md` (tool naming as an architectural decision). See also *(maintainer notes, not in this repo)* for the longer running notes this entry distills.*
+
+## Further reading
+
+- [Zhengming (正名)](/entries/zhengming/) — the historical concern with proper names and roles, and our application to actual AI capabilities.
+- [Thea Fleet](/entries/thea-fleet/) — a current example of naming a bounded experimental project so collaborators can remember and communicate its scope.
