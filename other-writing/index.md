@@ -83,6 +83,7 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
 ## Current AI in Higher Education issues
 
 <!-- NEWSLETTER_CURRENT_START -->
+- **[October 19, 2026](/newsletter/2026-10-19/)** · Vol. 36 - REA and the Changing Economics of Software
 - **[October 7, 2026](/newsletter/2026-10-07/)** · Vol. 35 - Assignments, AI Use, and University Policy
 - **[September 25, 2026](/newsletter/2026-09-25/)** · Vol. 34 - Judgment in the AI University
 - **[September 18, 2026](/newsletter/2026-09-18/)** · Vol. 33 - AI Permission and Evidence of Learning
@@ -90,7 +91,6 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
 - **[September 1, 2026](/newsletter/2026-09-01/)** · Vol. 31 - The First-Week AI Reset
 - **[August 26, 2026](/newsletter/2026-08-26/)** · Vol. 30 - What Should Remain Human?
 - **[August 18, 2026](/newsletter/2026-08-18/)** · Vol. 29 - What a Degree Certifies
-- **[August 11, 2026](/newsletter/2026-08-11/)** · Vol. 28 - This Week's Thesis: Adoption Is No Longer the Hard Part
 <!-- NEWSLETTER_CURRENT_END -->
 - **[Full AI in Higher Education archive](/newsletter/)**
 

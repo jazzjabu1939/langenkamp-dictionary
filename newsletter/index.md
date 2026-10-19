@@ -24,6 +24,7 @@ The current format opens with a short executive summary and a linked Reading Lis
 ## Archive
 
 <!-- NEWSLETTER_ARCHIVE_START -->
+- **[October 19, 2026](2026-10-19/)** · Vol. 36 - REA and the Changing Economics of Software
 - **[October 7, 2026](2026-10-07/)** · Vol. 35 - Assignments, AI Use, and University Policy
 - **[September 25, 2026](2026-09-25/)** · Vol. 34 - Judgment in the AI University
 - **[September 18, 2026](2026-09-18/)** · Vol. 33 - AI Permission and Evidence of Learning
