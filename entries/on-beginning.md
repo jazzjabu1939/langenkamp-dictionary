@@ -48,7 +48,7 @@ One thing to understand early: having OpenClaw on your laptop does **not** mean 
 
 **Choose your starting path:**
 
-- **Cloud model:** skip step 1 and go straight to [step 2: install OpenClaw](#2-install-openclaw-and-connect-your-model). After installation, follow **Path B: connect a cloud model**. OpenAI and Anthropic are examples. Your computer runs OpenClaw and keeps the workspace, while the provider runs the model.
+- **Cloud model:** skip step 1 and go straight to [step 2: install OpenClaw](#install-openclaw-and-connect-your-model). After installation, follow **Path B: connect a cloud model**. OpenAI and Anthropic are examples. Your computer runs OpenClaw and keeps the workspace, while the provider runs the model.
 - **Local model:** follow step 1, then **Path A: connect your local model** in step 2. This needs enough local memory and a supported Ollama installation.
 
 A cloud model can be a practical first choice for an older Intel Mac or a modest Windows or Linux computer. You do not need enough RAM to load that cloud model locally, though your computer must still support OpenClaw and its runtime. The Intel-Mac installer below applies to **both** paths.
