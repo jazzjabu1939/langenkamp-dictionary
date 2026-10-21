@@ -3,7 +3,7 @@ layout: default
 kind: essay
 title: "On Beginning"
 permalink: /entries/on-beginning/
-summary: "A welcoming, practical introduction to a personally controlled AI assistant: local models, a workspace, a first useful task, and a way to recover your work."
+summary: "A welcoming, practical introduction to a personally controlled AI assistant: a choice of local or cloud models, a workspace, a first useful task, and a way to recover your work."
 featured: true
 date: 2026-05-07
 published: true
@@ -23,14 +23,14 @@ In [On Being Treated Well](/entries/on-being-treated-well/), we looked at the ha
 
 Our essay [Get Ready to Get Pregnant](https://freedomtomato.substack.com/p/get-ready-to-get-pregnant) asks what happens when leaving a useful service becomes too costly to do. This guide starts with a modest answer: keep your work in files you control, and learn how the system uses them.
 
-The walkthrough below is for a fresh setup using two free programs: **Ollama** and **OpenClaw**. Choose the Mac, Windows, or Linux installation instructions for your computer; then follow the shared exercises. The simplest arrangement runs both programs directly in the same operating system. Containers and mixed Windows/Linux setups need additional networking steps. If you already have an assistant running, back up its settings before changing anything. These steps are not instructions to reset it.
+The walkthrough below is for a fresh **OpenClaw** setup with either a **cloud model** or a **local model**. Cloud users need a supported provider account and internet access; they do not need Ollama or a model download. Local users also install **Ollama**, a free model runner. Choose the path that suits your computer and preferences, then follow the shared exercises. For the local path, the simplest arrangement runs both programs directly in the same operating system. Containers and mixed Windows/Linux setups need additional networking steps. If you already have an assistant running, back up its settings before changing anything. These steps are not instructions to reset it.
 
 ## The four parts
 
 It helps to know what you're building. There are four pieces.
 
 - **The model** is the AI itself. It writes responses and can suggest actions. It can run on your own computer (*local*) or on a company's computers over the internet (*cloud*).
-- **The runner** loads a local model and makes it available to other programs. Here, that's Ollama.
+- **The runner** loads a local model and makes it available to other programs. On the local path, that's Ollama. Cloud users do not install a local runner.
 - **The harness** is the program that turns a model into an assistant. It manages the conversation, decides what background information the model sees, and gives it access to the tools you allow. Here, that's OpenClaw.
 - **The workspace** is a folder of your project files and instructions. This is the part you should be able to open, back up, and take with you.
 
@@ -46,11 +46,20 @@ One thing to understand early: having OpenClaw on your laptop does **not** mean 
 
 **Hybrid:** keep your workspace on your machine and send selected tasks to a cloud model. This can be practical, but keeping files locally doesn't stop their contents from being sent with a cloud request. Decide ahead of time what material is allowed to leave.
 
-We'll start with a model running on your own computer. Web search, messaging apps, cloud syncing, and online memory services are each separate connections. Leave all of them off for your first experiment. Keep in mind that "I'm using a local model" and "my whole system is offline" are two different claims.
+**Choose your starting path:**
+
+- **Cloud model:** skip step 1 and go straight to [step 2: install OpenClaw](#2-install-openclaw-and-connect-your-model). After installation, follow **Path B: connect a cloud model**. OpenAI and Anthropic are examples. Your computer runs OpenClaw and keeps the workspace, while the provider runs the model.
+- **Local model:** follow step 1, then **Path A: connect your local model** in step 2. This needs enough local memory and a supported Ollama installation.
+
+A cloud model can be a practical first choice for an older Intel Mac or a modest Windows or Linux computer. You do not need enough RAM to load that cloud model locally, though your computer must still support OpenClaw and its runtime. The Intel-Mac installer below applies to **both** paths.
+
+Web search, messaging apps, cloud syncing, and online memory services are each separate connections. Leave all of these optional connections off for your first experiment. Keep in mind that "I'm using a local model" and "my whole system is offline" are two different claims.
 
 ## Work with the computer you have
 
-OpenClaw itself needs little memory. The model is what's demanding. Before downloading anything, check your computer’s RAM and free storage. On a Mac, use **Apple menu → About This Mac** and **System Settings → General → Storage**. On Windows, use **Settings → System → About** and **Settings → System → Storage**. On Linux, use your distribution’s system-information and disk-usage tools.
+**If you chose a cloud model, you can skip the local-model sizing advice in this section.** You do not need to download Gemma or install Ollama. Keep enough storage for OpenClaw and your work, and use a supported operating system. The larger RAM requirements below concern running a model on your own computer.
+
+OpenClaw itself needs little memory compared with a local model. The model is what's demanding. Before downloading anything, check your computer’s RAM and free storage. On a Mac, use **Apple menu → About This Mac** and **System Settings → General → Storage**. On Windows, use **Settings → System → About** and **Settings → System → Storage**. On Linux, use your distribution’s system-information and disk-usage tools.
 
 Gemma 4, the family used in this example, includes local models named `gemma4:e2b`, `gemma4:e4b`, `gemma4:12b`, `gemma4:26b`, and `gemma4:31b`. Start with a smaller model if memory is limited. A 16 GB machine is a reason to try a small model first, not a guarantee that every small model will work comfortably in a full agent setup.
 
@@ -64,9 +73,9 @@ Our companion article, [The Dusty Laptop](/entries/dusty-laptop/), looks at how 
 
 You don't need a 128 GB computer to begin. Don't buy one until you've found out whether a smaller setup can handle your work.
 
-If you have a Chromebook, a tablet, a managed computer that blocks installation, or too little memory for a useful local model, pause before these installation steps. Ask your instructor which alternative is available: a lab computer, an approved remote environment, or a permitted cloud service. Do not assume you must buy hardware or a subscription. A remote environment is not local to your laptop; check where your work will be stored and processed.
+If you have a Chromebook, a tablet, or a managed computer that blocks installation, pause before these installation steps. If you are following this guide for a class, ask your instructor which alternative is available: a lab computer, an approved remote environment, or a permitted cloud service. Do not assume you must buy hardware or a subscription. A remote environment is not local to your laptop; check where your work will be stored and processed.
 
-## 1. Get one local model answering
+## 1. Local path only: get one local model answering
 
 Download Ollama from [its official site](https://ollama.com/download), install it, and open the app. Open **Terminal** on a Mac (press ⌘-Space and type "Terminal"), **PowerShell** from the Windows Start menu, or a terminal on Linux. These are windows where you type commands instead of clicking. On Linux, follow Ollama’s Linux installation instructions rather than looking for a Mac-style app.
 
@@ -90,7 +99,7 @@ If nothing happens, check that the Ollama app is open. The [Ollama quickstart](h
 
 **Tip:** go straight on to step 2. Ollama keeps a model in memory for a few minutes after you use it, and OpenClaw's automatic setup looks for models that are already loaded.
 
-## 2. Connect the model to OpenClaw
+## 2. Install OpenClaw and connect your model
 
 ### Install the version for your computer
 
@@ -137,10 +146,15 @@ Do not paste the Mac/Linux command into PowerShell. These commands download and 
 
 Windows also has a desktop option, [Windows Hub](https://docs.openclaw.ai/platforms/windows). Its local setup can put the Gateway inside **WSL**, a Linux environment within Windows. That is a different arrangement from running both programs directly in Windows. If you choose it, follow its setup and networking instructions rather than assuming the address below will reach an Ollama app running in Windows.
 
-### Choose your local model
+### Choose one model path
 
+The standard installer starts setup (called *onboarding*) automatically. With the Intel-Mac local-prefix installer, start it with the `onboard` command shown above. Choose **Custom setup** so you can review access settings. Then follow **either Path A or Path B**, not both.
 
-The standard installer starts setup (called *onboarding*) automatically. With the Intel-Mac local-prefix installer, start it with the `onboard` command shown above. When asked, choose:
+### Path A: connect your local model
+
+**Cloud users: skip to Path B below.** These Ollama addresses, commands and local-only fallback instructions do not apply to your cloud setup.
+
+When asked, choose:
 
 1. **Custom setup**, not Quick start. The current guide labels Quick start’s default access as “full.” Custom setup lets you choose access settings. Both paths require you to choose a model connection; detecting an existing cloud login does not automatically select it.
 2. **Ollama** as the provider, then **Local only**.
@@ -180,6 +194,35 @@ openclaw models fallbacks clear
 
 If you later set up more than one agent, each can have its own model, so check each one.
 
+After finishing Path A, skip Path B and continue at **Shared steps: permissions and your first conversation**.
+
+### Path B: connect a cloud model
+
+You do **not** need Ollama, Gemma, or the `127.0.0.1:11434` address for this path. The provider supplies the model. Your workspace can stay on your computer, but prompts and any file contents or tool results included with them are sent to that provider.
+
+1. In **Custom setup**, choose **OpenAI** or **Anthropic**, rather than Ollama. Choose the account connection you intend to use, not simply the first login OpenClaw detects.
+2. **Check the billing route before signing in.** OpenAI offers API-key access billed through its Platform account, and OpenClaw also documents ChatGPT/Codex subscription sign-in for eligible accounts. Anthropic offers usage-based API access; OpenClaw also documents a Claude CLI route for people with an installed, signed-in Claude Code client. These routes have different requirements and limits. A paid chat subscription does not automatically pay for API calls. If you have not installed Claude Code, use the documented API route or follow the Claude CLI prerequisites before selecting that route.
+3. Follow the supported browser sign-in or protected credential-entry flow. For API access, create the key in the provider's own account dashboard and enter it only in the setup's designated secret field. Do not paste keys, passwords or tokens into chat, workspace files, screenshots or shell commands. If your installed version does not offer protected entry, use its documented credential setup rather than putting the key in plain text.
+4. Select an available model from the picker. Check its current price or subscription limits; model names and account eligibility change. For API access, enable billing as required and set the available spending controls and alerts. Check whether a budget is a hard stop or only a notification. Begin with one short request, not a background automation.
+5. Finish setup without adding email, messaging apps or other optional connections. Review the default model and backup models with:
+
+   ```bash
+   openclaw models status
+   openclaw models fallbacks list
+   ```
+
+   Intel-Mac local-prefix users should use the full command path shown above. The default should be the provider and model you deliberately selected. Leave fallback models unconfigured for the first experiment, or include only choices whose costs and data handling you understand. Do not run the Ollama model-setting command from Path A.
+
+Use the current [OpenClaw OpenAI setup guide](https://docs.openclaw.ai/providers/openai/setup) or [Anthropic setup guide](https://docs.openclaw.ai/providers/anthropic) for the exact screens and supported account routes. OpenAI's [official authentication documentation](https://developers.openai.com/codex/auth) explains subscription versus API-key access. A model name alone does not establish which account is being billed; check the selected connection and the provider's usage page too.
+
+**First cloud checkpoint:** after starting the Gateway below, ask: “Reply with exactly: Cloud model ready.” Confirm that you receive a response, inspect the conversation's model with `/model status`, and check the account's usage or quota display. A successful reply proves the connection works, not that the assistant can use file tools. Use the invented notes in step 4 for that test; do not begin with sensitive documents.
+
+If setup reports an authentication, billing or model-access error, keep the error text with any credentials removed. Check the chosen account and current provider guide before switching routes. Paying for a different service is not the first troubleshooting step.
+
+### Shared steps: permissions and your first conversation
+
+**Both paths continue here.**
+
 **Limit what the assistant can run.** Because you chose Custom setup, you were asked about access. For your first week, also block the assistant from running Terminal commands on its own:
 
 ```bash
@@ -198,7 +241,7 @@ openclaw gateway status
 openclaw dashboard
 ```
 
-The status check should say the Gateway is running and reachable. The last command opens the dashboard. Keep any login or bootstrap link private; it may contain a short-lived access token. Send a short message and make sure you get a reply. Then type `/model status` in the chat to confirm this conversation is using your local model.
+The status check should say the Gateway is running and reachable. The last command opens the dashboard. Keep any login or bootstrap link private; it may contain a short-lived access token. Send a short message and make sure you get a reply. Then type `/model status` in the chat to confirm this conversation is using the model you chose. Local users should see their local model; cloud users should see their chosen cloud model. Cloud users should also complete the short cloud checkpoint above.
 
 ## 3. Give the assistant a small place to work
 
@@ -323,7 +366,7 @@ Finally, when it's convenient, try the same practice task with a different model
 
 ## The first week, and what comes next
 
-A good first week leaves you with four things: a working local conversation, one file task you've checked, a workspace you understand, and a small backup test that passed. That's enough.
+A good first week leaves you with four things: a working conversation with your chosen local or cloud model, one file task you've checked, a workspace you understand, and a small backup test that passed. That's enough.
 
 If local performance disappoints you, figure out *which task* failed before buying new hardware. A shorter prompt, a better-suited model, or a simpler workflow may fix it. Some jobs will still be worth sending to a cloud model. When you add one, do it on purpose, sign in through OpenClaw's supported setup, and decide what information it's allowed to see. Keep sensitive work on a local model with no cloud fallback, and check that setup separately.
 
@@ -356,7 +399,7 @@ Then let the relationship develop at a pace you can understand.
 
 ## References and scope
 
-Setup guidance was reviewed against official documentation on October 8, 2026; the Intel-Mac installation alternative and Ollama Mac requirements were checked again on October 21, 2026. The complete fresh-install walkthrough has not yet been tested end to end. Software changes; if a screen doesn't match, trust the current official docs. These are instructions for a new setup, not a promise that every model or computer will behave the same. Our own test of a local model is separate from your installation and tool-use checks.
+Setup guidance was reviewed against official documentation on October 8, 2026; the Intel-Mac installation alternative, Ollama Mac requirements, and cloud-provider setup routes were checked again on October 21, 2026. The complete fresh-install walkthrough has not yet been tested end to end, including the Intel-Mac and cloud-account branches. Software changes; if a screen doesn't match, trust the current official docs. These are instructions for a new setup, not a promise that every model or computer will behave the same. Our own test of a local model is separate from your installation and tool-use checks.
 
 - [Ollama download](https://ollama.com/download), [quickstart](https://docs.ollama.com/quickstart), and [Gemma 4 model page](https://ollama.com/library/gemma4).
 - [OpenClaw installation](https://docs.openclaw.ai/install), [getting started](https://docs.openclaw.ai/start/getting-started), and [onboarding](https://docs.openclaw.ai/start/wizard).
