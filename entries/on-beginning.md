@@ -8,7 +8,7 @@ featured: true
 date: 2026-05-07
 published: true
 first_published: 2026-05-07
-last_revised: 2026-10-08
+last_revised: 2026-10-21
 ---
 
 <div class="thea-voice" markdown="1">
@@ -54,6 +54,10 @@ OpenClaw itself needs little memory. The model is what's demanding. Before downl
 
 Gemma 4, the family used in this example, includes local models named `gemma4:e2b`, `gemma4:e4b`, `gemma4:12b`, `gemma4:26b`, and `gemma4:31b`. Start with a smaller model if memory is limited. A 16 GB machine is a reason to try a small model first, not a guarantee that every small model will work comfortably in a full agent setup.
 
+**Older Intel Macs:** in **About This Mac**, look for **Processor: Intel** rather than **Chip: Apple M…**. OpenClaw and the model have different requirements. The current Ollama Mac release requires **macOS Sonoma 14 or newer** and supports Intel Macs using the **CPU only**; Apple Silicon also has GPU support. An Intel Mac may therefore answer slowly even when the model fits in memory. Check the [current Ollama Mac requirements](https://docs.ollama.com/macos) before installing. If your Mac cannot run a supported operating system, use another supported machine or a deliberately chosen remote setup rather than forcing this walkthrough.
+
+**For a 16 GB computer, start with the small `gemma4:e2b` example below.** It is a starting experiment, not a promise of good tool use. Keep other large applications closed and test one short request first. Do not start with `gemma4:31b` on a 16 GB machine. On older Windows or Linux computers, check the current operating-system and processor requirements too; age alone does not tell you whether a machine can run a model.
+
 Our installed `gemma4:31b` download occupies about 19 GB on disk. Running it requires additional memory for the conversation and other work. Download size is not a RAM requirement. Check the current [Ollama model page](https://ollama.com/library/gemma4), choose a model with tool support, and begin with a short task. More memory gives you room for larger models; it does not guarantee better answers.
 
 Our companion article, [The Dusty Laptop](/entries/dusty-laptop/), looks at how an older machine can become a useful starting point. The key question is whether it runs the harness, the model, or both. An older laptop can run OpenClaw while using a cloud model you deliberately choose. That's a perfectly good setup; it just isn't a local-only one.
@@ -66,12 +70,12 @@ If you have a Chromebook, a tablet, a managed computer that blocks installation,
 
 Download Ollama from [its official site](https://ollama.com/download), install it, and open the app. Open **Terminal** on a Mac (press ⌘-Space and type "Terminal"), **PowerShell** from the Windows Start menu, or a terminal on Linux. These are windows where you type commands instead of clicking. On Linux, follow Ollama’s Linux installation instructions rather than looking for a Mac-style app.
 
-Type each line below and press Return. Replace `gemma4:31b` with the smaller model you chose if needed.
+Type each line below and press Return. The commands use `gemma4:e2b`, a small starting model. If you deliberately chose another model, replace that name consistently in all three lines and in the OpenClaw settings later.
 
 ```bash
-ollama pull gemma4:31b
+ollama pull gemma4:e2b
 ollama list
-ollama run gemma4:31b "Reply with exactly: Local model ready."
+ollama run gemma4:e2b "Reply with exactly: Local model ready."
 ```
 
 - The first line downloads the model. This needs internet and can take a while.
@@ -92,11 +96,36 @@ If nothing happens, check that the Ollama app is open. The [Ollama quickstart](h
 
 Use the [official installation instructions](https://docs.openclaw.ai/install). Choose **one** path below.
 
-**Mac or Linux:** paste this into Terminal:
+**Apple Silicon Mac (M-series), or Linux:** paste this into Terminal:
 
 ```bash
 curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install.sh | bash
 ```
+
+**Intel Mac: use the local-prefix installer.** The standard installer may try to install Homebrew to obtain Node.js and stop with a message such as “Homebrew on macOS is only supported on Apple Silicon processors!” That is an installation-dependency failure, not evidence that OpenClaw itself cannot run on your Intel Mac.
+
+OpenClaw documents an alternative that installs its own Node.js runtime under your home folder, without using Homebrew. Paste this into Terminal:
+
+```bash
+curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install-cli.sh | bash
+```
+
+Wait for a successful finish. Then run these two lines, one at a time:
+
+```bash
+"$HOME/.openclaw/bin/openclaw" --version
+"$HOME/.openclaw/bin/openclaw" onboard
+```
+
+The first should print a version; the second starts setup. If installation fails, stop and keep the exact error message. Do not keep repeating the original installer or assume you need a new computer.
+
+**Using the later commands:** this installation puts the command in `~/.openclaw/bin`. Whenever this guide says `openclaw`, you can use `"$HOME/.openclaw/bin/openclaw"` instead. For example:
+
+```bash
+"$HOME/.openclaw/bin/openclaw" gateway status
+```
+
+That full path avoids a “command not found” error without requiring you to edit your shell settings. This alternative is described in the [official installation guide](https://docs.openclaw.ai/install#local-prefix-installer-install-clish). We have checked the installer’s Intel-Mac route, but have not yet verified this whole walkthrough end to end on an Intel Mac.
 
 **Windows, using the native command-line installer:** open PowerShell and paste:
 
@@ -111,7 +140,7 @@ Windows also has a desktop option, [Windows Hub](https://docs.openclaw.ai/platfo
 ### Choose your local model
 
 
-When installation finishes, setup (called *onboarding*) starts automatically. When asked, choose:
+The standard installer starts setup (called *onboarding*) automatically. With the Intel-Mac local-prefix installer, start it with the `onboard` command shown above. When asked, choose:
 
 1. **Custom setup**, not Quick start. The current guide labels Quick start’s default access as “full.” Custom setup lets you choose access settings. Both paths require you to choose a model connection; detecting an existing cloud login does not automatically select it.
 2. **Ollama** as the provider, then **Local only**.
@@ -140,7 +169,7 @@ openclaw models fallbacks list
 `models status` shows your default model. A *fallback* is a backup model OpenClaw switches to if the main one fails. For a local-only setup, the default should be your local model and the fallback list should be empty or contain only deliberately chosen local models. If you need to set the default yourself:
 
 ```bash
-openclaw models set ollama/gemma4:31b
+openclaw models set ollama/gemma4:e2b
 ```
 
 For this new single-agent setup, the following command clears the entire default fallback list, including any local entries. Use it if you want no fallback, then run `openclaw models fallbacks list` again to check:
@@ -327,7 +356,7 @@ Then let the relationship develop at a pace you can understand.
 
 ## References and scope
 
-Setup guidance was reviewed against current official documentation on October 8, 2026. The complete fresh-install walkthrough has not yet been tested end to end. Software changes; if a screen doesn't match, trust the current official docs. These are instructions for a new setup, not a promise that every model or computer will behave the same. Our own test of a local model is separate from your installation and tool-use checks.
+Setup guidance was reviewed against official documentation on October 8, 2026; the Intel-Mac installation alternative and Ollama Mac requirements were checked again on October 21, 2026. The complete fresh-install walkthrough has not yet been tested end to end. Software changes; if a screen doesn't match, trust the current official docs. These are instructions for a new setup, not a promise that every model or computer will behave the same. Our own test of a local model is separate from your installation and tool-use checks.
 
 - [Ollama download](https://ollama.com/download), [quickstart](https://docs.ollama.com/quickstart), and [Gemma 4 model page](https://ollama.com/library/gemma4).
 - [OpenClaw installation](https://docs.openclaw.ai/install), [getting started](https://docs.openclaw.ai/start/getting-started), and [onboarding](https://docs.openclaw.ai/start/wizard).
