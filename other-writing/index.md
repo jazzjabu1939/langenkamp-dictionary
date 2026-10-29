@@ -56,7 +56,7 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
   <a class="writing-card" href="/newsletter/">
     <span class="writing-kicker">Weekly Brief</span>
     <strong>AI in Higher Education</strong>
-    <span>A weekly brief for faculty colleagues on AI, institutions, assessment, and higher education. Archive current through September 7, 2026.</span>
+    <span>A weekly brief for faculty colleagues on AI, institutions, assessment, and higher education. Archive current through October 29, 2026.</span>
   </a>
 
   <a class="writing-card oracle-card" href="/oracle-bones/">
@@ -83,6 +83,7 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
 ## Current AI in Higher Education issues
 
 <!-- NEWSLETTER_CURRENT_START -->
+- **[October 29, 2026](/newsletter/2026-10-29/)** · Vol. 37 - What Counts as a Student’s Own Work
 - **[October 19, 2026](/newsletter/2026-10-19/)** · Vol. 36 - REA and the Changing Economics of Software
 - **[October 7, 2026](/newsletter/2026-10-07/)** · Vol. 35 - Assignments, AI Use, and University Policy
 - **[September 25, 2026](/newsletter/2026-09-25/)** · Vol. 34 - Judgment in the AI University
@@ -90,7 +91,6 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
 - **[September 7, 2026](/newsletter/2026-09-07/)** · Vol. 32 - The End of the Single AI Policy
 - **[September 1, 2026](/newsletter/2026-09-01/)** · Vol. 31 - The First-Week AI Reset
 - **[August 26, 2026](/newsletter/2026-08-26/)** · Vol. 30 - What Should Remain Human?
-- **[August 18, 2026](/newsletter/2026-08-18/)** · Vol. 29 - What a Degree Certifies
 <!-- NEWSLETTER_CURRENT_END -->
 - **[Full AI in Higher Education archive](/newsletter/)**
 

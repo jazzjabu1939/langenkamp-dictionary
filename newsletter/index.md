@@ -24,6 +24,7 @@ The current format opens with a short executive summary and a linked Reading Lis
 ## Archive
 
 <!-- NEWSLETTER_ARCHIVE_START -->
+- **[October 29, 2026](2026-10-29/)** · Vol. 37 - What Counts as a Student’s Own Work
 - **[October 19, 2026](2026-10-19/)** · Vol. 36 - REA and the Changing Economics of Software
 - **[October 7, 2026](2026-10-07/)** · Vol. 35 - Assignments, AI Use, and University Policy
 - **[September 25, 2026](2026-09-25/)** · Vol. 34 - Judgment in the AI University
