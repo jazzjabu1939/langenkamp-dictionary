@@ -62,6 +62,7 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 Free, open-access, runs in your browser, no tracking.
 
 - **[Consciousness Calculator](tools/consciousness-calculator/)** — see what the closed-tier "free" plan is actually extracting from your consciousness on a per-day, per-week, and per-month basis. Move the slider from *oil filter* (forgettable) to *anti-depressant ad placed next to a Friday-night-loneliness conversation* (sticky, mind-altering) and watch the mispricing gap. Companion to the [Consciousness Calculator entry](entries/consciousness-calculator/) that explains the philosophical frame.
+- **[Capstone Graphic Simulations](capstone/graphic-simulations/)** — three pixel-art teaching models for business-strategy students running the Capsim *Capstone* simulation: plant economics (*The Second Shift*), economies of scale (*Spreading the Overhead*) and the debt spiral (*Big Al Comes Calling*).
 
 ---
 

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Second Shift — Capstone Graphic Simulations — The Langenkamp Dictionary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#14161f; --panel:#1f2330; --ink:#f3f1e8; --muted:#a9adbd; --good:#5be37d; --bad:#ff5a5a; --accent:#ffd166; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:10px 18px; }
+  header h1 { font-size:18px; margin:0; letter-spacing:1px; }
+  header .sub { color:var(--muted); font-size:12px; }
+  button { font:inherit; background:#2d3346; color:var(--ink); border:2px solid #444b63; padding:6px 12px; cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  #stage { position:relative; width:100%; max-width:1600px; margin:0 auto; aspect-ratio: 440 / 200; }
+  canvas { width:100%; height:100%; image-rendering:pixelated; image-rendering:crisp-edges; display:block; }
+  .ov { position:absolute; pointer-events:none; text-align:center; white-space:nowrap; font-weight:700; text-shadow:2px 2px 0 #000; }
+  #sign { color:#fff7d6; text-shadow:none; display:flex; flex-direction:column; justify-content:center; line-height:1.15; }
+  #sign .name { font-size:clamp(10px,1.6vw,26px); }
+  #sign .rates { font-size:clamp(8px,1.05vw,17px); color:#ffd166; }
+  #shift { color:#ffd166; font-size:clamp(8px,1.2vw,18px); }
+  #board { display:flex; flex-direction:column; justify-content:center; text-shadow:none; }
+  #board .lbl { font-size:clamp(7px,0.85vw,14px); color:#9fe0ff; }
+  #board .val { font-size:clamp(12px,2.3vw,38px); }
+  #board .unit { font-size:clamp(7px,0.85vw,14px); color:#cfd3e0; }
+  #invLabel, #truckLabel { font-size:clamp(7px,0.9vw,15px); color:#fff; }
+  #controls { max-width:1600px; margin:0 auto; display:grid; grid-template-columns: 1.25fr 1fr; gap:12px; padding:12px 18px 18px; }
+  .card { background:var(--panel); border:2px solid #343a50; padding:12px 14px; }
+  .card h2 { font-size:14px; margin:0 0 10px; color:var(--accent); letter-spacing:1px; }
+  .row { display:grid; grid-template-columns: 210px 1fr 110px; align-items:center; gap:10px; margin:8px 0; font-size:15px; }
+  .row label { color:var(--muted); }
+  input[type=range] { width:100%; accent-color: var(--accent); }
+  input[type=number], input[type=text], select { width:100%; font:inherit; font-size:15px; background:#11131a; color:var(--ink); border:2px solid #3a4058; padding:4px 6px; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  td { padding:4px 4px; border-bottom:1px dashed #343a50; }
+  td.n { text-align:right; }
+  tr.total td { font-weight:700; border-top:2px solid #5a6080; border-bottom:none; font-size:17px; }
+  .good { color:var(--good); } .bad { color:var(--bad); }
+  .note { color:var(--muted); font-size:12px; line-height:1.45; margin-top:8px; }
+  .pill { display:inline-block; padding:2px 8px; border:2px solid #444b63; margin-right:6px; font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>THE SECOND SHIFT &middot; <span style="color:#a9adbd">PIXEL FACTORY &middot; PLANT &amp; PRODUCTION ECONOMICS</span></h1>
+    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; Capstone Low End segment &middot; presets from Round 2 (2028), Industry CP137618</div>
+  </div>
+  <div>
+    <button id="resetBtn" title="Reload the team's Round 2 figures">Reset team</button>
+    <button id="fsBtn">Full screen</button>
+  </div>
+</header>
+
+<div id="stage">
+  <canvas id="c" width="440" height="200"></canvas>
+  <div class="ov" id="sign"><div class="name" id="signName"></div><div class="rates" id="signRates"></div></div>
+  <div class="ov" id="shift"></div>
+  <div class="ov" id="board"><div class="lbl">PLANT PROFIT / LOSS</div><div class="val" id="boardVal"></div><div class="unit" id="boardUnit"></div></div>
+  <div class="ov" id="invLabel"></div>
+  <div class="ov" id="truckLabel"></div>
+</div>
+
+<div id="controls">
+  <div class="card">
+    <h2>DECISIONS</h2>
+    <div class="row"><label>Team preset</label><select id="preset"></select><span></span></div>
+    <div class="row"><label>Company name</label><input type="text" id="team"><span></span></div>
+    <div class="row"><label>Price per unit</label><input type="range" id="priceR" min="10" max="30" step="0.25"><input type="number" id="price" step="0.25"></div>
+    <div class="row"><label>Production (000 units)</label><input type="range" id="prodR" min="0" step="10"><input type="number" id="prod" step="10"></div>
+    <div class="row"><label>Automation rating</label><input type="range" id="autoR" min="1" max="10" step="0.1"><input type="number" id="auto" step="0.1" min="1" max="10"></div>
+    <div class="row"><label>First-shift capacity (000)</label><input type="range" id="capR" min="100" max="3000" step="50"><input type="number" id="cap" step="50"></div>
+    <div class="row"><label>Expected sales (000 units)</label><input type="range" id="demR" min="0" max="4000" step="10"><input type="number" id="dem" step="10"></div>
+    <div class="row"><label>Inventory on hand (000)</label><input type="range" id="invR" min="0" max="3000" step="10"><input type="number" id="inv" step="10"></div>
+    <div class="row"><label>Material cost / unit</label><input type="range" id="matR" min="3" max="12" step="0.01"><input type="number" id="mat" step="0.01"></div>
+    <div class="note" id="presetNote"></div>
+  </div>
+
+  <div class="card">
+    <h2>PLANT P&amp;L ESTIMATE ($ MILLIONS)</h2>
+    <table id="pl"></table>
+    <div style="margin-top:10px" id="pills"></div>
+    <div class="note">
+      Plant view only: before SG&amp;A (promotion, sales, admin), R&amp;D, interest and taxes. Those come in the scale model.<br>
+      Labor per unit falls about 10% of the automation-1 rate for each automation point (Capstone guide). Units above first-shift capacity use a second shift at +50% labor, up to 2&times; capacity.
+      Depreciation is estimated as capacity &times; ($6 + $4 &times; automation) &divide; 15 years. Inventory carrying cost is 12% of the value of ending inventory.
+      In Capstone, automation and capacity changes take a full year to take effect; here they apply instantly so you can see the result.
+    </div>
+  </div>
+</div>
+
+<script>
+// ---------- Round 2 (2028) Low End data, Industry CP137618 (Section 5, 1:25 MWF) ----------
+// cap/auto = values in effect during Round 2 (from Round 1 Courier "next round" columns).
+// laborObs = Round 2 average labor cost/unit (includes 2nd-shift premium); util = Round 2 plant utilization.
+const PRESETS = [
+  { key:"Andrews", product:"Acre",  price:17.00, mat:6.14, laborObs:8.16,  util:1.25,  auto:5.0, cap:1600, sold:2722, inv:108  },
+  { key:"Baldwin", product:"Bead",  price:21.25, mat:5.67, laborObs:4.43,  util:1.00,  auto:7.0, cap:1400, sold:1283, inv:390  },
+  { key:"Chester", product:"Cedar", price:19.00, mat:6.17, laborObs:6.45,  util:1.707, auto:6.0, cap:1400, sold:2134, inv:244  },
+  { key:"Digby",   product:"Dell",  price:24.00, mat:6.71, laborObs:5.09,  util:1.75,  auto:7.0, cap:1600, sold:783,  inv:2003 },
+  { key:"Erie",    product:"Ebb",   price:22.00, mat:6.13, laborObs:5.13,  util:1.788, auto:7.0, cap:1650, sold:1341, inv:1882 },
+  { key:"Ferris",  product:"Feat",  price:19.00, mat:6.69, laborObs:5.66,  util:1.524, auto:6.4, cap:1850, sold:2311, inv:495  },
+  { key:"Ferris",  product:"Foot",  price:19.00, mat:6.25, laborObs:11.51, util:1.50,  auto:2.0, cap:400,  sold:597,  inv:0    },
+];
+// Back out the first-shift labor rate at automation 1.0 from the observed average.
+PRESETS.forEach(p => {
+  const s = p.util > 1 ? (p.util - 1) / p.util : 0;          // share of units made on 2nd shift
+  const firstShift = p.laborObs / (1 + 0.5 * s);              // strip the 50% premium
+  p.L1 = firstShift / ((11 - p.auto) / 10);                   // labor at automation 1.0
+  p.prod = Math.round(p.cap * p.util / 10) * 10;
+});
+
+const $ = id => document.getElementById(id);
+let S = {}; let base = {};
+const fmtM = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(1) + "M";
+const fmt$ = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(2);
+const fmtK = v => Math.round(v).toLocaleString() + "K";
+
+// ---------- controls ----------
+PRESETS.forEach((p, i) => { const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.product}`; $("preset").appendChild(o); });
+const pairs = [["price","priceR"],["prod","prodR"],["auto","autoR"],["cap","capR"],["dem","demR"],["inv","invR"],["mat","matR"]];
+pairs.forEach(([n, r]) => {
+  $(n).addEventListener("input", () => { $(r).value = $(n).value; read(); });
+  $(r).addEventListener("input", () => { $(n).value = $(r).value; read(); });
+});
+$("team").addEventListener("input", read);
+$("preset").addEventListener("change", () => load(+$("preset").value));
+$("resetBtn").addEventListener("click", () => load(+$("preset").value));
+$("fsBtn").addEventListener("click", () => document.documentElement.requestFullscreen && document.documentElement.requestFullscreen());
+
+function setPair(n, v) { $(n).value = v; $(n + "R").value = v; }
+function load(i) {
+  const p = PRESETS[i]; base = p;
+  $("team").value = p.key + " Co.";
+  setPair("price", p.price); setPair("auto", p.auto); setPair("cap", p.cap);
+  setPair("dem", p.sold); setPair("inv", p.inv); setPair("mat", p.mat);
+  $("prodR").max = p.cap * 2; setPair("prod", p.prod);
+  $("presetNote").innerHTML =
+    `Round 2 actuals for <b>${p.product}</b>: price $${p.price.toFixed(2)}, material $${p.mat.toFixed(2)}, labor $${p.laborObs.toFixed(2)} (average incl. 2nd shift), ` +
+    `automation ${p.auto}, capacity ${p.cap.toLocaleString()}K, utilization ${Math.round(p.util*100)}%, sold ${p.sold.toLocaleString()}K, ending inventory ${p.inv.toLocaleString()}K. ` +
+    `Implied labor at automation 1.0: $${p.L1.toFixed(2)}/unit. Expected sales start at last round's sales; inventory on hand starts at Round 2's ending inventory.`;
+  read();
+}
+
+function read() {
+  const cap = Math.max(1, +$("cap").value);
+  $("prodR").max = cap * 2;
+  let prod = Math.min(+$("prod").value, cap * 2);
+  if (+$("prod").value > cap * 2) setPair("prod", prod);
+  S = {
+    team: $("team").value || "Company", product: base.product,
+    price: +$("price").value, prod, cap, auto: Math.min(10, Math.max(1, +$("auto").value)),
+    dem: +$("dem").value, inv0: +$("inv").value, mat: +$("mat").value, L1: base.L1,
+  };
+  compute();
+}
+
+function compute() {
+  const s = S;
+  s.labor1 = s.L1 * (11 - s.auto) / 10;           // first-shift labor/unit
+  s.labor2 = s.labor1 * 1.5;                       // second-shift labor/unit
+  s.first = Math.min(s.prod, s.cap);
+  s.second = Math.max(0, s.prod - s.cap);
+  s.util = s.prod / s.cap;
+  const laborK = s.first * s.labor1 + s.second * s.labor2;    // $000
+  const matK = s.prod * s.mat;
+  s.avgVar = s.prod > 0 ? (laborK + matK) / s.prod : s.labor1 + s.mat;
+  s.avgLabor = s.prod > 0 ? laborK / s.prod : s.labor1;
+  s.sold = Math.min(s.dem, s.inv0 + s.prod);
+  s.inv1 = s.inv0 + s.prod - s.sold;
+  s.revenue = s.price * s.sold / 1000;                         // $M
+  s.cogs = s.avgVar * s.sold / 1000;
+  s.contrib = s.revenue - s.cogs;
+  s.carry = 0.12 * s.inv1 * s.avgVar / 1000;
+  s.depr = s.cap * (6 + 4 * s.auto) / 15 / 1000;
+  s.profit = s.contrib - s.carry - s.depr;
+  s.unitMargin = s.price - s.avgVar;
+  s.breakeven = s.sold > 0 ? s.avgVar + (s.carry + s.depr) * 1000 / s.sold : NaN;
+  s.cashInInv = (s.inv1 - s.inv0) * s.avgVar / 1000;
+  const dA = s.auto - base.auto, dC = s.cap - base.cap;
+  s.retool = Math.abs(dA) * 4 * base.cap / 1000;
+  s.capSpend = dC > 0 ? dC * (6 + 4 * s.auto) / 1000 : 0;
+  s.capSale = dC < 0 ? -dC * (6 + 4 * base.auto) * 0.65 / 1000 : 0;
+  render();
+}
+
+function render() {
+  const s = S, cls = v => v >= 0 ? "good" : "bad";
+  $("pl").innerHTML = `
+    <tr><td>Revenue (${fmtK(s.sold)} units × ${fmt$(s.price)})</td><td class="n">${fmtM(s.revenue)}</td></tr>
+    <tr><td>Material + labor of units sold (${fmt$(s.avgVar)}/unit)</td><td class="n">${fmtM(-s.cogs)}</td></tr>
+    <tr><td><b>Contribution</b> (${fmt$(s.unitMargin)}/unit)</td><td class="n ${cls(s.contrib)}"><b>${fmtM(s.contrib)}</b></td></tr>
+    <tr><td>Inventory carrying cost (${fmtK(s.inv1)} left over)</td><td class="n">${fmtM(-s.carry)}</td></tr>
+    <tr><td>Plant depreciation (est.)</td><td class="n">${fmtM(-s.depr)}</td></tr>
+    <tr class="total"><td>Plant profit / loss</td><td class="n ${cls(s.profit)}">${fmtM(s.profit)}</td></tr>`;
+  const pills = [
+    `Labor 1st shift ${fmt$(s.labor1)}`, `2nd shift ${fmt$(s.labor2)}`,
+    `Utilization ${Math.round(s.util * 100)}%`,
+    `Break-even price ${isNaN(s.breakeven) ? "—" : fmt$(s.breakeven)}`,
+    `Cash into new inventory ${fmtM(Math.max(0, s.cashInInv))}`,
+  ];
+  if (s.retool > 0.005) pills.push(`Automation change costs ${fmtM(s.retool)}`);
+  if (s.capSpend > 0.005) pills.push(`New capacity costs ${fmtM(s.capSpend)}`);
+  if (s.capSale > 0.005) pills.push(`Capacity sale raises ${fmtM(s.capSale)}`);
+  $("pills").innerHTML = pills.map(t => `<span class="pill">${t}</span>`).join(" ");
+  $("signName").textContent = `${s.team.toUpperCase()} · ${s.product.toUpperCase()}`;
+  $("signRates").textContent = `LABOUR $${s.labor1.toFixed(2)}/unit · MATERIAL $${s.mat.toFixed(2)}/unit`;
+  $("boardVal").textContent = fmtM(s.profit);
+  $("boardVal").style.color = s.profit >= 0 ? "#5be37d" : "#ff5a5a";
+  $("boardUnit").innerHTML = `${fmt$(s.unitMargin)} per unit before fixed costs` +
+    (s.cashInInv > 0.05 ? `<br><span style="color:#ffd166">${fmtM(s.cashInInv)} cash tied up in new inventory</span>` : "");
+  $("shift").textContent = s.second > 0 ? `2ND SHIFT: ${fmtK(s.second)} UNITS AT +50% LABOR` : `ONE SHIFT · ${Math.round(s.util*100)}% OF CAPACITY`;
+  $("invLabel").textContent = `INVENTORY ${fmtK(s.inv1)}`;
+  $("truckLabel").textContent = `SOLD ${fmtK(s.sold)}`;
+}
+
+// ---------- overlay placement (logical canvas coords 440 x 200) ----------
+function place(id, x, y, w, h) { const e = $(id); e.style.left = (x/440*100)+"%"; e.style.top = (y/200*100)+"%"; e.style.width = (w/440*100)+"%"; e.style.height = (h/200*100)+"%"; }
+place("sign", 12, 36, 124, 22);
+place("shift", 10, 152, 170, 10);
+place("board", 316, 30, 108, 56);
+place("invLabel", 252, 64, 50, 8);
+place("truckLabel", 206, 112, 50, 8);
+
+// ---------- pixel art ----------
+const cv = $("c"), g = cv.getContext("2d");
+g.imageSmoothingEnabled = false;
+const R = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)); };
+let boxes = [], puffs = [], spawnAcc = 0, last = 0;
+
+function drawPerson(x, y, happy, t) {
+  // chair
+  R(x-2, y+14, 24, 18, "#3b2f2f");
+  // body
+  R(x+2, y+14, 16, 14, happy ? "#2f6fd6" : "#5a5f73");
+  R(x+8, y+14, 4, 6, "#f3f1e8");                   // collar
+  // head
+  const bob = happy ? Math.round(Math.sin(t/250)) : 0;
+  R(x+3, y+bob, 14, 14, "#f1c27d");
+  R(x+3, y-2+bob, 14, 4, "#4a3222");                // hair
+  // eyes
+  R(x+6, y+5+bob, 2, 2, "#1a1a1a"); R(x+12, y+5+bob, 2, 2, "#1a1a1a");
+  if (happy) {               // smile
+    R(x+6, y+9+bob, 1, 1, "#7a2a2a"); R(x+7, y+10+bob, 6, 1, "#7a2a2a"); R(x+13, y+9+bob, 1, 1, "#7a2a2a");
+  } else {                   // frown + sweat drop
+    R(x+7, y+10, 6, 1, "#7a2a2a"); R(x+6, y+11, 1, 1, "#7a2a2a"); R(x+13, y+11, 1, 1, "#7a2a2a");
+    R(x+5, y+4, 1, 1, "#1a1a1a"); R(x+14, y+4, 1, 1, "#1a1a1a");   // worried brows
+    const d = (t/40) % 10; R(x+16, y+3+d, 2, 3, "#7fd3ff");
+  }
+}
+
+function draw(t) {
+  const s = S; if (!s.cap) return requestAnimationFrame(draw);
+  const dt = Math.min(50, t - last); last = t;
+  const night = s.second > 0;
+  // sky
+  R(0, 0, 440, 150, night ? "#1d2150" : "#8fd3ff");
+  if (night) {
+    for (let i = 0; i < 40; i++) { const sx = (i*97)%300, sy = (i*53)%60; if ((i + Math.floor(t/400)) % 7) R(sx, sy, 1, 1, "#fff8c4"); }
+    R(252, 8, 8, 14, "#f6f1c7"); R(250, 10, 12, 10, "#f6f1c7"); R(256, 9, 7, 10, "#1d2150");   // crescent moon
+  } else {
+    R(250, 8, 14, 14, "#ffe066"); R(248, 12, 18, 6, "#ffe066"); R(254, 6, 6, 18, "#ffe066");
+    R(30+((t/120)%300), 18, 26, 6, "#ffffff"); R(36+((t/120)%300), 14, 14, 4, "#ffffff");
+  }
+  // ground + road
+  R(0, 150, 440, 50, "#5b8c3a"); R(0, 172, 300, 10, "#4b4b55");
+  for (let x = 0; x < 300; x += 16) R(x + ((t/30)%16), 176, 8, 2, "#d9d9d9");
+  // chimney + smoke
+  R(146, 34, 12, 30, "#6b2f25"); R(144, 32, 16, 4, "#4a1f19");
+  const rate = s.util;
+  if (Math.random() < 0.04 + 0.08 * rate) puffs.push({ x: 152, y: 30, r: 3, life: 0 });
+  puffs.forEach(p => { p.life += dt; p.y -= dt * 0.012; p.x += dt * 0.006; p.r += dt * 0.004; });
+  puffs = puffs.filter(p => p.life < 3500);
+  puffs.forEach(p => R(p.x - p.r, p.y - p.r, p.r*2, p.r*2, night ? "rgba(160,160,180,0.55)" : "rgba(235,235,235,0.75)"));
+  // sign board posts + board (text is an HTML overlay)
+  R(28, 58, 3, 8, "#3a2a1a"); R(117, 58, 3, 8, "#3a2a1a");
+  R(12, 36, 124, 22, "#24314f"); R(12, 36, 124, 2, "#ffd166"); R(12, 56, 124, 2, "#ffd166");
+  // factory body
+  R(10, 64, 160, 86, "#a84a3a");
+  for (let y = 66; y < 150; y += 5) for (let x = 10 + ((y/5)%2)*6; x < 170; x += 12) R(x, y, 1, 1, "#8c3a2e");
+  for (let i = 0; i < 4; i++) { for (let k = 0; k < 8; k++) R(10 + i*40 + k*5, 64 - k, 40 - k*5, 1, "#7c8796"); }
+  R(10, 63, 160, 2, "#5d6672");
+  // windows: workers vs robots by automation level
+  R(16, 80, 148, 34, night ? "#ffe9a3" : "#bfe3ff"); R(16, 80, 148, 2, "#5d4037");
+  const stations = 8, robots = Math.round((s.auto - 1) / 9 * stations);
+  for (let i = 0; i < stations; i++) {
+    const x = 22 + i * 18, bob = Math.round(Math.sin(t/180 + i) * 1.2);
+    if (i < robots) {             // robot arm
+      R(x, 104, 8, 8, "#6c7a89"); R(x+3, 94, 2, 10, "#8d99a6");
+      const sw = Math.round(Math.sin(t/120 + i) * 3); R(x+3+sw, 92, 5, 3, "#ffb703");
+    } else {                      // worker
+      R(x+1, 92+bob, 6, 6, "#f1c27d"); R(x, 98+bob, 8, 10, "#3a7bd5"); R(x+1, 90+bob, 6, 2, "#5a3a22");
+    }
+  }
+  if (night) {                    // second-shift crew in orange vests
+    const extra = Math.min(8, Math.ceil(s.second / s.cap * 8));
+    for (let i = 0; i < extra; i++) { const x = 26 + i * 18, bob = Math.round(Math.cos(t/150 + i)); R(x+1, 101+bob, 5, 5, "#e0ac69"); R(x, 106+bob, 7, 6, "#ff8c1a"); }
+  }
+  R(16, 112, 148, 2, "#5d4037");
+  // door
+  R(84, 126, 16, 24, "#3d2a1e"); R(96, 138, 2, 2, "#ffd166");
+  // conveyor
+  R(166, 138, 44, 4, "#333"); for (let x = 166; x < 210; x += 6) R(x + ((t/40)%6), 142, 2, 2, "#777");
+  // boxes on conveyor (rate ~ production)
+  spawnAcc += dt * (s.prod / 2000) * 0.004;
+  while (spawnAcc > 1) { spawnAcc -= 1; boxes.push({ x: 166, toTruck: Math.random() < (s.prod > 0 ? Math.min(1, s.sold / Math.max(1, s.inv0 + s.prod)) : 0) }); }
+  boxes.forEach(b => b.x += dt * 0.03);
+  boxes = boxes.filter(b => b.x < 214);
+  boxes.forEach(b => { R(b.x, 132, 6, 6, "#c8955a"); R(b.x, 134, 6, 1, "#8a5a2b"); });
+  // truck (sales)
+  const tx = 214;
+  R(tx, 122, 30, 20, "#e8e8e8"); R(tx+30, 128, 10, 14, "#d64545"); R(tx+33, 130, 5, 5, "#bfe3ff");
+  R(tx+4, 142, 7, 7, "#222"); R(tx+28, 142, 7, 7, "#222");
+  const fill = Math.min(1, s.sold / Math.max(1, s.cap * 1.5));
+  R(tx+2, 140 - 16*fill, 26, 16*fill, "#c8955a");
+  // warehouse shed + inventory pile
+  R(256, 74, 44, 76, "#6d6f7a"); R(252, 70, 52, 6, "#4b4d57"); R(260, 80, 36, 70, "#2b2d36");
+  const nBoxes = Math.min(84, Math.round(s.inv1 / Math.max(1, s.cap) * 24));
+  for (let i = 0; i < nBoxes; i++) { const col = i % 6, row = Math.floor(i / 6); R(261 + col*6, 144 - row*5, 5, 4, "#c8955a"); }
+  if (nBoxes >= 84) R(258, 74, 40, 3, "#ff5a5a");
+  // controller's office
+  R(306, 0, 134, 200, "#d9cdb0"); R(306, 0, 4, 200, "#8a7a5a");
+  R(306, 160, 134, 40, "#8a6a4a");
+  R(314, 28, 112, 60, "#111"); R(316, 30, 108, 56, "#0b1a10");                   // P&L display
+  R(318, 96, 22, 24, "#2e7d32"); R(326, 120, 6, 8, "#6d4c41");                    // plant
+  drawPerson(360, 112, s.profit >= 0, t);
+  R(334, 140, 80, 6, "#6d4c41"); R(338, 146, 4, 16, "#5d4037"); R(406, 146, 4, 16, "#5d4037");  // desk
+  R(352, 134, 18, 6, "#e0e0e0"); R(384, 134, 10, 6, "#ffd166");                  // papers, mug
+  requestAnimationFrame(draw);
+}
+
+load(Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0)));
+$("preset").value = Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0));
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>

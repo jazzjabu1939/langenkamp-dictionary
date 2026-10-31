@@ -30,6 +30,12 @@ This guide defines strategy, financial and operating terms used in MANAGMNT 494B
 This is an independent teaching guide. For simulation rules and industry-specific figures, consult Capsim’s guides, your Industry Conditions Report and the current Courier.
 </div>
 
+## Graphic Simulations
+
+**[Open the Capstone Graphic Simulations](/capstone/graphic-simulations/)**
+
+Three pixel-art models you can run in your browser: **The Second Shift** (plant and production economics: price, second-shift labor, automation, inventory), **Spreading the Overhead** (economies of scale: sales, promotion and administration cost per unit as volume grows) and **Big Al Comes Calling** (inventory, debt, emergency loans and your ability to invest). Teaching models with labeled estimates; your Capstone decision screens remain the authority.
+
 ## Two Ways to Compete
 
 **[Download Two Ways to Compete (PDF)](/assets/capstone/Capstone-Two-Ways-to-Compete.pdf)**

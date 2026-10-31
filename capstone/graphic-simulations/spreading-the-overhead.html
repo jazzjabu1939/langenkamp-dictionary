@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Spreading the Overhead — Capstone Graphic Simulations — The Langenkamp Dictionary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#14161f; --panel:#1f2330; --ink:#f3f1e8; --muted:#a9adbd; --good:#5be37d; --bad:#ff5a5a; --accent:#ffd166; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:10px 18px; }
+  header h1 { font-size:18px; margin:0; letter-spacing:1px; }
+  header .sub { color:var(--muted); font-size:12px; }
+  button { font:inherit; background:#2d3346; color:var(--ink); border:2px solid #444b63; padding:6px 12px; cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  #stage { position:relative; width:100%; max-width:1600px; margin:0 auto; aspect-ratio: 440 / 200; }
+  canvas { width:100%; height:100%; image-rendering:pixelated; display:block; }
+  .ov { position:absolute; pointer-events:none; text-align:center; white-space:nowrap; font-weight:700; }
+  .room { display:flex; flex-direction:column; justify-content:center; line-height:1.2; color:#fff7d6; }
+  .room .t { font-size:clamp(8px,1.15vw,19px); }
+  .room .s { font-size:clamp(6px,0.75vw,12px); color:#cfd3e0; }
+  .room .v { font-size:clamp(9px,1.5vw,25px); color:#ffd166; }
+  .room .p { font-size:clamp(7px,0.95vw,16px); color:#9fe0ff; }
+  #sign .name { font-size:clamp(9px,1.4vw,23px); color:#fff7d6; }
+  #board { display:flex; flex-direction:column; justify-content:center; }
+  #board .lbl { font-size:clamp(6px,0.8vw,13px); color:#9fe0ff; }
+  #board .val { font-size:clamp(11px,2vw,34px); }
+  #board .unit { font-size:clamp(6px,0.8vw,13px); color:#cfd3e0; }
+  #queue { font-size:clamp(7px,0.95vw,16px); color:#fff; text-shadow:2px 2px 0 #000; }
+  #controls { max-width:1600px; margin:0 auto; display:grid; grid-template-columns: 1fr 1.15fr; gap:12px; padding:12px 18px 18px; }
+  .card { background:var(--panel); border:2px solid #343a50; padding:12px 14px; }
+  .card h2 { font-size:14px; margin:0 0 10px; color:var(--accent); letter-spacing:1px; }
+  .row { display:grid; grid-template-columns: 220px 1fr 100px; align-items:center; gap:10px; margin:8px 0; font-size:15px; }
+  .row label { color:var(--muted); }
+  .big label { color:var(--accent); font-weight:700; }
+  input[type=range] { width:100%; accent-color: var(--accent); }
+  .big input[type=range] { height:28px; }
+  input[type=number], select { width:100%; font:inherit; font-size:15px; background:#11131a; color:var(--ink); border:2px solid #3a4058; padding:4px 6px; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th { text-align:right; color:var(--muted); font-weight:400; font-size:13px; padding:2px 4px; }
+  th:first-child { text-align:left; }
+  td { padding:4px 4px; border-bottom:1px dashed #343a50; text-align:right; }
+  td:first-child { text-align:left; }
+  tr.total td { font-weight:700; border-top:2px solid #5a6080; border-bottom:none; font-size:17px; }
+  .good { color:var(--good); } .bad { color:var(--bad); }
+  .note { color:var(--muted); font-size:12px; line-height:1.45; margin-top:8px; }
+  #chart { width:100%; height:240px; display:block; margin-top:8px; background:#11131a; border:2px solid #343a50; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>SPREADING THE OVERHEAD &middot; <span style="color:#a9adbd">PIXEL OFFICE &middot; ECONOMIES OF SCALE</span></h1>
+    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; Capstone Low End segment &middot; presets from Round 2 (2028), Industry CP137618</div>
+  </div>
+  <div><button id="resetBtn">Reset team</button> <button id="fsBtn">Full screen</button></div>
+</header>
+
+<div id="stage">
+  <canvas id="c" width="440" height="200"></canvas>
+  <div class="ov" id="sign"><div class="name" id="signName"></div></div>
+  <div class="ov room" id="r1"><div class="t">SALES</div><div class="s">(DISTRIBUTION)</div><div class="v" id="r1v"></div><div class="p" id="r1p"></div></div>
+  <div class="ov room" id="r2"><div class="t">PROMO</div><div class="s">(ADVERTISING)</div><div class="v" id="r2v"></div><div class="p" id="r2p"></div></div>
+  <div class="ov room" id="r3"><div class="t">ADMINISTRATION</div><div class="s">(OFFICE JOBS INC. · CEO)</div><div class="v" id="r3v"></div><div class="p" id="r3p"></div></div>
+  <div class="ov" id="board"><div class="lbl">PROFIT PER UNIT</div><div class="val" id="boardVal"></div><div class="unit" id="boardUnit"></div></div>
+  <div class="ov" id="queue"></div>
+</div>
+
+<div id="controls">
+  <div class="card">
+    <h2>ONE PRODUCT'S FIXED SPENDING</h2>
+    <div class="row"><label>Team preset</label><select id="preset"></select><span></span></div>
+    <div class="row big"><label>SALES VOLUME (000 units)</label><input type="range" id="volR" min="100" max="4000" step="10"><input type="number" id="vol" step="10"></div>
+    <div class="row"><label>Price per unit</label><input type="range" id="priceR" min="10" max="30" step="0.25"><input type="number" id="price" step="0.25"></div>
+    <div class="row"><label>Material + labor / unit</label><input type="range" id="varR" min="5" max="20" step="0.01"><input type="number" id="var" step="0.01"></div>
+    <div class="row"><label>Sales budget ($M)</label><input type="range" id="salesR" min="0" max="6" step="0.05"><input type="number" id="sales" step="0.05"></div>
+    <div class="row"><label>Promo budget ($M)</label><input type="range" id="promoR" min="0" max="6" step="0.05"><input type="number" id="promo" step="0.05"></div>
+    <div class="row"><label>Admin + R&amp;D share ($M)</label><input type="range" id="adminR" min="0" max="4" step="0.05"><input type="number" id="admin" step="0.05"></div>
+    <div class="row"><label>Plant depreciation ($M)</label><input type="range" id="deprR" min="0" max="8" step="0.05"><input type="number" id="depr" step="0.05"></div>
+    <div class="note" id="presetNote"></div>
+  </div>
+  <div class="card">
+    <h2>COST PER UNIT AT THIS VOLUME</h2>
+    <table id="tbl"></table>
+    <canvas id="chart" width="900" height="240"></canvas>
+    <div class="note">
+      Fixed spending stays the same whether you sell 500K units or 3M; per unit, it shrinks as volume grows. The curve is fixed cost per unit; the dashed line is what each unit leaves after material and labor (price − variable cost). Where they cross is break-even volume.<br>
+      Here volume is set directly. In Capstone, promotion and sales budgets help build awareness and accessibility, which drive demand, so volume is not free to choose. Admin + R&amp;D is this product's share of the company's SG&amp;A after subtracting all product sales and promotion budgets, allocated by revenue. Depreciation is estimated from capacity and automation.
+    </div>
+  </div>
+</div>
+
+<script>
+// Round 2 (2028), Industry CP137618. Budgets in $M; units in thousands.
+// varCost = Round 2 material + average labor. adminShare = (company SG&A − all product sales/promo budgets) × product revenue share.
+const COMPANY = { // SG&A, sales/promo budgets across all products, revenue ($M)
+  Andrews:{ sga:30.256, budgets:24.90, rev:151.193 }, Baldwin:{ sga:32.208, budgets:28.70, rev:117.686 },
+  Chester:{ sga:29.107, budgets:24.90, rev:127.339 }, Digby:{ sga:51.767, budgets:37.50, rev:122.434 },
+  Erie:{ sga:27.409, budgets:23.40, rev:124.744 }, Ferris:{ sga:28.368, budgets:24.00, rev:147.022 } };
+const PRESETS = [
+  { key:"Andrews", product:"Acre",  price:17.00, varCost:14.30, sales:1.50, promo:1.85, units:2722, cap:1600, auto:5.0 },
+  { key:"Baldwin", product:"Bead",  price:21.25, varCost:10.10, sales:3.05, promo:1.95, units:1283, cap:1400, auto:7.0 },
+  { key:"Chester", product:"Cedar", price:19.00, varCost:12.62, sales:3.40, promo:2.00, units:2134, cap:1400, auto:6.0 },
+  { key:"Digby",   product:"Dell",  price:24.00, varCost:11.80, sales:4.50, promo:3.00, units:783,  cap:1600, auto:7.0 },
+  { key:"Erie",    product:"Ebb",   price:22.00, varCost:11.26, sales:2.50, promo:2.00, units:1341, cap:1650, auto:7.0 },
+  { key:"Ferris",  product:"Feat",  price:19.00, varCost:12.35, sales:2.00, promo:2.00, units:2311, cap:1850, auto:6.4 },
+  { key:"Ferris",  product:"Foot",  price:19.00, varCost:17.76, sales:2.00, promo:2.00, units:597,  cap:400,  auto:2.0 },
+];
+PRESETS.forEach(p => {
+  const c = COMPANY[p.key];
+  p.admin = Math.round((c.sga - c.budgets) * (p.price * p.units / 1000) / c.rev * 100) / 100;
+  p.depr = Math.round(p.cap * (6 + 4 * p.auto) / 15 / 1000 * 100) / 100;
+});
+
+const $ = id => document.getElementById(id);
+let S = {}, base = {};
+const fmt$ = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(2);
+const fmtM = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(1) + "M";
+const pct = v => (v * 100).toFixed(1) + "%";
+
+PRESETS.forEach((p, i) => { const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.product}`; $("preset").appendChild(o); });
+const pairs = ["vol","price","var","sales","promo","admin","depr"];
+pairs.forEach(n => {
+  $(n).addEventListener("input", () => { $(n+"R").value = $(n).value; read(); });
+  $(n+"R").addEventListener("input", () => { $(n).value = $(n+"R").value; read(); });
+});
+$("preset").addEventListener("change", () => load(+$("preset").value));
+$("resetBtn").addEventListener("click", () => load(+$("preset").value));
+$("fsBtn").addEventListener("click", () => document.documentElement.requestFullscreen && document.documentElement.requestFullscreen());
+const setPair = (n, v) => { $(n).value = v; $(n+"R").value = v; };
+
+function load(i) {
+  const p = base = PRESETS[i];
+  setPair("vol", p.units); setPair("price", p.price); setPair("var", p.varCost);
+  setPair("sales", p.sales); setPair("promo", p.promo); setPair("admin", p.admin); setPair("depr", p.depr);
+  $("presetNote").innerHTML = `Round 2 actuals for <b>${p.product}</b>: ${p.units.toLocaleString()}K units sold at $${p.price.toFixed(2)}; material + labor $${p.varCost.toFixed(2)}; sales budget $${p.sales.toFixed(2)}M; promo budget $${p.promo.toFixed(2)}M. Admin + R&amp;D share and depreciation are estimates.`;
+  read();
+}
+function read() {
+  S = { team: base.key, product: base.product, vol: Math.max(1, +$("vol").value), price: +$("price").value, v: +$("var").value,
+        sales: +$("sales").value, promo: +$("promo").value, admin: +$("admin").value, depr: +$("depr").value };
+  const s = S;
+  s.fixed = s.sales + s.promo + s.admin + s.depr;                 // $M
+  s.perUnit = k => k * 1000 / s.vol;                              // $M -> $/unit
+  s.fu = s.fixed * 1000 / s.vol;
+  s.margin = s.price - s.v;
+  s.unitProfit = s.margin - s.fu;
+  s.profit = s.unitProfit * s.vol / 1000;
+  s.beVol = s.margin > 0 ? s.fixed * 1000 / s.margin : Infinity;
+  render();
+}
+function render() {
+  const s = S, cls = v => v >= 0 ? "good" : "bad";
+  const line = (lbl, m) => `<tr><td>${lbl}</td><td>${fmtM(m)}</td><td>${fmt$(s.perUnit(m))}</td><td>${pct(s.perUnit(m)/s.price)}</td></tr>`;
+  $("tbl").innerHTML = `<tr><th></th><th>Total</th><th>Per unit</th><th>% of price</th></tr>
+    <tr><td>Price</td><td>${fmtM(s.price*s.vol/1000)}</td><td>${fmt$(s.price)}</td><td>100.0%</td></tr>
+    <tr><td>Material + labor</td><td>${fmtM(s.v*s.vol/1000)}</td><td>${fmt$(s.v)}</td><td>${pct(s.v/s.price)}</td></tr>
+    ${line("Sales (distribution)", s.sales)}${line("Promo (advertising)", s.promo)}${line("Admin + R&amp;D share", s.admin)}${line("Plant depreciation", s.depr)}
+    <tr class="total"><td>Profit before interest &amp; tax</td><td class="${cls(s.profit)}">${fmtM(s.profit)}</td><td class="${cls(s.unitProfit)}">${fmt$(s.unitProfit)}</td><td class="${cls(s.unitProfit)}">${pct(s.unitProfit/s.price)}</td></tr>
+    <tr><td colspan="4" style="text-align:left;color:#ffd166">Break-even volume: ${isFinite(s.beVol) ? Math.round(s.beVol).toLocaleString() + "K units" : "none — price does not cover material + labor"}</td></tr>`;
+  $("signName").textContent = `${s.team.toUpperCase()} CO. · ${s.product.toUpperCase()} · HEAD OFFICE`;
+  [["r1",s.sales],["r2",s.promo],["r3",s.admin]].forEach(([id,m]) => { $(id+"v").textContent = fmt$(s.perUnit(m)) + "/unit"; $(id+"p").textContent = pct(s.perUnit(m)/s.price) + " of price"; });
+  $("boardVal").textContent = fmt$(s.unitProfit); $("boardVal").style.color = s.unitProfit >= 0 ? "#5be37d" : "#ff5a5a";
+  $("boardUnit").textContent = `${fmtM(s.profit)} at ${Math.round(s.vol).toLocaleString()}K units`;
+  $("queue").textContent = `CUSTOMERS: ${Math.round(s.vol).toLocaleString()}K UNITS`;
+  drawChart();
+}
+function drawChart() {
+  const c = $("chart"), x = c.getContext("2d"), W = c.width, H = c.height, s = S;
+  const L = 56, Rr = 14, T = 14, B = 34, maxV = 4000;
+  const maxY = Math.max(10, Math.ceil(Math.max(s.margin + 2, s.fixed * 1000 / 400) / 2) * 2);
+  const X = v => L + (v / maxV) * (W - L - Rr), Y = y => T + (1 - Math.min(y, maxY) / maxY) * (H - T - B);
+  x.clearRect(0, 0, W, H); x.font = "13px ui-monospace, Menlo, monospace"; x.fillStyle = "#a9adbd";
+  x.strokeStyle = "#2a2f42"; x.lineWidth = 1;
+  for (let y = 0; y <= maxY; y += maxY / 5) { x.beginPath(); x.moveTo(L, Y(y)); x.lineTo(W - Rr, Y(y)); x.stroke(); x.fillText("$" + y.toFixed(0), 8, Y(y) + 4); }
+  for (let v = 0; v <= maxV; v += 1000) { x.fillText(v ? (v/1000) + "M" : "0", X(v) - 8, H - 12); }
+  x.fillText("units sold", W - 110, H - B - 6);
+  // profit-zone shading
+  if (s.margin > 0 && isFinite(s.beVol)) { x.fillStyle = "rgba(91,227,125,0.10)"; x.fillRect(X(Math.min(s.beVol, maxV)), T, W - Rr - X(Math.min(s.beVol, maxV)), H - T - B); }
+  // margin line
+  x.setLineDash([8, 6]); x.strokeStyle = "#9fe0ff"; x.lineWidth = 2; x.beginPath(); x.moveTo(L, Y(Math.max(0, s.margin))); x.lineTo(W - Rr, Y(Math.max(0, s.margin))); x.stroke(); x.setLineDash([]);
+  x.fillStyle = "#9fe0ff"; x.fillText(`price − material − labor = ${fmt$(s.margin)}`, L + 8, Y(Math.max(0, s.margin)) - 6);
+  // fixed cost per unit curve
+  x.strokeStyle = "#ffd166"; x.lineWidth = 3; x.beginPath();
+  for (let v = 100; v <= maxV; v += 20) { const y = Y(s.fixed * 1000 / v); v === 100 ? x.moveTo(X(v), y) : x.lineTo(X(v), y); }
+  x.stroke(); x.fillStyle = "#ffd166"; x.fillText("fixed cost per unit", X(220), Y(Math.min(maxY, s.fixed * 1000 / 220)) + 18);
+  // marker
+  const mx = X(Math.min(s.vol, maxV)), my = Y(s.fu);
+  x.fillStyle = s.unitProfit >= 0 ? "#5be37d" : "#ff5a5a"; x.fillRect(mx - 6, my - 6, 12, 12);
+  x.fillText(`${fmt$(s.fu)}/unit`, Math.min(mx + 10, W - 120), my - 10);
+  if (isFinite(s.beVol) && s.beVol < maxV) { x.strokeStyle = "#5be37d"; x.setLineDash([3, 4]); x.beginPath(); x.moveTo(X(s.beVol), T); x.lineTo(X(s.beVol), H - B); x.stroke(); x.setLineDash([]); x.fillStyle = "#5be37d"; x.fillText(`break-even ${Math.round(s.beVol).toLocaleString()}K`, Math.min(X(s.beVol) + 6, W - 190), T + 14); }
+}
+
+// ---------- overlays ----------
+function place(id, x, y, w, h) { const e = $(id); e.style.left = (x/440*100)+"%"; e.style.top = (y/200*100)+"%"; e.style.width = (w/440*100)+"%"; e.style.height = (h/200*100)+"%"; }
+place("sign", 20, 8, 400, 14);
+place("r1", 22, 30, 120, 34); place("r2", 160, 30, 120, 34); place("r3", 298, 30, 120, 34);
+place("board", 336, 70, 82, 32);
+place("queue", 6, 170, 200, 10);
+
+// ---------- pixel art ----------
+const cv = $("c"), g = cv.getContext("2d");
+const R = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)); };
+function person(x, y, shirt, t, i, mood) {
+  const b = Math.round(Math.sin(t/220 + i));
+  R(x+1, y+b, 6, 6, "#f1c27d"); R(x+1, y-1+b, 6, 2, i % 3 ? "#4a3222" : "#c9a14a"); R(x, y+6+b, 8, 8, shirt);
+  R(x+2, y+2+b, 1, 1, "#111"); R(x+5, y+2+b, 1, 1, "#111");
+  if (mood !== undefined) { if (mood) { R(x+2, y+4+b, 4, 1, "#7a2a2a"); } else { R(x+2, y+5, 4, 1, "#7a2a2a"); R(x+1, y+4, 1, 1, "#7a2a2a"); R(x+6, y+4, 1, 1, "#7a2a2a"); } }
+}
+function desk(x, y) { R(x, y, 22, 4, "#6d4c41"); R(x+2, y+4, 2, 8, "#5d4037"); R(x+18, y+4, 2, 8, "#5d4037"); R(x+6, y-5, 9, 5, "#2b2d36"); R(x+7, y-4, 7, 3, "#7fd3ff"); }
+let walkers = [], acc = 0, last = 0;
+function draw(t) {
+  const s = S; if (!s.vol) return requestAnimationFrame(draw);
+  const dt = Math.min(50, t - last); last = t;
+  R(0, 0, 440, 200, "#8fd3ff");
+  // building shell
+  R(14, 6, 412, 154, "#c8b89a"); R(14, 6, 412, 18, "#24314f"); R(14, 22, 412, 2, "#ffd166");
+  // three rooms
+  const rooms = [[18, "#e8d9b5"], [156, "#e3dcc7"], [294, "#ddd0b0"]];
+  rooms.forEach(([x, c]) => { R(x, 26, 128, 128, c); R(x, 26, 128, 40, "#1f2a44"); R(x, 152, 128, 4, "#8a6a4a"); });
+  // SALES room: reps at desks + phones, wall map
+  R(26, 72, 40, 22, "#4f7d4a"); R(30, 76, 10, 6, "#7fb069"); R(46, 82, 12, 8, "#7fb069"); R(60, 74, 2, 2, "#ff5a5a");
+  for (let i = 0; i < 3; i++) { desk(24 + i*38, 136); person(30 + i*38, 116, "#3a7bd5", t, i); if (Math.sin(t/300 + i*2) > 0.6) R(40 + i*38, 112, 4, 3, "#ffd166"); }
+  // PROMO room: billboard / TV + creative staff
+  R(168, 70, 64, 30, "#111"); R(170, 72, 60, 26, ["#ff5a5a","#ffd166","#5be37d","#9fe0ff"][Math.floor(t/700)%4]);
+  R(178, 80, 44, 4, "#fff"); R(186, 88, 28, 3, "#fff");
+  R(240, 72, 6, 30, "#6d4c41"); R(236, 70, 14, 6, "#ffd166");
+  for (let i = 0; i < 3; i++) { desk(162 + i*38, 136); person(168 + i*38, 116, "#c2185b", t, i+3); }
+  // ADMIN room: CEO office
+  R(304, 72, 26, 34, "#5d4037"); R(306, 74, 22, 30, "#795548"); R(316, 88, 2, 2, "#ffd166");      // door
+  R(398, 116, 14, 20, "#2e7d32"); R(403, 136, 4, 16, "#6d4c41");                                    // plant
+  desk(344, 136); person(350, 112, "#263238", t, 9, s.unitProfit >= 0); R(349, 112, 10, 2, "#263238");   // CEO
+  R(336, 70, 82, 32, "#111"); R(338, 72, 78, 28, "#0b1a10");                                   // board (text overlay)
+  // ground + street
+  R(0, 160, 440, 40, "#5b8c3a"); R(0, 176, 440, 12, "#4b4b55");
+  for (let x = 0; x < 440; x += 18) R(x + ((t/30)%18), 181, 9, 2, "#d9d9d9");
+  // customers walking toward the door: rate ~ volume
+  acc += dt * (s.vol / 1000) * 0.0012;
+  while (acc > 1) { acc -= 1; walkers.push({ x: -10, c: ["#e76f51","#2a9d8f","#e9c46a","#8ecae6","#b5838d"][Math.floor(Math.random()*5)] }); }
+  walkers.forEach(w => w.x += dt * 0.035);
+  walkers = walkers.filter(w => w.x < 440);
+  walkers.forEach((w, i) => { const b = Math.round(Math.sin(t/90 + i)); R(w.x+1, 162+b, 5, 5, "#e0ac69"); R(w.x, 167+b, 7, 7, w.c); R(w.x+1, 174, 2, 2, "#222"); R(w.x+4, 174, 2, 2, "#222"); });
+  requestAnimationFrame(draw);
+}
+load(Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0)));
+$("preset").value = Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0));
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>

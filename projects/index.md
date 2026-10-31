@@ -16,6 +16,12 @@ The Dictionary defines things. This page collects things we have built: working 
     <span>An independent business simulation inspired by Capstone’s Footrace format. Runs locally for now; demonstrations available on request.</span>
   </a>
 
+  <a class="writing-card" href="/capstone/graphic-simulations/">
+    <span class="writing-kicker">Teaching Tool · Live</span>
+    <strong>Capstone Graphic Simulations</strong>
+    <span>Three pixel-art models for Capstone teams: The Second Shift, Spreading the Overhead and Big Al Comes Calling. Plant economics, economies of scale and the debt spiral.</span>
+  </a>
+
   <a class="writing-card" href="/tools/consciousness-calculator/">
     <span class="writing-kicker">Tool · Live</span>
     <strong>Consciousness Calculator</strong>
