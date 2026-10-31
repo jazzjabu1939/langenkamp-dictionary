@@ -38,14 +38,18 @@
   .good { color:var(--good); } .bad { color:var(--bad); }
   .note { color:var(--muted); font-size:12px; line-height:1.45; margin-top:8px; }
   #chart { width:100%; height:230px; display:block; margin-top:10px; background:#11131a; border:2px solid #343a50; }
+  .alcost { background:#2a1f24; border:2px solid #6b2f36; padding:8px 10px; font-size:13.5px; line-height:1.5; margin:4px 0 10px; }
+  .alcost b.bad { color:var(--bad); }
+  details.note summary { cursor:pointer; color:var(--accent); }
+  ul.rules { margin:4px 0 6px; padding-left:18px; }
   .btns { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0 4px; }
 </style>
 </head>
 <body>
 <header>
   <div>
-    <h1>BIG AL COMES CALLING &middot; <span style="color:#a9adbd">PIXEL BANK &middot; INVENTORY, DEBT &amp; THE ABILITY TO INVEST</span></h1>
-    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; Capstone company-level projection, Rounds 3–6 (2029–2032) &middot; starts from Round 2 (2028) results, Industry CP137618</div>
+    <h1>BIG AL COMES CALLING &middot; <span style="color:#a9adbd">WHAT HAPPENS WHEN THE CASH RUNS OUT</span></h1>
+    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; Rounds 3–6 (2029–2032), starting from Round 2 results, Industry CP137618</div>
   </div>
   <div><button id="fsBtn">Full screen</button></div>
 </header>
@@ -65,28 +69,41 @@
 
 <div id="controls">
   <div class="card">
-    <h2>COMPANY &amp; ASSUMPTIONS (EACH YEAR, $ MILLIONS)</h2>
+    <h2>YOUR COMPANY &amp; YOUR PLAN (EACH YEAR, $ MILLIONS)</h2>
     <div class="row"><label>Company</label><select id="team"></select><span></span></div>
     <div class="btns"><button id="still">Hold steady</button><button id="repeat">Repeat Round 2</button><button id="cleanup">Clean-up plan</button></div>
     <div class="row"><label>Revenue growth / year</label><input type="range" id="growR" min="-30" max="40" step="1"><input type="number" id="grow" step="1"></div>
     <div class="row"><label>Contribution margin %</label><input type="range" id="cmR" min="0" max="45" step="0.5"><input type="number" id="cm" step="0.5"></div>
-    <div class="row"><label>SG&amp;A + other fixed ($M)</label><input type="range" id="fixR" min="10" max="90" step="0.5"><input type="number" id="fix" step="0.5"></div>
-    <div class="row"><label>Inventory build (+) / release (−)</label><input type="range" id="dinvR" min="-80" max="120" step="1"><input type="number" id="dinv" step="1"></div>
-    <div class="row"><label>Capacity + automation spend</label><input type="range" id="capexR" min="0" max="60" step="0.5"><input type="number" id="capex" step="0.5"></div>
-    <div class="row"><label>Bond issue requested</label><input type="range" id="bondR" min="0" max="80" step="0.5"><input type="number" id="bond" step="0.5"></div>
-    <div class="row"><label>Re-borrow current debt? (Capsim "Borrow")</label><select id="roll"><option value="1">Yes, up to bank limit</option><option value="0">No, repay from cash</option></select><span></span></div>
-    <div class="row"><label>Issue stock (20% max)?</label><select id="stock"><option value="0">No</option><option value="1">Yes, maximum</option></select><span></span></div>
-    <div class="row"><label>Bond limit based on</label><select id="basis"><option value="net">Net plant (80%), matches Capsim</option><option value="gross">Gross plant (80%)</option></select><span></span></div>
+    <div class="row"><label>Fixed costs (SG&amp;A + other)</label><input type="range" id="fixR" min="10" max="90" step="0.5"><input type="number" id="fix" step="0.5"></div>
+    <div class="row"><label>Add inventory (+) / sell it down (−)</label><input type="range" id="dinvR" min="-80" max="120" step="1"><input type="number" id="dinv" step="1"></div>
+    <div class="row"><label>Plant &amp; automation spend</label><input type="range" id="capexR" min="0" max="60" step="0.5"><input type="number" id="capex" step="0.5"></div>
+    <div class="row"><label>New bonds requested</label><input type="range" id="bondR" min="0" max="80" step="0.5"><input type="number" id="bond" step="0.5"></div>
+    <div class="row"><label>Renew bank loan on Jan 1?</label><select id="roll"><option value="1">Yes, up to the bank limit</option><option value="0">No, repay from cash</option></select><span></span></div>
+    <div class="row"><label>Issue stock?</label><select id="stock"><option value="0">No</option><option value="1">Yes, the 20% maximum</option></select><span></span></div>
+    <div class="row"><label>Bond limit based on</label><select id="basis"><option value="net">Net plant (as in Capsim)</option><option value="gross">Gross plant</option></select><span></span></div>
     <div class="note" id="startNote"></div>
   </div>
   <div class="card">
     <h2>PROJECTION <span style="color:var(--muted);font-weight:400">— click a year or press Play</span></h2>
     <div class="btns" id="yearBtns"></div>
+    <div class="alcost" id="alCost"></div>
     <table id="tbl"></table>
     <canvas id="chart" width="1000" height="230"></canvas>
     <div class="note">
-      Rules from the Capstone guides: current debt (including any emergency loan) is due January 1; banks lend about 75% of receivables plus 15% of last year's labor and material, plus 20%; bonds up to 80% of plant and equipment net of depreciation, at the current-debt rate + 1.4%; stock issues up to 20% of shares at the current price, less a 5% fee; an emergency loan costs a year of current-debt interest plus a 7.5% penalty and joins next year's current debt. Bond 12.5S2030 ($13.9M) matures December 31, 2030 and becomes current debt.<br>
-      Illustrative simplifications: current-debt rate = 8% prime + up to 6% as debt/assets rises; existing bonds average 12.9%; taxes 35% (credited on losses, as in the Courier); receivable and payable days held at Round 2 levels; share price held at Round 2's close. "Room to invest" follows Capstone's Max Invest: 80% of net plant − long-term debt + 20% of shares × share price + cash on hand. Checked against the Capsim decision screen: Andrews' Round 3 Max Investments shows $12,408K, and 0.8 × $114,623K − $79,750K + 0.2 × 2,297K shares × $1.00 = $12,408K. The Capsim Finance screen for Andrews (Round 3) also shows a current-debt Borrow limit of $48.6M (model: $48.6M), a bond-issue limit of $11.9M (model: $11.9M), current-debt interest of 12.9% (model: 13.0%) and bonds at 14.3%. Current debt and emergency loans are repaid on January 1; Capsim's Borrow slider lets a company take new current debt up to the bank limit in the same round.
+      <b>The rules (from the Capstone guides)</b>
+      <ul class="rules">
+        <li>All current debt, including last year's emergency loan, is due January 1.</li>
+        <li>The bank will re-lend up to 75% of receivables plus 15% of last year's labor and material, plus 20%.</li>
+        <li>Bonds: up to 80% of plant (net of depreciation) minus the bonds you already have, at the bank rate + 1.4%.</li>
+        <li>Stock: up to 20% more shares at today's price, less a 5% fee.</li>
+        <li>If cash still falls short, Big Al covers the gap with an emergency loan at the bank rate <b>+ 7.5%</b>. It joins next year's current debt.</li>
+        <li>Max Invest (what you may spend on plant) = 80% of net plant − long-term debt + 20% of shares × share price + cash.</li>
+        <li>Bond 12.5S2030 ($13.9M) comes due December 31, 2030 and becomes current debt.</li>
+      </ul>
+      <details class="note"><summary>Simplifications and how the model was checked</summary>
+        Bank rate = 8% prime + up to 6% as debt/assets rises; existing bonds average 12.9%; taxes 35% (credited on losses, as in the Courier); receivable and payable days and share price held at Round 2 levels. Emergency-loan cost is shown before tax; "after tax" applies the 35% rate. The model does not count the knock-on effect of a larger debt load on next year's interest rate, so the true cost is somewhat higher.<br>
+        Checked against Andrews' Round 3 Capsim screens: Max Investments $12,408K (= 0.8 × $114,623K − $79,750K + 0.2 × 2,297K shares × $1.00); Borrow limit $48.6M (model $48.6M); bond limit $11.9M (model $11.9M); current-debt rate 12.9% (model 13.0%); bonds 14.3%.
+      </details>
     </div>
   </div>
 </div>
@@ -94,7 +111,7 @@
 <script>
 // Round 2 (Dec 31, 2028) figures in $M, Industry CP137618. shares in millions.
 const START = {
-  Andrews:{ rev:151.193, vc:121.598, sga:30.256, other:23.037, cash:0,     ar:31.067, inv:55.386,  pe:170.160, ad:55.537, ap:26.823, cd:88.458,  ltd:79.750, eq:6.044,   shares:2.297, price:1.00, capex:26.49, dinv:15.587, int:23.393 },
+  Andrews:{ rev:151.193, vc:121.598, sga:30.256, other:23.037, cash:0,     ar:31.067, inv:55.386,  pe:170.160, ad:55.537, ap:26.823, cd:88.458,  ltd:79.750, eq:6.044,   shares:2.297, price:1.00, capex:26.49, dinv:15.587, int:23.393, el28:44.908 },
   Baldwin:{ rev:117.686, vc:75.410,  sga:32.208, other:15.270, cash:0,     ar:9.673,  inv:17.996,  pe:116.680, ad:42.565, ap:6.218,  cd:2.955,   ltd:48.450, eq:44.161,  shares:2.306, price:2.92, capex:12.325, dinv:2.403, int:6.655 },
   Chester:{ rev:127.339, vc:85.906,  sga:29.107, other:18.920, cash:0,     ar:10.466, inv:30.233,  pe:152.300, ad:51.553, ap:7.837,  cd:18.543,  ltd:57.950, eq:57.115,  shares:2.874, price:1.00, capex:38.10, dinv:13.071, int:9.943 },
   Digby:  { rev:122.434, vc:93.328,  sga:51.767, other:27.275, cash:0,     ar:10.063, inv:140.636, pe:177.860, ad:58.337, ap:15.565, cd:188.271, ltd:79.150, eq:-12.765, shares:2.397, price:1.00, capex:31.66, dinv:111.768, int:41.369 },
@@ -104,6 +121,8 @@ const START = {
 const YEARS = [2029, 2030, 2031, 2032], PRIME = 0.08, TAX = 0.35, OLD_COUPON = 0.129, MATURES = { 2030: 13.9 };
 const $ = id => document.getElementById(id);
 const fmtM = v => (v < -0.05 ? "−$" : "$") + Math.abs(v).toFixed(1) + "M";
+const fmt$ = v => Math.abs(v) < 1 ? "$" + Math.round(Math.abs(v) * 1000) + "K" : fmtM(v);
+const PENALTY = 0.075;
 let P = [], sel = 0, team = "Andrews", playing = null;
 
 Object.keys(START).forEach(k => { const o = document.createElement("option"); o.value = k; o.textContent = k; $("team").appendChild(o); });
@@ -125,8 +144,8 @@ function scenario(kind) {
   if (kind === "repeat")  { setPair("grow", 0);  setPair("dinv", s.dinv); setPair("capex", s.capex); }
   if (kind === "cleanup") { setPair("grow", 5);  setPair("dinv", -Math.round(s.inv * 0.4)); setPair("capex", 0); setPair("fix", (s.sga + s.other) * 0.85); }
   ["still","repeat","cleanup"].forEach(k => $(k).classList.toggle("on", k === kind));
-  $("startNote").innerHTML = `<b>${team}, Dec 31, 2028:</b> revenue ${fmtM(s.rev)}; contribution margin ${cm.toFixed(1)}%; SG&amp;A + other ${fmtM(s.sga + s.other)}; inventory ${fmtM(s.inv)}; current debt due Jan 1 ${fmtM(s.cd)}; long-term debt ${fmtM(s.ltd)}; equity ${fmtM(s.eq)}; share price $${s.price.toFixed(2)}. Round 2 built ${fmtM(s.dinv)} of inventory and spent ${fmtM(s.capex)} on plant.<br>
-    <i>Hold steady</i>: no growth, no new inventory, $10M of plant. <i>Repeat Round 2</i>: same inventory build and plant spending. <i>Clean-up plan</i>: sell down 40% of inventory, no new plant, cut fixed costs 15%.`;
+  $("startNote").innerHTML = `<b>${team}, Dec 31, 2028:</b> revenue ${fmtM(s.rev)}; contribution margin ${cm.toFixed(1)}%; SG&amp;A + other ${fmtM(s.sga + s.other)}; inventory ${fmtM(s.inv)}; current debt due Jan 1 ${fmtM(s.cd)}; long-term debt ${fmtM(s.ltd)}; equity ${fmtM(s.eq)}; share price $${s.price.toFixed(2)}. Round 2 built ${fmtM(s.dinv)} of inventory and spent ${fmtM(s.capex)} on plant.${s.el28 ? ` Round 2 also ended with a ${fmtM(s.el28)} emergency loan; the 7.5% penalty alone cost about ${fmt$(s.el28 * PENALTY)}.` : ""}<br>
+    <i>Hold steady</i>: no growth, no new inventory, $10M of plant. <i>Repeat Round 2</i>: the same inventory build and plant spending again. <i>Clean-up plan</i>: sell 40% of inventory, no new plant, fixed costs cut 15%.`;
   run();
 }
 
@@ -159,7 +178,7 @@ function run() {
     const baseInt = rate * newCD + OLD_COUPON * st.oldLtd + st.newLtdRate + bondRate * newBond;
     let el = 0, ni = 0, intr = 0, cfo = 0, pre = 0;
     for (let k = 0; k < 40; k++) {
-      intr = baseInt + el * (rate + 0.075);
+      intr = baseInt + el * (rate + PENALTY);
       const ebt = ebit - intr; ni = ebt * (1 - TAX);
       cfo = ni + dep - dInv - (ar - st.ar) + (ap - st.ap);
       pre = st.cash + cfo - capex - cdDue + newCD + newBond + newStock;
@@ -176,7 +195,8 @@ function run() {
     const nextBondRoom = Math.max(0, 0.8 * (A.gross ? pe : pe - ad) - ltd);
     const investRoom = nextBondRoom + 0.2 * shares * s.price + Math.max(0, cash);
     P.push({ yr, rev, contrib: rev - vc, dep, fix: A.fix, ebit, intr, rate, ni, cfo, capex, capexCapped: A.capex > capex + 0.05, cdDue, newCD, cdLimit, newBond, bondRoom, newStock, el,
-             cash, cdNext, ltd, debt: cdNext + ltd, eq, inv, dInv, investRoom, matured, maxInvest });
+             cash, cdNext, ltd, debt: cdNext + ltd, eq, inv, dInv, investRoom, matured, maxInvest,
+             elInt: el * (rate + PENALTY), elNormal: el * rate, elExtra: el * PENALTY });
     st = { rev, vc, cash, ar, ap, inv, pe, ad, cd: cdNext, ltd, oldLtd, newLtdRate: st.newLtdRate + bondRate * newBond, eq, shares, lm: vc - 0.12 * inv };
   });
   render();
@@ -190,14 +210,19 @@ function render() {
   $("tbl").innerHTML = `<tr><th></th>${P.map((q,i) => `<th class="${i===sel?"sel":""}">${q.yr}</th>`).join("")}</tr>
     <tr class="h"><td colspan="5">INCOME</td></tr>
     ${row("Revenue", q => q.rev)}${row("Contribution", q => q.contrib)}${row("Fixed costs + depreciation", q => -(q.fix + q.dep))}
-    ${row("Interest (incl. emergency penalty)", q => -q.intr)}${row("Net income", q => q.ni, cls, "k")}
+    ${row("Interest (incl. Big Al's penalty)", q => -q.intr)}${row("Net income", q => q.ni, cls, "k")}
     <tr class="h"><td colspan="5">CASH</td></tr>
     ${row("Max Invest this year (Capsim rule)", q => q.maxInvest, null, "k")}
-    ${row("Cash from operations", q => q.cfo, cls)}${row("Repay current debt Jan 1", q => -q.cdDue)}${row("Re-borrow (bank limit)", q => q.newCD)}
-    ${row("New bonds", q => q.newBond)}${row("New stock", q => q.newStock)}${row("Plant investment (capped at Max Invest)", q => -q.capex)}${row("Emergency loan (Big Al)", q => q.el, v => v > 0.05 ? "bad" : "", "k")}
+    ${row("Cash from operations", q => q.cfo, cls)}${row("Repay current debt Jan 1", q => -q.cdDue)}${row("Renew bank loan (up to limit)", q => q.newCD)}
+    ${row("New bonds", q => q.newBond)}${row("New stock", q => q.newStock)}${row("Plant investment (capped at Max Invest)", q => -q.capex)}
+    <tr class="h"><td colspan="5">WHAT BIG AL COSTS</td></tr>
+    ${row("Emergency loan", q => q.el, v => v > 0.05 ? "bad" : "", "k")}
+    <tr><td>Interest on it</td>${P.map((q,i) => `<td class="${i===sel?"sel":""}">${q.el > 0.05 ? fmt$(q.elInt) : "—"}</td>`).join("")}</tr>
+    <tr><td>Same loan from the bank</td>${P.map((q,i) => `<td class="${i===sel?"sel":""}">${q.el > 0.05 ? fmt$(q.elNormal) : "—"}</td>`).join("")}</tr>
+    <tr class="k"><td>Extra cost of Big Al (7.5%)</td>${P.map((q,i) => `<td class="${i===sel?"sel ":""}${q.el > 0.05 ? "bad" : ""}">${q.el > 0.05 ? fmt$(q.elExtra) : "—"}</td>`).join("")}</tr>
     <tr class="h"><td colspan="5">POSITION, DEC 31</td></tr>
     ${row("Total debt", q => q.debt, null, "k")}${row("Due next Jan 1", q => q.cdNext)}${row("Equity", q => q.eq, cls)}${row("Room to invest next year", q => q.investRoom, null, "k")}
-    <tr><td>Current-debt rate</td>${P.map((q,i) => `<td class="${i===sel?"sel":""}">${(q.rate*100).toFixed(1)}%</td>`).join("")}</tr>`;
+    <tr><td>Bank rate (current debt)</td>${P.map((q,i) => `<td class="${i===sel?"sel":""}">${(q.rate*100).toFixed(1)}%</td>`).join("")}</tr>`;
   $("sign").textContent = `${team.toUpperCase()} CO.`;
   $("year").textContent = `${p.yr} · ROUND ${sel + 3}`;
   $("cashV").textContent = fmtM(p.cash);
@@ -206,7 +231,12 @@ function render() {
   $("intV").textContent = fmtM(p.intr);
   $("investV").textContent = fmtM(p.maxInvest) + (p.capexCapped ? " (CAPPED)" : "");
   $("alName").style.display = p.el > 0.05 ? "block" : "none";
-  $("al").textContent = p.el > 0.05 ? `BIG AL LENDS ${fmtM(p.el)} (+7.5% PENALTY)` : "";
+  $("al").textContent = p.el > 0.05 ? `BIG AL LENDS ${fmtM(p.el)} · EXTRA COST ${fmt$(p.elExtra)}` : "";
+  const totX = P.reduce((a, q) => a + q.elExtra, 0), yrs = P.filter(q => q.el > 0.05).length;
+  const total = totX > 0.0005 ? `<br>Rounds 3–6 under this plan: Big Al calls in ${yrs} of 4 years. <b class="bad">Penalty interest over the four years: ${fmt$(totX)}</b> (about ${fmt$(totX * (1 - TAX))} after tax), money that buys nothing.` : `<br>Rounds 3–6 under this plan: no emergency loans, no penalty.`;
+  $("alCost").innerHTML = (p.el > 0.05
+    ? `<b>${p.yr}: Big Al lends ${fmtM(p.el)}</b> at ${((p.rate + PENALTY) * 100).toFixed(1)}% instead of the bank's ${(p.rate * 100).toFixed(1)}%. Interest: ${fmt$(p.elInt)} instead of ${fmt$(p.elNormal)}. <b class="bad">Extra cost: ${fmt$(p.elExtra)}</b>, about ${fmt$(p.elExtra * (1 - TAX))} after tax.`
+    : `<b>${p.yr}: no emergency loan.</b> Cash covered January 1.`) + total;
   drawChart();
 }
 
@@ -227,7 +257,7 @@ function drawChart() {
   });
   x.strokeStyle = "#ffd166"; x.lineWidth = 3; x.beginPath();
   P.forEach((q, i) => { const px = L + i * bw + bw * 0.37, py = Y(q.intr * 4); i ? x.lineTo(px, py) : x.moveTo(px, py); }); x.stroke(); x.lineWidth = 1;
-  const legend = [["#8e7dff","bonds"],["#ff9f43","current debt"],["#ff5a5a","emergency loan"],["#5be37d","room to invest"],["#ffd166","interest ×4"]];
+  const legend = [["#8e7dff","bonds"],["#ff9f43","current debt"],["#ff5a5a","emergency loan"],["#5be37d","room to invest"],["#ffd166","interest (×4 scale)"]];
   legend.forEach(([col, t], i) => { x.fillStyle = col; x.fillRect(L + 10 + i * 175, 4, 10, 10); x.fillStyle = "#cfd3e0"; x.fillText(t, L + 26 + i * 175, 13); });
 }
 
