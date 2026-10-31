@@ -74,6 +74,8 @@
     <div class="row"><label>Expected sales (000 units)</label><input type="range" id="demR" min="0" max="4000" step="10"><input type="number" id="dem" step="10"></div>
     <div class="row"><label>Inventory on hand (000)</label><input type="range" id="invR" min="0" max="3000" step="10"><input type="number" id="inv" step="10"></div>
     <div class="row"><label>Material cost / unit</label><input type="range" id="matR" min="3" max="12" step="0.01"><input type="number" id="mat" step="0.01"></div>
+    <div class="row"><label>Labour rates</label><select id="year"><option value="0">Round 2 actual</option><option value="1">Next round (annual raise)</option></select><span></span></div>
+    <div class="row"><label>Annual labour raise %</label><input type="range" id="raiseR" min="0" max="10" step="0.1"><input type="number" id="raise" step="0.1"></div>
     <div class="note" id="presetNote"></div>
   </div>
 
@@ -85,7 +87,8 @@
       Plant view only: before SG&amp;A (promotion, sales, admin), R&amp;D, interest and taxes. Those come in the scale model.<br>
       Labor per unit falls about 10% of the automation-1 rate for each automation point (Capstone guide). Units above first-shift capacity use a second shift at +50% labor, up to 2&times; capacity.
       Depreciation is estimated as capacity &times; ($6 + $4 &times; automation) &divide; 15 years. Inventory carrying cost is 12% of the value of ending inventory.
-      In Capstone, automation and capacity changes take a full year to take effect; here they apply instantly so you can see the result.
+      In Capstone, automation and capacity changes take a full year to take effect; here they apply instantly so you can see the result.<br>
+      "Next round" applies Capstone's annual labour-contract raise. The 5.6% default is calibrated to the Capsim Round 3 decision screen: Andrews' Acre shows $7.18 labour per unit at automation 6 with 25% second shift, against $6.80 at Round 2 rates.
     </div>
   </div>
 </div>
@@ -119,7 +122,8 @@ const fmtK = v => Math.round(v).toLocaleString() + "K";
 
 // ---------- controls ----------
 PRESETS.forEach((p, i) => { const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.product}`; $("preset").appendChild(o); });
-const pairs = [["price","priceR"],["prod","prodR"],["auto","autoR"],["cap","capR"],["dem","demR"],["inv","invR"],["mat","matR"]];
+const pairs = [["price","priceR"],["prod","prodR"],["auto","autoR"],["cap","capR"],["dem","demR"],["inv","invR"],["mat","matR"],["raise","raiseR"]];
+$("year").addEventListener("change", read);
 pairs.forEach(([n, r]) => {
   $(n).addEventListener("input", () => { $(r).value = $(n).value; read(); });
   $(r).addEventListener("input", () => { $(n).value = $(r).value; read(); });
@@ -134,7 +138,7 @@ function load(i) {
   const p = PRESETS[i]; base = p;
   $("team").value = p.key + " Co.";
   setPair("price", p.price); setPair("auto", p.auto); setPair("cap", p.cap);
-  setPair("dem", p.sold); setPair("inv", p.inv); setPair("mat", p.mat);
+  setPair("dem", p.sold); setPair("inv", p.inv); setPair("mat", p.mat); setPair("raise", 5.6);
   $("prodR").max = p.cap * 2; setPair("prod", p.prod);
   $("presetNote").innerHTML =
     `Round 2 actuals for <b>${p.product}</b>: price $${p.price.toFixed(2)}, material $${p.mat.toFixed(2)}, labor $${p.laborObs.toFixed(2)} (average incl. 2nd shift), ` +
@@ -151,7 +155,7 @@ function read() {
   S = {
     team: $("team").value || "Company", product: base.product,
     price: +$("price").value, prod, cap, auto: Math.min(10, Math.max(1, +$("auto").value)),
-    dem: +$("dem").value, inv0: +$("inv").value, mat: +$("mat").value, L1: base.L1,
+    dem: +$("dem").value, inv0: +$("inv").value, mat: +$("mat").value, L1: base.L1 * ($("year").value === "1" ? 1 + (+$("raise").value) / 100 : 1), nextYear: $("year").value === "1",
   };
   compute();
 }
@@ -205,7 +209,7 @@ function render() {
   if (s.capSale > 0.005) pills.push(`Capacity sale raises ${fmtM(s.capSale)}`);
   $("pills").innerHTML = pills.map(t => `<span class="pill">${t}</span>`).join(" ");
   $("signName").textContent = `${s.team.toUpperCase()} · ${s.product.toUpperCase()}`;
-  $("signRates").textContent = `LABOUR $${s.labor1.toFixed(2)}/unit · MATERIAL $${s.mat.toFixed(2)}/unit`;
+  $("signRates").textContent = `LABOUR $${s.labor1.toFixed(2)}/unit${s.nextYear ? " (NEXT RD)" : ""} · MATERIAL $${s.mat.toFixed(2)}/unit`;
   $("boardVal").textContent = fmtM(s.profit);
   $("boardVal").style.color = s.profit >= 0 ? "#5be37d" : "#ff5a5a";
   $("boardUnit").innerHTML = `${fmt$(s.unitMargin)} per unit before fixed costs` +
