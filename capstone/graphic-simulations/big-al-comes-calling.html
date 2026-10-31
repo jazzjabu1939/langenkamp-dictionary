@@ -74,7 +74,7 @@
     <div class="row"><label>Bond issue requested</label><input type="range" id="bondR" min="0" max="80" step="0.5"><input type="number" id="bond" step="0.5"></div>
     <div class="row"><label>Roll over current debt?</label><select id="roll"><option value="1">Yes, up to bank limit</option><option value="0">No, repay from cash</option></select><span></span></div>
     <div class="row"><label>Issue stock (20% max)?</label><select id="stock"><option value="0">No</option><option value="1">Yes, maximum</option></select><span></span></div>
-    <div class="row"><label>Bond limit based on</label><select id="basis"><option value="gross">Gross plant (80%)</option><option value="net">Net plant (80%)</option></select><span></span></div>
+    <div class="row"><label>Bond limit based on</label><select id="basis"><option value="net">Net plant (80%), matches Capsim</option><option value="gross">Gross plant (80%)</option></select><span></span></div>
     <div class="note" id="startNote"></div>
   </div>
   <div class="card">
@@ -83,8 +83,8 @@
     <table id="tbl"></table>
     <canvas id="chart" width="1000" height="230"></canvas>
     <div class="note">
-      Rules from the Capstone guides: current debt (including any emergency loan) is due January 1; banks lend about 75% of receivables plus 15% of last year's labor and material, plus 20%; bonds up to 80% of plant and equipment (the guide does not say gross or net, so you can toggle), at the current-debt rate + 1.4%; stock issues up to 20% of shares at the current price, less a 5% fee; an emergency loan costs a year of current-debt interest plus a 7.5% penalty and joins next year's current debt. Bond 12.5S2030 ($13.9M) matures December 31, 2030 and becomes current debt.<br>
-      Illustrative simplifications: current-debt rate = 8% prime + up to 6% as debt/assets rises; existing bonds average 12.9%; taxes 35% (credited on losses, as in the Courier); receivable and payable days held at Round 2 levels; share price held at Round 2's close. "Room to invest" = bond room + stock room + cash on hand, an estimate of Capstone's Max Invest, which the decision screen reports exactly.
+      Rules from the Capstone guides: current debt (including any emergency loan) is due January 1; banks lend about 75% of receivables plus 15% of last year's labor and material, plus 20%; bonds up to 80% of plant and equipment net of depreciation, at the current-debt rate + 1.4%; stock issues up to 20% of shares at the current price, less a 5% fee; an emergency loan costs a year of current-debt interest plus a 7.5% penalty and joins next year's current debt. Bond 12.5S2030 ($13.9M) matures December 31, 2030 and becomes current debt.<br>
+      Illustrative simplifications: current-debt rate = 8% prime + up to 6% as debt/assets rises; existing bonds average 12.9%; taxes 35% (credited on losses, as in the Courier); receivable and payable days held at Round 2 levels; share price held at Round 2's close. "Room to invest" follows Capstone's Max Invest: 80% of net plant − long-term debt + 20% of shares × share price + cash on hand. Checked against the Capsim decision screen: Andrews' Round 3 Max Investments shows $12,408K, and 0.8 × $114,623K − $79,750K + 0.2 × 2,297K shares × $1.00 = $12,408K.
     </div>
   </div>
 </div>
@@ -148,6 +148,7 @@ function run() {
     const newBond = Math.min(A.bond, bondRoom) / 1.0;                 // face value; 5% fee expensed below
     const stockRoom = 0.2 * st.shares * s.price * 0.95;
     const newStock = A.stock ? stockRoom : 0;
+    const maxInvest = bondRoom + 0.2 * st.shares * s.price + Math.max(0, st.cash);
     const rev = st.rev * (1 + A.g), vc = rev * (1 - A.cm), dep = st.pe / 15;
     const dInv = Math.max(-st.inv, A.dinv);
     const ar = rev * arDays / 365, ap = vc * apDays / 365;
@@ -170,9 +171,9 @@ function run() {
     const pe = st.pe + A.capex, ad = st.ad + dep, inv = st.inv + dInv, eq = st.eq + ni + newStock;
     const shares = st.shares * (A.stock ? 1.2 : 1);
     const nextBondRoom = Math.max(0, 0.8 * (A.gross ? pe : pe - ad) - ltd);
-    const investRoom = nextBondRoom + 0.2 * shares * s.price * 0.95 + Math.max(0, cash);
+    const investRoom = nextBondRoom + 0.2 * shares * s.price + Math.max(0, cash);
     P.push({ yr, rev, contrib: rev - vc, dep, fix: A.fix, ebit, intr, rate, ni, cfo, capex: A.capex, cdDue, newCD, cdLimit, newBond, bondRoom, newStock, el,
-             cash, cdNext, ltd, debt: cdNext + ltd, eq, inv, dInv, investRoom, matured });
+             cash, cdNext, ltd, debt: cdNext + ltd, eq, inv, dInv, investRoom, matured, maxInvest });
     st = { rev, vc, cash, ar, ap, inv, pe, ad, cd: cdNext, ltd, oldLtd, newLtdRate: st.newLtdRate + bondRate * newBond, eq, shares };
   });
   render();
@@ -188,6 +189,7 @@ function render() {
     ${row("Revenue", q => q.rev)}${row("Contribution", q => q.contrib)}${row("Fixed costs + depreciation", q => -(q.fix + q.dep))}
     ${row("Interest (incl. emergency penalty)", q => -q.intr)}${row("Net income", q => q.ni, cls, "k")}
     <tr class="h"><td colspan="5">CASH</td></tr>
+    ${row("Max Invest this year (Capsim rule)", q => q.maxInvest, null, "k")}
     ${row("Cash from operations", q => q.cfo, cls)}${row("Repay current debt Jan 1", q => -q.cdDue)}${row("Re-borrow (bank limit)", q => q.newCD)}
     ${row("New bonds", q => q.newBond)}${row("New stock", q => q.newStock)}${row("Plant investment", q => -q.capex)}${row("Emergency loan (Big Al)", q => q.el, v => v > 0.05 ? "bad" : "", "k")}
     <tr class="h"><td colspan="5">POSITION, DEC 31</td></tr>

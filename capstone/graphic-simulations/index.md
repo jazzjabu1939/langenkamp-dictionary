@@ -49,6 +49,6 @@ The presets load Round 2 (2028) results from one of our class industries. Compan
 
 ---
 
-**About the numbers.** The labor, capacity, automation, financing and emergency-loan rules follow the *Capstone* team and administrator guides. Where the guides do not publish an exact formula — the interest-rate curve, the "Max Invest" limit, per-product depreciation — the pages use labeled estimates. They are teaching models for direction and scale, not replicas of the simulation's engine; the Capstone decision screens remain the authority.
+**About the numbers.** The labor, capacity, automation, financing and emergency-loan rules follow the *Capstone* team and administrator guides. Where the guides do not publish an exact formula, the pages use labeled estimates (the interest-rate curve, per-product depreciation). The "Max Invest" limit in *Big Al Comes Calling* was checked against a live Capsim decision screen: 80% of net plant and equipment, less long-term debt, plus 20% of shares at the current share price, plus cash on hand. They are teaching models for direction and scale, not replicas of the simulation's engine; the Capstone decision screens remain the authority.
 
 *Built October 31, 2026, by Matthew D. Langenkamp with Thea.*
