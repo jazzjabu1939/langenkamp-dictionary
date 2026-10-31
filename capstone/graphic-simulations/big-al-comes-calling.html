@@ -20,6 +20,7 @@
   #year { font-size:clamp(14px,2.6vw,44px); color:#fff7d6; }
   #sign { color:#fff7d6; text-shadow:none; font-size:clamp(9px,1.3vw,22px); display:flex; align-items:center; justify-content:center; }
   #al { color:#ff5a5a; font-size:clamp(8px,1.1vw,18px); }
+  #alName { color:#ffd166; font-size:clamp(6px,0.8vw,13px); text-shadow:1px 1px 0 #000; letter-spacing:0; display:flex; align-items:center; justify-content:center; }
   #controls { max-width:1600px; margin:0 auto; display:grid; grid-template-columns: 0.95fr 1.25fr; gap:12px; padding:12px 18px 18px; }
   .card { background:var(--panel); border:2px solid #343a50; padding:12px 14px; }
   .card h2 { font-size:14px; margin:0 0 10px; color:var(--accent); letter-spacing:1px; }
@@ -57,7 +58,8 @@
   <div class="ov" id="debtL"><div class="a">TOTAL DEBT</div><div class="b" id="debtV"></div></div>
   <div class="ov" id="bankL"><div class="a">DUE JAN 1</div><div class="b" id="bankV"></div></div>
   <div class="ov" id="intL"><div class="a">INTEREST</div><div class="b" id="intV"></div></div>
-  <div class="ov" id="investL"><div class="a">ROOM TO INVEST NEXT YEAR</div><div class="b" id="investV"></div></div>
+  <div class="ov" id="investL"><div class="a">MAX INVEST THIS YEAR</div><div class="b" id="investV"></div></div>
+  <div class="ov" id="alName">BIG AL</div>
   <div class="ov" id="al"></div>
 </div>
 
@@ -72,7 +74,7 @@
     <div class="row"><label>Inventory build (+) / release (−)</label><input type="range" id="dinvR" min="-80" max="120" step="1"><input type="number" id="dinv" step="1"></div>
     <div class="row"><label>Capacity + automation spend</label><input type="range" id="capexR" min="0" max="60" step="0.5"><input type="number" id="capex" step="0.5"></div>
     <div class="row"><label>Bond issue requested</label><input type="range" id="bondR" min="0" max="80" step="0.5"><input type="number" id="bond" step="0.5"></div>
-    <div class="row"><label>Roll over current debt?</label><select id="roll"><option value="1">Yes, up to bank limit</option><option value="0">No, repay from cash</option></select><span></span></div>
+    <div class="row"><label>Re-borrow current debt? (Capsim "Borrow")</label><select id="roll"><option value="1">Yes, up to bank limit</option><option value="0">No, repay from cash</option></select><span></span></div>
     <div class="row"><label>Issue stock (20% max)?</label><select id="stock"><option value="0">No</option><option value="1">Yes, maximum</option></select><span></span></div>
     <div class="row"><label>Bond limit based on</label><select id="basis"><option value="net">Net plant (80%), matches Capsim</option><option value="gross">Gross plant (80%)</option></select><span></span></div>
     <div class="note" id="startNote"></div>
@@ -84,7 +86,7 @@
     <canvas id="chart" width="1000" height="230"></canvas>
     <div class="note">
       Rules from the Capstone guides: current debt (including any emergency loan) is due January 1; banks lend about 75% of receivables plus 15% of last year's labor and material, plus 20%; bonds up to 80% of plant and equipment net of depreciation, at the current-debt rate + 1.4%; stock issues up to 20% of shares at the current price, less a 5% fee; an emergency loan costs a year of current-debt interest plus a 7.5% penalty and joins next year's current debt. Bond 12.5S2030 ($13.9M) matures December 31, 2030 and becomes current debt.<br>
-      Illustrative simplifications: current-debt rate = 8% prime + up to 6% as debt/assets rises; existing bonds average 12.9%; taxes 35% (credited on losses, as in the Courier); receivable and payable days held at Round 2 levels; share price held at Round 2's close. "Room to invest" follows Capstone's Max Invest: 80% of net plant − long-term debt + 20% of shares × share price + cash on hand. Checked against the Capsim decision screen: Andrews' Round 3 Max Investments shows $12,408K, and 0.8 × $114,623K − $79,750K + 0.2 × 2,297K shares × $1.00 = $12,408K.
+      Illustrative simplifications: current-debt rate = 8% prime + up to 6% as debt/assets rises; existing bonds average 12.9%; taxes 35% (credited on losses, as in the Courier); receivable and payable days held at Round 2 levels; share price held at Round 2's close. "Room to invest" follows Capstone's Max Invest: 80% of net plant − long-term debt + 20% of shares × share price + cash on hand. Checked against the Capsim decision screen: Andrews' Round 3 Max Investments shows $12,408K, and 0.8 × $114,623K − $79,750K + 0.2 × 2,297K shares × $1.00 = $12,408K. The Capsim Finance screen for Andrews (Round 3) also shows a current-debt Borrow limit of $48.6M (model: $48.6M), a bond-issue limit of $11.9M (model: $11.9M), current-debt interest of 12.9% (model: 13.0%) and bonds at 14.3%. Current debt and emergency loans are repaid on January 1; Capsim's Borrow slider lets a company take new current debt up to the bank limit in the same round.
     </div>
   </div>
 </div>
@@ -133,7 +135,7 @@ function run() {
   const A = { g: +$("grow").value / 100, cm: +$("cm").value / 100, fix: +$("fix").value, dinv: +$("dinv").value, capex: +$("capex").value,
               bond: +$("bond").value, roll: $("roll").value === "1", stock: $("stock").value === "1", gross: $("basis").value === "gross" };
   const arDays = s.ar / s.rev * 365, apDays = s.ap / s.vc * 365;
-  let st = { rev: s.rev, vc: s.vc, cash: s.cash, ar: s.ar, ap: s.ap, inv: s.inv, pe: s.pe, ad: s.ad, cd: s.cd, ltd: s.ltd, oldLtd: s.ltd, newLtdRate: 0, eq: s.eq, shares: s.shares };
+  let st = { rev: s.rev, vc: s.vc, cash: s.cash, ar: s.ar, ap: s.ap, inv: s.inv, pe: s.pe, ad: s.ad, cd: s.cd, ltd: s.ltd, oldLtd: s.ltd, newLtdRate: 0, eq: s.eq, shares: s.shares, lm: s.vc - 0.12 * s.inv };
   P = [];
   YEARS.forEach(yr => {
     const assets = st.cash + st.ar + st.inv + st.pe - st.ad;
@@ -141,7 +143,7 @@ function run() {
     const rate = PRIME + 0.06 * Math.max(0, Math.min(1, da));
     const bondRate = rate + 0.014;
     const cdDue = st.cd;
-    const cdLimit = 1.2 * (0.75 * st.ar + 0.15 * st.vc);
+    const cdLimit = 1.2 * (0.75 * st.ar + 0.15 * st.lm);
     const newCD = A.roll ? Math.min(cdLimit, cdDue) : 0;
     const plant = A.gross ? st.pe : st.pe - st.ad;
     const bondRoom = Math.max(0, 0.8 * plant - st.ltd);
@@ -149,6 +151,7 @@ function run() {
     const stockRoom = 0.2 * st.shares * s.price * 0.95;
     const newStock = A.stock ? stockRoom : 0;
     const maxInvest = bondRoom + 0.2 * st.shares * s.price + Math.max(0, st.cash);
+    const capex = Math.min(A.capex, maxInvest);
     const rev = st.rev * (1 + A.g), vc = rev * (1 - A.cm), dep = st.pe / 15;
     const dInv = Math.max(-st.inv, A.dinv);
     const ar = rev * arDays / 365, ap = vc * apDays / 365;
@@ -159,7 +162,7 @@ function run() {
       intr = baseInt + el * (rate + 0.075);
       const ebt = ebit - intr; ni = ebt * (1 - TAX);
       cfo = ni + dep - dInv - (ar - st.ar) + (ap - st.ap);
-      pre = st.cash + cfo - A.capex - cdDue + newCD + newBond + newStock;
+      pre = st.cash + cfo - capex - cdDue + newCD + newBond + newStock;
       const elNew = Math.max(0, -pre);
       if (Math.abs(elNew - el) < 1e-6) break; el = elNew;
     }
@@ -168,13 +171,13 @@ function run() {
     const ltd = st.ltd + newBond - matured;
     const oldLtd = st.oldLtd - matured;
     const cdNext = newCD + el + matured;
-    const pe = st.pe + A.capex, ad = st.ad + dep, inv = st.inv + dInv, eq = st.eq + ni + newStock;
+    const pe = st.pe + capex, ad = st.ad + dep, inv = st.inv + dInv, eq = st.eq + ni + newStock;
     const shares = st.shares * (A.stock ? 1.2 : 1);
     const nextBondRoom = Math.max(0, 0.8 * (A.gross ? pe : pe - ad) - ltd);
     const investRoom = nextBondRoom + 0.2 * shares * s.price + Math.max(0, cash);
-    P.push({ yr, rev, contrib: rev - vc, dep, fix: A.fix, ebit, intr, rate, ni, cfo, capex: A.capex, cdDue, newCD, cdLimit, newBond, bondRoom, newStock, el,
+    P.push({ yr, rev, contrib: rev - vc, dep, fix: A.fix, ebit, intr, rate, ni, cfo, capex, capexCapped: A.capex > capex + 0.05, cdDue, newCD, cdLimit, newBond, bondRoom, newStock, el,
              cash, cdNext, ltd, debt: cdNext + ltd, eq, inv, dInv, investRoom, matured, maxInvest });
-    st = { rev, vc, cash, ar, ap, inv, pe, ad, cd: cdNext, ltd, oldLtd, newLtdRate: st.newLtdRate + bondRate * newBond, eq, shares };
+    st = { rev, vc, cash, ar, ap, inv, pe, ad, cd: cdNext, ltd, oldLtd, newLtdRate: st.newLtdRate + bondRate * newBond, eq, shares, lm: vc - 0.12 * inv };
   });
   render();
 }
@@ -191,7 +194,7 @@ function render() {
     <tr class="h"><td colspan="5">CASH</td></tr>
     ${row("Max Invest this year (Capsim rule)", q => q.maxInvest, null, "k")}
     ${row("Cash from operations", q => q.cfo, cls)}${row("Repay current debt Jan 1", q => -q.cdDue)}${row("Re-borrow (bank limit)", q => q.newCD)}
-    ${row("New bonds", q => q.newBond)}${row("New stock", q => q.newStock)}${row("Plant investment", q => -q.capex)}${row("Emergency loan (Big Al)", q => q.el, v => v > 0.05 ? "bad" : "", "k")}
+    ${row("New bonds", q => q.newBond)}${row("New stock", q => q.newStock)}${row("Plant investment (capped at Max Invest)", q => -q.capex)}${row("Emergency loan (Big Al)", q => q.el, v => v > 0.05 ? "bad" : "", "k")}
     <tr class="h"><td colspan="5">POSITION, DEC 31</td></tr>
     ${row("Total debt", q => q.debt, null, "k")}${row("Due next Jan 1", q => q.cdNext)}${row("Equity", q => q.eq, cls)}${row("Room to invest next year", q => q.investRoom, null, "k")}
     <tr><td>Current-debt rate</td>${P.map((q,i) => `<td class="${i===sel?"sel":""}">${(q.rate*100).toFixed(1)}%</td>`).join("")}</tr>`;
@@ -201,7 +204,8 @@ function render() {
   $("debtV").textContent = fmtM(p.debt);
   $("bankV").textContent = fmtM(p.cdNext);
   $("intV").textContent = fmtM(p.intr);
-  $("investV").textContent = fmtM(p.investRoom);
+  $("investV").textContent = fmtM(p.maxInvest) + (p.capexCapped ? " (CAPPED)" : "");
+  $("alName").style.display = p.el > 0.05 ? "block" : "none";
   $("al").textContent = p.el > 0.05 ? `BIG AL LENDS ${fmtM(p.el)} (+7.5% PENALTY)` : "";
   drawChart();
 }
@@ -231,7 +235,7 @@ function drawChart() {
 function place(id, X, Y, w, h) { const e = $(id); e.style.left = (X/440*100)+"%"; e.style.top = (Y/200*100)+"%"; e.style.width = (w/440*100)+"%"; e.style.height = (h/200*100)+"%"; }
 place("sign", 16, 46, 108, 14); place("year", 140, 4, 160, 20);
 place("cashL", 16, 30, 108, 16); place("debtL", 150, 30, 70, 16); place("bankL", 330, 52, 100, 16);
-place("intL", 330, 30, 100, 16); place("investL", 220, 30, 110, 16); place("al", 100, 186, 240, 10);
+place("intL", 330, 30, 100, 16); place("investL", 220, 30, 110, 16); place("al", 100, 186, 240, 10); place("alName", 102, 132, 22, 7);
 
 // ---------- pixel art ----------
 const cv = $("c"), g = cv.getContext("2d");
@@ -256,12 +260,17 @@ function draw(t) {
   R(26, 136 - 42 * fill, 36, 42 * fill, "#5be37d"); R(40, 110, 8, 8, "#888");
   R(84, 118, 18, 32, "#3d2a1e");
   face(98, 92, p.ni >= 0, t);                       // CEO at the window
-  // Big Al at the door
+  // Big Al at the door: black cowboy hat, dark suit, checkbook
   if (p.el > 0.05) {
-    const bx = 100 + Math.round(Math.sin(t / 300) * 2);
-    R(bx, 124, 10, 3, "#222"); R(bx+2, 120, 6, 4, "#222");              // fedora
-    R(bx+1, 127, 8, 7, "#e0ac69"); R(bx+3, 129, 1, 1, "#111"); R(bx+6, 129, 1, 1, "#111"); R(bx+3, 132, 4, 1, "#fff");
-    R(bx, 134, 10, 14, "#3b3b52"); R(bx+10, 138, 6, 4, "#fff");          // suit + checkbook
+    const bx = 102 + Math.round(Math.sin(t / 300) * 1.5);
+    R(bx-3, 113, 28, 2, "#0d0d0d"); R(bx-4, 112, 3, 2, "#0d0d0d"); R(bx+23, 112, 3, 2, "#0d0d0d");   // wide brim, curled ends
+    R(bx+5, 105, 12, 8, "#111"); R(bx+9, 105, 4, 2, "#2a2a2a"); R(bx+5, 110, 12, 2, "#5a4632");     // crown, crease, band
+    R(bx+6, 115, 10, 9, "#e0ac69"); R(bx+8, 118, 2, 2, "#111"); R(bx+12, 118, 2, 2, "#111");        // face, eyes
+    R(bx+8, 121, 6, 1, "#7a2a2a"); R(bx+7, 122, 8, 1, "#6b4a2a");                                     // grin, moustache shadow
+    R(bx+2, 124, 18, 18, "#24243a"); R(bx+10, 124, 2, 8, "#fff"); R(bx+10, 126, 2, 4, "#b22222");     // suit, shirt, tie
+    R(bx, 126, 3, 12, "#24243a"); R(bx+19, 126, 3, 10, "#24243a");                                    // arms
+    R(bx+21, 132, 8, 6, "#f5f5f5"); R(bx+22, 134, 6, 1, "#3a7bd5");                                   // checkbook
+    R(bx+4, 142, 5, 8, "#1a1a1a"); R(bx+13, 142, 5, 8, "#1a1a1a"); R(bx+3, 149, 7, 2, "#4a2e1a"); R(bx+12, 149, 7, 2, "#4a2e1a");  // legs, boots
   }
   // debt tower (center): blocks of $10M, stacked by type
   const blocks = [[p.ltd, "#8e7dff"], [p.cdNext - p.el, "#ff9f43"], [p.el, "#ff5a5a"]];
