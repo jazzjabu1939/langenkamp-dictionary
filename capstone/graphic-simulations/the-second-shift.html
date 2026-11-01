@@ -45,10 +45,10 @@
 <header>
   <div>
     <h1>THE SECOND SHIFT &middot; <span style="color:#a9adbd">PIXEL FACTORY &middot; PLANT &amp; PRODUCTION ECONOMICS</span></h1>
-    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; Capstone Low End segment &middot; presets from Round 2 (2028), Industry CP137618</div>
+    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; <span id="subData"></span></div>
   </div>
   <div>
-    <button id="resetBtn" title="Reload the team's Round 2 figures">Reset team</button>
+    <button id="resetBtn" title="Reload the product's actual figures">Reset team</button>
     <button id="fsBtn">Full screen</button>
   </div>
 </header>
@@ -65,16 +65,19 @@
 <div id="controls">
   <div class="card">
     <h2>DECISIONS</h2>
+    <div class="row"><label>Industry data</label><select id="industry"></select><button id="loadBtn" title="Read Capsim Courier workbooks (.xlsx) in this browser; nothing is uploaded">Load .xlsx</button></div>
+    <input type="file" id="file" accept=".xlsx" multiple hidden>
+    <div class="note" id="loadNote" style="margin:-2px 0 6px"></div>
     <div class="row"><label>Team preset</label><select id="preset"></select><span></span></div>
     <div class="row"><label>Company name</label><input type="text" id="team"><span></span></div>
-    <div class="row"><label>Price per unit</label><input type="range" id="priceR" min="10" max="30" step="0.25"><input type="number" id="price" step="0.25"></div>
+    <div class="row"><label>Price per unit</label><input type="range" id="priceR" min="10" max="50" step="0.25"><input type="number" id="price" step="0.25"></div>
     <div class="row"><label>Production (000 units)</label><input type="range" id="prodR" min="0" step="10"><input type="number" id="prod" step="10"></div>
     <div class="row"><label>Automation rating</label><input type="range" id="autoR" min="1" max="10" step="0.1"><input type="number" id="auto" step="0.1" min="1" max="10"></div>
     <div class="row"><label>First-shift capacity (000)</label><input type="range" id="capR" min="100" max="3000" step="50"><input type="number" id="cap" step="50"></div>
     <div class="row"><label>Expected sales (000 units)</label><input type="range" id="demR" min="0" max="4000" step="10"><input type="number" id="dem" step="10"></div>
     <div class="row"><label>Inventory on hand (000)</label><input type="range" id="invR" min="0" max="3000" step="10"><input type="number" id="inv" step="10"></div>
-    <div class="row"><label>Material cost / unit</label><input type="range" id="matR" min="3" max="12" step="0.01"><input type="number" id="mat" step="0.01"></div>
-    <div class="row"><label>Labour rates</label><select id="year"><option value="0">Round 2 actual</option><option value="1">Next round (annual raise)</option></select><span></span></div>
+    <div class="row"><label>Material cost / unit</label><input type="range" id="matR" min="3" max="20" step="0.01"><input type="number" id="mat" step="0.01"></div>
+    <div class="row"><label>Labour rates</label><select id="year"><option value="0">This round actual</option><option value="1">Next round (annual raise)</option></select><span></span></div>
     <div class="row"><label>Annual labour raise %</label><input type="range" id="raiseR" min="0" max="10" step="0.1"><input type="number" id="raise" step="0.1"></div>
     <div class="note" id="presetNote"></div>
   </div>
@@ -94,34 +97,234 @@
 </div>
 
 <script>
-// ---------- Round 2 (2028) Low End data, Industry CP137618 (Section 5, 1:25 MWF) ----------
-// cap/auto = values in effect during Round 2 (from Round 1 Courier "next round" columns).
-// laborObs = Round 2 average labor cost/unit (includes 2nd-shift premium); util = Round 2 plant utilization.
-const PRESETS = [
-  { key:"Andrews", product:"Acre",  price:17.00, mat:6.14, laborObs:8.16,  util:1.25,  auto:5.0, cap:1600, sold:2722, inv:108  },
-  { key:"Baldwin", product:"Bead",  price:21.25, mat:5.67, laborObs:4.43,  util:1.00,  auto:7.0, cap:1400, sold:1283, inv:390  },
-  { key:"Chester", product:"Cedar", price:19.00, mat:6.17, laborObs:6.45,  util:1.707, auto:6.0, cap:1400, sold:2134, inv:244  },
-  { key:"Digby",   product:"Dell",  price:24.00, mat:6.71, laborObs:5.09,  util:1.75,  auto:7.0, cap:1600, sold:783,  inv:2003 },
-  { key:"Erie",    product:"Ebb",   price:22.00, mat:6.13, laborObs:5.13,  util:1.788, auto:7.0, cap:1650, sold:1341, inv:1882 },
-  { key:"Ferris",  product:"Feat",  price:19.00, mat:6.69, laborObs:5.66,  util:1.524, auto:6.4, cap:1850, sold:2311, inv:495  },
-  { key:"Ferris",  product:"Foot",  price:19.00, mat:6.25, laborObs:11.51, util:1.50,  auto:2.0, cap:400,  sold:597,  inv:0    },
-];
+// ---------- Built-in data: Round 2 (2028) Production pages ----------
+// Row: [company, product, segment, price, material/unit, labor/unit (avg incl. 2nd shift), utilization,
+//       automation in effect, first-shift capacity in effect (000), units sold (000), ending inventory (000),
+//       automation next round, capacity next round]
+// "In effect" values come from the previous round's "Auto. Next Round" / "Capacity Next Round" columns.
+// Regenerate by loading new Courier workbooks on the page; see the update notes in the Graphic Simulations skill.
+const BUILTIN = {
+  CP137618: { label:"Round 2 (2028)", section:"1:25 MWF section", rows:[
+    ["Andrews","Abby","High End",39,15,15.37,1,1,500,128,18,1,500],
+    ["Andrews","Able","Traditional",29,10.69,7.62,1.047,5,2000,1457,487,6,1700],
+    ["Andrews","Acre","Low End",17,6.14,8.16,1.25,5,1600,2722,108,6,1600],
+    ["Andrews","Adam","High End",39,16.07,10.33,1.089,3,900,492,565,3,900],
+    ["Andrews","Aft","Performance",34,15.36,11.29,1.4,3,600,508,276,3,600],
+    ["Andrews","Agape","Size",34,13.6,10.67,1.183,3,600,478,294,3,600],
+    ["Andrews","Alan","Performance",34,16.14,15.37,1,1,500,46,107,1,500],
+    ["Andrews","Apple","Traditional",29,10.75,14.37,1.4,1,500,117,479,5.8,800],
+    ["Baldwin","Baker","Traditional",28.75,10.02,7.75,0.826,4,1150,1246,66,4,1200],
+    ["Baldwin","Bead","Low End",21.25,5.67,4.43,1,7,1400,1283,390,7,1550],
+    ["Baldwin","Bid","High End",39,15.39,9.85,1.311,3,450,533,134,3.3,550],
+    ["Baldwin","Bold","Performance",34,15.64,8.86,0.933,3,450,498,25,3.3,500],
+    ["Baldwin","Buddy","Size",34,13.02,10.3,1.525,3,400,352,256,3.3,550],
+    ["Baldwin","Buzz","Size",34,13.29,10.09,0.743,3,500,144,113,3.4,350],
+    ["Chester","Cake","Traditional",28,10.17,6.62,1.05,5,1600,1359,598,6,1700],
+    ["Chester","Cedar","Low End",19,6.17,6.45,1.707,6,1400,2134,244,7,1850],
+    ["Chester","Cid","High End",39,15.26,9.13,1.14,3,500,607,119,3,600],
+    ["Chester","Coat","Performance",32.5,15.08,8.63,0.867,3,600,364,352,3,600],
+    ["Chester","Cure","Size",34,13.13,8.63,0.867,3,600,389,263,3,700],
+    ["Digby","Dart","—",45,15.47,10.46,1.75,3,400,0,370,3,700],
+    ["Digby","Daze","Traditional",29,10.65,7.63,1.75,5,1800,1673,1863,5,1900],
+    ["Digby","Dell","Low End",24,6.71,5.09,1.75,7,1600,783,2003,7.2,1700],
+    ["Digby","Dot","Performance",34,15.28,10.18,1.75,3,600,559,801,3,750],
+    ["Digby","Duck","High End",39.5,15.79,10.17,1.744,3,900,482,1386,3,1000],
+    ["Digby","Dune","Size",34,13.56,10.18,1.75,3,600,502,800,3,800],
+    ["Erie","Eat","Traditional",29,10.24,6.34,1.696,6,1350,1471,1147,7,1550],
+    ["Erie","Ebb","Low End",22,6.13,5.13,1.788,7,1650,1341,1882,7.9,2000],
+    ["Erie","Echo","High End",39,14.97,9.24,1.229,3,700,639,239,3,700],
+    ["Erie","Edge","Performance",34,14.73,9.39,1.286,3,700,315,854,3,700],
+    ["Erie","Egg","Size",34,13.01,9.93,1.557,3,700,499,694,3,700],
+    ["Ferris","Fast","Traditional",27.75,10.65,7.51,1.031,4,2100,1537,252,4.5,1600],
+    ["Ferris","Feat","Low End",19,6.69,5.66,1.524,6.4,1850,2311,495,7.2,2200],
+    ["Ferris","Fist","High End",38.75,15.54,8.46,0.529,3,700,528,0,3,700],
+    ["Ferris","Foam","Performance",32.75,15.28,8.46,0.836,3,550,467,65,3,550],
+    ["Ferris","Foot","Low End",19,6.25,11.51,1.5,2,400,597,0,5,500],
+    ["Ferris","Fume","Size",33.5,13.27,8.46,0.6,3,550,398,120,3,550] ]},
+  CP137617: { label:"Round 2 (2028)", section:"2:30 MW section", rows:[
+    ["Andrews","Able","Traditional",29,10.44,6.75,1.073,5,1500,1428,256,5.8,1500],
+    ["Andrews","Acre","Low End",20,6.25,6.36,1.541,6,1700,1972,628,7,1750],
+    ["Andrews","Adam","High End",39,15.41,8.72,0.969,3,700,692,57,3,650],
+    ["Andrews","Aft","Performance",34,15.62,9.41,1.2,3,550,532,131,3,550],
+    ["Andrews","Agape","Size",34,13.27,8.72,0.733,3,600,533,39,3,600],
+    ["Andrews","Apple","Size",33.5,14.05,9.44,0.75,4,600,27,269,4,600],
+    ["Baldwin","Baker","Traditional",27.5,10.11,6.69,1,5,1800,1560,184,5.5,1450],
+    ["Baldwin","Bead","Low End",19.75,6.23,6.06,1.786,6.5,1400,2165,304,7,1600],
+    ["Baldwin","Bid","High End",38,15.16,8.92,0.857,3,900,665,73,3,700],
+    ["Baldwin","Bold","Performance",33,15.55,9.34,1.111,3,600,583,104,3,450],
+    ["Baldwin","Buddy","Size",33,13.04,9.53,1.167,3,600,499,195,3,600],
+    ["Chester","Cake","Traditional",28.5,10.75,6.87,1.192,5,1250,1566,0,6.2,1400],
+    ["Chester","Cedar","Low End",21.5,6.18,5.32,0.952,6,1650,1607,470,7.2,1650],
+    ["Chester","Cid","High End",39,16.14,8.94,1.12,3,500,528,111,3,500],
+    ["Chester","Coat","Performance",34,15.43,8.51,0.84,3,500,517,56,3,500],
+    ["Chester","Cure","Size",34,13.69,8.51,0.7,3,500,521,0,3,500],
+    ["Digby","Daze","Traditional",27.5,10.75,6.51,1.9,6,1000,1732,501,6,1100],
+    ["Digby","Dell","Low End",22,6.18,6.32,1.656,6,1600,1481,1673,7.5,1700],
+    ["Digby","Dot","Performance",34,15.51,9.18,1.2,3,700,481,581,3,900],
+    ["Digby","Drum","High End",31.75,16.37,10.53,1,3,400,72,0,3,400],
+    ["Digby","Duck","High End",39.25,15.37,8.78,1.071,3,700,587,325,3,700],
+    ["Digby","Dune","Size",34,13.69,9.93,1.543,3,700,562,642,3,800],
+    ["Erie","Easy","Performance",34,13.35,11.42,0.58,1,500,61,224,1,500],
+    ["Erie","Eat","Traditional",27.5,9.99,7.99,0.417,4,1800,935,264,4,1800],
+    ["Erie","Ebb","Low End",19.75,6.25,5.71,0.719,6,1600,1367,355,6,1600],
+    ["Erie","Echo","High End",38,14.88,9.14,0.722,3,900,362,314,3,900],
+    ["Erie","Edge","Performance",33.5,15.6,9.14,0.417,3,600,288,234,3,600],
+    ["Erie","Egg","Size",33.5,12.96,9.14,0.717,3,600,239,280,3,600],
+    ["Ferris","Fast","Traditional",29,10.69,7.44,0.909,4,1250,1279,37,4,1100],
+    ["Ferris","Feat","Low End",19.5,6.14,5.69,1.176,6,1700,2014,281,6,1700],
+    ["Ferris","Fist","High End",39,15.51,8.5,0.767,3,800,539,31,3,600],
+    ["Ferris","Foam","Performance",34,14.76,8.5,0.5,3,600,307,162,3,400],
+    ["Ferris","Fume","Size",34,13.03,8.5,0.5,3,600,411,0,3,400],
+    ["Garrett","Gaffe","Traditional",27.25,10.25,6.35,0.806,5,1800,1573,287,6,1800],
+    ["Garrett","Gaggle","High End",38,15.22,8.47,0.533,3,600,513,0,3,600],
+    ["Garrett","Gerbil","Low End",19.5,6.14,5.98,1.375,6,1600,2091,444,7,1600],
+    ["Garrett","Goose","Performance",33.25,15.33,8.47,0.673,3,550,343,247,3,550],
+    ["Garrett","Graft","Size",33.5,13.03,8.47,0.283,3,600,307,55,3,600],
+    ["Harper","Hamper","Size",34,13.58,9.96,1.571,3,700,584,616,3,750],
+    ["Harper","Heft","Traditional",27.25,10.67,6.21,1.556,6,1350,1775,656,6.3,1500],
+    ["Harper","Hilt","Performance",34,15.31,9.75,1.457,3,700,552,689,3,750],
+    ["Harper","Hoary","High End",39,15.74,8.76,1.071,3,700,593,374,3,700],
+    ["Harper","Hue","Low End",19.75,6.13,5.03,1.636,7,1650,2173,1031,7.3,2000] ]},
+};
+const SEG_ORDER = ["Low End", "Traditional", "High End", "Performance", "Size"];
 // Back out the first-shift labor rate at automation 1.0 from the observed average.
-PRESETS.forEach(p => {
+function calib(p) {
   const s = p.util > 1 ? (p.util - 1) / p.util : 0;          // share of units made on 2nd shift
   const firstShift = p.laborObs / (1 + 0.5 * s);              // strip the 50% premium
   p.L1 = firstShift / ((11 - p.auto) / 10);                   // labor at automation 1.0
   p.prod = Math.round(p.cap * p.util / 10) * 10;
-});
+}
+function makeProducts(rows) {
+  const ps = rows.map(r => ({ key:r[0], product:r[1], seg:r[2], price:r[3], mat:r[4], laborObs:r[5], util:r[6],
+    auto:r[7], cap:r[8], sold:r[9], inv:r[10], autoNext:r[11], capNext:r[12], approx:!!r[13] }));
+  ps.forEach(calib);
+  const so = s => { const i = SEG_ORDER.indexOf(s); return i < 0 ? 99 : i; };
+  return ps.sort((a, b) => so(a.seg) - so(b.seg) || a.key.localeCompare(b.key) || a.product.localeCompare(b.product));
+}
+const DATASETS = Object.entries(BUILTIN).map(([id, d]) => ({ id, label:d.label, section:d.section, products:makeProducts(d.rows) }));
+let DS = DATASETS[0], PRESETS = DS.products;
+
+// ---------- Capsim Courier workbook loader (runs in the browser; nothing is uploaded) ----------
+async function unzip(buf) {
+  const dv = new DataView(buf), u8 = new Uint8Array(buf), files = {};
+  let e = buf.byteLength - 22;
+  while (e >= 0 && dv.getUint32(e, true) !== 0x06054b50) e--;
+  if (e < 0) throw new Error("not an .xlsx file");
+  let p = dv.getUint32(e + 16, true);
+  for (let i = 0, n = dv.getUint16(e + 10, true); i < n; i++) {
+    const nlen = dv.getUint16(p + 28, true);
+    files[new TextDecoder().decode(u8.subarray(p + 46, p + 46 + nlen))] =
+      { method:dv.getUint16(p + 10, true), size:dv.getUint32(p + 20, true), off:dv.getUint32(p + 42, true) };
+    p += 46 + nlen + dv.getUint16(p + 30, true) + dv.getUint16(p + 32, true);
+  }
+  return async name => {
+    const f = files[name]; if (!f) return null;
+    const start = f.off + 30 + dv.getUint16(f.off + 26, true) + dv.getUint16(f.off + 28, true);
+    const data = u8.subarray(start, start + f.size);
+    if (f.method === 0) return new TextDecoder().decode(data);
+    return new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream("deflate-raw"))).text();
+  };
+}
+async function readSheets(buf, names) {
+  const get = await unzip(buf), P = s => new DOMParser().parseFromString(s, "application/xml");
+  const ssx = await get("xl/sharedStrings.xml");
+  const ss = ssx ? [...P(ssx).getElementsByTagName("si")].map(si => si.textContent) : [];
+  const tgt = {};
+  for (const r of P(await get("xl/_rels/workbook.xml.rels")).getElementsByTagName("Relationship")) tgt[r.getAttribute("Id")] = r.getAttribute("Target");
+  const out = {};
+  for (const s of P(await get("xl/workbook.xml")).getElementsByTagName("sheet")) {
+    if (!names.includes(s.getAttribute("name"))) continue;
+    let t = tgt[s.getAttribute("r:id")].replace(/^\//, ""); if (!t.startsWith("xl/")) t = "xl/" + t;
+    out[s.getAttribute("name")] = [...P(await get(t)).getElementsByTagName("row")].map(row => {
+      const cells = [];
+      for (const c of row.getElementsByTagName("c")) {
+        const col = [...c.getAttribute("r").replace(/\d+/g, "")].reduce((a, ch) => a * 26 + ch.charCodeAt(0) - 64, 0) - 1;
+        const v = c.getElementsByTagName("v")[0], is = c.getElementsByTagName("is")[0];
+        cells[col] = is ? is.textContent : v ? (c.getAttribute("t") === "s" ? ss[+v.textContent] : v.textContent) : "";
+      }
+      return cells;
+    });
+  }
+  return out;
+}
+const num = x => { x = String(x ?? "").replace(/[$,]/g, "").trim(); return x.endsWith("%") ? parseFloat(x) / 100 : parseFloat(x); };
+async function parseWorkbook(file) {
+  const sh = await readSheets(await file.arrayBuffer(), ["Production", "High Level Overview"]);
+  const prod = sh["Production"];
+  if (!prod) throw new Error(`${file.name} has no Production sheet. Is it a Capsim Courier workbook?`);
+  const H = prod.find(r => r && r[0] === "Name") || [];
+  const col = n => { const i = H.findIndex(h => (h || "").trim().toLowerCase() === n.toLowerCase());
+    if (i < 0) throw new Error(`${file.name}: the Production sheet has no "${n}" column.`); return i; };
+  const C = { name:col("Name"), seg:col("Primary Segment"), sold:col("Units Sold"), inv:col("Inventory"), age:col("Age Dec.31"), rev:col("Revision Date"),
+    price:col("Price"), mat:col("Material Cost"), lab:col("Labor Cost"), autoN:col("Auto. Next Round"), capN:col("Capacity Next Round"), util:col("Plant Utilization") };
+  const company = {};
+  "Andrews Baldwin Chester Digby Erie Ferris Garrett Harper".split(" ").forEach(n => company[n[0]] = n);
+  const names = (sh["High Level Overview"] || []).find(r => r && r.slice(1).filter(Boolean).length >= 4 && r.slice(1).filter(Boolean).every(x => isNaN(num(x))));
+  if (names) names.slice(1).forEach(n => { if (n && n !== "Average") company[n[0]] = n; });
+  const products = {};
+  prod.slice(prod.indexOf(H) + 1).forEach(r => {
+    if (!r || !r[C.name]) return;
+    products[r[C.name]] = { name:r[C.name], key:company[r[C.name][0]] || r[C.name][0], seg:r[C.seg] || "—", sold:num(r[C.sold]), inv:num(r[C.inv]),
+      age:num(r[C.age]), rev:r[C.rev], price:num(r[C.price]), mat:num(r[C.mat]), lab:num(r[C.lab]), autoN:num(r[C.autoN]), capN:num(r[C.capN]), util:num(r[C.util]) };
+  });
+  const ind = file.name.match(/CP\d+/i), rd = file.name.match(/round_?(\d+)(?:_(\d{4}))?/i);
+  return { name:file.name, industry:ind ? ind[0].toUpperCase() : "", round:rd ? +rd[1] : null, year:rd && rd[2] || "", products };
+}
+async function handleFiles(files) {
+  if (!files.length) return;
+  const note = $("loadNote");
+  try {
+    if (files.length > 2) throw new Error("load one or two workbooks: this round's, plus last round's for exact labour figures.");
+    note.textContent = "Reading…";
+    let [cur, prev] = await Promise.all(files.map(parseWorkbook));
+    if (prev) {
+      if (cur.industry && prev.industry && cur.industry !== prev.industry) throw new Error(`the two workbooks are from different industries (${cur.industry}, ${prev.industry}).`);
+      // Without round numbers in the file names, an unrevised product (same revision date in both) is older in the later workbook.
+      const same = Object.keys(cur.products).find(k => prev.products[k] && cur.products[k].rev === prev.products[k].rev && cur.products[k].age !== prev.products[k].age);
+      const curIsLater = cur.round != null && prev.round != null ? cur.round > prev.round : same ? cur.products[same].age > prev.products[same].age : true;
+      if (!curIsLater) [cur, prev] = [prev, cur];
+    }
+    let approx = 0;
+    const rows = Object.values(cur.products).filter(p => p.lab > 0).map(p => {
+      const q = prev && prev.products[p.name];
+      if (!q) approx++;
+      return [p.key, p.name, p.seg, p.price, p.mat, p.lab, p.util, q ? q.autoN : p.autoN, q ? q.capN : p.capN, p.sold, p.inv, p.autoN, p.capN, !q];
+    });
+    if (!rows.length) throw new Error(`${cur.name} has no products with production costs.`);
+    const ds = { id:cur.industry || "Workbook", label:cur.round != null ? `Round ${cur.round}${cur.year ? ` (${cur.year})` : ""}` : cur.name,
+      section:"loaded from workbook", products:makeProducts(rows) };
+    DATASETS.push(ds); addIndustryOption(ds, DATASETS.length - 1); setDataset(DATASETS.length - 1, 0);
+    note.textContent = `Loaded ${cur.name}${prev ? ` with last round's ${prev.name}` : ""}: ${rows.length} products.` +
+      (approx ? ` ${approx} use estimated automation and capacity${prev ? " (new products)" : "; add last round's workbook for exact labour figures"}.` : "");
+  } catch (err) { note.textContent = `Could not load: ${err.message}`; }
+}
 
 const $ = id => document.getElementById(id);
+
 let S = {}; let base = {};
 const fmtM = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(1) + "M";
 const fmt$ = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(2);
 const fmtK = v => Math.round(v).toLocaleString() + "K";
 
 // ---------- controls ----------
-PRESETS.forEach((p, i) => { const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.product}`; $("preset").appendChild(o); });
+function addIndustryOption(d, i) { const o = document.createElement("option"); o.value = i; o.textContent = `${d.id} · ${d.section} · ${d.label}`; $("industry").appendChild(o); }
+function setDataset(di, pi) {
+  DS = DATASETS[di]; PRESETS = DS.products; $("industry").value = di;
+  const sel = $("preset"); sel.innerHTML = "";
+  let grp = null;
+  PRESETS.forEach((p, i) => {
+    if (!grp || grp.label !== p.seg) { grp = document.createElement("optgroup"); grp.label = p.seg; sel.appendChild(grp); }
+    const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.product}`; grp.appendChild(o);
+  });
+  $("subData").textContent = `actual figures from ${DS.label}, Industry ${DS.id} (${DS.section})`;
+  sel.value = pi; load(pi);
+}
+DATASETS.forEach(addIndustryOption);
+$("industry").addEventListener("change", () => setDataset(+$("industry").value, 0));
+$("loadBtn").addEventListener("click", () => $("file").click());
+$("file").addEventListener("change", e => { handleFiles([...e.target.files]); e.target.value = ""; });
+document.addEventListener("dragover", e => e.preventDefault());
+document.addEventListener("drop", e => { e.preventDefault(); handleFiles([...e.dataTransfer.files].filter(f => /\.xlsx$/i.test(f.name))); });
 const pairs = [["price","priceR"],["prod","prodR"],["auto","autoR"],["cap","capR"],["dem","demR"],["inv","invR"],["mat","matR"],["raise","raiseR"]];
 $("year").addEventListener("change", read);
 pairs.forEach(([n, r]) => {
@@ -141,9 +344,13 @@ function load(i) {
   setPair("dem", p.sold); setPair("inv", p.inv); setPair("mat", p.mat); setPair("raise", 5.6);
   $("prodR").max = p.cap * 2; setPair("prod", p.prod);
   $("presetNote").innerHTML =
-    `Round 2 actuals for <b>${p.product}</b>: price $${p.price.toFixed(2)}, material $${p.mat.toFixed(2)}, labor $${p.laborObs.toFixed(2)} (average incl. 2nd shift), ` +
+    `${DS.label} actuals for <b>${p.product}</b> (${p.seg}): price $${p.price.toFixed(2)}, material $${p.mat.toFixed(2)}, labor $${p.laborObs.toFixed(2)} (average incl. 2nd shift), ` +
     `automation ${p.auto}, capacity ${p.cap.toLocaleString()}K, utilization ${Math.round(p.util*100)}%, sold ${p.sold.toLocaleString()}K, ending inventory ${p.inv.toLocaleString()}K. ` +
-    `Implied labor at automation 1.0: $${p.L1.toFixed(2)}/unit. Expected sales start at last round's sales; inventory on hand starts at Round 2's ending inventory.`;
+    `Implied labor at automation 1.0: $${p.L1.toFixed(2)}/unit. Expected sales start at last round's sales; inventory on hand starts at this round's ending inventory. ` +
+    `Next round's plant: automation ${p.autoNext}, capacity ${p.capNext.toLocaleString()}K <button id="nextPlant" style="font-size:12px;padding:1px 6px">Use it</button>` +
+    (p.approx ? `<br><span style="color:#ffd166">Estimate: this round's automation and capacity weren't in the loaded workbook, so next round's values stand in. Labour figures are approximate.</span>` : "") +
+    (p.seg === "Low End" ? "" : `<br><i>Plant view only. Outside the Low End, product design, age and R&amp;D drive demand more than plant cost does.</i>`);
+  $("nextPlant").addEventListener("click", () => { setPair("auto", p.autoNext); setPair("cap", p.capNext); read(); });
   read();
 }
 
@@ -334,8 +541,7 @@ function draw(t) {
   requestAnimationFrame(draw);
 }
 
-load(Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0)));
-$("preset").value = Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0));
+setDataset(0, Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0)));
 requestAnimationFrame(draw);
 </script>
 </body>

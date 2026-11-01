@@ -9,15 +9,17 @@ title: Capstone Graphic Simulations
 
 Three small pixel-art simulations built for MANAGMNT 494BI, Business Strategy and Policy, at the Isenberg School of Management. Students run companies in the Capsim *Capstone* simulation; these pages show, with toggles and sliders, the economics behind three decisions that sink more teams than any competitor does. Each runs in the browser, works offline once loaded, and sends nothing anywhere.
 
-The presets load Round 2 (2028) results from one of our class industries. Company names are Capstone's standard names (Andrews, Baldwin, Chester, Digby, Erie, Ferris), not students. Every number can be changed.
+The presets load Round 2 (2028) results from our class industries. Company names are Capstone's standard names (Andrews, Baldwin, Chester and so on), not students. Every number can be changed.
 
 ---
 
 ## 1. The Second Shift
 
-**Plant and production economics.** A factory makes one Low End sensor. Set price, production, automation and capacity, and watch what happens: past first-shift capacity, night falls, a second shift arrives, and every extra unit costs 50% more in labor. Raise automation and the line workers turn into robot arms as labor cost per unit falls. Unsold units pile up in the warehouse. The controller at the desk smiles when the plant makes money and sweats when it doesn't, and the board behind them shows the cash tied up in new inventory.
+**Plant and production economics.** A factory makes one sensor; pick any team's product, Low End first. Set price, production, automation and capacity, and watch what happens: past first-shift capacity, night falls, a second shift arrives, and every extra unit costs 50% more in labor. Raise automation and the line workers turn into robot arms as labor cost per unit falls. Unsold units pile up in the warehouse. The controller at the desk smiles when the plant makes money and sweats when it doesn't, and the board behind them shows the cash tied up in new inventory.
 
 *The lesson:* low price is not low cost, and profit is not cash.
+
+*New rounds:* the **Load .xlsx** button reads Capsim Courier workbooks in your browser (nothing is uploaded). Load this round's workbook, plus last round's for exact labour figures, and every product's actual numbers fill the presets.
 
 [Open The Second Shift](the-second-shift.html)
 
