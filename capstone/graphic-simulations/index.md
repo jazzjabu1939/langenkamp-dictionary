@@ -9,7 +9,7 @@ title: Capstone Graphic Simulations
 
 Three small pixel-art simulations built for MANAGMNT 494BI, Business Strategy and Policy, at the Isenberg School of Management. Students run companies in the Capsim *Capstone* simulation; these pages show, with toggles and sliders, the economics behind three decisions that sink more teams than any competitor does. Each runs in the browser, works offline once loaded, and sends nothing anywhere.
 
-The presets load Round 2 (2028) results from our class industries. Company names are Capstone's standard names (Andrews, Baldwin, Chester and so on), not students. Every number can be changed.
+The presets load Round 2 (2028) results from both class industries (the 1:25 and 2:30 sections); pick one under **Industry data**. Company names are Capstone's standard names (Andrews, Baldwin, Chester and so on), not students. Every number can be changed.
 
 ---
 
@@ -19,7 +19,6 @@ The presets load Round 2 (2028) results from our class industries. Company names
 
 *The lesson:* low price is not low cost, and profit is not cash.
 
-*New rounds:* the **Load .xlsx** button reads Capsim Courier workbooks in your browser (nothing is uploaded). Load this round's workbook, plus last round's for exact labour figures, and every product's actual numbers fill the presets.
 
 [Open The Second Shift](the-second-shift.html)
 
@@ -50,6 +49,8 @@ The presets load Round 2 (2028) results from our class industries. Company names
 ![Big Al Comes Calling: a debt tower, the bank's January 1 bill, and Big Al at the door](/assets/capstone/big-al-comes-calling.png)
 
 ---
+
+**New rounds.** Each page has a **Load .xlsx** button that reads Capsim Courier workbooks in your browser; nothing is uploaded. Load this round's workbook and every company's and product's actual numbers fill the presets. For *The Second Shift* and *Spreading the Overhead*, also load last round's workbook: it supplies the automation and capacity in effect this round, which the labour and depreciation figures need.
 
 **About the numbers.** The labor, capacity, automation, financing and emergency-loan rules follow the *Capstone* team and administrator guides. Where the guides do not publish an exact formula, the pages use labeled estimates (the interest-rate curve, per-product depreciation). The "Max Invest" limit in *Big Al Comes Calling* was checked against a live Capsim decision screen: 80% of net plant and equipment, less long-term debt, plus 20% of shares at the current share price, plus cash on hand. They are teaching models for direction and scale, not replicas of the simulation's engine; the Capstone decision screens remain the authority.
 

@@ -96,6 +96,7 @@
   </div>
 </div>
 
+<script src="capsim-workbook.js"></script>
 <script>
 // ---------- Built-in data: Round 2 (2028) Production pages ----------
 // Row: [company, product, segment, price, material/unit, labor/unit (avg incl. 2nd shift), utilization,
@@ -204,99 +205,20 @@ function makeProducts(rows) {
 const DATASETS = Object.entries(BUILTIN).map(([id, d]) => ({ id, label:d.label, section:d.section, products:makeProducts(d.rows) }));
 let DS = DATASETS[0], PRESETS = DS.products;
 
-// ---------- Capsim Courier workbook loader (runs in the browser; nothing is uploaded) ----------
-async function unzip(buf) {
-  const dv = new DataView(buf), u8 = new Uint8Array(buf), files = {};
-  let e = buf.byteLength - 22;
-  while (e >= 0 && dv.getUint32(e, true) !== 0x06054b50) e--;
-  if (e < 0) throw new Error("not an .xlsx file");
-  let p = dv.getUint32(e + 16, true);
-  for (let i = 0, n = dv.getUint16(e + 10, true); i < n; i++) {
-    const nlen = dv.getUint16(p + 28, true);
-    files[new TextDecoder().decode(u8.subarray(p + 46, p + 46 + nlen))] =
-      { method:dv.getUint16(p + 10, true), size:dv.getUint32(p + 20, true), off:dv.getUint32(p + 42, true) };
-    p += 46 + nlen + dv.getUint16(p + 30, true) + dv.getUint16(p + 32, true);
-  }
-  return async name => {
-    const f = files[name]; if (!f) return null;
-    const start = f.off + 30 + dv.getUint16(f.off + 26, true) + dv.getUint16(f.off + 28, true);
-    const data = u8.subarray(start, start + f.size);
-    if (f.method === 0) return new TextDecoder().decode(data);
-    return new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream("deflate-raw"))).text();
-  };
-}
-async function readSheets(buf, names) {
-  const get = await unzip(buf), P = s => new DOMParser().parseFromString(s, "application/xml");
-  const ssx = await get("xl/sharedStrings.xml");
-  const ss = ssx ? [...P(ssx).getElementsByTagName("si")].map(si => si.textContent) : [];
-  const tgt = {};
-  for (const r of P(await get("xl/_rels/workbook.xml.rels")).getElementsByTagName("Relationship")) tgt[r.getAttribute("Id")] = r.getAttribute("Target");
-  const out = {};
-  for (const s of P(await get("xl/workbook.xml")).getElementsByTagName("sheet")) {
-    if (!names.includes(s.getAttribute("name"))) continue;
-    let t = tgt[s.getAttribute("r:id")].replace(/^\//, ""); if (!t.startsWith("xl/")) t = "xl/" + t;
-    out[s.getAttribute("name")] = [...P(await get(t)).getElementsByTagName("row")].map(row => {
-      const cells = [];
-      for (const c of row.getElementsByTagName("c")) {
-        const col = [...c.getAttribute("r").replace(/\d+/g, "")].reduce((a, ch) => a * 26 + ch.charCodeAt(0) - 64, 0) - 1;
-        const v = c.getElementsByTagName("v")[0], is = c.getElementsByTagName("is")[0];
-        cells[col] = is ? is.textContent : v ? (c.getAttribute("t") === "s" ? ss[+v.textContent] : v.textContent) : "";
-      }
-      return cells;
-    });
-  }
-  return out;
-}
-const num = x => { x = String(x ?? "").replace(/[$,]/g, "").trim(); return x.endsWith("%") ? parseFloat(x) / 100 : parseFloat(x); };
-async function parseWorkbook(file) {
-  const sh = await readSheets(await file.arrayBuffer(), ["Production", "High Level Overview"]);
-  const prod = sh["Production"];
-  if (!prod) throw new Error(`${file.name} has no Production sheet. Is it a Capsim Courier workbook?`);
-  const H = prod.find(r => r && r[0] === "Name") || [];
-  const col = n => { const i = H.findIndex(h => (h || "").trim().toLowerCase() === n.toLowerCase());
-    if (i < 0) throw new Error(`${file.name}: the Production sheet has no "${n}" column.`); return i; };
-  const C = { name:col("Name"), seg:col("Primary Segment"), sold:col("Units Sold"), inv:col("Inventory"), age:col("Age Dec.31"), rev:col("Revision Date"),
-    price:col("Price"), mat:col("Material Cost"), lab:col("Labor Cost"), autoN:col("Auto. Next Round"), capN:col("Capacity Next Round"), util:col("Plant Utilization") };
-  const company = {};
-  "Andrews Baldwin Chester Digby Erie Ferris Garrett Harper".split(" ").forEach(n => company[n[0]] = n);
-  const names = (sh["High Level Overview"] || []).find(r => r && r.slice(1).filter(Boolean).length >= 4 && r.slice(1).filter(Boolean).every(x => isNaN(num(x))));
-  if (names) names.slice(1).forEach(n => { if (n && n !== "Average") company[n[0]] = n; });
-  const products = {};
-  prod.slice(prod.indexOf(H) + 1).forEach(r => {
-    if (!r || !r[C.name]) return;
-    products[r[C.name]] = { name:r[C.name], key:company[r[C.name][0]] || r[C.name][0], seg:r[C.seg] || "—", sold:num(r[C.sold]), inv:num(r[C.inv]),
-      age:num(r[C.age]), rev:r[C.rev], price:num(r[C.price]), mat:num(r[C.mat]), lab:num(r[C.lab]), autoN:num(r[C.autoN]), capN:num(r[C.capN]), util:num(r[C.util]) };
+// ---------- Courier workbooks loaded with capsim-workbook.js ----------
+function onWorkbooks({ cur, prev }) {
+  let approx = 0;
+  const rows = Object.values(cur.products).filter(p => p.lab > 0).map(p => {
+    const q = prev && prev.products[p.name];
+    if (!q) approx++;
+    return [p.key, p.name, p.seg, p.price, p.mat, p.lab, p.util, q ? q.autoN : p.autoN, q ? q.capN : p.capN, p.sold, p.inv, p.autoN, p.capN, !q];
   });
-  const ind = file.name.match(/CP\d+/i), rd = file.name.match(/round_?(\d+)(?:_(\d{4}))?/i);
-  return { name:file.name, industry:ind ? ind[0].toUpperCase() : "", round:rd ? +rd[1] : null, year:rd && rd[2] || "", products };
-}
-async function handleFiles(files) {
-  if (!files.length) return;
-  const note = $("loadNote");
-  try {
-    if (files.length > 2) throw new Error("load one or two workbooks: this round's, plus last round's for exact labour figures.");
-    note.textContent = "Reading…";
-    let [cur, prev] = await Promise.all(files.map(parseWorkbook));
-    if (prev) {
-      if (cur.industry && prev.industry && cur.industry !== prev.industry) throw new Error(`the two workbooks are from different industries (${cur.industry}, ${prev.industry}).`);
-      // Without round numbers in the file names, an unrevised product (same revision date in both) is older in the later workbook.
-      const same = Object.keys(cur.products).find(k => prev.products[k] && cur.products[k].rev === prev.products[k].rev && cur.products[k].age !== prev.products[k].age);
-      const curIsLater = cur.round != null && prev.round != null ? cur.round > prev.round : same ? cur.products[same].age > prev.products[same].age : true;
-      if (!curIsLater) [cur, prev] = [prev, cur];
-    }
-    let approx = 0;
-    const rows = Object.values(cur.products).filter(p => p.lab > 0).map(p => {
-      const q = prev && prev.products[p.name];
-      if (!q) approx++;
-      return [p.key, p.name, p.seg, p.price, p.mat, p.lab, p.util, q ? q.autoN : p.autoN, q ? q.capN : p.capN, p.sold, p.inv, p.autoN, p.capN, !q];
-    });
-    if (!rows.length) throw new Error(`${cur.name} has no products with production costs.`);
-    const ds = { id:cur.industry || "Workbook", label:cur.round != null ? `Round ${cur.round}${cur.year ? ` (${cur.year})` : ""}` : cur.name,
-      section:"loaded from workbook", products:makeProducts(rows) };
-    DATASETS.push(ds); addIndustryOption(ds, DATASETS.length - 1); setDataset(DATASETS.length - 1, 0);
-    note.textContent = `Loaded ${cur.name}${prev ? ` with last round's ${prev.name}` : ""}: ${rows.length} products.` +
-      (approx ? ` ${approx} use estimated automation and capacity${prev ? " (new products)" : "; add last round's workbook for exact labour figures"}.` : "");
-  } catch (err) { note.textContent = `Could not load: ${err.message}`; }
+  if (!rows.length) throw new Error(`${cur.name} has no products with production costs.`);
+  const ds = { id:cur.industry || "Workbook", label:cur.round != null ? `Round ${cur.round}${cur.year ? ` (${cur.year})` : ""}` : cur.name,
+    section:"loaded from workbook", products:makeProducts(rows) };
+  DATASETS.push(ds); addIndustryOption(ds, DATASETS.length - 1); setDataset(DATASETS.length - 1, 0);
+  return `Loaded ${cur.name}${prev ? ` with last round's ${prev.name}` : ""}: ${rows.length} products.` +
+    (approx ? ` ${approx} use estimated automation and capacity${prev ? " (new products)" : "; add last round's workbook for exact labour figures"}.` : "");
 }
 
 const $ = id => document.getElementById(id);
@@ -307,7 +229,7 @@ const fmt$ = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(2);
 const fmtK = v => Math.round(v).toLocaleString() + "K";
 
 // ---------- controls ----------
-function addIndustryOption(d, i) { const o = document.createElement("option"); o.value = i; o.textContent = `${d.id} · ${d.section} · ${d.label}`; $("industry").appendChild(o); }
+function addIndustryOption(d, i) { const o = document.createElement("option"); o.value = i; const rd = d.label.replace("Round ", "Rd "); o.textContent = d.section === "loaded from workbook" ? `Loaded ${d.id}, ${rd}` : `${d.section}, ${rd}`; $("industry").appendChild(o); }
 function setDataset(di, pi) {
   DS = DATASETS[di]; PRESETS = DS.products; $("industry").value = di;
   const sel = $("preset"); sel.innerHTML = "";
@@ -321,10 +243,7 @@ function setDataset(di, pi) {
 }
 DATASETS.forEach(addIndustryOption);
 $("industry").addEventListener("change", () => setDataset(+$("industry").value, 0));
-$("loadBtn").addEventListener("click", () => $("file").click());
-$("file").addEventListener("change", e => { handleFiles([...e.target.files]); e.target.value = ""; });
-document.addEventListener("dragover", e => e.preventDefault());
-document.addEventListener("drop", e => { e.preventDefault(); handleFiles([...e.dataTransfer.files].filter(f => /\.xlsx$/i.test(f.name))); });
+const handleFiles = CapsimWB.wire({ button:$("loadBtn"), input:$("file"), note:$("loadNote"), onFiles:onWorkbooks });
 const pairs = [["price","priceR"],["prod","prodR"],["auto","autoR"],["cap","capR"],["dem","demR"],["inv","invR"],["mat","matR"],["raise","raiseR"]];
 $("year").addEventListener("change", read);
 pairs.forEach(([n, r]) => {

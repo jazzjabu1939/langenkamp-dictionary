@@ -51,7 +51,7 @@
 <header>
   <div>
     <h1>SPREADING THE OVERHEAD &middot; <span style="color:#a9adbd">PIXEL OFFICE &middot; ECONOMIES OF SCALE</span></h1>
-    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; Capstone Low End segment &middot; presets from Round 2 (2028), Industry CP137618</div>
+    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; <span id="subData"></span></div>
   </div>
   <div><button id="resetBtn">Reset team</button> <button id="fsBtn">Full screen</button></div>
 </header>
@@ -69,10 +69,13 @@
 <div id="controls">
   <div class="card">
     <h2>ONE PRODUCT'S FIXED SPENDING</h2>
+    <div class="row"><label>Industry data</label><select id="industry"></select><button id="loadBtn" title="Read Capsim Courier workbooks (.xlsx) in this browser; nothing is uploaded">Load .xlsx</button></div>
+    <input type="file" id="file" accept=".xlsx" multiple hidden>
+    <div class="note" id="loadNote" style="margin:-2px 0 6px"></div>
     <div class="row"><label>Team preset</label><select id="preset"></select><span></span></div>
     <div class="row big"><label>SALES VOLUME (000 units)</label><input type="range" id="volR" min="100" max="4000" step="10"><input type="number" id="vol" step="10"></div>
-    <div class="row"><label>Price per unit</label><input type="range" id="priceR" min="10" max="30" step="0.25"><input type="number" id="price" step="0.25"></div>
-    <div class="row"><label>Material + labor / unit</label><input type="range" id="varR" min="5" max="20" step="0.01"><input type="number" id="var" step="0.01"></div>
+    <div class="row"><label>Price per unit</label><input type="range" id="priceR" min="10" max="50" step="0.25"><input type="number" id="price" step="0.25"></div>
+    <div class="row"><label>Material + labor / unit</label><input type="range" id="varR" min="5" max="35" step="0.01"><input type="number" id="var" step="0.01"></div>
     <div class="row"><label>Sales budget ($M)</label><input type="range" id="salesR" min="0" max="6" step="0.05"><input type="number" id="sales" step="0.05"></div>
     <div class="row"><label>Promo budget ($M)</label><input type="range" id="promoR" min="0" max="6" step="0.05"><input type="number" id="promo" step="0.05"></div>
     <div class="row"><label>Admin + R&amp;D share ($M)</label><input type="range" id="adminR" min="0" max="4" step="0.05"><input type="number" id="admin" step="0.05"></div>
@@ -90,27 +93,144 @@
   </div>
 </div>
 
+<script src="capsim-workbook.js"></script>
 <script>
-// Round 2 (2028), Industry CP137618. Budgets in $M; units in thousands.
-// varCost = Round 2 material + average labor. adminShare = (company SG&A − all product sales/promo budgets) × product revenue share.
-const COMPANY = { // SG&A, sales/promo budgets across all products, revenue ($M)
-  Andrews:{ sga:30.256, budgets:24.90, rev:151.193 }, Baldwin:{ sga:32.208, budgets:28.70, rev:117.686 },
-  Chester:{ sga:29.107, budgets:24.90, rev:127.339 }, Digby:{ sga:51.767, budgets:37.50, rev:122.434 },
-  Erie:{ sga:27.409, budgets:23.40, rev:124.744 }, Ferris:{ sga:28.368, budgets:24.00, rev:147.022 } };
-const PRESETS = [
-  { key:"Andrews", product:"Acre",  price:17.00, varCost:14.30, sales:1.50, promo:1.85, units:2722, cap:1600, auto:5.0 },
-  { key:"Baldwin", product:"Bead",  price:21.25, varCost:10.10, sales:3.05, promo:1.95, units:1283, cap:1400, auto:7.0 },
-  { key:"Chester", product:"Cedar", price:19.00, varCost:12.62, sales:3.40, promo:2.00, units:2134, cap:1400, auto:6.0 },
-  { key:"Digby",   product:"Dell",  price:24.00, varCost:11.80, sales:4.50, promo:3.00, units:783,  cap:1600, auto:7.0 },
-  { key:"Erie",    product:"Ebb",   price:22.00, varCost:11.26, sales:2.50, promo:2.00, units:1341, cap:1650, auto:7.0 },
-  { key:"Ferris",  product:"Feat",  price:19.00, varCost:12.35, sales:2.00, promo:2.00, units:2311, cap:1850, auto:6.4 },
-  { key:"Ferris",  product:"Foot",  price:19.00, varCost:17.76, sales:2.00, promo:2.00, units:597,  cap:400,  auto:2.0 },
-];
-PRESETS.forEach(p => {
-  const c = COMPANY[p.key];
-  p.admin = Math.round((c.sga - c.budgets) * (p.price * p.units / 1000) / c.rev * 100) / 100;
-  p.depr = Math.round(p.cap * (6 + 4 * p.auto) / 15 / 1000 * 100) / 100;
-});
+// ---------- Built-in data: Round 2 (2028) Courier workbooks ----------
+// Row: [company, product, segment, price, material + labor / unit, sales budget $M, promo budget $M, units sold (000),
+//       first-shift capacity in effect (000), automation in effect]. Company: SG&A, all products' sales + promo budgets, revenue ($M).
+// Capacity and automation in effect come from the previous round's "next round" columns. New rounds: use Load .xlsx.
+const BUILTIN = {
+  CP137618: { label:"Round 2 (2028)", section:"1:25 MWF section",
+   companies:{
+    Andrews:{ sga:30.256, budgets:24.9, rev:151.193 },
+    Baldwin:{ sga:32.208, budgets:28.7, rev:117.686 },
+    Chester:{ sga:29.107, budgets:24.9, rev:127.339 },
+    Digby:{ sga:51.767, budgets:37.5, rev:122.434 },
+    Erie:{ sga:27.409, budgets:23.4, rev:124.744 },
+    Ferris:{ sga:28.368, budgets:24, rev:147.022 } },
+   rows:[
+    ["Andrews","Abby","High End",39,30.37,1,2,128,500,1],
+    ["Andrews","Able","Traditional",29,18.31,1,1.85,1457,2000,5],
+    ["Andrews","Acre","Low End",17,14.3,1.5,1.85,2722,1600,5],
+    ["Andrews","Adam","High End",39,26.4,1,1.95,492,900,3],
+    ["Andrews","Aft","Performance",34,26.65,1.05,2.1,508,600,3],
+    ["Andrews","Agape","Size",34,24.27,1.5,2.1,478,600,3],
+    ["Andrews","Alan","Performance",34,31.51,1,2,46,500,1],
+    ["Andrews","Apple","Traditional",29,25.12,1,2,117,500,1],
+    ["Baldwin","Baker","Traditional",28.75,17.77,3.25,1.85,1246,1150,4],
+    ["Baldwin","Bead","Low End",21.25,10.1,3.05,1.95,1283,1400,7],
+    ["Baldwin","Bid","High End",39,25.24,3.1,2.1,533,450,3],
+    ["Baldwin","Bold","Performance",34,24.5,2.95,2.25,498,450,3],
+    ["Baldwin","Buddy","Size",34,23.32,2.4,2.2,352,400,3],
+    ["Baldwin","Buzz","Size",34,23.38,1.45,2.15,144,500,3],
+    ["Chester","Cake","Traditional",28,16.79,2.7,1.9,1359,1600,5],
+    ["Chester","Cedar","Low End",19,12.62,3.4,2,2134,1400,6],
+    ["Chester","Cid","High End",39,24.39,2.8,2,607,500,3],
+    ["Chester","Coat","Performance",32.5,23.71,3.25,2.35,364,600,3],
+    ["Chester","Cure","Size",34,21.76,2.4,2.1,389,600,3],
+    ["Digby","Dart","\u2014",45,25.93,0,0,0,400,3],
+    ["Digby","Daze","Traditional",29,18.28,4.5,3,1673,1800,5],
+    ["Digby","Dell","Low End",24,11.8,4.5,3,783,1600,7],
+    ["Digby","Dot","Performance",34,25.46,4.5,3,559,600,3],
+    ["Digby","Duck","High End",39.5,25.96,4.5,3,482,900,3],
+    ["Digby","Dune","Size",34,23.74,4.5,3,502,600,3],
+    ["Erie","Eat","Traditional",29,16.58,2.5,2,1471,1350,6],
+    ["Erie","Ebb","Low End",22,11.26,2.5,2,1341,1650,7],
+    ["Erie","Echo","High End",39,24.21,3,2.3,639,700,3],
+    ["Erie","Edge","Performance",34,24.12,2,1.5,315,700,3],
+    ["Erie","Egg","Size",34,22.94,3,2.6,499,700,3],
+    ["Ferris","Fast","Traditional",27.75,18.16,2,2,1537,2100,4],
+    ["Ferris","Feat","Low End",19,12.35,2,2,2311,1850,6.4],
+    ["Ferris","Fist","High End",38.75,24,2,2,528,700,3],
+    ["Ferris","Foam","Performance",32.75,23.74,2,2,467,550,3],
+    ["Ferris","Foot","Low End",19,17.76,2,2,597,400,2],
+    ["Ferris","Fume","Size",33.5,21.73,2,2,398,550,3] ]},
+  CP137617: { label:"Round 2 (2028)", section:"2:30 MW section",
+   companies:{
+    Andrews:{ sga:31.196, budgets:26.95, rev:144.942 },
+    Baldwin:{ sga:35.981, budgets:32.65, rev:146.656 },
+    Chester:{ sga:27.589, budgets:22.5, rev:135.026 },
+    Digby:{ sga:24.803, budgets:20.6, rev:140.995 },
+    Erie:{ sga:19.082, budgets:14.5, rev:86.205 },
+    Ferris:{ sga:24.071, budgets:18.9, rev:121.777 },
+    Garrett:{ sga:25.186, budgets:21, rev:124.828 },
+    Harper:{ sga:26.968, budgets:23.45, rev:153.053 } },
+   rows:[
+    ["Andrews","Able","Traditional",29,17.19,2.5,2,1428,1500,5],
+    ["Andrews","Acre","Low End",20,12.61,2.5,2,1972,1700,6],
+    ["Andrews","Adam","High End",39,24.13,2.5,2,692,700,3],
+    ["Andrews","Aft","Performance",34,25.03,2.5,2,532,550,3],
+    ["Andrews","Agape","Size",34,21.99,2.5,2,533,600,3],
+    ["Andrews","Apple","Size",33.5,23.49,2.45,2,27,600,4],
+    ["Baldwin","Baker","Traditional",27.5,16.8,3.75,2.5,1560,1800,5],
+    ["Baldwin","Bead","Low End",19.75,12.29,4.5,3,2165,1400,6.5],
+    ["Baldwin","Bid","High End",38,24.08,3.75,2.5,665,900,3],
+    ["Baldwin","Bold","Performance",33,24.89,3.75,2.5,583,600,3],
+    ["Baldwin","Buddy","Size",33,22.57,3.75,2.65,499,600,3],
+    ["Chester","Cake","Traditional",28.5,17.62,2.5,2,1566,1250,5],
+    ["Chester","Cedar","Low End",21.5,11.5,2.5,2,1607,1650,6],
+    ["Chester","Cid","High End",39,25.08,2.5,2,528,500,3],
+    ["Chester","Coat","Performance",34,23.94,2.5,2,517,500,3],
+    ["Chester","Cure","Size",34,22.2,2.5,2,521,500,3],
+    ["Digby","Daze","Traditional",27.5,17.26,2.5,2,1732,1000,6],
+    ["Digby","Dell","Low End",22,12.5,2.55,2,1481,1600,6],
+    ["Digby","Dot","Performance",34,24.69,2,1.5,481,700,3],
+    ["Digby","Drum","High End",31.75,26.9,0.5,0.5,72,400,3],
+    ["Digby","Duck","High End",39.25,24.15,2,1.55,587,700,3],
+    ["Digby","Dune","Size",34,23.62,2,1.5,562,700,3],
+    ["Erie","Easy","Performance",34,24.77,1,1,61,500,1],
+    ["Erie","Eat","Traditional",27.5,17.98,1.4,1.2,935,1800,4],
+    ["Erie","Ebb","Low End",19.75,11.96,1.6,1.2,1367,1600,6],
+    ["Erie","Echo","High End",38,24.02,1.5,1.3,362,900,3],
+    ["Erie","Edge","Performance",33.5,24.74,1.2,1,288,600,3],
+    ["Erie","Egg","Size",33.5,22.1,1.1,1,239,600,3],
+    ["Ferris","Fast","Traditional",29,18.13,1.9,1.3,1279,1250,4],
+    ["Ferris","Feat","Low End",19.5,11.83,2.5,1.5,2014,1700,6],
+    ["Ferris","Fist","High End",39,24.01,2.3,1.8,539,800,3],
+    ["Ferris","Foam","Performance",34,23.26,2.1,1.6,307,600,3],
+    ["Ferris","Fume","Size",34,21.53,2.2,1.7,411,600,3],
+    ["Garrett","Gaffe","Traditional",27.25,16.6,3,2.5,1573,1800,5],
+    ["Garrett","Gaggle","High End",38,23.69,2,1.8,513,600,3],
+    ["Garrett","Gerbil","Low End",19.5,12.12,3,2.5,2091,1600,6],
+    ["Garrett","Goose","Performance",33.25,23.8,2.5,2,343,550,3],
+    ["Garrett","Graft","Size",33.5,21.5,0.85,0.85,307,600,3],
+    ["Harper","Hamper","Size",34,23.54,2.6,2.1,584,700,3],
+    ["Harper","Heft","Traditional",27.25,16.88,2.6,2,1775,1350,6],
+    ["Harper","Hilt","Performance",34,25.06,2.6,2.1,552,700,3],
+    ["Harper","Hoary","High End",39,24.5,2.6,2.1,593,700,3],
+    ["Harper","Hue","Low End",19.75,11.16,2.6,2.15,2173,1650,7] ]}
+};
+const SEG_ORDER = ["Low End", "Traditional", "High End", "Performance", "Size"];
+// adminShare = (company SG&A − all product sales/promo budgets) × product revenue share; depreciation estimated from capacity and automation.
+function makeDataset(id, label, section, companies, rows) {
+  const ps = rows.map(r => ({ key:r[0], product:r[1], seg:r[2], price:r[3], varCost:r[4], sales:r[5], promo:r[6], units:r[7], cap:r[8], auto:r[9], approx:!!r[10] }));
+  ps.forEach(p => {
+    const c = companies[p.key];
+    p.admin = c && c.rev ? Math.max(0, Math.round((c.sga - c.budgets) * (p.price * p.units / 1000) / c.rev * 100) / 100) : 0;
+    p.depr = Math.round(p.cap * (6 + 4 * p.auto) / 15 / 1000 * 100) / 100;
+  });
+  const so = s => { const i = SEG_ORDER.indexOf(s); return i < 0 ? 99 : i; };
+  ps.sort((a, b) => so(a.seg) - so(b.seg) || a.key.localeCompare(b.key) || a.product.localeCompare(b.product));
+  return { id, label, section, products:ps };
+}
+const DATASETS = Object.entries(BUILTIN).map(([id, d]) => makeDataset(id, d.label, d.section, d.companies, d.rows));
+let DS = DATASETS[0], PRESETS = DS.products;
+
+// Courier workbooks loaded with capsim-workbook.js
+function onWorkbooks({ cur, prev }) {
+  if (!Object.keys(cur.companies).length) throw new Error(`${cur.name} has no Finance sheet.`);
+  let approx = 0;
+  const rows = Object.values(cur.products).filter(p => p.lab > 0).map(p => {
+    const q = prev && prev.products[p.name];
+    if (!q) approx++;
+    return [p.key, p.name, p.seg, p.price, Math.round((p.mat + p.lab) * 100) / 100, p.salesB, p.promoB, p.sold, q ? q.capN : p.capN, q ? q.autoN : p.autoN, !q];
+  });
+  if (!rows.length) throw new Error(`${cur.name} has no products with production costs.`);
+  const ds = makeDataset(cur.industry || "Workbook", cur.round != null ? `Round ${cur.round}${cur.year ? ` (${cur.year})` : ""}` : cur.name, "loaded from workbook", cur.companies, rows);
+  DATASETS.push(ds); addIndustryOption(ds, DATASETS.length - 1); setDataset(DATASETS.length - 1, 0);
+  return `Loaded ${cur.name}${prev ? ` with last round's ${prev.name}` : ""}: ${rows.length} products.` +
+    (approx ? ` ${approx} estimate depreciation from next round's plant${prev ? " (new products)" : "; add last round's workbook to use this round's"}.` : "");
+}
 
 const $ = id => document.getElementById(id);
 let S = {}, base = {};
@@ -118,7 +238,21 @@ const fmt$ = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(2);
 const fmtM = v => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(1) + "M";
 const pct = v => (v * 100).toFixed(1) + "%";
 
-PRESETS.forEach((p, i) => { const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.product}`; $("preset").appendChild(o); });
+function addIndustryOption(d, i) { const o = document.createElement("option"); o.value = i; const rd = d.label.replace("Round ", "Rd "); o.textContent = d.section === "loaded from workbook" ? `Loaded ${d.id}, ${rd}` : `${d.section}, ${rd}`; $("industry").appendChild(o); }
+function setDataset(di, pi) {
+  DS = DATASETS[di]; PRESETS = DS.products; $("industry").value = di;
+  const sel = $("preset"); sel.innerHTML = "";
+  let grp = null;
+  PRESETS.forEach((p, i) => {
+    if (!grp || grp.label !== p.seg) { grp = document.createElement("optgroup"); grp.label = p.seg; sel.appendChild(grp); }
+    const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.product}`; grp.appendChild(o);
+  });
+  $("subData").textContent = `actual figures from ${DS.label}, Industry ${DS.id} (${DS.section})`;
+  sel.value = pi; load(pi);
+}
+DATASETS.forEach(addIndustryOption);
+$("industry").addEventListener("change", () => setDataset(+$("industry").value, 0));
+const handleFiles = CapsimWB.wire({ button:$("loadBtn"), input:$("file"), note:$("loadNote"), onFiles:onWorkbooks });
 const pairs = ["vol","price","var","sales","promo","admin","depr"];
 pairs.forEach(n => {
   $(n).addEventListener("input", () => { $(n+"R").value = $(n).value; read(); });
@@ -133,7 +267,8 @@ function load(i) {
   const p = base = PRESETS[i];
   setPair("vol", p.units); setPair("price", p.price); setPair("var", p.varCost);
   setPair("sales", p.sales); setPair("promo", p.promo); setPair("admin", p.admin); setPair("depr", p.depr);
-  $("presetNote").innerHTML = `Round 2 actuals for <b>${p.product}</b>: ${p.units.toLocaleString()}K units sold at $${p.price.toFixed(2)}; material + labor $${p.varCost.toFixed(2)}; sales budget $${p.sales.toFixed(2)}M; promo budget $${p.promo.toFixed(2)}M. Admin + R&amp;D share and depreciation are estimates.`;
+  $("presetNote").innerHTML = `${DS.label} actuals for <b>${p.product}</b> (${p.seg}): ${p.units.toLocaleString()}K units sold at $${p.price.toFixed(2)}; material + labor $${p.varCost.toFixed(2)}; sales budget $${p.sales.toFixed(2)}M; promo budget $${p.promo.toFixed(2)}M. Admin + R&amp;D share and depreciation are estimates.` +
+    (p.approx ? `<br><span style="color:#ffd166">Depreciation uses next round's capacity and automation; this round's weren't in the loaded workbook.</span>` : "");
   read();
 }
 function read() {
@@ -242,8 +377,7 @@ function draw(t) {
   walkers.forEach((w, i) => { const b = Math.round(Math.sin(t/90 + i)); R(w.x+1, 162+b, 5, 5, "#e0ac69"); R(w.x, 167+b, 7, 7, w.c); R(w.x+1, 174, 2, 2, "#222"); R(w.x+4, 174, 2, 2, "#222"); });
   requestAnimationFrame(draw);
 }
-load(Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0)));
-$("preset").value = Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0));
+setDataset(0, Math.min(PRESETS.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0)));
 requestAnimationFrame(draw);
 </script>
 </body>
