@@ -7,7 +7,7 @@ title: Capstone Graphic Simulations
 
 *Part of the [Capstone 2.0 Glossary & Guidance](/capstone/).*
 
-Three small pixel-art simulations built for MANAGMNT 494BI, Business Strategy and Policy, at the Isenberg School of Management. Students run companies in the Capsim *Capstone* simulation; these pages show, with toggles and sliders, the economics behind three decisions that sink more teams than any competitor does. Each runs in the browser, works offline once loaded, and sends nothing anywhere.
+Four small pixel-art simulations built for MANAGMNT 494BI, Business Strategy and Policy, at the Isenberg School of Management. Students run companies in the Capsim *Capstone* simulation; these pages show, with toggles and sliders, the economics behind four decisions that sink more teams than any competitor does. Each runs in the browser, works offline once loaded, and sends nothing anywhere.
 
 The presets load Round 2 (2028) results from both class industries (the 1:25 and 2:30 sections); pick one under **Industry data**. Company names are Capstone's standard names (Andrews, Baldwin, Chester and so on), not students. Every number can be changed.
 
@@ -50,8 +50,22 @@ The presets load Round 2 (2028) results from both class industries (the 1:25 and
 
 ---
 
-**New rounds.** Each page has a **Load .xlsx** button that reads Capsim Courier workbooks in your browser; nothing is uploaded. Load this round's workbook and every company's and product's actual numbers fill the presets. For *The Second Shift* and *Spreading the Overhead*, also load last round's workbook: it supplies the automation and capacity in effect this round, which the labour and depreciation figures need.
+## 4. The Demand Whiteboard
+
+**Customer demand in one segment.** A marketing room for one product. On the wall, a perceptual map shows the product, its rivals and the segment's ideal spot; beside it, the four buying criteria (positioning, age, price, MTBF) with their importance, and the product's awareness and accessibility. Move performance, size, age, MTBF and price, or the promotion and sales budgets, and the marketing VP at the whiteboard shows the product's estimated demand going up or down. Switch customer expectations to "one year on" to see what the segment's drift does to a product that stands still, and move the rivals' slider to see that every unit of share comes from someone else.
+
+*The lesson:* demand is a share of what customers in a segment buy, and every team is competing for that same share. Each product earns its share by meeting the segment's criteria better than its rivals do.
+
+The estimate is reverse-engineered from the Industry Conditions Report and both class industries' Round 1 and 2 Couriers (149 products; it reproduces the published customer scores within about 4.5 points on average), and starts from each product's actual share. It is a teaching model, not Capsim's demand engine.
+
+[Open The Demand Whiteboard](the-demand-whiteboard.html)
+
+![The Demand Whiteboard: a perceptual map, the buying-criteria meters, and the marketing VP's demand estimate](/assets/capstone/the-demand-whiteboard.png)
+
+---
+
+**New rounds.** Each page has a **Load .xlsx** button that reads Capsim Courier workbooks in your browser; nothing is uploaded. Load this round's workbook and every company's and product's actual numbers fill the presets (*The Demand Whiteboard* needs only this round's). For *The Second Shift* and *Spreading the Overhead*, also load last round's workbook: it supplies the automation and capacity in effect this round, which the labour and depreciation figures need.
 
 **About the numbers.** The labor, capacity, automation, financing and emergency-loan rules follow the *Capstone* team and administrator guides. Where the guides do not publish an exact formula, the pages use labeled estimates (the interest-rate curve, per-product depreciation). The "Max Invest" limit in *Big Al Comes Calling* was checked against a live Capsim decision screen: 80% of net plant and equipment, less long-term debt, plus 20% of shares at the current share price, plus cash on hand. They are teaching models for direction and scale, not replicas of the simulation's engine; the Capstone decision screens remain the authority.
 
-*Built October 31, 2026, by Matthew D. Langenkamp with Thea.*
+*Built October 31, 2026 (The Demand Whiteboard, November 2), by Matthew D. Langenkamp with Thea.*

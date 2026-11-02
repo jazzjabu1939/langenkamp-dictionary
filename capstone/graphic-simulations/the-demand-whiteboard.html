@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Demand Whiteboard — Capstone Graphic Simulations — The Langenkamp Dictionary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#14161f; --panel:#1f2330; --ink:#f3f1e8; --muted:#a9adbd; --good:#5be37d; --bad:#ff5a5a; --accent:#ffd166; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:10px 18px; }
+  header h1 { font-size:18px; margin:0; letter-spacing:1px; }
+  header .sub { color:var(--muted); font-size:12px; }
+  button { font:inherit; background:#2d3346; color:var(--ink); border:2px solid #444b63; padding:6px 12px; cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  #stage { position:relative; width:100%; max-width:1600px; margin:0 auto; aspect-ratio: 440 / 200; }
+  canvas { width:100%; height:100%; image-rendering:pixelated; display:block; }
+  .ov { position:absolute; pointer-events:none; text-align:center; white-space:nowrap; font-weight:700; }
+  #sign { font-size:clamp(8px,1.3vw,21px); color:#fff7d6; display:flex; align-items:center; justify-content:center; }
+  .cap { font-size:clamp(5px,0.68vw,11px); color:#3a3f55; }
+  .capd { font-size:clamp(5px,0.68vw,11px); color:#fff7d6; }
+  .crit { display:flex; justify-content:space-between; align-items:center; font-size:clamp(5px,0.72vw,12px); color:#fff7d6; padding:0 2px; }
+  .crit b { color:#ffd166; }
+  #wb { display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start; text-align:left; padding-left:1%; color:#1d2233; }
+  #wb .lbl { font-size:clamp(6px,0.8vw,13px); color:#1f4fa8; }
+  #wb .val { font-size:clamp(12px,2.3vw,38px); line-height:1.05; }
+  #wb .chg { font-size:clamp(8px,1.35vw,22px); }
+  #wb .sm { font-size:clamp(5px,0.72vw,12px); color:#3a3f55; font-weight:700; line-height:1.35; }
+  #controls { max-width:1600px; margin:0 auto; display:grid; grid-template-columns: 1fr 1.1fr; gap:12px; padding:12px 18px 18px; }
+  .card { background:var(--panel); border:2px solid #343a50; padding:12px 14px; }
+  .card h2 { font-size:14px; margin:14px 0 8px; color:var(--accent); letter-spacing:1px; }
+  .card h2:first-child { margin-top:0; }
+  .row { display:grid; grid-template-columns: 210px 1fr 100px; align-items:center; gap:10px; margin:7px 0; font-size:15px; }
+  .row label { color:var(--muted); }
+  .row label small { color:#7f8499; }
+  input[type=range] { width:100%; accent-color: var(--accent); }
+  input[type=number], select { width:100%; font:inherit; font-size:15px; background:#11131a; color:var(--ink); border:2px solid #3a4058; padding:4px 6px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th { text-align:right; color:var(--muted); font-weight:400; font-size:12px; padding:2px 4px; }
+  th:first-child { text-align:left; }
+  td { padding:4px 4px; border-bottom:1px dashed #343a50; text-align:right; }
+  td:first-child { text-align:left; }
+  tr.me td { color:var(--accent); font-weight:700; }
+  tr.total td { font-weight:700; border-top:2px solid #5a6080; border-bottom:none; }
+  .good { color:var(--good); } .bad { color:var(--bad); }
+  .note { color:var(--muted); font-size:12px; line-height:1.45; margin-top:8px; }
+  #stats { font-size:14px; line-height:1.6; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>THE DEMAND WHITEBOARD &middot; <span style="color:#a9adbd">PIXEL MARKETING ROOM &middot; WHO BUYS YOUR SENSOR?</span></h1>
+    <div class="sub"><a href="/capstone/graphic-simulations/" style="color:#ffd166">&larr; Capstone Graphic Simulations</a> &middot; 494BI &middot; <span id="subData"></span></div>
+  </div>
+  <div><button id="resetBtn">Reset product</button> <button id="fsBtn">Full screen</button></div>
+</header>
+
+<div id="stage">
+  <canvas id="c" width="440" height="200"></canvas>
+  <div class="ov" id="sign"></div>
+  <div class="ov capd" id="mapT">PERFORMANCE &rarr; &middot; SIZE &uarr;</div>
+  <div class="ov capd" id="mapX">&#9733; IDEAL &middot; RED = YOU &middot; RING = SEGMENT</div>
+  <div class="ov capd" id="critT">CUSTOMER BUYING CRITERIA</div>
+  <div class="ov crit" id="c0"></div><div class="ov crit" id="c1"></div><div class="ov crit" id="c2"></div><div class="ov crit" id="c3"></div>
+  <div class="ov crit" id="awL"></div><div class="ov crit" id="acL"></div>
+  <div class="ov" id="wb"><div class="lbl" id="wbLbl"></div><div class="val" id="wbVal"></div><div class="chg" id="wbChg"></div><div class="sm" id="wbSm"></div></div>
+  <div class="ov capd" id="queue"></div>
+</div>
+
+<div id="controls">
+  <div class="card">
+    <h2>ONE PRODUCT, ONE SEGMENT</h2>
+    <div class="row"><label>Industry data</label><select id="industry"></select><button id="loadBtn" title="Read a Capsim Courier workbook (.xlsx) in this browser; nothing is uploaded">Load .xlsx</button></div>
+    <input type="file" id="file" accept=".xlsx" multiple hidden>
+    <div class="note" id="loadNote" style="margin:-2px 0 6px"></div>
+    <div class="row"><label>Product</label><select id="preset"></select><span></span></div>
+    <div class="row"><label>Customer expectations</label><select id="expect"><option value="0">This Courier (Dec 31)</option><option value="1">One year on (drift)</option></select><span></span></div>
+    <div class="row"><label>Units for</label><select id="basis"><option value="1">Next year (segment growth)</option><option value="0">This year's segment size</option></select><span></span></div>
+    <h2>R&amp;D: WHAT THE PRODUCT IS</h2>
+    <div class="row"><label>Performance</label><input type="range" id="pfR" min="0" max="20" step="0.1"><input type="number" id="pf" step="0.1"></div>
+    <div class="row"><label>Size <small>(smaller = better tech)</small></label><input type="range" id="szR" min="0" max="20" step="0.1"><input type="number" id="sz" step="0.1"></div>
+    <div class="row"><label>Age (years)</label><input type="range" id="ageR" min="0" max="10" step="0.1"><input type="number" id="age" step="0.1"></div>
+    <div class="row"><label>MTBF (hours)</label><input type="range" id="mtbfR" min="10000" max="30000" step="500"><input type="number" id="mtbf" step="500"></div>
+    <h2>MARKETING: PRICE AND SPENDING</h2>
+    <div class="row"><label>Price</label><input type="range" id="priceR" min="10" max="45" step="0.25"><input type="number" id="price" step="0.25"></div>
+    <div class="row"><label>Promo budget ($M) &rarr; awareness</label><input type="range" id="promoR" min="0" max="5" step="0.05"><input type="number" id="promo" step="0.05"></div>
+    <div class="row"><label>Sales budget ($M) &rarr; accessibility</label><input type="range" id="salesR" min="0" max="6" step="0.05"><input type="number" id="sales" step="0.05"></div>
+    <h2>THE OTHER TEAMS</h2>
+    <div class="row"><label>Ideal spot: performance</label><input type="range" id="ipR" min="0" max="20" step="0.1"><input type="number" id="ip" step="0.1"></div>
+    <div class="row"><label>Ideal spot: size</label><input type="range" id="isR" min="0" max="20" step="0.1"><input type="number" id="is" step="0.1"></div>
+    <div class="row"><label>Rivals keep pace with the drift</label><select id="pace"><option value="1">Yes: they revise too</option><option value="0">No: they stand still</option></select><span></span></div>
+    <div class="row"><label>Rivals' scores change (%)</label><input type="range" id="rivR" min="-30" max="50" step="1"><input type="number" id="riv" step="1"></div>
+    <div class="note" id="presetNote"></div>
+  </div>
+  <div class="card">
+    <h2>THE SEGMENT IS ZERO-SUM</h2>
+    <div id="stats"></div>
+    <table id="tbl"></table>
+    <div class="note">
+      <b>How the estimate works.</b> Capstone gives every product a monthly customer survey score, and each product's share of a segment's buyers closely follows its score divided by the segment's total. In the Round 2 Couriers, the December score explained Traditional and Low End units within about 8%; in segments where products were revised mid-year, the December score is only a snapshot of a moving year.<br>
+      The score itself is reverse-engineered from the four buying criteria and their importance weights (Industry Conditions Report and Courier), then reduced when awareness or accessibility is below 100%. Fitted to 149 products in both class industries' Round 1 and 2 Couriers, it reproduces the published scores within about 4.5 points on average. Each product starts from its actual share of this year's segment sales (potential units), so before you move anything the page reproduces the Courier; your changes add the model's score difference. Products launched or revised late in the year start from what they sold, which understates them for next year.<br>
+      Promotion builds awareness and the sales budget builds accessibility (shared by all of a company's products in the segment), each with diminishing returns; about a third of each fades every year. Products beyond 4.0 from the segment center (the rough-cut circle), or priced more than $5 outside the range, get no score.<br>
+      <b>The other teams also move.</b> Rivals revise, cut prices and spend. Use the rivals slider: a share you gain comes from them, and theirs comes from you. "One year on" moves the ideal spot by the published drift and the price range down $0.50. If rivals keep pace, they hold their standing from this Courier while you are judged against the new ideal; if they stand still, they are judged against it too. This is a teaching model for direction and scale, not Capsim's engine; the Capstone screens and Courier remain the authority.
+    </div>
+  </div>
+</div>
+
+<script src="capsim-workbook.js"></script>
+<script>
+// ---------- Built-in data: Round 2 (2028) Courier workbooks, segment tables ----------
+// Segment: size and growth, ideal spot [pfmn, size], ideal age, price range, MTBF range, importance [position, age, price, MTBF].
+// Product: [name, price, age, pfmn, size, MTBF, sales budget $M, promo budget $M, awareness, accessibility, December score, units sold (000), potential (000)].
+const BUILTIN = {"CP137617":
+ {"Traditional":{"size":11745.0,"growth":0.092,"ideal":[6.4,13.6],"age":2.0,"price":[19.0,29.0],"mtbf":[14000.0,19000.0],"w":[0.21,0.47,0.23,0.09],"products":[["Heft",27.25,1.9,6.4,13.6,19000.0,2.6,2.0,0.996,0.82,71.0,1754.0,1751.0],["Daze",27.5,1.9,6.4,13.6,19000.0,2.5,2.0,0.996,0.81,69.0,1712.0,1709.0],["Gaffe",27.25,1.9,6.4,13.6,17500.0,3.0,2.5,0.958,0.77,64.0,1558.0,1554.0],["Cake",28.5,2.0,6.4,13.6,19000.0,2.5,2.0,0.996,0.81,66.0,1552.0,1572.0],["Baker",27.5,1.9,6.4,13.6,16500.0,3.75,2.5,1.0,0.85,63.0,1546.0,1543.0],["Able",29.0,2.0,6.4,13.6,17500.0,2.5,2.0,0.996,0.8,59.0,1421.0,1418.0],["Fast",29.0,2.0,6.4,13.6,19000.0,1.9,1.3,0.7390000000000001,0.71,52.0,1264.0,1261.0],["Eat",27.5,1.9,6.4,13.6,16000.0,1.4,1.2,0.71,0.52,39.0,928.0,926.0]]},"Low End":{"size":14906.0,"growth":0.117,"ideal":[2.7,17.3],"age":7.0,"price":[14.0,24.0],"mtbf":[12000.0,17000.0],"w":[0.16,0.24,0.53,0.07],"products":[["Hue",19.75,6.6,3.0,17.0,14000.0,2.6,2.15,0.998,0.73,45.0,2171.0,2171.0],["Bead",19.75,6.6,3.0,17.0,14000.0,4.5,3.0,1.0,0.75,44.0,2164.0,2164.0],["Gerbil",19.5,6.6,3.0,17.0,14000.0,3.0,2.5,0.9440000000000001,0.65,43.0,2090.0,2090.0],["Feat",19.5,6.6,3.0,17.0,14000.0,2.5,1.5,0.8320000000000001,0.69,41.0,2012.0,2012.0],["Acre",20.0,6.6,3.0,17.0,14000.0,2.5,2.0,0.982,0.68,40.0,1970.0,1970.0],["Cedar",21.5,6.6,3.0,17.0,14000.0,2.5,2.0,1.0,0.7,33.0,1606.0,1606.0],["Dell",22.0,6.6,3.0,17.0,14000.0,2.55,2.0,0.982,0.72,31.0,1480.0,1480.0],["Ebb",19.75,6.6,3.0,17.0,14000.0,1.6,1.2,0.695,0.45,28.0,1366.0,1366.0]]},"High End":{"size":4597.0,"growth":0.162,"ideal":[10.7,9.3],"age":0.0,"price":[29.0,39.0],"mtbf":[20000.0,25000.0],"w":[0.43,0.29,0.09,0.19],"products":[["Adam",39.0,1.4,9.9,9.9,23000.0,2.5,2.0,0.968,0.76,44.0,692.0,675.0],["Bid",38.0,1.4,9.8,10.2,23000.0,3.75,2.5,1.0,0.81,42.0,665.0,648.0],["Hoary",39.0,1.2,10.7,9.3,23000.0,2.6,2.1,0.9790000000000001,0.78,58.0,593.0,583.0],["Duck",39.25,1.4,10.4,10.1,23050.0,2.0,1.55,0.89,0.74,42.0,587.0,570.0],["Fist",39.0,1.4,10.1,9.9,24000.0,2.3,1.8,0.879,0.72,48.0,539.0,521.0],["Cid",39.0,1.2,10.4,9.6,24900.0,2.5,2.0,0.968,0.77,64.0,528.0,518.0],["Gaggle",38.0,1.3,10.1,9.9,23000.0,2.0,1.8,0.862,0.61,41.0,513.0,582.0],["Echo",38.0,1.5,9.4,10.5,23000.0,1.5,1.3,0.794,0.57,23.0,362.0,353.0],["Drum",31.75,0.1,11.0,9.0,23800.0,0.5,0.5,0.315,0.74,50.0,72.0,102.0]]},"Performance":{"size":3665.0,"growth":0.198,"ideal":[11.4,14.6],"age":1.0,"price":[24.0,34.0],"mtbf":[22000.0,27000.0],"w":[0.29,0.09,0.19,0.43],"products":[["Bold",33.0,1.7,11.4,14.6,27000.0,3.75,2.5,1.0,0.72,67.0,583.0,583.0],["Hilt",34.0,1.7,11.4,14.6,27000.0,2.6,2.1,0.965,0.69,63.0,552.0,552.0],["Aft",34.0,1.7,11.4,14.6,27000.0,2.5,2.0,0.9540000000000001,0.67,60.0,532.0,532.0],["Coat",34.0,1.7,11.4,14.6,27000.0,2.5,2.0,0.9540000000000001,0.68,62.0,517.0,517.0],["Dot",34.0,1.7,11.4,14.3,27000.0,2.0,1.5,0.8640000000000001,0.62,55.0,481.0,481.0],["Goose",33.25,1.6,11.4,14.6,27000.0,2.5,2.0,0.797,0.54,53.0,343.0,343.0],["Foam",34.0,1.7,11.4,14.6,25000.0,2.1,1.6,0.8270000000000001,0.6,35.0,307.0,307.0],["Edge",33.5,1.6,11.4,14.6,27000.0,1.2,1.0,0.675,0.58,44.0,288.0,288.0],["Easy",34.0,0.7,10.4,15.3,22000.0,1.0,1.0,0.465,0.58,8.0,61.0,61.0]]},"Size":{"size":3701.0,"growth":0.183,"ideal":[5.4,8.6],"age":1.5,"price":[24.0,34.0],"mtbf":[16000.0,21000.0],"w":[0.43,0.29,0.09,0.19],"products":[["Hamper",34.0,1.6,5.4,8.6,21000.0,2.6,2.1,0.965,0.74,82.0,584.0,562.0],["Dune",34.0,1.6,5.4,8.6,21000.0,2.0,1.5,0.8640000000000001,0.67,72.0,562.0,543.0],["Agape",34.0,1.6,5.4,8.6,19000.0,2.5,2.0,0.9540000000000001,0.77,69.0,533.0,514.0],["Cure",34.0,1.6,5.4,8.6,21000.0,2.5,2.0,0.9540000000000001,0.73,80.0,521.0,578.0],["Buddy",33.0,1.7,5.2,8.8,19000.0,3.75,2.65,1.0,0.77,70.0,499.0,480.0],["Fume",34.0,1.7,5.4,8.6,19000.0,2.2,1.7,0.847,0.66,62.0,411.0,457.0],["Graft",33.5,1.6,5.4,8.6,19000.0,0.85,0.85,0.5760000000000001,0.38,41.0,307.0,296.0],["Egg",33.5,1.7,5.2,9.0,19000.0,1.1,1.0,0.605,0.42,37.0,239.0,229.0],["Apple",33.5,0.2,6.1,7.6,19000.0,2.45,2.0,0.6990000000000001,0.77,16.0,27.0,23.0]]}}
+,"CP137618":
+ {"Traditional":{"size":8809.0,"growth":0.092,"ideal":[6.4,13.6],"age":2.0,"price":[19.0,29.0],"mtbf":[14000.0,19000.0],"w":[0.21,0.47,0.23,0.09],"products":[["Daze",29.0,2.0,6.4,13.6,19000.0,4.5,3.0,0.988,0.85,67.0,1663.0,1663.0],["Fast",27.75,2.0,6.4,13.6,19000.0,2.0,2.0,0.9009999999999999,0.66,59.0,1520.0,1520.0],["Eat",29.0,2.0,6.4,13.6,17500.0,2.5,2.0,0.996,0.81,60.0,1465.0,1465.0],["Able",29.0,1.9,6.4,13.6,19000.0,1.0,1.85,1.0,0.72,61.0,1448.0,1448.0],["Cake",28.0,1.9,6.4,13.6,17000.0,2.7,1.9,0.9229999999999999,0.77,58.0,1348.0,1348.0],["Baker",28.75,1.9,6.4,13.6,16000.0,3.25,1.85,0.9990000000000001,0.68,53.0,1243.0,1243.0],["Apple",29.0,0.9,7.8,11.7,14000.0,1.0,2.0,0.6990000000000001,0.72,10.0,115.0,115.0]]},"Low End":{"size":11180.0,"growth":0.117,"ideal":[2.7,17.3],"age":7.0,"price":[14.0,24.0],"mtbf":[12000.0,17000.0],"w":[0.16,0.24,0.53,0.07],"products":[["Acre",17.0,6.6,3.0,17.0,14000.0,1.5,1.85,0.996,0.58,59.0,2721.0,2611.0],["Feat",19.0,6.6,3.0,17.0,16000.0,2.0,2.0,0.963,0.73,51.0,2309.0,2216.0],["Cedar",19.0,6.6,3.0,17.0,14000.0,3.4,2.0,0.951,0.69,47.0,2132.0,2046.0],["Ebb",22.0,6.6,3.0,17.0,14000.0,2.5,2.0,0.982,0.69,30.0,1339.0,1285.0],["Bead",21.25,6.6,3.0,17.0,12000.0,3.05,1.95,0.997,0.56,29.0,1282.0,1230.0],["Dell",24.0,3.5,2.7,17.3,17000.0,4.5,3.0,0.973,0.72,15.0,782.0,750.0],["Foot",19.0,0.8,2.2,17.8,17000.0,2.0,2.0,0.6990000000000001,0.73,22.0,597.0,1027.0]]},"High End":{"size":3448.0,"growth":0.162,"ideal":[10.7,9.3],"age":0.0,"price":[29.0,39.0],"mtbf":[20000.0,25000.0],"w":[0.43,0.29,0.09,0.19],"products":[["Echo",39.0,1.5,9.8,10.1,23000.0,3.0,2.3,0.996,0.81,43.0,639.0,634.0],["Cid",39.0,1.4,10.1,10.0,23000.0,2.8,2.0,0.9490000000000001,0.73,44.0,607.0,602.0],["Bid",39.0,1.4,9.7,10.1,23500.0,3.1,2.1,0.998,0.62,39.0,533.0,529.0],["Fist",38.75,1.3,10.3,9.9,24000.0,2.0,2.0,0.843,0.57,45.0,528.0,553.0],["Adam",39.0,1.2,10.5,9.7,25000.0,1.0,1.95,0.996,0.69,64.0,492.0,489.0],["Duck",39.5,1.2,10.5,10.2,25000.0,4.5,3.0,1.0,0.83,57.0,482.0,479.0],["Abby",39.0,0.2,11.3,9.7,20000.0,1.0,2.0,0.6990000000000001,0.69,41.0,128.0,124.0]]},"Performance":{"size":2749.0,"growth":0.198,"ideal":[11.4,14.6],"age":1.0,"price":[24.0,34.0],"mtbf":[22000.0,27000.0],"w":[0.29,0.09,0.19,0.43],"products":[["Dot",34.0,1.7,11.4,14.6,27000.0,4.5,3.0,0.945,0.7,64.0,559.0,559.0],["Aft",34.0,1.7,11.4,14.5,27000.0,1.05,2.1,0.9990000000000001,0.54,58.0,508.0,508.0],["Bold",34.0,1.7,11.4,14.6,27000.0,2.95,2.25,0.997,0.53,57.0,498.0,498.0],["Foam",32.75,1.7,11.4,14.6,27000.0,2.0,2.0,0.818,0.51,53.0,467.0,467.0],["Coat",32.5,1.6,11.8,14.6,25000.0,3.25,2.35,0.89,0.64,41.0,355.0,355.0],["Edge",34.0,1.7,11.4,14.6,25000.0,2.0,1.5,0.8640000000000001,0.62,36.0,315.0,315.0],["Alan",34.0,0.2,12.3,13.6,27000.0,1.0,2.0,0.6990000000000001,0.54,26.0,46.0,46.0]]},"Size":{"size":2776.0,"growth":0.183,"ideal":[5.4,8.6],"age":1.5,"price":[24.0,34.0],"mtbf":[16000.0,21000.0],"w":[0.43,0.29,0.09,0.19],"products":[["Dune",34.0,1.6,5.4,8.6,21000.0,4.5,3.0,0.945,0.76,84.0,502.0,502.0],["Egg",34.0,1.7,5.4,8.6,19000.0,3.0,2.6,0.997,0.77,74.0,499.0,499.0],["Agape",34.0,1.6,5.4,8.6,21000.0,1.5,2.1,0.9990000000000001,0.61,79.0,478.0,478.0],["Fume",33.5,1.6,5.4,8.6,20000.0,2.0,2.0,0.818,0.54,61.0,398.0,398.0],["Cure",34.0,1.6,5.5,8.6,19000.0,2.4,2.1,0.905,0.63,62.0,389.0,389.0],["Buddy",34.0,1.7,5.3,9.0,19000.0,2.4,2.2,0.993,0.6,58.0,352.0,352.0],["Buzz",34.0,0.5,5.4,8.6,19000.0,1.45,2.15,0.715,0.6,42.0,144.0,144.0]]}}};
+const SECTIONS = { CP137618:"1:25 MWF section", CP137617:"2:30 MW section" };
+const SEG_ORDER = ["Low End", "Traditional", "High End", "Performance", "Size"];
+// Industry Conditions Report (Capstone 2.0): yearly drift and ideal-spot offset from the segment center.
+const DRIFT = { "Traditional":[0.7,-0.7], "Low End":[0.5,-0.5], "High End":[0.9,-0.9], "Performance":[1.0,-0.7], "Size":[0.7,-1.0] };
+const OFFSET = { "Traditional":[0,0], "Low End":[-0.8,0.8], "High End":[1.4,-1.4], "Performance":[1.4,-1.0], "Size":[1.0,-1.4] };
+// Fitted to the Round 1 and Round 2 Couriers of CP137617 and CP137618 (149 products; RMSE 4.5 score points).
+const M = { posR:2.313, posQ:2.191, ageS:1.0, awFloor:0.2923, acFloor:0.4324, K:97.54, roughCut:4.0, priceCut:5 };
+// Awareness and accessibility: a third fades each year; budgets add with diminishing returns ($M scale).
+const BUD = { fade:1/3, kPromo:1.226, kSales:3.855 };
+const COMPANY = {}; "Andrews Baldwin Chester Digby Erie Ferris Garrett Harper".split(" ").forEach(n => COMPANY[n[0]] = n);
+
+function makeDataset(id, label, section, segs) {
+  const segments = {}, products = [];
+  Object.entries(segs).forEach(([seg, s]) => {
+    const S = segments[seg] = { seg, size:s.size, growth:s.growth || 0, ideal:s.ideal.slice(), age:(seg === "Size" && s.age === 1 ? 1.5 : s.age),
+      price:s.price.slice(), mtbf:s.mtbf.slice(), w:s.w.slice(), products:[] };
+    s.products.forEach(r => {
+      const p = { name:r[0], key:COMPANY[r[0][0]] || r[0][0], seg, price:r[1], age:r[2], pf:r[3], sz:r[4], mtbf:r[5], sales:r[6], promo:r[7],
+        aw:r[8], acc:r[9], score:r[10], units:r[11], pot:r[12] };
+      S.products.push(p); products.push(p);
+    });
+    // Calibrate each product to its actual share of the segment this year (potential units, so stockouts don't count against it).
+    const potT = S.products.reduce((t, p) => t + (p.pot || p.units), 0), scT = S.products.reduce((t, p) => t + p.score, 0);
+    S.products.forEach(p => {
+      p.ownSales = S.products.filter(q => q.key === p.key).reduce((t, q) => t + q.sales, 0);
+      // E: effective score matching this year's share. Changes add the model's score difference, scaled to the December score.
+      p.cShare = (p.pot || p.units) / potT; p.E = p.cShare * scT;
+      p.M0 = model(S, p, S.ideal, S.price, true).score; p.rs = clamp(p.score / Math.max(1, p.M0), 0.5, 2);
+    });
+  });
+  const so = s => { const i = SEG_ORDER.indexOf(s); return i < 0 ? 99 : i; };
+  products.sort((a, b) => so(a.seg) - so(b.seg) || a.key.localeCompare(b.key) || a.name.localeCompare(b.name));
+  return { id, label, section, segments, products };
+}
+
+// ---------- the demand model ----------
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+function criteria(S, p, ideal, price) {
+  const d = Math.hypot(p.pf - ideal[0], p.sz - ideal[1]);
+  const pos = d < M.posR ? 1 - Math.pow(d / M.posR, M.posQ) : 0;
+  const age = Math.exp(-Math.pow((p.age - S.age) / M.ageS, 2));
+  const pr = clamp((price[1] - p.price) / (price[1] - price[0]), 0, 1);
+  const mt = clamp((p.mtbf - S.mtbf[0]) / (S.mtbf[1] - S.mtbf[0]), 0, 1);
+  const center = [ideal[0] - OFFSET[S.seg][0], ideal[1] - OFFSET[S.seg][1]];
+  const out = Math.hypot(p.pf - center[0], p.sz - center[1]) > M.roughCut ? "outside the rough-cut circle"
+    : p.price > price[1] + M.priceCut ? "priced more than $5 above the range" : p.price < price[0] - M.priceCut ? "priced more than $5 below the range" : "";
+  return { s:[pos, age, pr, mt], d, out };
+}
+function model(S, p, ideal, price, noCut) {
+  const c = criteria(S, p, ideal, price); if (noCut) c.out = "";
+  const base = S.w.reduce((t, w, i) => t + w * c.s[i], 0);
+  const A = M.awFloor + (1 - M.awFloor) * p.aw, C = M.acFloor + (1 - M.acFloor) * p.acc;
+  return { score: c.out ? 0 : M.K * base * A * C, base, A, C, c };
+}
+const grow = (a, b, k) => a * (1 - BUD.fade) + (1 - a * (1 - BUD.fade)) * (1 - Math.exp(-b / k));
+
+const DATASETS = Object.entries(BUILTIN).map(([id, segs]) => makeDataset(id, "Round 2 (2028)", SECTIONS[id] || id, segs));
+let DS = DATASETS.find(d => d.id === "CP137617") || DATASETS[0], PRESETS = DS.products;
+
+// Courier workbook loaded with capsim-workbook.js (this round's is enough).
+function onWorkbooks({ cur }) {
+  const segs = {};
+  Object.entries(cur.segments || {}).forEach(([seg, s]) => {
+    if (!s.ideal || !s.price || !s.mtbf || s.wPos == null) return;
+    const ps = s.products.filter(p => p.score > 1).map(p => [p.name, p.price, p.age, p.pf, p.sz, p.mtbf, p.salesB, p.promoB, p.aw, p.acc, p.score, p.units, p.pot ?? p.units]);
+    if (ps.length) segs[seg] = { size:s.size, growth:s.growth, ideal:s.ideal, age:s.age, price:s.price, mtbf:s.mtbf, w:[s.wPos, s.wAge, s.wPrice, s.wMtbf], products:ps };
+  });
+  if (!Object.keys(segs).length) throw new Error(`${cur.name} has no segment sheets with buying criteria and a product table.`);
+  const ds = makeDataset(cur.industry || "Workbook", cur.round != null ? `Round ${cur.round}${cur.year ? ` (${cur.year})` : ""}` : cur.name, "loaded from workbook", segs);
+  DATASETS.push(ds); addIndustryOption(ds, DATASETS.length - 1); setDataset(DATASETS.length - 1, 0);
+  return `Loaded ${cur.name}: ${Object.keys(segs).length} segments, ${ds.products.length} products.`;
+}
+
+const $ = id => document.getElementById(id);
+let S = {}, base = null, SEG = null;
+const fmtK = v => Math.round(v).toLocaleString() + "K";
+const pct = (v, d = 1) => (v * 100).toFixed(d) + "%";
+const sgn = v => (v >= 0 ? "+" : "−") + Math.abs(v);
+
+function addIndustryOption(d, i) { const o = document.createElement("option"); o.value = i; const rd = d.label.replace("Round ", "Rd "); o.textContent = d.section === "loaded from workbook" ? `Loaded ${d.id}, ${rd}` : `${d.section}, ${rd}`; $("industry").appendChild(o); }
+function setDataset(di, pi) {
+  DS = DATASETS[di]; PRESETS = DS.products; $("industry").value = di;
+  const sel = $("preset"); sel.innerHTML = ""; let grp = null;
+  PRESETS.forEach((p, i) => {
+    if (!grp || grp.label !== p.seg) { grp = document.createElement("optgroup"); grp.label = p.seg; sel.appendChild(grp); }
+    const o = document.createElement("option"); o.value = i; o.textContent = `${p.key} — ${p.name}`; grp.appendChild(o);
+  });
+  $("subData").textContent = `actual figures from ${DS.label}, Industry ${DS.id} (${DS.section})`;
+  sel.value = pi; load(pi);
+}
+DATASETS.forEach(addIndustryOption);
+$("industry").addEventListener("change", () => setDataset(+$("industry").value, 0));
+const handleFiles = CapsimWB.wire({ button:$("loadBtn"), input:$("file"), note:$("loadNote"), onFiles:onWorkbooks });
+const pairs = ["pf","sz","age","mtbf","price","promo","sales","ip","is","riv"];
+pairs.forEach(n => {
+  $(n).addEventListener("input", () => { $(n+"R").value = $(n).value; read(); });
+  $(n+"R").addEventListener("input", () => { $(n).value = $(n+"R").value; read(); });
+});
+const setPair = (n, v) => { $(n).value = v; $(n+"R").value = v; };
+$("preset").addEventListener("change", () => load(+$("preset").value));
+$("resetBtn").addEventListener("click", () => load(+$("preset").value));
+$("expect").addEventListener("change", () => { setIdeal(); read(); });
+$("basis").addEventListener("change", read); $("pace").addEventListener("change", read);
+$("fsBtn").addEventListener("click", () => document.documentElement.requestFullscreen && document.documentElement.requestFullscreen());
+
+function expectations() {
+  const yr = +$("expect").value;
+  return { ideal:[SEG.ideal[0] + yr * DRIFT[SEG.seg][0], SEG.ideal[1] + yr * DRIFT[SEG.seg][1]], price:[SEG.price[0] - 0.5 * yr, SEG.price[1] - 0.5 * yr] };
+}
+function setIdeal() { const e = expectations(); setPair("ip", +e.ideal[0].toFixed(1)); setPair("is", +e.ideal[1].toFixed(1)); }
+function load(i) {
+  const p = base = PRESETS[i]; SEG = DS.segments[p.seg];
+  setPair("pf", p.pf); setPair("sz", p.sz); setPair("age", p.age); setPair("mtbf", p.mtbf); setPair("price", p.price);
+  setPair("promo", p.promo); setPair("sales", p.sales); setPair("riv", 0); setIdeal();
+  $("presetNote").innerHTML = `${DS.label} Courier for <b>${p.name}</b> (${p.key}, ${p.seg}): ${p.units.toLocaleString()}K units, December customer score ${p.score}, awareness ${pct(p.aw,0)}, accessibility ${pct(p.acc,0)}, promo $${p.promo.toFixed(2)}M, sales budget $${p.sales.toFixed(2)}M.` +
+    ` Segment ideal ${SEG.ideal[0]} / ${SEG.ideal[1]}, ideal age ${SEG.age} years, price $${SEG.price[0].toFixed(2)}–$${SEG.price[1].toFixed(2)}, MTBF ${SEG.mtbf[0].toLocaleString()}–${SEG.mtbf[1].toLocaleString()}.` +
+    `<br>Repositioning a product in R&amp;D roughly halves its age, and a revision takes months: the new design sells only from its completion date.`;
+  read();
+}
+
+function read() {
+  const e = expectations(), ideal = [+$("ip").value, +$("is").value], price = e.price, riv = 1 + (+$("riv").value) / 100;
+  const sizeNow = SEG.size, size = +$("basis").value ? SEG.size * (1 + SEG.growth) : SEG.size;
+  // Your product: awareness and accessibility move from this Courier by the change in budgets, against repeating last year's budget.
+  const otherSales = base.ownSales - base.sales;
+  const aw = clamp(base.aw + grow(base.aw, +$("promo").value, BUD.kPromo) - grow(base.aw, base.promo, BUD.kPromo), 0, 1);
+  const acc = clamp(base.acc + grow(base.acc, otherSales + +$("sales").value, BUD.kSales) - grow(base.acc, base.ownSales, BUD.kSales), 0, 1);
+  const me = { ...base, pf:+$("pf").value, sz:+$("sz").value, age:+$("age").value, mtbf:+$("mtbf").value, price:+$("price").value, aw, acc };
+  const mm = model(SEG, me, ideal, price);
+  const rows = SEG.products.map(p => {
+    const mine = p === base, sameCo = p.key === base.key && !mine;
+    const pp = sameCo ? { ...p, acc } : p;   // accessibility is shared within a company's segment
+    // Rivals that keep pace hold their standing from this Courier; your own products are judged against the chosen expectations.
+    const m = mine ? mm : (!sameCo && +$("pace").value) ? null : model(SEG, pp, ideal, price);
+    const sc = (m && m.c.out ? 0 : Math.max(0, p.E + (m ? p.rs * (m.score - p.M0) : 0))) * (mine || sameCo ? 1 : riv);
+    return { p, mine, sc };
+  });
+  const T = rows.reduce((t, r) => t + r.sc, 0);
+  rows.forEach(r => { r.share = T ? r.sc / T : 0; r.share0 = r.cShare = r.p.cShare; r.units = r.share * size; });
+  const my = rows.find(r => r.mine);
+  S = { me, mm, rows, my, size, sizeNow, aw, acc, ideal, price, units:my.units, units0:my.share0 * size, chg: my.share0 ? my.share / my.share0 - 1 : (my.share > 0 ? 1 : 0) };
+  render();
+}
+
+function render() {
+  const s = S, p = base, my = s.my;
+  $("sign").textContent = `${p.key.toUpperCase()} CO. · ${p.name.toUpperCase()} · ${p.seg.toUpperCase()} SEGMENT · MARKETING ROOM`;
+  const names = ["POSITION", "AGE", "PRICE", "MTBF"];
+  names.forEach((n, i) => { $("c" + i).innerHTML = `<span>${n} <b>${Math.round(SEG.w[i] * 100)}%</b></span><span>${Math.round(s.mm.c.s[i] * 100)}/100</span>`; });
+  $("awL").innerHTML = `<span>AWARENESS (PROMO)</span><span>${pct(s.aw, 0)}</span>`;
+  $("acL").innerHTML = `<span>ACCESSIBILITY (SALES)</span><span>${pct(s.acc, 0)}</span>`;
+  const yr = +$("basis").value ? "NEXT YEAR" : "THIS YEAR";
+  $("wbLbl").textContent = `${p.name.toUpperCase()} DEMAND, ${yr}`;
+  $("wbVal").textContent = `${fmtK(s.units)} units`;
+  const c = s.chg, flat = Math.abs(c) < 0.02;
+  $("wbChg").textContent = `${c >= 0 ? "+" : "−"}${Math.abs(c * 100).toFixed(0)}% vs. Courier share`;
+  $("wbChg").style.color = flat ? "#b8860b" : c > 0 ? "#1f8a3a" : "#c62828";
+  $("wbSm").innerHTML = `share ${pct(my.cShare)} → ${pct(my.share)} of ${p.seg}` +
+    (s.mm.c.out ? `<br><span style="color:#c62828">NO SALES: ${s.mm.c.out.toUpperCase()}</span>` : `<br>Courier: ${p.units.toLocaleString()}K sold this year`);
+  $("queue").textContent = `CUSTOMERS FOR ${p.name.toUpperCase()}: ${fmtK(s.units)} UNITS`;
+  // stats + segment table
+  const cls = v => Math.abs(v) < 0.005 ? "" : v > 0 ? "good" : "bad";
+  $("stats").innerHTML = `Segment demand: <b>${fmtK(s.size)}</b> units${+$("basis").value ? ` (${fmtK(s.sizeNow)} × ${(1 + SEG.growth).toFixed(3)} growth)` : ""}. ` +
+    `Your score: criteria ${Math.round(s.mm.base * 100)}/100 × awareness factor ${s.mm.A.toFixed(2)} × accessibility factor ${s.mm.C.toFixed(2)}.`;
+  const sorted = s.rows.slice().sort((a, b) => b.sc - a.sc);
+  $("tbl").innerHTML = `<tr><th>Product</th><th>Dec. score</th><th>Courier share</th><th>Est. share</th><th>Change</th><th>Est. units</th></tr>` +
+    sorted.map(r => `<tr class="${r.mine ? "me" : ""}"><td>${r.p.key} — ${r.p.name}</td><td>${r.p.score}</td><td>${pct(r.cShare)}</td><td>${pct(r.share)}</td>` +
+      `<td class="${cls(r.share - r.share0)}">${sgn(+((r.share - r.share0) * 100).toFixed(1))} pts</td><td>${fmtK(r.units)}</td></tr>`).join("") +
+    `<tr class="total"><td>Segment</td><td></td><td>100%</td><td>100%</td><td></td><td>${fmtK(s.size)}</td></tr>`;
+}
+
+// ---------- overlays ----------
+function place(id, x, y, w, h) { const e = $(id); e.style.left = (x/440*100)+"%"; e.style.top = (y/200*100)+"%"; e.style.width = (w/440*100)+"%"; e.style.height = (h/200*100)+"%"; }
+place("sign", 14, 4, 412, 12);
+place("mapT", 14, 21, 122, 7); place("mapX", 14, 140, 122, 7);
+place("critT", 148, 21, 114, 7);
+[0,1,2,3].forEach(i => place("c" + i, 148, 30 + i * 18, 114, 8));
+place("awL", 148, 108, 114, 8); place("acL", 148, 126, 114, 8);
+place("wb", 276, 26, 120, 64);
+place("queue", 6, 188, 260, 8);
+
+// ---------- pixel art ----------
+const cv = $("c"), g = cv.getContext("2d");
+const R = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)); };
+const CO_COL = { A:"#e76f51", B:"#2a9d8f", C:"#e9c46a", D:"#8ecae6", E:"#b5838d", F:"#90be6d", G:"#f4a261", H:"#cdb4db" };
+function person(x, y, shirt, t, i) {
+  const b = Math.round(Math.sin(t/260 + i));
+  R(x+1, y+b, 6, 6, "#f1c27d"); R(x+1, y-1+b, 6, 2, i % 3 ? "#4a3222" : "#c9a14a"); R(x, y+6+b, 8, 8, shirt);
+  R(x+2, y+2+b, 1, 1, "#111"); R(x+5, y+2+b, 1, 1, "#111");
+}
+// The marketing VP: twice the size of the staff, pointer toward the whiteboard.
+function presenter(x, y, t, mood) {
+  const b = Math.round(Math.sin(t/400)), up = mood > 0, down = mood < 0;
+  R(x+2, y-2+b, 12, 4, "#3b2416"); R(x, y+2+b, 3, 14, "#3b2416"); R(x+13, y+2+b, 3, 12, "#3b2416");    // hair
+  R(x+3, y+2+b, 10, 10, "#e8b88a");                                                                  // face
+  R(x+5, y+5+b, 2, 2, "#111"); R(x+9, y+5+b, 2, 2, "#111");
+  if (up) { R(x+5, y+9+b, 6, 1, "#7a2a2a"); R(x+4, y+8+b, 1, 1, "#7a2a2a"); R(x+11, y+8+b, 1, 1, "#7a2a2a"); }
+  else if (down) { R(x+5, y+9+b, 6, 1, "#7a2a2a"); R(x+4, y+10+b, 1, 1, "#7a2a2a"); R(x+11, y+10+b, 1, 1, "#7a2a2a"); if (Math.sin(t/300) > 0) R(x+13, y+3+b, 1, 2, "#7fd3ff"); }
+  else R(x+5, y+9+b, 6, 1, "#7a2a2a");
+  R(x+1, y+12+b, 14, 16, "#5d4a8a"); R(x+6, y+12+b, 4, 6, "#f3f1e8");                                // blazer
+  R(x+2, y+28, 12, 8, "#2b2d36"); R(x+3, y+36, 3, 6, "#e8b88a"); R(x+10, y+36, 3, 6, "#e8b88a"); R(x+2, y+42, 5, 2, "#111"); R(x+9, y+42, 5, 2, "#111");
+  const ay = up ? -6 : down ? 4 : -1;                                                              // arm and pointer
+  R(x-3, y+14+b, 4, 3, "#5d4a8a"); g.strokeStyle = "#6d4c41"; g.lineWidth = 1; g.beginPath(); g.moveTo(x-3, y+15+b); g.lineTo(x-16, y+ay+b); g.stroke();
+}
+// dir: +1 up (demand rising), -1 down, 0 flat
+function arrow(x, y, dir, col, t) {
+  if (!dir) { R(x-12, y-3, 24, 6, col); R(x+8, y-6, 4, 12, col); return; }
+  const o = -dir * Math.round((Math.sin(t/180) + 1) * 1.5);
+  for (let i = 0; i < 12; i++) R(x - i, y + o - dir * (16 - i), 2 * i + 1, 1, col);  // head
+  for (let i = -4; i < 14; i++) R(x - 4, y + o + dir * i, 9, 1, col);                   // shaft
+}
+let walkers = [], acc = 0, last = 0;
+function draw(t) {
+  const s = S; if (!s.rows) return requestAnimationFrame(draw);
+  const dt = Math.min(50, t - last); last = t;
+  R(0, 0, 440, 200, "#2a2f3f");
+  R(0, 0, 440, 150, "#d9cdb0"); R(0, 0, 440, 18, "#24314f"); R(0, 17, 440, 2, "#ffd166");   // wall, sign band
+  R(0, 150, 440, 50, "#7b5e44"); for (let x = 0; x < 440; x += 22) R(x, 150, 1, 50, "#6a5039");   // floor
+  // --- perceptual map poster ---
+  R(12, 20, 126, 128, "#3a2a1a"); R(14, 29, 122, 110, "#0f1a2a");
+  const ideal = s.ideal, center = [ideal[0] - OFFSET[SEG.seg][0], ideal[1] - OFFSET[SEG.seg][1]];
+  const span = 4.5, px = 110 / (2 * span), ox = 14 + 6, oy = 29 + 0;
+  const MX = v => ox + (v - (center[0] - span)) * px, MYc = v => oy + 55 - (v - center[1]) * px;   // size axis: larger up
+  g.save(); g.beginPath(); g.rect(14, 29, 122, 110); g.clip();
+  g.strokeStyle = "#1f2c44"; g.lineWidth = 1;
+  for (let v = Math.ceil(center[0] - span); v <= center[0] + span; v++) { g.beginPath(); g.moveTo(MX(v) + .5, 29); g.lineTo(MX(v) + .5, 139); g.stroke(); }
+  for (let v = Math.ceil(center[1] - span); v <= center[1] + span; v++) { g.beginPath(); g.moveTo(14, MYc(v) + .5); g.lineTo(136, MYc(v) + .5); g.stroke(); }
+  const circ = (r, col, dash) => { g.setLineDash(dash); g.strokeStyle = col; g.beginPath(); g.arc(MX(center[0]), MYc(center[1]), r * px, 0, 7); g.stroke(); g.setLineDash([]); };
+  circ(M.roughCut, "#5a3a3a", [2, 3]); circ(2.5, "#7fa7d9", []);
+  // rivals that keep pace are drawn moved by the same drift as the ideal spot
+  const pd = +$("pace").value ? [ideal[0] - SEG.ideal[0], ideal[1] - SEG.ideal[1]] : [0, 0];
+  s.rows.forEach((r, i) => { if (r.mine) return; const own = r.p.key === base.key, dx = own ? 0 : pd[0], dy = own ? 0 : pd[1], jx = (i % 3) - 1, jy = (Math.floor(i / 3) % 3) - 1;
+    R(MX(r.p.pf + dx) - 2 + jx * 2, MYc(r.p.sz + dy) - 2 + jy * 2, 4, 4, CO_COL[r.p.key[0]] || "#bbb"); });
+  // your product: original (hollow) and now (blinking)
+  const bx = MX(base.pf), by = MYc(base.sz), nx = MX(s.me.pf), ny = MYc(s.me.sz);
+  if (Math.hypot(nx - bx, ny - by) > 1) { g.strokeStyle = "#ffffff"; g.setLineDash([2, 2]); g.beginPath(); g.moveTo(bx, by); g.lineTo(nx, ny); g.stroke(); g.setLineDash([]); g.strokeStyle = "#fff"; g.strokeRect(bx - 3.5, by - 3.5, 7, 7); }
+  R(nx - 4, ny - 4, 9, 9, Math.floor(t/300) % 2 ? "#ffffff" : "#ff5a5a"); R(nx - 3, ny - 3, 7, 7, "#ff5a5a");
+  // ideal spot star, on top
+  const ix = MX(ideal[0]), iy = MYc(ideal[1]), tw = Math.sin(t/200) > 0, sc = tw ? "#ffd166" : "#fff3b0";
+  R(ix - 1, iy - 6, 3, 13, sc); R(ix - 6, iy - 1, 13, 3, sc); R(ix - 3, iy - 3, 7, 7, sc); R(ix - 1, iy - 1, 3, 3, "#b8860b");
+  g.restore();
+  // --- criteria meters ---
+  R(146, 20, 118, 128, "#3a2a1a"); R(148, 29, 114, 117, "#1f2a44");
+  s.mm.c.s.forEach((v, i) => { const y = 39 + i * 18; R(151, y, 108, 5, "#0f1a2a"); R(151, y, 108 * v, 5, v > 0.66 ? "#5be37d" : v > 0.33 ? "#ffd166" : "#ff5a5a"); });
+  R(151, 101, 108, 1, "#ffd166");
+  [[s.aw, base.aw, 117], [s.acc, base.acc, 135]].forEach(([v, v0, y]) => { R(151, y, 108, 5, "#0f1a2a"); R(151, y, 108 * v, 5, "#9fe0ff"); R(151 + 108 * v0, y - 1, 1, 7, "#ffffff"); });
+  // --- whiteboard ---
+  R(272, 22, 154, 78, "#8a8f9c"); R(274, 24, 150, 74, "#f7f7f2"); R(286, 100, 130, 3, "#8a8f9c");
+  R(300, 101, 6, 2, "#c62828"); R(310, 101, 6, 2, "#1f4fa8"); R(320, 101, 6, 2, "#1f8a3a");
+  const flat = Math.abs(s.chg) < 0.02, dir = flat ? 0 : s.chg > 0 ? 1 : -1;
+  arrow(410, 58, dir, flat ? "#b8860b" : dir > 0 ? "#1f8a3a" : "#c62828", t);
+  // share bar on the board: you vs. rivals
+  const tot = s.rows.reduce((t2, r) => t2 + r.sc, 0); let xx = 278;
+  s.rows.slice().sort((a, b) => b.sc - a.sc).forEach(r => { const w = 142 * (tot ? r.sc / tot : 0); R(xx, 92, Math.max(0, w - 0.5), 4, r.mine ? "#ff5a5a" : (CO_COL[r.p.key[0]] || "#bbb")); xx += w; });
+  presenter(296, 104, t, flat ? 0 : dir);
+  // --- conference table with the team ---
+  R(150, 160, 110, 8, "#5d4037"); R(156, 168, 3, 10, "#4e342e"); R(251, 168, 3, 10, "#4e342e");
+  for (let i = 0; i < 4; i++) person(160 + i * 26, 146, "#3a7bd5", t, i);
+  // --- customers arriving: rate follows estimated units ---
+  acc += dt * (s.units / 1000) * 0.0016;
+  while (acc > 1) { acc -= 1; walkers.push({ x: -10, c: ["#e76f51","#2a9d8f","#e9c46a","#8ecae6","#b5838d"][Math.floor(Math.random()*5)] }); }
+  walkers.forEach(w => w.x += dt * 0.03);
+  walkers = walkers.filter(w => w.x < 140);
+  R(132, 156, 10, 32, "#3e2723"); R(134, 158, 6, 28, "#6d4c41");                                    // door
+  walkers.forEach((w, i) => { const b = Math.round(Math.sin(t/90 + i)); R(w.x+1, 170+b, 5, 5, "#e0ac69"); R(w.x, 175+b, 7, 7, w.c); R(w.x+1, 182, 2, 2, "#222"); R(w.x+4, 182, 2, 2, "#222"); });
+  requestAnimationFrame(draw);
+}
+(function start() {
+  const h = decodeURIComponent(location.hash.slice(1));
+  const i = h ? PRESETS.findIndex(p => p.name.toLowerCase() === h.toLowerCase()) : PRESETS.findIndex(p => p.key === "Erie" && p.seg === "High End");
+  setDataset(DATASETS.indexOf(DS), Math.max(0, i));
+})();
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>

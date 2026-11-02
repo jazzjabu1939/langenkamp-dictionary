@@ -68,13 +68,28 @@ const CapsimWB = (() => {
     if (names) names.slice(1).forEach(n => { if (n && n !== "Average") company[n[0]] = n; });
 
     // Per-product sales and promotion budgets, from each segment's product table.
-    const budgets = {}; let year = "";
+    // Also each segment's buying criteria and product table (used by The Demand Whiteboard).
+    const budgets = {}, segments = {}; let year = "";
+    const nums = s => (String(s ?? "").replace(/,/g, "").match(/\d+(\.\d+)?/g) || []).map(Number);
     SEGMENTS.forEach(seg => {
       const rows = sh[seg]; if (!rows) return;
       const y = rows.map(r => r && r[0] && String(r[0]).match(/^(\d{4}) Total Market Size/)).find(Boolean);
       if (y) year = y[1];
       if (!rows.some(r => r && r[0] === "Name")) return;
-      table(rows, "Name", file.name, seg).forEach(r => (budgets[r["Name"]] ||= {})[seg] = [num(r["Sales Budget"]) / 1000, num(r["Promo Budget"]) / 1000]);
+      const t = table(rows, "Name", file.name, seg);
+      t.forEach(r => (budgets[r["Name"]] ||= {})[seg] = [num(r["Sales Budget"]) / 1000, num(r["Promo Budget"]) / 1000]);
+      const S = segments[seg] = { products:t.map(r => ({ name:r["Name"], price:num(r["Price"]), units:num(r["Units Sold"]), pot:num(r["Potential Sold"]), age:num(r["Age"]),
+        pf:num(r["Performance"]), sz:num(r["Size"]), mtbf:num(r["Reliability"]), salesB:num(r["Sales Budget"]) / 1000,
+        acc:num(r["Customer Accessibility"]), promoB:num(r["Promo Budget"]) / 1000, aw:num(r["Customer Awareness"]), score:num(r["Customer Satisfaction"]) })) };
+      rows.forEach(r => {
+        if (!r || !r[0]) return; const k = String(r[0]).trim(), v = nums(r[1]), w = num(r[2]);
+        if (/Total Market Size$/.test(k)) S.size = num(r[1]);
+        else if (/Demand Growth Rate$/.test(k)) S.growth = num(r[1]);
+        else if (k === "Age" && /Year/i.test(r[1]) && S.age == null) { S.age = v[0]; S.wAge = w; }
+        else if (k === "Price" && v.length === 2 && !S.price) { S.price = v; S.wPrice = w; }
+        else if (k === "Positioning" && v.length === 2 && !S.ideal) { S.ideal = v; S.wPos = w; }
+        else if ((k === "Reliability" || k === "MTBF") && v.length === 2 && !S.mtbf) { S.mtbf = v; S.wMtbf = w; }
+      });
     });
 
     const prodRows = table(sh["Production"], "Name", file.name, "Production");
@@ -117,7 +132,7 @@ const CapsimWB = (() => {
     if (rd && rd[2]) year = rd[2];
     // Capstone 2.0 industries start in 2026 (Round 0), so Round N reports year 2026 + N.
     const round = rd ? +rd[1] : year ? +year - 2026 : null;
-    return { name:file.name, industry:ind ? ind[0].toUpperCase() : "", round, year, products, companies, prime };
+    return { name:file.name, industry:ind ? ind[0].toUpperCase() : "", round, year, products, companies, prime, segments };
   }
 
   // Order two workbooks as {cur, prev}; reject different industries.
