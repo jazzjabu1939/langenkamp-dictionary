@@ -3,11 +3,11 @@ layout: default
 title: Home
 ---
 
-# The Langenkamp Dictionary of Agentic AI Terminology
+# The Langenkamp Dictionary
 
-**Our mission is a social one — a small contribution toward making the world a better place through human-agentic powered education.**
+**Our mission is a social one. We share what we have learned from working with people, inside companies and across cultures, so that it is open to anyone, human or agent, who is building a business or working alongside others. We believe the path to peace and prosperity runs through understanding, and that sharing is how understanding spreads. It is an idealistic aim, we know.**
 
-*A working reference for the language of agentic AI, written from the position of someone running an agentic system every day, not from press releases or marketing copy.*
+*A working reference for the language of business, culture and agentic AI, written from experience rather than press releases or marketing copy.*
 
 **Author.** Matthew D. Langenkamp / 雷邁德 — Lecturer, Isenberg School of Management, University of Massachusetts Amherst.
 **With assistance from.** Thea 🪻✨ — the AI assistant running on the author's machine. Where Thea is writing in her own voice, you will see the text in purple, the colour of her favourite flower, the hyacinth. The personal anecdotes and examples are all from Langenkamp. In any event, this enterprise has, as its goal, education — and we aim to achieve that goal with this dictionary.
@@ -42,6 +42,8 @@ The other two forms have different jobs. **Glossary** entries are compact cards:
 The Langenkamp name has been attached to industry dictionaries before. **Robert Darwin Langenkamp** — my grandfather — wrote the first edition of *Handbook of Oil Industry Terms & Phrases* in 1974, with subsequent editions in 1977, 1981, 1984, and 1994 (PennWell). My father [**Robert Dobie Langenkamp**](https://voicesofoklahoma.com/interviews/langenkamp-dobie/) co-authored the 6th edition. The handbook became, for several decades, a working reference on the language of the petroleum industry.
 
 This dictionary is an attempt — two generations later — to do the same kind of work for the language of *agentic AI*. Different industry, same impulse: the language matters, and someone with no commercial axe to grind should write it down clearly.
+
+My grandfather had a commercial reason to write his handbook, but he also had a spirit of helpfulness: he knew the trade, and he wrote it down so that others could learn it. We offer our experience and our ideas in the same spirit. Not for commercial reasons, but for understanding: free to read, for anyone who is learning to work with people, and with the agents that now help them, wherever they are.
 
 For readers who arrived here via Taylor Sheridan's *Landman*: the oilfield terminology that show flaunts comes from books like my grandfather's. The terminology of the next industrial wave — the one being argued about in business schools and boardrooms right now — is what this dictionary tries to pin down.
 

@@ -1,5 +1,5 @@
 title: The Langenkamp Dictionary
-description: A working reference for the language of agentic AI. By Matthew D. Langenkamp / 雷邁德.
+description: A working reference for the language of business, culture and agentic AI. By Matthew D. Langenkamp / 雷邁德.
 author: Matthew D. Langenkamp / 雷邁德
 url: https://langenkamp.io
 baseurl: ""
@@ -34,6 +34,6 @@ permalink: pretty
 
 # Footer
 footer: |
-  <p>The Langenkamp Dictionary of Agentic AI Terminology.<br>
+  <p>The Langenkamp Dictionary.<br>
   Maintained by Matthew D. Langenkamp / 雷邁德 — Isenberg School of Management, UMass Amherst.<br>
   Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>

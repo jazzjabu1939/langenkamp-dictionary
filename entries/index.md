@@ -100,4 +100,4 @@ A complete list of dictionary entries, begun May 2026 and growing. New terms are
 
 ---
 
-*The Langenkamp Dictionary of Agentic AI Terminology. Maintained by Matthew D. Langenkamp / 雷邁德. Licensed under [CC BY-NC 4.0](/LICENSE).*
+*The Langenkamp Dictionary. Maintained by Matthew D. Langenkamp / 雷邁德. Licensed under [CC BY-NC 4.0](/LICENSE).*

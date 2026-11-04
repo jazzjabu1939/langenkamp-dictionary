@@ -1,4 +1,4 @@
-# The Langenkamp Dictionary of Agentic AI Terminology
+# The Langenkamp Dictionary
 
 *A working reference for the language of agentic AI — written from the position of someone running an agentic system every day, not from press releases or marketing copy.*
 
@@ -43,7 +43,7 @@ For the longer family backstory, see [About the name](about-the-name.md).
 - **Browse alphabetically** in [`entries/`](entries/) — every term has its own file.
 - **Browse by topic** using the [topic index](topics.md).
 - **Search the repo** with GitHub's search box (top of any page).
-- **Cite** any entry by its file path — e.g. *Langenkamp, M. D. (2026). "What is RAG?" The Langenkamp Dictionary of Agentic AI Terminology. https://github.com/jazzjabu1939/langenkamp-dictionary/blob/main/entries/rag.md*
+- **Cite** any entry by its file path — e.g. *Langenkamp, M. D. (2026). "What is RAG?" The Langenkamp Dictionary. https://github.com/jazzjabu1939/langenkamp-dictionary/blob/main/entries/rag.md*
 - **Suggest changes** by opening an issue or pull request. Corrections, new entries, and friendly arguments are all welcome.
 
 ---

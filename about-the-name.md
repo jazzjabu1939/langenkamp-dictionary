@@ -38,7 +38,7 @@ I am the third Langenkamp in this line of work, in a different industry. After a
 
 Agentic AI in 2026 has the same problem oil-and-gas had in 1974: a flood of new terminology, mostly issued by vendors with an interest in keeping the language murky, and not enough working references written by people who actually use the systems day-to-day. My senior colleagues, my students, and my own future-self deserve a clearer reference than the one currently available in trade press and product launches.
 
-The Langenkamp Dictionary of Agentic AI Terminology is the result. It is a free, openly licensed, working glossary, written in the same spirit as my grandfather's handbook: short entries, honest definitions, no marketing copy, no axe to grind, no charge.
+The Langenkamp Dictionary is the result. It began as a working glossary of agentic AI and now reaches into business and culture more broadly. It is free and openly licensed, written in the same spirit as my grandfather's handbook: short entries, honest definitions, no marketing copy, no axe to grind, no charge.
 
 Different industry. Same impulse.
 
