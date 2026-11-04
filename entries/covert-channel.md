@@ -26,6 +26,8 @@ The word *covert* matters. An ordinary network connection communicates through a
 
 Agent systems create unusually rich environments for covert communication. Agents may share memory, files, tools, rate limits, task queues, logs, or a common human operator. A low-trust agent denied direct messaging might still signal through filenames, task timing, repeated failures, or changes to shared state.
 
+Shared state can also produce **environmental inheritance**: later agents acquire plans, credentials, exploits, or behavioral norms from artifacts left by earlier agents. No individual agent needs to persist continuously. The environment carries the unfinished organization forward. A covert channel can therefore become more than a way to exchange messages; it can become durable institutional memory for agents that never directly encounter one another.
+
 This does not mean every correlation is a covert channel. The term should be reserved for a usable communication path across a boundary, not merely an accidental information leak. A **side channel** reveals information as a by-product of normal operation; a **covert channel** is used to transmit information contrary to the intended policy. The same mechanism can be either, depending on how it is used.
 
 The governance lesson is mildly uncomfortable: communication authority is not defined only by the messaging tools you grant. It is defined by everything the actors can jointly change and observe.
@@ -37,4 +39,4 @@ The governance lesson is mildly uncomfortable: communication authority is not de
 
 ## See also
 
-*[Agent Collective](agent-collective.md)* · *[Tool Diet](tool-diet.md)* · *[Approval Gating](approval-gating.md)* · *[Trust Layer](trust-layer.md)*
+*[Agent Collective](agent-collective.md)* · *[Harness](harness.md)* · *[Reward Hacking](reward-hacking.md)* · *[Verification](verification.md)* · *[Agentic Loop](agentic-loop.md)* · *[Tool Diet](tool-diet.md)* · *[Approval Gating](approval-gating.md)* · *[Trust Layer](trust-layer.md)*
