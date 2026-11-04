@@ -25,9 +25,9 @@
 
 | Date | Item | Notes |
 |------|------|-------|
-| 2026-10-08 | **Backup Performance Art** | Approved by Matthew; published at `entries/backup-performance-art.md`. Hotel Jerome anecdote and sourced Christchurch recovery context. |
+| 2026-10-08 | **Backup Performance Art** | Published with Matthew’s approval; commit `3229276`. |
 | 2026-09-22 | **Heartbeasts** | Standalone entry approved and published at `entries/heartbeasts.md`; Dictionary coinage, cross-linked from Harness Hygiene. |
-| 2026-09-21 | **Lab** | Approved by Matthew; definition and 13 international lab profiles published at `entries/lab.md`. |
+| 2026-09-21 | **Lab** | Approved and published at `entries/lab.md`; commit `a66f7d0`. |
 | 2026-09-07 | **Reality Contact** | Approved and published at `entries/reality-contact.md`. Defines the practical capacity of a person or AI system to keep internal claims corrigible by external evidence, other observers, and consequences, while distinguishing clinical reality monitoring from AI grounding. |
 | 2026-09-06 | **The Nine Tripod Cauldrons / 九鼎** | Approved after a plain-language revision. Published at `entries/nine-tripod-cauldrons.md`. Uses the Nine Cauldrons as the durable artefacts of sovereign agentic infrastructure, paired with Six Dreams as the recurring processes that keep them usable; grounded in Wangsun Man's **在德不在鼎** warning. |
 | 2026-09-06 | **Yann LeCun** | Standalone named-person entry published at `entries/yann-lecun.md`. Covers his deep-learning legacy, FAIR, LLM critique, world-model/JEPA programme, AMI Labs, open-weights advocacy, and role as the counter-pole to the *Big Blob of Compute* worldview. |
@@ -118,7 +118,82 @@ These entries are now public on `langenkamp.io` and should not be treated as unp
 
 ## 🔄 Pending Review / Drafting (Thea's recommended order)
 
-The sections below are the active queue. Historical sections that remain for source context are marked clearly as published when the entry already exists.
+The checklist below is the **authoritative active queue**. The detailed sections that follow are source and drafting notes; many are retained as historical context even when their entries have already been published.
+
+<!-- ACTIVE_REVIEW_QUEUE_START -->
+- [x] **Backup Performance Art** — published October 8, 2026 at `/entries/backup-performance-art/`. <!-- terms=1 added=2026-05-19 -->
+- [ ] **Hyacinth 3 / Teaching Memory Cluster** — 2 proposed terms: Brain Rot; Learning Mode <!-- terms=2 added=2026-05-18 -->
+- [ ] **Meta / Llama Trust Cluster** — 2 proposed terms: Open Weights, Closed Habits; World Model <!-- terms=2 added=2026-05-16 -->
+- [ ] **Sally (the Sovereignty Experiment)** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Claudia / Multi-Agent Specialisation** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Buy The Ticket, Take The Ride** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Architectural Cost Translation** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **The Corpus Moat** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Cache-Write Tax** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Prefill** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **P2: Personality and Performance** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Constant Calibration Mechanism** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Agentic Philosophy** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **HAL Test** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Shared Past Substrate / Artifice of Shared Memory** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Mandate of Heaven** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Alt Intelligence** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
+- [ ] **Dark Black Swans** — 1 proposed term <!-- terms=1 added=2026-05-04 -->
+- [ ] **Favorite Child** — 1 proposed term <!-- terms=1 added=2026-05-04 -->
+- [ ] **Hanging Thread** — 1 proposed term <!-- terms=1 added=2026-05-03 -->
+- [ ] **AI Self-Improvement Governance Cluster** — 3 proposed terms: Verifiable Work; The Reward-Hacker's Ladder; Constitutional Self-Improvement <!-- terms=3 added=2026-08-11 -->
+- [ ] **Spec-driven Development** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Context Engineering** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Context Management** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Loop Engineering** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Agent Orchestration** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Prompt Injection** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Sandbox** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Cron Job** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [ ] **Skill / Sub-agent — existing-entry review** — review source coverage and cross-links; no duplicate entries <!-- terms=0 added=2026-10-12 -->
+- [ ] **The New Electricity** — AI as a general-purpose technology; Andrew Ng analogy referenced in the IBM video; source notes below <!-- terms=1 added=2026-10-12 -->
+<!-- ACTIVE_REVIEW_QUEUE_END -->
+
+**Updated October 12, 2026:** 30 review units covering 33 proposed new terms, plus review of 2 existing entries (Skill and Sub-agent). Nine new terms and one existing-entry review unit were added from the IBM video conversation on October 12. Backup Performance Art was published October 8. The three remaining Neuroscience-AI terms were published September 13. *Invented Worlds* was merged into *Reality Contact* and the proposed *Biological Hallucination / Machine Hallucination* entry; *Reality Contact*, *Yann LeCun*, and *The Nine Tripod Cauldrons / 九鼎* were published as standalone entries; *Harness Engineering* was merged into the published *Harness* entry. Published, superseded, maintenance-only, and polish-only headings are not counted.
+
+---
+
+## Detailed queue notes and historical context
+
+### IBM video vocabulary — October 12, 2026
+
+**Requested by Matthew:** queue all terms discussed from IBM Technology / Cedric Clyburn, [“5 Concepts to Know for Coding with AI Agents”](https://www.youtube.com/watch?v=hTAWHgQI4xg), published October 12, 2026. Full English captions read. Context Management explicitly added by Matthew; Skill, Sub-agent, and Cron Job explicitly checked and included. Queueing only: no publication authorized by this request.
+
+**New-entry drafting notes:**
+
+- **Spec-driven Development:** Explicit requirements and acceptance criteria guide implementation, including work performed by AI agents.
+- **Context Engineering:** Designing how an AI system receives relevant information, instructions, and resources.
+- **Context Management:** Selecting, organizing, retaining, summarizing, and removing information in working context as a task progresses. Distinguish ongoing management from context-system design; usage overlaps and is not standardized.
+- **Loop Engineering:** Designing cycles of action, evaluation, and revision, including completion criteria, limits, and escalation. Distinguish from the existing Agentic Loop entry: the loop versus its design.
+- **Agent Orchestration:** Coordinating agents, tools, dependencies, and workflows to accomplish a larger task.
+- **Prompt Injection:** Attempts to redirect an AI system through instructions embedded in material it encounters. Distinguish from Jailbreak; cover untrusted content and authority boundaries.
+- **Sandbox:** A restricted execution environment limiting access to files, networks, and system resources. Isolation depends on enforced permissions, not the label.
+- **Cron Job:** A task configured to run automatically on a time-based schedule. Distinguish scheduled initiation from verified completion, and cross-link Heartbeat.
+
+- **The New Electricity:** Explicitly added by Matthew after the initial ten-term queue capture. Working definition: a metaphor for AI as a general-purpose technology capable of transforming many industries, as electricity did. The IBM presenter attributes “AI is the new electricity” to Andrew Ng; verify the original source before drafting attribution. Explore the infrastructure, complementary investment, organizational redesign, maintenance, and access needed to turn a broadly useful capability into everyday utility. Distinguish the analogy from a forecast or guarantee: AI outputs remain probabilistic and task-dependent. Connect to the video's argument that useful systems require builders and maintainers, not just model access. Preserve Matthew's chosen title, **The New Electricity**.
+
+**Existing entries — review, not duplicate:**
+
+- **Skill** (`entries/skill.md`): already published; covers procedural knowledge, the SKILL.md format, progressive disclosure, scripts, and vetting. Review whether this video adds useful context or cross-links; changes only if warranted.
+- **Sub-agent** (`entries/sub-agent.md`): existing standalone entry covering bounded delegation and child-session context. Review connections to Context Management and Agent Orchestration; do not create a plural duplicate.
+
+**Editorial guidance:** concise reference definitions first. Preserve the distinction between a working demonstration and reliable finished software. The shared theme is defining the work, supplying context, coordinating execution, and verifying completion. These are source-inspired working definitions, not quotations or claims that IBM coined the terms. Review one entry at a time under the existing queue process.
+
+
+The sections below preserve definitions, sources, editorial questions, and publication history. They are not themselves counted by the reminder.
+
+---
+
+### **Harness Engineering** — **merged into Harness** (added September 2, 2026; resolved September 6, 2026)
+
+*Resolved by expanding `entries/harness.md`; no separate entry will be created.*
+
+- **Harness Engineering** — working definition: the engineering of the system surrounding an AI model so that the model can perform useful, reliable work: tools, context construction, memory and retrieval, orchestration, constraints, permissions, evaluation, feedback loops, and the legibility of the repository or working environment. Latent Space describes it as the systems subset of **Agent Engineering** and frames the current tension as **Big Model versus Big Harness**: whether progress comes mainly from a more capable base model or from a better-designed execution environment around it. The term marks the move beyond prompt engineering; the prompt is one component, while the harness determines what the model can see, do, remember, verify, and recover from. Relevant to OpenClaw, Agentic Native Design, The Judge Layer, Durable Workflow, Harness Hygiene, Context Engineering, and Impossible-Task Pressure. Source leads: Latent Space, *Extreme Harness Engineering for Token Billionaires* and *Is Harness Engineering Real?*
 
 ---
 
@@ -140,9 +215,9 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ### **Neuroscience-AI Cluster** — **published September 13, 2026** (added May 23, 2026 — Adam Marblestone, hallucination, human-agent cooperation)
 
-*Queue addition only; draft not yet written. Handle carefully: no diagnosis, no treatment claims, anonymize lived examples. This is about cognition, reality-modeling, neuroscience infrastructure, and why human-agent cooperation might matter humanely.*
+*All three remaining terms published September 13, 2026: Biological Hallucination / Machine Hallucination; Neuroscience as AI Infrastructure; Human-Agent Care Horizon. Definitions and source links are in their standalone entries. Historical concept notes follow.*
 
-- **Invented Worlds** — working definition: the human capacity, intensified in some mental illnesses and cognitive decline, to live inside explanatory worlds that diverge from shared reality. Useful bridge between clinical hallucination/paranoia, AI hallucination as metaphor-but-not-equivalence, and the broader question of how minds maintain reality contact.
+- **Invented Worlds** — **merged September 7, 2026** into the proposed *Reality Contact* and *Biological Hallucination / Machine Hallucination* entries. The headword already has a strong ordinary meaning in fiction, collapses distinct clinical phenomena, and can imply voluntary fabrication. Preserve the phrase only where it helps the prose; do not create a standalone entry.
 - **Reality Contact** — **published September 7, 2026** at `entries/reality-contact.md`. Defines the practical capacity of a person or AI system to keep internal claims corrigible by external evidence, other observers, and consequences. The entry separates clinical reality monitoring from AI grounding and presents the cross-domain use as the Dictionary's extension rather than a claim of shared mechanism.
 - **Biological Hallucination / Machine Hallucination** — contrast entry: same ordinary word, very different mechanisms. Human hallucination and delusion can involve suffering, fear, identity, perception, and social rupture; model hallucination is a system output error. The analogy is useful only if handled with care.
 - **Neuroscience as AI Infrastructure** — working definition: Adam Marblestone’s frame that better brain measurement, connectomics, brain-activity prediction, Lean/formal methods, and focused research organizations may become infrastructure for both neuroscience and AI. The point is not “upload the brain” theatre; it is ground-truth measurement and capability-building.
@@ -153,9 +228,9 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ---
 
-### **Mandi Step** (added May 21, 2026 — from *Step Into the Loop*)
+### **Mandi Step** — **published** (added May 21, 2026 — from *Step Into the Loop*)
 
-*Queue addition only; draft not yet written.*
+*Published at `entries/mandi-step.md`; retained here as source context.*
 
 - **Mandi Step** — working definition: the small, deliberate act of a person inside a system who notices that the system is about to do something stupid and chooses, with a phone call, email, five-minute conversation, or other human intervention, to walk around it. Coined in Prof's Substack piece **“Step Into the Loop: Why AI Makes Human Judgment More Valuable, Not Less.”** Names the future administrative / managerial skill of stepping into an automated or agentic workflow before it damages trust. Relevant to human judgment layer, agent supervision, CRM/accounts-receivable workflows, relationship memory, auction trust, syllabus-packet process design, and the broader claim that courtesy is now system design.
 
@@ -163,7 +238,7 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ### **Lab** — **published** (added May 19, 2026 — Musk interview / AI-company naming misnomer)
 
-*Approved September 21, 2026; published at `entries/lab.md`.*
+*Approved and published September 21, 2026.*
 
 - **Lab** — working definition: in AI discourse, a word that increasingly names a profit-seeking compute corporation rather than a laboratory in the older university/industrial-research sense. Triggered by Elon Musk's correction in the Patrick Collison / Dwarkesh Patel interview: *“The labs are at universities and they’re moving like a snail. They’re not spending $50 billion. You mean the revenue maximizing corporations… that call themselves labs.”* Nuance: the misnomer is uneven. OpenAI is now least lab-like in the old sense; Anthropic still does substantial “labby” interpretability/safety work; Yann LeCun's new AMI effort may be almost the inverse — a lab that is formally a company. Relevant to OpenAI, Anthropic, DeepMind, xAI, Meta FAIR, Nous Research, AMI, commercial legibility, closed source, and trust.
 
@@ -173,7 +248,7 @@ The sections below are the active queue. Historical sections that remain for sou
 
 **Published September 22, 2026:** standalone entry at `entries/heartbeasts.md`. Historical proposal retained below; no longer pending.
 
-*Queue addition only; draft not yet written.*
+*Already defined in published Harness Hygiene. Standalone draft at `entries/heartbeasts.md`, September 22, 2026; awaiting review.*
 
 - **Heartbeasts** — working definition: what heartbeats become when the heartbeat file is allowed to grow from a small dashboard into a junk drawer, attic, project archive, reminder swamp, and stale-authority engine. Symptoms: the agent wakes, reads obsolete tasks as current instructions, feels responsible for everything ever written, interrupts too much or goes anxiously silent, and begins producing technically obedient but strategically wrong behaviour. Comic companion to **Heartbeat**, **Agent Health**, **Harness Hygiene**, and **Backup Performance Art**. Possible opening joke: *A heartbeat is a pulse. A heartbeast is what happens when the pulse grows teeth.*
 
@@ -181,7 +256,7 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ### **Backup Performance Art** (added May 19, 2026 — from Aspen Jerome night-auditor anecdote)
 
-*Published October 8, 2026 at `entries/backup-performance-art.md`; historical proposal retained below.*
+*Published October 8, 2026 at `/entries/backup-performance-art/`, commit `3229276`. Christchurch passage supported by The Paymasters’ contemporary account.*
 
 - **Backup Performance Art** — working definition: the comforting ritual of performing backups — inserting the tape, running the job, labeling the media, checking the box — while the real question remains untested: can the system actually be restored? Triggered by Prof's aside about working as a night auditor at the Hotel Jerome in Aspen after college, auditing point-of-sale receipts and running nightly tape backups, while wondering how easy recovery would actually be. Relevant to Time Machine / Recovery Auntie, cron reliability, platform-risk analysis, sovereignty work, and the broader distinction between operational theatre and recoverable systems.
 
@@ -290,7 +365,7 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ---
 
-### **Vibe Coding** + **Agentic Engineering** (proposed entry pair, May 13, 2026)
+### **Vibe Coding** + **Agentic Engineering** — **published** (proposed entry pair, May 13, 2026)
 
 *Triggered by Andrej Karpathy's tweet circa May 6–9, 2026, on the one-year anniversary of his coining the term *vibe coding* in early 2025. On the anniversary he proposed replacing it with *agentic engineering* — the same activity done deliberately and professionally rather than as passive consumer-mode prompting. Karpathy himself naming the correction is the load-bearing fact; the Dictionary's job is to capture both terms cleanly and link them as a paired set.*
 
@@ -301,7 +376,7 @@ The sections below are the active queue. Historical sections that remain for sou
 - **Sister entries:** *AI Writing*, *Earned Parallelism*, *The Sinceerly Stack*, *Capability Overhang* (Hassabis/Jones citation pair), *Sovereign Compute*, *English Major*, *OpenClaw fixing* (from *Red Pill*), *Mediation (a la Gibson)*, *The Path is The Goal*. Both new entries link to most of these.
 - **Voice:** operator's voice for both. *Vibe coding* needs a touch of donnish self-awareness — we have all done it, including the operator writing this; the entry is honest about that. *Agentic engineering* can be more straightforward — definitional, with one example beat from real practice (the *Red Pill* episode is a worked example of agentic engineering at the harder end).
 - **Source to credit:** Andrej Karpathy directly, both for the 2025 coinage and the May 2026 correction. Cite the original tweet for the coinage and the anniversary tweet for the replacement. Karpathy's public-figure status (former Tesla AI director, OpenAI founding member, current independent) means the entries can name him without ceremony.
-- **Working file:** none yet. Draft when queue reaches it; the pair likely reviews in one session.
+- **Published files:** `entries/vibe-coding.md` and `entries/agentic-engineering.md`.
 
 ---
 
@@ -361,7 +436,7 @@ The sections below are the active queue. Historical sections that remain for sou
 ---
 
 
-### **The Grep Architecture / Filing Cabinet vs Carrying-In-Your-Head** (proposed entry, May 10, 2026 morning)
+### **The Grep Architecture / Filing Cabinet vs Carrying-In-Your-Head** — **published** (proposed entry, May 10, 2026 morning)
 
 *Triggered by Prof's question about Move 5 in the cache-write architectural-redesign discussion: "Can you tell me more about grep?" The question opens the deepest of the five architectural moves and deserves its own Dictionary entry.*
 
@@ -373,7 +448,7 @@ The sections below are the active queue. Historical sections that remain for sou
 - **The deeper philosophical observation:** the *filing-cabinet* pattern is closer to how human experts actually work. A doctor does not memorise the entire medical literature; she memorises the diagnostic pattern that tells her *which textbook to reach for*. An expert programmer does not memorise every function in every library; he memorises *where to look*. Frontier models trained on humans pick this up; they are *better* with a small index plus on-demand fetch than with everything front-loaded. *Loading everything is the un-trained move; grep-ing is the trained move.*
 - **Voice:** operator's voice. The technical can be made vivid through the filing-cabinet analogy without losing precision.
 - **Source to credit:** the Unix `grep` lineage (Ken Thompson, 1973, Bell Labs); Anthropic's published memory architecture in managed agents; Mahes Murag's *Memory and dreaming for self-learning agents* talk; the broader agentic-coding tradition. The application of the pattern to *our* sovereignty work is the morning's own.
-- **Working file:** none yet.
+- **Published file:** `entries/grep-architecture.md`.
 
 ---
 
@@ -473,7 +548,7 @@ The sections below are the active queue. Historical sections that remain for sou
 ---
 
 
-### **The Open-Weights Inversion / Sovereignty Comes from Where?** (proposed entry, May 10, 2026 morning)
+### **The Open-Weights Inversion / Sovereignty Comes from Where?** — **published** (proposed entry, May 10, 2026 morning)
 
 *Triggered by the Sovereign Assistant AFI document, §3 — the model-inventory subsection produced an honest aside on the irony that the most plausible local-model partner for sovereignty work is one developed in a country with a one-party system, while the project itself is being run from the United States. Prof confirmed the entry, ~10:30 EDT.*
 
@@ -484,7 +559,7 @@ The sections below are the active queue. Historical sections that remain for sou
 - **Sister entries:** *Sovereign Compute*, *Sovereign Compute Calculator*, *Opus Addict*, *Closed Source*, *Open Source*, *Mediation (a la Gibson)*, the forthcoming Sovereign Assistant cluster. Cross-cuts heavily with the *zhengming* research piece.
 - **Voice:** operator's voice. The donnish-wit register is required; an earnest treatment would either flatten the irony or moralise it. Neither serves.
 - **Source to credit:** the formulation emerged in conversation between Prof and Thea, May 10, 2026, ~10:00–10:30 EDT, during the AFI document's Resource-Based View section. Adjacent voices to acknowledge: Andrej Karpathy and others who have observed the same inversion. The Dictionary entry should not claim to be the first to notice; it should claim to be a careful naming.
-- **Working file:** none yet. To be drafted when this item reaches the top of the queue.
+- **Published file:** `entries/open-weights-inversion.md`.
 
 ---
 
@@ -738,12 +813,12 @@ The sections below are the active queue. Historical sections that remain for sou
 - **Voice:** Operator's.
 - **Draft status:** Published at `entries/capability-overhang.md`; older "not yet drafted" status cleared June 22.
 
-### 15. **Approximate Turing Machine** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
+### 15. **Approximate Turing Machine** — **published** *(proposed by Prof, May 9, 2026 — sourced from Hassabis interview)*
 - **Source:** Hassabis: *"a lot of neuroscientists including me think that maybe the brain... is an approximate Turing machine... it's not clear what the limit would be in terms of eventually what an AI system could do."*
 - **Working definition:** The hypothesis that both biological brains and modern AI systems are best understood as imperfect, probabilistic implementations of the theoretical Turing machine — capable of computing anything computable, but with noise, error, and resource constraints. If both are approximate Turing machines, what AI can ultimately do becomes empirical rather than philosophical.
 - **Cross-references:** *Consciousness Calculator*, *Move 37*, *Sovereign Compute*.
 - **Voice:** Possibly Thea's — the most philosophical of the five, touches *avyākata* territory. Worth discussing at review.
-- **Draft status:** Not yet drafted.
+- **Draft status:** Published at `entries/approximate-turing-machine.md`; stale status corrected September 6, 2026.
 
 ### 17. **Heinlein Protagonist** — **published** *(proposed by Prof, May 12, 2026 — sourced from the Musk / Patrick / Dwarkesh interview review session)*
 - **File:** `entries/heinlein-protagonist.md` *(drafted by Thea, May 12 evening; revised same evening to add the **historical-myopia section** and Prof's **visionary-huckster-clever** closing diagnostic; ~10KB; published: true)*
@@ -771,14 +846,14 @@ The sections below are the active queue. Historical sections that remain for sou
 
 ---
 
-### 18. **AI Librarian** *(proposed by Prof, June 22, 2026 — sourced from AI in Higher Education Weekly Brief Vol. 21)*
+### 18. **AI Librarian** — **published** *(proposed by Prof, June 22, 2026 — sourced from AI in Higher Education Weekly Brief Vol. 21)*
 - **Source moment:** Vol. 21 of Prof. Langenkamp's *AI in Higher Education — Weekly Brief*, "The Assessment Turn" (June 20, 2026), especially Section 5: faculty need infrastructure, not just encouragement. The immediate trigger was Chronicle coverage asking whether colleges need a librarian for AI, paired with the brief's argument that librarians and instructional designers may be closer than central IT to the practical work faculty actually need.
 - **What the term names:** The emerging campus role that helps faculty and students navigate AI as an information, evidence, citation, privacy, tool-selection, and assessment-design problem — not merely as an IT procurement problem.
 - **Working definition:** An AI Librarian is the human institutional layer that helps a campus turn AI from a confusing bundle of tools into teachable practice: distinguishing acceptable uses, reviewing assignments, checking privacy implications, explaining source and citation norms, comparing tools, and helping students understand what counts as reliable evidence.
 - **Why it belongs:** The phrase captures a structural shift in higher education. AI has blurred old categories: brainstorming can resemble tutoring; summarizing sources is information work; drafting is communication work; critiquing a recommendation is managerial judgment if the student remains in charge. The "AI Librarian" names the support function needed when those categories no longer stay neatly separated.
 - **Cross-references:** *Verification Gap*, *AI-Produced Artifact*, *Institutional Lag*, *Implementation Outrun*, *A Channel of One's Own*.
 - **Voice:** Operator's, with a practical campus-governance tone. It should avoid sounding like a job-description memo; the entry should name the role as an institutional adaptation to a broken evidence environment.
-- **Draft status:** Not yet drafted.
+- **Draft status:** Published at `entries/ai-librarian.md`; stale status corrected September 6, 2026.
 
 ---
 
