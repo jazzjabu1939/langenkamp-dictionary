@@ -65,10 +65,22 @@ For the longer family backstory and the lineage of the Langenkamp name in indust
 
 ## Tools
 
-Free, open-access, runs in your browser, no tracking.
+Free and open to all. The interactive tools run in your browser, and nothing you load into them is uploaded. For every course-facing page in one place, see **[For Students](for-students/)**.
 
-- **[Consciousness Calculator](tools/consciousness-calculator/)** — see what the closed-tier "free" plan is actually extracting from your consciousness on a per-day, per-week, and per-month basis. Move the slider from *oil filter* (forgettable) to *anti-depressant ad placed next to a Friday-night-loneliness conversation* (sticky, mind-altering) and watch the mispricing gap. Companion to the [Consciousness Calculator entry](entries/consciousness-calculator/) that explains the philosophical frame.
-- **[Capstone Graphic Simulations](capstone/graphic-simulations/)** — three pixel-art teaching models for business-strategy students running the Capsim *Capstone* simulation: plant economics (*The Second Shift*), economies of scale (*Spreading the Overhead*) and the debt spiral (*Big Al Comes Calling*).
+**For strategy students running Capsim *Capstone***
+- **[Capstone Graphic Simulations](capstone/graphic-simulations/)**: four pixel-art teaching models. Plant economics (*The Second Shift*), economies of scale (*Spreading the Overhead*), the debt spiral (*Big Al Comes Calling*) and segment demand (*The Demand Whiteboard*). Load your own Courier workbook and each model uses your company's actual numbers.
+- **[Capstone 2.0 Glossary & Guidance](capstone/)**: more than 240 strategy, finance and operating terms in plain language, with how each shows up in Capstone and where to read more in Rothaermel. Includes a guide to reading the Courier.
+- **[Capstone Financial Foundations](capstone/#financial-foundations-workbook)** and **[Two Ways to Compete](capstone/#two-ways-to-compete)**: a printable workbook on the three financial statements, and a short case on cost leadership versus differentiation.
+
+**For working across cultures**
+- **[The International Life](https://international-life-preview.pages.dev/)**: an exploration game about unfamiliar places. Notice details, question first impressions, and tell what you see from what you infer.
+- **[Tru by Hilton](case-studies/tru-by-hilton/)**: a strategy case on brand portfolios, owner economics and cannibalization.
+
+**For working with AI**
+- **[On Beginning](entries/on-beginning/)**: set up an AI assistant of your own, try a small task, and learn how to save and recover your work.
+- **[Consciousness Calculator](tools/consciousness-calculator/)**: what a "free" AI plan is really extracting from your attention, per day, week and month. Move the slider from *oil filter* to *anti-depressant ad placed next to a Friday-night-loneliness conversation* and watch the mispricing gap. Companion to the [Consciousness Calculator entry](entries/consciousness-calculator/).
+
+**In development:** [Strategy Lab](strategy-lab/), our own Footrace-style business simulation, runs on our development computer for now; demonstrations by arrangement.
 
 ---
 
