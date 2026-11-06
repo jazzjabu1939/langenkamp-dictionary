@@ -16,6 +16,12 @@ This page collects course-facing materials that belong near the Dictionary but a
     <span>Set up an AI assistant of your own: understand models and tools, choose a setup for your computer, try a small task, and learn how to save and recover your work.</span>
   </a>
 
+  <a class="writing-card" href="/for-students/strategy-atlas/apple-ibm-microsoft/">
+    <span class="writing-kicker">Strategy Atlas · Review</span>
+    <strong>Two Ways to Win the Personal Computer</strong>
+    <span>Apple, IBM and Microsoft over forty years: integration versus open standards, where the value went, Microsoft's cloud pivot, and who captures value in AI. MANAGMNT 494BI.</span>
+  </a>
+
   <a class="writing-card" href="/capstone/#two-ways-to-compete">
     <span class="writing-kicker">Strategy Case · PDF</span>
     <strong>Capstone: Two Ways to Compete</strong>
@@ -61,6 +67,10 @@ This page collects course-facing materials that belong near the Dictionary but a
 </div>
 
 ---
+
+## Strategy Atlas
+
+- **[Two Ways to Win the Personal Computer](/for-students/strategy-atlas/apple-ibm-microsoft/)** - Apple, IBM and Microsoft: core competencies, value capture, shareholder value and ROIC, with a personal history from 1981 to today.
 
 ## Case Studies
 
