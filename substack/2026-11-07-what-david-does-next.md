@@ -10,6 +10,11 @@ published: true
 # What David Does Next
 *A new majority, a cracking market and the lessons of the 1920s: a case for a centrism that may represent intellectual humility.*
 
+<p><strong>Listen</strong> (30 minutes, read by a synthetic voice):</p>
+<audio controls preload="none" style="width:100%;max-width:640px" src="/assets/audio/what-david-does-next.mp3">
+  Your browser does not support audio. <a href="/assets/audio/what-david-does-next.mp3">Download the MP3</a>.
+</audio>
+
 Democrats won big on Tuesday. They won the House by a wide margin and took back the Senate, and they won governorships in places that a year ago would have earned you a pitying look at the faculty club.
 
 It is tempting to read the result as a vindication of the party. I think that would be a costly mistake.
