@@ -23,6 +23,12 @@ The Dictionary is the main room. This is the side table: essays, weekly briefs, 
     <span>Longer-form pieces and public essays.</span>
   </a>
 
+  <a class="writing-card" href="/essays/what-david-does-next/">
+    <span class="writing-kicker">Essay · November 7, 2026</span>
+    <strong>What David Does Next</strong>
+    <span>A new majority, a cracking market, and the lessons of the 1920s: a case for a centrism that may represent intellectual humility.</span>
+  </a>
+
   <a class="writing-card" href="/essays/the-genie-is-out/">
     <span class="writing-kicker">Essay · September 13, 2026</span>
     <strong>The Genie Is Out. I Would Like to Keep the Goats.</strong>
