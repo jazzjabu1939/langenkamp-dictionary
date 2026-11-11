@@ -17,7 +17,7 @@ last_revised: 2026-11-11
 
 *Set up an AI assistant of your own, give it one small job, and learn how to stop it and get your work back.*
 
-This guide uses **[OpenClaw](/entries/openclaw/)** on your own computer, with either a **cloud model** run by a company such as OpenAI or Anthropic, or a **[local model](/entries/local-model/)** that runs on your machine.
+This guide uses **[OpenClaw](/entries/openclaw/)** on your own computer, with either a **[cloud model](/entries/cloud-model/)** run by a company such as OpenAI or Anthropic, or a **[local model](/entries/local-model/)** that runs on your machine.
 
 **You'll need:** a Mac, Windows or Linux computer that you're allowed to install software on, and an internet connection. Cloud users also need an account with a model provider. Local users need enough memory (RAM) for the model.
 
@@ -58,14 +58,14 @@ Having OpenClaw on your computer does **not** mean everything stays on your comp
 
 ## Words you'll see
 
-- **Base URL:** the address one program uses to reach another.
-- **Cloud model:** a model that runs on a company's servers.
-- **Dashboard:** OpenClaw's chat and control page in your browser.
-- **Fallback:** a backup model used when the main one fails.
-- **Gateway:** OpenClaw's background program that connects everything.
+- **[Base URL](/entries/base-url/):** the address one program uses to reach another.
+- **[Cloud model](/entries/cloud-model/):** a model that runs on a company's servers.
+- **[Dashboard](/entries/dashboard/):** OpenClaw's chat and control page in your browser.
+- **[Fallback](/entries/fallback/):** a backup model used when the main one fails.
+- **[Gateway](/entries/gateway/):** OpenClaw's background program that connects everything.
 - **[Harness](/entries/harness/):** the software that turns a model into an assistant with tools.
 - **[Local model](/entries/local-model/):** a model that runs on your own computer.
-- **Onboarding:** OpenClaw's step-by-step setup.
+- **[Onboarding](/entries/onboarding/):** OpenClaw's step-by-step setup.
 - **[Tool](/entries/tool/):** an action the assistant is allowed to take, like reading a file.
 - **[Workspace](/entries/workspace/):** the folder where the assistant's instructions and project files live.
 

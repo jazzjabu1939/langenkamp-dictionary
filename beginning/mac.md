@@ -36,7 +36,7 @@ If installation fails, stop and keep the exact error message. Don't keep repeati
 
 ## Start setup
 
-When installation finishes, setup (called *onboarding*) starts automatically.
+When installation finishes, setup (called *[onboarding](/entries/onboarding/)*) starts automatically.
 
 1. Choose **Custom setup**, not Quick start. OpenClaw's guide labels Quick start's default access as "full"; Custom setup lets you choose what the assistant can do.
 2. Choose your model connection. Follow **one** of these:

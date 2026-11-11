@@ -34,7 +34,7 @@ This guide follows the PowerShell route, where OpenClaw and Ollama run directly 
 
 ## Start setup
 
-Setup (called *onboarding*) starts automatically after installation. Choose **Custom setup**, not Quick start, then follow **one** of these:
+Setup (called *[onboarding](/entries/onboarding/)*) starts automatically after installation. Choose **Custom setup**, not Quick start, then follow **one** of these:
 
 - [Connect a local model (Ollama)](/beginning/local-model/#part-2-choose-ollama-during-openclaw-setup)
 - [Connect a cloud model (OpenAI or Anthropic)](/beginning/cloud-model/)

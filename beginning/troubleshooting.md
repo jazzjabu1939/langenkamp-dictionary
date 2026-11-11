@@ -37,7 +37,7 @@ Run the `ollama run` command from [Part 1](/beginning/local-model/#part-1-get-on
 
 ## OpenClaw can't reach Ollama
 
-The address `http://127.0.0.1:11434` works only when Ollama and the OpenClaw Gateway run directly in the same operating system, with Ollama on its default port. `127.0.0.1` means "this same computer or environment"; `11434` is Ollama's default port. It is not a personal address; it works for each reader's same-system setup.
+The [base URL](/entries/base-url/) `http://127.0.0.1:11434` works only when Ollama and the OpenClaw Gateway run directly in the same operating system, with Ollama on its default port. `127.0.0.1` means "this same computer or environment"; `11434` is Ollama's default port. It is not a personal address; it works for each reader's same-system setup.
 
 - Don't add `/v1` to the end. This setup uses OpenClaw's own Ollama connection, not an OpenAI-compatible one.
 - If Ollama is on another computer, in a separate container or WSL environment, or uses a changed port, follow the [Ollama configuration recipes](https://docs.openclaw.ai/providers/ollama/recipes) instead.

@@ -56,7 +56,7 @@ Never put passwords or API keys in these files. When you add services later, use
 
 ## Check how it did the job
 
-The dashboard shows tool activity. Did the assistant actually read and write the files, or did it just *say* it did? If it asks permission to use a file tool, read the request before approving.
+The [dashboard](/entries/dashboard/) shows tool activity. Did the assistant actually read and write the files, or did it just *say* it did? If it asks permission to use a file tool, read the request before approving.
 
 If it prints something that looks like code (for example, `{"name": "write_file", ...}`) instead of creating the file, the task did not happen. See [Troubleshooting](/beginning/troubleshooting/#the-assistant-printed-code-instead-of-creating-the-file).
 

@@ -33,7 +33,7 @@ openclaw gateway status
 openclaw dashboard
 ```
 
-The status check should say the Gateway is running and reachable. The last command opens the dashboard. Keep any login link private; it may contain a short-lived access token.
+The status check should say the Gateway is running and reachable. The last command opens the [dashboard](/entries/dashboard/). Keep any login link private; it may contain a short-lived access token.
 
 ## Your first conversation
 

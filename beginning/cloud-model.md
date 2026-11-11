@@ -9,7 +9,7 @@ description: "Connect OpenClaw to a cloud model from OpenAI or Anthropic during 
 
 # Connect a cloud model
 
-*For readers who chose a model run by a provider such as OpenAI or Anthropic. You do **not** need Ollama, Gemma, or the `127.0.0.1:11434` address.*
+*For readers who chose a [cloud model](/entries/cloud-model/), run by a provider such as OpenAI or Anthropic. You do **not** need Ollama, Gemma, or the `127.0.0.1:11434` address.*
 
 The provider supplies the model. Your workspace can stay on your computer, but your prompts, and any file contents or tool results included with them, are sent to that provider.
 
@@ -35,7 +35,7 @@ openclaw models fallbacks list
 
 (Intel Mac local-prefix users: use the full command path shown on the [Intel Mac page](/beginning/intel-mac/#using-the-commands-in-the-rest-of-this-guide).)
 
-The default should be the provider and model you selected. Leave fallback models unconfigured for the first experiment, or include only ones whose costs and data handling you understand.
+The default should be the provider and model you selected. Leave [fallback](/entries/fallback/) models unconfigured for the first experiment, or include only ones whose costs and data handling you understand.
 
 A model name alone does not tell you which account is being billed. Check the selected connection and the provider's usage page too.
 

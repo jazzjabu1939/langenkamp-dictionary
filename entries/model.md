@@ -14,7 +14,7 @@ A **model** is the trained AI system itself: a very large set of learned numbers
 
 A model writes answers and can propose actions, such as "read this file" or "search for that". It cannot carry out those actions by itself. A surrounding program, the [harness](/entries/harness/), decides which proposed actions are allowed, runs them, and returns the results. A model also has no memory between conversations unless the harness supplies earlier material again.
 
-A model runs in one of two places. A **cloud model** runs on a company's computers; your requests travel to the provider over the internet, and the provider sets the price and the rules. A [local model](/entries/local-model/) runs on your own computer, usually through a [runner](/entries/runner/) such as [Ollama](/entries/ollama/), and depends on your hardware.
+A model runs in one of two places. A **[cloud model](/entries/cloud-model/)** runs on a company's computers; your requests travel to the provider over the internet, and the provider sets the price and the rules. A [local model](/entries/local-model/) runs on your own computer, usually through a [runner](/entries/runner/) such as [Ollama](/entries/ollama/), and depends on your hardware.
 
 The same model can perform well in one setup and badly in another, because the tools, instructions, and context around it differ. That is why the Dictionary treats the model as one component of an assistant rather than the whole of it.
 

@@ -81,6 +81,8 @@ The pieces that make a running agent.
 - [RAG (Retrieval-Augmented Generation)](entries/rag.md) — retrieval of relevant outside material into the model's working context.
 - [Agent Memory](entries/agent-memory.md) — persistent facts, decisions, unfinished work, and lessons carried across sessions.
 - [Gateway](entries/gateway.md) — the always-on coordinator process.
+- [Dashboard](entries/dashboard.md) — OpenClaw's browser chat and control page, served by the Gateway.
+- [Onboarding](entries/onboarding.md) — OpenClaw's guided first setup.
 - [Sub-agent](entries/sub-agent.md) — delegated AI sessions for parallel or focused work.
 - [Agent Collective](entries/agent-collective.md) — a persistent group whose shared roles, memory, communication, and governance make the group a meaningful unit of action.
 - [Heartbeat](entries/heartbeat.md) — periodic, automated nudges that make agents proactive.
@@ -166,6 +168,8 @@ How models are built, sized, distributed, and used.
 
 - [Model](entries/model.md) — the trained AI system itself, running locally or in the cloud.
 - [Local Model](entries/local-model.md) — a model stored and run on your own computer.
+- [Cloud Model](entries/cloud-model.md) — a model run on a provider's servers and reached over the internet.
+- [Fallback](entries/fallback.md) — a backup model used when the main one fails, and a quiet route by which data can leave.
 - [Claude](entries/claude.md) — Anthropic's family; named for Claude Shannon.
 - [Claude Opus](entries/claude-opus.md) — the most-capable tier.
 - [Claude Sonnet](entries/claude-sonnet.md) — the practical workhorse.
@@ -200,6 +204,7 @@ The products built on top of the models.
 - [LM Studio](entries/lm-studio.md) — desktop application for running open-weights models locally.
 - [Ollama](entries/ollama.md) — command-line local LLM runtime.
 - [Runner](entries/runner.md) — the program that loads a local model and makes it available to other programs.
+- [Base URL](entries/base-url.md) — the starting address one program uses to reach another program's service.
 - [MCP (Model Context Protocol)](entries/mcp.md) — the open standard for connecting agents to tools.
 - [RAG (Retrieval-Augmented Generation)](entries/rag.md) — the dominant pattern for "AI that knows my stuff."
 - [Vector database](entries/vector-database.md) — the storage and retrieval infrastructure for embeddings.

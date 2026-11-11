@@ -43,7 +43,7 @@ When OpenClaw's setup asks, choose:
 
 1. **Custom setup**, not Quick start.
 2. **Ollama** as the provider, then **Local only**.
-3. For the Ollama address (the *base URL*), enter:
+3. For the Ollama address (the *[base URL](/entries/base-url/)*), enter:
 
    ```text
    http://127.0.0.1:11434
@@ -67,7 +67,7 @@ openclaw models status
 openclaw models fallbacks list
 ```
 
-`models status` shows your default model. A *fallback* is a backup model OpenClaw switches to if the main one fails. For a local-only setup, the default should be your local model, and the fallback list should be empty or contain only local models you chose deliberately.
+`models status` shows your default model. A *[fallback](/entries/fallback/)* is a backup model OpenClaw switches to if the main one fails. For a local-only setup, the default should be your local model, and the fallback list should be empty or contain only local models you chose deliberately.
 
 If you need to set the default yourself:
 
