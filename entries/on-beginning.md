@@ -34,7 +34,7 @@ It helps to know what you're building. There are four pieces.
 - **The [harness](/entries/harness/)** is the program that turns a model into an assistant. It manages the conversation, decides what background information the model sees, and gives it access to the tools you allow. Here, that's [OpenClaw](/entries/openclaw/).
 - **The [workspace](/entries/workspace/)** is a folder of your project files and instructions. This is the part you should be able to open, back up, and take with you.
 
-**Tools** are what let the assistant *do* things: read a file, write a note, search the web, send a message. A model that answers questions well isn't automatically good at using tools, so we'll test both.
+**[Tools](/entries/tool/)** are what let the assistant *do* things: read a file, write a note, search the web, send a message. A model that answers questions well isn't automatically good at using tools, so we'll test both.
 
 One thing to understand early: having OpenClaw on your laptop does **not** mean everything stays on your laptop. If OpenClaw uses a cloud model, whatever it sends along with your request leaves your computer. That can include pieces of your files and the results of tool actions.
 
