@@ -1,0 +1,13 @@
+# The Langenkamp Dictionary
+
+> A working reference for the language of business, culture and agentic AI, by Matthew D. Langenkamp. Entries live at https://langenkamp.io/entries/<slug>/.
+
+## Guides
+
+- [On Beginning, complete text](https://langenkamp.io/beginning/guide.txt): the full guide to setting up an AI assistant with OpenClaw and a cloud or local model, in one plain-text file.
+- [On Beginning](https://langenkamp.io/entries/on-beginning/): the same guide as web pages, starting from the hub.
+
+## Index
+
+- [All entries](https://langenkamp.io/entries/)
+- [Topic index](https://langenkamp.io/topics/)

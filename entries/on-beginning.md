@@ -41,7 +41,7 @@ Follow these steps in order. Each one is a short page.
 7. **[Memory and continuity](/beginning/memory/).** What the assistant keeps between conversations, and how it finds things again.
 8. **[Stop, back up and recover](/beginning/recovery/).** Practise turning it off and restoring your files before you need to.
 
-**Something not working?** See [Troubleshooting](/beginning/troubleshooting/).
+**Something not working?** See [Troubleshooting](/beginning/troubleshooting/), or paste [the whole guide as one text file](/beginning/guide.txt) and your error message into ChatGPT, Claude or another AI assistant and ask it for help.
 
 ## What you're setting up
 

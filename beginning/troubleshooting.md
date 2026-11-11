@@ -11,6 +11,8 @@ description: "Fixes for common problems when setting up OpenClaw with a local or
 
 *Find the heading that matches what you see. When something fails, keep the exact error message (with any passwords or keys removed) before trying a fix.*
 
+**Not listed here?** Paste the link to [the whole guide as one text file](/beginning/guide.txt), along with your error message, into ChatGPT, Claude or another AI assistant and ask it what to do. Remove any passwords or keys first.
+
 ## Installation fails
 
 Stop and keep the exact error message. Don't keep repeating the installer, and don't assume you need a new computer. Check the [official installation guide](https://docs.openclaw.ai/install). If your institution blocks installation, ask for its approved route rather than working around the restriction.

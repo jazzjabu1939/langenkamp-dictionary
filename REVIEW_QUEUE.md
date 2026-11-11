@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-11-11 | **On Beginning as one text file** | Added `beginning/guide.txt` (whole guide in plain text, links made absolute, short notes for a helping AI) and root `llms.txt`. One pointer sentence each on the hub and Troubleshooting; page formatting unchanged per Matthew. **Maintenance:** after editing any On Beginning page, run `python3 scripts/build-beginning-txt.py` (`--check` verifies). |
 | 2026-11-11 | **Base URL**, **Cloud Model**, **Dashboard**, **Fallback**, **Onboarding** | Glossary entries added at Matthew's request so every term in *On Beginning*'s "Words you'll see" list links to a definition (Gateway already existed). Linked from the hub list and first mentions in the `/beginning/` task pages. |
 | 2026-11-11 | **On Beginning restructure** | Published at Matthew's request ("fast to publish, fast to edit"). On Beginning became a hub with eleven short task pages under `/beginning/` (choose, Mac, Intel Mac, Windows, local model, cloud model, start, first job, memory, recovery, troubleshooting), modelled on the Claude Help Center's one-job-per-article structure. Existing wording moved and trimmed; full walkthrough still not tested end to end. |
 | 2026-11-11 | **Model**, **Runner**, **Local Model**, **Workspace** | Four glossary entries added at Matthew's request so the *On Beginning* "four parts" list can link each term; the list now also links the existing Harness, Ollama, and OpenClaw entries. |
