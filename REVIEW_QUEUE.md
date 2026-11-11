@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-11-11 | **On Beginning restructure** | Published at Matthew's request ("fast to publish, fast to edit"). On Beginning became a hub with eleven short task pages under `/beginning/` (choose, Mac, Intel Mac, Windows, local model, cloud model, start, first job, memory, recovery, troubleshooting), modelled on the Claude Help Center's one-job-per-article structure. Existing wording moved and trimmed; full walkthrough still not tested end to end. |
 | 2026-11-11 | **Model**, **Runner**, **Local Model**, **Workspace** | Four glossary entries added at Matthew's request so the *On Beginning* "four parts" list can link each term; the list now also links the existing Harness, Ollama, and OpenClaw entries. |
 | 2026-10-08 | **Backup Performance Art** | Published with Matthew’s approval; commit `3229276`. |
 | 2026-09-22 | **Heartbeasts** | Standalone entry approved and published at `entries/heartbeasts.md`; Dictionary coinage, cross-linked from Harness Hygiene. |
