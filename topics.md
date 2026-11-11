@@ -86,6 +86,7 @@ The pieces that make a running agent.
 - [Heartbeat](entries/heartbeat.md) — periodic, automated nudges that make agents proactive.
 - [Grep Architecture](entries/grep-architecture.md) — the filing-cabinet pattern: search and fetch context on demand instead of loading the whole corpus into every session.
 - [SOUL.md](entries/soul-md.md) — the agent persona file as architectural pattern.
+- [Workspace](entries/workspace.md) — the folder of project files, instructions, and notes that you can open, back up, and move.
 - [Harness](entries/harness.md) — the surrounding runtime, tools, permissions, memory, approval gates, logs, prompts, and operating rules that turn a model into a working agent.
 - [Agentic Loop](entries/agentic-loop.md) — the repeating cycle of planning, acting, observing, verifying, and deciding whether to continue, correct, escalate, or stop.
 - [Model–Harness Fit](entries/model-harness-fit.md) — whether a model's actual behavior suits the tools, context, memory, permissions, verification, and recovery rules around it.
@@ -163,6 +164,8 @@ The August 2026 cluster on Chinese open-weight models, cybersecurity capability,
 
 How models are built, sized, distributed, and used.
 
+- [Model](entries/model.md) — the trained AI system itself, running locally or in the cloud.
+- [Local Model](entries/local-model.md) — a model stored and run on your own computer.
 - [Claude](entries/claude.md) — Anthropic's family; named for Claude Shannon.
 - [Claude Opus](entries/claude-opus.md) — the most-capable tier.
 - [Claude Sonnet](entries/claude-sonnet.md) — the practical workhorse.
@@ -196,6 +199,7 @@ The products built on top of the models.
 - [Manus](entries/manus.md) — Chinese agentic-AI startup and marker of the work-layer competition.
 - [LM Studio](entries/lm-studio.md) — desktop application for running open-weights models locally.
 - [Ollama](entries/ollama.md) — command-line local LLM runtime.
+- [Runner](entries/runner.md) — the program that loads a local model and makes it available to other programs.
 - [MCP (Model Context Protocol)](entries/mcp.md) — the open standard for connecting agents to tools.
 - [RAG (Retrieval-Augmented Generation)](entries/rag.md) — the dominant pattern for "AI that knows my stuff."
 - [Vector database](entries/vector-database.md) — the storage and retrieval infrastructure for embeddings.

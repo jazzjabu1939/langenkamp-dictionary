@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-11-11 | **Model**, **Runner**, **Local Model**, **Workspace** | Four glossary entries added at Matthew's request so the *On Beginning* "four parts" list can link each term; the list now also links the existing Harness, Ollama, and OpenClaw entries. |
 | 2026-10-08 | **Backup Performance Art** | Published with Matthew’s approval; commit `3229276`. |
 | 2026-09-22 | **Heartbeasts** | Standalone entry approved and published at `entries/heartbeasts.md`; Dictionary coinage, cross-linked from Harness Hygiene. |
 | 2026-09-21 | **Lab** | Approved and published at `entries/lab.md`; commit `a66f7d0`. |

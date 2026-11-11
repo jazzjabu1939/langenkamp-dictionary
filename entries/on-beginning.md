@@ -29,10 +29,10 @@ The walkthrough below is for a fresh **OpenClaw** setup with either a **cloud mo
 
 It helps to know what you're building. There are four pieces.
 
-- **The model** is the AI itself. It writes responses and can suggest actions. It can run on your own computer (*local*) or on a company's computers over the internet (*cloud*).
-- **The runner** loads a local model and makes it available to other programs. On the local path, that's Ollama. Cloud users do not install a local runner.
-- **The harness** is the program that turns a model into an assistant. It manages the conversation, decides what background information the model sees, and gives it access to the tools you allow. Here, that's OpenClaw.
-- **The workspace** is a folder of your project files and instructions. This is the part you should be able to open, back up, and take with you.
+- **The [model](/entries/model/)** is the AI itself. It writes responses and can suggest actions. It can run on your own computer (*local*) or on a company's computers over the internet (*cloud*).
+- **The [runner](/entries/runner/)** loads a [local model](/entries/local-model/) and makes it available to other programs. On the local path, that's [Ollama](/entries/ollama/). Cloud users do not install a local runner.
+- **The [harness](/entries/harness/)** is the program that turns a model into an assistant. It manages the conversation, decides what background information the model sees, and gives it access to the tools you allow. Here, that's [OpenClaw](/entries/openclaw/).
+- **The [workspace](/entries/workspace/)** is a folder of your project files and instructions. This is the part you should be able to open, back up, and take with you.
 
 **Tools** are what let the assistant *do* things: read a file, write a note, search the web, send a message. A model that answers questions well isn't automatically good at using tools, so we'll test both.
 
