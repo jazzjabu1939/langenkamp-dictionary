@@ -569,6 +569,39 @@
         background: #fffdf8;
         border-color: #e5d3b3;
       }
+      /* === Chinese summary on newsletter issues ===
+         A click-to-open block under the issue header. Opens by itself
+         when the reader's browser language is Chinese. */
+      .main-content details.zh-summary {
+        margin: 1.25rem 0 1.5rem;
+        padding: 0.6rem 1rem;
+        border: 1px solid var(--lk-rule);
+        border-left: 4px solid var(--lk-maroon);
+        border-radius: 4px;
+        background: #faf8f6;
+        font-family: 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti TC', sans-serif;
+      }
+      .main-content details.zh-summary summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--lk-maroon);
+      }
+      .main-content details.zh-summary .zh-summary-en {
+        margin-left: 0.5rem;
+        font-family: var(--lk-font-heading);
+        font-size: 0.8125rem;
+        font-weight: 400;
+        color: var(--lk-muted);
+      }
+      .main-content details.zh-summary p {
+        margin: 0.75rem 0 0.5rem;
+        line-height: 1.9;
+      }
+      .main-content details.zh-summary .zh-summary-note {
+        margin: 0 0 0.25rem;
+        font-size: 0.8125rem;
+        color: var(--lk-muted);
+      }
       .main-content .oracle-divider {
         color: #9b6a2f;
         font-family: var(--lk-font-mono);

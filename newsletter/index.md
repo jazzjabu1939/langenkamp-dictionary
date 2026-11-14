@@ -23,6 +23,8 @@ The current format opens with a short executive summary and a linked Reading Lis
 
 ## Archive
 
+<p lang="zh-Hant" style="font-family: 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; color: #6c6661; font-size: 0.9375rem;">中文讀者：每一期開頭都附有中文摘要，點選「中文摘要」即可展開。</p>
+
 <!-- NEWSLETTER_ARCHIVE_START -->
 - **[November 12, 2026](2026-11-12/)** · Vol. 38 - Oral Exams, Policy Drafts and an AI-Taught MBA
 - **[October 29, 2026](2026-10-29/)** · Vol. 37 - What Counts as a Student’s Own Work

@@ -1,0 +1,19 @@
+{% if page.summary_zh %}
+<details class="zh-summary" lang="zh-Hant">
+  <summary><span class="zh-summary-label">中文摘要</span> <span class="zh-summary-en" lang="en">Chinese summary</span></summary>
+  <p>{{ page.summary_zh }}</p>
+  <p class="zh-summary-note">摘要由 AI 撰寫並校對；如有出入，以英文原文為準。</p>
+</details>
+<script>
+  (function () {
+    var langs = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < langs.length; i++) {
+      if (/^zh\b/i.test(langs[i])) {
+        var d = document.querySelector('details.zh-summary');
+        if (d) { d.open = true; }
+        break;
+      }
+    }
+  })();
+</script>
+{% endif %}
