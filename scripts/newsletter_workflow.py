@@ -58,6 +58,13 @@ def validate(data: dict, require_files: bool = True) -> None:
         missing = [item["site_file"] for item in pubs if not (REPO / item["site_file"]).is_file()]
         if missing:
             raise ValueError("Missing published site files: " + ", ".join(missing))
+        no_summary = [
+            item["site_file"]
+            for item in pubs
+            if not re.search(r"^summary_zh:\s*\S", (REPO / item["site_file"]).read_text(encoding="utf-8"), re.MULTILINE)
+        ]
+        if no_summary:
+            raise ValueError("Published issues without a Chinese summary (summary_zh): " + ", ".join(no_summary))
 
 
 def next_volume(data: dict) -> int:
@@ -112,7 +119,14 @@ def infer_title(body: str) -> str:
     return match.group(1).strip() if match else "Weekly developments in AI and higher education"
 
 
-def render_site_page(issue_date: str, volume: int, title: str, body: str) -> str:
+def clean_summary_zh(value: str) -> str:
+    summary = re.sub(r"[ \t]{2,}", " ", re.sub(r"\s*\n\s*", "", value.strip()))
+    if not re.search(r"[\u4e00-\u9fff]", summary):
+        raise ValueError("The Chinese summary contains no Chinese text")
+    return summary.replace('"', "”")
+
+
+def render_site_page(issue_date: str, volume: int, title: str, body: str, summary_zh: str) -> str:
     safe_title = title.replace('"', '\\"')
     return f'''---
 layout: default
@@ -121,6 +135,7 @@ date: {issue_date}
 volume: "{volume}"
 description: "{safe_title}"
 permalink: /newsletter/{issue_date}/
+summary_zh: "{summary_zh}"
 ---
 
 # AI in Higher Education Newsletter
@@ -130,6 +145,8 @@ permalink: /newsletter/{issue_date}/
 *A weekly brief for the Management Department, Isenberg School of Management, UMass Amherst. By Matthew D. Langenkamp / 雷邁德, prepared in collaboration with Thea 🪻✨.*
 
 [← Back to archive](/newsletter/) · [← Back to Dictionary](/)
+
+{{% include zh-summary.html %}}
 
 ---
 
@@ -193,10 +210,11 @@ def command_publish(args: argparse.Namespace) -> None:
     if source_date is not None and source_date != human_date(args.date):
         raise ValueError(f"Source date is {source_date}; requested {human_date(args.date)}")
     title = args.title or infer_title(body)
+    summary_zh = clean_summary_zh(args.summary_zh)
     site_file = REPO / "newsletter" / f"{args.date}.md"
     if site_file.exists():
         raise ValueError(f"Refusing to overwrite existing site issue: {site_file}")
-    site_file.write_text(render_site_page(args.date, volume, title, body), encoding="utf-8")
+    site_file.write_text(render_site_page(args.date, volume, title, body, summary_zh), encoding="utf-8")
     issue = {
         "volume": volume,
         "date": args.date,
@@ -230,6 +248,11 @@ def parser() -> argparse.ArgumentParser:
     publish.add_argument("--date", required=True)
     publish.add_argument("--volume", type=int)
     publish.add_argument("--title")
+    publish.add_argument(
+        "--summary-zh",
+        required=True,
+        help="Checked Traditional Chinese summary of the issue, two or three sentences",
+    )
     publish.add_argument("--no-build", action="store_true")
     publish.set_defaults(func=command_publish)
     return result

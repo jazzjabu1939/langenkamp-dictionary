@@ -27,15 +27,20 @@ This creates the canonical Markdown draft in `../dept-memos/` and refuses to ove
 ```sh
 python3 scripts/newsletter_workflow.py publish \
   --source ../dept-memos/YYYY-MM-DD-education-ai-brief.md \
-  --date YYYY-MM-DD
+  --date YYYY-MM-DD \
+  --summary-zh "本期的主題是……"
 ```
+
+Every issue carries a Chinese summary for Chinese readers (added November 14, 2026). Write two or three sentences in Traditional Chinese from the approved issue: what the issue is mainly about, then its other main items. Check every number, name and claim against the issue before publishing; keep institution names in English and translate ordinary terms. The command refuses to publish without `--summary-zh`, and `status` fails if any published issue lacks one.
+
+The summary is stored as `summary_zh` in the issue's front matter and shown by `_includes/zh-summary.html`: a click-to-open block under the header that opens by itself when the reader's browser language is Chinese. The summary appears only on langenkamp.io, not in the emailed brief or the PDF.
 
 Publication is guarded. The command:
 
 1. Requires the volume to equal the ledger's next volume.
 2. Confirms the source header and date.
 3. Refuses duplicate dates and existing site files.
-4. Creates the public Jekyll issue page.
+4. Creates the public Jekyll issue page, with the Chinese summary block under the header.
 5. Adds the published issue to the ledger.
 6. Regenerates the full newsletter archive and the current-issues list in Other Writing.
 7. Builds the site.
