@@ -16,6 +16,7 @@ A thematic view of the dictionary. For the alphabetical list, see [`entries/`](e
 The load-bearing concepts. Most other terms reference one or more of these.
 
 - [Agent](entries/agent.md) — what an agent is, how it differs from a chatbot, and why Gibson's *Agency* reads like a design document.
+- [Agency](entries/agency.md) — the capacity to act on purpose and answer for the result; now a human capacity, a legal relationship, and a property of software at once.
 - [Embedding](entries/embedding.md) — meaning as a list of numbers.
 - [Hill Climbing](entries/hill-climbing.md) — stepwise optimization by following a local signal of improvement.
 - [FLOP](entries/flop.md) — the basic operation-counting unit used in AI compute calculations.
@@ -119,6 +120,9 @@ The July 2026 Nate Jones / cheap-intelligence cluster: the vocabulary for the la
 - [Agent Ownership](entries/agent-ownership.md) — the rule that any agent touching real work needs a named owner.
 - [Work Handoff / Open Engine](entries/work-handoff-open-engine.md) — work packaged so another agent, human, or system can pick it up without losing state.
 - [Raw IQ](entries/raw-iq.md) — the model's underlying reasoning horsepower before harness, context, judgment, and ownership turn it into work.
+- [Agent Maintenance](entries/agent-maintenance.md) — the ongoing upkeep that keeps a working agent accurate, safe, and useful after the build.
+- [Context Lock-In](entries/context-lock-in.md) — when a firm cannot switch AI providers because its working context lives inside one provider's product.
+- [Open Skills](entries/open-skills.md) — agent procedures kept in portable files the firm controls, so its methods are not rented back.
 
 ## The AI labs
 
@@ -154,6 +158,7 @@ The August 2026 cluster on Chinese open-weight models, cybersecurity capability,
 - [Offense-Defense Balance](entries/offense-defense-balance.md) — whether technology makes attack or defense comparatively easier.
 - [Cyber Reasoning System](entries/cyber-reasoning-system.md) — DARPA's established term for automated systems that find, reason about, and patch flaws.
 - [Covert Channel](entries/covert-channel.md) — communication through shared state, timing, or another system resource not intended as a message path.
+- [Prompt Injection](entries/prompt-injection.md) — outsider text read by an AI system as instructions; the lethal trifecta of private data, untrusted content, and a way out.
 - [Pwned](entries/pwned.md) — security slang for a system, account, or dataset successfully compromised.
 - [Discovery-Patch Race](entries/discovery-patch-race.md) — the contest among vulnerability discovery, exploitation, patch creation, and deployment.
 - [Patch Gap](entries/patch-gap.md) — the lag between a fix becoming available and reaching exposed systems.
@@ -258,6 +263,7 @@ The ongoing reality of running an agent in production — the costs, the meters,
 - [KV Cache Poisoning](entries/kv-cache-poisoning.md) — the attack-class entry on prompt caching.
 - [Red Pill](entries/red-pill.md) — the form-field that refuses your input; the morning-sadness texture of OpenClaw fixing.
 - [Mediation (a la Gibson)](entries/mediation-a-la-gibson.md) — the operator's stance on AI as a layer of mediation.
+- [Simulacrum](entries/simulacrum.md) — a copy standing in for a weakened or vanished original; Baudrillard, Cayce Pollard's Tommy Hilfiger, and model collapse.
 
 ## Working with the agent — and not against your own brain
 
@@ -369,7 +375,7 @@ The Dictionary is a work in progress. Honest status of near-term candidates as o
 - *World Model* — the concept needed to understand LeCun's critique of LLM-only scaling.
 - *Agent Health* / *Harness Hygiene* — the operational-health cluster from heartbeat, memory, and cron diagnosis.
 - *Backup Performance Art* — the difference between backup ritual and actual restore confidence.
-- *Agent Maintenance* / *Open Skills* / *Loop Manager* / *Context Lock-In* / *Agent Owner's Card* — follow-on candidates from the Nate Jones harness-layer research pass.
+- *Loop Manager* — to be folded into [Agentic Loop](entries/agentic-loop.md) rather than written as a separate entry. (*Agent Maintenance*, *Open Skills*, and *Context Lock-In* were published November 21, 2026; the *Agent Owner's Card* lives inside [Agent Ownership](entries/agent-ownership.md).)
 
 **Glossary stubs pending:**
 
