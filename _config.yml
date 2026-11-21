@@ -19,6 +19,9 @@ exclude:
   - REVIEW_QUEUE.md
   - TRIAGE_OPERATOR_TONE.md
   - DRAFT_NOTES.md
+  - CANDIDATE_ENTRIES.md
+  - QUEUE_AUDIT_2026-06-22.md
+  - editorial-review
 
 # Google Analytics
 google_analytics: G-6VKTMBF9JM
@@ -42,17 +45,3 @@ footer: |
 plugins:
   - jekyll-sitemap
 
-# Working files that are built but should not be advertised to search engines
-defaults:
-  - scope:
-      path: "editorial-review"
-    values:
-      sitemap: false
-  - scope:
-      path: "CANDIDATE_ENTRIES.md"
-    values:
-      sitemap: false
-  - scope:
-      path: "QUEUE_AUDIT_2026-06-22.md"
-    values:
-      sitemap: false
