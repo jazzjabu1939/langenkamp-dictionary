@@ -14,3 +14,6 @@ gem "logger"
 
 # Live reload for the dev server
 gem "webrick"
+
+# Sitemap (also enabled on GitHub Pages via _config.yml plugins)
+gem "jekyll-sitemap"

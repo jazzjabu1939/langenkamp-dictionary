@@ -37,3 +37,22 @@ footer: |
   <p>The Langenkamp Dictionary.<br>
   Maintained by Matthew D. Langenkamp / 雷邁德 — Isenberg School of Management, UMass Amherst.<br>
   Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
+
+# Search engines: sitemap at /sitemap.xml (GitHub Pages-supported plugin)
+plugins:
+  - jekyll-sitemap
+
+# Working files that are built but should not be advertised to search engines
+defaults:
+  - scope:
+      path: "editorial-review"
+    values:
+      sitemap: false
+  - scope:
+      path: "CANDIDATE_ENTRIES.md"
+    values:
+      sitemap: false
+  - scope:
+      path: "QUEUE_AUDIT_2026-06-22.md"
+    values:
+      sitemap: false
