@@ -20,6 +20,7 @@ The practical question is therefore: what cognitive work must remain inside the 
 ## See also
 
 - *[Can't help you understand](cant-help-you-understand.md)*
+- *[Brain Rot](/entries/brain-rot/)*
 - *[AI Writing](ai-writing.md)*
 - *[Provenance](provenance.md)*
 - *[Dylan Patel](dylan-patel.md)*

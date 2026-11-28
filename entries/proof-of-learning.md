@@ -25,3 +25,4 @@ The phrase matters because it keeps the focus where it belongs. The goal is to k
 - *[Provenance](/entries/provenance/)*
 - *[AI Produced Artifact](/entries/ai-produced-artifact/)*
 - *[Human Reserved](/entries/human-reserved/)*
+- *[Learning Mode](/entries/learning-mode/)*

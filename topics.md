@@ -312,6 +312,8 @@ The classroom and assurance-of-learning cluster: how faculty can assess learning
 - [Artifact Is Not Competence](entries/artifact-is-not-competence.md) — the assurance-of-learning problem in plain English.
 - [Verification Assignment](entries/verification-assignment.md) — assignment design that makes authorship, judgment, and learning visible.
 - [Proof of Learning](entries/proof-of-learning.md) — the evidence trail linking student cognition to the submitted artifact.
+- [Brain Rot](entries/brain-rot.md) — students' own word for the sense that letting AI do the work has left them less able.
+- [Learning Mode](entries/learning-mode.md) — the setting that makes an AI assistant tutor with questions and hints before it gives answers.
 - [Human in the Loop](entries/human-in-the-loop.md) — a named human authority at the decision point, not a human somewhere nearby.
 - [Assessment Instrumentation](entries/assessment-instrumentation.md) — AI tools used to observe and flag assessment evidence without owning the grade.
 - [Performance Artifact](entries/performance-artifact.md) — oral, video, or presentation work as evidence of embodied competence.

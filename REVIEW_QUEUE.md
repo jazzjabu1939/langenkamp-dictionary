@@ -25,6 +25,7 @@
 
 | Date | Item | Notes |
 |------|------|-------|
+| 2026-11-28 | **Brain Rot**, **Learning Mode** | Hyacinth 3 / Teaching Memory Cluster. Two glossary entries drafted from the Anthropic education roundtable (*What does AI mean for education?*, December 2025), Oxford's 2024 Word of the Year notice, Anthropic's Claude for Education announcement, and Bastani et al. (*PNAS*, 2025). Posted in full in Thea HQ General; Matthew approved as written and asked for publication. Added to the Teaching section of `topics.md`; reciprocal See also links from Cognitive Outsourcing and Proof of Learning. |
 | 2026-11-21 | **Prompt Injection**, **Agency**, **Agent Maintenance**, **Context Lock-In**, **Open Skills**, **Simulacrum** | Six new entries from a fresh pass on the May candidate list, plus *Simulacrum* from the Nov 20 Copenhagen shoe / Gibson conversation. Matthew approved drafting and posting in one step ("Draft and post"). Candidate list triage: *Agent Owner's Card* already lives in Agent Ownership; *Loop of Loops* to be folded into Agentic Loop; *Simon Willison* covered inside Prompt Injection; newspaper, passing-name, and fragment candidates dropped. |
 | 2026-11-11 | **On Beginning as one text file** | Added `beginning/guide.txt` (whole guide in plain text, links made absolute, short notes for a helping AI) and root `llms.txt`. One pointer sentence each on the hub and Troubleshooting; page formatting unchanged per Matthew. **Maintenance:** after editing any On Beginning page, run `python3 scripts/build-beginning-txt.py` (`--check` verifies). |
 | 2026-11-11 | **Base URL**, **Cloud Model**, **Dashboard**, **Fallback**, **Onboarding** | Glossary entries added at Matthew's request so every term in *On Beginning*'s "Words you'll see" list links to a definition (Gateway already existed). Linked from the hub list and first mentions in the `/beginning/` task pages. |
@@ -127,7 +128,7 @@ The checklist below is the **authoritative active queue**. The detailed sections
 
 <!-- ACTIVE_REVIEW_QUEUE_START -->
 - [x] **Backup Performance Art** — published October 8, 2026 at `/entries/backup-performance-art/`. <!-- terms=1 added=2026-05-19 -->
-- [ ] **Hyacinth 3 / Teaching Memory Cluster** — 2 proposed terms: Brain Rot; Learning Mode <!-- terms=2 added=2026-05-18 -->
+- [x] **Hyacinth 3 / Teaching Memory Cluster** — Brain Rot and Learning Mode published November 28, 2026 at `/entries/brain-rot/` and `/entries/learning-mode/`. <!-- terms=2 added=2026-05-18 -->
 - [ ] **Meta / Llama Trust Cluster** — 2 proposed terms: Open Weights, Closed Habits; World Model <!-- terms=2 added=2026-05-16 -->
 - [ ] **Sally (the Sovereignty Experiment)** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
 - [ ] **Claudia / Multi-Agent Specialisation** — 1 proposed term <!-- terms=1 added=2026-05-10 -->
@@ -152,14 +153,16 @@ The checklist below is the **authoritative active queue**. The detailed sections
 - [ ] **Context Management** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
 - [ ] **Loop Engineering** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
 - [ ] **Agent Orchestration** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
-- [ ] **Prompt Injection** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
+- [x] **Prompt Injection** — published November 21, 2026 at `/entries/prompt-injection/`. <!-- terms=1 added=2026-10-12 -->
 - [ ] **Sandbox** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
 - [ ] **Cron Job** — IBM video vocabulary; definition and source notes below <!-- terms=1 added=2026-10-12 -->
 - [ ] **Skill / Sub-agent — existing-entry review** — review source coverage and cross-links; no duplicate entries <!-- terms=0 added=2026-10-12 -->
 - [ ] **The New Electricity** — AI as a general-purpose technology; Andrew Ng analogy referenced in the IBM video; source notes below <!-- terms=1 added=2026-10-12 -->
 <!-- ACTIVE_REVIEW_QUEUE_END -->
 
-**Updated October 12, 2026:** 30 review units covering 33 proposed new terms, plus review of 2 existing entries (Skill and Sub-agent). Nine new terms and one existing-entry review unit were added from the IBM video conversation on October 12. Backup Performance Art was published October 8. The three remaining Neuroscience-AI terms were published September 13. *Invented Worlds* was merged into *Reality Contact* and the proposed *Biological Hallucination / Machine Hallucination* entry; *Reality Contact*, *Yann LeCun*, and *The Nine Tripod Cauldrons / 九鼎* were published as standalone entries; *Harness Engineering* was merged into the published *Harness* entry. Published, superseded, maintenance-only, and polish-only headings are not counted.
+**Updated November 28, 2026:** 28 review units covering 30 proposed new terms, plus review of 2 existing entries (Skill and Sub-agent). Brain Rot and Learning Mode were published November 28; the Prompt Injection line was checked off because that entry was published November 21.
+
+**Earlier count, October 12, 2026:** 30 review units covering 33 proposed new terms, plus review of 2 existing entries (Skill and Sub-agent). Nine new terms and one existing-entry review unit were added from the IBM video conversation on October 12. Backup Performance Art was published October 8. The three remaining Neuroscience-AI terms were published September 13. *Invented Worlds* was merged into *Reality Contact* and the proposed *Biological Hallucination / Machine Hallucination* entry; *Reality Contact*, *Yann LeCun*, and *The Nine Tripod Cauldrons / 九鼎* were published as standalone entries; *Harness Engineering* was merged into the published *Harness* entry. Published, superseded, maintenance-only, and polish-only headings are not counted.
 
 ---
 
@@ -269,7 +272,7 @@ The sections below preserve definitions, sources, editorial questions, and publi
 
 ### **Hyacinth 3 / Teaching Memory terms** (added May 18, 2026 — from Anthropic education transcripts)
 
-*Triggered by Prof's Hyacinth 3 / Teaching Work Packet launch-planning conversation and the Anthropic education roundtable transcript. These are queue additions only; drafts not yet written.*
+*Triggered by Prof's Hyacinth 3 / Teaching Work Packet launch-planning conversation and the Anthropic education roundtable transcript. Both entries published November 28, 2026 at `entries/brain-rot.md` and `entries/learning-mode.md` after Matthew's approval in Thea HQ General.*
 
 - **Brain Rot** — student-facing term from the Anthropic education discussion: the felt cognitive risk of using AI to bypass learning rather than deepen it. Relevant to Learning Mode, AI fluency, Learning Evidence Review Packets, and the broader question of how assignments can make AI the beginning of thinking rather than the end.
 - **Learning Mode** — Anthropic product/pedagogy term for configuring Claude as a tutor rather than an answer machine: guiding, questioning, flashcards, exam preparation, and helping students work through material. Relevant to Hyacinth 3, AI fluency, the Learning Evidence Review Packet, and the distinction between productive assistance and homework substitution.
